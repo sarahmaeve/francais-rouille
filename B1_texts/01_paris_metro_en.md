@@ -1,0 +1,39 @@
+# Navigating the Paris Metro
+
+**Characters:**
+- **Léa** — a tourist visiting Paris for the first time
+- **Marc** — a Parisian waiting on the platform
+
+---
+
+**Léa:** Excuse me, sir, can you help me? I'm looking for the line to get to Montmartre.
+
+**Marc:** Of course! You need to take line 12 in the direction of Mairie d'Issy. Uh, sorry, in the direction of Front Populaire.
+
+**Léa:** Okay, but I'm on line 4 right now. Do I need to transfer?
+
+**Marc:** Yes, you need to transfer at the Marcadet-Poissonniers station. It's three stops from here.
+
+**Léa:** And after the transfer, is it far?
+
+**Marc:** No, not at all. After the transfer, you get off at Abbesses. It's only two stops.
+
+**Léa:** Abbesses, okay. Do I need to buy a new ticket for the transfer?
+
+**Marc:** No, your ticket is valid for the entire journey, as long as you don't leave the station.
+
+**Léa:** Ah, that's convenient! And the transfer corridors, are they well marked?
+
+**Marc:** Yes, you'll see orange signs with the line number. Follow the arrows for line 12.
+
+**Léa:** Thank you very much. I was afraid of getting lost — it's my first day in Paris.
+
+**Marc:** Don't worry, the metro looks complicated, but you get used to it quickly. Do you have a map?
+
+**Léa:** Yes, I downloaded an app on my phone, but it doesn't work well underground.
+
+**Marc:** That's normal, there isn't always signal in the metro. Look at the map posted on the platform — it's more reliable.
+
+**Léa:** Good idea. Thanks again for your help, you're very kind!
+
+**Marc:** You're welcome, enjoy your stay in Paris! Montmartre is beautiful — you're going to love it.

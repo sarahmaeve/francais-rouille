@@ -1,0 +1,61 @@
+# Real Estate Listing — Apartment in Paris 11th
+
+---
+
+**BELLEVILLE REAL ESTATE AGENCY**
+*Your trusted partner since 1987*
+
+---
+
+## Beautiful 1-Bedroom Apartment — Rue de la Roquette, Paris 11th
+
+**Rent:** €1,450 / month, utilities included
+
+**Area:** 48 m² (approx. 517 sq ft)
+
+**Floor:** 3rd floor with elevator
+
+**Availability:** April 1, 2026
+
+---
+
+### Description
+
+Charming, bright one-bedroom apartment located on rue de la Roquette, in the heart of the 11th arrondissement. The apartment is in a well-maintained Haussmann-style building, five minutes on foot from the Voltaire metro station (line 9).
+
+**The living room** is spacious with large windows overlooking the street. The oak parquet flooring is in excellent condition. The room is large enough for a sofa, a dining table, and a desk area.
+
+**The bedroom** is quiet and overlooks the inner courtyard. It can accommodate a double bed and a wardrobe.
+
+**The kitchen** is fitted with a refrigerator, stovetop, oven, and dishwasher. There is enough space for a small table.
+
+**The bathroom** includes a shower, a sink, and a toilet. It was recently renovated.
+
+---
+
+### Key Features
+
+- Oak parquet flooring throughout
+- Double glazing
+- Cellar included
+- Keypad entry and intercom
+- Quiet, well-maintained building
+
+### The Neighborhood
+
+Rue de la Roquette is a lively and sought-after neighborhood. You'll find many shops, restaurants, and cafés nearby. The Bastille market (Thursday and Sunday) is ten minutes away on foot. Père-Lachaise cemetery is accessible in just a few minutes.
+
+### Transportation
+
+- Voltaire metro (line 9) — 5 minutes on foot
+- Bastille metro (lines 1, 5, 8) — 10 minutes on foot
+- Several bus lines on Boulevard Voltaire
+
+---
+
+**Contact:** Belleville Real Estate Agency
+**Phone:** 01 43 XX XX XX
+**Email:** contact@belleville-immo.fr
+**Hours:** Monday–Friday, 9am–6pm / Saturday, 10am–1pm
+
+*Complete application required. Net monthly income: 3 times the rent amount.*

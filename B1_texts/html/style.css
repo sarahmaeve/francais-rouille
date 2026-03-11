@@ -1,0 +1,211 @@
+:root {
+    --navy: #1a2744;
+    --blue: #2c3e6b;
+    --gold: #c9a84c;
+    --cream: #faf7f0;
+    --text: #2c2c2c;
+    --light-gray: #e8e4dc;
+    --speaker-a: #eef2fa;
+    --speaker-b: #fdf6e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: var(--blue);
+    font-style: italic;
+}
+
+nav.breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+nav.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+nav.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Index page cards */
+.card-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.card-list li a {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.card-list li a:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left-color: var(--navy);
+}
+
+.card-list li a .card-title {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--navy);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.card-list li a .card-desc {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Dialogue styling */
+.personnages {
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    padding: 1rem 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.personnages h2 {
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: 0.5rem;
+}
+
+.personnages ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.personnages li {
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.personnages li strong {
+    color: var(--navy);
+}
+
+.dialogue {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.line {
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    max-width: 88%;
+}
+
+.line .speaker {
+    font-weight: bold;
+    color: var(--navy);
+    margin-right: 0.3rem;
+}
+
+.line.speaker-a {
+    background: var(--speaker-a);
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+.line.speaker-b {
+    background: var(--speaker-b);
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+/* Vocabulary tables */
+.vocab-section {
+    margin-bottom: 2rem;
+}
+
+.vocab-section h2 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--gold);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+th {
+    background: var(--navy);
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 0.95rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+footer {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-gray);
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+}

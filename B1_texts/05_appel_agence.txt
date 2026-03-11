@@ -1,0 +1,47 @@
+Appel Téléphonique — Renseignements sur l'Appartement
+
+Personnages :
+- Camille — une jeune professionnelle qui cherche un appartement
+- Thomas — un agent immobilier à l'Agence Belleville Immobilier
+
+Thomas : Agence Belleville Immobilier, bonjour ! Thomas à l'appareil, comment puis-je vous aider ?
+
+Camille : Bonjour, je vous appelle au sujet de l'annonce pour le deux pièces rue de la Roquette. Est-ce que l'appartement est toujours disponible ?
+
+Thomas : Oui, tout à fait, il est encore disponible. Vous avez des questions ?
+
+Camille : Oui, plusieurs. D'abord, est-ce que l'appartement est meublé ou vide ?
+
+Thomas : Il est loué vide. Par contre, la cuisine est entièrement équipée, comme indiqué dans l'annonce.
+
+Camille : D'accord. Et le quartier, c'est comment ? Je ne connais pas très bien le 11e.
+
+Thomas : C'est un excellent quartier. La rue de la Roquette est très bien située, entre Bastille et Voltaire. Il y a tout ce qu'il faut à proximité : des supermarchés, des pharmacies, des boulangeries.
+
+Camille : Et au niveau du bruit ? J'ai lu que la rue de la Roquette est assez animée le soir.
+
+Thomas : C'est vrai que le bas de la rue est animé avec les bars et les restaurants. Mais l'appartement est plus haut sur la rue, c'est beaucoup plus calme. Et puis la chambre donne sur la cour, donc vous n'entendez presque rien.
+
+Camille : Ah, c'est rassurant. Il y a des espaces verts pas loin ?
+
+Thomas : Oui, le square Maurice-Gardette est à quelques minutes. Et si vous aimez vous promener, le cimetière du Père-Lachaise est très agréable, beaucoup de Parisiens y vont pour marcher au calme.
+
+Camille : Très bien. Pour les transports, c'est pratique ?
+
+Thomas : Très pratique. Voltaire est à cinq minutes à pied, et Bastille à dix minutes. Avec Bastille, vous avez trois lignes de métro, donc vous pouvez aller partout rapidement.
+
+Camille : Parfait. Et au niveau du dossier, qu'est-ce qu'il faut fournir ?
+
+Thomas : Il faut vos trois derniers bulletins de salaire, votre contrat de travail, une pièce d'identité et votre dernier avis d'imposition. Vos revenus doivent être au moins trois fois le montant du loyer.
+
+Camille : D'accord, je peux préparer tout ça. Est-ce que je pourrais visiter l'appartement cette semaine ?
+
+Thomas : Bien sûr. Je peux vous proposer jeudi à 14 heures ou vendredi à 10 heures. Qu'est-ce qui vous arrange ?
+
+Camille : Vendredi à 10 heures, ce serait parfait pour moi.
+
+Thomas : C'est noté. On se retrouve devant l'immeuble, au 87 rue de la Roquette. Vous verrez le digicode, je vous ouvrirai.
+
+Camille : Merci beaucoup, Thomas. À vendredi alors !
+
+Thomas : À vendredi, Camille. Bonne journée !
