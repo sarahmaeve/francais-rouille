@@ -1,0 +1,223 @@
+/* Crossword puzzle styles — uses CSS variables from each chapter's style.css */
+
+.cw-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Grid table */
+.cw-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.cw-table td {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--light-gray);
+    position: relative;
+    padding: 0;
+    background: #fff;
+}
+
+.cw-black {
+    background: var(--navy) !important;
+    border-color: var(--navy) !important;
+}
+
+.cw-cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--text);
+    caret-color: var(--gold);
+    outline: none;
+    padding: 0;
+}
+
+.cw-number {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    font-size: 0.6rem;
+    color: var(--blue);
+    font-family: sans-serif;
+    pointer-events: none;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Active states */
+.cw-active-cell {
+    background: var(--gold) !important;
+}
+
+.cw-active-cell input {
+    color: #fff;
+}
+
+.cw-active-word {
+    background: #fdf6e3 !important;
+}
+
+/* Verification */
+.cw-correct {
+    background: #e8f5e9 !important;
+}
+
+.cw-correct input {
+    color: #2e7d32;
+}
+
+.cw-wrong {
+    background: #ffebee !important;
+}
+
+.cw-wrong input {
+    color: #c62828;
+}
+
+.cw-revealed input {
+    color: var(--blue);
+    font-style: italic;
+}
+
+/* Clue lists */
+.cw-clues {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cw-clues-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.cw-clues h3 {
+    color: var(--navy);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 0.3rem;
+}
+
+.cw-clue-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cw-clue {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+    line-height: 1.5;
+}
+
+.cw-clue:hover {
+    background: var(--cream);
+}
+
+.cw-clue.active {
+    background: #fdf6e3;
+    font-weight: bold;
+}
+
+.cw-clue-num {
+    font-weight: bold;
+    color: var(--navy);
+    margin-right: 0.3rem;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+}
+
+/* Actions */
+.cw-actions {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cw-feedback {
+    text-align: center;
+    font-size: 1.1rem;
+    min-height: 2em;
+    padding: 0.5rem;
+}
+
+.cw-feedback.correct {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.cw-feedback.partial {
+    color: var(--blue);
+}
+
+/* Buttons — reuse quiz button styles */
+.cw-btn {
+    padding: 0.5rem 1.5rem;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cw-btn:hover {
+    background: var(--blue);
+}
+
+.cw-btn-secondary {
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cw-btn-secondary:hover {
+    background: var(--cream);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .cw-table td {
+        width: 28px;
+        height: 28px;
+    }
+
+    .cw-cell input {
+        font-size: 0.85rem;
+    }
+
+    .cw-number {
+        font-size: 0.5rem;
+    }
+
+    .cw-clues {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cw-clues-col {
+        min-width: unset;
+    }
+}
