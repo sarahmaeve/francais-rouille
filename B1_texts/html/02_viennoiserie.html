@@ -25,70 +25,95 @@
             </ul>
         </div>
 
+        <div class="play-combined">
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            <span>Écouter le dialogue complet</span>
+            <audio id="audio-combined" src="../audio/02_viennoiserie/combined.mp3" preload="none"></audio>
+        </div>
+
         <div class="dialogue">
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Bonjour, madame ! Qu'est-ce qui vous ferait plaisir ce matin ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Bonjour, madame ! Qu'est-ce qui vous ferait plaisir ce matin ?</div>
+                <audio id="audio-01" src="../audio/02_viennoiserie/lines/01_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Bonjour ! Alors, j'hésite un peu. Qu'est-ce que vous me conseillez aujourd'hui ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Bonjour ! Alors, j'hésite un peu. Qu'est-ce que vous me conseillez aujourd'hui ?</div>
+                <audio id="audio-02" src="../audio/02_viennoiserie/lines/02_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Les pains au chocolat viennent de sortir du four, ils sont encore tout chauds. Et nos chaussons aux pommes sont très bons aussi.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Les pains au chocolat viennent de sortir du four, ils sont encore tout chauds. Et nos chaussons aux pommes sont très bons aussi.</div>
+                <audio id="audio-03" src="../audio/02_viennoiserie/lines/03_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Mmm, ça sent vraiment bon. Je vais prendre deux pains au chocolat et un chausson aux pommes, s'il vous plaît.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Mmm, ça sent vraiment bon. Je vais prendre deux pains au chocolat et un chausson aux pommes, s'il vous plaît.</div>
+                <audio id="audio-04" src="../audio/02_viennoiserie/lines/04_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Excellent choix. C'est pour manger ici ou pour emporter ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Excellent choix. C'est pour manger ici ou pour emporter ?</div>
+                <audio id="audio-05" src="../audio/02_viennoiserie/lines/05_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Pour emporter, s'il vous plaît. C'est pour le petit-déjeuner au bureau.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Pour emporter, s'il vous plaît. C'est pour le petit-déjeuner au bureau.</div>
+                <audio id="audio-06" src="../audio/02_viennoiserie/lines/06_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                D'accord. Est-ce que vous voulez autre chose ? Nous avons aussi des croissants au beurre et des brioches.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> D'accord. Est-ce que vous voulez autre chose ? Nous avons aussi des croissants au beurre et des brioches.</div>
+                <audio id="audio-07" src="../audio/02_viennoiserie/lines/07_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Est-ce que les croissants sont faits maison ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Est-ce que les croissants sont faits maison ?</div>
+                <audio id="audio-08" src="../audio/02_viennoiserie/lines/08_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Oui, absolument. Tout est fait ici, dans notre atelier, chaque matin à partir de quatre heures.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Oui, absolument. Tout est fait ici, dans notre atelier, chaque matin à partir de quatre heures.</div>
+                <audio id="audio-09" src="../audio/02_viennoiserie/lines/09_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Dans ce cas, ajoutez trois croissants, s'il vous plaît. Mes collègues vont être contents.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Dans ce cas, ajoutez trois croissants, s'il vous plaît. Mes collègues vont être contents.</div>
+                <audio id="audio-10" src="../audio/02_viennoiserie/lines/10_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Avec plaisir. Alors, deux pains au chocolat, un chausson aux pommes et trois croissants. C'est tout ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Avec plaisir. Alors, deux pains au chocolat, un chausson aux pommes et trois croissants. C'est tout ?</div>
+                <audio id="audio-11" src="../audio/02_viennoiserie/lines/11_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Oui, c'est tout. Ça fait combien ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Oui, c'est tout. Ça fait combien ?</div>
+                <audio id="audio-12" src="../audio/02_viennoiserie/lines/12_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Ça vous fait huit euros cinquante, s'il vous plaît.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Ça vous fait huit euros cinquante, s'il vous plaît.</div>
+                <audio id="audio-13" src="../audio/02_viennoiserie/lines/13_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Voilà, je paie par carte. Est-ce que le sans contact marche ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Voilà, je paie par carte. Est-ce que le sans contact marche ?</div>
+                <audio id="audio-14" src="../audio/02_viennoiserie/lines/14_sophie.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Antoine :</span>
-                Oui, bien sûr. Posez votre carte ici. Et voilà, c'est bon ! Merci et bonne journée, madame !
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Antoine :</span> Oui, bien sûr. Posez votre carte ici. Et voilà, c'est bon ! Merci et bonne journée, madame !</div>
+                <audio id="audio-15" src="../audio/02_viennoiserie/lines/15_antoine.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Sophie :</span>
-                Merci à vous ! À demain, sûrement. Bonne journée !
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Sophie :</span> Merci à vous ! À demain, sûrement. Bonne journée !</div>
+                <audio id="audio-16" src="../audio/02_viennoiserie/lines/16_sophie.mp3" preload="none"></audio>
             </div>
         </div>
     </main>
@@ -96,5 +121,38 @@
     <footer>
         <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/02_viennoiserie_en.html">English Translation</a> &middot; <a href="vocabulaire_b1.html">Vocabulaire</a>
     </footer>
+    <script>
+    let currentAudio = null;
+    let currentBtn = null;
+
+    function toggleAudio(btn, audioId) {
+        const audio = document.getElementById(audioId);
+
+        if (currentAudio && currentAudio !== audio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            currentBtn.classList.remove('playing');
+        }
+
+        if (audio.paused) {
+            audio.play();
+            btn.classList.add('playing');
+            currentAudio = audio;
+            currentBtn = btn;
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            btn.classList.remove('playing');
+            currentAudio = null;
+            currentBtn = null;
+        }
+
+        audio.onended = function() {
+            btn.classList.remove('playing');
+            currentAudio = null;
+            currentBtn = null;
+        };
+    }
+    </script>
 </body>
 </html>
