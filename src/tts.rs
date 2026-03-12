@@ -1,10 +1,16 @@
 use base64::Engine;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 use std::path::Path;
 use thiserror::Error;
 
+use crate::dialog::{self, DialogLine};
+
 const GOOGLE_TTS_URL: &str = "https://texttospeech.googleapis.com/v1/text:synthesize";
+
+/// Milliseconds of silence inserted between dialog lines when combining.
+const PAUSE_BETWEEN_LINES_MS: u32 = 750;
 
 #[derive(Error, Debug)]
 pub enum TtsError {
@@ -18,9 +24,11 @@ pub enum TtsError {
     Decode(#[from] base64::DecodeError),
     #[error("file I/O error: {0}")]
     Io(#[from] std::io::Error),
+    #[error("no dialog lines found in input")]
+    EmptyDialog,
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum FrenchVoice {
     /// Standard female voice (fr-FR)
     StandardA,
@@ -49,8 +57,12 @@ struct SynthesizeRequest<'a> {
 }
 
 #[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
 struct SynthesisInput<'a> {
-    text: &'a str,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    text: Option<&'a str>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    ssml: Option<&'a str>,
 }
 
 #[derive(Serialize)]
@@ -72,6 +84,21 @@ struct SynthesizeResponse {
     audio_content: String,
 }
 
+/// Result of synthesizing an entire dialog.
+pub struct DialogAudio {
+    /// One MP3 per dialog line, in order.
+    pub lines: Vec<LineAudio>,
+    /// All lines concatenated with silence between them.
+    pub combined: Vec<u8>,
+}
+
+pub struct LineAudio {
+    pub index: usize,
+    pub speaker: String,
+    pub text: String,
+    pub mp3: Vec<u8>,
+}
+
 #[derive(Debug)]
 pub struct GoogleTts {
     client: Client,
@@ -88,14 +115,45 @@ impl GoogleTts {
         })
     }
 
-    /// Synthesizes `text` as French speech and returns raw MP3 bytes.
+    /// Synthesizes plain `text` as French speech and returns raw MP3 bytes.
     pub async fn synthesize(
         &self,
         text: &str,
         voice: FrenchVoice,
     ) -> Result<Vec<u8>, TtsError> {
+        self.synthesize_input(
+            SynthesisInput {
+                text: Some(text),
+                ssml: None,
+            },
+            voice,
+        )
+        .await
+    }
+
+    /// Synthesizes SSML content and returns raw MP3 bytes.
+    async fn synthesize_ssml(
+        &self,
+        ssml: &str,
+        voice: FrenchVoice,
+    ) -> Result<Vec<u8>, TtsError> {
+        self.synthesize_input(
+            SynthesisInput {
+                text: None,
+                ssml: Some(ssml),
+            },
+            voice,
+        )
+        .await
+    }
+
+    async fn synthesize_input(
+        &self,
+        input: SynthesisInput<'_>,
+        voice: FrenchVoice,
+    ) -> Result<Vec<u8>, TtsError> {
         let body = SynthesizeRequest {
-            input: SynthesisInput { text },
+            input,
             voice: VoiceSelection {
                 language_code: "fr-FR",
                 name: voice.name(),
@@ -122,6 +180,19 @@ impl GoogleTts {
         Ok(bytes)
     }
 
+    /// Generate a short silence as MP3 bytes using SSML `<break>`.
+    async fn synthesize_silence(
+        &self,
+        ms: u32,
+        voice: FrenchVoice,
+    ) -> Result<Vec<u8>, TtsError> {
+        let ssml = format!(
+            "<speak><break time=\"{}ms\"/></speak>",
+            ms
+        );
+        self.synthesize_ssml(&ssml, voice).await
+    }
+
     /// Synthesizes `text` and writes the MP3 to `output_path`.
     pub async fn synthesize_to_file(
         &self,
@@ -132,6 +203,53 @@ impl GoogleTts {
         let bytes = self.synthesize(text, voice).await?;
         std::fs::write(output_path, &bytes)?;
         Ok(())
+    }
+
+    /// Synthesize an entire dialog file.
+    ///
+    /// Returns per-line MP3 audio and a single combined MP3 with silence
+    /// gaps between lines. Individual MP3 frames are independently
+    /// decodable, so concatenation produces a valid stream.
+    pub async fn synthesize_dialog(
+        &self,
+        content: &str,
+    ) -> Result<DialogAudio, TtsError> {
+        let parsed = dialog::parse_dialog(content);
+        if parsed.is_empty() {
+            return Err(TtsError::EmptyDialog);
+        }
+
+        let genders = dialog::parse_character_genders(content);
+        let voice_map: HashMap<String, FrenchVoice> =
+            dialog::assign_voices(&parsed, &genders);
+
+        // Pre-generate the silence segment once (using the first voice).
+        let silence = self
+            .synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::WavenetA)
+            .await?;
+
+        let mut lines = Vec::with_capacity(parsed.len());
+        let mut combined = Vec::new();
+
+        for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
+            let voice = voice_map[&speaker];
+            let mp3 = self.synthesize(&text, voice).await?;
+
+            // Append to combined stream.
+            if i > 0 {
+                combined.extend_from_slice(&silence);
+            }
+            combined.extend_from_slice(&mp3);
+
+            lines.push(LineAudio {
+                index: i + 1,
+                speaker,
+                text,
+                mp3,
+            });
+        }
+
+        Ok(DialogAudio { lines, combined })
     }
 }
 
@@ -156,10 +274,11 @@ mod tests {
     }
 
     #[test]
-    fn request_body_serializes_correctly() {
+    fn request_body_serializes_text_input() {
         let req = SynthesizeRequest {
             input: SynthesisInput {
-                text: "Bonjour le monde",
+                text: Some("Bonjour le monde"),
+                ssml: None,
             },
             voice: VoiceSelection {
                 language_code: "fr-FR",
@@ -172,8 +291,31 @@ mod tests {
 
         let json = serde_json::to_value(&req).unwrap();
         assert_eq!(json["input"]["text"], "Bonjour le monde");
+        assert!(json["input"].get("ssml").is_none());
         assert_eq!(json["voice"]["languageCode"], "fr-FR");
         assert_eq!(json["voice"]["name"], "fr-FR-Wavenet-A");
         assert_eq!(json["audioConfig"]["audioEncoding"], "MP3");
+    }
+
+    #[test]
+    fn request_body_serializes_ssml_input() {
+        let ssml = "<speak><break time=\"750ms\"/></speak>";
+        let req = SynthesizeRequest {
+            input: SynthesisInput {
+                text: None,
+                ssml: Some(ssml),
+            },
+            voice: VoiceSelection {
+                language_code: "fr-FR",
+                name: FrenchVoice::WavenetA.name(),
+            },
+            audio_config: AudioConfig {
+                audio_encoding: "MP3",
+            },
+        };
+
+        let json = serde_json::to_value(&req).unwrap();
+        assert!(json["input"].get("text").is_none());
+        assert_eq!(json["input"]["ssml"], ssml);
     }
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Evening — Galerie Gallimard (English)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body { background-color: #fefcf6; }
+        .gallimard-header {
+            text-align: center;
+            padding: 2.5rem 2rem 2rem;
+            margin-bottom: 2rem;
+            border: 3px double #8b0000;
+            background: #fffef8;
+        }
+        .gallimard-nrf {
+            display: inline-block;
+            border: 2px solid #8b0000;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #8b0000;
+            margin-bottom: 0.8rem;
+            font-family: 'Georgia', serif;
+        }
+        .gallimard-name {
+            font-size: 1.6rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #1a1a1a;
+            margin-bottom: 0.2rem;
+            font-family: 'Georgia', serif;
+        }
+        .gallimard-collection {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .gallimard-divider {
+            width: 60px;
+            height: 2px;
+            background: #8b0000;
+            margin: 1.2rem auto;
+        }
+        .gallimard-header h1 { font-size: 1.4rem; color: #1a1a1a; margin-bottom: 0.3rem; }
+        .gallimard-header .subtitle { font-size: 0.95rem; color: #555; font-style: italic; margin-bottom: 0.8rem; }
+        .gallimard-header .book-title { font-size: 1.5rem; color: #8b0000; font-style: italic; font-weight: bold; }
+        .event-intro { text-align: center; font-size: 1rem; line-height: 1.8; max-width: 640px; margin: 0 auto 2rem; color: #333; }
+        .event-section { background: #fff; border: 1px solid #e0ddd4; border-radius: 6px; padding: 1.5rem; margin-bottom: 1.2rem; }
+        .event-section h2 { font-size: 1.05rem; color: #8b0000; margin-bottom: 0.8rem; padding-bottom: 0.3rem; border-bottom: 1px solid #e0ddd4; }
+        .info-grid { display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 1.2rem; }
+        .info-grid .label { font-weight: bold; color: #1a1a1a; }
+        .info-grid .value { color: #333; }
+        .programme-list { list-style: none; padding: 0; }
+        .programme-list li { padding: 0.5rem 0; border-bottom: 1px dotted #e0ddd4; display: flex; gap: 1rem; }
+        .programme-list li:last-child { border-bottom: none; }
+        .programme-list .time { font-weight: bold; color: #8b0000; min-width: 65px; }
+        .review-quote { border-left: 3px solid #8b0000; padding-left: 1.2rem; font-style: italic; color: #444; margin-top: 1rem; }
+        .review-quote .source { font-style: normal; font-size: 0.85rem; color: #888; margin-top: 0.3rem; }
+        .gallimard-footer {
+            text-align: center; margin-top: 2.5rem; padding-top: 1.5rem;
+            border-top: 2px double #8b0000; font-size: 0.85rem; color: #888; line-height: 1.6;
+        }
+        .gallimard-footer .contact-email { color: #8b0000; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="../index.html">Accueil</a> &rsaquo; <a href="../09_gallimard_evenement.html">Version française</a> &rsaquo; English Translation
+    </nav>
+
+    <main>
+        <div class="gallimard-header">
+            <div class="gallimard-nrf">N R F</div>
+            <div class="gallimard-name">Éditions Gallimard</div>
+            <div class="gallimard-collection">Collection Blanche</div>
+            <div class="gallimard-divider"></div>
+            <h1>An Evening with Kamel Daoud</h1>
+            <div class="subtitle">On the occasion of the publication of his new novel</div>
+            <div class="book-title">&laquo; Les Flammes de l'Oubli &raquo;</div>
+            <div style="font-size: 0.85rem; color: #777; margin-top: 0.3rem;">(The Flames of Forgetting)</div>
+        </div>
+
+        <p class="event-intro">
+            Éditions Gallimard is pleased to invite you to an exceptional evening with <strong>Kamel Daoud</strong>, winner of the 2024 Prix Goncourt, on the occasion of the publication of his new novel <em>Les Flammes de l'Oubli</em>, published in the prestigious Collection Blanche.
+        </p>
+
+        <div class="event-section">
+            <h2>Practical Information</h2>
+            <div class="info-grid">
+                <span class="label">Date</span>
+                <span class="value">Wednesday, March 18, 2026, at 7:00 PM</span>
+                <span class="label">Location</span>
+                <span class="value">Galerie Gallimard, 30 rue de l'Université, 75007 Paris</span>
+                <span class="label">Access</span>
+                <span class="value">Métro Rue du Bac (line 12) or Solférino (line 12)</span>
+                <span class="label">Admission</span>
+                <span class="value">Free, subject to availability</span>
+            </div>
+        </div>
+
+        <div class="event-section">
+            <h2>Evening Program</h2>
+            <ul class="programme-list">
+                <li><span class="time">7:00 PM</span> <span>Welcome</span></li>
+                <li><span class="time">7:30 PM</span> <span>Reading of excerpts from the novel by the author</span></li>
+                <li><span class="time">7:50 PM</span> <span>Conversation with the author, moderated by Nathalie Crom</span></li>
+                <li><span class="time">8:30 PM</span> <span>Audience questions</span></li>
+                <li><span class="time">8:50 PM</span> <span>Book signing</span></li>
+                <li><span class="time">9:30 PM</span> <span>End of the evening</span></li>
+            </ul>
+        </div>
+
+        <div class="event-section">
+            <h2>About the Novel</h2>
+            <p>In <em>Les Flammes de l'Oubli</em>, Kamel Daoud continues his exploration of wounded memories and the silences of history. The novel follows the journey of Selma, an archivist in Algiers who discovers a forgotten manuscript in the basement of the National Library. This mysterious text will upend her understanding of the past and draw her into a quest across three cities and three eras.</p>
+            <div class="review-quote">
+                <p>"A powerful and luminous novel that interrogates memory with rare grace."</p>
+                <div class="source">&mdash; Le Monde des Livres</div>
+            </div>
+        </div>
+
+        <div class="event-section">
+            <h2>Additional Information</h2>
+            <p>Copies of the novel will be available for purchase on site. The book signing will follow immediately after the conversation.</p>
+            <p>Arriving early is recommended. Seats cannot be reserved.</p>
+        </div>
+
+        <div class="gallimard-footer">
+            <div class="gallimard-nrf" style="margin-bottom: 0.8rem;">N R F</div><br>
+            <strong>Éditions Gallimard</strong><br>
+            5, rue Gaston-Gallimard, 75328 Paris cedex 07<br>
+            Contact: <span class="contact-email">evenements@gallimard.fr</span><br><br>
+            <a href="../index.html">Back to Index</a> &middot; <a href="../09_gallimard_evenement.html">Version française</a> &middot; <a href="../vocabulaire_b1.html">Vocabulaire</a>
+        </div>
+    </main>
+</body>
+</html>

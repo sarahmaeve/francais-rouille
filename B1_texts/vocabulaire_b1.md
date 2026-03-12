@@ -179,6 +179,105 @@
 | emménager | to move in |
 | un QG | a hangout (abbreviation of "quartier général" = headquarters) |
 
+## Visite à la Boulangerie — Les Spécialités
+
+| Français | English |
+|---|---|
+| la vitrine | the display window |
+| délicieux / délicieuse | delicious |
+| tenter | to tempt |
+| recommander | to recommend |
+| la meilleure vente | the best seller |
+| particulier | special / distinctive |
+| le chocolat noir | dark chocolate |
+| un artisan | a craftsman / artisan |
+| la crème pâtissière | pastry cream |
+| le glaçage | the glaze / icing |
+| préparé à la minute | made to order |
+| une spécialité maison | a house specialty |
+| une création originale | an original creation |
+| la pâte feuilletée | puff pastry |
+| croustillant(e) | crispy / crunchy |
+| une mousse | a mousse |
+| la noisette | the hazelnut |
+| le caramel au beurre salé | salted butter caramel |
+| un cœur (de caramel) | a center / heart (of caramel) |
+| saupoudrer | to sprinkle |
+| torréfié(e) | toasted / roasted |
+| la fleur de sel | fleur de sel (finishing salt) |
+| une recette | a recipe |
+| un(e) pâtissier / pâtissière | a pastry chef |
+| sa fierté | his/her pride (and joy) |
+| une carte de fidélité | a loyalty card |
+| un achat | a purchase |
+| gratuit(e) | free (of charge) |
+| la dégustation | the tasting |
+
+## Réserver un Taxi — L'Hôtel et le Transport
+
+| Français | English |
+|---|---|
+| réserver | to book / to reserve |
+| un taxi | a taxi |
+| déranger | to bother / to disturb |
+| un vol | a flight |
+| la circulation | the traffic |
+| il vaut mieux | it's better to |
+| prévoir de la marge | to allow extra time |
+| durer | to last (time) |
+| il faut compter | you should expect / allow for |
+| le terminal | the terminal |
+| dégagé(e) | clear (roads) |
+| le tarif | the fare / rate |
+| un forfait fixe | a fixed flat rate |
+| la rive droite | the Right Bank |
+| la rive gauche | the Left Bank |
+| réglementé | regulated |
+| un chauffeur | a driver |
+| en espèces | in cash |
+| une carte bancaire | a bank card |
+| venir chercher | to pick up |
+| l'entrée principale | the main entrance |
+| une compagnie partenaire | a partner company |
+| ponctuel(le) | punctual / on time |
+| un pourboire | a tip |
+| obligatoire | mandatory / required |
+| arrondir | to round up |
+| Bon voyage ! | Have a good trip! |
+
+## Rencontre Littéraire — Événement et Culture
+
+| Français | English |
+|---|---|
+| une rencontre | a meeting / an event |
+| littéraire | literary |
+| une galerie | a gallery |
+| à l'occasion de | on the occasion of |
+| la parution | the publication / release |
+| un roman | a novel |
+| un(e) auteur(e) | an author |
+| un lauréat | a winner / laureate |
+| un prix (littéraire) | a (literary) prize |
+| prestigieux / prestigieuse | prestigious |
+| une collection | a collection / imprint |
+| un extrait | an excerpt |
+| une lecture | a reading |
+| une conversation | a conversation / discussion |
+| animé par | moderated by / hosted by |
+| le public | the audience |
+| une séance de dédicaces | a book signing |
+| un exemplaire | a copy (of a book) |
+| disponible à l'achat | available for purchase |
+| sur place | on site |
+| dans la limite des places | subject to availability |
+| il est recommandé de | it is recommended to |
+| réservable | able to be reserved |
+| un manuscrit | a manuscript |
+| bouleverser | to upend / to turn upside down |
+| une quête | a quest |
+| puissant(e) | powerful |
+| lumineux / lumineuse | luminous / bright |
+
 ## Expressions Générales (B1)
 
 | Français | English |
