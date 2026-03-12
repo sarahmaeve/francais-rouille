@@ -28,24 +28,162 @@ pub enum TtsError {
     EmptyDialog,
 }
 
+/// Premium fr-FR voices from Google Cloud Text-to-Speech, segmented by gender.
+///
+/// See: https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum FrenchVoice {
-    /// Standard female voice (fr-FR)
-    StandardA,
-    /// WaveNet female voice (fr-FR, higher quality)
-    WavenetA,
-    /// WaveNet male voice (fr-FR, higher quality)
-    WavenetB,
+    // ── Female voices ────────────────────────────────────────────
+    // Studio
+    StudioA,
+    // Neural2
+    Neural2F,
+    // Wavenet
+    WavenetF,
+    // Chirp HD
+    ChirpHdF,
+    ChirpHdO,
+    // Chirp3 HD
+    Chirp3HdAchernar,
+    Chirp3HdAoede,
+    Chirp3HdAutonoe,
+    Chirp3HdCallirrhoe,
+    Chirp3HdDespina,
+    Chirp3HdErinome,
+    Chirp3HdGacrux,
+    Chirp3HdKore,
+    Chirp3HdLaomedeia,
+    Chirp3HdLeda,
+    Chirp3HdPulcherrima,
+    Chirp3HdSulafat,
+    Chirp3HdVindemiatrix,
+    Chirp3HdZephyr,
+
+    // ── Male voices ──────────────────────────────────────────────
+    // Studio
+    StudioD,
+    // Neural2
+    Neural2G,
+    // Wavenet
+    WavenetG,
+    // Polyglot
+    Polyglot1,
+    // Chirp HD
+    ChirpHdD,
+    // Chirp3 HD
+    Chirp3HdAchird,
+    Chirp3HdAlgenib,
+    Chirp3HdAlgieba,
+    Chirp3HdAlnilam,
+    Chirp3HdCharon,
+    Chirp3HdEnceladus,
+    Chirp3HdFenrir,
+    Chirp3HdIapetus,
+    Chirp3HdOrus,
+    Chirp3HdPuck,
+    Chirp3HdRasalgethi,
+    Chirp3HdSadachbia,
+    Chirp3HdSadaltager,
+    Chirp3HdSchedar,
+    Chirp3HdUmbriel,
+    Chirp3HdZubenelgenubi,
 }
 
 impl FrenchVoice {
     fn name(self) -> &'static str {
         match self {
-            Self::StandardA => "fr-FR-Standard-A",
-            Self::WavenetA => "fr-FR-Wavenet-A",
-            Self::WavenetB => "fr-FR-Wavenet-B",
+            // Female
+            Self::StudioA => "fr-FR-Studio-A",
+            Self::Neural2F => "fr-FR-Neural2-F",
+            Self::WavenetF => "fr-FR-Wavenet-F",
+            Self::ChirpHdF => "fr-FR-Chirp-HD-F",
+            Self::ChirpHdO => "fr-FR-Chirp-HD-O",
+            Self::Chirp3HdAchernar => "fr-FR-Chirp3-HD-Achernar",
+            Self::Chirp3HdAoede => "fr-FR-Chirp3-HD-Aoede",
+            Self::Chirp3HdAutonoe => "fr-FR-Chirp3-HD-Autonoe",
+            Self::Chirp3HdCallirrhoe => "fr-FR-Chirp3-HD-Callirrhoe",
+            Self::Chirp3HdDespina => "fr-FR-Chirp3-HD-Despina",
+            Self::Chirp3HdErinome => "fr-FR-Chirp3-HD-Erinome",
+            Self::Chirp3HdGacrux => "fr-FR-Chirp3-HD-Gacrux",
+            Self::Chirp3HdKore => "fr-FR-Chirp3-HD-Kore",
+            Self::Chirp3HdLaomedeia => "fr-FR-Chirp3-HD-Laomedeia",
+            Self::Chirp3HdLeda => "fr-FR-Chirp3-HD-Leda",
+            Self::Chirp3HdPulcherrima => "fr-FR-Chirp3-HD-Pulcherrima",
+            Self::Chirp3HdSulafat => "fr-FR-Chirp3-HD-Sulafat",
+            Self::Chirp3HdVindemiatrix => "fr-FR-Chirp3-HD-Vindemiatrix",
+            Self::Chirp3HdZephyr => "fr-FR-Chirp3-HD-Zephyr",
+            // Male
+            Self::StudioD => "fr-FR-Studio-D",
+            Self::Neural2G => "fr-FR-Neural2-G",
+            Self::WavenetG => "fr-FR-Wavenet-G",
+            Self::Polyglot1 => "fr-FR-Polyglot-1",
+            Self::ChirpHdD => "fr-FR-Chirp-HD-D",
+            Self::Chirp3HdAchird => "fr-FR-Chirp3-HD-Achird",
+            Self::Chirp3HdAlgenib => "fr-FR-Chirp3-HD-Algenib",
+            Self::Chirp3HdAlgieba => "fr-FR-Chirp3-HD-Algieba",
+            Self::Chirp3HdAlnilam => "fr-FR-Chirp3-HD-Alnilam",
+            Self::Chirp3HdCharon => "fr-FR-Chirp3-HD-Charon",
+            Self::Chirp3HdEnceladus => "fr-FR-Chirp3-HD-Enceladus",
+            Self::Chirp3HdFenrir => "fr-FR-Chirp3-HD-Fenrir",
+            Self::Chirp3HdIapetus => "fr-FR-Chirp3-HD-Iapetus",
+            Self::Chirp3HdOrus => "fr-FR-Chirp3-HD-Orus",
+            Self::Chirp3HdPuck => "fr-FR-Chirp3-HD-Puck",
+            Self::Chirp3HdRasalgethi => "fr-FR-Chirp3-HD-Rasalgethi",
+            Self::Chirp3HdSadachbia => "fr-FR-Chirp3-HD-Sadachbia",
+            Self::Chirp3HdSadaltager => "fr-FR-Chirp3-HD-Sadaltager",
+            Self::Chirp3HdSchedar => "fr-FR-Chirp3-HD-Schedar",
+            Self::Chirp3HdUmbriel => "fr-FR-Chirp3-HD-Umbriel",
+            Self::Chirp3HdZubenelgenubi => "fr-FR-Chirp3-HD-Zubenelgenubi",
         }
     }
+
+    /// Default female voices, ordered by preference (highest quality first).
+    pub const FEMALE: &[FrenchVoice] = &[
+        Self::StudioA,
+        Self::Neural2F,
+        Self::WavenetF,
+        Self::ChirpHdF,
+        Self::ChirpHdO,
+        Self::Chirp3HdAchernar,
+        Self::Chirp3HdAoede,
+        Self::Chirp3HdAutonoe,
+        Self::Chirp3HdCallirrhoe,
+        Self::Chirp3HdDespina,
+        Self::Chirp3HdErinome,
+        Self::Chirp3HdGacrux,
+        Self::Chirp3HdKore,
+        Self::Chirp3HdLaomedeia,
+        Self::Chirp3HdLeda,
+        Self::Chirp3HdPulcherrima,
+        Self::Chirp3HdSulafat,
+        Self::Chirp3HdVindemiatrix,
+        Self::Chirp3HdZephyr,
+    ];
+
+    /// Default male voices, ordered by preference (highest quality first).
+    pub const MALE: &[FrenchVoice] = &[
+        Self::StudioD,
+        Self::Neural2G,
+        Self::WavenetG,
+        Self::Polyglot1,
+        Self::ChirpHdD,
+        Self::Chirp3HdAchird,
+        Self::Chirp3HdAlgenib,
+        Self::Chirp3HdAlgieba,
+        Self::Chirp3HdAlnilam,
+        Self::Chirp3HdCharon,
+        Self::Chirp3HdEnceladus,
+        Self::Chirp3HdFenrir,
+        Self::Chirp3HdIapetus,
+        Self::Chirp3HdOrus,
+        Self::Chirp3HdPuck,
+        Self::Chirp3HdRasalgethi,
+        Self::Chirp3HdSadachbia,
+        Self::Chirp3HdSadaltager,
+        Self::Chirp3HdSchedar,
+        Self::Chirp3HdUmbriel,
+        Self::Chirp3HdZubenelgenubi,
+    ];
 }
 
 #[derive(Serialize)]
@@ -225,7 +363,7 @@ impl GoogleTts {
 
         // Pre-generate the silence segment once (using the first voice).
         let silence = self
-            .synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::WavenetA)
+            .synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::FEMALE[0])
             .await?;
 
         let mut lines = Vec::with_capacity(parsed.len());
@@ -259,9 +397,30 @@ mod tests {
 
     #[test]
     fn voice_names_are_valid_google_ids() {
-        assert_eq!(FrenchVoice::StandardA.name(), "fr-FR-Standard-A");
-        assert_eq!(FrenchVoice::WavenetA.name(), "fr-FR-Wavenet-A");
-        assert_eq!(FrenchVoice::WavenetB.name(), "fr-FR-Wavenet-B");
+        // Spot-check representative voices from each tier.
+        assert_eq!(FrenchVoice::StudioA.name(), "fr-FR-Studio-A");
+        assert_eq!(FrenchVoice::StudioD.name(), "fr-FR-Studio-D");
+        assert_eq!(FrenchVoice::Neural2F.name(), "fr-FR-Neural2-F");
+        assert_eq!(FrenchVoice::Neural2G.name(), "fr-FR-Neural2-G");
+        assert_eq!(FrenchVoice::WavenetF.name(), "fr-FR-Wavenet-F");
+        assert_eq!(FrenchVoice::WavenetG.name(), "fr-FR-Wavenet-G");
+        assert_eq!(FrenchVoice::Polyglot1.name(), "fr-FR-Polyglot-1");
+        assert_eq!(FrenchVoice::ChirpHdD.name(), "fr-FR-Chirp-HD-D");
+        assert_eq!(FrenchVoice::ChirpHdF.name(), "fr-FR-Chirp-HD-F");
+        assert_eq!(
+            FrenchVoice::Chirp3HdAchernar.name(),
+            "fr-FR-Chirp3-HD-Achernar"
+        );
+        assert_eq!(
+            FrenchVoice::Chirp3HdZubenelgenubi.name(),
+            "fr-FR-Chirp3-HD-Zubenelgenubi"
+        );
+    }
+
+    #[test]
+    fn female_and_male_pools_are_nonempty() {
+        assert!(!FrenchVoice::FEMALE.is_empty());
+        assert!(!FrenchVoice::MALE.is_empty());
     }
 
     #[test]
@@ -282,7 +441,7 @@ mod tests {
             },
             voice: VoiceSelection {
                 language_code: "fr-FR",
-                name: FrenchVoice::WavenetA.name(),
+                name: FrenchVoice::StudioA.name(),
             },
             audio_config: AudioConfig {
                 audio_encoding: "MP3",
@@ -293,7 +452,7 @@ mod tests {
         assert_eq!(json["input"]["text"], "Bonjour le monde");
         assert!(json["input"].get("ssml").is_none());
         assert_eq!(json["voice"]["languageCode"], "fr-FR");
-        assert_eq!(json["voice"]["name"], "fr-FR-Wavenet-A");
+        assert_eq!(json["voice"]["name"], "fr-FR-Studio-A");
         assert_eq!(json["audioConfig"]["audioEncoding"], "MP3");
     }
 
@@ -307,7 +466,7 @@ mod tests {
             },
             voice: VoiceSelection {
                 language_code: "fr-FR",
-                name: FrenchVoice::WavenetA.name(),
+                name: FrenchVoice::StudioA.name(),
             },
             audio_config: AudioConfig {
                 audio_encoding: "MP3",

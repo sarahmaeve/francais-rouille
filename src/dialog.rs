@@ -1,5 +1,7 @@
 use std::collections::HashMap;
 
+use rand::seq::SliceRandom;
+
 use crate::tts::FrenchVoice;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -103,27 +105,51 @@ fn detect_gender_from_description(description: &str) -> Option<Gender> {
     }
 }
 
-/// Assign voices to speakers based on gender detected from character
-/// descriptions. Falls back to alternating voices if no gender info is found.
+/// Assign randomly-selected distinct voices to speakers based on detected
+/// gender. The voice pools are shuffled once per call, so each program run
+/// produces a different combination, but every line for a given character
+/// uses the same voice throughout the dialog.
 pub fn assign_voices(
     lines: &[DialogLine],
     genders: &HashMap<String, Gender>,
 ) -> HashMap<String, FrenchVoice> {
+    let mut rng = rand::rng();
+
+    let mut female_pool: Vec<FrenchVoice> = FrenchVoice::FEMALE.to_vec();
+    let mut male_pool: Vec<FrenchVoice> = FrenchVoice::MALE.to_vec();
+    female_pool.shuffle(&mut rng);
+    male_pool.shuffle(&mut rng);
+
     let mut map = HashMap::new();
-    let fallback_voices = [FrenchVoice::WavenetA, FrenchVoice::WavenetB];
-    let mut fallback_idx = 0;
+    let mut female_idx: usize = 0;
+    let mut male_idx: usize = 0;
 
     for line in lines {
         if map.contains_key(&line.speaker) {
             continue;
         }
 
-        let voice = match genders.get(&line.speaker) {
-            Some(Gender::Female) => FrenchVoice::WavenetA,
-            Some(Gender::Male) => FrenchVoice::WavenetB,
-            None => {
-                let v = fallback_voices[fallback_idx % fallback_voices.len()];
-                fallback_idx += 1;
+        let gender = genders
+            .get(&line.speaker)
+            .copied()
+            .unwrap_or_else(|| {
+                // Alternate when gender is unknown.
+                if (female_idx + male_idx) % 2 == 0 {
+                    Gender::Female
+                } else {
+                    Gender::Male
+                }
+            });
+
+        let voice = match gender {
+            Gender::Female => {
+                let v = female_pool[female_idx % female_pool.len()];
+                female_idx += 1;
+                v
+            }
+            Gender::Male => {
+                let v = male_pool[male_idx % male_pool.len()];
+                male_idx += 1;
                 v
             }
         };
@@ -253,15 +279,68 @@ Monsieur Duval : Notre éclair au chocolat noir, c'est notre meilleure vente.
     }
 
     #[test]
-    fn assign_voices_uses_gender() {
+    fn assign_voices_respects_gender() {
         let lines = parse_dialog(SAMPLE);
         let genders = parse_character_genders(SAMPLE);
         let voices = assign_voices(&lines, &genders);
         assert_eq!(voices.len(), 2);
-        // Claire is female → WavenetA
-        assert_eq!(voices["Claire"], FrenchVoice::WavenetA);
-        // Monsieur Duval is male → WavenetB
-        assert_eq!(voices["Monsieur Duval"], FrenchVoice::WavenetB);
+        // Claire is female → must be a voice from the female pool.
+        assert!(FrenchVoice::FEMALE.contains(&voices["Claire"]));
+        // Monsieur Duval is male → must be from the male pool.
+        assert!(FrenchVoice::MALE.contains(&voices["Monsieur Duval"]));
+    }
+
+    #[test]
+    fn assign_voices_distinct_same_gender() {
+        // Two female speakers should get different voices.
+        let content = "\
+- Camille — la future locataire potentielle
+- Yasmine — une habitante du quartier
+
+Camille : Bonjour.
+
+Yasmine : Salut !
+";
+        let lines = parse_dialog(content);
+        let genders = parse_character_genders(content);
+        let voices = assign_voices(&lines, &genders);
+        assert!(FrenchVoice::FEMALE.contains(&voices["Camille"]));
+        assert!(FrenchVoice::FEMALE.contains(&voices["Yasmine"]));
+        assert_ne!(voices["Camille"], voices["Yasmine"]);
+    }
+
+    #[test]
+    fn assign_voices_consistent_across_lines() {
+        // The same speaker must always get the same voice.
+        let lines = parse_dialog(SAMPLE);
+        let genders = parse_character_genders(SAMPLE);
+        let voices = assign_voices(&lines, &genders);
+        // Claire speaks lines 0 and 2; Duval speaks 1 and 3.
+        // All lines for each speaker should map to the same voice.
+        let claire_voice = &voices["Claire"];
+        let duval_voice = &voices["Monsieur Duval"];
+        for line in &lines {
+            assert_eq!(voices[&line.speaker], match line.speaker.as_str() {
+                "Claire" => *claire_voice,
+                "Monsieur Duval" => *duval_voice,
+                _ => unreachable!(),
+            });
+        }
+    }
+
+    #[test]
+    fn assign_voices_is_randomized() {
+        // Run assignment many times; we should see more than one distinct
+        // mapping (proving the shuffle is effective).
+        let lines = parse_dialog(SAMPLE);
+        let genders = parse_character_genders(SAMPLE);
+        let mut seen_claire = std::collections::HashSet::new();
+        for _ in 0..50 {
+            let voices = assign_voices(&lines, &genders);
+            seen_claire.insert(voices["Claire"]);
+        }
+        // With 19 female voices, 50 trials should produce multiple results.
+        assert!(seen_claire.len() > 1, "voices should be randomized across runs");
     }
 
     #[test]
@@ -278,9 +357,9 @@ Monsieur Duval : Notre éclair au chocolat noir, c'est notre meilleure vente.
         ];
         let genders = HashMap::new();
         let voices = assign_voices(&lines, &genders);
-        // Falls back to alternating: first WavenetA, then WavenetB
-        assert_eq!(voices["Unknown"], FrenchVoice::WavenetA);
-        assert_eq!(voices["Stranger"], FrenchVoice::WavenetB);
+        // Falls back to alternating: first from female pool, second from male pool.
+        assert!(FrenchVoice::FEMALE.contains(&voices["Unknown"]));
+        assert!(FrenchVoice::MALE.contains(&voices["Stranger"]));
     }
 
     #[test]
