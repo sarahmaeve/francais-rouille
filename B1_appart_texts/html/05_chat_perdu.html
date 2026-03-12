@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Chat Perdu — Français Rouille B1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="index.html">Accueil</a> &rsaquo; Le Chat Perdu
+    </nav>
+
+    <header>
+        <h1>Le Chat Perdu</h1>
+        <p>Dialogue B1 — Français informel entre voisins</p>
+    </header>
+
+    <main>
+        <div class="personnages">
+            <h2>Personnages</h2>
+            <ul>
+                <li><strong>Maeve</strong> &mdash; une locataire irlandaise qui habite au troisième étage</li>
+                <li><strong>Irene</strong> &mdash; la compagne de Maeve</li>
+                <li><strong>Hélène</strong> &mdash; une voisine du deuxième étage, retraitée</li>
+                <li><strong>Karim</strong> &mdash; un voisin du rez-de-chaussée, étudiant</li>
+            </ul>
+        </div>
+
+        <div class="play-combined">
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            <span>Écouter le dialogue complet</span>
+            <audio id="audio-combined" src="../audio/05_chat_perdu/combined.mp3" preload="none"></audio>
+        </div>
+
+        <div class="dialogue">
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Hélène ! Karim ! Excusez-moi de vous déranger, mais est-ce que vous avez vu un chat gris ce matin ? Le nôtre a disparu.</div>
+                <audio id="audio-01" src="../audio/05_chat_perdu/lines/01_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-c">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Hélène :</span> Un chat gris ? Comment il est exactement ?</div>
+                <audio id="audio-02" src="../audio/05_chat_perdu/lines/02_helene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Irene :</span> Il est gris foncé avec une petite tache blanche sur le poitrail. Il s'appelle Moustache. Il est sorti ce matin par la fenêtre de la cuisine et il n'est pas revenu.</div>
+                <audio id="audio-03" src="../audio/05_chat_perdu/lines/03_irene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-c">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Hélène :</span> Oh, le pauvre ! Non, je ne l'ai pas vu aujourd'hui. Mais vous savez, les chats du quartier, ils se baladent souvent sur les toits. C'est la Croix-Rousse, y'a des passages partout.</div>
+                <audio id="audio-04" src="../audio/05_chat_perdu/lines/04_helene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-d">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Karim :</span> Moi j'ai vu un chat gris hier soir dans la cour, vers vingt-deux heures. Il était sur le mur du fond. C'est peut-être le vôtre ?</div>
+                <audio id="audio-05" src="../audio/05_chat_perdu/lines/05_karim.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> C'est possible ! Il adore grimper sur les murs. On l'a cherché dans tout l'appartement, dans la cage d'escalier, dans la cave, mais rien.</div>
+                <audio id="audio-06" src="../audio/05_chat_perdu/lines/06_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-d">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Karim :</span> Vous avez regardé dans les traboules ? Y'en a une juste à côté de l'immeuble. Les chats adorent se planquer là-dedans.</div>
+                <audio id="audio-07" src="../audio/05_chat_perdu/lines/07_karim.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Irene :</span> Les traboules, c'est les passages couverts, c'est ça ? On n'a pas encore pensé à regarder là.</div>
+                <audio id="audio-08" src="../audio/05_chat_perdu/lines/08_irene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-c">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Hélène :</span> Oui, essayez celle qui donne sur la montée de la Grande-Côte. Et aussi, mettez sa litière sur le balcon. Paraît que l'odeur les aide à retrouver le chemin.</div>
+                <audio id="audio-09" src="../audio/05_chat_perdu/lines/09_helene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Bonne idée ! On va faire ça tout de suite.</div>
+                <audio id="audio-10" src="../audio/05_chat_perdu/lines/10_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-d">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Karim :</span> Sinon, vous pouvez mettre une annonce sur le groupe Facebook du quartier. C'est « Habitants de la Croix-Rousse ». Les gens sont super réactifs dessus. Ma voisine a retrouvé son chat comme ça la semaine dernière.</div>
+                <audio id="audio-11" src="../audio/05_chat_perdu/lines/11_karim.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Irene :</span> Ah oui, c'est malin. Tu peux nous envoyer le lien, Karim ?</div>
+                <audio id="audio-12" src="../audio/05_chat_perdu/lines/12_irene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-d">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Karim :</span> Ouais, je vous envoie ça par texto. Mettez une photo de Moustache avec votre numéro. Ça ira vite.</div>
+                <audio id="audio-13" src="../audio/05_chat_perdu/lines/13_karim.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-c">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Hélène :</span> Et moi, je vais prévenir la gardienne. Elle voit tout ce qui se passe dans l'immeuble. Si votre chat est dans les parties communes, elle le trouvera.</div>
+                <audio id="audio-14" src="../audio/05_chat_perdu/lines/14_helene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Merci beaucoup à vous deux. On est vraiment inquiètes.</div>
+                <audio id="audio-15" src="../audio/05_chat_perdu/lines/15_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-c">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Hélène :</span> T'inquiète pas, ma belle. Les chats, ça revient toujours. Mon ancien chat disparaissait pendant trois jours et il revenait comme si de rien n'était.</div>
+                <audio id="audio-16" src="../audio/05_chat_perdu/lines/16_helene.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-d">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-17')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Karim :</span> Ouais, stressez pas trop. Il est sûrement en train de faire la tournée des toits. Il va revenir quand il aura faim !</div>
+                <audio id="audio-17" src="../audio/05_chat_perdu/lines/17_karim.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-18')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Irene :</span> J'espère que tu as raison. Merci pour votre aide, ça fait vraiment plaisir.</div>
+                <audio id="audio-18" src="../audio/05_chat_perdu/lines/18_irene.mp3" preload="none"></audio>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/05_chat_perdu_en.html">English Translation</a> &middot; <a href="vocabulaire.html">Vocabulaire</a>
+    </footer>
+
+<script>
+let currentAudio = null;
+let currentBtn = null;
+function toggleAudio(btn, audioId) {
+    const audio = document.getElementById(audioId);
+    if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentBtn.classList.remove('playing');
+    }
+    if (audio.paused) {
+        audio.play();
+        btn.classList.add('playing');
+        currentAudio = audio;
+        currentBtn = btn;
+    } else {
+        audio.pause();
+        audio.currentTime = 0;
+        btn.classList.remove('playing');
+        currentAudio = null;
+        currentBtn = null;
+    }
+    audio.onended = function() {
+        btn.classList.remove('playing');
+        currentAudio = null;
+        currentBtn = null;
+    };
+}
+</script>
+</body>
+</html>

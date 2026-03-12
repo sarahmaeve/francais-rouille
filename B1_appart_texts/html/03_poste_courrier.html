@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Courrier Recommandé Perdu — Français Rouille B1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="index.html">Accueil</a> &rsaquo; Le Courrier Recommandé Perdu
+    </nav>
+
+    <header>
+        <h1>Le Courrier Recommandé Perdu</h1>
+        <p>Dialogue B1 — À La Poste</p>
+    </header>
+
+    <main>
+        <div class="personnages">
+            <h2>Personnages</h2>
+            <ul>
+                <li><strong>Maeve</strong> &mdash; une locataire irlandaise qui habite dans le quartier de la Croix-Rousse</li>
+                <li><strong>Le guichetier</strong> &mdash; un employé de La Poste qui gère plusieurs clients à la fois</li>
+            </ul>
+        </div>
+
+        <div class="play-combined">
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            <span>Écouter le dialogue complet</span>
+            <audio id="audio-combined" src="../audio/03_poste_courrier/combined.mp3" preload="none"></audio>
+        </div>
+
+        <div class="dialogue">
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Bonjour, monsieur. Je viens pour un courrier recommandé que j'attends depuis trois semaines. Il vient des États-Unis et il n'est toujours pas arrivé.</div>
+                <audio id="audio-01" src="../audio/03_poste_courrier/lines/01_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> Bonjour. Vous avez le numéro de suivi ?</div>
+                <audio id="audio-02" src="../audio/03_poste_courrier/lines/02_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Oui, le voici. C'est un envoi recommandé avec accusé de réception.</div>
+                <audio id="audio-03" src="../audio/03_poste_courrier/lines/03_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> D'accord. Attendez, je regarde... Alors, le colis a quitté les États-Unis le 18 février. Il est passé par la douane à Roissy le 25. Après, je n'ai plus rien dans le système.</div>
+                <audio id="audio-04" src="../audio/03_poste_courrier/lines/04_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Plus rien ? Mais ça veut dire quoi ? Il est perdu ?</div>
+                <audio id="audio-05" src="../audio/03_poste_courrier/lines/05_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> Pas forcément. Il peut être bloqué à la douane, ou en attente de distribution dans un centre de tri. Ça arrive avec les envois internationaux, surtout en ce moment, on a du retard.</div>
+                <audio id="audio-06" src="../audio/03_poste_courrier/lines/06_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Mais trois semaines, c'est quand même très long, non ? Ce sont des documents importants. J'en ai besoin pour une démarche administrative.</div>
+                <audio id="audio-07" src="../audio/03_poste_courrier/lines/07_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> Je comprends, madame. Mais je ne peux pas faire grand-chose depuis mon guichet. Il faudrait faire une réclamation en ligne sur le site de La Poste. Vous avez un compte ?</div>
+                <audio id="audio-08" src="../audio/03_poste_courrier/lines/08_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Non, pas encore. Comment est-ce que je fais ?</div>
+                <audio id="audio-09" src="../audio/03_poste_courrier/lines/09_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> Vous allez sur laposte.fr, vous créez un compte, et ensuite vous allez dans « Aide et réclamations ». Vous entrez le numéro de suivi et vous décrivez le problème.</div>
+                <audio id="audio-10" src="../audio/03_poste_courrier/lines/10_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> D'accord. Et après, qu'est-ce qui se passe ?</div>
+                <audio id="audio-11" src="../audio/03_poste_courrier/lines/11_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> Ils ouvrent une enquête. En général, ils répondent sous dix jours ouvrés. Si le courrier est vraiment perdu, vous pouvez demander une indemnisation, mais il faut que l'expéditeur fasse aussi une démarche de son côté.</div>
+                <audio id="audio-12" src="../audio/03_poste_courrier/lines/12_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Dix jours ? C'est long. Est-ce qu'il n'y a pas un moyen d'accélérer les choses ?</div>
+                <audio id="audio-13" src="../audio/03_poste_courrier/lines/13_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> Malheureusement non, c'est la procédure. Vous pouvez aussi appeler le 3631, c'est le service client. Mais bon, les délais sont les mêmes. Excusez-moi, il y a du monde derrière vous. Autre chose ?</div>
+                <audio id="audio-14" src="../audio/03_poste_courrier/lines/14_le_guichetier.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Maeve :</span> Non, c'est tout. Merci quand même.</div>
+                <audio id="audio-15" src="../audio/03_poste_courrier/lines/15_maeve.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Le guichetier :</span> De rien. Bonne journée, madame. Au suivant, s'il vous plaît !</div>
+                <audio id="audio-16" src="../audio/03_poste_courrier/lines/16_le_guichetier.mp3" preload="none"></audio>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/03_poste_courrier_en.html">English Translation</a> &middot; <a href="vocabulaire.html">Vocabulaire</a>
+    </footer>
+
+<script>
+let currentAudio = null;
+let currentBtn = null;
+function toggleAudio(btn, audioId) {
+    const audio = document.getElementById(audioId);
+    if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentBtn.classList.remove('playing');
+    }
+    if (audio.paused) {
+        audio.play();
+        btn.classList.add('playing');
+        currentAudio = audio;
+        currentBtn = btn;
+    } else {
+        audio.pause();
+        audio.currentTime = 0;
+        btn.classList.remove('playing');
+        currentAudio = null;
+        currentBtn = null;
+    }
+    audio.onended = function() {
+        btn.classList.remove('playing');
+        currentAudio = null;
+        currentBtn = null;
+    };
+}
+</script>
+</body>
+</html>
