@@ -25,70 +25,95 @@
             </ul>
         </div>
 
+        <div class="play-combined">
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            <span>Écouter le dialogue complet</span>
+            <audio id="audio-combined" src="../audio/01_paris_metro/combined.mp3" preload="none"></audio>
+        </div>
+
         <div class="dialogue">
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Excusez-moi, monsieur, est-ce que vous pouvez m'aider ? Je cherche la ligne pour aller à Montmartre.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Excusez-moi, monsieur, est-ce que vous pouvez m'aider ? Je cherche la ligne pour aller à Montmartre.</div>
+                <audio id="audio-01" src="../audio/01_paris_metro/lines/01_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                Bien sûr ! Vous devez prendre la ligne 12 en direction de Mairie d'Issy. Euh, pardon, en direction de Front Populaire.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> Bien sûr ! Vous devez prendre la ligne 12 en direction de Mairie d'Issy. Euh, pardon, en direction de Front Populaire.</div>
+                <audio id="audio-02" src="../audio/01_paris_metro/lines/02_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                D'accord, mais je suis sur la ligne 4 en ce moment. Est-ce que je dois changer ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> D'accord, mais je suis sur la ligne 4 en ce moment. Est-ce que je dois changer ?</div>
+                <audio id="audio-03" src="../audio/01_paris_metro/lines/03_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                Oui, il faut changer à la station Marcadet-Poissonniers. C'est à trois arrêts d'ici.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> Oui, il faut changer à la station Marcadet-Poissonniers. C'est à trois arrêts d'ici.</div>
+                <audio id="audio-04" src="../audio/01_paris_metro/lines/04_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Et après le changement, c'est loin ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Et après le changement, c'est loin ?</div>
+                <audio id="audio-05" src="../audio/01_paris_metro/lines/05_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                Non, pas du tout. Après le changement, vous descendez à Abbesses. C'est seulement deux arrêts.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> Non, pas du tout. Après le changement, vous descendez à Abbesses. C'est seulement deux arrêts.</div>
+                <audio id="audio-06" src="../audio/01_paris_metro/lines/06_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Abbesses, d'accord. Est-ce qu'il faut acheter un nouveau ticket pour la correspondance ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Abbesses, d'accord. Est-ce qu'il faut acheter un nouveau ticket pour la correspondance ?</div>
+                <audio id="audio-07" src="../audio/01_paris_metro/lines/07_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                Non, votre ticket est valable pour tout le trajet, tant que vous ne sortez pas de la station.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> Non, votre ticket est valable pour tout le trajet, tant que vous ne sortez pas de la station.</div>
+                <audio id="audio-08" src="../audio/01_paris_metro/lines/08_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Ah, c'est pratique ! Et les couloirs de correspondance, ils sont bien indiqués ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Ah, c'est pratique ! Et les couloirs de correspondance, ils sont bien indiqués ?</div>
+                <audio id="audio-09" src="../audio/01_paris_metro/lines/09_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                Oui, vous allez voir des panneaux orange avec le numéro de la ligne. Suivez les flèches pour la ligne 12.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> Oui, vous allez voir des panneaux orange avec le numéro de la ligne. Suivez les flèches pour la ligne 12.</div>
+                <audio id="audio-10" src="../audio/01_paris_metro/lines/10_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Merci beaucoup. J'avais peur de me perdre, c'est mon premier jour à Paris.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Merci beaucoup. J'avais peur de me perdre, c'est mon premier jour à Paris.</div>
+                <audio id="audio-11" src="../audio/01_paris_metro/lines/11_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                Ne vous inquiétez pas, le métro a l'air compliqué, mais on s'y habitue vite. Vous avez un plan ?
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> Ne vous inquiétez pas, le métro a l'air compliqué, mais on s'y habitue vite. Vous avez un plan ?</div>
+                <audio id="audio-12" src="../audio/01_paris_metro/lines/12_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Oui, j'ai téléchargé une application sur mon téléphone, mais elle ne marche pas bien sous terre.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Oui, j'ai téléchargé une application sur mon téléphone, mais elle ne marche pas bien sous terre.</div>
+                <audio id="audio-13" src="../audio/01_paris_metro/lines/13_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                C'est normal, il n'y a pas toujours de réseau dans le métro. Regardez le plan affiché sur le quai, c'est plus fiable.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> C'est normal, il n'y a pas toujours de réseau dans le métro. Regardez le plan affiché sur le quai, c'est plus fiable.</div>
+                <audio id="audio-14" src="../audio/01_paris_metro/lines/14_marc.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
-                <span class="speaker">Léa :</span>
-                Bonne idée. Merci encore pour votre aide, vous êtes très gentil !
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Léa :</span> Bonne idée. Merci encore pour votre aide, vous êtes très gentil !</div>
+                <audio id="audio-15" src="../audio/01_paris_metro/lines/15_lea.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
-                <span class="speaker">Marc :</span>
-                De rien, bon séjour à Paris ! Montmartre est magnifique, vous allez adorer.
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Marc :</span> De rien, bon séjour à Paris ! Montmartre est magnifique, vous allez adorer.</div>
+                <audio id="audio-16" src="../audio/01_paris_metro/lines/16_marc.mp3" preload="none"></audio>
             </div>
         </div>
     </main>
@@ -96,5 +121,38 @@
     <footer>
         <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/01_paris_metro_en.html">English Translation</a> &middot; <a href="vocabulaire_b1.html">Vocabulaire</a>
     </footer>
+    <script>
+    let currentAudio = null;
+    let currentBtn = null;
+
+    function toggleAudio(btn, audioId) {
+        const audio = document.getElementById(audioId);
+
+        if (currentAudio && currentAudio !== audio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            currentBtn.classList.remove('playing');
+        }
+
+        if (audio.paused) {
+            audio.play();
+            btn.classList.add('playing');
+            currentAudio = audio;
+            currentBtn = btn;
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            btn.classList.remove('playing');
+            currentAudio = null;
+            currentBtn = null;
+        }
+
+        audio.onended = function() {
+            btn.classList.remove('playing');
+            currentAudio = null;
+            currentBtn = null;
+        };
+    }
+    </script>
 </body>
 </html>
