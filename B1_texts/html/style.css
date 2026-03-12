@@ -132,12 +132,6 @@ nav.breadcrumb a:hover {
     margin-bottom: 2rem;
 }
 
-.line {
-    padding: 0.8rem 1.2rem;
-    border-radius: 8px;
-    max-width: 88%;
-}
-
 .line .speaker {
     font-weight: bold;
     color: var(--navy);
@@ -199,6 +193,81 @@ tr:last-child td {
 
 tr:nth-child(even) {
     background: #fafafa;
+}
+
+/* Audio play buttons */
+.play-combined {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.play-combined span {
+    font-size: 0.95rem;
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.play-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--navy);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    padding: 0;
+}
+
+.play-btn:hover {
+    background: var(--blue);
+}
+
+.play-btn svg {
+    fill: #fff;
+    width: 14px;
+    height: 14px;
+}
+
+.play-btn.playing svg.icon-play {
+    display: none;
+}
+
+.play-btn:not(.playing) svg.icon-pause {
+    display: none;
+}
+
+.play-combined .play-btn {
+    width: 40px;
+    height: 40px;
+}
+
+.play-combined .play-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.line {
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    max-width: 88%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.line .line-text {
+    flex: 1;
 }
 
 footer {
