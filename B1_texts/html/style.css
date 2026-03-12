@@ -150,6 +150,13 @@ nav.breadcrumb a:hover {
     border-bottom-right-radius: 2px;
 }
 
+.line.speaker-c {
+    background: #f0f7f0;
+    align-self: flex-start;
+    margin-left: 6%;
+    border-bottom-left-radius: 2px;
+}
+
 /* Vocabulary tables */
 .vocab-section {
     margin-bottom: 2rem;
