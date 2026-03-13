@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::fmt::Write as _;
 use std::path::Path;
 
 use serde::{Deserialize, Serialize};
@@ -250,6 +251,96 @@ fn build_chapter_index(
 
     println!("  wrote index.html");
     Ok(())
+}
+
+/// Generate a `sitemap.xml` listing all HTML pages under `site_dir`.
+///
+/// Walks the site directory, collects `.html` pages (skipping `404.html`),
+/// and writes a standard XML sitemap. Dialog and chapter index pages get
+/// higher priority than translations and reference pages.
+pub fn generate_sitemap(
+    site_dir: &Path,
+    site_url: &str,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let base = site_url.trim_end_matches('/');
+
+    let mut urls: Vec<SitemapEntry> = Vec::new();
+
+    collect_html_pages(site_dir, site_dir, base, &mut urls)?;
+    urls.sort_by(|a, b| a.loc.cmp(&b.loc));
+
+    let mut xml = String::from(
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\
+         <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n",
+    );
+
+    for entry in &urls {
+        write!(
+            xml,
+            "  <url>\n    <loc>{}</loc>\n    <priority>{:.1}</priority>\n  </url>\n",
+            entry.loc, entry.priority,
+        )?;
+    }
+    xml.push_str("</urlset>\n");
+
+    let out_path = site_dir.join("sitemap.xml");
+    std::fs::write(&out_path, &xml)?;
+    println!("Wrote sitemap.xml ({} URLs)", urls.len());
+    Ok(())
+}
+
+struct SitemapEntry {
+    loc: String,
+    priority: f32,
+}
+
+fn collect_html_pages(
+    dir: &Path,
+    site_root: &Path,
+    base_url: &str,
+    urls: &mut Vec<SitemapEntry>,
+) -> Result<(), Box<dyn std::error::Error>> {
+    for entry in std::fs::read_dir(dir)? {
+        let entry = entry?;
+        let path = entry.path();
+
+        if path.is_dir() {
+            // Skip audio directories entirely.
+            if path.file_name().is_some_and(|n| n == "audio") {
+                continue;
+            }
+            collect_html_pages(&path, site_root, base_url, urls)?;
+        } else if path.extension().is_some_and(|e| e == "html") {
+            let name = path.file_name().unwrap().to_string_lossy();
+            if name == "404.html" {
+                continue;
+            }
+
+            let rel = path
+                .strip_prefix(site_root)?
+                .to_string_lossy()
+                .replace('\\', "/");
+
+            let priority = classify_priority(&rel);
+            urls.push(SitemapEntry {
+                loc: format!("{base_url}/{rel}"),
+                priority,
+            });
+        }
+    }
+    Ok(())
+}
+
+fn classify_priority(rel_path: &str) -> f32 {
+    if rel_path == "index.html" {
+        1.0
+    } else if rel_path.ends_with("/index.html") {
+        0.8
+    } else if rel_path.contains("/translations/") {
+        0.3
+    } else {
+        0.5
+    }
 }
 
 #[cfg(test)]
@@ -577,5 +668,55 @@ A : Line 4
         assert_eq!(speaker_classes["A"], "speaker-a");
         assert_eq!(speaker_classes["B"], "speaker-b");
         assert_eq!(speaker_classes["C"], "speaker-c");
+    }
+
+    #[test]
+    fn classify_priority_values() {
+        assert_eq!(classify_priority("index.html"), 1.0);
+        assert_eq!(classify_priority("chapters/b1-test/index.html"), 0.8);
+        assert_eq!(
+            classify_priority("chapters/b1-test/translations/01_en.html"),
+            0.3
+        );
+        assert_eq!(classify_priority("chapters/b1-test/01_dialog.html"), 0.5);
+    }
+
+    #[test]
+    fn generate_sitemap_creates_valid_xml() {
+        let tmp = std::env::temp_dir().join("sitemap_test");
+        let _ = std::fs::remove_dir_all(&tmp);
+        std::fs::create_dir_all(tmp.join("chapters/ch1/translations")).unwrap();
+        std::fs::create_dir_all(tmp.join("chapters/ch1/audio")).unwrap();
+
+        // Create some HTML files.
+        std::fs::write(tmp.join("index.html"), "<html></html>").unwrap();
+        std::fs::write(tmp.join("404.html"), "<html>404</html>").unwrap();
+        std::fs::write(tmp.join("chapters/ch1/index.html"), "<html></html>").unwrap();
+        std::fs::write(tmp.join("chapters/ch1/01_page.html"), "<html></html>").unwrap();
+        std::fs::write(
+            tmp.join("chapters/ch1/translations/01_page_en.html"),
+            "<html></html>",
+        )
+        .unwrap();
+        // Audio dir should be skipped even if it somehow has HTML.
+        std::fs::write(tmp.join("chapters/ch1/audio/fake.html"), "<html></html>").unwrap();
+
+        generate_sitemap(&tmp, "https://example.com").unwrap();
+
+        let xml = std::fs::read_to_string(tmp.join("sitemap.xml")).unwrap();
+
+        assert!(xml.starts_with("<?xml"));
+        assert!(xml.contains("<loc>https://example.com/index.html</loc>"));
+        assert!(xml.contains("<priority>1.0</priority>"));
+        assert!(xml.contains("chapters/ch1/index.html"));
+        assert!(xml.contains("<priority>0.8</priority>"));
+        assert!(xml.contains("chapters/ch1/01_page.html"));
+        assert!(xml.contains("chapters/ch1/translations/01_page_en.html"));
+        assert!(xml.contains("<priority>0.3</priority>"));
+        // 404 and audio should be excluded.
+        assert!(!xml.contains("404.html"));
+        assert!(!xml.contains("audio/fake.html"));
+
+        let _ = std::fs::remove_dir_all(&tmp);
     }
 }

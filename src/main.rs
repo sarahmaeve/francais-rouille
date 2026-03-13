@@ -11,7 +11,7 @@ fn print_usage(prog: &str) {
     eprintln!("Usage:");
     eprintln!("  {prog} file   <input.txt> <output.mp3>    Synthesize a text file");
     eprintln!("  {prog} dialog <input.txt> <output_dir>    Synthesize a dialog file");
-    eprintln!("  {prog} build  [<chapter>]                 Generate HTML from templates");
+    eprintln!("  {prog} build  [<chapter>] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Dialog mode produces one MP3 per line in <output_dir>/lines/");
@@ -142,16 +142,33 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
 
 fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     let templates_dir = PathBuf::from("templates");
-
-    // Discover chapters: each subdirectory of content/ with a chapter.toml.
     let content_root = PathBuf::from("content");
     let output_root = PathBuf::from("site/chapters");
+    let site_dir = PathBuf::from("site");
 
-    let chapters: Vec<String> = if args.len() >= 3 {
-        // Build a specific chapter.
-        vec![args[2].clone()]
+    // Parse optional flags and positional args.
+    let mut site_url: Option<String> = None;
+    let mut chapter_filter: Option<String> = None;
+
+    let mut i = 2;
+    while i < args.len() {
+        if args[i] == "--site-url" {
+            i += 1;
+            site_url = Some(
+                args.get(i)
+                    .ok_or("--site-url requires a value")?
+                    .clone(),
+            );
+        } else if !args[i].starts_with('-') && chapter_filter.is_none() {
+            chapter_filter = Some(args[i].clone());
+        }
+        i += 1;
+    }
+
+    // Discover chapters.
+    let chapters: Vec<String> = if let Some(name) = chapter_filter {
+        vec![name]
     } else {
-        // Build all chapters.
         let mut names = Vec::new();
         for entry in std::fs::read_dir(&content_root)? {
             let entry = entry?;
@@ -175,6 +192,11 @@ fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         let output_dir = output_root.join(chapter);
         println!("Building chapter: {chapter}");
         build::build_chapter(&content_dir, &output_dir, &templates_dir)?;
+    }
+
+    // Generate sitemap if a site URL is provided.
+    if let Some(url) = &site_url {
+        build::generate_sitemap(&site_dir, url)?;
     }
 
     println!("\nDone.");

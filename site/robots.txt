@@ -1,0 +1,114 @@
+# Français Rouillé — robots.txt
+#
+# Allow legitimate search engines to index pages (so learners can find the site),
+# but block AI crawlers, scrapers, and aggressive bots.
+
+# --- AI training crawlers ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+# --- SEO / marketing crawlers ---
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+# --- Aggressive scrapers ---
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# --- Major search engines: allow, but rate-limit ---
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 10
+
+# --- Default: block everything else ---
+User-agent: *
+Disallow: /
+
+# Audio files should never be crawled (large, no indexing value)
+User-agent: Googlebot
+Disallow: /chapters/*/audio/
+
+User-agent: Bingbot
+Disallow: /chapters/*/audio/
+
+User-agent: DuckDuckBot
+Disallow: /chapters/*/audio/
+
+Sitemap: /sitemap.xml
