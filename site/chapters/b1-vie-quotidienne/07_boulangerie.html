@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demander son Chemin à Toulouse — Français Rouillé B1</title>
+    <title>Visite à la Boulangerie — Français Rouillé B1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="breadcrumb">
-        <a href="index.html">Accueil</a> &rsaquo; Demander son Chemin à Toulouse
+        <a href="index.html">Accueil</a> &rsaquo; Visite à la Boulangerie
     </nav>
 
     <header>
-        <h1>Demander son Chemin à Toulouse</h1>
-        <p>Dialogue B1 — S'orienter dans une ville</p>
+        <h1>Visite à la Boulangerie</h1>
+        <p>Dialogue B1 — Les spécialités de la maison</p>
     </header>
 
     <main>
         <div class="personnages">
             <h2>Personnages</h2>
             <ul>
-                <li><strong>Nadia</strong> &mdash; une étudiante qui vient d'arriver à Toulouse</li>
-                <li><strong>Pierre</strong> &mdash; un habitant du quartier</li>
+                <li><strong>Claire</strong> &mdash; une cliente curieuse qui entre dans la boulangerie</li>
+                <li><strong>Monsieur Duval</strong> &mdash; le propriétaire et pâtissier de la boulangerie</li>
             </ul>
         </div>
 
@@ -31,95 +31,105 @@
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
             <span>Écouter le dialogue complet</span>
-            <audio id="audio-combined" src="../audio/03_directions_toulouse/combined.mp3" preload="none"></audio>
+            <audio id="audio-combined" src="audio/07_boulangerie/07_boulangerie/combined.mp3" preload="none"></audio>
         </div>
 
         <div class="dialogue">
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> Pardon, monsieur, je suis un peu perdue. Est-ce que vous connaissez la Place du Capitole ?</div>
-                <audio id="audio-01" src="../audio/03_directions_toulouse/lines/01_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Bonjour, monsieur ! Votre vitrine est magnifique. Tout a l'air délicieux.</div>
+                <audio id="audio-01" src="audio/07_boulangerie/07_boulangerie/lines/01_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> Oui, bien sûr, ce n'est pas très loin d'ici. Vous êtes à pied ?</div>
-                <audio id="audio-02" src="../audio/03_directions_toulouse/lines/02_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> Bonjour, madame ! Merci, c'est gentil. Qu'est-ce qui vous tente aujourd'hui ?</div>
+                <audio id="audio-02" src="audio/07_boulangerie/07_boulangerie/lines/02_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> Oui, je préfère marcher pour découvrir la ville. C'est à combien de minutes environ ?</div>
-                <audio id="audio-03" src="../audio/03_directions_toulouse/lines/03_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Justement, j'hésite beaucoup. Qu'est-ce que vous me recommandez ? Je cherche quelque chose de spécial.</div>
+                <audio id="audio-03" src="audio/07_boulangerie/07_boulangerie/lines/03_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> À pied, c'est environ dix minutes. Continuez tout droit sur cette rue jusqu'au bout.</div>
-                <audio id="audio-04" src="../audio/03_directions_toulouse/lines/04_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> Alors, si vous aimez le chocolat, je vous recommande notre éclair au chocolat noir. C'est notre meilleure vente.</div>
+                <audio id="audio-04" src="audio/07_boulangerie/07_boulangerie/lines/04_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> D'accord, tout droit. Et ensuite ?</div>
-                <audio id="audio-05" src="../audio/03_directions_toulouse/lines/05_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Un éclair au chocolat noir ? Qu'est-ce qu'il a de particulier ?</div>
+                <audio id="audio-05" src="audio/07_boulangerie/07_boulangerie/lines/05_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> Ensuite, vous allez arriver à un grand carrefour. Tournez à gauche sur la rue d'Alsace-Lorraine.</div>
-                <audio id="audio-06" src="../audio/03_directions_toulouse/lines/06_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> On utilise du chocolat noir à soixante-douze pour cent, importé directement d'un artisan belge. La crème pâtissière est faite chaque matin, et le glaçage est préparé à la minute.</div>
+                <audio id="audio-06" src="audio/07_boulangerie/07_boulangerie/lines/06_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> La rue d'Alsace-Lorraine, c'est une grande rue ?</div>
-                <audio id="audio-07" src="../audio/03_directions_toulouse/lines/07_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Ça a l'air incroyable. Et il y a autre chose que vous recommandez ?</div>
+                <audio id="audio-07" src="audio/07_boulangerie/07_boulangerie/lines/07_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> Oui, c'est une rue commerçante très connue. Il y a beaucoup de magasins, vous ne pouvez pas la rater.</div>
-                <audio id="audio-08" src="../audio/03_directions_toulouse/lines/08_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> Oui, absolument. Notre spécialité maison, c'est le Paris-Noisette. C'est une création originale de ma femme.</div>
+                <audio id="audio-08" src="audio/07_boulangerie/07_boulangerie/lines/08_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> Très bien. Et je continue sur cette rue ?</div>
-                <audio id="audio-09" src="../audio/03_directions_toulouse/lines/09_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Le Paris-Noisette ? Je ne connais pas du tout. C'est quoi exactement ?</div>
+                <audio id="audio-09" src="audio/07_boulangerie/07_boulangerie/lines/09_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> Oui, vous la suivez pendant environ cinq minutes. Vous allez passer devant une église sur votre droite.</div>
-                <audio id="audio-10" src="../audio/03_directions_toulouse/lines/10_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> C'est une pâte feuilletée croustillante avec une mousse à la noisette du Piémont et un cœur de caramel au beurre salé. On le saupoudre de noisettes torréfiées et d'un peu de fleur de sel.</div>
+                <audio id="audio-10" src="audio/07_boulangerie/07_boulangerie/lines/10_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> Et la Place du Capitole est juste après ?</div>
-                <audio id="audio-11" src="../audio/03_directions_toulouse/lines/11_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Oh là là, ça semble extraordinaire. C'est votre femme qui a inventé cette recette ?</div>
+                <audio id="audio-11" src="audio/07_boulangerie/07_boulangerie/lines/11_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> Presque. Après l'église, prenez la deuxième rue à droite. Vous allez déboucher directement sur la place.</div>
-                <audio id="audio-12" src="../audio/03_directions_toulouse/lines/12_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> Oui, elle est pâtissière aussi. Elle a travaillé dix ans chez Ladurée avant qu'on ouvre notre propre boutique. Le Paris-Noisette, c'est sa fierté.</div>
+                <audio id="audio-12" src="audio/07_boulangerie/07_boulangerie/lines/12_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> Super, ça a l'air simple. Est-ce qu'il y a un endroit pour manger sur la place ?</div>
-                <audio id="audio-13" src="../audio/03_directions_toulouse/lines/13_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Eh bien, je vais prendre les deux ! Un éclair au chocolat noir et un Paris-Noisette, s'il vous plaît.</div>
+                <audio id="audio-13" src="audio/07_boulangerie/07_boulangerie/lines/13_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> Il y a plein de restaurants et de cafés tout autour. Mais attention, ceux sur la place sont un peu chers. Je vous conseille les petites rues juste derrière.</div>
-                <audio id="audio-14" src="../audio/03_directions_toulouse/lines/14_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> Excellent choix ! L'éclair, c'est trois euros cinquante, et le Paris-Noisette, c'est cinq euros. Ça vous fait huit euros cinquante en tout.</div>
+                <audio id="audio-14" src="audio/07_boulangerie/07_boulangerie/lines/14_monsieur_duval.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-a">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Nadia :</span> Merci beaucoup pour vos conseils ! C'est vraiment gentil.</div>
-                <audio id="audio-15" src="../audio/03_directions_toulouse/lines/15_nadia.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">Claire :</span> Parfait. Est-ce que vous avez une carte de fidélité ?</div>
+                <audio id="audio-15" src="audio/07_boulangerie/07_boulangerie/lines/15_claire.mp3" preload="none"></audio>
             </div>
             <div class="line speaker-b">
                 <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Pierre :</span> De rien, bienvenue à Toulouse ! Vous verrez, c'est une ville très agréable.</div>
-                <audio id="audio-16" src="../audio/03_directions_toulouse/lines/16_pierre.mp3" preload="none"></audio>
+                <div class="line-text"><span class="speaker">M. Duval :</span> Oui, bien sûr. À votre dixième achat, vous recevez une viennoiserie gratuite. Je vous en prépare une tout de suite.</div>
+                <audio id="audio-16" src="audio/07_boulangerie/07_boulangerie/lines/16_monsieur_duval.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-a">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-17')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">Claire :</span> Super ! Merci beaucoup, monsieur. Je suis sûre que je vais revenir très vite.</div>
+                <audio id="audio-17" src="audio/07_boulangerie/07_boulangerie/lines/17_claire.mp3" preload="none"></audio>
+            </div>
+            <div class="line speaker-b">
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-18')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
+                <div class="line-text"><span class="speaker">M. Duval :</span> J'espère bien ! Bonne dégustation, madame. Et si vous aimez le Paris-Noisette, dites-le à vos amis !</div>
+                <audio id="audio-18" src="audio/07_boulangerie/07_boulangerie/lines/18_monsieur_duval.mp3" preload="none"></audio>
             </div>
         </div>
     </main>
 
     <footer>
-        <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/03_directions_toulouse_en.html">English Translation</a> &middot; <a href="vocabulaire_b1.html">Vocabulaire</a> &middot; <a href="quiz.html">Quiz</a>
+        <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/07_boulangerie_en.html">English Translation</a> &middot; <a href="vocabulaire_b1.html">Vocabulaire</a> &middot; <a href="quiz.html">Quiz</a>
     </footer>
     <script>
     let currentAudio = null;

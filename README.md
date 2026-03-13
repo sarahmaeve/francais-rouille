@@ -3,7 +3,7 @@
 *Rusty French* — a French language learning tool with authentic texts, dialogues, and
 text-to-speech audio for B1+ learners.
 
-Browse the content by opening `index.html` in a browser.
+Browse the content by opening `site/index.html` in a browser.
 
 ## What's inside
 
@@ -19,7 +19,7 @@ lines.
 ### Browse the content
 
 ```
-open index.html
+open site/index.html
 ```
 
 ### Generate audio with the CLI
@@ -32,10 +32,10 @@ cargo build
 export GOOGLE_TTS_API_KEY="your-key"
 
 # Synthesize a dialog — produces lines/*.mp3 and combined.mp3
-cargo run -- dialog B1_texts/02_viennoiserie.txt B1_texts/audio/02_viennoiserie
+cargo run -- dialog content/b1-vie-quotidienne/02_viennoiserie.txt site/chapters/b1-vie-quotidienne/audio/02_viennoiserie
 
 # Synthesize a plain text file — produces a single MP3
-cargo run -- file B1_texts/09_gallimard_evenement.txt output/09_gallimard.mp3
+cargo run -- file content/b1-vie-quotidienne/09_gallimard_evenement.txt output/09_gallimard.mp3
 ```
 
 Run `cargo run -- --help` for full usage details.
@@ -61,18 +61,23 @@ keeps the same randomly-selected Premium fr-FR voice throughout the dialog.
 
 ```
 .
-├── index.html                  # Root page linking all chapters
-├── src/                        # Rust CLI source
-│   ├── main.rs                 #   Entry point, file/dialog modes
-│   ├── dialog.rs               #   Dialog parser and voice assignment
-│   └── tts.rs                  #   Google Cloud TTS client
-├── B1_texts/                   # Chapter: La Vie Quotidienne
-│   ├── *.txt / *.md / *_en.md  #   Source texts (plain, markdown, English)
-│   ├── html/                   #   French HTML pages + style.css
-│   │   └── translations/       #   English HTML translations
-│   └── audio/                  #   Generated MP3s (per-dialog subdirs)
-└── B1_appart_texts/            # Chapter: La Vie en Appartement (Lyon)
-    └── (same structure)
+├── site/                           # Deployable web content
+│   ├── index.html                  #   Root page linking all chapters
+│   ├── shared/                     #   Shared JS/CSS (quiz, crossword engines)
+│   └── chapters/
+│       ├── b1-vie-quotidienne/     #   Chapter: La Vie Quotidienne
+│       │   ├── *.html, style.css   #     French HTML pages
+│       │   ├── translations/       #     English HTML translations
+│       │   └── audio/              #     Generated MP3s (per-dialog subdirs)
+│       └── b1-appartement/         #   Chapter: La Vie en Appartement (Lyon)
+│           └── (same structure)
+├── content/                        # Source content (not deployed)
+│   ├── b1-vie-quotidienne/         #   *.txt, *.md, *_en.md, vocabulaire.md
+│   └── b1-appartement/
+├── src/                            # Rust CLI source (build tool)
+│   ├── main.rs                     #   Entry point, file/dialog modes
+│   ├── dialog.rs                   #   Dialog parser and voice assignment
+│   └── tts.rs                      #   Google Cloud TTS client
 ```
 
 ## License

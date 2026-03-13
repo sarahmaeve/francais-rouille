@@ -43,7 +43,7 @@ francais-rouille file <input.txt> <output.mp3>
 Example:
 
 ```bash
-francais-rouille file B1_texts/09_gallimard_evenement.txt output/gallimard.mp3
+francais-rouille file content/b1-vie-quotidienne/09_gallimard_evenement.txt output/gallimard.mp3
 ```
 
 ### Synthesize a dialog file
@@ -61,7 +61,7 @@ francais-rouille dialog <input.txt> <output_dir>
 Example:
 
 ```bash
-francais-rouille dialog B1_texts/07_boulangerie.txt output/07_boulangerie/
+francais-rouille dialog content/b1-vie-quotidienne/07_boulangerie.txt output/07_boulangerie/
 ```
 
 Output:
