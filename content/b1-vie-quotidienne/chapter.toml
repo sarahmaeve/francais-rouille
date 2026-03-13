@@ -18,7 +18,7 @@ type = "dialog"
 
 [[sections.pages]]
 slug = "02_viennoiserie"
-title = "Commander dans une Viennoiserie"
+title = "À la Boulangerie"
 description = "Sophie achète des pâtisseries chez Antoine le boulanger."
 type = "dialog"
 
