@@ -40,6 +40,22 @@ pub struct PageConfig {
     pub audio_dir: Option<String>,
 }
 
+/// Section data for the chapter index template, enriched with audio info.
+#[derive(Debug, Serialize)]
+struct IndexSectionData {
+    heading: String,
+    pages: Vec<IndexPageData>,
+}
+
+/// Per-page data for the chapter index template.
+#[derive(Debug, Serialize)]
+struct IndexPageData {
+    slug: String,
+    title: String,
+    description: String,
+    has_audio: bool,
+}
+
 /// Data passed to dialog templates for each spoken line.
 #[derive(Debug, Serialize)]
 struct DialogLineData {
@@ -242,9 +258,43 @@ fn build_chapter_index(
     config: &ChapterConfig,
     output_dir: &Path,
 ) -> Result<(), Box<dyn std::error::Error>> {
+    let sections: Vec<IndexSectionData> = config
+        .sections
+        .iter()
+        .map(|section| {
+            let pages = section
+                .pages
+                .iter()
+                .map(|page| {
+                    let audio_dir = page
+                        .audio_dir
+                        .clone()
+                        .unwrap_or_else(|| page.slug.clone());
+                    let has_audio = output_dir
+                        .join("audio")
+                        .join(&audio_dir)
+                        .join("lines")
+                        .is_dir();
+
+                    IndexPageData {
+                        slug: page.slug.clone(),
+                        title: page.title.clone(),
+                        description: page.description.clone(),
+                        has_audio,
+                    }
+                })
+                .collect();
+
+            IndexSectionData {
+                heading: section.heading.clone(),
+                pages,
+            }
+        })
+        .collect();
+
     let mut ctx = Context::new();
     ctx.insert("chapter", &config.chapter);
-    ctx.insert("sections", &config.sections);
+    ctx.insert("sections", &sections);
 
     let html = tera.render("chapter_index.html", &ctx)?;
     std::fs::write(output_dir.join("index.html"), html)?;
@@ -604,7 +654,7 @@ audio_dir = "custom/audio/path"
 {% for section in sections %}
 <h2>{{ section.heading }}</h2>
 {% for page in section.pages %}
-<a href="{{ page.slug }}.html">{{ page.title }}</a>
+<a href="{{ page.slug }}.html">{{ page.title }}{% if page.has_audio %} [audio]{% endif %}</a>
 {% endfor %}
 {% endfor %}"#,
         )
@@ -631,15 +681,79 @@ type = "dialog"
         )
         .unwrap();
 
+        let sections: Vec<IndexSectionData> = config
+            .sections
+            .iter()
+            .map(|s| IndexSectionData {
+                heading: s.heading.clone(),
+                pages: s
+                    .pages
+                    .iter()
+                    .map(|p| IndexPageData {
+                        slug: p.slug.clone(),
+                        title: p.title.clone(),
+                        description: p.description.clone(),
+                        has_audio: false,
+                    })
+                    .collect(),
+            })
+            .collect();
+
         let mut ctx = Context::new();
         ctx.insert("chapter", &config.chapter);
-        ctx.insert("sections", &config.sections);
+        ctx.insert("sections", &sections);
 
         let html = tera.render("chapter_index.html", &ctx).unwrap();
         assert!(html.contains("Test Chapter"));
         assert!(html.contains("Section One"));
         assert!(html.contains("01_page.html"));
         assert!(html.contains("First Page"));
+        assert!(!html.contains("[audio]"), "no audio flag when has_audio=false");
+    }
+
+    #[test]
+    fn chapter_index_shows_audio_badge() {
+        let mut tera = Tera::default();
+        tera.add_raw_template(
+            "chapter_index.html",
+            r#"{% for section in sections %}{% for page in section.pages %}{{ page.title }}{% if page.has_audio %} [audio]{% endif %}
+{% endfor %}{% endfor %}"#,
+        )
+        .unwrap();
+
+        let chapter = ChapterMeta {
+            title: "T".into(),
+            subtitle: "S".into(),
+            vocab_page: "v".into(),
+            footer_text: "F".into(),
+            footer_suffix: "B".into(),
+        };
+
+        let sections = vec![IndexSectionData {
+            heading: "H".into(),
+            pages: vec![
+                IndexPageData {
+                    slug: "with".into(),
+                    title: "With Audio".into(),
+                    description: "d".into(),
+                    has_audio: true,
+                },
+                IndexPageData {
+                    slug: "without".into(),
+                    title: "Without Audio".into(),
+                    description: "d".into(),
+                    has_audio: false,
+                },
+            ],
+        }];
+
+        let mut ctx = Context::new();
+        ctx.insert("chapter", &chapter);
+        ctx.insert("sections", &sections);
+
+        let html = tera.render("chapter_index.html", &ctx).unwrap();
+        assert!(html.contains("With Audio [audio]"));
+        assert!(html.contains("Without Audio\n"));
     }
 
     #[test]

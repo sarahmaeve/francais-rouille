@@ -96,6 +96,15 @@ nav.breadcrumb a:hover {
     color: #666;
 }
 
+.audio-icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: var(--gold);
+    stroke: var(--gold);
+    margin-left: 0.3rem;
+    opacity: 0.8;
+}
+
 .card-list li a .card-tag {
     display: inline-block;
     font-size: 0.75rem;
