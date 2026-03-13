@@ -1,0 +1,19 @@
+# Cloudflare Pages / Netlify headers file
+
+# Audio files are immutable once generated — cache aggressively
+/chapters/*/audio/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Shared JS/CSS changes rarely
+/shared/*
+  Cache-Control: public, max-age=604800
+
+# HTML pages may update — short cache with revalidation
+/*.html
+/chapters/*/*.html
+/chapters/*/translations/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# CSS per chapter
+/chapters/*/style.css
+  Cache-Control: public, max-age=604800
