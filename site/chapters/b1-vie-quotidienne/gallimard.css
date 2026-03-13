@@ -1,0 +1,157 @@
+/* Gallimard literary event page styling */
+
+body {
+    background-color: #fefcf6;
+}
+
+.gallimard-header {
+    text-align: center;
+    padding: 2.5rem 2rem 2rem;
+    margin-bottom: 2rem;
+    border: 3px double #8b0000;
+    background: #fffef8;
+}
+.gallimard-nrf {
+    display: inline-block;
+    border: 2px solid #8b0000;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #8b0000;
+    margin-bottom: 0.8rem;
+    font-family: 'Georgia', serif;
+}
+.gallimard-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin-bottom: 0.2rem;
+    font-family: 'Georgia', serif;
+}
+.gallimard-collection {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+.gallimard-divider {
+    width: 60px;
+    height: 2px;
+    background: #8b0000;
+    margin: 1.2rem auto;
+}
+.gallimard-header h1 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+}
+.gallimard-header .subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+}
+.gallimard-header .book-title {
+    font-size: 1.5rem;
+    color: #8b0000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.event-intro {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    color: #333;
+}
+
+.event-section {
+    background: #fff;
+    border: 1px solid #e0ddd4;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.event-section h2 {
+    font-size: 1.05rem;
+    color: #8b0000;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #e0ddd4;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.4rem 1.2rem;
+}
+.info-grid .label {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.info-grid .value {
+    color: #333;
+}
+
+.programme-list {
+    list-style: none;
+    padding: 0;
+}
+.programme-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #e0ddd4;
+    display: flex;
+    gap: 1rem;
+}
+.programme-list li:last-child {
+    border-bottom: none;
+}
+.programme-list .time {
+    font-weight: bold;
+    color: #8b0000;
+    min-width: 50px;
+}
+
+.review-quote {
+    border-left: 3px solid #8b0000;
+    padding-left: 1.2rem;
+    font-style: italic;
+    color: #444;
+    margin-top: 1rem;
+}
+.review-quote .source {
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.3rem;
+}
+
+.gallimard-footer {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px double #8b0000;
+    font-size: 0.85rem;
+    color: #888;
+    line-height: 1.6;
+}
+.gallimard-footer .contact-email {
+    color: #8b0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book-subtitle {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 0.3rem;
+}
+
+.gallimard-nrf-footer {
+    margin-bottom: 0.8rem;
+}

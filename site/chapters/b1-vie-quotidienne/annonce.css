@@ -1,0 +1,145 @@
+/* Apartment listing page styling */
+
+.listing-banner {
+    background: linear-gradient(135deg, var(--navy) 0%, #3a5a8c 100%);
+    color: #fff;
+    padding: 2rem 2rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.listing-banner .agency {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+}
+.listing-banner .agency-tagline {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #b0c4de;
+    margin-bottom: 1.2rem;
+}
+.listing-banner h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+.listing-banner .address {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.price-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    margin: 1.5rem auto 0;
+}
+
+.key-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+.fact-card {
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+.fact-card .fact-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+.fact-card .fact-value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--navy);
+}
+
+.description-section {
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.description-section h2 {
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--gold);
+}
+.description-section p {
+    margin-bottom: 0.7rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+.features-list li {
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+.features-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.transport-list {
+    list-style: none;
+    padding: 0;
+}
+.transport-list li {
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+}
+.transport-list li::before {
+    content: "\25CF";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+}
+
+.contact-box {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.contact-box h2 {
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    border: none;
+    padding: 0;
+}
+.contact-box p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+.contact-box .fine-print {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #a0b0c8;
+    font-style: italic;
+}

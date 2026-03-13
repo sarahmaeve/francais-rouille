@@ -211,7 +211,7 @@ fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         let content_dir = content_root.join(chapter);
         let output_dir = output_root.join(chapter);
         println!("Building chapter: {chapter}");
-        build::build_chapter(&content_dir, &output_dir, &templates_dir)?;
+        build::build_chapter(&content_dir, &output_dir, &templates_dir, site_url.as_deref())?;
     }
 
     // Generate sitemap if a site URL is provided.

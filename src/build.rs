@@ -113,6 +113,7 @@ pub fn build_chapter(
     content_dir: &Path,
     output_dir: &Path,
     templates_dir: &Path,
+    site_url: Option<&str>,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let template_glob = format!("{}/**/*.html", templates_dir.display());
     let tera = Tera::new(&template_glob)?;
@@ -120,16 +121,33 @@ pub fn build_chapter(
     let config_str = std::fs::read_to_string(content_dir.join("chapter.toml"))?;
     let config: ChapterConfig = toml::from_str(&config_str)?;
 
+    // Derive chapter name from the content directory for canonical URLs.
+    let chapter_name = content_dir
+        .file_name()
+        .and_then(|n| n.to_str())
+        .unwrap_or("");
+    let base_url = site_url.map(|u| {
+        format!(
+            "{}/chapters/{}",
+            u.trim_end_matches('/'),
+            chapter_name
+        )
+    });
+
     std::fs::create_dir_all(output_dir)?;
 
     for section in &config.sections {
         for page in &section.pages {
             match page.page_type.as_str() {
                 "dialog" => {
-                    build_dialog_page(&tera, &config, page, content_dir, output_dir)?;
+                    build_dialog_page(
+                        &tera, &config, page, content_dir, output_dir, base_url.as_deref(),
+                    )?;
                 }
                 "fragment" => {
-                    build_fragment_page(&tera, &config, page, content_dir, output_dir)?;
+                    build_fragment_page(
+                        &tera, &config, page, content_dir, output_dir, base_url.as_deref(),
+                    )?;
                 }
                 "static" => {
                     println!("  skip (static): {}.html", page.slug);
@@ -141,7 +159,7 @@ pub fn build_chapter(
         }
     }
 
-    build_chapter_index(&tera, &config, output_dir)?;
+    build_chapter_index(&tera, &config, output_dir, base_url.as_deref())?;
     Ok(())
 }
 
@@ -151,6 +169,7 @@ fn build_dialog_page(
     page: &PageConfig,
     content_dir: &Path,
     output_dir: &Path,
+    base_url: Option<&str>,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let txt_path = content_dir.join(format!("{}.txt", page.slug));
     let content = std::fs::read_to_string(&txt_path)?;
@@ -202,12 +221,16 @@ fn build_dialog_page(
     let mut ctx = Context::new();
     ctx.insert("title", &page.title);
     ctx.insert("subtitle", &page.subtitle);
+    ctx.insert("description", &page.description);
     ctx.insert("slug", &page.slug);
     ctx.insert("vocab_page", &config.chapter.vocab_page);
     ctx.insert("has_audio", &has_audio);
     ctx.insert("audio_dir", &audio_dir);
     ctx.insert("personnages", &characters);
     ctx.insert("lines", &lines_data);
+    if let Some(base) = base_url {
+        ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
+    }
 
     let html = tera.render("dialog.html", &ctx)?;
     let out_path = output_dir.join(format!("{}.html", page.slug));
@@ -228,6 +251,7 @@ fn build_fragment_page(
     page: &PageConfig,
     content_dir: &Path,
     output_dir: &Path,
+    base_url: Option<&str>,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let fragment_path = content_dir.join(format!("{}.html", page.slug));
     let fragment = std::fs::read_to_string(&fragment_path)?;
@@ -239,11 +263,15 @@ fn build_fragment_page(
     let mut ctx = Context::new();
     ctx.insert("title", &page.title);
     ctx.insert("subtitle", &page.subtitle);
+    ctx.insert("description", &page.description);
     ctx.insert("slug", &page.slug);
     ctx.insert("vocab_page", &config.chapter.vocab_page);
     ctx.insert("has_audio", &false);
     ctx.insert("content", &fragment);
     ctx.insert("extra_css", &extra_css);
+    if let Some(base) = base_url {
+        ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
+    }
 
     let html = tera.render("fragment.html", &ctx)?;
     let out_path = output_dir.join(format!("{}.html", page.slug));
@@ -257,6 +285,7 @@ fn build_chapter_index(
     tera: &Tera,
     config: &ChapterConfig,
     output_dir: &Path,
+    base_url: Option<&str>,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let sections: Vec<IndexSectionData> = config
         .sections
@@ -295,6 +324,9 @@ fn build_chapter_index(
     let mut ctx = Context::new();
     ctx.insert("chapter", &config.chapter);
     ctx.insert("sections", &sections);
+    if let Some(base) = base_url {
+        ctx.insert("canonical_url", &format!("{}/index.html", base));
+    }
 
     let html = tera.render("chapter_index.html", &ctx)?;
     std::fs::write(output_dir.join("index.html"), html)?;

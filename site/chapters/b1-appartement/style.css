@@ -83,6 +83,15 @@ nav.breadcrumb a:hover {
     border-left-color: var(--navy);
 }
 
+.section-heading {
+    color: var(--navy);
+    margin: 0 0 1rem;
+}
+
+.section-heading-gap {
+    margin-top: 2rem;
+}
+
 .card-list li a .card-title {
     font-size: 1.15rem;
     font-weight: bold;

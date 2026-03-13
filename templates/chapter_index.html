@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ chapter.title }} — {{ chapter.subtitle }}</title>
+    <meta name="description" content="{{ chapter.subtitle }}">
+    <meta property="og:title" content="{{ chapter.title }} — {{ chapter.subtitle }}">
+    <meta property="og:description" content="{{ chapter.subtitle }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    {% if canonical_url %}<link rel="canonical" href="{{ canonical_url | safe }}">{% endif %}
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +20,7 @@
 
     <main>
     {% for section in sections %}
-        <h2 style="color: var(--navy); margin: {% if loop.first %}0{% else %}2rem{% endif %} 0 1rem;">{{ section.heading }}</h2>
+        <h2 class="section-heading{% if not loop.first %} section-heading-gap{% endif %}">{{ section.heading }}</h2>
         <ul class="card-list">
         {% for page in section.pages %}
             <li>

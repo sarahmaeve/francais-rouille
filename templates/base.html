@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title | safe }} — Français Rouillé B1</title>
+    {% if description %}<meta name="description" content="{{ description | safe }}">{% endif %}
+    <meta property="og:title" content="{{ title | safe }} — Français Rouillé B1">
+    {% if description %}<meta property="og:description" content="{{ description | safe }}">{% endif %}
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    {% if canonical_url %}<link rel="canonical" href="{{ canonical_url | safe }}">{% endif %}
     <link rel="stylesheet" href="style.css">
     {% block extra_head %}{% endblock extra_head %}
 </head>
