@@ -7,6 +7,40 @@ use thiserror::Error;
 
 use crate::dialog::{self, DialogLine};
 
+/// Audio encoding format for TTS output.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum AudioFormat {
+    Mp3,
+    OggOpus,
+}
+
+impl AudioFormat {
+    /// The encoding string expected by the Google TTS API.
+    pub fn api_encoding(self) -> &'static str {
+        match self {
+            Self::Mp3 => "MP3",
+            Self::OggOpus => "OGG_OPUS",
+        }
+    }
+
+    /// File extension (without the leading dot).
+    pub fn extension(self) -> &'static str {
+        match self {
+            Self::Mp3 => "mp3",
+            Self::OggOpus => "ogg",
+        }
+    }
+
+    /// Parse from a CLI string like "mp3" or "ogg".
+    pub fn from_str(s: &str) -> Option<Self> {
+        match s.to_ascii_lowercase().as_str() {
+            "mp3" => Some(Self::Mp3),
+            "ogg" | "ogg_opus" | "opus" => Some(Self::OggOpus),
+            _ => None,
+        }
+    }
+}
+
 const GOOGLE_TTS_URL: &str = "https://texttospeech.googleapis.com/v1/text:synthesize";
 
 /// Milliseconds of silence inserted between dialog lines when combining.
@@ -224,17 +258,19 @@ struct SynthesizeResponse {
 
 /// Result of synthesizing an entire dialog.
 pub struct DialogAudio {
-    /// One MP3 per dialog line, in order.
+    /// One audio file per dialog line, in order.
     pub lines: Vec<LineAudio>,
     /// All lines concatenated with silence between them.
     pub combined: Vec<u8>,
+    /// The format of the audio data.
+    pub format: AudioFormat,
 }
 
 pub struct LineAudio {
     pub index: usize,
     pub speaker: String,
     pub text: String,
-    pub mp3: Vec<u8>,
+    pub data: Vec<u8>,
 }
 
 #[derive(Debug)]
@@ -253,11 +289,12 @@ impl GoogleTts {
         })
     }
 
-    /// Synthesizes plain `text` as French speech and returns raw MP3 bytes.
+    /// Synthesizes plain `text` as French speech and returns raw audio bytes.
     pub async fn synthesize(
         &self,
         text: &str,
         voice: FrenchVoice,
+        format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         self.synthesize_input(
             SynthesisInput {
@@ -265,15 +302,17 @@ impl GoogleTts {
                 ssml: None,
             },
             voice,
+            format,
         )
         .await
     }
 
-    /// Synthesizes SSML content and returns raw MP3 bytes.
+    /// Synthesizes SSML content and returns raw audio bytes.
     async fn synthesize_ssml(
         &self,
         ssml: &str,
         voice: FrenchVoice,
+        format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         self.synthesize_input(
             SynthesisInput {
@@ -281,6 +320,7 @@ impl GoogleTts {
                 ssml: Some(ssml),
             },
             voice,
+            format,
         )
         .await
     }
@@ -289,6 +329,7 @@ impl GoogleTts {
         &self,
         input: SynthesisInput<'_>,
         voice: FrenchVoice,
+        format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         let body = SynthesizeRequest {
             input,
@@ -297,7 +338,7 @@ impl GoogleTts {
                 name: voice.name(),
             },
             audio_config: AudioConfig {
-                audio_encoding: "MP3",
+                audio_encoding: format.api_encoding(),
             },
         };
 
@@ -318,39 +359,44 @@ impl GoogleTts {
         Ok(bytes)
     }
 
-    /// Generate a short silence as MP3 bytes using SSML `<break>`.
+    /// Generate a short silence using SSML `<break>`.
     async fn synthesize_silence(
         &self,
         ms: u32,
         voice: FrenchVoice,
+        format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         let ssml = format!(
             "<speak><break time=\"{}ms\"/></speak>",
             ms
         );
-        self.synthesize_ssml(&ssml, voice).await
+        self.synthesize_ssml(&ssml, voice, format).await
     }
 
-    /// Synthesizes `text` and writes the MP3 to `output_path`.
+    /// Synthesizes `text` and writes the audio to `output_path`.
     pub async fn synthesize_to_file(
         &self,
         text: &str,
         voice: FrenchVoice,
+        format: AudioFormat,
         output_path: &Path,
     ) -> Result<(), TtsError> {
-        let bytes = self.synthesize(text, voice).await?;
+        let bytes = self.synthesize(text, voice, format).await?;
         std::fs::write(output_path, &bytes)?;
         Ok(())
     }
 
     /// Synthesize an entire dialog file.
     ///
-    /// Returns per-line MP3 audio and a single combined MP3 with silence
-    /// gaps between lines. Individual MP3 frames are independently
-    /// decodable, so concatenation produces a valid stream.
+    /// Returns per-line audio and a single combined file with silence
+    /// gaps between lines. For MP3, individual frames are independently
+    /// decodable so concatenation produces a valid stream. For OGG_OPUS,
+    /// the combined file is a simple concatenation (each segment is a
+    /// standalone Ogg stream).
     pub async fn synthesize_dialog(
         &self,
         content: &str,
+        format: AudioFormat,
     ) -> Result<DialogAudio, TtsError> {
         let parsed = dialog::parse_dialog(content);
         if parsed.is_empty() {
@@ -363,7 +409,7 @@ impl GoogleTts {
 
         // Pre-generate the silence segment once (using the first voice).
         let silence = self
-            .synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::FEMALE[0])
+            .synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::FEMALE[0], format)
             .await?;
 
         let mut lines = Vec::with_capacity(parsed.len());
@@ -371,23 +417,23 @@ impl GoogleTts {
 
         for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
             let voice = voice_map[&speaker];
-            let mp3 = self.synthesize(&text, voice).await?;
+            let audio = self.synthesize(&text, voice, format).await?;
 
             // Append to combined stream.
             if i > 0 {
                 combined.extend_from_slice(&silence);
             }
-            combined.extend_from_slice(&mp3);
+            combined.extend_from_slice(&audio);
 
             lines.push(LineAudio {
                 index: i + 1,
                 speaker,
                 text,
-                mp3,
+                data: audio,
             });
         }
 
-        Ok(DialogAudio { lines, combined })
+        Ok(DialogAudio { lines, combined, format })
     }
 }
 
@@ -444,7 +490,7 @@ mod tests {
                 name: FrenchVoice::StudioA.name(),
             },
             audio_config: AudioConfig {
-                audio_encoding: "MP3",
+                audio_encoding: AudioFormat::Mp3.api_encoding(),
             },
         };
 
@@ -469,12 +515,54 @@ mod tests {
                 name: FrenchVoice::StudioA.name(),
             },
             audio_config: AudioConfig {
-                audio_encoding: "MP3",
+                audio_encoding: AudioFormat::Mp3.api_encoding(),
             },
         };
 
         let json = serde_json::to_value(&req).unwrap();
         assert!(json["input"].get("text").is_none());
         assert_eq!(json["input"]["ssml"], ssml);
+    }
+
+    #[test]
+    fn audio_format_api_encoding() {
+        assert_eq!(AudioFormat::Mp3.api_encoding(), "MP3");
+        assert_eq!(AudioFormat::OggOpus.api_encoding(), "OGG_OPUS");
+    }
+
+    #[test]
+    fn audio_format_extension() {
+        assert_eq!(AudioFormat::Mp3.extension(), "mp3");
+        assert_eq!(AudioFormat::OggOpus.extension(), "ogg");
+    }
+
+    #[test]
+    fn audio_format_from_str() {
+        assert_eq!(AudioFormat::from_str("mp3"), Some(AudioFormat::Mp3));
+        assert_eq!(AudioFormat::from_str("MP3"), Some(AudioFormat::Mp3));
+        assert_eq!(AudioFormat::from_str("ogg"), Some(AudioFormat::OggOpus));
+        assert_eq!(AudioFormat::from_str("OGG_OPUS"), Some(AudioFormat::OggOpus));
+        assert_eq!(AudioFormat::from_str("opus"), Some(AudioFormat::OggOpus));
+        assert_eq!(AudioFormat::from_str("wav"), None);
+    }
+
+    #[test]
+    fn request_body_serializes_ogg_encoding() {
+        let req = SynthesizeRequest {
+            input: SynthesisInput {
+                text: Some("Bonjour"),
+                ssml: None,
+            },
+            voice: VoiceSelection {
+                language_code: "fr-FR",
+                name: FrenchVoice::StudioA.name(),
+            },
+            audio_config: AudioConfig {
+                audio_encoding: AudioFormat::OggOpus.api_encoding(),
+            },
+        };
+
+        let json = serde_json::to_value(&req).unwrap();
+        assert_eq!(json["audioConfig"]["audioEncoding"], "OGG_OPUS");
     }
 }

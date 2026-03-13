@@ -3,34 +3,37 @@ mod dialog;
 mod tts;
 
 use std::path::PathBuf;
-use tts::{FrenchVoice, GoogleTts};
+use tts::{AudioFormat, FrenchVoice, GoogleTts};
 
 use crate::dialog::slugify;
 
 fn print_usage(prog: &str) {
     eprintln!("Usage:");
-    eprintln!("  {prog} file   <input.txt> <output.mp3>    Synthesize a text file");
-    eprintln!("  {prog} dialog <input.txt> <output_dir>    Synthesize a dialog file");
+    eprintln!("  {prog} file   <input.txt> <output>  [--format mp3|ogg]  Synthesize a text file");
+    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg]  Synthesize a dialog");
     eprintln!("  {prog} build  [<chapter>] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
-    eprintln!("Dialog mode produces one MP3 per line in <output_dir>/lines/");
-    eprintln!("and a combined <output_dir>/combined.mp3 with pauses between lines.");
+    eprintln!("Audio format defaults to mp3. Use --format ogg for OGG Opus output.");
 }
 
 fn print_help() {
     println!("francais-rouille — French text-to-speech using Google Cloud TTS");
     println!();
     println!("USAGE:");
-    println!("  francais-rouille file   <input.txt> <output.mp3>");
-    println!("  francais-rouille dialog <input.txt> <output_dir>");
+    println!("  francais-rouille file   <input.txt> <output> [--format mp3|ogg]");
+    println!("  francais-rouille dialog <input.txt> <output_dir> [--format mp3|ogg]");
     println!();
     println!("COMMANDS:");
-    println!("  file     Convert a plain text file to a single MP3 using a default");
+    println!("  file     Convert a plain text file to a single audio file using a default");
     println!("           French female voice.");
     println!("  dialog   Parse a dialog text file, assign a distinct voice to each");
-    println!("           character based on gender, and produce per-line MP3s in");
-    println!("           <output_dir>/lines/ plus a combined <output_dir>/combined.mp3.");
+    println!("           character based on gender, and produce per-line audio files in");
+    println!("           <output_dir>/lines/ plus a combined file with pauses between lines.");
+    println!();
+    println!("OPTIONS:");
+    println!("  --format mp3|ogg   Audio encoding (default: mp3). Use \"ogg\" for OGG Opus,");
+    println!("                     which produces smaller files at comparable quality.");
     println!();
     println!("ENVIRONMENT:");
     println!("  GOOGLE_TTS_API_KEY   Required. Your Google Cloud API key with the");
@@ -84,32 +87,49 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 }
 
+/// Parse `--format mp3|ogg` from args, defaulting to MP3.
+fn parse_format(args: &[String]) -> Result<AudioFormat, Box<dyn std::error::Error>> {
+    for (i, arg) in args.iter().enumerate() {
+        if arg == "--format" {
+            let value = args
+                .get(i + 1)
+                .ok_or("--format requires a value (mp3 or ogg)")?;
+            return AudioFormat::from_str(value)
+                .ok_or_else(|| format!("unknown audio format: {value}").into());
+        }
+    }
+    Ok(AudioFormat::Mp3)
+}
+
 async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} file <input.txt> <output.mp3>", args[0]);
+        eprintln!("Usage: {} file <input.txt> <output> [--format mp3|ogg]", args[0]);
         std::process::exit(1);
     }
 
     let input_path = &args[2];
     let output_path = PathBuf::from(&args[3]);
+    let format = parse_format(args)?;
 
     let text = std::fs::read_to_string(input_path)?;
     let tts = GoogleTts::from_env()?;
-    tts.synthesize_to_file(&text, FrenchVoice::FEMALE[0], &output_path)
+    tts.synthesize_to_file(&text, FrenchVoice::FEMALE[0], format, &output_path)
         .await?;
 
-    println!("Wrote audio to {}", output_path.display());
+    println!("Wrote {} audio to {}", format.extension(), output_path.display());
     Ok(())
 }
 
 async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} dialog <input.txt> <output_dir>", args[0]);
+        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg]", args[0]);
         std::process::exit(1);
     }
 
     let input_path = &args[2];
     let output_dir = PathBuf::from(&args[3]);
+    let format = parse_format(args)?;
+    let ext = format.extension();
     let lines_dir = output_dir.join("lines");
 
     std::fs::create_dir_all(&lines_dir)?;
@@ -117,25 +137,25 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
     let content = std::fs::read_to_string(input_path)?;
     let tts = GoogleTts::from_env()?;
 
-    println!("Synthesizing dialog from {input_path}...");
-    let result = tts.synthesize_dialog(&content).await?;
+    println!("Synthesizing dialog from {input_path} (format: {ext})...");
+    let result = tts.synthesize_dialog(&content, format).await?;
 
     for line in &result.lines {
         let filename = format!(
-            "{:02}_{}.mp3",
+            "{:02}_{}.{ext}",
             line.index,
-            slugify(&line.speaker)
+            slugify(&line.speaker),
         );
         let path = lines_dir.join(&filename);
-        std::fs::write(&path, &line.mp3)?;
+        std::fs::write(&path, &line.data)?;
         println!("  {} — {}: {}...", filename, line.speaker, truncate(&line.text, 50));
     }
 
-    let combined_path = output_dir.join("combined.mp3");
+    let combined_path = output_dir.join(format!("combined.{ext}"));
     std::fs::write(&combined_path, &result.combined)?;
 
     println!();
-    println!("Wrote {} individual files to {}", result.lines.len(), lines_dir.display());
+    println!("Wrote {} individual {ext} files to {}", result.lines.len(), lines_dir.display());
     println!("Wrote combined audio to {}", combined_path.display());
     Ok(())
 }
