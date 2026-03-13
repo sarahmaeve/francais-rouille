@@ -70,15 +70,21 @@ class QuizEngine {
 
     showProgress() {
         const pct = this.total > 0 ? Math.round((this.current / this.total) * 100) : 0;
+        this._progressPct = pct;
         return `
             <div class="quiz-status">
                 <span>Question ${Math.min(this.current + 1, this.total)} / ${this.total}</span>
                 <span>${this.score} correct</span>
             </div>
             <div class="quiz-progress">
-                <div class="quiz-progress-fill" style="width: ${pct}%"></div>
+                <div class="quiz-progress-fill"></div>
             </div>
         `;
+    }
+
+    applyProgress() {
+        const fill = this.container.querySelector('.quiz-progress-fill');
+        if (fill) fill.style.width = this._progressPct + '%';
     }
 
     showScore(quizType, restartCallback) {
@@ -143,6 +149,7 @@ class QuizEngine {
             </div>
         `;
 
+        this.applyProgress();
         const self = this;
         this.container.querySelectorAll('.quiz-option').forEach(function(btn) {
             btn.addEventListener('click', function() {
@@ -214,6 +221,7 @@ class QuizEngine {
             </div>
         `;
 
+        this.applyProgress();
         const self = this;
         document.getElementById('fitb-check').addEventListener('click', function() { self.checkFITB(); });
         document.getElementById('fitb-hint-btn').addEventListener('click', function() { self.showHint(); });
@@ -311,6 +319,7 @@ class QuizEngine {
             </div>
         `;
 
+        this.applyProgress();
         this.selectedChip = null;
         this.initDragDrop(q);
     }
@@ -453,8 +462,7 @@ class QuizApp {
             } catch (e) {
                 this.engine.container.innerHTML =
                     '<div class="quiz-card"><p>Impossible de charger le vocabulaire.</p>' +
-                    '<p style="font-size:0.85rem;color:#888;">Les quiz nécessitent un serveur HTTP local. ' +
-                    'Essayez : <code>python3 -m http.server</code></p></div>';
+                    '<p class="quiz-error-hint">Vérifiez que la page de vocabulaire est disponible.</p></div>';
                 return;
             }
         }
