@@ -3,153 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Installation de la Fibre Optique — Français Rouillé B1</title>
+    <title>La Fibre Optique — Réunion du Syndic — Français Rouillé B1</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    
     <nav class="breadcrumb">
-        <a href="index.html">Accueil</a> &rsaquo; L'Installation de la Fibre Optique
+        <a href="index.html">Accueil</a> &rsaquo; La Fibre Optique — Réunion du Syndic
     </nav>
+    
 
+    
     <header>
-        <h1>L'Installation de la Fibre Optique</h1>
-        <p>Dialogue B1 — Français poli et administratif</p>
+        <h1>La Fibre Optique — Réunion du Syndic</h1>
+        
     </header>
+    
 
     <main>
-        <div class="personnages">
-            <h2>Personnages</h2>
-            <ul>
-                <li><strong>Irene</strong> &mdash; la compagne de Maeve, locataire au troisième étage</li>
-                <li><strong>Monsieur Reynaud</strong> &mdash; le président du syndic de copropriété</li>
-            </ul>
-        </div>
+        
+    <div class="personnages">
+        <h2>Personnages</h2>
+        <ul>
+        
+            <li><strong>Irene</strong> &mdash; la compagne de Maeve, locataire au troisième étage</li>
+        
+            <li><strong>Monsieur Reynaud</strong> &mdash; le président du syndic de copropriété</li>
+        
+        </ul>
+    </div>
 
-        <div class="play-combined">
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+    
+    <div class="play-combined">
+        <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+            <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+        </button>
+        <audio id="audio-combined" src="audio/06_fibre_syndic/combined.mp3" preload="none"></audio>
+        <span>Écouter le dialogue complet</span>
+    </div>
+    
+
+    <div class="dialogue">
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
-            <span>Écouter le dialogue complet</span>
-            <audio id="audio-combined" src="audio/06_fibre_syndic/combined.mp3" preload="none"></audio>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m&#x27;accorder ?</div>
+            
+            <audio id="audio-01" src="audio/06_fibre_syndic/lines/01_irene.mp3" preload="none"></audio>
+            
         </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Bonjour, madame. Oui, bien sûr, je vous écoute.</div>
+            
+            <audio id="audio-02" src="audio/06_fibre_syndic/lines/02_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Voilà, ma compagne et moi souhaiterions faire installer la fibre optique dans notre appartement. Nous avons contacté Orange, et un technicien pourrait passer la semaine prochaine. Cependant, ils nous ont dit qu&#x27;il fallait l&#x27;autorisation du syndic pour faire passer le câble dans les parties communes.</div>
+            
+            <audio id="audio-03" src="audio/06_fibre_syndic/lines/03_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Oui, en effet, c&#x27;est la procédure. Le câble doit passer par la colonne montante de l&#x27;immeuble, et toute intervention dans les parties communes nécessite un accord.</div>
+            
+            <audio id="audio-04" src="audio/06_fibre_syndic/lines/04_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Est-ce qu&#x27;il serait possible d&#x27;obtenir cette autorisation rapidement ? Nous travaillons toutes les deux depuis la maison, et notre connexion ADSL actuelle est vraiment insuffisante.</div>
+            
+            <audio id="audio-05" src="audio/06_fibre_syndic/lines/05_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Je comprends tout à fait. En principe, la loi est de votre côté. Les copropriétaires ne peuvent pas s&#x27;opposer à l&#x27;installation de la fibre pour un locataire. C&#x27;est le droit à la fibre, c&#x27;est dans la loi.</div>
+            
+            <audio id="audio-06" src="audio/06_fibre_syndic/lines/06_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Ah, c&#x27;est rassurant. Alors, quelles sont les démarches à suivre ?</div>
+            
+            <audio id="audio-07" src="audio/06_fibre_syndic/lines/07_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Il faudrait que votre opérateur, Orange dans votre cas, nous envoie un courrier officiel décrivant les travaux prévus. Ensuite, je transmets ça au conseil syndical, et normalement on donne l&#x27;accord sous quinze jours.</div>
+            
+            <audio id="audio-08" src="audio/06_fibre_syndic/lines/08_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Quinze jours ? C&#x27;est le délai habituel ?</div>
+            
+            <audio id="audio-09" src="audio/06_fibre_syndic/lines/09_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Oui, c&#x27;est le maximum. En pratique, c&#x27;est souvent plus rapide. Je peux accélérer les choses si le dossier est complet. Il me faut la lettre d&#x27;Orange avec le plan d&#x27;installation, et une copie de votre bail.</div>
+            
+            <audio id="audio-10" src="audio/06_fibre_syndic/lines/10_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Très bien, je vais demander à Orange d&#x27;envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi.</div>
+            
+            <audio id="audio-11" src="audio/06_fibre_syndic/lines/11_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Parfait. Apportez-la à ma loge, je suis là jusqu&#x27;à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.</div>
+            
+            <audio id="audio-12" src="audio/06_fibre_syndic/lines/12_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Je transmettrai cette consigne au technicien. Est-ce qu&#x27;il y a autre chose que nous devons savoir ?</div>
+            
+            <audio id="audio-13" src="audio/06_fibre_syndic/lines/13_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Non, c&#x27;est tout. Ah si, une petite chose : prévenez vos voisins du troisième le jour de l&#x27;installation, parce que le technicien aura besoin d&#x27;accéder au palier et ça peut faire un peu de bruit. C&#x27;est une question de courtoisie.</div>
+            
+            <audio id="audio-14" src="audio/06_fibre_syndic/lines/14_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-a">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Irene :</span> Bien sûr, nous les préviendrons. Merci beaucoup, Monsieur Reynaud. Je vous apporte la copie du bail tout à l&#x27;heure.</div>
+            
+            <audio id="audio-15" src="audio/06_fibre_syndic/lines/15_irene.mp3" preload="none"></audio>
+            
+        </div>
+    
+        <div class="line speaker-b">
+            
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            
+            <div class="line-text"><span class="speaker">Monsieur Reynaud :</span> Je vous en prie, madame. Bonne journée.</div>
+            
+            <audio id="audio-16" src="audio/06_fibre_syndic/lines/16_monsieur_reynaud.mp3" preload="none"></audio>
+            
+        </div>
+    
+    </div>
 
-        <div class="dialogue">
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m'accorder ?</div>
-                <audio id="audio-01" src="audio/06_fibre_syndic/lines/01_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Bonjour, madame. Oui, bien sûr, je vous écoute.</div>
-                <audio id="audio-02" src="audio/06_fibre_syndic/lines/02_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Voilà, ma compagne et moi souhaiterions faire installer la fibre optique dans notre appartement. Nous avons contacté Orange, et un technicien pourrait passer la semaine prochaine. Cependant, ils nous ont dit qu'il fallait l'autorisation du syndic pour faire passer le câble dans les parties communes.</div>
-                <audio id="audio-03" src="audio/06_fibre_syndic/lines/03_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Oui, en effet, c'est la procédure. Le câble doit passer par la colonne montante de l'immeuble, et toute intervention dans les parties communes nécessite un accord.</div>
-                <audio id="audio-04" src="audio/06_fibre_syndic/lines/04_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Est-ce qu'il serait possible d'obtenir cette autorisation rapidement ? Nous travaillons toutes les deux depuis la maison, et notre connexion ADSL actuelle est vraiment insuffisante.</div>
-                <audio id="audio-05" src="audio/06_fibre_syndic/lines/05_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Je comprends tout à fait. En principe, la loi est de votre côté. Les copropriétaires ne peuvent pas s'opposer à l'installation de la fibre pour un locataire. C'est le droit à la fibre, c'est dans la loi.</div>
-                <audio id="audio-06" src="audio/06_fibre_syndic/lines/06_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Ah, c'est rassurant. Alors, quelles sont les démarches à suivre ?</div>
-                <audio id="audio-07" src="audio/06_fibre_syndic/lines/07_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Il faudrait que votre opérateur, Orange dans votre cas, nous envoie un courrier officiel décrivant les travaux prévus. Ensuite, je transmets ça au conseil syndical, et normalement on donne l'accord sous quinze jours.</div>
-                <audio id="audio-08" src="audio/06_fibre_syndic/lines/08_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Quinze jours ? C'est le délai habituel ?</div>
-                <audio id="audio-09" src="audio/06_fibre_syndic/lines/09_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Oui, c'est le maximum. En pratique, c'est souvent plus rapide. Je peux accélérer les choses si le dossier est complet. Il me faut la lettre d'Orange avec le plan d'installation, et une copie de votre bail.</div>
-                <audio id="audio-10" src="audio/06_fibre_syndic/lines/10_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Très bien, je vais demander à Orange d'envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi.</div>
-                <audio id="audio-11" src="audio/06_fibre_syndic/lines/11_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Parfait. Apportez-la à ma loge, je suis là jusqu'à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.</div>
-                <audio id="audio-12" src="audio/06_fibre_syndic/lines/12_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Je transmettrai cette consigne au technicien. Est-ce qu'il y a autre chose que nous devons savoir ?</div>
-                <audio id="audio-13" src="audio/06_fibre_syndic/lines/13_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Non, c'est tout. Ah si, une petite chose : prévenez vos voisins du troisième le jour de l'installation, parce que le technicien aura besoin d'accéder au palier et ça peut faire un peu de bruit. C'est une question de courtoisie.</div>
-                <audio id="audio-14" src="audio/06_fibre_syndic/lines/14_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-a">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">Irene :</span> Bien sûr, nous les préviendrons. Merci beaucoup, Monsieur Reynaud. Je vous apporte la copie du bail tout à l'heure.</div>
-                <audio id="audio-15" src="audio/06_fibre_syndic/lines/15_irene.mp3" preload="none"></audio>
-            </div>
-            <div class="line speaker-b">
-                <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter"><svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg><svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg></button>
-                <div class="line-text"><span class="speaker">M. Reynaud :</span> Je vous en prie, madame. Bonne journée.</div>
-                <audio id="audio-16" src="audio/06_fibre_syndic/lines/16_monsieur_reynaud.mp3" preload="none"></audio>
-            </div>
-        </div>
     </main>
 
+    
     <footer>
-        <a href="index.html">Retour à l'accueil</a> &middot; <a href="translations/06_fibre_syndic_en.html">English Translation</a> &middot; <a href="vocabulaire.html">Vocabulaire</a> &middot; <a href="quiz.html">Quiz</a>
+        <a href="index.html">Retour à l'accueil</a> &middot;
+        <a href="translations/06_fibre_syndic_en.html">English Translation</a> &middot;
+        <a href="vocabulaire.html">Vocabulaire</a> &middot;
+        <a href="quiz.html">Quiz</a>
     </footer>
+    
 
-<script>
-let currentAudio = null;
-let currentBtn = null;
-function toggleAudio(btn, audioId) {
-    const audio = document.getElementById(audioId);
-    if (currentAudio && currentAudio !== audio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-        currentBtn.classList.remove('playing');
+    
+    <script>
+    let currentAudio = null;
+    let currentBtn = null;
+
+    function toggleAudio(btn, audioId) {
+        const audio = document.getElementById(audioId);
+
+        if (currentAudio && currentAudio !== audio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            currentBtn.classList.remove('playing');
+        }
+
+        if (audio.paused) {
+            audio.play();
+            btn.classList.add('playing');
+            currentAudio = audio;
+            currentBtn = btn;
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            btn.classList.remove('playing');
+            currentAudio = null;
+            currentBtn = null;
+        }
+
+        audio.onended = function() {
+            btn.classList.remove('playing');
+            currentAudio = null;
+            currentBtn = null;
+        };
     }
-    if (audio.paused) {
-        audio.play();
-        btn.classList.add('playing');
-        currentAudio = audio;
-        currentBtn = btn;
-    } else {
-        audio.pause();
-        audio.currentTime = 0;
-        btn.classList.remove('playing');
-        currentAudio = null;
-        currentBtn = null;
-    }
-    audio.onended = function() {
-        btn.classList.remove('playing');
-        currentAudio = null;
-        currentBtn = null;
-    };
-}
-</script>
+    </script>
+    
 </body>
 </html>

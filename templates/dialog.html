@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="personnages">
+        <h2>Personnages</h2>
+        <ul>
+        {% for character in personnages %}
+            <li><strong>{{ character.name | safe }}</strong> &mdash; {{ character.description | safe }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    {% if has_audio %}
+    <div class="play-combined">
+        <button class="play-btn" onclick="toggleAudio(this, 'audio-combined')" aria-label="Écouter le dialogue complet">
+            <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+        </button>
+        <audio id="audio-combined" src="audio/{{ audio_dir }}/combined.mp3" preload="none"></audio>
+        <span>Écouter le dialogue complet</span>
+    </div>
+    {% endif %}
+
+    <div class="dialogue">
+    {% for line in lines %}
+        <div class="line {{ line.speaker_class }}">
+            {% if has_audio %}
+            <button class="play-btn" onclick="toggleAudio(this, 'audio-{{ line.index }}')" aria-label="Écouter">
+                <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+            </button>
+            {% endif %}
+            <div class="line-text"><span class="speaker">{{ line.speaker | safe }} :</span> {{ line.text | safe }}</div>
+            {% if has_audio %}
+            <audio id="audio-{{ line.index }}" src="audio/{{ audio_dir }}/lines/{{ line.audio_file }}" preload="none"></audio>
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+{% endblock main %}

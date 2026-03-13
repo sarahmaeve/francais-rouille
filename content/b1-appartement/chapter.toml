@@ -1,0 +1,70 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "La Vie en Appartement — Lyon, Croix-Rousse"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B1 — La Vie en Appartement"
+
+# --- Textes ---
+
+[[sections]]
+heading = "Textes et Dialogues"
+
+[[sections.pages]]
+slug = "01_email_chauffage"
+title = "Email — Panne de Chauffage"
+description = "Maeve écrit à l'agence immobilière pour signaler une panne de chauffage."
+type = "static"
+
+[[sections.pages]]
+slug = "02_reparation_chauffage"
+title = "La Réparation du Chauffage"
+description = "Bruno le technicien vient réparer le chauffage de Maeve."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_poste_courrier"
+title = "À la Poste — Le Courrier"
+description = "Maeve va à la poste pour récupérer un colis."
+type = "dialog"
+
+[[sections.pages]]
+slug = "04_avis_chien"
+title = "Avis du Syndic — Chiens en Laisse"
+description = "Un avis affiché dans le hall de l'immeuble."
+type = "static"
+
+[[sections.pages]]
+slug = "05_chat_perdu"
+title = "Chat Perdu — Conversation entre Voisines"
+description = "Maeve et Irene discutent d'un chat perdu dans l'immeuble."
+type = "dialog"
+
+[[sections.pages]]
+slug = "06_fibre_syndic"
+title = "La Fibre Optique — Réunion du Syndic"
+description = "Irene et Monsieur Reynaud discutent de l'installation de la fibre."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire"
+description = "Mots et expressions clés avec traductions en anglais."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez vos connaissances"
+description = "Choix multiple, texte à trous et glisser-déposer."
+type = "static"
+
+[[sections.pages]]
+slug = "mots-croises"
+title = "Mots Croisés"
+description = "Grille de mots croisés sur le vocabulaire du chapitre."
+type = "static"

@@ -1,3 +1,4 @@
+mod build;
 mod dialog;
 mod tts;
 
@@ -10,6 +11,7 @@ fn print_usage(prog: &str) {
     eprintln!("Usage:");
     eprintln!("  {prog} file   <input.txt> <output.mp3>    Synthesize a text file");
     eprintln!("  {prog} dialog <input.txt> <output_dir>    Synthesize a dialog file");
+    eprintln!("  {prog} build  [<chapter>]                 Generate HTML from templates");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Dialog mode produces one MP3 per line in <output_dir>/lines/");
@@ -74,6 +76,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         "file" => run_file_mode(&args).await,
         "dialog" => run_dialog_mode(&args).await,
+        "build" => run_build_mode(&args),
         _ => {
             print_usage(&args[0]);
             std::process::exit(1);
@@ -134,6 +137,47 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
     println!();
     println!("Wrote {} individual files to {}", result.lines.len(), lines_dir.display());
     println!("Wrote combined audio to {}", combined_path.display());
+    Ok(())
+}
+
+fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
+    let templates_dir = PathBuf::from("templates");
+
+    // Discover chapters: each subdirectory of content/ with a chapter.toml.
+    let content_root = PathBuf::from("content");
+    let output_root = PathBuf::from("site/chapters");
+
+    let chapters: Vec<String> = if args.len() >= 3 {
+        // Build a specific chapter.
+        vec![args[2].clone()]
+    } else {
+        // Build all chapters.
+        let mut names = Vec::new();
+        for entry in std::fs::read_dir(&content_root)? {
+            let entry = entry?;
+            if entry.path().join("chapter.toml").exists() {
+                if let Some(name) = entry.file_name().to_str() {
+                    names.push(name.to_string());
+                }
+            }
+        }
+        names.sort();
+        names
+    };
+
+    if chapters.is_empty() {
+        eprintln!("No chapters found in {}", content_root.display());
+        std::process::exit(1);
+    }
+
+    for chapter in &chapters {
+        let content_dir = content_root.join(chapter);
+        let output_dir = output_root.join(chapter);
+        println!("Building chapter: {chapter}");
+        build::build_chapter(&content_dir, &output_dir, &templates_dir)?;
+    }
+
+    println!("\nDone.");
     Ok(())
 }
 

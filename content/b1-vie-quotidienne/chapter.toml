@@ -1,0 +1,100 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Textes de niveau B1 — Dialogues et vocabulaire"
+vocab_page = "vocabulaire_b1"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B1"
+
+# --- Dialogues ---
+
+[[sections]]
+heading = "Dialogues"
+
+[[sections.pages]]
+slug = "01_paris_metro"
+title = "Naviguer dans le Métro Parisien"
+description = "Léa demande de l'aide à Marc pour trouver son chemin dans le métro."
+type = "dialog"
+
+[[sections.pages]]
+slug = "02_viennoiserie"
+title = "Commander dans une Viennoiserie"
+description = "Sophie achète des pâtisseries chez Antoine le boulanger."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_directions_toulouse"
+title = "Demander son Chemin à Toulouse"
+description = "Nadia demande à Pierre comment aller à la Place du Capitole."
+type = "dialog"
+
+# --- Chercher un Appartement ---
+
+[[sections]]
+heading = "Chercher un Appartement à Paris"
+
+[[sections.pages]]
+slug = "04_annonce_appartement"
+title = "Annonce Immobilière — Appartement Paris 11e"
+description = "Une annonce pour un deux pièces rue de la Roquette, par l'Agence Belleville Immobilier."
+type = "static"
+
+[[sections.pages]]
+slug = "05_appel_agence"
+title = "Appel Téléphonique — L'Agence Immobilière"
+description = "Camille appelle Thomas pour poser des questions sur l'appartement et organiser une visite."
+type = "dialog"
+subtitle = "Dialogue B1 — Renseignements sur l'appartement"
+
+[[sections.pages]]
+slug = "06_discussion_quartier"
+title = "Discussion sur le Quartier — Français Familier"
+description = "Camille discute avec Yasmine, une habitante du 11e, en français parisien familier."
+type = "dialog"
+
+# --- La Vie Quotidienne ---
+
+[[sections]]
+heading = "La Vie Quotidienne"
+
+[[sections.pages]]
+slug = "07_boulangerie"
+title = "Visite à la Boulangerie — Les Spécialités"
+description = "Claire découvre l'éclair au chocolat noir et le Paris-Noisette chez Monsieur Duval."
+type = "dialog"
+audio_dir = "07_boulangerie/07_boulangerie"
+
+[[sections.pages]]
+slug = "08_taxi_hotel"
+title = "Réserver un Taxi à l'Hôtel"
+description = "David réserve un taxi pour l'aéroport CDG avec l'aide de la réceptionniste."
+type = "dialog"
+
+[[sections.pages]]
+slug = "09_gallimard_evenement"
+title = "Rencontre Littéraire — Galerie Gallimard"
+description = "Annonce officielle d'une rencontre avec Kamel Daoud pour son nouveau roman."
+type = "static"
+
+[[sections.pages]]
+slug = "10_rentree_cm2"
+title = "La Rentrée en CM2 — Le Premier Mois"
+description = "Sandrine, Olivier et Fatima discutent de la rentrée de leurs enfants en CM2."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire_b1"
+title = "Vocabulaire B1"
+description = "Mots et expressions clés avec traductions en anglais."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez vos connaissances"
+description = "Choix multiple, texte à trous et glisser-déposer."
+type = "static"
