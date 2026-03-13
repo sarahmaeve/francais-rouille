@@ -1,5 +1,15 @@
 # Cloudflare Pages / Netlify headers file
 
+# ── Security headers (all pages) ──────────────────────────────────
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self'; img-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+
+# ── Cache rules ───────────────────────────────────────────────────
+
 # Audio files are immutable once generated — cache aggressively
 /chapters/*/audio/*
   Cache-Control: public, max-age=31536000, immutable
