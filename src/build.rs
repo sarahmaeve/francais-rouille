@@ -164,8 +164,8 @@ fn build_dialog_page(
     let has_audio = output_dir
         .join("audio")
         .join(&audio_dir)
-        .join("combined.mp3")
-        .exists();
+        .join("lines")
+        .is_dir();
 
     let lines_data: Vec<DialogLineData> = dialog_lines
         .iter()
@@ -491,7 +491,7 @@ audio_dir = "custom/audio/path"
 <div class="personnages">
 {% for c in personnages %}<li>{{ c.name }} — {{ c.description }}</li>
 {% endfor %}</div>
-{% if has_audio %}<audio src="audio/{{ audio_dir }}/combined.mp3"></audio>{% endif %}
+{% if has_audio %}<button onclick="playAll(this)">Play all</button>{% endif %}
 <div class="dialogue">
 {% for line in lines %}<div class="{{ line.speaker_class }}">{{ line.speaker }} : {{ line.text }}</div>
 {% endfor %}</div>
@@ -540,7 +540,7 @@ audio_dir = "custom/audio/path"
 
         assert!(html.contains("Claire — une cliente curieuse"));
         assert!(html.contains("Monsieur Duval — le propriétaire"));
-        assert!(html.contains("audio/test_dialog/combined.mp3"));
+        assert!(html.contains("playAll(this)"));
         assert!(html.contains("speaker-a"));
         assert!(html.contains("speaker-b"));
         assert!(html.contains("Bonjour, monsieur !"));
@@ -562,7 +562,7 @@ audio_dir = "custom/audio/path"
                 "dialog.html",
                 r#"{% extends "base.html" %}
 {% block main %}
-{% if has_audio %}<audio src="combined.mp3"></audio>{% endif %}
+{% if has_audio %}<button onclick="playAll(this)">Play all</button>{% endif %}
 {% for line in lines %}<div>{{ line.text }}</div>
 {% endfor %}
 {% endblock main %}"#,

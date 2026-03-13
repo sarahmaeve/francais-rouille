@@ -86,7 +86,7 @@ generate_audio() {
             base="$(basename "$txt_file" .txt)"
             output="$audio_dir/$base"
 
-            if [ -d "$output" ] && [ -f "$output/combined.mp3" ]; then
+            if [ -d "$output/lines" ]; then
                 echo "Skipping $base (audio exists)"
                 continue
             fi
