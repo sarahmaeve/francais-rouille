@@ -39,7 +39,7 @@ check_site() {
     done < <(find "$SITE_DIR" -name '*.html' -type f)
 
     # Check that shared assets exist
-    for asset in quiz.js quiz.css crossword.js crossword.css; do
+    for asset in dialog.js quiz.js quiz.css crossword.js crossword.css; do
         if [ ! -f "$SITE_DIR/shared/$asset" ]; then
             echo "  MISSING: shared/$asset"
             errors=$((errors + 1))

@@ -12,7 +12,7 @@
 
     {% if has_audio %}
     <div class="play-combined">
-        <button class="play-btn" onclick="playAll(this)" aria-label="Écouter le dialogue complet">
+        <button class="play-btn" aria-label="Écouter le dialogue complet">
             <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
             <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
         </button>
@@ -24,7 +24,7 @@
     {% for line in lines %}
         <div class="line {{ line.speaker_class }}">
             {% if has_audio %}
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-{{ line.index }}')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-{{ line.index }}" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>

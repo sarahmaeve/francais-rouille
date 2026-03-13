@@ -59,8 +59,9 @@ async function fetchVocab(url) {
 // --- Quiz Engine ---
 
 class QuizEngine {
-    constructor(containerEl) {
+    constructor(containerEl, app) {
         this.container = containerEl;
+        this.app = app;
         this.score = 0;
         this.total = 0;
         this.current = 0;
@@ -80,7 +81,7 @@ class QuizEngine {
         `;
     }
 
-    showScore(quizType, restartFn) {
+    showScore(quizType, restartCallback) {
         const pct = this.total > 0 ? Math.round((this.score / this.total) * 100) : 0;
         let message = '';
         if (pct === 100) message = 'Parfait !';
@@ -94,10 +95,11 @@ class QuizEngine {
                 <div class="quiz-score-label">${pct}%</div>
                 <div class="quiz-score-message">${message}</div>
                 <div class="quiz-score-actions">
-                    <button class="quiz-btn" onclick="${restartFn}">Recommencer</button>
+                    <button class="quiz-btn quiz-restart">Recommencer</button>
                 </div>
             </div>
         `;
+        this.container.querySelector('.quiz-restart').addEventListener('click', restartCallback);
     }
 
     // --- Multiple Choice ---
@@ -118,7 +120,7 @@ class QuizEngine {
 
     renderMCQuestion() {
         if (this.current >= this.total) {
-            this.showScore('mc', 'quizApp.startMC()');
+            this.showScore('mc', () => this.app.startMC());
             return;
         }
 
@@ -129,7 +131,7 @@ class QuizEngine {
 
         const optionsHtml = q.options.map((opt, i) => {
             const label = q.frToEn ? opt.english : opt.french;
-            return `<button class="quiz-option" data-index="${i}" onclick="quizApp.checkMC(${i})">${label}</button>`;
+            return `<button class="quiz-option" data-index="${i}">${label}</button>`;
         }).join('');
 
         this.container.innerHTML = `
@@ -140,6 +142,13 @@ class QuizEngine {
                 <div class="quiz-feedback" id="quiz-feedback"></div>
             </div>
         `;
+
+        const self = this;
+        this.container.querySelectorAll('.quiz-option').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                self.checkMC(parseInt(btn.dataset.index, 10));
+            });
+        });
     }
 
     checkMC(selectedIndex) {
@@ -182,7 +191,7 @@ class QuizEngine {
 
     renderFITBQuestion() {
         if (this.current >= this.total) {
-            this.showScore('fitb', 'quizApp.startFITB()');
+            this.showScore('fitb', () => this.app.startFITB());
             return;
         }
 
@@ -197,13 +206,17 @@ class QuizEngine {
             <div class="quiz-card">
                 <div class="quiz-fitb-sentence">${sentenceHtml}</div>
                 <div class="quiz-fitb-actions">
-                    <button class="quiz-btn" id="fitb-check" onclick="quizApp.checkFITB()">Vérifier</button>
-                    <button class="quiz-hint" onclick="quizApp.showHint()">Indice</button>
+                    <button class="quiz-btn" id="fitb-check">Vérifier</button>
+                    <button class="quiz-hint" id="fitb-hint-btn">Indice</button>
                     <span class="quiz-hint-text" id="fitb-hint"></span>
                 </div>
                 <div class="quiz-feedback" id="quiz-feedback"></div>
             </div>
         `;
+
+        const self = this;
+        document.getElementById('fitb-check').addEventListener('click', function() { self.checkFITB(); });
+        document.getElementById('fitb-hint-btn').addEventListener('click', function() { self.showHint(); });
 
         const input = document.getElementById('fitb-input');
         input.focus();
@@ -275,7 +288,7 @@ class QuizEngine {
 
     renderDDQuestion() {
         if (this.current >= this.total) {
-            this.showScore('dd', 'quizApp.startDD()');
+            this.showScore('dd', () => this.app.startDD());
             return;
         }
 
@@ -401,15 +414,13 @@ class QuizEngine {
 
 // --- Quiz App (page-level controller) ---
 
-let quizApp = null;
-
 class QuizApp {
     constructor(vocabUrl, quizData) {
         this.vocabUrl = vocabUrl;
         this.fillInBlank = quizData.FILL_IN_BLANK || [];
         this.dragDrop = quizData.DRAG_DROP || [];
         this.vocabData = [];
-        this.engine = new QuizEngine(document.getElementById('quiz-container'));
+        this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
         this.currentTab = null;
 
         this.initTabs();
@@ -434,11 +445,6 @@ class QuizApp {
         else if (type === 'dd') this.startDD();
     }
 
-    // Proxy methods — called from inline onclick handlers in rendered HTML
-    checkMC(i) { this.engine.checkMC(i); }
-    checkFITB() { this.engine.checkFITB(); }
-    showHint() { this.engine.showHint(); }
-
     async startMC() {
         if (this.vocabData.length === 0) {
             this.engine.container.innerHTML = '<p>Chargement du vocabulaire...</p>';
@@ -453,7 +459,7 @@ class QuizApp {
             }
         }
         const count = Math.min(10, this.vocabData.length);
-        this.engine = new QuizEngine(document.getElementById('quiz-container'));
+        this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
         this.engine.loadMultipleChoice(this.vocabData, count);
     }
 
@@ -463,7 +469,7 @@ class QuizApp {
                 '<div class="quiz-card"><p>Pas encore de questions pour ce type.</p></div>';
             return;
         }
-        this.engine = new QuizEngine(document.getElementById('quiz-container'));
+        this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
         this.engine.loadFillInBlank(this.fillInBlank);
     }
 
@@ -473,10 +479,23 @@ class QuizApp {
                 '<div class="quiz-card"><p>Pas encore de questions pour ce type.</p></div>';
             return;
         }
-        this.engine = new QuizEngine(document.getElementById('quiz-container'));
+        this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
         this.engine.loadDragDrop(this.dragDrop);
     }
 }
+
+// --- Auto-init ---
+// Expects: <div id="quiz-container" data-vocab-url="vocabulaire.html"></div>
+// and a global QUIZ_DATA object loaded from quiz-data.js before this script.
+
+document.addEventListener('DOMContentLoaded', function() {
+    var container = document.getElementById('quiz-container');
+    if (container && typeof QUIZ_DATA !== 'undefined') {
+        var vocabUrl = container.dataset.vocabUrl || 'vocabulaire.html';
+        var app = new QuizApp(vocabUrl, QUIZ_DATA);
+        app.switchTab('mc');
+    }
+});
 
 // --- Self-tests (run via browser console: runTests()) ---
 

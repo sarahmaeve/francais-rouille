@@ -36,7 +36,7 @@
 
     
     <div class="play-combined">
-        <button class="play-btn" onclick="playAll(this)" aria-label="Écouter le dialogue complet">
+        <button class="play-btn" aria-label="Écouter le dialogue complet">
             <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
             <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
         </button>
@@ -48,7 +48,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-01')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-01" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -61,7 +61,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-02')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-02" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -74,7 +74,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-03')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-03" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -87,7 +87,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-04')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-04" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -100,7 +100,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-05')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-05" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -113,7 +113,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-06')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-06" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -126,7 +126,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-07')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-07" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -139,7 +139,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-08')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-08" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -152,7 +152,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-09')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-09" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -165,7 +165,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-10')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-10" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -178,7 +178,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-11')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-11" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -191,7 +191,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-12')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-12" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -204,7 +204,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-13')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-13" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -217,7 +217,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-14')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-14" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -230,7 +230,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-15')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-15" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -243,7 +243,7 @@
     
         <div class="line speaker-b">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-16')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-16" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -256,7 +256,7 @@
     
         <div class="line speaker-a">
             
-            <button class="play-btn" onclick="toggleAudio(this, 'audio-17')" aria-label="Écouter">
+            <button class="play-btn" data-audio="audio-17" aria-label="Écouter">
                 <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
                 <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
             </button>
@@ -281,109 +281,7 @@
     
 
     
-    <script>
-    let currentAudio = null;
-    let currentBtn = null;
-    let playingAll = false;
-    let playAllBtn = null;
-    let playAllQueue = [];
-    let playAllTimer = null;
-
-    function stopPlayAll() {
-        playingAll = false;
-        if (playAllTimer) { clearTimeout(playAllTimer); playAllTimer = null; }
-        if (playAllBtn) { playAllBtn.classList.remove('playing'); playAllBtn = null; }
-        playAllQueue = [];
-    }
-
-    function toggleAudio(btn, audioId) {
-        const audio = document.getElementById(audioId);
-        stopPlayAll();
-
-        if (currentAudio && currentAudio !== audio) {
-            currentAudio.pause();
-            currentAudio.currentTime = 0;
-            currentBtn.classList.remove('playing');
-        }
-
-        if (audio.paused) {
-            audio.play();
-            btn.classList.add('playing');
-            currentAudio = audio;
-            currentBtn = btn;
-        } else {
-            audio.pause();
-            audio.currentTime = 0;
-            btn.classList.remove('playing');
-            currentAudio = null;
-            currentBtn = null;
-        }
-
-        audio.onended = function() {
-            btn.classList.remove('playing');
-            currentAudio = null;
-            currentBtn = null;
-        };
-    }
-
-    function playAll(btn) {
-        if (playingAll) {
-            if (currentAudio && !currentAudio.paused) {
-                currentAudio.pause();
-                btn.classList.remove('playing');
-                if (currentBtn) currentBtn.classList.remove('playing');
-                return;
-            }
-            if (currentAudio && currentAudio.paused) {
-                currentAudio.play();
-                btn.classList.add('playing');
-                if (currentBtn) currentBtn.classList.add('playing');
-                return;
-            }
-        }
-
-        if (currentAudio) {
-            currentAudio.pause();
-            currentAudio.currentTime = 0;
-            if (currentBtn) currentBtn.classList.remove('playing');
-        }
-
-        playAllQueue = Array.from(document.querySelectorAll('.dialogue audio'));
-        if (playAllQueue.length === 0) return;
-
-        playingAll = true;
-        playAllBtn = btn;
-        btn.classList.add('playing');
-        playNextInSequence();
-    }
-
-    function playNextInSequence() {
-        if (!playingAll || playAllQueue.length === 0) {
-            stopPlayAll();
-            if (currentBtn) { currentBtn.classList.remove('playing'); currentBtn = null; }
-            currentAudio = null;
-            return;
-        }
-
-        var audio = playAllQueue.shift();
-        var lineDiv = audio.closest('.line');
-        var lineBtn = lineDiv ? lineDiv.querySelector('.play-btn') : null;
-
-        if (currentBtn && currentBtn !== playAllBtn) {
-            currentBtn.classList.remove('playing');
-        }
-        if (lineBtn) lineBtn.classList.add('playing');
-
-        currentBtn = lineBtn;
-        currentAudio = audio;
-        audio.currentTime = 0;
-        audio.onended = function() {
-            if (lineBtn) lineBtn.classList.remove('playing');
-            playAllTimer = setTimeout(playNextInSequence, 750);
-        };
-        audio.play();
-    }
-    </script>
+    <script src="../../shared/dialog.js"></script>
     
 </body>
 </html>

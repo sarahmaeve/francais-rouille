@@ -509,6 +509,17 @@ class CrosswordEngine {
     }
 }
 
+// --- Auto-init ---
+// Expects: <div id="crossword-container"></div>
+// and a global PUZZLE object loaded from crossword-data.js before this script.
+
+document.addEventListener('DOMContentLoaded', function() {
+    var container = document.getElementById('crossword-container');
+    if (container && typeof PUZZLE !== 'undefined') {
+        new CrosswordEngine(container, PUZZLE);
+    }
+});
+
 // --- Self-tests (run via browser console: runCrosswordTests()) ---
 
 function runCrosswordTests() {
