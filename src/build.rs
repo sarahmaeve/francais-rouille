@@ -109,6 +109,87 @@ pub fn parse_characters(content: &str) -> Vec<Character> {
         .collect()
 }
 
+/// Parse the title (first `# Heading`) from a markdown file.
+fn parse_md_title(content: &str) -> Option<String> {
+    content.lines().find_map(|line| {
+        let line = line.trim();
+        if line.starts_with("# ") {
+            Some(line[2..].trim().to_string())
+        } else {
+            None
+        }
+    })
+}
+
+/// Parse character descriptions from a markdown `_en.md` file.
+///
+/// Looks for lines like `- **Name** — description`, stripping the
+/// markdown bold markers from the name.
+fn parse_characters_md(content: &str) -> Vec<Character> {
+    content
+        .lines()
+        .filter_map(|line| {
+            let line = line.trim();
+            if !line.starts_with('-') {
+                return None;
+            }
+            let line = line.trim_start_matches('-').trim();
+
+            let (name, description) = if let Some(pos) = line.find(" — ") {
+                (&line[..pos], &line[pos + " — ".len()..])
+            } else if let Some(pos) = line.find(" – ") {
+                (&line[..pos], &line[pos + " – ".len()..])
+            } else {
+                return None;
+            };
+
+            let name = name.replace("**", "");
+            Some(Character {
+                name: name.trim().to_string(),
+                description: description.trim().to_string(),
+            })
+        })
+        .collect()
+}
+
+/// Parse dialog lines from a markdown `_en.md` file.
+///
+/// Matches lines in the format `**Speaker:** spoken text`.
+fn parse_dialog_md(content: &str) -> Vec<dialog::DialogLine> {
+    content
+        .lines()
+        .filter_map(|line| {
+            let line = line.trim();
+            if !line.starts_with("**") {
+                return None;
+            }
+            // Find the closing ** after the speaker name.
+            let after_open = &line[2..];
+            let close = after_open.find("**")?;
+            let speaker = after_open[..close].trim_end_matches(':').trim();
+
+            // Skip non-dialog lines like "**Characters:**"
+            if speaker.contains("Characters")
+                || speaker.contains("Personnages")
+            {
+                return None;
+            }
+
+            // Text follows `**Name:** ` or `**Name:** `
+            let rest = &after_open[close + 2..];
+            let text = rest.trim_start_matches(':').trim();
+            if text.is_empty() {
+                return None;
+            }
+
+            Some(dialog::DialogLine {
+                speaker: speaker.to_string(),
+                text: text.to_string(),
+            })
+        })
+        .collect()
+}
+
 /// Build all HTML pages for a single chapter.
 ///
 /// Reads `chapter.toml` from `content_dir`, renders templates from
@@ -148,6 +229,9 @@ pub fn build_chapter(
                 "dialog" => {
                     build_dialog_page(
                         &tera, &config, page, content_dir, output_dir, base_url.as_deref(),
+                    )?;
+                    build_translation_page(
+                        &tera, &config, page, content_dir, output_dir,
                     )?;
                 }
                 "fragment" => {
@@ -224,6 +308,15 @@ fn build_dialog_page(
         })
         .collect();
 
+    let has_translation = content_dir
+        .join(format!("{}_en.md", page.slug))
+        .exists();
+    let has_quiz = config
+        .sections
+        .iter()
+        .flat_map(|s| &s.pages)
+        .any(|p| p.slug == "quiz");
+
     let mut ctx = Context::new();
     ctx.insert("chapter", &config.chapter);
     ctx.insert("title", &page.title);
@@ -232,6 +325,8 @@ fn build_dialog_page(
     ctx.insert("slug", &page.slug);
     ctx.insert("vocab_page", &config.chapter.vocab_page);
     ctx.insert("has_audio", &has_audio);
+    ctx.insert("has_translation", &has_translation);
+    ctx.insert("has_quiz", &has_quiz);
     ctx.insert("audio_dir", &audio_dir);
     ctx.insert("personnages", &characters);
     ctx.insert("lines", &lines_data);
@@ -263,9 +358,16 @@ fn build_fragment_page(
     let fragment_path = content_dir.join(format!("{}.html", page.slug));
     let fragment = std::fs::read_to_string(&fragment_path)?;
 
-    // Optional extra CSS from a companion .css file.
-    let css_path = content_dir.join(format!("{}.css", page.slug));
-    let extra_css = std::fs::read_to_string(&css_path).ok();
+    // Fragment pages don't generate translations automatically, so only
+    // link to a translation if the HTML file already exists.
+    let has_translation = output_dir
+        .join(format!("translations/{}_en.html", page.slug))
+        .exists();
+    let has_quiz = config
+        .sections
+        .iter()
+        .flat_map(|s| &s.pages)
+        .any(|p| p.slug == "quiz");
 
     let mut ctx = Context::new();
     ctx.insert("chapter", &config.chapter);
@@ -275,8 +377,9 @@ fn build_fragment_page(
     ctx.insert("slug", &page.slug);
     ctx.insert("vocab_page", &config.chapter.vocab_page);
     ctx.insert("has_audio", &false);
+    ctx.insert("has_translation", &has_translation);
+    ctx.insert("has_quiz", &has_quiz);
     ctx.insert("content", &fragment);
-    ctx.insert("extra_css", &extra_css);
     if let Some(base) = base_url {
         ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
     }
@@ -286,6 +389,82 @@ fn build_fragment_page(
     std::fs::write(&out_path, html)?;
 
     println!("  wrote {}.html (fragment)", page.slug);
+    Ok(())
+}
+
+/// Build an English translation page from a `_en.md` file.
+///
+/// If the file does not exist, this is a no-op.
+fn build_translation_page(
+    tera: &Tera,
+    config: &ChapterConfig,
+    page: &PageConfig,
+    content_dir: &Path,
+    output_dir: &Path,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let md_path = content_dir.join(format!("{}_en.md", page.slug));
+    let content = match std::fs::read_to_string(&md_path) {
+        Ok(c) => c,
+        Err(_) => return Ok(()), // No translation file — skip silently.
+    };
+
+    let title = parse_md_title(&content).unwrap_or_else(|| page.title.clone());
+    let characters = parse_characters_md(&content);
+    let dialog_lines = parse_dialog_md(&content);
+
+    // Assign speaker classes in order of first appearance.
+    let classes = ["speaker-a", "speaker-b", "speaker-c", "speaker-d"];
+    let mut speaker_classes: HashMap<String, String> = HashMap::new();
+    let mut class_idx = 0;
+    for line in &dialog_lines {
+        if !speaker_classes.contains_key(&line.speaker) {
+            speaker_classes.insert(
+                line.speaker.clone(),
+                classes[class_idx % classes.len()].to_string(),
+            );
+            class_idx += 1;
+        }
+    }
+
+    let lines_data: Vec<DialogLineData> = dialog_lines
+        .iter()
+        .enumerate()
+        .map(|(i, line)| {
+            let index = format!("{:02}", i + 1);
+            DialogLineData {
+                index,
+                speaker: line.speaker.clone(),
+                speaker_class: speaker_classes
+                    .get(&line.speaker)
+                    .cloned()
+                    .unwrap_or_else(|| "speaker-a".to_string()),
+                text: line.text.clone(),
+                audio_file: String::new(),
+            }
+        })
+        .collect();
+
+    let mut ctx = Context::new();
+    ctx.insert("chapter", &config.chapter);
+    ctx.insert("title", &title);
+    ctx.insert("description", &page.description);
+    ctx.insert("slug", &page.slug);
+    ctx.insert("vocab_page", &config.chapter.vocab_page);
+    ctx.insert("personnages", &characters);
+    ctx.insert("lines", &lines_data);
+
+    let html = tera.render("translation.html", &ctx)?;
+
+    let translations_dir = output_dir.join("translations");
+    std::fs::create_dir_all(&translations_dir)?;
+    let out_path = translations_dir.join(format!("{}_en.html", page.slug));
+    std::fs::write(&out_path, html)?;
+
+    println!(
+        "  wrote translations/{}_en.html ({} lines)",
+        page.slug,
+        dialog_lines.len()
+    );
     Ok(())
 }
 
@@ -433,6 +612,165 @@ fn classify_priority(rel_path: &str) -> f32 {
     }
 }
 
+/// A broken link found during link checking.
+#[derive(Debug)]
+pub struct BrokenLink {
+    /// The HTML file containing the link.
+    pub source: String,
+    /// The href or src value.
+    pub link: String,
+    /// The resolved path that does not exist.
+    pub resolved: String,
+}
+
+/// Scan all HTML files under `site_dir` and verify that every local `href`
+/// and `src` attribute points to an existing file.
+///
+/// Returns a list of broken links (empty = all good).
+pub fn check_links(site_dir: &Path) -> Result<Vec<BrokenLink>, Box<dyn std::error::Error>> {
+    use std::collections::HashSet;
+
+    let mut broken = Vec::new();
+
+    // Collect all HTML files.
+    let mut html_files = Vec::new();
+    collect_html_files(site_dir, &mut html_files)?;
+
+    // Build a set of all existing files for quick lookup.
+    let mut existing: HashSet<std::path::PathBuf> = HashSet::new();
+    collect_all_files(site_dir, &mut existing)?;
+
+    for html_path in &html_files {
+        let content = std::fs::read_to_string(html_path)?;
+        let dir = html_path.parent().unwrap_or(site_dir);
+
+        for link in extract_local_links(&content) {
+            // Strip fragment identifiers (#section).
+            let link_path = link.split('#').next().unwrap_or(&link);
+            if link_path.is_empty() {
+                continue;
+            }
+
+            let resolved = dir.join(link_path).canonicalize().unwrap_or_else(|_| {
+                // canonicalize fails if file doesn't exist — build the
+                // normalized path manually for the error message.
+                normalize_path(&dir.join(link_path))
+            });
+
+            if !existing.contains(&resolved) {
+                let source = html_path
+                    .strip_prefix(site_dir)
+                    .unwrap_or(html_path)
+                    .display()
+                    .to_string();
+                broken.push(BrokenLink {
+                    source,
+                    link: link.to_string(),
+                    resolved: resolved.display().to_string(),
+                });
+            }
+        }
+    }
+
+    Ok(broken)
+}
+
+fn collect_html_files(
+    dir: &Path,
+    out: &mut Vec<std::path::PathBuf>,
+) -> Result<(), Box<dyn std::error::Error>> {
+    for entry in std::fs::read_dir(dir)? {
+        let entry = entry?;
+        let path = entry.path();
+        if path.is_dir() {
+            collect_html_files(&path, out)?;
+        } else if path.extension().and_then(|e| e.to_str()) == Some("html") {
+            out.push(path);
+        }
+    }
+    Ok(())
+}
+
+fn collect_all_files(
+    dir: &Path,
+    out: &mut std::collections::HashSet<std::path::PathBuf>,
+) -> Result<(), Box<dyn std::error::Error>> {
+    for entry in std::fs::read_dir(dir)? {
+        let entry = entry?;
+        let path = entry.path();
+        if path.is_dir() {
+            collect_all_files(&path, out)?;
+        } else if let Ok(canonical) = path.canonicalize() {
+            out.insert(canonical);
+        }
+    }
+    Ok(())
+}
+
+/// Extract local link targets from href="..." and src="..." attributes.
+///
+/// Skips external URLs (http/https/mailto), fragment-only links (#...),
+/// absolute paths (/...), and data URIs. Decodes common HTML entities
+/// in URLs (e.g. `&#x2F;` → `/`).
+fn extract_local_links(html: &str) -> Vec<String> {
+    let mut links = Vec::new();
+    for attr in &["href=\"", "src=\""] {
+        let mut rest = html;
+        while let Some(pos) = rest.find(attr) {
+            let start = pos + attr.len();
+            rest = &rest[start..];
+            if let Some(end) = rest.find('"') {
+                let raw = &rest[..end];
+                rest = &rest[end + 1..];
+
+                // Decode HTML entities.
+                let value = decode_html_entities(raw);
+
+                // Skip non-local links.
+                if value.starts_with("http://")
+                    || value.starts_with("https://")
+                    || value.starts_with("mailto:")
+                    || value.starts_with("data:")
+                    || value.starts_with('#')
+                    || value.starts_with('/')
+                    || value.is_empty()
+                {
+                    continue;
+                }
+
+                links.push(value);
+            }
+        }
+    }
+    links
+}
+
+/// Decode common HTML entities that may appear in href/src attributes.
+fn decode_html_entities(s: &str) -> String {
+    s.replace("&#x2F;", "/")
+        .replace("&#x27;", "'")
+        .replace("&amp;", "&")
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&quot;", "\"")
+}
+
+/// Normalize a path by resolving `.` and `..` components without requiring
+/// the file to exist (unlike `canonicalize`).
+fn normalize_path(path: &Path) -> std::path::PathBuf {
+    let mut components = Vec::new();
+    for component in path.components() {
+        match component {
+            std::path::Component::ParentDir => {
+                components.pop();
+            }
+            std::path::Component::CurDir => {}
+            c => components.push(c),
+        }
+    }
+    components.iter().collect()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -498,6 +836,79 @@ Marc : Salut !
     fn parse_characters_empty_input() {
         assert!(parse_characters("").is_empty());
         assert!(parse_characters("Just a title\nNo characters").is_empty());
+    }
+
+    const SAMPLE_EN_MD: &str = "\
+# Navigating the Paris Metro
+
+**Characters:**
+- **Léa** — a tourist visiting Paris for the first time
+- **Marc** — a Parisian waiting on the platform
+
+---
+
+**Léa:** Excuse me, sir, can you help me?
+
+**Marc:** Of course! You need to take line 12.
+
+**Léa:** And after the transfer, is it far?
+";
+
+    #[test]
+    fn parse_md_title_extracts_heading() {
+        assert_eq!(
+            parse_md_title(SAMPLE_EN_MD),
+            Some("Navigating the Paris Metro".to_string())
+        );
+        assert_eq!(parse_md_title("No heading here"), None);
+    }
+
+    #[test]
+    fn parse_characters_md_strips_bold() {
+        let chars = parse_characters_md(SAMPLE_EN_MD);
+        assert_eq!(chars.len(), 2);
+        assert_eq!(chars[0].name, "Léa");
+        assert_eq!(chars[0].description, "a tourist visiting Paris for the first time");
+        assert_eq!(chars[1].name, "Marc");
+    }
+
+    #[test]
+    fn parse_dialog_md_extracts_lines() {
+        let lines = parse_dialog_md(SAMPLE_EN_MD);
+        assert_eq!(lines.len(), 3);
+        assert_eq!(lines[0].speaker, "Léa");
+        assert_eq!(lines[0].text, "Excuse me, sir, can you help me?");
+        assert_eq!(lines[1].speaker, "Marc");
+        assert_eq!(lines[1].text, "Of course! You need to take line 12.");
+    }
+
+    #[test]
+    fn parse_dialog_md_skips_metadata() {
+        let lines = parse_dialog_md(SAMPLE_EN_MD);
+        for line in &lines {
+            assert!(!line.speaker.contains("Characters"));
+            assert!(!line.text.contains("tourist visiting"));
+        }
+    }
+
+    #[test]
+    fn parse_dialog_md_single_speaker() {
+        let content = "\
+# Test Monologue
+
+**Characters:**
+- **Isabelle** — a tour guide
+
+---
+
+**Isabelle:** Welcome to Toulouse.
+
+**Isabelle:** This city has a long history.
+";
+        let lines = parse_dialog_md(content);
+        assert_eq!(lines.len(), 2);
+        assert_eq!(lines[0].speaker, "Isabelle");
+        assert_eq!(lines[1].speaker, "Isabelle");
     }
 
     #[test]
@@ -873,5 +1284,92 @@ A : Line 4
         assert!(!xml.contains("audio/fake.html"));
 
         let _ = std::fs::remove_dir_all(&tmp);
+    }
+
+    #[test]
+    fn extract_local_links_finds_hrefs_and_srcs() {
+        let html = r#"
+            <a href="index.html">Home</a>
+            <a href="translations/01_en.html">EN</a>
+            <link rel="stylesheet" href="../style.css">
+            <script src="../../shared/dialog.js"></script>
+            <audio src="audio/01/lines/01_lea.mp3"></audio>
+        "#;
+        let links = extract_local_links(html);
+        assert_eq!(links, vec![
+            "index.html",
+            "translations/01_en.html",
+            "../style.css",
+            "../../shared/dialog.js",
+            "audio/01/lines/01_lea.mp3",
+        ]);
+    }
+
+    #[test]
+    fn extract_local_links_skips_external_and_absolute() {
+        let html = r##"
+            <a href="https://example.com">Ext</a>
+            <a href="http://example.com">Ext</a>
+            <a href="mailto:a@b.com">Mail</a>
+            <a href="#section">Frag</a>
+            <a href="/">Root</a>
+            <a href="local.html">Local</a>
+        "##;
+        let links = extract_local_links(html);
+        assert_eq!(links, vec!["local.html"]);
+    }
+
+    #[test]
+    fn extract_local_links_decodes_html_entities() {
+        let html = r#"<audio src="audio/07&#x2F;lines/01.mp3"></audio>"#;
+        let links = extract_local_links(html);
+        assert_eq!(links, vec!["audio/07/lines/01.mp3"]);
+    }
+
+    #[test]
+    fn normalize_path_resolves_parent_dirs() {
+        let p = normalize_path(Path::new("/a/b/c/../d/./e"));
+        assert_eq!(p, std::path::PathBuf::from("/a/b/d/e"));
+    }
+
+    #[test]
+    fn check_links_detects_broken_link() {
+        let tmp = std::env::temp_dir().join("fr_rouille_link_test");
+        let _ = std::fs::remove_dir_all(&tmp);
+        std::fs::create_dir_all(tmp.join("sub")).unwrap();
+
+        // Create an HTML file that links to an existing and a missing file.
+        std::fs::write(
+            tmp.join("page.html"),
+            r#"<a href="sub/exists.html">OK</a> <a href="sub/missing.html">Broken</a>"#,
+        ).unwrap();
+        std::fs::write(tmp.join("sub/exists.html"), "<p>hi</p>").unwrap();
+
+        let broken = check_links(&tmp).unwrap();
+        assert_eq!(broken.len(), 1);
+        assert!(broken[0].link.contains("missing.html"));
+        assert_eq!(broken[0].source, "page.html");
+
+        let _ = std::fs::remove_dir_all(&tmp);
+    }
+
+    #[test]
+    fn check_links_site_directory() {
+        // Integration test: verify no dead links in the actual site/.
+        let site_dir = Path::new("site");
+        if !site_dir.exists() {
+            // Skip if not running from project root.
+            return;
+        }
+
+        let broken = check_links(site_dir).unwrap();
+        if !broken.is_empty() {
+            let mut msg = format!("Found {} broken link(s):\n", broken.len());
+            for b in &broken {
+                writeln!(msg, "  {} → {} (resolved: {})", b.source, b.link, b.resolved)
+                    .unwrap();
+            }
+            panic!("{msg}");
+        }
     }
 }

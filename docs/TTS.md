@@ -49,13 +49,18 @@ francais-rouille file content/b1-vie-quotidienne/09_gallimard_evenement.txt outp
 ### Synthesize a dialog file
 
 Parses a dialog text file, assigns a distinct voice to each character (based
-on gender detected from the character descriptions), and produces:
-
-- One MP3 per dialog line in `<output_dir>/lines/`
-- A combined MP3 of the full conversation in `<output_dir>/combined.mp3`
+on gender detected from the character descriptions), and produces one MP3
+per dialog line in `<output_dir>/lines/`.
 
 ```bash
 francais-rouille dialog <input.txt> <output_dir>
+```
+
+Pass `--combined` to also generate a single concatenated audio file with
+silence between lines:
+
+```bash
+francais-rouille dialog <input.txt> <output_dir> --combined
 ```
 
 Example:
@@ -68,12 +73,11 @@ Output:
 
 ```
 output/07_boulangerie/
-├── lines/
-│   ├── 01_claire.mp3
-│   ├── 02_monsieur_duval.mp3
-│   ├── 03_claire.mp3
-│   └── ...
-└── combined.mp3
+└── lines/
+    ├── 01_claire.mp3
+    ├── 02_monsieur_duval.mp3
+    ├── 03_claire.mp3
+    └── ...
 ```
 
 ## How voice assignment works

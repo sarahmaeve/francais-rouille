@@ -388,15 +388,16 @@ impl GoogleTts {
 
     /// Synthesize an entire dialog file.
     ///
-    /// Returns per-line audio and a single combined file with silence
-    /// gaps between lines. For MP3, individual frames are independently
-    /// decodable so concatenation produces a valid stream. For OGG_OPUS,
-    /// the combined file is a simple concatenation (each segment is a
-    /// standalone Ogg stream).
+    /// Returns per-line audio and, when `combined` is true, a single
+    /// concatenated file with silence gaps between lines. For MP3,
+    /// individual frames are independently decodable so concatenation
+    /// produces a valid stream. For OGG_OPUS, the combined file is a
+    /// simple concatenation (each segment is a standalone Ogg stream).
     pub async fn synthesize_dialog(
         &self,
         content: &str,
         format: AudioFormat,
+        combined: bool,
     ) -> Result<DialogAudio, TtsError> {
         let parsed = dialog::parse_dialog(content);
         if parsed.is_empty() {
@@ -407,23 +408,29 @@ impl GoogleTts {
         let voice_map: HashMap<String, FrenchVoice> =
             dialog::assign_voices(&parsed, &genders);
 
-        // Pre-generate the silence segment once (using the first voice).
-        let silence = self
-            .synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::FEMALE[0], format)
-            .await?;
+        // Pre-generate the silence segment once (only needed for combined).
+        let silence = if combined {
+            Some(
+                self.synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::FEMALE[0], format)
+                    .await?,
+            )
+        } else {
+            None
+        };
 
         let mut lines = Vec::with_capacity(parsed.len());
-        let mut combined = Vec::new();
+        let mut combined_data = Vec::new();
 
         for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
             let voice = voice_map[&speaker];
             let audio = self.synthesize(&text, voice, format).await?;
 
-            // Append to combined stream.
-            if i > 0 {
-                combined.extend_from_slice(&silence);
+            if let Some(ref silence) = silence {
+                if i > 0 {
+                    combined_data.extend_from_slice(silence);
+                }
+                combined_data.extend_from_slice(&audio);
             }
-            combined.extend_from_slice(&audio);
 
             lines.push(LineAudio {
                 index: i + 1,
@@ -433,7 +440,7 @@ impl GoogleTts {
             });
         }
 
-        Ok(DialogAudio { lines, combined, format })
+        Ok(DialogAudio { lines, combined: combined_data, format })
     }
 }
 

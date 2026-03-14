@@ -10,7 +10,7 @@ use crate::dialog::slugify;
 fn print_usage(prog: &str) {
     eprintln!("Usage:");
     eprintln!("  {prog} file   <input.txt> <output>  [--format mp3|ogg]  Synthesize a text file");
-    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg]  Synthesize a dialog");
+    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--combined]  Synthesize a dialog");
     eprintln!("  {prog} build  [<chapter>] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
@@ -22,7 +22,7 @@ fn print_help() {
     println!();
     println!("USAGE:");
     println!("  francais-rouille file   <input.txt> <output> [--format mp3|ogg]");
-    println!("  francais-rouille dialog <input.txt> <output_dir> [--format mp3|ogg]");
+    println!("  francais-rouille dialog <input.txt> <output_dir> [--format mp3|ogg] [--combined]");
     println!();
     println!("COMMANDS:");
     println!("  file     Convert a plain text file to a single audio file using a default");
@@ -34,6 +34,8 @@ fn print_help() {
     println!("OPTIONS:");
     println!("  --format mp3|ogg   Audio encoding (default: mp3). Use \"ogg\" for OGG Opus,");
     println!("                     which produces smaller files at comparable quality.");
+    println!("  --combined         Also generate a single combined audio file with silence");
+    println!("                     between lines. Off by default.");
     println!();
     println!("ENVIRONMENT:");
     println!("  GOOGLE_TTS_API_KEY   Required. Your Google Cloud API key with the");
@@ -122,13 +124,14 @@ async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>
 
 async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg]", args[0]);
+        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg] [--combined]", args[0]);
         std::process::exit(1);
     }
 
     let input_path = &args[2];
     let output_dir = PathBuf::from(&args[3]);
     let format = parse_format(args)?;
+    let combined = args.iter().any(|a| a == "--combined");
     let ext = format.extension();
     let lines_dir = output_dir.join("lines");
 
@@ -138,7 +141,7 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
     let tts = GoogleTts::from_env()?;
 
     println!("Synthesizing dialog from {input_path} (format: {ext})...");
-    let result = tts.synthesize_dialog(&content, format).await?;
+    let result = tts.synthesize_dialog(&content, format, combined).await?;
 
     for line in &result.lines {
         let filename = format!(
@@ -151,12 +154,15 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
         println!("  {} — {}: {}...", filename, line.speaker, truncate(&line.text, 50));
     }
 
-    let combined_path = output_dir.join(format!("combined.{ext}"));
-    std::fs::write(&combined_path, &result.combined)?;
-
     println!();
     println!("Wrote {} individual {ext} files to {}", result.lines.len(), lines_dir.display());
-    println!("Wrote combined audio to {}", combined_path.display());
+
+    if combined {
+        let combined_path = output_dir.join(format!("combined.{ext}"));
+        std::fs::write(&combined_path, &result.combined)?;
+        println!("Wrote combined audio to {}", combined_path.display());
+    }
+
     Ok(())
 }
 
