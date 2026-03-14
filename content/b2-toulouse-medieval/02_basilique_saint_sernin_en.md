@@ -1,0 +1,16 @@
+# The Basilique Saint-Sernin
+
+**Characters:**
+- **Isabelle** — a tour guide and medieval historian
+
+---
+
+**Isabelle:** Here we are in front of the Basilique Saint-Sernin, the largest Romanesque church in the Western world. Look at this octagonal bell tower that dominates Toulouse — it's one of the city's symbols. Take a moment to admire the harmony of this construction in pink brick and white stone.
+
+**Isabelle:** The basilica is named after Saint Saturninus, the first bishop of Toulouse, martyred in the year 250. According to tradition, he was tied to a raging bull and dragged through the streets of the city. The Rue du Taur, which we walked along earlier, takes its name from this episode.
+
+**Isabelle:** Construction of the current building began around 1080 and continued for more than two centuries. The church was built to house the relics of Saint Saturninus and to receive pilgrims traveling to Santiago de Compostela. Toulouse was situated on the Via Tolosana, one of the four great pilgrimage routes that crossed France.
+
+**Isabelle:** Observe the architecture: the central nave is flanked by double side aisles and topped with galleries. This layout allowed large numbers of pilgrims to circulate around the ambulatory, where they could venerate the relics without interrupting the religious services. The apse is adorned with radiating chapels, typical of pilgrimage Romanesque art.
+
+**Isabelle:** It's important to know that during the Albigensian Crusade, Saint-Sernin played an important role. It was the spiritual heart of the orthodox city, standing against the Cathars. After the crusade, the Inquisition held some of its assemblies here. This basilica was therefore the silent witness to Toulouse's darkest hours.

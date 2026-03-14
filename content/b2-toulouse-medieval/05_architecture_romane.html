@@ -1,0 +1,376 @@
+    <header>
+        <h1>Architecture d'une Église Romane</h1>
+        <p>Plan au sol et coupe transversale</p>
+    </header>
+
+    <p class="diagram-intro">
+        Ces diagrammes montrent les éléments architecturaux typiques d'une église romane de pèlerinage,
+        comme la Basilique Saint-Sernin de Toulouse.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- FLOOR PLAN                                                    -->
+    <!-- ============================================================ -->
+    <div class="diagram-section">
+        <h2>Plan au Sol</h2>
+        <p>Vue de dessus montrant la forme en croix latine caractéristique.</p>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2744"/>
+                    </marker>
+                </defs>
+
+                <rect width="600" height="750" fill="#faf7f0"/>
+
+                <!-- ── Outer walls ── -->
+                <!-- Nave + double side aisles -->
+                <rect x="120" y="200" width="360" height="380" rx="2"
+                      fill="none" stroke="#1a2744" stroke-width="2.5"/>
+
+                <!-- Transept arms -->
+                <rect x="60" y="370" width="480" height="100" rx="2"
+                      fill="none" stroke="#1a2744" stroke-width="2.5"/>
+
+                <!-- ── Interior divisions ── -->
+                <!-- Outer side aisles (left and right) -->
+                <line x1="180" y1="200" x2="180" y2="580" stroke="#1a2744" stroke-width="1.5"/>
+                <line x1="420" y1="200" x2="420" y2="580" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- Inner side aisles -->
+                <line x1="240" y1="200" x2="240" y2="580" stroke="#1a2744" stroke-width="1.5"/>
+                <line x1="360" y1="200" x2="360" y2="580" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- Transept inner walls meeting nave -->
+                <line x1="60" y1="370" x2="120" y2="370" stroke="#1a2744" stroke-width="1.5"/>
+                <line x1="480" y1="370" x2="540" y2="370" stroke="#1a2744" stroke-width="1.5"/>
+                <line x1="60" y1="470" x2="120" y2="470" stroke="#1a2744" stroke-width="1.5"/>
+                <line x1="480" y1="470" x2="540" y2="470" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- Crossing piers (4 heavy dots) -->
+                <circle cx="240" cy="370" r="6" fill="#1a2744"/>
+                <circle cx="360" cy="370" r="6" fill="#1a2744"/>
+                <circle cx="240" cy="470" r="6" fill="#1a2744"/>
+                <circle cx="360" cy="470" r="6" fill="#1a2744"/>
+
+                <!-- ── Apse (semicircular east end) ── -->
+                <path d="M 120,580 L 120,620 Q 120,710 300,710 Q 480,710 480,620 L 480,580"
+                      fill="none" stroke="#1a2744" stroke-width="2.5"/>
+
+                <!-- Ambulatory inner wall -->
+                <path d="M 180,580 L 180,610 Q 180,670 300,670 Q 420,670 420,610 L 420,580"
+                      fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- Apse interior (sanctuary) -->
+                <path d="M 240,580 L 240,600 Q 240,640 300,640 Q 360,640 360,600 L 360,580"
+                      fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- ── Radiating chapels (5 small semicircles) ── -->
+                <path d="M 130,625 Q 100,650 130,675" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <path d="M 140,670 Q 120,705 165,710" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <path d="M 265,705 Q 300,740 335,705" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <path d="M 435,710 Q 480,705 460,670" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <path d="M 470,675 Q 500,650 470,625" fill="none" stroke="#1a2744" stroke-width="2"/>
+
+                <!-- ── West entrance (narthex) ── -->
+                <rect x="260" y="192" width="30" height="16" fill="#faf7f0" stroke="#1a2744" stroke-width="1.5"/>
+                <rect x="310" y="192" width="30" height="16" fill="#faf7f0" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- ── Column rows (dots along nave pillars) ── -->
+                <!-- Left inner arcade -->
+                <circle cx="240" cy="250" r="4" fill="#2c3e6b"/>
+                <circle cx="240" cy="290" r="4" fill="#2c3e6b"/>
+                <circle cx="240" cy="330" r="4" fill="#2c3e6b"/>
+                <circle cx="240" cy="510" r="4" fill="#2c3e6b"/>
+                <circle cx="240" cy="550" r="4" fill="#2c3e6b"/>
+                <!-- Right inner arcade -->
+                <circle cx="360" cy="250" r="4" fill="#2c3e6b"/>
+                <circle cx="360" cy="290" r="4" fill="#2c3e6b"/>
+                <circle cx="360" cy="330" r="4" fill="#2c3e6b"/>
+                <circle cx="360" cy="510" r="4" fill="#2c3e6b"/>
+                <circle cx="360" cy="550" r="4" fill="#2c3e6b"/>
+
+                <!-- ── Numbered labels ── -->
+
+                <!-- 1: Nef (nave) -->
+                <circle cx="300" cy="300" r="12" fill="#c9a84c"/>
+                <text x="300" y="305" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">1</text>
+
+                <!-- 2: Bas-côté (side aisle) — left inner -->
+                <circle cx="210" cy="300" r="12" fill="#c9a84c"/>
+                <text x="210" y="305" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">2</text>
+
+                <!-- 3: Bas-côté extérieur (outer side aisle) — left outer -->
+                <circle cx="150" cy="300" r="12" fill="#c9a84c"/>
+                <text x="150" y="305" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">3</text>
+
+                <!-- 4: Transept — left arm -->
+                <circle cx="90" cy="420" r="12" fill="#c9a84c"/>
+                <text x="90" y="425" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">4</text>
+
+                <!-- 5: Croisée du transept -->
+                <circle cx="300" cy="420" r="12" fill="#c9a84c"/>
+                <text x="300" y="425" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">5</text>
+
+                <!-- 6: Chœur / Abside -->
+                <circle cx="300" cy="615" r="12" fill="#c9a84c"/>
+                <text x="300" y="620" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">6</text>
+
+                <!-- 7: Déambulatoire -->
+                <circle cx="200" cy="640" r="12" fill="#c9a84c"/>
+                <text x="200" y="645" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">7</text>
+
+                <!-- 8: Chapelle rayonnante -->
+                <circle cx="300" cy="730" r="12" fill="#c9a84c"/>
+                <text x="300" y="735" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">8</text>
+
+                <!-- 9: Portail (entrance) -->
+                <circle cx="300" cy="195" r="12" fill="#c9a84c"/>
+                <text x="300" y="200" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">9</text>
+
+                <!-- Orientation: compass + axis labels -->
+                <text x="300" y="180" text-anchor="middle" fill="#888" font-size="10"
+                      font-family="Georgia, serif" font-style="italic">Ouest (entrée)</text>
+                <text x="550" y="420" text-anchor="middle" fill="#888" font-size="10"
+                      font-family="Georgia, serif" font-style="italic"
+                      transform="rotate(90, 550, 420)">Nord</text>
+                <text x="50" y="420" text-anchor="middle" fill="#888" font-size="10"
+                      font-family="Georgia, serif" font-style="italic"
+                      transform="rotate(-90, 50, 420)">Sud</text>
+                <text x="300" y="748" text-anchor="middle" fill="#888" font-size="10"
+                      font-family="Georgia, serif" font-style="italic">Est (autel)</text>
+            </svg>
+        </div>
+
+        <div class="diagram-legend">
+            <h3>Légende du plan</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <span class="legend-num">1.</span>
+                    <span><span class="legend-fr">La nef</span> — <span class="legend-en">nave</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">2.</span>
+                    <span><span class="legend-fr">Le bas-côté</span> — <span class="legend-en">side aisle</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">3.</span>
+                    <span><span class="legend-fr">Le bas-côté extérieur</span> — <span class="legend-en">outer side aisle</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">4.</span>
+                    <span><span class="legend-fr">Le transept</span> — <span class="legend-en">transept</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">5.</span>
+                    <span><span class="legend-fr">La croisée du transept</span> — <span class="legend-en">crossing</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">6.</span>
+                    <span><span class="legend-fr">Le chœur / l'abside</span> — <span class="legend-en">choir / apse</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">7.</span>
+                    <span><span class="legend-fr">Le déambulatoire</span> — <span class="legend-en">ambulatory</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">8.</span>
+                    <span><span class="legend-fr">La chapelle rayonnante</span> — <span class="legend-en">radiating chapel</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">9.</span>
+                    <span><span class="legend-fr">Le portail</span> — <span class="legend-en">portal (entrance)</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- CROSS SECTION                                                 -->
+    <!-- ============================================================ -->
+    <div class="diagram-section">
+        <h2>Coupe Transversale</h2>
+        <p>Vue en coupe à travers la nef, montrant l'élévation intérieure.</p>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="480" fill="#faf7f0"/>
+
+                <!-- Ground line -->
+                <line x1="30" y1="400" x2="570" y2="400" stroke="#1a2744" stroke-width="2"/>
+
+                <!-- ── Outer side aisle (left) ── -->
+                <rect x="70" y="310" width="60" height="90" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <!-- Lean-to roof -->
+                <line x1="70" y1="310" x2="50" y2="340" stroke="#1a2744" stroke-width="2"/>
+                <line x1="50" y1="340" x2="70" y2="340" stroke="#1a2744" stroke-width="2"/>
+                <!-- Small arch -->
+                <path d="M 75,400 Q 100,370 125,400" fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- ── Inner side aisle (left) ── -->
+                <rect x="130" y="270" width="70" height="130" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <!-- Lean-to roof -->
+                <line x1="130" y1="270" x2="110" y2="300" stroke="#1a2744" stroke-width="2"/>
+                <line x1="110" y1="300" x2="130" y2="300" stroke="#1a2744" stroke-width="2"/>
+                <!-- Arch -->
+                <path d="M 135,400 Q 165,350 195,400" fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- ── Tribune (gallery) left ── -->
+                <!-- Tribune floor -->
+                <line x1="130" y1="330" x2="200" y2="330" stroke="#1a2744" stroke-width="1.5"/>
+                <!-- Tribune opening (twin arches) -->
+                <path d="M 135,330 Q 150,300 165,330" fill="none" stroke="#2c3e6b" stroke-width="1.5"/>
+                <path d="M 165,330 Q 180,300 195,330" fill="none" stroke="#2c3e6b" stroke-width="1.5"/>
+
+                <!-- ── Central nave ── -->
+                <!-- Left wall -->
+                <line x1="200" y1="100" x2="200" y2="400" stroke="#1a2744" stroke-width="2"/>
+                <!-- Right wall -->
+                <line x1="400" y1="100" x2="400" y2="400" stroke="#1a2744" stroke-width="2"/>
+
+                <!-- Barrel vault (semicircular) -->
+                <path d="M 200,100 Q 200,60 300,55 Q 400,60 400,100"
+                      fill="none" stroke="#1a2744" stroke-width="2.5"/>
+
+                <!-- Clerestory windows (high openings in nave wall) -->
+                <rect x="208" y="140" width="18" height="40" rx="9" fill="#e8e4dc" stroke="#2c3e6b" stroke-width="1"/>
+                <rect x="208" y="200" width="18" height="40" rx="9" fill="#e8e4dc" stroke="#2c3e6b" stroke-width="1"/>
+
+                <rect x="374" y="140" width="18" height="40" rx="9" fill="#e8e4dc" stroke="#2c3e6b" stroke-width="1"/>
+                <rect x="374" y="200" width="18" height="40" rx="9" fill="#e8e4dc" stroke="#2c3e6b" stroke-width="1"/>
+
+                <!-- Main nave arcade arches -->
+                <path d="M 205,400 Q 245,310 285,400" fill="none" stroke="#1a2744" stroke-width="1.5"/>
+                <path d="M 315,400 Q 355,310 395,400" fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- Central nave piers -->
+                <rect x="195" y="380" width="10" height="20" fill="#1a2744"/>
+                <rect x="395" y="380" width="10" height="20" fill="#1a2744"/>
+
+                <!-- ── Tribune (gallery) right ── -->
+                <line x1="400" y1="330" x2="470" y2="330" stroke="#1a2744" stroke-width="1.5"/>
+                <path d="M 405,330 Q 420,300 435,330" fill="none" stroke="#2c3e6b" stroke-width="1.5"/>
+                <path d="M 435,330 Q 450,300 465,330" fill="none" stroke="#2c3e6b" stroke-width="1.5"/>
+
+                <!-- ── Inner side aisle (right) ── -->
+                <rect x="400" y="270" width="70" height="130" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <line x1="470" y1="270" x2="490" y2="300" stroke="#1a2744" stroke-width="2"/>
+                <line x1="490" y1="300" x2="470" y2="300" stroke="#1a2744" stroke-width="2"/>
+                <path d="M 405,400 Q 435,350 465,400" fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- ── Outer side aisle (right) ── -->
+                <rect x="470" y="310" width="60" height="90" fill="none" stroke="#1a2744" stroke-width="2"/>
+                <line x1="530" y1="310" x2="550" y2="340" stroke="#1a2744" stroke-width="2"/>
+                <line x1="550" y1="340" x2="530" y2="340" stroke="#1a2744" stroke-width="2"/>
+                <path d="M 475,400 Q 500,370 525,400" fill="none" stroke="#1a2744" stroke-width="1.5"/>
+
+                <!-- ── Roofline ── -->
+                <!-- Main roof (triangle over nave) -->
+                <line x1="180" y1="100" x2="300" y2="30" stroke="#1a2744" stroke-width="2"/>
+                <line x1="300" y1="30" x2="420" y2="100" stroke="#1a2744" stroke-width="2"/>
+                <!-- Cross at peak -->
+                <line x1="300" y1="15" x2="300" y2="32" stroke="#1a2744" stroke-width="2"/>
+                <line x1="294" y1="22" x2="306" y2="22" stroke="#1a2744" stroke-width="2"/>
+
+                <!-- Inner aisle roofs -->
+                <line x1="110" y1="300" x2="200" y2="260" stroke="#1a2744" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <line x1="400" y1="260" x2="490" y2="300" stroke="#1a2744" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+                <!-- ── Numbered labels ── -->
+
+                <!-- A: Voûte en berceau -->
+                <circle cx="300" cy="75" r="12" fill="#c9a84c"/>
+                <text x="300" y="80" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">A</text>
+
+                <!-- B: Nef centrale -->
+                <circle cx="300" cy="300" r="12" fill="#c9a84c"/>
+                <text x="300" y="305" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">B</text>
+
+                <!-- C: Tribune -->
+                <circle cx="165" cy="310" r="12" fill="#c9a84c"/>
+                <text x="165" y="315" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">C</text>
+
+                <!-- D: Bas-côté intérieur -->
+                <circle cx="165" cy="375" r="12" fill="#c9a84c"/>
+                <text x="165" y="380" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">D</text>
+
+                <!-- E: Bas-côté extérieur -->
+                <circle cx="100" cy="375" r="12" fill="#c9a84c"/>
+                <text x="100" y="380" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">E</text>
+
+                <!-- F: Pilier -->
+                <circle cx="200" cy="420" r="12" fill="#c9a84c"/>
+                <text x="200" y="425" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">F</text>
+
+                <!-- G: Arc en plein cintre (round arch) -->
+                <circle cx="245" cy="340" r="12" fill="#c9a84c"/>
+                <text x="245" y="345" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">G</text>
+
+                <!-- H: Fenêtre haute -->
+                <circle cx="235" cy="165" r="12" fill="#c9a84c"/>
+                <text x="235" y="170" text-anchor="middle" fill="#fff" font-size="12"
+                      font-family="Georgia, serif" font-weight="bold">H</text>
+
+                <!-- Dimension labels -->
+                <text x="300" y="450" text-anchor="middle" fill="#888" font-size="9"
+                      font-family="Georgia, serif" font-style="italic">← doubles bas-côtés — nef — doubles bas-côtés →</text>
+            </svg>
+        </div>
+
+        <div class="diagram-legend">
+            <h3>Légende de la coupe</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <span class="legend-num">A.</span>
+                    <span><span class="legend-fr">La voûte en berceau</span> — <span class="legend-en">barrel vault</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">B.</span>
+                    <span><span class="legend-fr">La nef centrale</span> — <span class="legend-en">central nave</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">C.</span>
+                    <span><span class="legend-fr">La tribune</span> — <span class="legend-en">gallery</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">D.</span>
+                    <span><span class="legend-fr">Le bas-côté intérieur</span> — <span class="legend-en">inner side aisle</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">E.</span>
+                    <span><span class="legend-fr">Le bas-côté extérieur</span> — <span class="legend-en">outer side aisle</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">F.</span>
+                    <span><span class="legend-fr">Le pilier</span> — <span class="legend-en">pier / pillar</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">G.</span>
+                    <span><span class="legend-fr">L'arc en plein cintre</span> — <span class="legend-en">round arch</span></span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-num">H.</span>
+                    <span><span class="legend-fr">La fenêtre haute</span> — <span class="legend-en">clerestory window</span></span>
+                </div>
+            </div>
+        </div>
+    </div>

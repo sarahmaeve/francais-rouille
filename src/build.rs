@@ -18,9 +18,15 @@ pub struct ChapterConfig {
 pub struct ChapterMeta {
     pub title: String,
     pub subtitle: String,
+    #[serde(default = "default_level")]
+    pub level: String,
     pub vocab_page: String,
     pub footer_text: String,
     pub footer_suffix: String,
+}
+
+fn default_level() -> String {
+    "B1".to_string()
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -219,6 +225,7 @@ fn build_dialog_page(
         .collect();
 
     let mut ctx = Context::new();
+    ctx.insert("chapter", &config.chapter);
     ctx.insert("title", &page.title);
     ctx.insert("subtitle", &page.subtitle);
     ctx.insert("description", &page.description);
@@ -261,6 +268,7 @@ fn build_fragment_page(
     let extra_css = std::fs::read_to_string(&css_path).ok();
 
     let mut ctx = Context::new();
+    ctx.insert("chapter", &config.chapter);
     ctx.insert("title", &page.title);
     ctx.insert("subtitle", &page.subtitle);
     ctx.insert("description", &page.description);
@@ -756,6 +764,7 @@ type = "dialog"
         let chapter = ChapterMeta {
             title: "T".into(),
             subtitle: "S".into(),
+            level: "B1".into(),
             vocab_page: "v".into(),
             footer_text: "F".into(),
             footer_suffix: "B".into(),

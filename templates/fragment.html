@@ -3,7 +3,7 @@
 {% block extra_head %}
 {% if extra_css %}
     <style>
-{{ extra_css }}
+{{ extra_css | safe }}
     </style>
 {% endif %}
 {% endblock extra_head %}

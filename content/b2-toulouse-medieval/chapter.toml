@@ -1,0 +1,69 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Toulouse Médiévale — Histoire et Visite Guidée"
+level = "B2"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B2 — Toulouse Médiévale"
+
+# --- Carte ---
+
+[[sections]]
+heading = "Visite Guidée"
+
+[[sections.pages]]
+slug = "00_carte_toulouse"
+title = "Carte de la Visite Guidée"
+description = "Carte et itinéraire de la visite à pied du Toulouse médiéval."
+type = "fragment"
+
+# --- Monologues et Dialogue ---
+
+[[sections]]
+heading = "Monologues et Dialogue"
+
+[[sections.pages]]
+slug = "01_histoire_cathares"
+title = "Toulouse Médiévale et les Cathares"
+description = "La guide Isabelle raconte l'histoire médiévale de Toulouse et l'origine du catharisme."
+type = "dialog"
+
+[[sections.pages]]
+slug = "02_basilique_saint_sernin"
+title = "La Basilique Saint-Sernin"
+description = "La guide Isabelle raconte l'histoire et la construction de la Basilique Saint-Sernin."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_questions_cathares"
+title = "Questions sur les Cathares"
+description = "La guide Isabelle répond aux questions des touristes sur les Cathares et la croisade des Albigeois."
+type = "dialog"
+
+[[sections.pages]]
+slug = "04_dominicains_jacobins"
+title = "L'Ordre des Dominicains et l'Église des Jacobins"
+description = "La guide Isabelle explique l'histoire de l'ordre dominicain devant l'Église des Jacobins."
+type = "dialog"
+
+# --- Diagrammes ---
+
+[[sections]]
+heading = "Diagrammes"
+
+[[sections.pages]]
+slug = "05_architecture_romane"
+title = "Architecture d'une Église Romane"
+description = "Plan au sol et coupe transversale annotés d'une église romane de pèlerinage."
+type = "fragment"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B2"
+description = "Mots et expressions clés avec traductions en anglais."
+type = "static"
