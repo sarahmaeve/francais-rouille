@@ -1,0 +1,10 @@
+[package]
+name = "site-gen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+tera = "1"
+toml = "0.8"
+rand = "0.9"

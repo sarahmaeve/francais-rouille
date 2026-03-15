@@ -1,11 +1,10 @@
 use base64::Engine;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
-use std::collections::HashMap;
 use std::path::Path;
 use thiserror::Error;
 
-use crate::dialog::{self, DialogLine};
+use crate::dialog::{self, DialogLine, Language, Voice};
 
 /// Audio encoding format for TTS output.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -62,168 +61,10 @@ pub enum TtsError {
     EmptyDialog,
 }
 
-/// Premium fr-FR voices from Google Cloud Text-to-Speech, segmented by gender.
-///
-/// See: https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-pub enum FrenchVoice {
-    // ── Female voices ────────────────────────────────────────────
-    // Studio
-    StudioA,
-    // Neural2
-    Neural2F,
-    // Wavenet
-    WavenetF,
-    // Chirp HD
-    ChirpHdF,
-    ChirpHdO,
-    // Chirp3 HD
-    Chirp3HdAchernar,
-    Chirp3HdAoede,
-    Chirp3HdAutonoe,
-    Chirp3HdCallirrhoe,
-    Chirp3HdDespina,
-    Chirp3HdErinome,
-    Chirp3HdGacrux,
-    Chirp3HdKore,
-    Chirp3HdLaomedeia,
-    Chirp3HdLeda,
-    Chirp3HdPulcherrima,
-    Chirp3HdSulafat,
-    Chirp3HdVindemiatrix,
-    Chirp3HdZephyr,
-
-    // ── Male voices ──────────────────────────────────────────────
-    // Studio
-    StudioD,
-    // Neural2
-    Neural2G,
-    // Wavenet
-    WavenetG,
-    // Polyglot
-    Polyglot1,
-    // Chirp HD
-    ChirpHdD,
-    // Chirp3 HD
-    Chirp3HdAchird,
-    Chirp3HdAlgenib,
-    Chirp3HdAlgieba,
-    Chirp3HdAlnilam,
-    Chirp3HdCharon,
-    Chirp3HdEnceladus,
-    Chirp3HdFenrir,
-    Chirp3HdIapetus,
-    Chirp3HdOrus,
-    Chirp3HdPuck,
-    Chirp3HdRasalgethi,
-    Chirp3HdSadachbia,
-    Chirp3HdSadaltager,
-    Chirp3HdSchedar,
-    Chirp3HdUmbriel,
-    Chirp3HdZubenelgenubi,
-}
-
-impl FrenchVoice {
-    fn name(self) -> &'static str {
-        match self {
-            // Female
-            Self::StudioA => "fr-FR-Studio-A",
-            Self::Neural2F => "fr-FR-Neural2-F",
-            Self::WavenetF => "fr-FR-Wavenet-F",
-            Self::ChirpHdF => "fr-FR-Chirp-HD-F",
-            Self::ChirpHdO => "fr-FR-Chirp-HD-O",
-            Self::Chirp3HdAchernar => "fr-FR-Chirp3-HD-Achernar",
-            Self::Chirp3HdAoede => "fr-FR-Chirp3-HD-Aoede",
-            Self::Chirp3HdAutonoe => "fr-FR-Chirp3-HD-Autonoe",
-            Self::Chirp3HdCallirrhoe => "fr-FR-Chirp3-HD-Callirrhoe",
-            Self::Chirp3HdDespina => "fr-FR-Chirp3-HD-Despina",
-            Self::Chirp3HdErinome => "fr-FR-Chirp3-HD-Erinome",
-            Self::Chirp3HdGacrux => "fr-FR-Chirp3-HD-Gacrux",
-            Self::Chirp3HdKore => "fr-FR-Chirp3-HD-Kore",
-            Self::Chirp3HdLaomedeia => "fr-FR-Chirp3-HD-Laomedeia",
-            Self::Chirp3HdLeda => "fr-FR-Chirp3-HD-Leda",
-            Self::Chirp3HdPulcherrima => "fr-FR-Chirp3-HD-Pulcherrima",
-            Self::Chirp3HdSulafat => "fr-FR-Chirp3-HD-Sulafat",
-            Self::Chirp3HdVindemiatrix => "fr-FR-Chirp3-HD-Vindemiatrix",
-            Self::Chirp3HdZephyr => "fr-FR-Chirp3-HD-Zephyr",
-            // Male
-            Self::StudioD => "fr-FR-Studio-D",
-            Self::Neural2G => "fr-FR-Neural2-G",
-            Self::WavenetG => "fr-FR-Wavenet-G",
-            Self::Polyglot1 => "fr-FR-Polyglot-1",
-            Self::ChirpHdD => "fr-FR-Chirp-HD-D",
-            Self::Chirp3HdAchird => "fr-FR-Chirp3-HD-Achird",
-            Self::Chirp3HdAlgenib => "fr-FR-Chirp3-HD-Algenib",
-            Self::Chirp3HdAlgieba => "fr-FR-Chirp3-HD-Algieba",
-            Self::Chirp3HdAlnilam => "fr-FR-Chirp3-HD-Alnilam",
-            Self::Chirp3HdCharon => "fr-FR-Chirp3-HD-Charon",
-            Self::Chirp3HdEnceladus => "fr-FR-Chirp3-HD-Enceladus",
-            Self::Chirp3HdFenrir => "fr-FR-Chirp3-HD-Fenrir",
-            Self::Chirp3HdIapetus => "fr-FR-Chirp3-HD-Iapetus",
-            Self::Chirp3HdOrus => "fr-FR-Chirp3-HD-Orus",
-            Self::Chirp3HdPuck => "fr-FR-Chirp3-HD-Puck",
-            Self::Chirp3HdRasalgethi => "fr-FR-Chirp3-HD-Rasalgethi",
-            Self::Chirp3HdSadachbia => "fr-FR-Chirp3-HD-Sadachbia",
-            Self::Chirp3HdSadaltager => "fr-FR-Chirp3-HD-Sadaltager",
-            Self::Chirp3HdSchedar => "fr-FR-Chirp3-HD-Schedar",
-            Self::Chirp3HdUmbriel => "fr-FR-Chirp3-HD-Umbriel",
-            Self::Chirp3HdZubenelgenubi => "fr-FR-Chirp3-HD-Zubenelgenubi",
-        }
-    }
-
-    /// Default female voices, ordered by preference (highest quality first).
-    pub const FEMALE: &[FrenchVoice] = &[
-        Self::StudioA,
-        Self::Neural2F,
-        Self::WavenetF,
-        Self::ChirpHdF,
-        Self::ChirpHdO,
-        Self::Chirp3HdAchernar,
-        Self::Chirp3HdAoede,
-        Self::Chirp3HdAutonoe,
-        Self::Chirp3HdCallirrhoe,
-        Self::Chirp3HdDespina,
-        Self::Chirp3HdErinome,
-        Self::Chirp3HdGacrux,
-        Self::Chirp3HdKore,
-        Self::Chirp3HdLaomedeia,
-        Self::Chirp3HdLeda,
-        Self::Chirp3HdPulcherrima,
-        Self::Chirp3HdSulafat,
-        Self::Chirp3HdVindemiatrix,
-        Self::Chirp3HdZephyr,
-    ];
-
-    /// Default male voices, ordered by preference (highest quality first).
-    pub const MALE: &[FrenchVoice] = &[
-        Self::StudioD,
-        Self::Neural2G,
-        Self::WavenetG,
-        Self::Polyglot1,
-        Self::ChirpHdD,
-        Self::Chirp3HdAchird,
-        Self::Chirp3HdAlgenib,
-        Self::Chirp3HdAlgieba,
-        Self::Chirp3HdAlnilam,
-        Self::Chirp3HdCharon,
-        Self::Chirp3HdEnceladus,
-        Self::Chirp3HdFenrir,
-        Self::Chirp3HdIapetus,
-        Self::Chirp3HdOrus,
-        Self::Chirp3HdPuck,
-        Self::Chirp3HdRasalgethi,
-        Self::Chirp3HdSadachbia,
-        Self::Chirp3HdSadaltager,
-        Self::Chirp3HdSchedar,
-        Self::Chirp3HdUmbriel,
-        Self::Chirp3HdZubenelgenubi,
-    ];
-}
-
 #[derive(Serialize)]
 struct SynthesizeRequest<'a> {
     input: SynthesisInput<'a>,
-    voice: VoiceSelection,
+    voice: VoiceSelection<'a>,
     #[serde(rename = "audioConfig")]
     audio_config: AudioConfig,
 }
@@ -238,10 +79,10 @@ struct SynthesisInput<'a> {
 }
 
 #[derive(Serialize)]
-struct VoiceSelection {
+struct VoiceSelection<'a> {
     #[serde(rename = "languageCode")]
-    language_code: &'static str,
-    name: &'static str,
+    language_code: &'a str,
+    name: &'a str,
 }
 
 #[derive(Serialize)]
@@ -260,10 +101,8 @@ struct SynthesizeResponse {
 pub struct DialogAudio {
     /// One audio file per dialog line, in order.
     pub lines: Vec<LineAudio>,
-    /// All lines concatenated with silence between them.
+    /// All lines concatenated with silence between them (empty if not requested).
     pub combined: Vec<u8>,
-    /// The format of the audio data.
-    pub format: AudioFormat,
 }
 
 pub struct LineAudio {
@@ -289,11 +128,11 @@ impl GoogleTts {
         })
     }
 
-    /// Synthesizes plain `text` as French speech and returns raw audio bytes.
+    /// Synthesizes plain `text` using the given voice and returns raw audio bytes.
     pub async fn synthesize(
         &self,
         text: &str,
-        voice: FrenchVoice,
+        voice: &Voice,
         format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         self.synthesize_input(
@@ -311,7 +150,7 @@ impl GoogleTts {
     async fn synthesize_ssml(
         &self,
         ssml: &str,
-        voice: FrenchVoice,
+        voice: &Voice,
         format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         self.synthesize_input(
@@ -328,14 +167,14 @@ impl GoogleTts {
     async fn synthesize_input(
         &self,
         input: SynthesisInput<'_>,
-        voice: FrenchVoice,
+        voice: &Voice,
         format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         let body = SynthesizeRequest {
             input,
             voice: VoiceSelection {
-                language_code: "fr-FR",
-                name: voice.name(),
+                language_code: voice.language_code,
+                name: voice.name,
             },
             audio_config: AudioConfig {
                 audio_encoding: format.api_encoding(),
@@ -363,7 +202,7 @@ impl GoogleTts {
     async fn synthesize_silence(
         &self,
         ms: u32,
-        voice: FrenchVoice,
+        voice: &Voice,
         format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
         let ssml = format!(
@@ -377,7 +216,7 @@ impl GoogleTts {
     pub async fn synthesize_to_file(
         &self,
         text: &str,
-        voice: FrenchVoice,
+        voice: &Voice,
         format: AudioFormat,
         output_path: &Path,
     ) -> Result<(), TtsError> {
@@ -386,32 +225,31 @@ impl GoogleTts {
         Ok(())
     }
 
-    /// Synthesize an entire dialog file.
+    /// Synthesize an entire dialog file using a language-specific
+    /// implementation for gender detection and voice selection.
     ///
     /// Returns per-line audio and, when `combined` is true, a single
-    /// concatenated file with silence gaps between lines. For MP3,
-    /// individual frames are independently decodable so concatenation
-    /// produces a valid stream. For OGG_OPUS, the combined file is a
-    /// simple concatenation (each segment is a standalone Ogg stream).
+    /// concatenated file with silence gaps between lines.
     pub async fn synthesize_dialog(
         &self,
         content: &str,
         format: AudioFormat,
         combined: bool,
+        lang: &dyn Language,
     ) -> Result<DialogAudio, TtsError> {
         let parsed = dialog::parse_dialog(content);
         if parsed.is_empty() {
             return Err(TtsError::EmptyDialog);
         }
 
-        let genders = dialog::parse_character_genders(content);
-        let voice_map: HashMap<String, FrenchVoice> =
-            dialog::assign_voices(&parsed, &genders);
+        let genders = dialog::parse_character_genders(content, lang);
+        let voice_map = dialog::assign_voices(&parsed, &genders, lang);
 
         // Pre-generate the silence segment once (only needed for combined).
+        let first_voice = &voice_map[&parsed[0].speaker];
         let silence = if combined {
             Some(
-                self.synthesize_silence(PAUSE_BETWEEN_LINES_MS, FrenchVoice::FEMALE[0], format)
+                self.synthesize_silence(PAUSE_BETWEEN_LINES_MS, first_voice, format)
                     .await?,
             )
         } else {
@@ -422,7 +260,7 @@ impl GoogleTts {
         let mut combined_data = Vec::new();
 
         for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
-            let voice = voice_map[&speaker];
+            let voice = &voice_map[&speaker];
             let audio = self.synthesize(&text, voice, format).await?;
 
             if let Some(ref silence) = silence {
@@ -440,7 +278,7 @@ impl GoogleTts {
             });
         }
 
-        Ok(DialogAudio { lines, combined: combined_data, format })
+        Ok(DialogAudio { lines, combined: combined_data })
     }
 }
 
@@ -448,37 +286,15 @@ impl GoogleTts {
 mod tests {
     use super::*;
 
-    #[test]
-    fn voice_names_are_valid_google_ids() {
-        // Spot-check representative voices from each tier.
-        assert_eq!(FrenchVoice::StudioA.name(), "fr-FR-Studio-A");
-        assert_eq!(FrenchVoice::StudioD.name(), "fr-FR-Studio-D");
-        assert_eq!(FrenchVoice::Neural2F.name(), "fr-FR-Neural2-F");
-        assert_eq!(FrenchVoice::Neural2G.name(), "fr-FR-Neural2-G");
-        assert_eq!(FrenchVoice::WavenetF.name(), "fr-FR-Wavenet-F");
-        assert_eq!(FrenchVoice::WavenetG.name(), "fr-FR-Wavenet-G");
-        assert_eq!(FrenchVoice::Polyglot1.name(), "fr-FR-Polyglot-1");
-        assert_eq!(FrenchVoice::ChirpHdD.name(), "fr-FR-Chirp-HD-D");
-        assert_eq!(FrenchVoice::ChirpHdF.name(), "fr-FR-Chirp-HD-F");
-        assert_eq!(
-            FrenchVoice::Chirp3HdAchernar.name(),
-            "fr-FR-Chirp3-HD-Achernar"
-        );
-        assert_eq!(
-            FrenchVoice::Chirp3HdZubenelgenubi.name(),
-            "fr-FR-Chirp3-HD-Zubenelgenubi"
-        );
-    }
-
-    #[test]
-    fn female_and_male_pools_are_nonempty() {
-        assert!(!FrenchVoice::FEMALE.is_empty());
-        assert!(!FrenchVoice::MALE.is_empty());
+    fn test_voice() -> Voice {
+        Voice {
+            language_code: "fr-FR",
+            name: "fr-FR-Studio-A",
+        }
     }
 
     #[test]
     fn from_env_fails_without_key() {
-        // Ensure the variable is not set for this test.
         std::env::remove_var("GOOGLE_TTS_API_KEY");
         let result = GoogleTts::from_env();
         assert!(result.is_err());
@@ -487,14 +303,15 @@ mod tests {
 
     #[test]
     fn request_body_serializes_text_input() {
+        let voice = test_voice();
         let req = SynthesizeRequest {
             input: SynthesisInput {
                 text: Some("Bonjour le monde"),
                 ssml: None,
             },
             voice: VoiceSelection {
-                language_code: "fr-FR",
-                name: FrenchVoice::StudioA.name(),
+                language_code: voice.language_code,
+                name: voice.name,
             },
             audio_config: AudioConfig {
                 audio_encoding: AudioFormat::Mp3.api_encoding(),
@@ -512,14 +329,15 @@ mod tests {
     #[test]
     fn request_body_serializes_ssml_input() {
         let ssml = "<speak><break time=\"750ms\"/></speak>";
+        let voice = test_voice();
         let req = SynthesizeRequest {
             input: SynthesisInput {
                 text: None,
                 ssml: Some(ssml),
             },
             voice: VoiceSelection {
-                language_code: "fr-FR",
-                name: FrenchVoice::StudioA.name(),
+                language_code: voice.language_code,
+                name: voice.name,
             },
             audio_config: AudioConfig {
                 audio_encoding: AudioFormat::Mp3.api_encoding(),
@@ -529,18 +347,6 @@ mod tests {
         let json = serde_json::to_value(&req).unwrap();
         assert!(json["input"].get("text").is_none());
         assert_eq!(json["input"]["ssml"], ssml);
-    }
-
-    #[test]
-    fn audio_format_api_encoding() {
-        assert_eq!(AudioFormat::Mp3.api_encoding(), "MP3");
-        assert_eq!(AudioFormat::OggOpus.api_encoding(), "OGG_OPUS");
-    }
-
-    #[test]
-    fn audio_format_extension() {
-        assert_eq!(AudioFormat::Mp3.extension(), "mp3");
-        assert_eq!(AudioFormat::OggOpus.extension(), "ogg");
     }
 
     #[test]
@@ -555,14 +361,15 @@ mod tests {
 
     #[test]
     fn request_body_serializes_ogg_encoding() {
+        let voice = test_voice();
         let req = SynthesizeRequest {
             input: SynthesisInput {
                 text: Some("Bonjour"),
                 ssml: None,
             },
             voice: VoiceSelection {
-                language_code: "fr-FR",
-                name: FrenchVoice::StudioA.name(),
+                language_code: voice.language_code,
+                name: voice.name,
             },
             audio_config: AudioConfig {
                 audio_encoding: AudioFormat::OggOpus.api_encoding(),

@@ -3,64 +3,53 @@ mod dialog;
 mod tts;
 
 use std::path::PathBuf;
-use tts::{AudioFormat, FrenchVoice, GoogleTts};
+use tts::{AudioFormat, GoogleTts};
 
-use crate::dialog::slugify;
+use crate::dialog::{french::French, spanish::Spanish, slugify, Language, Voice};
 
 fn print_usage(prog: &str) {
     eprintln!("Usage:");
-    eprintln!("  {prog} file   <input.txt> <output>  [--format mp3|ogg]  Synthesize a text file");
-    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--combined]  Synthesize a dialog");
-    eprintln!("  {prog} build  [<chapter>] [--site-url URL]  Generate HTML + sitemap");
+    eprintln!("  {prog} file   <input.txt> <output>  [--format mp3|ogg] [--lang fr-FR|es-US]  Synthesize a text file");
+    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]  Synthesize a dialog");
+    eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
-    eprintln!("Audio format defaults to mp3. Use --format ogg for OGG Opus output.");
+    eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
 }
 
 fn print_help() {
-    println!("francais-rouille — French text-to-speech using Google Cloud TTS");
+    println!("francais-rouille — Text-to-speech and site generation for language learning");
     println!();
     println!("USAGE:");
-    println!("  francais-rouille file   <input.txt> <output> [--format mp3|ogg]");
-    println!("  francais-rouille dialog <input.txt> <output_dir> [--format mp3|ogg] [--combined]");
+    println!("  francais-rouille file   <input.txt> <output> [--format mp3|ogg] [--lang fr-FR|es-US]");
+    println!("  francais-rouille dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]");
     println!();
     println!("COMMANDS:");
-    println!("  file     Convert a plain text file to a single audio file using a default");
-    println!("           French female voice.");
+    println!("  file     Convert a plain text file to a single audio file.");
     println!("  dialog   Parse a dialog text file, assign a distinct voice to each");
     println!("           character based on gender, and produce per-line audio files in");
-    println!("           <output_dir>/lines/ plus a combined file with pauses between lines.");
+    println!("           <output_dir>/lines/.");
+    println!("  build    Generate HTML pages and chapter indexes from content/.");
+    println!("           Use --output (-o) to write to a different directory (default: site/).");
     println!();
     println!("OPTIONS:");
-    println!("  --format mp3|ogg   Audio encoding (default: mp3). Use \"ogg\" for OGG Opus,");
-    println!("                     which produces smaller files at comparable quality.");
-    println!("  --combined         Also generate a single combined audio file with silence");
-    println!("                     between lines. Off by default.");
+    println!("  --format mp3|ogg     Audio encoding (default: mp3). Use \"ogg\" for OGG Opus.");
+    println!("  --lang fr-FR|es-US   Language for voice selection and gender detection");
+    println!("                       (default: fr-FR).");
+    println!("  --combined           Also generate a single combined audio file with silence");
+    println!("                       between lines. Off by default.");
     println!();
     println!("ENVIRONMENT:");
     println!("  GOOGLE_TTS_API_KEY   Required. Your Google Cloud API key with the");
     println!("                       Cloud Text-to-Speech API enabled.");
     println!();
-    println!("  Export it before running:");
-    println!("    export GOOGLE_TTS_API_KEY=\"your-api-key-here\"");
-    println!();
     println!("VOICE ASSIGNMENT (dialog mode):");
     println!("  Character descriptions in the dialog file determine voice gender.");
-    println!("  French gendered articles after the em-dash are used:");
-    println!("    - Claire — une cliente ...   → female voice");
-    println!("    - M. Duval — le patron ...   → male voice");
-    println!("  Voices are randomly selected from Premium fr-FR Google Cloud voices.");
+    println!("  Gendered articles after the em-dash are used:");
+    println!("    French:  - Claire — une cliente ...  (une/la = female, un/le = male)");
+    println!("    Spanish: - María — una estudiante ... (una/la = female, un/el = male)");
+    println!("  Voices are randomly selected from Premium Google Cloud voices.");
     println!("  Each character keeps the same voice throughout the dialog.");
-    println!();
-    println!("DIALOG FILE FORMAT:");
-    println!("  Title of the Dialog");
-    println!();
-    println!("  Personnages :");
-    println!("  - Speaker Name — une/un description");
-    println!("  - Speaker Name — le/la description");
-    println!();
-    println!("  Speaker Name : First line of dialog.");
-    println!("  Speaker Name : Second line of dialog.");
     println!();
     println!("See docs/TTS.md for full documentation.");
 }
@@ -103,19 +92,40 @@ fn parse_format(args: &[String]) -> Result<AudioFormat, Box<dyn std::error::Erro
     Ok(AudioFormat::Mp3)
 }
 
+/// Parse `--lang fr-FR|es-US` from args, defaulting to French.
+fn parse_language(args: &[String]) -> Result<Box<dyn Language>, Box<dyn std::error::Error>> {
+    for (i, arg) in args.iter().enumerate() {
+        if arg == "--lang" {
+            let value = args
+                .get(i + 1)
+                .ok_or("--lang requires a value (fr-FR or es-US)")?;
+            return match value.as_str() {
+                "fr-FR" => Ok(Box::new(French)),
+                "es-US" => Ok(Box::new(Spanish)),
+                other => Err(format!("unsupported language: {other}").into()),
+            };
+        }
+    }
+    Ok(Box::new(French))
+}
+
 async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} file <input.txt> <output> [--format mp3|ogg]", args[0]);
+        eprintln!("Usage: {} file <input.txt> <output> [--format mp3|ogg] [--lang fr-FR|es-US]", args[0]);
         std::process::exit(1);
     }
 
     let input_path = &args[2];
     let output_path = PathBuf::from(&args[3]);
     let format = parse_format(args)?;
+    let lang = parse_language(args)?;
+
+    // Use the first female voice from the language's pool.
+    let default_voice: &Voice = &lang.voice_pool().female[0];
 
     let text = std::fs::read_to_string(input_path)?;
     let tts = GoogleTts::from_env()?;
-    tts.synthesize_to_file(&text, FrenchVoice::FEMALE[0], format, &output_path)
+    tts.synthesize_to_file(&text, default_voice, format, &output_path)
         .await?;
 
     println!("Wrote {} audio to {}", format.extension(), output_path.display());
@@ -124,13 +134,14 @@ async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>
 
 async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg] [--combined]", args[0]);
+        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]", args[0]);
         std::process::exit(1);
     }
 
     let input_path = &args[2];
     let output_dir = PathBuf::from(&args[3]);
     let format = parse_format(args)?;
+    let lang = parse_language(args)?;
     let combined = args.iter().any(|a| a == "--combined");
     let ext = format.extension();
     let lines_dir = output_dir.join("lines");
@@ -140,8 +151,8 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
     let content = std::fs::read_to_string(input_path)?;
     let tts = GoogleTts::from_env()?;
 
-    println!("Synthesizing dialog from {input_path} (format: {ext})...");
-    let result = tts.synthesize_dialog(&content, format, combined).await?;
+    println!("Synthesizing dialog from {input_path} (lang: {}, format: {ext})...", lang.code());
+    let result = tts.synthesize_dialog(&content, format, combined, lang.as_ref()).await?;
 
     for line in &result.lines {
         let filename = format!(
@@ -169,12 +180,11 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
 fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     let templates_dir = PathBuf::from("templates");
     let content_root = PathBuf::from("content");
-    let output_root = PathBuf::from("site/chapters");
-    let site_dir = PathBuf::from("site");
 
     // Parse optional flags and positional args.
     let mut site_url: Option<String> = None;
     let mut chapter_filter: Option<String> = None;
+    let mut output_dir_override: Option<String> = None;
 
     let mut i = 2;
     while i < args.len() {
@@ -185,11 +195,24 @@ fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
                     .ok_or("--site-url requires a value")?
                     .clone(),
             );
+        } else if args[i] == "--output" || args[i] == "-o" {
+            i += 1;
+            output_dir_override = Some(
+                args.get(i)
+                    .ok_or("--output requires a value")?
+                    .clone(),
+            );
         } else if !args[i].starts_with('-') && chapter_filter.is_none() {
             chapter_filter = Some(args[i].clone());
         }
         i += 1;
     }
+
+    let site_dir = output_dir_override
+        .as_ref()
+        .map(PathBuf::from)
+        .unwrap_or_else(|| PathBuf::from("site"));
+    let output_root = site_dir.join("chapters");
 
     // Discover chapters.
     let chapters: Vec<String> = if let Some(name) = chapter_filter {
