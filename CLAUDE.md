@@ -26,3 +26,40 @@ The site is served with a strict CSP (`site/_headers`). All generated HTML
   must be served from the same origin (`'self'`).
 
 See `docs/CSP.md` for the full policy and rationale.
+
+## French Content Guidelines
+
+All `.txt` and `.md` content files represent **spoken French** — dialogues
+between characters or monologues by a narrator/guide addressing an audience.
+Written-only registers must not appear in these files.
+
+### Tenses
+
+Use only tenses that occur in modern spoken French:
+
+- **Passé composé** for completed past actions (*il a lancé*, *elle est venue*).
+- **Imparfait** for background, description, and habitual past (*il régnait*,
+  *elle vivait*).
+- **Plus-que-parfait** for events prior to another past event (*il avait
+  compris*).
+- **Conditionnel** for hypotheticals and politeness (*je voudrais*, *rien ne
+  serait pareil*).
+- **Present**, **futur simple**, **futur proche** as normal.
+
+**Do not use the passé simple** (*lança*, *descendirent*, *fut*). It belongs
+to literary narrative, not spoken French — even in formal or academic speech.
+
+### Typography
+
+Run `verify-language` before committing content changes:
+
+```
+cargo run -- verify-language          # check
+cargo run -- verify-language --fix    # auto-correct
+```
+
+Key rules enforced (fr-FR):
+- Use typographic apostrophes `'` (U+2019), not ASCII `'` (U+0027), in
+  French elision (*l'homme*, *d'accord*, *aujourd'hui*).
+- Use the ellipsis character `…` (U+2026), not three dots `...`.
+- With `--strict`: narrow no-break space (U+202F) before `;` `:` `!` `?`.

@@ -7,10 +7,10 @@
 
 **Isabelle :** Nous voici devant la Basilique Saint-Sernin, la plus grande église romane d’Occident. Regardez ce clocher octogonal qui domine Toulouse — c’est l’un des symboles de la ville. Prenez un moment pour admirer l’harmonie de cette construction en brique rose et en pierre blanche.
 
-**Isabelle :** La basilique porte le nom de saint Saturnin, le premier évêque de Toulouse, martyrisé en l’an 250. Selon la tradition, il fut attaché à un taureau furieux et traîné dans les rues de la ville. La rue du Taur, que nous avons empruntée tout à l’heure, tire son nom de cet épisode.
+**Isabelle :** La basilique porte le nom de saint Saturnin, le premier évêque de Toulouse, martyrisé en l’an 250. Selon la tradition, il a été attaché à un taureau furieux et traîné dans les rues de la ville. La rue du Taur, que nous avons empruntée tout à l’heure, tire son nom de cet épisode.
 
 **Isabelle :** La construction de l’édifice actuel a commencé vers 1080 et s’est poursuivie pendant plus de deux siècles. L’église a été bâtie pour accueillir les reliques de saint Saturnin et pour recevoir les pèlerins qui se rendaient à Saint-Jacques-de-Compostelle. Toulouse se trouvait en effet sur la Via Tolosana, l’une des quatre grandes routes de pèlerinage qui traversaient la France.
 
 **Isabelle :** Observez l’architecture : la nef centrale est flanquée de doubles bas-côtés et surmontée de tribunes. Cette disposition permettait de faire circuler un grand nombre de pèlerins autour du déambulatoire, où ils pouvaient vénérer les reliques sans interrompre les offices. L’abside est ornée de chapelles rayonnantes, typiques de l’art roman de pèlerinage.
 
-**Isabelle :** Il faut savoir que pendant la croisade des Albigeois, Saint-Sernin a joué un rôle important. C’était le cœur spirituel de la ville orthodoxe, face aux Cathares. Après la croisade, l’Inquisition y a tenu certaines de ses assemblées. Cette basilique a donc été le témoin silencieux des heures les plus sombres de Toulouse.
+**Isabelle :** Il faut savoir que pendant la croisade des Albigeois, Saint-Sernin a joué un rôle important. C’était le cœur spirituel de la ville restée fidèle à Rome, face aux Cathares. Après la croisade, l’Inquisition y a tenu certaines de ses assemblées. Cette basilique a donc été le témoin silencieux des heures les plus sombres de Toulouse.

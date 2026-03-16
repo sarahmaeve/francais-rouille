@@ -13,4 +13,4 @@
 
 **Isabelle :** Les Cathares rejetaient la hiérarchie de l’Église catholique, ses sacrements et sa richesse. Ils vivaient dans la pauvreté et la simplicité. Leur message séduisait beaucoup de gens, y compris des nobles et des bourgeois du Languedoc. Les comtes de Toulouse, sans être eux-mêmes cathares, toléraient cette religion et refusaient de persécuter leurs sujets.
 
-**Isabelle :** Cette tolérance allait provoquer la colère de Rome. En 1209, le pape Innocent III lança la croisade des Albigeois — la première croisade dirigée contre des chrétiens en terre chrétienne. Les armées du nord de la France descendirent vers le sud, et rien ne serait plus jamais pareil pour Toulouse.
+**Isabelle :** Cette tolérance allait provoquer la colère de Rome. En 1209, le pape Innocent III a lancé la croisade des Albigeois — la première croisade dirigée contre des chrétiens en terre chrétienne. Les armées du nord de la France sont descendues vers le sud, et rien ne serait plus jamais pareil pour Toulouse.
