@@ -1,37 +1,37 @@
-L'Installation de la Fibre Optique
+L’Installation de la Fibre Optique
 
 Personnages :
 - Irene — la compagne de Maeve, locataire au troisième étage
 - Monsieur Reynaud — le président du syndic de copropriété
 
-Irene : Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m'accorder ?
+Irene : Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m’accorder ?
 
 Monsieur Reynaud : Bonjour, madame. Oui, bien sûr, je vous écoute.
 
-Irene : Voilà, ma compagne et moi souhaiterions faire installer la fibre optique dans notre appartement. Nous avons contacté Orange, et un technicien pourrait passer la semaine prochaine. Cependant, ils nous ont dit qu'il fallait l'autorisation du syndic pour faire passer le câble dans les parties communes.
+Irene : Voilà, ma compagne et moi souhaiterions faire installer la fibre optique dans notre appartement. Nous avons contacté Orange, et un technicien pourrait passer la semaine prochaine. Cependant, ils nous ont dit qu’il fallait l’autorisation du syndic pour faire passer le câble dans les parties communes.
 
-Monsieur Reynaud : Oui, en effet, c'est la procédure. Le câble doit passer par la colonne montante de l'immeuble, et toute intervention dans les parties communes nécessite un accord.
+Monsieur Reynaud : Oui, en effet, c’est la procédure. Le câble doit passer par la colonne montante de l’immeuble, et toute intervention dans les parties communes nécessite un accord.
 
-Irene : Est-ce qu'il serait possible d'obtenir cette autorisation rapidement ? Nous travaillons toutes les deux depuis la maison, et notre connexion ADSL actuelle est vraiment insuffisante.
+Irene : Est-ce qu’il serait possible d’obtenir cette autorisation rapidement ? Nous travaillons toutes les deux depuis la maison, et notre connexion ADSL actuelle est vraiment insuffisante.
 
-Monsieur Reynaud : Je comprends tout à fait. En principe, la loi est de votre côté. Les copropriétaires ne peuvent pas s'opposer à l'installation de la fibre pour un locataire. C'est le droit à la fibre, c'est dans la loi.
+Monsieur Reynaud : Je comprends tout à fait. En principe, la loi est de votre côté. Les copropriétaires ne peuvent pas s’opposer à l’installation de la fibre pour un locataire. C’est le droit à la fibre, c’est dans la loi.
 
-Irene : Ah, c'est rassurant. Alors, quelles sont les démarches à suivre ?
+Irene : Ah, c’est rassurant. Alors, quelles sont les démarches à suivre ?
 
-Monsieur Reynaud : Il faudrait que votre opérateur, Orange dans votre cas, nous envoie un courrier officiel décrivant les travaux prévus. Ensuite, je transmets ça au conseil syndical, et normalement on donne l'accord sous quinze jours.
+Monsieur Reynaud : Il faudrait que votre opérateur, Orange dans votre cas, nous envoie un courrier officiel décrivant les travaux prévus. Ensuite, je transmets ça au conseil syndical, et normalement on donne l’accord sous quinze jours.
 
-Irene : Quinze jours ? C'est le délai habituel ?
+Irene : Quinze jours ? C’est le délai habituel ?
 
-Monsieur Reynaud : Oui, c'est le maximum. En pratique, c'est souvent plus rapide. Je peux accélérer les choses si le dossier est complet. Il me faut la lettre d'Orange avec le plan d'installation, et une copie de votre bail.
+Monsieur Reynaud : Oui, c’est le maximum. En pratique, c’est souvent plus rapide. Je peux accélérer les choses si le dossier est complet. Il me faut la lettre d’Orange avec le plan d’installation, et une copie de votre bail.
 
-Irene : Très bien, je vais demander à Orange d'envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi.
+Irene : Très bien, je vais demander à Orange d’envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi.
 
-Monsieur Reynaud : Parfait. Apportez-la à ma loge, je suis là jusqu'à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.
+Monsieur Reynaud : Parfait. Apportez-la à ma loge, je suis là jusqu’à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.
 
-Irene : Je transmettrai cette consigne au technicien. Est-ce qu'il y a autre chose que nous devons savoir ?
+Irene : Je transmettrai cette consigne au technicien. Est-ce qu’il y a autre chose que nous devons savoir ?
 
-Monsieur Reynaud : Non, c'est tout. Ah si, une petite chose : prévenez vos voisins du troisième le jour de l'installation, parce que le technicien aura besoin d'accéder au palier et ça peut faire un peu de bruit. C'est une question de courtoisie.
+Monsieur Reynaud : Non, c’est tout. Ah si, une petite chose : prévenez vos voisins du troisième le jour de l’installation, parce que le technicien aura besoin d’accéder au palier et ça peut faire un peu de bruit. C’est une question de courtoisie.
 
-Irene : Bien sûr, nous les préviendrons. Merci beaucoup, Monsieur Reynaud. Je vous apporte la copie du bail tout à l'heure.
+Irene : Bien sûr, nous les préviendrons. Merci beaucoup, Monsieur Reynaud. Je vous apporte la copie du bail tout à l’heure.
 
 Monsieur Reynaud : Je vous en prie, madame. Bonne journée.
