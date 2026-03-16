@@ -12,6 +12,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} file   <input.txt> <output>  [--format mp3|ogg] [--lang fr-FR|es-US]  Synthesize a text file");
     eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]  Synthesize a dialog");
     eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
+    eprintln!("  {prog} verify-language [<chapter>] [--lang fr-FR] [--fix] [--strict]  Check/fix typographic rules");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
@@ -31,6 +32,11 @@ fn print_help() {
     println!("           <output_dir>/lines/.");
     println!("  build    Generate HTML pages and chapter indexes from content/.");
     println!("           Use --output (-o) to write to a different directory (default: site/).");
+    println!("  verify-language");
+    println!("           Check content files against typographic rules for a language.");
+    println!("           Use --fix to auto-correct violations in place.");
+    println!("           Use --strict to also enforce narrow no-break spaces (U+202F)");
+    println!("           before high punctuation (; : ! ?).");
     println!();
     println!("OPTIONS:");
     println!("  --format mp3|ogg     Audio encoding (default: mp3). Use \"ogg\" for OGG Opus.");
@@ -71,6 +77,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "file" => run_file_mode(&args).await,
         "dialog" => run_dialog_mode(&args).await,
         "build" => run_build_mode(&args),
+        "verify-language" => run_verify_language(&args),
         _ => {
             print_usage(&args[0]);
             std::process::exit(1);
@@ -249,6 +256,102 @@ fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     }
 
     println!("\nDone.");
+    Ok(())
+}
+
+fn run_verify_language(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
+    let content_root = PathBuf::from("content");
+
+    // Parse flags.
+    let mut lang_code = "fr-FR";
+    let mut fix = false;
+    let mut strict = false;
+    let mut chapter_filter: Option<String> = None;
+
+    let mut i = 2;
+    while i < args.len() {
+        match args[i].as_str() {
+            "--lang" => {
+                i += 1;
+                lang_code = args
+                    .get(i)
+                    .map(|s| s.as_str())
+                    .ok_or("--lang requires a value")?;
+            }
+            "--fix" => {
+                fix = true;
+            }
+            "--strict" => {
+                strict = true;
+            }
+            other if !other.starts_with('-') && chapter_filter.is_none() => {
+                chapter_filter = Some(other.to_string());
+            }
+            other => {
+                return Err(format!("unknown flag: {other}").into());
+            }
+        }
+        i += 1;
+    }
+
+    let rules = site_gen::typography::rules_for_language(lang_code, strict)
+        .ok_or_else(|| format!("unsupported language for verification: {lang_code}"))?;
+
+    // Discover chapters (same logic as build mode).
+    let chapters: Vec<String> = if let Some(name) = chapter_filter {
+        vec![name]
+    } else {
+        let mut names = Vec::new();
+        for entry in std::fs::read_dir(&content_root)? {
+            let entry = entry?;
+            if entry.path().join("chapter.toml").exists() {
+                if let Some(name) = entry.file_name().to_str() {
+                    names.push(name.to_string());
+                }
+            }
+        }
+        names.sort();
+        names
+    };
+
+    if chapters.is_empty() {
+        eprintln!("No chapters found in {}", content_root.display());
+        std::process::exit(1);
+    }
+
+    if fix {
+        let mut total = 0;
+        for chapter in &chapters {
+            let dir = content_root.join(chapter);
+            let count = site_gen::typography::fix_files(&dir, rules.as_ref())?;
+            if count > 0 {
+                println!("{chapter}: fixed {count} file(s)");
+            }
+            total += count;
+        }
+        if total == 0 {
+            println!("All files already conform to {} typography rules.", lang_code);
+        } else {
+            println!("\nFixed {total} file(s) total.");
+        }
+    } else {
+        let mut total = 0;
+        for chapter in &chapters {
+            let dir = content_root.join(chapter);
+            let violations = site_gen::typography::verify_files(&dir, rules.as_ref())?;
+            for v in &violations {
+                println!("{v}");
+            }
+            total += violations.len();
+        }
+        if total == 0 {
+            println!("No violations found — all files conform to {} typography rules.", lang_code);
+        } else {
+            eprintln!("\nFound {total} violation(s). Run with --fix to auto-correct.");
+            std::process::exit(1);
+        }
+    }
+
     Ok(())
 }
 
