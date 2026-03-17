@@ -63,7 +63,6 @@ slug = "07_boulangerie"
 title = "Visite à la Boulangerie — Les Spécialités"
 description = "Claire découvre l'éclair au chocolat noir et le Paris-Noisette chez Monsieur Duval."
 type = "dialog"
-audio_dir = "07_boulangerie/07_boulangerie"
 
 [[sections.pages]]
 slug = "08_taxi_hotel"
