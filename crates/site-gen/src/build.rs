@@ -113,11 +113,7 @@ pub fn parse_characters(content: &str) -> Vec<Character> {
 fn parse_md_title(content: &str) -> Option<String> {
     content.lines().find_map(|line| {
         let line = line.trim();
-        if line.starts_with("# ") {
-            Some(line[2..].trim().to_string())
-        } else {
-            None
-        }
+        line.strip_prefix("# ").map(|title| title.trim().to_string())
     })
 }
 

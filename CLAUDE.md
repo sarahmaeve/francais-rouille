@@ -4,6 +4,13 @@ Provide expert advice in Rust.
 Always include tests where possible, especially when a changelist is greater than 25 lines.
 Simplify code for correctness and focus on idiomatic Rust.
 
+After any major code change, run clippy and fix all warnings before considering
+the work complete:
+
+```
+cargo clippy --workspace --all-targets
+```
+
 ## Project Overview
 
 We are creating a mechanism to teach and test French language comprehension and French to English language translation for learners from the B1 - C2 levels.
@@ -63,3 +70,17 @@ Key rules enforced (fr-FR):
   French elision (*l'homme*, *d'accord*, *aujourd'hui*).
 - Use the ellipsis character `…` (U+2026), not three dots `...`.
 - With `--strict`: narrow no-break space (U+202F) before `;` `:` `!` `?`.
+
+### Image Metadata
+
+Run `strip-metadata` before adding images to the site:
+
+```
+cargo run -- strip-metadata <path>              # strip in place
+cargo run -- strip-metadata <path> --output DIR # write to DIR
+cargo run -- strip-metadata <path> --keep-icc   # preserve ICC profiles
+```
+
+This removes EXIF, XMP, IPTC, and comment metadata (GPS coordinates,
+device info, timestamps, thumbnails) from JPEG and PNG files. `<path>`
+can be a single file or a directory (recursive).

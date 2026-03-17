@@ -71,7 +71,7 @@ const ELISION_PREFIXES: &[&str] = &[
 /// sits in a French elision context (e.g. `l'homme`, `d'accord`).
 fn is_french_elision(line: &str, pos: usize) -> bool {
     // There must be at least one character after the apostrophe.
-    if pos + 1 >= line.len() || !line.as_bytes().get(pos + 1).map_or(false, |b| b.is_ascii_alphanumeric() || *b > 0x7F) {
+    if pos + 1 >= line.len() || !line.as_bytes().get(pos + 1).is_some_and(|b| b.is_ascii_alphanumeric() || *b > 0x7F) {
         return false;
     }
 
@@ -91,7 +91,7 @@ fn is_french_elision(line: &str, pos: usize) -> bool {
     }
 
     let lower = prefix.to_lowercase();
-    ELISION_PREFIXES.iter().any(|p| *p == lower.as_str())
+    ELISION_PREFIXES.contains(&lower.as_str())
 }
 
 /// High punctuation marks that require a preceding space in French.

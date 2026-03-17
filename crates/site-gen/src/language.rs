@@ -96,7 +96,7 @@ pub fn assign_voices(
             .get(&line.speaker)
             .copied()
             .unwrap_or_else(|| {
-                if (female_idx + male_idx) % 2 == 0 {
+                if (female_idx + male_idx).is_multiple_of(2) {
                     Gender::Female
                 } else {
                     Gender::Male

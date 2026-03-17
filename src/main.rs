@@ -2,7 +2,7 @@ mod build;
 mod dialog;
 mod tts;
 
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use tts::{AudioFormat, GoogleTts};
 
 use crate::dialog::{french::French, spanish::Spanish, slugify, Language, Voice};
@@ -13,6 +13,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]  Synthesize a dialog");
     eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} verify-language [<chapter>] [--lang fr-FR] [--fix] [--strict]  Check/fix typographic rules");
+    eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
@@ -37,6 +38,11 @@ fn print_help() {
     println!("           Use --fix to auto-correct violations in place.");
     println!("           Use --strict to also enforce narrow no-break spaces (U+202F)");
     println!("           before high punctuation (; : ! ?).");
+    println!("  strip-metadata <path> [--output DIR] [--keep-icc]");
+    println!("           Strip privacy-sensitive metadata (EXIF, XMP, IPTC, comments)");
+    println!("           from JPEG and PNG images. <path> can be a single file or a");
+    println!("           directory (recursive). Without --output, overwrites in place.");
+    println!("           Use --keep-icc to preserve ICC color profiles.");
     println!();
     println!("OPTIONS:");
     println!("  --format mp3|ogg     Audio encoding (default: mp3). Use \"ogg\" for OGG Opus.");
@@ -78,6 +84,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "dialog" => run_dialog_mode(&args).await,
         "build" => run_build_mode(&args),
         "verify-language" => run_verify_language(&args),
+        "strip-metadata" => run_strip_metadata(&args),
         _ => {
             print_usage(&args[0]);
             std::process::exit(1);
@@ -353,6 +360,92 @@ fn run_verify_language(args: &[String]) -> Result<(), Box<dyn std::error::Error>
     }
 
     Ok(())
+}
+
+fn run_strip_metadata(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
+    if args.len() < 3 {
+        eprintln!(
+            "Usage: {} strip-metadata <path> [--output DIR] [--keep-icc]",
+            args[0]
+        );
+        std::process::exit(1);
+    }
+
+    let input_path = PathBuf::from(&args[2]);
+    let mut output_dir: Option<PathBuf> = None;
+    let mut keep_icc = false;
+
+    let mut i = 3;
+    while i < args.len() {
+        match args[i].as_str() {
+            "--output" | "-o" => {
+                i += 1;
+                output_dir = Some(PathBuf::from(
+                    args.get(i).ok_or("--output requires a value")?,
+                ));
+            }
+            "--keep-icc" => {
+                keep_icc = true;
+            }
+            other => {
+                return Err(format!("unknown flag: {other}").into());
+            }
+        }
+        i += 1;
+    }
+
+    let opts = image_strip::StripOptions { keep_icc };
+
+    // Collect files to process.
+    let files = if input_path.is_dir() {
+        collect_images(&input_path)?
+    } else if input_path.is_file() {
+        vec![input_path.clone()]
+    } else {
+        return Err(format!("path does not exist: {}", input_path.display()).into());
+    };
+
+    if files.is_empty() {
+        eprintln!("No JPEG or PNG files found in {}", input_path.display());
+        std::process::exit(1);
+    }
+
+    let mut total_saved: u64 = 0;
+    for file in &files {
+        let out = match &output_dir {
+            Some(dir) => {
+                let name = file.file_name().unwrap();
+                dir.join(name)
+            }
+            None => file.clone(), // overwrite in place
+        };
+
+        let report = image_strip::strip_metadata(file, &out, &opts)?;
+        println!("{report}");
+        total_saved += report.bytes_before.saturating_sub(report.bytes_after);
+    }
+
+    println!(
+        "\nProcessed {} file(s), saved {} bytes total.",
+        files.len(),
+        total_saved
+    );
+    Ok(())
+}
+
+fn collect_images(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error> {
+    let mut results = Vec::new();
+    for entry in std::fs::read_dir(dir)? {
+        let entry = entry?;
+        let path = entry.path();
+        if path.is_dir() {
+            results.extend(collect_images(&path)?);
+        } else if image_strip::detect_format(&path).is_some() {
+            results.push(path);
+        }
+    }
+    results.sort();
+    Ok(results)
 }
 
 fn truncate(s: &str, max: usize) -> String {

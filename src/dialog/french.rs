@@ -69,8 +69,8 @@ impl Language for French {
                 // For elided articles like "l'étudiante" vs "l'habitant",
                 // check if the noun ends in 'e' (typically feminine in French).
                 // Handle both typographic (') and ASCII (') apostrophes.
-                let noun = if word.starts_with("l\u{2019}") {
-                    &word["l\u{2019}".len()..]
+                let noun = if let Some(rest) = word.strip_prefix("l\u{2019}") {
+                    rest
                 } else {
                     &word[2..] // "l'"
                 };
