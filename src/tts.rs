@@ -147,7 +147,7 @@ impl GoogleTts {
     }
 
     /// Synthesizes SSML content and returns raw audio bytes.
-    async fn synthesize_ssml(
+    pub async fn synthesize_ssml(
         &self,
         ssml: &str,
         voice: &Voice,

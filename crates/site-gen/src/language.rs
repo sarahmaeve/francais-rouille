@@ -14,8 +14,18 @@ pub struct Voice {
 }
 
 /// A pool of TTS voices partitioned by gender.
+///
+/// The first speaker of each gender is assigned a preferred voice (if any).
+/// Additional speakers of the same gender draw from the remaining pool,
+/// which is shuffled for variety.
 pub struct VoicePool {
+    /// Preferred female voices (e.g. Studio), assigned first in order.
+    pub preferred_female: &'static [Voice],
+    /// Additional female voices, shuffled for variety.
     pub female: &'static [Voice],
+    /// Preferred male voices (e.g. Studio), assigned first in order.
+    pub preferred_male: &'static [Voice],
+    /// Additional male voices, shuffled for variety.
     pub male: &'static [Voice],
 }
 
@@ -66,22 +76,32 @@ pub fn parse_character_genders(content: &str, lang: &dyn Language) -> HashMap<St
     genders
 }
 
-/// Assign randomly-selected distinct voices to speakers based on detected
-/// gender. The voice pools are shuffled once per call, so each program run
-/// produces a different combination, but every line for a given character
-/// uses the same voice throughout the dialog.
+/// Build an ordered voice list: preferred voices first (in order), then
+/// the remaining voices shuffled for variety.
+fn build_voice_order(preferred: &[Voice], rest: &[Voice]) -> Vec<Voice> {
+    let mut rng = rand::rng();
+    let mut ordered: Vec<Voice> = preferred.to_vec();
+    let mut fallback: Vec<Voice> = rest.to_vec();
+    fallback.shuffle(&mut rng);
+    ordered.extend(fallback);
+    ordered
+}
+
+/// Assign distinct voices to speakers based on detected gender.
+///
+/// Preferred voices (e.g. Studio) are assigned first. When a dialog has
+/// more speakers of one gender than there are preferred voices, additional
+/// speakers receive randomly-selected voices from the rest of the pool.
+/// Each character keeps the same voice throughout the dialog.
 pub fn assign_voices(
     lines: &[DialogLine],
     genders: &HashMap<String, Gender>,
     lang: &dyn Language,
 ) -> HashMap<String, Voice> {
-    let mut rng = rand::rng();
     let pool = lang.voice_pool();
 
-    let mut female_pool: Vec<Voice> = pool.female.to_vec();
-    let mut male_pool: Vec<Voice> = pool.male.to_vec();
-    female_pool.shuffle(&mut rng);
-    male_pool.shuffle(&mut rng);
+    let female_voices = build_voice_order(pool.preferred_female, pool.female);
+    let male_voices = build_voice_order(pool.preferred_male, pool.male);
 
     let mut map = HashMap::new();
     let mut female_idx: usize = 0;
@@ -105,12 +125,12 @@ pub fn assign_voices(
 
         let voice = match gender {
             Gender::Female => {
-                let v = female_pool[female_idx % female_pool.len()].clone();
+                let v = female_voices[female_idx % female_voices.len()].clone();
                 female_idx += 1;
                 v
             }
             Gender::Male => {
-                let v = male_pool[male_idx % male_pool.len()].clone();
+                let v = male_voices[male_idx % male_voices.len()].clone();
                 male_idx += 1;
                 v
             }
@@ -130,15 +150,37 @@ mod tests {
     /// Minimal test language for unit tests.
     struct TestLang;
 
+    static TEST_PREF_FEMALE: &[Voice] = &[
+        Voice { language_code: "xx-XX", name: "xx-XX-Studio-F" },
+    ];
+
     static TEST_FEMALE: &[Voice] = &[
         Voice { language_code: "xx-XX", name: "xx-XX-FemaleA" },
         Voice { language_code: "xx-XX", name: "xx-XX-FemaleB" },
+    ];
+
+    static TEST_PREF_MALE: &[Voice] = &[
+        Voice { language_code: "xx-XX", name: "xx-XX-Studio-M" },
     ];
 
     static TEST_MALE: &[Voice] = &[
         Voice { language_code: "xx-XX", name: "xx-XX-MaleA" },
         Voice { language_code: "xx-XX", name: "xx-XX-MaleB" },
     ];
+
+    /// All female voices (preferred + rest) for assertions.
+    fn all_female() -> Vec<Voice> {
+        let mut v = TEST_PREF_FEMALE.to_vec();
+        v.extend_from_slice(TEST_FEMALE);
+        v
+    }
+
+    /// All male voices (preferred + rest) for assertions.
+    fn all_male() -> Vec<Voice> {
+        let mut v = TEST_PREF_MALE.to_vec();
+        v.extend_from_slice(TEST_MALE);
+        v
+    }
 
     impl Language for TestLang {
         fn code(&self) -> &'static str { "xx-XX" }
@@ -153,7 +195,12 @@ mod tests {
         }
 
         fn voice_pool(&self) -> VoicePool {
-            VoicePool { female: TEST_FEMALE, male: TEST_MALE }
+            VoicePool {
+                preferred_female: TEST_PREF_FEMALE,
+                female: TEST_FEMALE,
+                preferred_male: TEST_PREF_MALE,
+                male: TEST_MALE,
+            }
         }
     }
 
@@ -181,8 +228,8 @@ Carlos : Buenos días.
         let genders = parse_character_genders(content, &TestLang);
         let voices = assign_voices(&lines, &genders, &TestLang);
         assert_eq!(voices.len(), 2);
-        assert!(TEST_FEMALE.contains(&voices["María"]));
-        assert!(TEST_MALE.contains(&voices["Carlos"]));
+        assert!(all_female().contains(&voices["María"]));
+        assert!(all_male().contains(&voices["Carlos"]));
     }
 
     #[test]
@@ -198,8 +245,8 @@ Eva : Hola.
         let lines = parse_dialog(content);
         let genders = parse_character_genders(content, &TestLang);
         let voices = assign_voices(&lines, &genders, &TestLang);
-        assert!(TEST_FEMALE.contains(&voices["Ana"]));
-        assert!(TEST_FEMALE.contains(&voices["Eva"]));
+        assert!(all_female().contains(&voices["Ana"]));
+        assert!(all_female().contains(&voices["Eva"]));
         assert_ne!(voices["Ana"], voices["Eva"]);
     }
 
@@ -211,7 +258,58 @@ Eva : Hola.
         ];
         let genders = HashMap::new();
         let voices = assign_voices(&lines, &genders, &TestLang);
-        assert!(TEST_FEMALE.contains(&voices["Unknown"]));
-        assert!(TEST_MALE.contains(&voices["Stranger"]));
+        assert!(all_female().contains(&voices["Unknown"]));
+        assert!(all_male().contains(&voices["Stranger"]));
+    }
+
+    #[test]
+    fn single_speaker_gets_preferred_voice() {
+        // A monologue should always use the preferred (Studio) voice.
+        let content = "\
+- Isabelle — la guide
+
+Isabelle : Bienvenue.
+";
+        let lines = parse_dialog(content);
+        let genders = parse_character_genders(content, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang);
+        assert_eq!(voices["Isabelle"].name, "xx-XX-Studio-F");
+    }
+
+    #[test]
+    fn first_speaker_per_gender_gets_preferred_voice() {
+        let content = "\
+- María — una estudiante
+- Carlos — un profesor
+
+María : Hola.
+
+Carlos : Buenos días.
+";
+        let lines = parse_dialog(content);
+        let genders = parse_character_genders(content, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang);
+        assert_eq!(voices["María"].name, "xx-XX-Studio-F");
+        assert_eq!(voices["Carlos"].name, "xx-XX-Studio-M");
+    }
+
+    #[test]
+    fn second_speaker_same_gender_gets_fallback_voice() {
+        let content = "\
+- Ana — una doctora
+- Eva — una abogada
+
+Ana : Hola.
+
+Eva : Hola.
+";
+        let lines = parse_dialog(content);
+        let genders = parse_character_genders(content, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang);
+        // First female speaker gets preferred.
+        assert_eq!(voices["Ana"].name, "xx-XX-Studio-F");
+        // Second female speaker gets a fallback voice.
+        assert!(TEST_FEMALE.contains(&voices["Eva"]),
+            "second speaker should get a fallback voice, got: {}", voices["Eva"].name);
     }
 }

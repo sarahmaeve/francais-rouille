@@ -130,9 +130,19 @@ fn parse_language(args: &[String]) -> Result<Box<dyn Language>, Box<dyn std::err
     Ok(Box::new(French))
 }
 
+/// Parse `--voice <name>` from args (e.g. `--voice fr-FR-Studio-D`).
+fn parse_voice_override(args: &[String]) -> Option<String> {
+    for (i, arg) in args.iter().enumerate() {
+        if arg == "--voice" {
+            return args.get(i + 1).cloned();
+        }
+    }
+    None
+}
+
 async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} file <input.txt> <output> [--format mp3|ogg] [--lang fr-FR|es-US]", args[0]);
+        eprintln!("Usage: {} file <input.txt> <output> [--format mp3|ogg] [--lang fr-FR|es-US] [--voice NAME]", args[0]);
         std::process::exit(1);
     }
 
@@ -141,15 +151,32 @@ async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>
     let format = parse_format(args)?;
     let lang = parse_language(args)?;
 
-    // Use the first female voice from the language's pool.
-    let default_voice: &Voice = &lang.voice_pool().female[0];
+    let voice = if let Some(name) = parse_voice_override(args) {
+        let code = lang.code();
+        Voice {
+            language_code: Box::leak(code.to_string().into_boxed_str()),
+            name: Box::leak(name.into_boxed_str()),
+        }
+    } else {
+        lang.voice_pool().female[0].clone()
+    };
 
     let text = std::fs::read_to_string(input_path)?;
     let tts = GoogleTts::from_env()?;
-    tts.synthesize_to_file(&text, default_voice, format, &output_path)
-        .await?;
 
-    println!("Wrote {} audio to {}", format.extension(), output_path.display());
+    // Detect SSML input by checking if content starts with <speak>.
+    let bytes = if text.trim_start().starts_with("<speak>") {
+        tts.synthesize_ssml(&text, &voice, format).await?
+    } else {
+        tts.synthesize(&text, &voice, format).await?
+    };
+
+    if let Some(parent) = output_path.parent() {
+        std::fs::create_dir_all(parent)?;
+    }
+    std::fs::write(&output_path, &bytes)?;
+
+    println!("Wrote {} audio to {} (voice: {})", format.extension(), output_path.display(), voice.name);
     Ok(())
 }
 

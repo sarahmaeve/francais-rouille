@@ -6,6 +6,8 @@ pub struct Spanish;
 
 // ── Female voices (es-US Premium) ──────────────────────────────────────
 
+static PREFERRED_FEMALE: &[Voice] = &[];
+
 static FEMALE: &[Voice] = &[
     Voice { language_code: "es-US", name: "es-US-Neural2-A" },
     Voice { language_code: "es-US", name: "es-US-Wavenet-A" },
@@ -29,8 +31,11 @@ static FEMALE: &[Voice] = &[
 
 // ── Male voices (es-US Premium) ────────────────────────────────────────
 
-static MALE: &[Voice] = &[
+static PREFERRED_MALE: &[Voice] = &[
     Voice { language_code: "es-US", name: "es-US-Studio-B" },
+];
+
+static MALE: &[Voice] = &[
     Voice { language_code: "es-US", name: "es-US-Neural2-B" },
     Voice { language_code: "es-US", name: "es-US-Neural2-C" },
     Voice { language_code: "es-US", name: "es-US-Wavenet-B" },
@@ -71,7 +76,12 @@ impl Language for Spanish {
     }
 
     fn voice_pool(&self) -> VoicePool {
-        VoicePool { female: FEMALE, male: MALE }
+        VoicePool {
+            preferred_female: PREFERRED_FEMALE,
+            female: FEMALE,
+            preferred_male: PREFERRED_MALE,
+            male: MALE,
+        }
     }
 }
 

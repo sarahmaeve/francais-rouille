@@ -6,8 +6,14 @@ pub struct French;
 
 // ── Female voices ──────────────────────────────────────────────────────
 
-static FEMALE: &[Voice] = &[
+// Preferred voices are assigned first (monologues, first speaker per gender).
+// Fallback voices are used for additional speakers of the same gender.
+
+static PREFERRED_FEMALE: &[Voice] = &[
     Voice { language_code: "fr-FR", name: "fr-FR-Studio-A" },
+];
+
+static FEMALE: &[Voice] = &[
     Voice { language_code: "fr-FR", name: "fr-FR-Neural2-F" },
     Voice { language_code: "fr-FR", name: "fr-FR-Wavenet-F" },
     Voice { language_code: "fr-FR", name: "fr-FR-Chirp-HD-F" },
@@ -30,8 +36,11 @@ static FEMALE: &[Voice] = &[
 
 // ── Male voices ────────────────────────────────────────────────────────
 
-static MALE: &[Voice] = &[
+static PREFERRED_MALE: &[Voice] = &[
     Voice { language_code: "fr-FR", name: "fr-FR-Studio-D" },
+];
+
+static MALE: &[Voice] = &[
     Voice { language_code: "fr-FR", name: "fr-FR-Neural2-G" },
     Voice { language_code: "fr-FR", name: "fr-FR-Wavenet-G" },
     Voice { language_code: "fr-FR", name: "fr-FR-Polyglot-1" },
@@ -85,7 +94,12 @@ impl Language for French {
     }
 
     fn voice_pool(&self) -> VoicePool {
-        VoicePool { female: FEMALE, male: MALE }
+        VoicePool {
+            preferred_female: PREFERRED_FEMALE,
+            female: FEMALE,
+            preferred_male: PREFERRED_MALE,
+            male: MALE,
+        }
     }
 }
 
