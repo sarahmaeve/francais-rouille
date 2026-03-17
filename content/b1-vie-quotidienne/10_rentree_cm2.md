@@ -1,43 +1,43 @@
 # La Rentrée en CM2 — Le Premier Mois
 
 **Personnages :**
-- **Sandrine** — une mère d’élève qui attend devant l’école
-- **Olivier** — un père d’élève qui vient chercher sa fille
-- **Fatima** — une mère d’élève qui habite dans le quartier
+- **Sandrine** — une mère d'élève qui attend devant l'école
+- **Olivier** — un père d'élève qui vient chercher sa fille
+- **Fatima** — une mère d'élève qui habite dans le quartier
 
 ---
 
-**Sandrine :** Ah, bonjour Olivier ! Bonjour Fatima ! Ça fait plaisir de vous voir. Alors, comment ça se passe pour vos enfants ? Le premier mois en CM2, c’est un grand changement, non ?
+**Sandrine :** Ah, bonjour Olivier ! Bonjour Fatima ! Ça fait plaisir de vous voir. Alors, comment ça se passe pour vos enfants ? Le premier mois en CM2, c'est un grand changement, non ?
 
-**Olivier :** Bonjour ! Oui, ma fille Chloé était un peu stressée au début. Elle avait peur d’avoir un maître plus sévère que l’année dernière.
+**Olivier :** Bonjour ! Oui, ma fille Chloé était un peu stressée au début. Elle avait peur d'avoir un maître plus sévère que l'année dernière.
 
-**Fatima :** C’est pareil pour mon fils Adam. Il ne connaissait pas beaucoup d’élèves dans sa classe cette année, alors il était inquiet.
+**Fatima :** C'est pareil pour mon fils Adam. Il ne connaissait pas beaucoup d'élèves dans sa classe cette année, alors il était inquiet.
 
 **Sandrine :** Lucas aussi, il ne voulait pas y aller la première semaine. Mais maintenant, il adore sa maîtresse. Elle organise des projets en groupe, et ça lui plaît beaucoup.
 
-**Olivier :** Chloé aussi commence à s’adapter. Ce qui l’a surprise, c’est la quantité de devoirs. En CM1, elle avait une demi-heure de travail le soir, mais maintenant c’est presque une heure.
+**Olivier :** Chloé aussi commence à s'adapter. Ce qui l'a surprise, c'est la quantité de devoirs. En CM1, elle avait une demi-heure de travail le soir, mais maintenant c'est presque une heure.
 
-**Fatima :** Ah oui, les devoirs ! Adam passe beaucoup de temps sur les mathématiques. Les fractions et les problèmes de géométrie, c’est nouveau pour lui. Il me demande de l’aide tous les soirs.
+**Fatima :** Ah oui, les devoirs ! Adam passe beaucoup de temps sur les mathématiques. Les fractions et les problèmes de géométrie, c'est nouveau pour lui. Il me demande de l'aide tous les soirs.
 
-**Sandrine :** Lucas a le même problème avec la conjugaison. Le passé simple, le subjonctif… Il trouve ça très difficile. Je lui ai acheté un petit cahier d’exercices pour s’entraîner.
+**Sandrine :** Lucas a le même problème avec la conjugaison. Le passé simple, le subjonctif… Il trouve ça très difficile. Je lui ai acheté un petit cahier d'exercices pour s'entraîner.
 
-**Olivier :** C’est une bonne idée. Chloé, elle, adore les sciences. Sa maîtresse leur fait des expériences en classe, et la semaine dernière, ils ont étudié le système solaire. Elle en parle tout le temps à la maison.
+**Olivier :** C'est une bonne idée. Chloé, elle, adore les sciences. Sa maîtresse leur fait des expériences en classe, et la semaine dernière, ils ont étudié le système solaire. Elle en parle tout le temps à la maison.
 
-**Fatima :** Adam aussi aime les sciences ! Par contre, il a du mal avec les dictées. L’orthographe, c’est vraiment son point faible. Est-ce que la maîtresse fait des dictées toutes les semaines chez vous aussi ?
+**Fatima :** Adam aussi aime les sciences ! Par contre, il a du mal avec les dictées. L'orthographe, c'est vraiment son point faible. Est-ce que la maîtresse fait des dictées toutes les semaines chez vous aussi ?
 
-**Sandrine :** Oui, tous les vendredis. Lucas a eu sept sur dix la semaine dernière. Il était fier de lui. Mais ce qui me préoccupe un peu, c’est l’année prochaine. Le collège, c’est un autre monde.
+**Sandrine :** Oui, tous les vendredis. Lucas a eu sept sur dix la semaine dernière. Il était fier de lui. Mais ce qui me préoccupe un peu, c'est l'année prochaine. Le collège, c'est un autre monde.
 
-**Olivier :** J’y pense aussi. Chloé me pose déjà des questions sur le collège. Elle veut savoir si elle va garder ses amis, comment ça fonctionne avec les différents professeurs…
+**Olivier :** J'y pense aussi. Chloé me pose déjà des questions sur le collège. Elle veut savoir si elle va garder ses amis, comment ça fonctionne avec les différents professeurs…
 
-**Fatima :** Moi, je me demande si Adam sera prêt. En CM2, ils sont les plus grands de l’école. Au collège, ils redeviennent les plus petits. C’est un gros changement.
+**Fatima :** Moi, je me demande si Adam sera prêt. En CM2, ils sont les plus grands de l'école. Au collège, ils redeviennent les plus petits. C'est un gros changement.
 
-**Sandrine :** C’est vrai. Mais il reste encore neuf mois pour les préparer. Et d’après ce que je vois, les enfants s’adaptent vite. Lucas a déjà fait deux nouveaux amis ce mois-ci.
+**Sandrine :** C'est vrai. Mais il reste encore neuf mois pour les préparer. Et d'après ce que je vois, les enfants s'adaptent vite. Lucas a déjà fait deux nouveaux amis ce mois-ci.
 
-**Olivier :** Chloé aussi. Elle s’est inscrite à l’atelier théâtre de l’école, et elle adore ça. Ça lui donne confiance en elle.
+**Olivier :** Chloé aussi. Elle s'est inscrite à l'atelier théâtre de l'école, et elle adore ça. Ça lui donne confiance en elle.
 
-**Fatima :** C’est super. Adam fait l’atelier informatique. Il apprend à programmer avec Scratch. Il est tellement content qu’il veut me montrer ses projets tous les soirs !
+**Fatima :** C'est super. Adam fait l'atelier informatique. Il apprend à programmer avec Scratch. Il est tellement content qu'il veut me montrer ses projets tous les soirs !
 
-**Sandrine :** C’est bien qu’il y ait autant d’activités. Bon, les voilà qui sortent ! On se retrouve la semaine prochaine ?
+**Sandrine :** C'est bien qu'il y ait autant d'activités. Bon, les voilà qui sortent ! On se retrouve la semaine prochaine ?
 
 **Olivier :** Avec plaisir ! Bonne soirée à vous deux.
 

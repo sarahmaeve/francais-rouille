@@ -9,12 +9,12 @@
 | un radiateur | a radiator |
 | le thermostat | the thermostat |
 | une vanne | a valve |
-| un chauffage d’appoint | a portable/space heater |
+| un chauffage d'appoint | a portable/space heater |
 | un technicien | a technician |
 | diagnostiquer | to diagnose |
 | je me permets de | I take the liberty of (polite) |
-| je vous prie d’agréer | formal sign-off (yours sincerely) |
-| l’expression de mes salutations distinguées | formal closing formula |
+| je vous prie d'agréer | formal sign-off (yours sincerely) |
+| l'expression de mes salutations distinguées | formal closing formula |
 | par avance | in advance |
 
 ## 02 — La Réparation du Chauffage
@@ -29,13 +29,13 @@
 | un tuyau | a pipe |
 | la vétusté | wear and tear, obsolescence |
 | jeter un œil | to take a look (informal) |
-| ça m’étonne pas | doesn't surprise me (informal) |
+| ça m'étonne pas | doesn't surprise me (informal) |
 | y'a | il y a (informal spoken) |
 | faut que | il faut que (informal) |
 | du coup | so, as a result (informal) |
 | en gros | basically (informal) |
 | une heure et demie max | an hour and a half tops |
-| je m’y mets | I'll get started on it |
+| je m'y mets | I'll get started on it |
 
 ## 03 — Le Courrier Recommandé Perdu
 
@@ -48,7 +48,7 @@
 | un centre de tri | a sorting center |
 | une réclamation | a complaint, a claim |
 | une indemnisation | compensation |
-| l’expéditeur | the sender |
+| l'expéditeur | the sender |
 | des jours ouvrés | business days |
 | un guichet | a counter/window (at a post office) |
 | le guichetier | the clerk (at a counter) |
@@ -63,12 +63,12 @@
 | le règlement intérieur | building rules, internal regulations |
 | tenu en laisse | kept on a leash |
 | les parties communes | common areas |
-| le hall d’entrée | the entrance hall |
+| le hall d'entrée | the entrance hall |
 | la cour intérieure | the inner courtyard |
 | les espaces verts | green spaces |
 | la pelouse | the lawn |
 | les déjections | droppings, excrement |
-| un rappel à l’ordre | a formal warning |
+| un rappel à l'ordre | a formal warning |
 | un manquement | a failure to comply, a breach |
 
 ## 05 — Le Chat Perdu
@@ -77,7 +77,7 @@
 |---|---|
 | une tache | a spot, a mark |
 | le poitrail | the chest (of an animal) |
-| la cage d’escalier | the stairwell |
+| la cage d'escalier | the stairwell |
 | la cave | the basement/cellar |
 | une traboule | a covered passageway (Lyon) |
 | se planquer | to hide (informal) |
@@ -85,12 +85,12 @@
 | la litière | the litter (box) |
 | super réactif | super responsive (informal) |
 | par texto | by text message |
-| t’inquiète pas | don't worry (informal tu) |
+| t'inquiète pas | don't worry (informal tu) |
 | stressez pas | don't stress (informal) |
-| comme si de rien n’était | as if nothing had happened |
+| comme si de rien n'était | as if nothing had happened |
 | faire la tournée | to do the rounds |
 
-## 06 — L’Installation de la Fibre Optique
+## 06 — L'Installation de la Fibre Optique
 
 | Français | English |
 |---|---|

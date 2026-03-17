@@ -21,7 +21,7 @@
 | en direction de | in the direction of / towards |
 | tant que | as long as |
 | se perdre | to get lost |
-| s’y habituer | to get used to it |
+| s'y habituer | to get used to it |
 | sous terre | underground |
 | le réseau | the network / signal |
 | affiché | displayed / posted |
@@ -45,14 +45,14 @@
 | pour manger ici | to eat here / for here |
 | le petit-déjeuner | breakfast |
 | fait maison | homemade |
-| l’atelier | the workshop |
+| l'atelier | the workshop |
 | à partir de | starting from |
 | ajouter | to add |
 | Ça fait combien ? | How much does that come to? |
 | payer par carte | to pay by card |
 | le sans contact | contactless (payment) |
-| s’il vous plaît | please (formal) |
-| Qu’est-ce qui vous ferait plaisir ? | What would you like? (lit. What would please you?) |
+| s'il vous plaît | please (formal) |
+| Qu'est-ce qui vous ferait plaisir ? | What would you like? (lit. What would please you?) |
 | un choix | a choice |
 
 ## Demander son Chemin à Toulouse
@@ -63,7 +63,7 @@
 | le chemin | the way / path |
 | à pied | on foot |
 | tout droit | straight ahead |
-| jusqu’au bout | until the end |
+| jusqu'au bout | until the end |
 | un carrefour | a crossroads / intersection |
 | tourner à gauche | to turn left |
 | tourner à droite | to turn right |
@@ -82,7 +82,7 @@
 | bienvenue | welcome |
 | agréable | pleasant / nice |
 
-## Annonce Immobilière — L’Appartement
+## Annonce Immobilière — L'Appartement
 
 | Français | English |
 |---|---|
@@ -91,7 +91,7 @@
 | le loyer | the rent |
 | charges comprises | utilities included |
 | la surface | the area / square footage |
-| l’étage (m.) | the floor / story |
+| l'étage (m.) | the floor / story |
 | un ascenseur | an elevator |
 | un immeuble haussmannien | a Haussmann-style building |
 | bien entretenu | well-maintained |
@@ -115,13 +115,13 @@
 | à proximité | nearby |
 | disponible | available |
 
-## Appel Téléphonique — L’Agence Immobilière
+## Appel Téléphonique — L'Agence Immobilière
 
 | Français | English |
 |---|---|
 | une agence immobilière | a real estate agency |
 | un agent immobilier | a real estate agent |
-| à l’appareil | speaking (on the phone) |
+| à l'appareil | speaking (on the phone) |
 | au sujet de | regarding / about |
 | une annonce | a listing / advertisement |
 | toujours disponible | still available |
@@ -139,12 +139,12 @@
 | le dossier | the file / application |
 | un bulletin de salaire | a pay slip |
 | un contrat de travail | an employment contract |
-| une pièce d’identité | an ID document |
-| un avis d’imposition | a tax notice |
+| une pièce d'identité | an ID document |
+| un avis d'imposition | a tax notice |
 | les revenus | income |
 | visiter | to visit (a property) |
-| Qu’est-ce qui vous arrange ? | What works for you? |
-| C’est noté | Noted / Got it |
+| Qu'est-ce qui vous arrange ? | What works for you? |
+| C'est noté | Noted / Got it |
 
 ## Discussion sur le Quartier — Français Familier
 
@@ -153,7 +153,7 @@
 | dans le coin | in the area / around here |
 | ouais | yeah (informal for "oui") |
 | franchement | honestly / frankly |
-| c’est top | it's great (slang) |
+| c'est top | it's great (slang) |
 | ben | well (informal for "bien") |
 | y'a | there is (contraction of "il y a") |
 | une ambiance de ouf | an amazing vibe (slang; "ouf" = verlan for "fou") |
@@ -167,7 +167,7 @@
 | sans se ruiner | without breaking the bank |
 | chouette | nice / cool (informal) |
 | un attrape-touriste | a tourist trap |
-| c’est pas terrible | it's not great (understatement) |
+| c'est pas terrible | it's not great (understatement) |
 | peinard | peaceful / chill (informal) |
 | zéro souci | no worries at all |
 | se balader | to go for a stroll (informal) |
@@ -213,7 +213,7 @@
 | gratuit(e) | free (of charge) |
 | la dégustation | the tasting |
 
-## Réserver un Taxi — L’Hôtel et le Transport
+## Réserver un Taxi — L'Hôtel et le Transport
 
 | Français | English |
 |---|---|
@@ -237,7 +237,7 @@
 | en espèces | in cash |
 | une carte bancaire | a bank card |
 | venir chercher | to pick up |
-| l’entrée principale | the main entrance |
+| l'entrée principale | the main entrance |
 | une compagnie partenaire | a partner company |
 | ponctuel(le) | punctual / on time |
 | un pourboire | a tip |
@@ -252,7 +252,7 @@
 | une rencontre | a meeting / an event |
 | littéraire | literary |
 | une galerie | a gallery |
-| à l’occasion de | on the occasion of |
+| à l'occasion de | on the occasion of |
 | la parution | the publication / release |
 | un roman | a novel |
 | un(e) auteur(e) | an author |
@@ -267,7 +267,7 @@
 | le public | the audience |
 | une séance de dédicaces | a book signing |
 | un exemplaire | a copy (of a book) |
-| disponible à l’achat | available for purchase |
+| disponible à l'achat | available for purchase |
 | sur place | on site |
 | dans la limite des places | subject to availability |
 | il est recommandé de | it is recommended to |
@@ -284,7 +284,7 @@
 |---|---|
 | Excusez-moi | Excuse me |
 | Bien sûr | Of course |
-| D’accord | Okay / Alright |
+| D'accord | Okay / Alright |
 | Pas du tout | Not at all |
 | Ne vous inquiétez pas | Don't worry |
 | De rien | You're welcome |
@@ -294,6 +294,6 @@
 | Merci beaucoup | Thank you very much |
 | Il faut + infinitif | One must / It is necessary to |
 | Est-ce que… | (question marker) Do/Does/Is… |
-| Qu’est-ce que… | What… |
-| avoir l’air + adjectif | to seem / to look (+ adjective) |
+| Qu'est-ce que… | What… |
+| avoir l'air + adjectif | to seem / to look (+ adjective) |
 | il y a | there is / there are |

@@ -4,33 +4,33 @@ Personnages :
 - Claire — une cliente curieuse qui entre dans la boulangerie
 - Monsieur Duval — le propriétaire et pâtissier de la boulangerie
 
-Claire : Bonjour, monsieur ! Votre vitrine est magnifique. Tout a l’air délicieux.
+Claire : Bonjour, monsieur ! Votre vitrine est magnifique. Tout a l'air délicieux.
 
-Monsieur Duval : Bonjour, madame ! Merci, c’est gentil. Qu’est-ce qui vous tente aujourd’hui ?
+Monsieur Duval : Bonjour, madame ! Merci, c'est gentil. Qu'est-ce qui vous tente aujourd'hui ?
 
-Claire : Justement, j’hésite beaucoup. Qu’est-ce que vous me recommandez ? Je cherche quelque chose de spécial.
+Claire : Justement, j'hésite beaucoup. Qu'est-ce que vous me recommandez ? Je cherche quelque chose de spécial.
 
-Monsieur Duval : Alors, si vous aimez le chocolat, je vous recommande notre éclair au chocolat noir. C’est notre meilleure vente.
+Monsieur Duval : Alors, si vous aimez le chocolat, je vous recommande notre éclair au chocolat noir. C'est notre meilleure vente.
 
-Claire : Un éclair au chocolat noir ? Qu’est-ce qu’il a de particulier ?
+Claire : Un éclair au chocolat noir ? Qu'est-ce qu'il a de particulier ?
 
-Monsieur Duval : On utilise du chocolat noir à soixante-douze pour cent, importé directement d’un artisan belge. La crème pâtissière est faite chaque matin, et le glaçage est préparé à la minute.
+Monsieur Duval : On utilise du chocolat noir à soixante-douze pour cent, importé directement d'un artisan belge. La crème pâtissière est faite chaque matin, et le glaçage est préparé à la minute.
 
-Claire : Ça a l’air incroyable. Et il y a autre chose que vous recommandez ?
+Claire : Ça a l'air incroyable. Et il y a autre chose que vous recommandez ?
 
-Monsieur Duval : Oui, absolument. Notre spécialité maison, c’est le Paris-Noisette. C’est une création originale de ma femme.
+Monsieur Duval : Oui, absolument. Notre spécialité maison, c'est le Paris-Noisette. C'est une création originale de ma femme.
 
-Claire : Le Paris-Noisette ? Je ne connais pas du tout. C’est quoi exactement ?
+Claire : Le Paris-Noisette ? Je ne connais pas du tout. C'est quoi exactement ?
 
-Monsieur Duval : C’est une pâte feuilletée croustillante avec une mousse à la noisette du Piémont et un cœur de caramel au beurre salé. On le saupoudre de noisettes torréfiées et d’un peu de fleur de sel.
+Monsieur Duval : C'est une pâte feuilletée croustillante avec une mousse à la noisette du Piémont et un cœur de caramel au beurre salé. On le saupoudre de noisettes torréfiées et d'un peu de fleur de sel.
 
-Claire : Oh là là, ça semble extraordinaire. C’est votre femme qui a inventé cette recette ?
+Claire : Oh là là, ça semble extraordinaire. C'est votre femme qui a inventé cette recette ?
 
-Monsieur Duval : Oui, elle est pâtissière aussi. Elle a travaillé dix ans chez Ladurée avant qu’on ouvre notre propre boutique. Le Paris-Noisette, c’est sa fierté.
+Monsieur Duval : Oui, elle est pâtissière aussi. Elle a travaillé dix ans chez Ladurée avant qu'on ouvre notre propre boutique. Le Paris-Noisette, c'est sa fierté.
 
-Claire : Eh bien, je vais prendre les deux ! Un éclair au chocolat noir et un Paris-Noisette, s’il vous plaît.
+Claire : Eh bien, je vais prendre les deux ! Un éclair au chocolat noir et un Paris-Noisette, s'il vous plaît.
 
-Monsieur Duval : Excellent choix ! L’éclair, c’est trois euros cinquante, et le Paris-Noisette, c’est cinq euros. Ça vous fait huit euros cinquante en tout.
+Monsieur Duval : Excellent choix ! L'éclair, c'est trois euros cinquante, et le Paris-Noisette, c'est cinq euros. Ça vous fait huit euros cinquante en tout.
 
 Claire : Parfait. Est-ce que vous avez une carte de fidélité ?
 
@@ -38,4 +38,4 @@ Monsieur Duval : Oui, bien sûr. À votre dixième achat, vous recevez une vienn
 
 Claire : Super ! Merci beaucoup, monsieur. Je suis sûre que je vais revenir très vite.
 
-Monsieur Duval : J’espère bien ! Bonne dégustation, madame. Et si vous aimez le Paris-Noisette, dites-le à vos amis !
+Monsieur Duval : J'espère bien ! Bonne dégustation, madame. Et si vous aimez le Paris-Noisette, dites-le à vos amis !

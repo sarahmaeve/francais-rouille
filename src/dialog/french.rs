@@ -65,15 +65,10 @@ impl Language for French {
         match first_word {
             "une" | "la" => Some(Gender::Female),
             "un" | "le" => Some(Gender::Male),
-            word if word.starts_with("l\u{2019}") || word.starts_with("l'") => {
+            word if word.starts_with("l'") => {
                 // For elided articles like "l'étudiante" vs "l'habitant",
                 // check if the noun ends in 'e' (typically feminine in French).
-                // Handle both typographic (') and ASCII (') apostrophes.
-                let noun = if let Some(rest) = word.strip_prefix("l\u{2019}") {
-                    rest
-                } else {
-                    &word[2..] // "l'"
-                };
+                let noun = &word[2..]; // strip "l'"
                 if noun.ends_with('e') {
                     Some(Gender::Female)
                 } else {
@@ -110,12 +105,10 @@ mod tests {
 
     #[test]
     fn detects_gender_from_elided_articles() {
-        // Typographic apostrophe (U+2019)
-        let input = "- Nadia — l\u{2019}étudiante qui vient d\u{2019}arriver";
+        let input = "- Nadia — l'étudiante qui vient d'arriver";
         let genders = parse_character_genders(input, &French);
         assert_eq!(genders["Nadia"], Gender::Female);
 
-        // ASCII apostrophe
         let input = "- Pierre — l'habitant du quartier";
         let genders = parse_character_genders(input, &French);
         assert_eq!(genders["Pierre"], Gender::Male);

@@ -73,8 +73,6 @@ cargo run -- verify-language --fix    # auto-correct
 ```
 
 Key rules enforced (fr-FR):
-- Use typographic apostrophes `'` (U+2019), not ASCII `'` (U+0027), in
-  French elision (*l'homme*, *d'accord*, *aujourd'hui*).
 - Use the ellipsis character `…` (U+2026), not three dots `...`.
 - With `--strict`: narrow no-break space (U+202F) before `;` `:` `!` `?`.
 

@@ -46,52 +46,13 @@ pub trait TypographyRules {
 
 /// French typographic rules for fr-FR content.
 ///
-/// Default rules:
-/// 1. Typographic apostrophe (U+2019) instead of ASCII apostrophe (U+0027)
-///    in French elision contexts.
-/// 2. Ellipsis character (U+2026) instead of three ASCII dots.
+/// Default rule:
+/// 1. Ellipsis character (U+2026) instead of three ASCII dots.
 ///
 /// Strict-only rule:
-/// 3. Narrow no-break space (U+202F) before high punctuation (; : ! ?).
+/// 2. Narrow no-break space (U+202F) before high punctuation (; : ! ?).
 pub struct FrenchTypography {
     strict: bool,
-}
-
-/// Common French elision prefixes that take an apostrophe.
-///
-/// Matches both lowercase and uppercase forms; comparisons are done
-/// case-insensitively.
-const ELISION_PREFIXES: &[&str] = &[
-    "c", "d", "j", "l", "m", "n", "s", "t",
-    "qu", "jusqu", "lorsqu", "puisqu", "quelqu",
-    "aujourd",
-];
-
-/// Return `true` if the ASCII apostrophe at byte position `pos` in `line`
-/// sits in a French elision context (e.g. `l'homme`, `d'accord`).
-fn is_french_elision(line: &str, pos: usize) -> bool {
-    // There must be at least one character after the apostrophe.
-    if pos + 1 >= line.len() || !line.as_bytes().get(pos + 1).is_some_and(|b| b.is_ascii_alphanumeric() || *b > 0x7F) {
-        return false;
-    }
-
-    // Walk backwards to find the word fragment before the apostrophe.
-    let before = &line[..pos];
-    let prefix: String = before
-        .chars()
-        .rev()
-        .take_while(|c| c.is_alphabetic())
-        .collect::<Vec<_>>()
-        .into_iter()
-        .rev()
-        .collect();
-
-    if prefix.is_empty() {
-        return false;
-    }
-
-    let lower = prefix.to_lowercase();
-    ELISION_PREFIXES.contains(&lower.as_str())
 }
 
 /// High punctuation marks that require a preceding space in French.
@@ -109,22 +70,7 @@ impl TypographyRules for FrenchTypography {
     fn check_line(&self, line: &str, line_number: usize) -> Vec<Violation> {
         let mut violations = Vec::new();
 
-        // Rule 1: ASCII apostrophe in elision context → U+2019
-        for (byte_pos, _) in line.match_indices('\'') {
-            if is_french_elision(line, byte_pos) {
-                let col = line[..byte_pos].chars().count() + 1;
-                violations.push(Violation {
-                    file: PathBuf::new(), // filled in by caller
-                    line: line_number,
-                    col,
-                    rule: "apostrophe",
-                    found: "' (U+0027)".into(),
-                    expected: "\u{2019} (U+2019)".into(),
-                });
-            }
-        }
-
-        // Rule 2: Three consecutive dots → ellipsis character
+        // Rule 1: Three consecutive dots → ellipsis character
         if let Some(byte_pos) = line.find("...") {
             // Avoid matching four or more dots (not an ellipsis).
             let before_ok = byte_pos == 0
@@ -189,14 +135,7 @@ impl TypographyRules for FrenchTypography {
         let mut i = 0;
 
         while i < bytes.len() {
-            // Rule 1: ASCII apostrophe in elision context.
-            if bytes[i] == b'\'' && is_french_elision(line, i) {
-                result.push('\u{2019}');
-                i += 1;
-                continue;
-            }
-
-            // Rule 2: Three-dot ellipsis.
+            // Rule 1: Three-dot ellipsis.
             if i + 2 < bytes.len()
                 && bytes[i] == b'.'
                 && bytes[i + 1] == b'.'
@@ -211,7 +150,7 @@ impl TypographyRules for FrenchTypography {
                 }
             }
 
-            // Rule 3 (strict only): Replace regular/non-breaking space before
+            // Rule 2 (strict only): Replace regular/non-breaking space before
             // high punctuation with narrow no-break space.
             if self.strict
                 && (bytes[i] == b' ' || line[i..].starts_with('\u{00A0}'))
@@ -358,54 +297,6 @@ mod tests {
         FrenchTypography { strict: true }
     }
 
-    // ── Apostrophe rule ─────────────────────────────────────────────
-
-    #[test]
-    fn detects_ascii_apostrophe_in_elision() {
-        let v = french().check_line("l'homme", 1);
-        assert_eq!(v.len(), 1);
-        assert_eq!(v[0].rule, "apostrophe");
-        assert_eq!(v[0].col, 2);
-    }
-
-    #[test]
-    fn accepts_typographic_apostrophe() {
-        let v = french().check_line("l\u{2019}homme", 1);
-        assert!(v.iter().all(|v| v.rule != "apostrophe"));
-    }
-
-    #[test]
-    fn detects_multiple_elisions_on_one_line() {
-        let v = french().check_line("j'ai l'impression qu'il", 1);
-        let apos: Vec<_> = v.iter().filter(|v| v.rule == "apostrophe").collect();
-        assert_eq!(apos.len(), 3);
-    }
-
-    #[test]
-    fn ignores_non_elision_apostrophe() {
-        // English possessive or other non-elision uses should not trigger.
-        let v = french().check_line("it's a test", 1);
-        assert!(v.iter().all(|v| v.rule != "apostrophe"));
-    }
-
-    #[test]
-    fn detects_uppercase_elision() {
-        let v = french().check_line("L'école", 1);
-        assert_eq!(v.iter().filter(|v| v.rule == "apostrophe").count(), 1);
-    }
-
-    #[test]
-    fn detects_aujourdhui() {
-        let v = french().check_line("aujourd'hui", 1);
-        assert_eq!(v.iter().filter(|v| v.rule == "apostrophe").count(), 1);
-    }
-
-    #[test]
-    fn detects_quelquun() {
-        let v = french().check_line("quelqu'un", 1);
-        assert_eq!(v.iter().filter(|v| v.rule == "apostrophe").count(), 1);
-    }
-
     // ── Ellipsis rule ───────────────────────────────────────────────
 
     #[test]
@@ -469,14 +360,6 @@ mod tests {
     // ── Fix line ────────────────────────────────────────────────────
 
     #[test]
-    fn fix_replaces_ascii_apostrophe() {
-        assert_eq!(
-            french().fix_line("l'homme"),
-            "l\u{2019}homme",
-        );
-    }
-
-    #[test]
     fn fix_replaces_three_dots() {
         assert_eq!(
             french().fix_line("Bon..."),
@@ -504,21 +387,13 @@ mod tests {
     fn fix_handles_multiple_rules_at_once() {
         assert_eq!(
             french_strict().fix_line("j'ai dit : Bon..."),
-            "j\u{2019}ai dit\u{202F}: Bon\u{2026}",
-        );
-    }
-
-    #[test]
-    fn fix_preserves_non_elision_apostrophe() {
-        assert_eq!(
-            french().fix_line("it's fine"),
-            "it's fine",
+            "j'ai dit\u{202F}: Bon\u{2026}",
         );
     }
 
     #[test]
     fn fix_idempotent() {
-        let line = "l\u{2019}homme dit\u{202F}: Bon\u{2026}";
+        let line = "l'homme dit\u{202F}: Bon\u{2026}";
         assert_eq!(french_strict().fix_line(line), line);
     }
 
@@ -561,7 +436,7 @@ mod tests {
 
         let rules = FrenchTypography { strict: false };
         let violations = verify_files(&dir, &rules).unwrap();
-        assert_eq!(violations.len(), 2); // apostrophe + ellipsis
+        assert_eq!(violations.len(), 1); // ellipsis
 
         let _ = std::fs::remove_dir_all(&dir);
     }
@@ -576,7 +451,7 @@ mod tests {
 
         let rules = FrenchTypography { strict: true };
         let violations = verify_files(&dir, &rules).unwrap();
-        assert_eq!(violations.len(), 3); // apostrophe + ellipsis + space
+        assert_eq!(violations.len(), 2); // ellipsis + space
 
         let _ = std::fs::remove_dir_all(&dir);
     }
@@ -594,7 +469,7 @@ mod tests {
         assert_eq!(count, 1);
 
         let fixed = std::fs::read_to_string(dir.join("test.txt")).unwrap();
-        assert_eq!(fixed, "l\u{2019}homme dit : Bon\u{2026}\n");
+        assert_eq!(fixed, "l'homme dit : Bon\u{2026}\n");
 
         let count = fix_files(&dir, &rules).unwrap();
         assert_eq!(count, 0);
@@ -615,7 +490,7 @@ mod tests {
         assert_eq!(count, 1);
 
         let fixed = std::fs::read_to_string(dir.join("test.txt")).unwrap();
-        assert_eq!(fixed, "l\u{2019}homme dit\u{202F}: Bon\u{2026}\n");
+        assert_eq!(fixed, "l'homme dit\u{202F}: Bon\u{2026}\n");
 
         let count = fix_files(&dir, &rules).unwrap();
         assert_eq!(count, 0);
