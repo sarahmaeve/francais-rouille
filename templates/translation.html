@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    {% if flag %}
+    <div class="butter-bar" role="alert">
+        <strong>Caution:</strong> Experimental content &mdash; <strong>Avis :</strong> Contenu expérimental
+    </div>
+    {% endif %}
+
     <nav class="breadcrumb">
         <a href="../index.html">Accueil</a> &rsaquo; <a href="../{{ slug }}.html">Version française</a> &rsaquo; English Translation
     </nav>

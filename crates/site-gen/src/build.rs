@@ -328,6 +328,9 @@ fn build_dialog_page(
     ctx.insert("audio_dir", &audio_dir);
     ctx.insert("personnages", &characters);
     ctx.insert("lines", &lines_data);
+    if let Some(ref flag) = page.flag {
+        ctx.insert("flag", flag);
+    }
     if let Some(base) = base_url {
         ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
     }
@@ -378,6 +381,9 @@ fn build_fragment_page(
     ctx.insert("has_translation", &has_translation);
     ctx.insert("has_quiz", &has_quiz);
     ctx.insert("content", &fragment);
+    if let Some(ref flag) = page.flag {
+        ctx.insert("flag", flag);
+    }
     if let Some(base) = base_url {
         ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
     }
@@ -450,6 +456,9 @@ fn build_translation_page(
     ctx.insert("vocab_page", &config.chapter.vocab_page);
     ctx.insert("personnages", &characters);
     ctx.insert("lines", &lines_data);
+    if let Some(ref flag) = page.flag {
+        ctx.insert("flag", flag);
+    }
 
     let html = tera.render("translation.html", &ctx)?;
 

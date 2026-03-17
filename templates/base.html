@@ -14,6 +14,12 @@
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
+    {% if flag %}
+    <div class="butter-bar" role="alert">
+        <strong>Avis :</strong> Contenu expérimental &mdash; <strong>Caution:</strong> Experimental content
+    </div>
+    {% endif %}
+
     {% block breadcrumb %}
     <nav class="breadcrumb">
         <a href="index.html">Accueil</a> &rsaquo; {{ title | safe }}
