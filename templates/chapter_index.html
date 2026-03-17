@@ -23,7 +23,7 @@
         <h2 class="section-heading{% if not loop.first %} section-heading-gap{% endif %}">{{ section.heading }}</h2>
         <ul class="card-list">
         {% for page in section.pages %}
-            <li>
+            <li{% if page.flag %} data-flag="{{ page.flag }}" class="flag-hidden"{% endif %}>
                 <a href="{{ page.slug }}.html">
                     <span class="card-title">{{ page.title }}{% if page.has_audio %} <svg class="audio-icon" title="Audio disponible" viewBox="0 0 24 24" width="16" height="16" aria-label="Audio disponible"><polygon points="3,9 3,15 7,15 12,19 12,5 7,9"/><path d="M15.5 8.5 C16.5 9.5 17 10.7 17 12 17 13.3 16.5 14.5 15.5 15.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M18 6 C19.5 7.5 20.5 9.6 20.5 12 20.5 14.4 19.5 16.5 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>{% endif %}</span>
                     <span class="card-desc">{{ page.description }}</span>
@@ -37,5 +37,7 @@
     <footer>
         <a href="../../index.html">{{ chapter.footer_text }}</a> &mdash; {{ chapter.footer_suffix }}
     </footer>
+
+    <script src="../../shared/flags.js"></script>
 </body>
 </html>

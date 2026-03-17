@@ -542,3 +542,5 @@ footer a:hover {
     color: #888;
     font-style: italic;
 }
+
+.flag-hidden { display: none; }

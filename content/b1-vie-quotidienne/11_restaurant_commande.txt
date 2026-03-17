@@ -1,0 +1,31 @@
+Commander au Restaurant
+
+Personnages :
+- Émilie — une cliente qui dîne avec une amie
+- Julien — le serveur du restaurant
+
+Julien : Bonsoir, mesdames. Bienvenue chez Léon. Vous avez réservé ?
+
+Émilie : Oui, j'ai réservé une table pour deux au nom d'Émilie Moreau.
+
+Julien : Parfait, c'est la table près de la fenêtre. Suivez-moi, s'il vous plaît.
+
+Émilie : Merci. Est-ce que vous avez un menu du jour ?
+
+Julien : Oui, aujourd'hui nous proposons une soupe à l'oignon en entrée, un confit de canard en plat principal et une tarte aux pommes en dessert.
+
+Émilie : Ça a l'air délicieux. Je vais prendre le menu du jour, s'il vous plaît.
+
+Julien : Très bien. Et pour votre amie ?
+
+Émilie : Elle va regarder la carte. Est-ce que vous avez des plats végétariens ?
+
+Julien : Bien sûr. Nous avons un risotto aux champignons et une salade niçoise avec du fromage de chèvre.
+
+Émilie : Le risotto, ça lui plaira. Et pour les boissons, qu'est-ce que vous recommandez avec le canard ?
+
+Julien : Je vous conseille un verre de Cahors, c'est un vin rouge du Sud-Ouest qui accompagne très bien le confit.
+
+Émilie : Parfait, deux verres de Cahors alors. Merci beaucoup !
+
+Julien : C'est noté. Je vous apporte les boissons tout de suite.

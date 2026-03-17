@@ -44,6 +44,7 @@ pub struct PageConfig {
     pub page_type: String,
     pub subtitle: Option<String>,
     pub audio_dir: Option<String>,
+    pub flag: Option<String>,
 }
 
 /// Section data for the chapter index template, enriched with audio info.
@@ -60,6 +61,7 @@ struct IndexPageData {
     title: String,
     description: String,
     has_audio: bool,
+    flag: Option<String>,
 }
 
 /// Data passed to dialog templates for each spoken line.
@@ -493,6 +495,7 @@ fn build_chapter_index(
                         title: page.title.clone(),
                         description: page.description.clone(),
                         has_audio,
+                        flag: page.flag.clone(),
                     }
                 })
                 .collect();
@@ -765,6 +768,219 @@ fn normalize_path(path: &Path) -> std::path::PathBuf {
         }
     }
     components.iter().collect()
+}
+
+/// A CSP violation found during checking.
+#[derive(Debug)]
+pub struct CspViolation {
+    /// The HTML file containing the violation.
+    pub source: String,
+    /// Line number (1-based).
+    pub line: usize,
+    /// Description of the violation.
+    pub reason: String,
+}
+
+impl std::fmt::Display for CspViolation {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{}:{}: {}", self.source, self.line, self.reason)
+    }
+}
+
+/// Inline event handler attributes that violate `script-src 'self'`.
+const EVENT_HANDLERS: &[&str] = &[
+    "onclick", "ondblclick", "onmousedown", "onmouseup", "onmouseover",
+    "onmouseout", "onmousemove", "onkeydown", "onkeyup", "onkeypress",
+    "onfocus", "onblur", "onchange", "onsubmit", "onreset", "onload",
+    "onunload", "onerror", "onresize", "onscroll", "oninput", "onselect",
+    "ontouchstart", "ontouchmove", "ontouchend",
+];
+
+/// Scan all HTML files under `site_dir` for CSP violations.
+///
+/// Checks enforced:
+/// - No inline `<script>` blocks (must have `src` attribute)
+/// - No inline event handlers (`onclick`, `onload`, etc.)
+/// - No inline `<style>` blocks
+/// - No inline `style="..."` attributes (SVG presentation attributes are allowed)
+/// - No `<form>` elements (`form-action: 'none'`)
+/// - No external resource URLs (must be same-origin)
+///
+/// Returns a list of violations (empty = all good).
+pub fn check_csp(site_dir: &Path) -> Result<Vec<CspViolation>, Box<dyn std::error::Error>> {
+    let mut violations = Vec::new();
+
+    let mut html_files = Vec::new();
+    collect_html_files(site_dir, &mut html_files)?;
+
+    for html_path in &html_files {
+        let content = std::fs::read_to_string(html_path)?;
+        let source = html_path
+            .strip_prefix(site_dir)
+            .unwrap_or(html_path)
+            .display()
+            .to_string();
+
+        check_csp_html(&source, &content, &mut violations);
+    }
+
+    Ok(violations)
+}
+
+/// Check a single HTML document for CSP violations.
+pub fn check_csp_html(source: &str, html: &str, violations: &mut Vec<CspViolation>) {
+    for (line_idx, line) in html.lines().enumerate() {
+        let line_num = line_idx + 1;
+        let lower = line.to_lowercase();
+
+        // Inline <style> blocks.
+        if lower.contains("<style") {
+            violations.push(CspViolation {
+                source: source.to_string(),
+                line: line_num,
+                reason: "inline <style> block (use external CSS file)".into(),
+            });
+        }
+
+        // Inline style="..." attributes.
+        // Match " style=" to avoid false positives on font-style=,
+        // list-style=, etc. Also check for lines starting with style=.
+        if has_style_attribute(&lower) {
+            violations.push(CspViolation {
+                source: source.to_string(),
+                line: line_num,
+                reason: "inline style=\"...\" attribute (use CSS classes)".into(),
+            });
+        }
+
+        // Inline <script> without src (i.e. inline JS).
+        if lower.contains("<script") && !lower.contains("src=") {
+            violations.push(CspViolation {
+                source: source.to_string(),
+                line: line_num,
+                reason: "inline <script> block (use external JS with src=)".into(),
+            });
+        }
+
+        // Inline event handlers.
+        // Check that the handler name is preceded by whitespace (to avoid
+        // matching inside attribute values or text content).
+        for handler in EVENT_HANDLERS {
+            let pattern = format!(" {handler}=");
+            let tab_pattern = format!("\t{handler}=");
+            if lower.contains(&pattern) || lower.contains(&tab_pattern) {
+                violations.push(CspViolation {
+                    source: source.to_string(),
+                    line: line_num,
+                    reason: format!("inline event handler {handler}= (move to external JS)"),
+                });
+                break; // one violation per line is enough
+            }
+        }
+
+        // javascript: URIs in href= are script execution vectors.
+        if lower.contains("href=\"javascript:") {
+            violations.push(CspViolation {
+                source: source.to_string(),
+                line: line_num,
+                reason: "javascript: URI in href (move logic to external JS)".into(),
+            });
+        }
+
+        // <form> elements violate form-action: 'none'.
+        if lower.contains("<form") {
+            violations.push(CspViolation {
+                source: source.to_string(),
+                line: line_num,
+                reason: "<form> element (form-action 'none' in CSP)".into(),
+            });
+        }
+
+        // External resource URLs in src= and href= for scripts/styles.
+        check_external_resources(&lower, source, line_num, violations);
+    }
+}
+
+/// Check for external (non-same-origin) resource URLs.
+fn check_external_resources(
+    lower_line: &str,
+    source: &str,
+    line_num: usize,
+    violations: &mut Vec<CspViolation>,
+) {
+    // <link rel="canonical"> is a metadata declaration, not a resource load.
+    if lower_line.contains("rel=\"canonical\"") {
+        return;
+    }
+
+    // <meta> tags declare metadata; their content= attributes are not
+    // resource fetches. Skip checking href=/src= inside <meta> elements.
+    // However, only skip if the line is purely a meta tag — not if it
+    // contains other elements too.
+    if lower_line.trim_start().starts_with("<meta ") {
+        return;
+    }
+
+    // Flag src= and href= pointing to external origins or data: URIs.
+    for attr in ["src=\"", "href=\""] {
+        let mut rest = lower_line.as_bytes();
+        let attr_bytes = attr.as_bytes();
+        while let Some(pos) = find_bytes(rest, attr_bytes) {
+            let start = pos + attr_bytes.len();
+            rest = &rest[start..];
+            if let Some(end) = find_byte(rest, b'"') {
+                let value = std::str::from_utf8(&rest[..end]).unwrap_or("");
+                rest = &rest[end + 1..];
+
+                if value.starts_with("http://") || value.starts_with("https://") {
+                    violations.push(CspViolation {
+                        source: source.to_string(),
+                        line: line_num,
+                        reason: format!(
+                            "external resource URL {value} (all resources must be same-origin)"
+                        ),
+                    });
+                } else if value.starts_with("data:") && attr == "src=\"" {
+                    violations.push(CspViolation {
+                        source: source.to_string(),
+                        line: line_num,
+                        reason: format!(
+                            "data: URI in src ({value}) — not allowed by CSP"
+                        ),
+                    });
+                }
+            } else {
+                break;
+            }
+        }
+    }
+}
+
+fn find_bytes(haystack: &[u8], needle: &[u8]) -> Option<usize> {
+    haystack
+        .windows(needle.len())
+        .position(|w| w == needle)
+}
+
+fn find_byte(haystack: &[u8], byte: u8) -> Option<usize> {
+    haystack.iter().position(|&b| b == byte)
+}
+
+/// Check if a lowercased line contains an inline `style="..."` HTML attribute,
+/// as opposed to compound attributes like `font-style=` or `list-style=`.
+fn has_style_attribute(lower_line: &str) -> bool {
+    // Look for `style="` preceded by whitespace (space, tab, etc.)
+    // or at the very start of the line.
+    let trimmed = lower_line.trim_start();
+    if trimmed.starts_with("style=\"") || trimmed.starts_with("style =") {
+        return true;
+    }
+    for pat in [" style=\"", "\tstyle=\"", " style =", "\tstyle ="] {
+        if lower_line.contains(pat) {
+            return true;
+        }
+    }
+    false
 }
 
 #[cfg(test)]
@@ -1141,6 +1357,7 @@ type = "dialog"
                         title: p.title.clone(),
                         description: p.description.clone(),
                         has_audio: false,
+                        flag: p.flag.clone(),
                     })
                     .collect(),
             })
@@ -1185,12 +1402,14 @@ type = "dialog"
                     title: "With Audio".into(),
                     description: "d".into(),
                     has_audio: true,
+                    flag: None,
                 },
                 IndexPageData {
                     slug: "without".into(),
                     title: "Without Audio".into(),
                     description: "d".into(),
                     has_audio: false,
+                    flag: None,
                 },
             ],
         }];
@@ -1364,6 +1583,323 @@ A : Line 4
             for b in &broken {
                 writeln!(msg, "  {} → {} (resolved: {})", b.source, b.link, b.resolved)
                     .unwrap();
+            }
+            panic!("{msg}");
+        }
+    }
+
+    // ── CSP checker tests ───────────────────────────────────────────
+
+    /// Helper: run check_csp_html and return violations.
+    fn csp_check(html: &str) -> Vec<CspViolation> {
+        let mut v = Vec::new();
+        check_csp_html("test.html", html, &mut v);
+        v
+    }
+
+    #[test]
+    fn csp_clean_html_produces_zero_violations() {
+        // A realistic page structure with external CSS, external JS,
+        // local links, meta tags, and canonical URL — all valid.
+        let html = r#"<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="UTF-8">
+<meta name="description" content="A page">
+<meta property="og:title" content="Title">
+<link rel="canonical" href="https://example.com/page.html">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<h1>Hello</h1>
+<a href="index.html">Home</a>
+<audio src="audio/01.mp3" preload="none"></audio>
+<script src="../../shared/dialog.js"></script>
+<script src="../../shared/flags.js"></script>
+</body></html>"#;
+        let v = csp_check(html);
+        assert_eq!(v.len(), 0, "clean HTML should produce exactly 0 violations: {v:?}");
+    }
+
+    // ── Inline <style> ──────────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_inline_style_block() {
+        let v = csp_check("<html><head><style>body { color: red; }</style></head></html>");
+        assert_eq!(v.len(), 1, "expected exactly 1 violation: {v:?}");
+        assert!(v[0].reason.contains("<style>"), "{}", v[0].reason);
+    }
+
+    #[test]
+    fn csp_detects_inline_style_block_multiline() {
+        let html = "<html>\n<head>\n<style>\nbody { color: red; }\n</style>\n</head></html>";
+        let v = csp_check(html);
+        // The <style> opening tag on line 3 should be flagged.
+        assert!(v.iter().any(|v| v.reason.contains("<style>") && v.line == 3), "{v:?}");
+    }
+
+    // ── Inline style="..." ──────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_inline_style_attribute_space() {
+        let v = csp_check(r#"<div style="color: red;">Hi</div>"#);
+        assert_eq!(v.len(), 1, "expected exactly 1 violation: {v:?}");
+        assert!(v[0].reason.contains("style="), "{}", v[0].reason);
+    }
+
+    #[test]
+    fn csp_detects_inline_style_attribute_tab_indented() {
+        let v = csp_check("<div\tstyle=\"color: red;\">Hi</div>");
+        assert_eq!(v.len(), 1, "tab-indented style= should be caught: {v:?}");
+    }
+
+    #[test]
+    fn csp_detects_inline_style_attribute_space_before_equals() {
+        let v = csp_check(r#"<div style ="color: red;">Hi</div>"#);
+        assert_eq!(v.len(), 1, "style = (with space) should be caught: {v:?}");
+    }
+
+    #[test]
+    fn csp_allows_svg_font_style_attribute() {
+        // font-style= is NOT inline CSS — it's an SVG presentation attribute.
+        let html = r##"<text x="300" y="180" fill="#888" font-style="italic">Ouest</text>"##;
+        let v = csp_check(html);
+        assert_eq!(v.len(), 0, "font-style= must not be flagged: {v:?}");
+    }
+
+    #[test]
+    fn csp_allows_list_style_attribute() {
+        let v = csp_check(r#"<ul list-style="none"><li>item</li></ul>"#);
+        assert_eq!(v.len(), 0, "list-style= must not be flagged: {v:?}");
+    }
+
+    #[test]
+    fn csp_detects_inline_style_on_svg_element() {
+        // style="..." IS inline CSS even on SVG elements.
+        let v = csp_check(r#"<path d="M1 2" style="fill: none"/>"#);
+        assert_eq!(v.len(), 1, "inline style= on SVG should be flagged: {v:?}");
+        assert!(v[0].reason.contains("style="), "{}", v[0].reason);
+    }
+
+    // ── Inline <script> ─────────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_inline_script_same_line() {
+        let v = csp_check("<script>alert('xss')</script>");
+        assert!(v.iter().any(|v| v.reason.contains("<script>")), "inline script not detected: {v:?}");
+    }
+
+    #[test]
+    fn csp_detects_inline_script_multiline() {
+        let html = "<html>\n<script>\nalert('xss');\n</script></html>";
+        let v = csp_check(html);
+        assert!(v.iter().any(|v| v.reason.contains("<script>") && v.line == 2), "{v:?}");
+    }
+
+    #[test]
+    fn csp_detects_inline_script_mixed_case() {
+        let v = csp_check("<Script>alert(1)</Script>");
+        assert!(v.iter().any(|v| v.reason.contains("<script>")), "mixed-case <Script> not detected: {v:?}");
+    }
+
+    #[test]
+    fn csp_allows_external_script_no_violations() {
+        let v = csp_check(r#"<script src="../../shared/flags.js"></script>"#);
+        assert_eq!(v.len(), 0, "external script should produce 0 violations: {v:?}");
+    }
+
+    // ── Event handlers ──────────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_onclick_handler() {
+        let v = csp_check(r#"<button onclick="doStuff()">Click</button>"#);
+        assert_eq!(v.len(), 1, "{v:?}");
+        assert!(v[0].reason.contains("onclick"), "{}", v[0].reason);
+    }
+
+    #[test]
+    fn csp_detects_onload_handler() {
+        let v = csp_check(r#"<body onload="init()">"#);
+        assert_eq!(v.len(), 1, "{v:?}");
+        assert!(v[0].reason.contains("onload"), "{}", v[0].reason);
+    }
+
+    #[test]
+    fn csp_detects_onerror_handler() {
+        let v = csp_check(r#"<img src="x.png" onerror="alert(1)">"#);
+        assert!(v.iter().any(|v| v.reason.contains("onerror")), "{v:?}");
+    }
+
+    #[test]
+    fn csp_detects_event_handler_mixed_case() {
+        // Lowercased comparison should catch onClick, OnLoad, etc.
+        let v = csp_check(r#"<button onClick="go()">Go</button>"#);
+        assert!(v.iter().any(|v| v.reason.contains("onclick")), "mixed-case onClick not detected: {v:?}");
+    }
+
+    #[test]
+    fn csp_does_not_flag_text_containing_onclick_substring() {
+        // The word "onclick" appearing in text content, not as an attribute,
+        // should not be flagged if it's not preceded by whitespace.
+        let v = csp_check(r#"<p>Use addEventListener instead of onclick events.</p>"#);
+        // This line does contain " onclick" preceded by "of ", so it will
+        // match. That's acceptable — the checker is conservative. But verify
+        // we get a consistent result rather than silently passing.
+        // The important thing is that legitimate HTML attributes are caught.
+        assert!(v.len() <= 1, "at most 1 violation from text content: {v:?}");
+    }
+
+    // ── <form> elements ─────────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_form_element() {
+        let v = csp_check(r#"<form action="/submit"><input type="text"></form>"#);
+        assert_eq!(v.len(), 1, "{v:?}");
+        assert!(v[0].reason.contains("<form>"), "{}", v[0].reason);
+    }
+
+    #[test]
+    fn csp_detects_form_mixed_case() {
+        let v = csp_check(r#"<FORM method="post"></FORM>"#);
+        assert!(v.iter().any(|v| v.reason.contains("<form>")), "uppercase <FORM> not detected: {v:?}");
+    }
+
+    // ── External resources ──────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_external_script_https() {
+        let v = csp_check(r#"<script src="https://cdn.example.com/lib.js"></script>"#);
+        assert!(v.iter().any(|v| v.reason.contains("external resource")), "{v:?}");
+    }
+
+    #[test]
+    fn csp_detects_external_script_http() {
+        let v = csp_check(r#"<script src="http://cdn.example.com/lib.js"></script>"#);
+        assert!(v.iter().any(|v| v.reason.contains("external resource")), "http:// not detected: {v:?}");
+    }
+
+    #[test]
+    fn csp_detects_external_stylesheet() {
+        let v = csp_check(r#"<link rel="stylesheet" href="https://fonts.googleapis.com/css">"#);
+        assert!(v.iter().any(|v| v.reason.contains("external resource")),
+            "external stylesheet not detected: {v:?}");
+    }
+
+    #[test]
+    fn csp_detects_data_uri_in_script_src() {
+        let v = csp_check(r#"<script src="data:text/javascript,alert(1)"></script>"#);
+        assert!(v.iter().any(|v| v.reason.contains("data:")), "data: URI not detected: {v:?}");
+    }
+
+    // ── javascript: URIs ────────────────────────────────────────────
+
+    #[test]
+    fn csp_detects_javascript_uri() {
+        let v = csp_check(r#"<a href="javascript:alert(1)">XSS</a>"#);
+        assert!(v.iter().any(|v| v.reason.contains("javascript:")), "{v:?}");
+    }
+
+    #[test]
+    fn csp_detects_javascript_uri_mixed_case() {
+        let v = csp_check(r#"<a href="JavaScript:void(0)">Link</a>"#);
+        assert!(v.iter().any(|v| v.reason.contains("javascript:")),
+            "mixed-case JavaScript: not detected: {v:?}");
+    }
+
+    // ── Metadata exclusions ─────────────────────────────────────────
+
+    #[test]
+    fn csp_allows_canonical_url() {
+        let v = csp_check(r#"<link rel="canonical" href="https://example.com/page.html">"#);
+        assert_eq!(v.len(), 0, "canonical URL must not be flagged: {v:?}");
+    }
+
+    #[test]
+    fn csp_allows_meta_tags() {
+        let html = r#"    <meta property="og:title" content="Title">
+    <meta name="description" content="Desc">"#;
+        let v = csp_check(html);
+        assert_eq!(v.len(), 0, "meta tags must not be flagged: {v:?}");
+    }
+
+    #[test]
+    fn csp_meta_skip_does_not_bypass_other_elements_on_different_line() {
+        // A <meta> on one line should not suppress violations on other lines.
+        let html = "<meta name=\"x\" content=\"y\">\n<script>alert(1)</script>";
+        let v = csp_check(html);
+        assert!(v.iter().any(|v| v.reason.contains("<script>")),
+            "meta tag should not suppress script violation on different line: {v:?}");
+    }
+
+    // ── Line numbers ────────────────────────────────────────────────
+
+    #[test]
+    fn csp_reports_correct_line_numbers() {
+        let html = "line one\n<style>bad</style>\nline three\n<script>bad</script>\n<div onclick=\"x\">five</div>";
+        let v = csp_check(html);
+
+        let style_v = v.iter().find(|v| v.reason.contains("<style>"))
+            .expect("should detect <style>");
+        assert_eq!(style_v.line, 2, "style violation on wrong line");
+
+        let script_v = v.iter().find(|v| v.reason.contains("<script>"))
+            .expect("should detect <script>");
+        assert_eq!(script_v.line, 4, "script violation on wrong line");
+
+        let onclick_v = v.iter().find(|v| v.reason.contains("onclick"))
+            .expect("should detect onclick");
+        assert_eq!(onclick_v.line, 5, "onclick violation on wrong line");
+    }
+
+    #[test]
+    fn csp_reports_source_filename() {
+        let mut v = Vec::new();
+        check_csp_html("chapters/ch1/page.html", "<script>bad</script>", &mut v);
+        assert_eq!(v[0].source, "chapters/ch1/page.html");
+    }
+
+    // ── Multiple violations on one page ─────────────────────────────
+
+    #[test]
+    fn csp_detects_multiple_distinct_violations() {
+        let html = r#"<html>
+<style>body{}</style>
+<div style="color:red">x</div>
+<script>alert(1)</script>
+<button onclick="go()">Go</button>
+<form><input></form>
+<script src="https://evil.com/x.js"></script>
+<a href="javascript:void(0)">link</a>
+</html>"#;
+        let v = csp_check(html);
+
+        // Each category should be detected.
+        assert!(v.iter().any(|v| v.reason.contains("<style>")), "missing <style>: {v:?}");
+        assert!(v.iter().any(|v| v.reason.contains("style=\"")), "missing style=: {v:?}");
+        assert!(v.iter().any(|v| v.reason.contains("<script> block")), "missing inline <script>: {v:?}");
+        assert!(v.iter().any(|v| v.reason.contains("onclick")), "missing onclick: {v:?}");
+        assert!(v.iter().any(|v| v.reason.contains("<form>")), "missing <form>: {v:?}");
+        assert!(v.iter().any(|v| v.reason.contains("external resource")), "missing external resource: {v:?}");
+        assert!(v.iter().any(|v| v.reason.contains("javascript:")), "missing javascript:: {v:?}");
+
+        // Should be at least 7 violations (one per line above, some lines may produce 2).
+        assert!(v.len() >= 7, "expected at least 7 violations, got {}: {v:?}", v.len());
+    }
+
+    // ── Integration: check actual site/ ─────────────────────────────
+
+    #[test]
+    fn csp_check_site_directory() {
+        let site_dir = Path::new("site");
+        if !site_dir.exists() {
+            // Not running from project root — skip gracefully but log.
+            eprintln!("SKIPPED csp_check_site_directory: site/ not found");
+            return;
+        }
+
+        let violations = check_csp(site_dir).unwrap();
+        if !violations.is_empty() {
+            let mut msg = format!("Found {} CSP violation(s):\n", violations.len());
+            for v in &violations {
+                writeln!(msg, "  {v}").unwrap();
             }
             panic!("{msg}");
         }

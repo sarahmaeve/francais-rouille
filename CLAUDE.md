@@ -32,6 +32,13 @@ The site is served with a strict CSP (`site/_headers`). All generated HTML
 - **No external resources.** All scripts, styles, fonts, images, and media
   must be served from the same origin (`'self'`).
 
+Run `check-csp` after generating HTML to catch violations:
+
+```
+cargo run -- check-csp              # check site/
+cargo run -- check-csp --site DIR   # check a different directory
+```
+
 See `docs/CSP.md` for the full policy and rationale.
 
 ## French Content Guidelines
@@ -84,3 +91,29 @@ cargo run -- strip-metadata <path> --keep-icc   # preserve ICC profiles
 This removes EXIF, XMP, IPTC, and comment metadata (GPS coordinates,
 device info, timestamps, thumbnails) from JPEG and PNG files. `<path>`
 can be a single file or a directory (recursive).
+
+### Feature Flags
+
+Content can be staged behind client-side feature flags. Flagged pages are
+deployed but hidden from users who haven't enabled the flag.
+
+To flag a page, add `flag = "flag-name"` to its entry in `chapter.toml`:
+
+```toml
+[[sections.pages]]
+slug = "11_restaurant_commande"
+title = "Commander au Restaurant"
+description = "..."
+type = "dialog"
+flag = "new-dining"
+```
+
+The page will render with `class="flag-hidden"` and `data-flag="flag-name"`
+in the chapter index. `shared/flags.js` (loaded on every page) checks
+`localStorage` and the `?flags=` URL parameter to unhide matching elements.
+
+- **Enable for a reviewer:** share a link with `?flags=new-dining`
+- **Toggle flags persistently:** visit `shared/flags.html`
+- **Register known flags:** add entries to the `KNOWN_FLAGS` array in
+  `shared/flags-ui.js`
+- **Promote to production:** remove the `flag` line from `chapter.toml`

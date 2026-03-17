@@ -83,6 +83,15 @@ title = "La Rentrée en CM2 — Le Premier Mois"
 description = "Sandrine, Olivier et Fatima discutent de la rentrée de leurs enfants en CM2."
 type = "dialog"
 
+# --- Experimental ---
+
+[[sections.pages]]
+slug = "11_restaurant_commande"
+title = "Commander au Restaurant"
+description = "Émilie commande le menu du jour chez Léon avec l'aide du serveur Julien."
+type = "dialog"
+flag = "new-dining"
+
 # --- Référence ---
 
 [[sections]]

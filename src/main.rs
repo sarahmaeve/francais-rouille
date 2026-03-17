@@ -14,6 +14,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} verify-language [<chapter>] [--lang fr-FR] [--fix] [--strict]  Check/fix typographic rules");
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
+    eprintln!("  {prog} check-csp     [--site DIR]                                  Verify HTML against CSP");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
@@ -43,6 +44,11 @@ fn print_help() {
     println!("           from JPEG and PNG images. <path> can be a single file or a");
     println!("           directory (recursive). Without --output, overwrites in place.");
     println!("           Use --keep-icc to preserve ICC color profiles.");
+    println!("  check-csp [--site DIR]");
+    println!("           Scan HTML files for Content Security Policy violations.");
+    println!("           Checks for inline scripts, inline styles, event handlers,");
+    println!("           form elements, and external resource URLs.");
+    println!("           Default site directory: site/");
     println!();
     println!("OPTIONS:");
     println!("  --format mp3|ogg     Audio encoding (default: mp3). Use \"ogg\" for OGG Opus.");
@@ -85,6 +91,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "build" => run_build_mode(&args),
         "verify-language" => run_verify_language(&args),
         "strip-metadata" => run_strip_metadata(&args),
+        "check-csp" => run_check_csp(&args),
         _ => {
             print_usage(&args[0]);
             std::process::exit(1);
@@ -431,6 +438,48 @@ fn run_strip_metadata(args: &[String]) -> Result<(), Box<dyn std::error::Error>>
         total_saved
     );
     Ok(())
+}
+
+fn run_check_csp(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
+    let mut site_dir = PathBuf::from("site");
+
+    let mut i = 2;
+    while i < args.len() {
+        match args[i].as_str() {
+            "--site" => {
+                i += 1;
+                site_dir = PathBuf::from(
+                    args.get(i).ok_or("--site requires a value")?,
+                );
+            }
+            other => {
+                return Err(format!("unknown flag: {other}").into());
+            }
+        }
+        i += 1;
+    }
+
+    if !site_dir.is_dir() {
+        eprintln!("Site directory not found: {}", site_dir.display());
+        std::process::exit(1);
+    }
+
+    let violations = site_gen::build::check_csp(&site_dir)?;
+
+    if violations.is_empty() {
+        println!("No CSP violations found in {}", site_dir.display());
+        Ok(())
+    } else {
+        for v in &violations {
+            eprintln!("{v}");
+        }
+        eprintln!(
+            "\nFound {} CSP violation(s) in {}",
+            violations.len(),
+            site_dir.display()
+        );
+        std::process::exit(1);
+    }
 }
 
 fn collect_images(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error> {
