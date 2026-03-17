@@ -21,7 +21,7 @@
 
 ### Description
 
-Charmant deux pièces lumineux situé rue de la Roquette, au cœur du 11e arrondissement. L'appartement se trouve dans un immeuble haussmannien bien entretenu, à cinq minutes à pied de la station de métro Voltaire (ligne 9).
+Charmant deux pièces lumineux situé rue de la Roquette, au cœur du 11e arrondissement. L’appartement se trouve dans un immeuble haussmannien bien entretenu, à cinq minutes à pied de la station de métro Voltaire (ligne 9).
 
 **Le séjour** est spacieux avec de grandes fenêtres qui donnent sur la rue. Le parquet en chêne est en excellent état. La pièce est assez grande pour un canapé, une table à manger et un coin bureau.
 

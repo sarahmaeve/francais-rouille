@@ -12,34 +12,34 @@
 
 **Hélène :** Un chat gris ? Comment il est exactement ?
 
-**Irene :** Il est gris foncé avec une petite tache blanche sur le poitrail. Il s'appelle Moustache. Il est sorti ce matin par la fenêtre de la cuisine et il n'est pas revenu.
+**Irene :** Il est gris foncé avec une petite tache blanche sur le poitrail. Il s’appelle Moustache. Il est sorti ce matin par la fenêtre de la cuisine et il n’est pas revenu.
 
-**Hélène :** Oh, le pauvre ! Non, je ne l'ai pas vu aujourd'hui. Mais vous savez, les chats du quartier, ils se baladent souvent sur les toits. C'est la Croix-Rousse, y'a des passages partout.
+**Hélène :** Oh, le pauvre ! Non, je ne l’ai pas vu aujourd’hui. Mais vous savez, les chats du quartier, ils se baladent souvent sur les toits. C’est la Croix-Rousse, y'a des passages partout.
 
-**Karim :** Moi j'ai vu un chat gris hier soir dans la cour, vers vingt-deux heures. Il était sur le mur du fond. C'est peut-être le vôtre ?
+**Karim :** Moi j’ai vu un chat gris hier soir dans la cour, vers vingt-deux heures. Il était sur le mur du fond. C’est peut-être le vôtre ?
 
-**Maeve :** C'est possible ! Il adore grimper sur les murs. On l'a cherché dans tout l'appartement, dans la cage d'escalier, dans la cave, mais rien.
+**Maeve :** C’est possible ! Il adore grimper sur les murs. On l’a cherché dans tout l’appartement, dans la cage d’escalier, dans la cave, mais rien.
 
-**Karim :** Vous avez regardé dans les traboules ? Y'en a une juste à côté de l'immeuble. Les chats adorent se planquer là-dedans.
+**Karim :** Vous avez regardé dans les traboules ? Y'en a une juste à côté de l’immeuble. Les chats adorent se planquer là-dedans.
 
-**Irene :** Les traboules, c'est les passages couverts, c'est ça ? On n'a pas encore pensé à regarder là.
+**Irene :** Les traboules, c’est les passages couverts, c’est ça ? On n’a pas encore pensé à regarder là.
 
-**Hélène :** Oui, essayez celle qui donne sur la montée de la Grande-Côte. Et aussi, mettez sa litière sur le balcon. Paraît que l'odeur les aide à retrouver le chemin.
+**Hélène :** Oui, essayez celle qui donne sur la montée de la Grande-Côte. Et aussi, mettez sa litière sur le balcon. Paraît que l’odeur les aide à retrouver le chemin.
 
 **Maeve :** Bonne idée ! On va faire ça tout de suite.
 
-**Karim :** Sinon, vous pouvez mettre une annonce sur le groupe Facebook du quartier. C'est « Habitants de la Croix-Rousse ». Les gens sont super réactifs dessus. Ma voisine a retrouvé son chat comme ça la semaine dernière.
+**Karim :** Sinon, vous pouvez mettre une annonce sur le groupe Facebook du quartier. C’est « Habitants de la Croix-Rousse ». Les gens sont super réactifs dessus. Ma voisine a retrouvé son chat comme ça la semaine dernière.
 
-**Irene :** Ah oui, c'est malin. Tu peux nous envoyer le lien, Karim ?
+**Irene :** Ah oui, c’est malin. Tu peux nous envoyer le lien, Karim ?
 
 **Karim :** Ouais, je vous envoie ça par texto. Mettez une photo de Moustache avec votre numéro. Ça ira vite.
 
-**Hélène :** Et moi, je vais prévenir la gardienne. Elle voit tout ce qui se passe dans l'immeuble. Si votre chat est dans les parties communes, elle le trouvera.
+**Hélène :** Et moi, je vais prévenir la gardienne. Elle voit tout ce qui se passe dans l’immeuble. Si votre chat est dans les parties communes, elle le trouvera.
 
 **Maeve :** Merci beaucoup à vous deux. On est vraiment inquiètes.
 
-**Hélène :** T'inquiète pas, ma belle. Les chats, ça revient toujours. Mon ancien chat disparaissait pendant trois jours et il revenait comme si de rien n'était.
+**Hélène :** T’inquiète pas, ma belle. Les chats, ça revient toujours. Mon ancien chat disparaissait pendant trois jours et il revenait comme si de rien n’était.
 
 **Karim :** Ouais, stressez pas trop. Il est sûrement en train de faire la tournée des toits. Il va revenir quand il aura faim !
 
-**Irene :** J'espère que tu as raison. Merci pour votre aide, ça fait vraiment plaisir.
+**Irene :** J’espère que tu as raison. Merci pour votre aide, ça fait vraiment plaisir.

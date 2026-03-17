@@ -117,3 +117,24 @@ The ` : ` (space-colon-space) delimiter separates the speaker name from the
 spoken text. Character descriptions on lines starting with `-` provide
 gender information for voice assignment.
 
+## Apostrophe handling
+
+Dialog `.txt` files **must** use the typographic apostrophe `'` (U+2019)
+rather than the ASCII straight apostrophe `'` (U+0027). Google Cloud TTS
+treats U+0027 as a word boundary, which produces an audible pause in French
+elisions like `l'église`, `d'abord`, `qu'il`, etc. Using U+2019 ensures
+these are pronounced as a single word.
+
+Before generating audio, verify your file contains no ASCII apostrophes:
+
+```bash
+grep -Pn "'" content/your-chapter/your_dialog.txt
+```
+
+To convert any remaining ASCII apostrophes to typographic ones:
+
+```bash
+python3 -c "
+import sys; f = sys.argv[1]; open(f, 'w').write(open(f).read().replace(chr(0x27), chr(0x2019)))
+" content/your-chapter/your_dialog.txt
+```

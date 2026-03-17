@@ -4,34 +4,34 @@ Personnages :
 - Sophie — une cliente qui entre dans la boulangerie le matin
 - Antoine — le boulanger derrière le comptoir
 
-Antoine : Bonjour, madame ! Qu'est-ce qui vous ferait plaisir ce matin ?
+Antoine : Bonjour, madame ! Qu’est-ce qui vous ferait plaisir ce matin ?
 
-Sophie : Bonjour ! Alors, j'hésite un peu. Qu'est-ce que vous me conseillez aujourd'hui ?
+Sophie : Bonjour ! Alors, j’hésite un peu. Qu’est-ce que vous me conseillez aujourd’hui ?
 
 Antoine : Les pains au chocolat viennent de sortir du four, ils sont encore tout chauds. Et nos chaussons aux pommes sont très bons aussi.
 
-Sophie : Mmm, ça sent vraiment bon. Je vais prendre deux pains au chocolat et un chausson aux pommes, s'il vous plaît.
+Sophie : Mmm, ça sent vraiment bon. Je vais prendre deux pains au chocolat et un chausson aux pommes, s’il vous plaît.
 
-Antoine : Excellent choix. C'est pour manger ici ou pour emporter ?
+Antoine : Excellent choix. C’est pour manger ici ou pour emporter ?
 
-Sophie : Pour emporter, s'il vous plaît. C'est pour le petit-déjeuner au bureau.
+Sophie : Pour emporter, s’il vous plaît. C’est pour le petit-déjeuner au bureau.
 
-Antoine : D'accord. Est-ce que vous voulez autre chose ? Nous avons aussi des croissants au beurre et des brioches.
+Antoine : D’accord. Est-ce que vous voulez autre chose ? Nous avons aussi des croissants au beurre et des brioches.
 
 Sophie : Est-ce que les croissants sont faits maison ?
 
 Antoine : Oui, absolument. Tout est fait ici, dans notre atelier, chaque matin à partir de quatre heures.
 
-Sophie : Dans ce cas, ajoutez trois croissants, s'il vous plaît. Mes collègues vont être contents.
+Sophie : Dans ce cas, ajoutez trois croissants, s’il vous plaît. Mes collègues vont être contents.
 
-Antoine : Avec plaisir. Alors, deux pains au chocolat, un chausson aux pommes et trois croissants. C'est tout ?
+Antoine : Avec plaisir. Alors, deux pains au chocolat, un chausson aux pommes et trois croissants. C’est tout ?
 
-Sophie : Oui, c'est tout. Ça fait combien ?
+Sophie : Oui, c’est tout. Ça fait combien ?
 
-Antoine : Ça vous fait huit euros cinquante, s'il vous plaît.
+Antoine : Ça vous fait huit euros cinquante, s’il vous plaît.
 
 Sophie : Voilà, je paie par carte. Est-ce que le sans contact marche ?
 
-Antoine : Oui, bien sûr. Posez votre carte ici. Et voilà, c'est bon ! Merci et bonne journée, madame !
+Antoine : Oui, bien sûr. Posez votre carte ici. Et voilà, c’est bon ! Merci et bonne journée, madame !
 
 Sophie : Merci à vous ! À demain, sûrement. Bonne journée !
