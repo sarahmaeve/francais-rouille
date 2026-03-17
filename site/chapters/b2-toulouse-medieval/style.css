@@ -543,6 +543,208 @@ footer a:hover {
     font-style: italic;
 }
 
+/* ── Grammar tips page ("Pour Les Nuls" style) ─────────────────── */
+
+.grammar-page header {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.grammar-page header h1 {
+    font-size: 2rem;
+    color: #fff;
+    background: var(--navy);
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    margin: 0 -1.5rem 0.5rem;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.grammar-page header p {
+    font-size: 1.1rem;
+    color: var(--blue);
+    margin-bottom: 0;
+}
+
+.grammar-intro {
+    background: linear-gradient(135deg, #fdf6e3 0%, #faf7f0 100%);
+    border-left: 5px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.grammar-section {
+    margin-bottom: 3rem;
+}
+
+.grammar-section h2 {
+    font-size: 1.5rem;
+    color: var(--navy);
+    padding: 0.6rem 1rem 0.6rem 3.2rem;
+    margin: 0 -0.5rem 1.2rem;
+    border-radius: 8px;
+    background: var(--speaker-a);
+    border-bottom: 3px solid var(--gold);
+    position: relative;
+}
+
+.grammar-section h2::before {
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+}
+
+.grammar-section h2.icon-clock::before { content: "\1F552"; }
+.grammar-section h2.icon-link::before { content: "\1F517"; }
+.grammar-section h2.icon-location::before { content: "\1F4CD"; }
+
+.grammar-section h3 {
+    font-size: 1.15rem;
+    color: var(--blue);
+    margin: 1.5rem 0 0.6rem;
+    padding-left: 0.3rem;
+    border-left: 3px solid var(--gold);
+    padding: 0.2rem 0 0.2rem 0.8rem;
+}
+
+.grammar-section p {
+    margin-bottom: 0.8rem;
+    line-height: 1.8;
+}
+
+.grammar-example {
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-left: 4px solid var(--blue);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.3rem;
+    margin: 0.8rem 0 1.2rem;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.grammar-example p {
+    margin-bottom: 0.4rem;
+}
+
+.grammar-example p:last-child {
+    margin-bottom: 0;
+}
+
+.grammar-example .note {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.grammar-tip {
+    background: #fef9e7;
+    border: 2px dashed var(--gold);
+    border-radius: 10px;
+    padding: 1rem 1.3rem 1rem 3.2rem;
+    margin: 1.2rem 0;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.grammar-tip::before {
+    content: "\1F4A1";
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.grammar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--light-gray);
+    margin: 1rem 0 1.5rem;
+}
+
+.grammar-table thead th {
+    background: var(--navy);
+    color: #fff;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.grammar-table td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 0.95rem;
+    vertical-align: top;
+}
+
+.grammar-table tr:last-child td {
+    border-bottom: none;
+}
+
+.grammar-table tr:nth-child(even) {
+    background: #f8f6f0;
+}
+
+.grammar-table td strong {
+    color: var(--navy);
+}
+
+.grammar-table td em {
+    color: var(--blue);
+}
+
+.grammar-summary {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.grammar-summary h3 {
+    color: var(--gold);
+    border-left: none;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.grammar-summary table {
+    background: transparent;
+    border: none;
+}
+
+.grammar-summary th {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+.grammar-summary td {
+    color: #e8e4dc;
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.grammar-summary .grammar-table tr:nth-child(even) {
+    background: rgba(255,255,255,0.08);
+}
+
+.grammar-summary td strong {
+    color: var(--gold);
+}
+
 /* Horizontal scroll wrapper for vocabulary tables on small screens */
 .vocab-table-wrap {
     overflow-x: auto;
@@ -569,6 +771,12 @@ footer a:hover {
     .play-btn svg { width: 16px; height: 16px; }
     .play-combined .play-btn { width: 48px; height: 48px; }
     .play-combined .play-btn svg { width: 20px; height: 20px; }
+
+    .grammar-page header h1 { font-size: 1.5rem; margin: 0 -1rem 0.5rem; padding: 1rem; }
+    .grammar-section h2 { font-size: 1.2rem; padding-left: 2.8rem; }
+    .grammar-tip { padding-left: 2.8rem; }
+    .grammar-example { padding: 0.8rem 1rem; }
+    .grammar-summary { padding: 1rem; }
 
     .tour-details { grid-template-columns: 1fr; }
     .legend-grid { grid-template-columns: 1fr; }

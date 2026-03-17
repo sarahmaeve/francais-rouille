@@ -57,6 +57,18 @@ title = "Architecture d'une Église Romane"
 description = "Plan au sol et coupe transversale annotés d'une église romane de pèlerinage."
 type = "fragment"
 
+# --- Grammaire ---
+
+[[sections]]
+heading = "Grammaire"
+
+[[sections.pages]]
+slug = "06_grammaire"
+title = "Grammaire B2 : Raconter l'histoire"
+description = "Le plus-que-parfait et les pronoms relatifs dont et où — avec des exemples tirés de la visite guidée."
+type = "fragment"
+flag = "grammar"
+
 # --- Référence ---
 
 [[sections]]
