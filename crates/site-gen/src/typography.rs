@@ -315,7 +315,7 @@ pub fn fix_files(
 }
 
 /// Recursively collect `.txt` and `.md` content files, excluding English
-/// translations (`_en.md`), `.toml`, and `.html`.
+/// translations (`_en.txt`, `_en.md`), `.toml`, and `.html`.
 fn collect_content_files(
     dir: &Path,
     out: &mut Vec<PathBuf>,
@@ -335,7 +335,7 @@ fn collect_content_files(
         };
 
         // Skip English translations — they follow English typography.
-        if name.ends_with("_en.md") {
+        if name.ends_with("_en.md") || name.ends_with("_en.txt") {
             continue;
         }
 

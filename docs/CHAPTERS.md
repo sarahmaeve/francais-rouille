@@ -49,19 +49,21 @@ For a chapter with slug `b2-my-chapter`:
 content/b2-my-chapter/
 ├── chapter.toml              # Chapter config
 ├── 00_map.html               # Fragment (SVG map)
-├── 01_article.html           # Fragment (prose)
+├── 01_article.html           # Fragment (prose, French)
+├── 01_article_en.html        # Fragment (prose, English)
 ├── 02_dialog.txt             # French dialog
-├── 02_dialog.md              # French dialog (markdown)
-├── 02_dialog_en.md           # English translation
-├── 03_dialog.txt/.md/_en.md  # Another dialog set
+├── 02_dialog_en.txt          # English translation
+├── 03_dialog.txt/_en.txt     # Another dialog set
 └── ...
 
 site/chapters/b2-my-chapter/
-├── style.css                 # Chapter stylesheet
+├── style.css                 # Chapter-specific CSS overrides
 ├── vocabulaire.html          # Vocabulary page
-└── translations/
-    └── 01_article_en.html    # Fragment translation
+└── (translations/ created by build)
 ```
+
+Note: Common CSS is in `site/shared/chapter.css`. Chapter `style.css`
+files contain only chapter-specific overrides.
 
 After audio generation and build:
 

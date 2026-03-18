@@ -1,0 +1,40 @@
+The Heating Repair
+
+Characters:
+- Maeve — an Irish tenant who recently moved to Lyon
+- Bruno — a heating technician sent by the property management agency
+
+
+Bruno : Hello, ma'am! I'm the heating guy, Bruno. I was told you've got a problem with the heating?
+
+Maeve : Hello! Yes, thank you for coming. The radiators haven't been heating at all for a week.
+
+Bruno : Yeah, doesn't surprise me with these old systems. Right, I'll take a look at the boiler. Where is it?
+
+Maeve : In the hallway cupboard, I think.
+
+Bruno : Ah yeah, there it is. So, the problem is the three-way valve is stuck, and on top of that there's air in the system. That's why your radiators are cold. I need to bleed the whole system and replace the valve.
+
+Maeve : Sorry, I didn't quite understand. The three-way... valve? And bleed — what does that mean exactly?
+
+Bruno : Oh right, sorry! So basically, there's a part in the boiler, a kind of tap, that sends hot water to the radiators. That tap is broken. It doesn't move anymore. So the hot water can't get through.
+
+Maeve : Okay, that makes more sense. And bleeding?
+
+Bruno : Bleeding is removing the air that's trapped in the pipes. When there's air in the radiators, the hot water can't circulate properly. So even if the tap was working, the radiators still wouldn't get very hot. You need to get the air out so the water flows everywhere.
+
+Maeve : Ah, I see! Like when you open the little tap at the top of the radiator and it goes "pshhh"?
+
+Bruno : Exactly! You've got it. So, the good news is I've got the part in my van. I can fix everything today — should take about an hour, hour and a half tops.
+
+Maeve : Oh, that's great! We've been freezing here for a week. We had to buy electric space heaters.
+
+Bruno : Yeah, I get that. Plus up in Croix-Rousse, you're higher up, it's even colder than down below. Right, I'll get started straight away.
+
+Maeve : Thank you so much. Do I need to pay anything?
+
+Bruno : No no, the agency's covering it. It's a wear-and-tear problem, it's not your fault. But I'd recommend bleeding the radiators yourself once a year, at the start of winter. That way you won't have this issue again.
+
+Maeve : Okay, I'll do that. Thanks for the explanation, that's very kind.
+
+Bruno : No problem! Come on, in an hour you'll be nice and warm.

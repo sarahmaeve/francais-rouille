@@ -46,14 +46,15 @@ user confirmation.**
 
    - **Dialogs and monologues:** Create three files each:
      - `<slug>.txt` — French dialog in the project's dialog format
-     - `<slug>.md` — Same content as formatted Markdown
-     - `<slug>_en.md` — English translation as Markdown
+     - `<slug>.md` files are no longer maintained manually
+     - `<slug>_en.txt` — English translation in the same dialog format
    - **Fragments:** Create an `.html` file in the content directory.
      For prose articles, use `<article class="prose-article">` markup.
      For maps, use inline SVG in a `<div class="map-container">`.
-   - **Fragment translations:** Create `_en.md` in the content directory
-     AND a standalone HTML file at
-     `site/chapters/<chapter-slug>/translations/<slug>_en.html`.
+   - **Fragment translations:** Create `<slug>_en.html` in the content
+     directory with just the content (no `<html>`, `<head>`, or footer).
+     The build system wraps it with the `fragment_translation.html`
+     template automatically.
 
 5. **Dialog format** (`.txt` files):
    ```

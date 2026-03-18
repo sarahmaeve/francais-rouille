@@ -31,7 +31,10 @@ pub fn parse_dialog(content: &str) -> Vec<DialogLine> {
             // Reject non-dialog lines that happen to contain ` : ` (e.g.
             // "Personnages :") by requiring the speaker portion to be a
             // short name (no more than a few words).
-            if speaker.contains("Personnages") || speaker.contains("personnages") {
+            if speaker.contains("Personnages")
+                || speaker.contains("personnages")
+                || speaker.contains("Characters")
+            {
                 return None;
             }
             Some(DialogLine {

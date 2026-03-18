@@ -1,118 +1,4 @@
-:root {
-    --navy: #1a2744;
-    --blue: #2c3e6b;
-    --gold: #c9a84c;
-    --cream: #faf7f0;
-    --text: #2c2c2c;
-    --light-gray: #e8e4dc;
-    --speaker-a: #eef2fa;
-    --speaker-b: #fdf6e3;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    background-color: var(--cream);
-    color: var(--text);
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid var(--gold);
-}
-
-header h1 {
-    font-size: 1.8rem;
-    color: var(--navy);
-    margin-bottom: 0.3rem;
-}
-
-header p {
-    font-size: 1rem;
-    color: var(--blue);
-    font-style: italic;
-}
-
-nav.breadcrumb {
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-}
-
-nav.breadcrumb a {
-    color: var(--blue);
-    text-decoration: none;
-}
-
-nav.breadcrumb a:hover {
-    text-decoration: underline;
-}
-
-/* Index page cards */
-.card-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.card-list li a {
-    display: block;
-    background: #fff;
-    border: 1px solid var(--light-gray);
-    border-left: 4px solid var(--gold);
-    border-radius: 6px;
-    padding: 1.2rem 1.5rem;
-    text-decoration: none;
-    color: var(--text);
-    transition: box-shadow 0.2s, border-color 0.2s;
-}
-
-.card-list li a:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-left-color: var(--navy);
-}
-
-.section-heading {
-    color: var(--navy);
-    margin: 0 0 1rem;
-}
-
-.section-heading-gap {
-    margin-top: 2rem;
-}
-
-.card-list li a .card-title {
-    font-size: 1.15rem;
-    font-weight: bold;
-    color: var(--navy);
-    display: block;
-    margin-bottom: 0.25rem;
-}
-
-.card-list li a .card-desc {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.audio-icon {
-    display: inline-block;
-    vertical-align: middle;
-    fill: var(--gold);
-    stroke: var(--gold);
-    margin-left: 0.3rem;
-    opacity: 0.8;
-}
+/* b1-appartement — chapter-specific overrides */
 
 .card-list li a .card-tag {
     display: inline-block;
@@ -125,149 +11,6 @@ nav.breadcrumb a:hover {
     font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-}
-
-/* Dialogue styling */
-.personnages {
-    background: #fff;
-    border: 1px solid var(--light-gray);
-    border-radius: 6px;
-    padding: 1rem 1.3rem;
-    margin-bottom: 1.5rem;
-}
-
-.personnages h2 {
-    font-size: 1rem;
-    color: var(--blue);
-    margin-bottom: 0.5rem;
-}
-
-.personnages ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.personnages li {
-    padding: 0.2rem 0;
-    font-size: 0.95rem;
-}
-
-.personnages li strong {
-    color: var(--navy);
-}
-
-.dialogue {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    margin-bottom: 2rem;
-}
-
-.line .speaker {
-    font-weight: bold;
-    color: var(--navy);
-    margin-right: 0.3rem;
-}
-
-.line.speaker-a {
-    background: var(--speaker-a);
-    align-self: flex-start;
-    border-bottom-left-radius: 2px;
-}
-
-.line.speaker-b {
-    background: var(--speaker-b);
-    align-self: flex-end;
-    border-bottom-right-radius: 2px;
-}
-
-.line.speaker-c {
-    background: #f0f7f0;
-    align-self: flex-start;
-    margin-left: 6%;
-    border-bottom-left-radius: 2px;
-}
-
-.line.speaker-d {
-    background: #f5eef8;
-    align-self: flex-end;
-    margin-right: 6%;
-    border-bottom-right-radius: 2px;
-}
-
-/* Audio play buttons */
-.play-combined {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    background: #fff;
-    border: 1px solid var(--light-gray);
-    border-left: 4px solid var(--gold);
-    border-radius: 6px;
-    padding: 0.8rem 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.play-combined span {
-    font-size: 0.95rem;
-    color: var(--navy);
-    font-weight: bold;
-}
-
-.play-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: var(--navy);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background 0.2s;
-    padding: 0;
-}
-
-.play-btn:hover {
-    background: var(--blue);
-}
-
-.play-btn svg {
-    fill: #fff;
-    width: 14px;
-    height: 14px;
-}
-
-.play-btn.playing svg.icon-play {
-    display: none;
-}
-
-.play-btn:not(.playing) svg.icon-pause {
-    display: none;
-}
-
-.play-combined .play-btn {
-    width: 40px;
-    height: 40px;
-}
-
-.play-combined .play-btn svg {
-    width: 18px;
-    height: 18px;
-}
-
-.line {
-    padding: 0.8rem 1.2rem;
-    border-radius: 8px;
-    max-width: 88%;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-}
-
-.line .line-text {
-    flex: 1;
 }
 
 /* Gmail email mockup */
@@ -292,31 +35,11 @@ nav.breadcrumb a:hover {
     gap: 0.8rem;
 }
 
-.gmail-toolbar .gmail-back {
-    color: #5f6368;
-    font-size: 1.2rem;
-    cursor: default;
-}
+.gmail-toolbar .gmail-back { color: #5f6368; font-size: 1.2rem; cursor: default; }
+.gmail-toolbar .gmail-actions { display: flex; gap: 0.6rem; color: #5f6368; font-size: 0.8rem; }
+.gmail-toolbar .gmail-actions span { padding: 0.2rem 0.5rem; border-radius: 4px; cursor: default; }
 
-.gmail-toolbar .gmail-actions {
-    display: flex;
-    gap: 0.6rem;
-    color: #5f6368;
-    font-size: 0.8rem;
-}
-
-.gmail-toolbar .gmail-actions span {
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    cursor: default;
-}
-
-.gmail-subject {
-    padding: 1rem 1.2rem 0.5rem;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #202124;
-}
+.gmail-subject { padding: 1rem 1.2rem 0.5rem; font-size: 1.25rem; font-weight: 400; color: #202124; }
 
 .gmail-label {
     display: inline-block;
@@ -339,58 +62,21 @@ nav.breadcrumb a:hover {
 }
 
 .gmail-avatar {
-    width: 40px;
-    height: 40px;
-    background: #1a73e8;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1rem;
-    flex-shrink: 0;
+    width: 40px; height: 40px;
+    background: #1a73e8; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 500; font-size: 1rem; flex-shrink: 0;
 }
 
-.gmail-sender-info {
-    flex: 1;
-}
+.gmail-sender-info { flex: 1; }
+.gmail-sender-name { font-weight: 500; color: #202124; }
+.gmail-sender-email { color: #5f6368; font-size: 0.8rem; }
+.gmail-to { color: #5f6368; font-size: 0.8rem; }
+.gmail-date { color: #5f6368; font-size: 0.8rem; white-space: nowrap; }
 
-.gmail-sender-name {
-    font-weight: 500;
-    color: #202124;
-}
-
-.gmail-sender-email {
-    color: #5f6368;
-    font-size: 0.8rem;
-}
-
-.gmail-to {
-    color: #5f6368;
-    font-size: 0.8rem;
-}
-
-.gmail-date {
-    color: #5f6368;
-    font-size: 0.8rem;
-    white-space: nowrap;
-}
-
-.gmail-body {
-    padding: 1.2rem 1.2rem 1.2rem 4.2rem;
-    line-height: 1.7;
-}
-
-.gmail-body p {
-    margin-bottom: 0.8rem;
-}
-
-.gmail-body .signature {
-    margin-top: 1.2rem;
-    color: #5f6368;
-    font-size: 0.85rem;
-}
+.gmail-body { padding: 1.2rem 1.2rem 1.2rem 4.2rem; line-height: 1.7; }
+.gmail-body p { margin-bottom: 0.8rem; }
+.gmail-body .signature { margin-top: 1.2rem; color: #5f6368; font-size: 0.85rem; }
 
 /* Handwritten sign */
 .syndic-sign {
@@ -409,216 +95,38 @@ nav.breadcrumb a:hover {
 .syndic-sign::before {
     content: '';
     position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 6px;
-    background: #999;
-    border-radius: 3px;
+    top: 8px; left: 50%; transform: translateX(-50%);
+    width: 40px; height: 6px; background: #999; border-radius: 3px;
 }
 
 .syndic-sign h2 {
-    text-align: center;
-    font-family: 'Courier New', monospace;
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #222;
-    margin-top: 0.8rem;
-    margin-bottom: 0.5rem;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    text-align: center; font-family: 'Courier New', monospace;
+    font-size: 1.3rem; font-weight: bold; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #222;
+    margin-top: 0.8rem; margin-bottom: 0.5rem;
+    text-decoration: underline; text-underline-offset: 4px;
 }
 
 .syndic-sign h3 {
-    text-align: center;
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #222;
-    margin-bottom: 1.2rem;
+    text-align: center; font-family: 'Courier New', monospace;
+    font-size: 1rem; font-weight: bold; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #222; margin-bottom: 1.2rem;
 }
 
 .syndic-sign p {
-    font-family: 'Courier New', monospace;
-    font-size: 0.88rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    line-height: 1.9;
-    color: #333;
-    margin-bottom: 0.8rem;
-    text-align: justify;
+    font-family: 'Courier New', monospace; font-size: 0.88rem;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    line-height: 1.9; color: #333; margin-bottom: 0.8rem; text-align: justify;
 }
 
 .syndic-sign .sign-footer {
-    text-align: center;
-    margin-top: 1.5rem;
-    padding-top: 0.8rem;
-    border-top: 2px solid #333;
-    font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #222;
-    font-weight: bold;
+    text-align: center; margin-top: 1.5rem; padding-top: 0.8rem;
+    border-top: 2px solid #333; font-family: 'Courier New', monospace;
+    font-size: 0.85rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: #222; font-weight: bold;
 }
 
-/* Vocabulary tables */
-.vocab-section {
-    margin-bottom: 2rem;
-}
-
-.vocab-section h2 {
-    font-size: 1.2rem;
-    color: var(--navy);
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid var(--gold);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #fff;
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid var(--light-gray);
-    margin-bottom: 1rem;
-}
-
-th {
-    background: var(--navy);
-    color: #fff;
-    text-align: left;
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-}
-
-td {
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid var(--light-gray);
-    font-size: 0.95rem;
-}
-
-tr:last-child td {
-    border-bottom: none;
-}
-
-tr:nth-child(even) {
-    background: #fafafa;
-}
-
-footer {
-    margin-top: 2.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--light-gray);
-    text-align: center;
-    font-size: 0.85rem;
-    color: #888;
-}
-
-footer a {
-    color: var(--blue);
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Horizontal scroll wrapper for vocabulary tables on small screens */
-.vocab-table-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* Resources / Pour aller plus loin */
-.resources {
-    background: #fff;
-    border: 1px solid var(--light-gray);
-    border-left: 4px solid var(--blue);
-    border-radius: 0 6px 6px 0;
-    padding: 1rem 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.resources h2 {
-    font-size: 1rem;
-    color: var(--blue);
-    margin-bottom: 0.6rem;
-}
-
-.resources ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.resources li {
-    padding: 0.3rem 0;
-    font-size: 0.95rem;
-}
-
-.resources a {
-    color: var(--navy);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.resources a:hover {
-    text-decoration: underline;
-}
-
-.resource-title {
-    color: var(--navy);
-    font-weight: bold;
-}
-
-.resource-note {
-    color: #888;
-    font-size: 0.85rem;
-}
-
-/* Experimental content warning bar */
-.butter-bar {
-    background: #fff3cd;
-    color: #664d03;
-    border: 1px solid #ffecb5;
-    border-radius: 6px;
-    padding: 0.6rem 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-/* Touch feedback for interactive elements */
-.play-btn:active { background: var(--gold); }
-.card-list li a:active { border-left-color: var(--navy); }
-
-/* ── Mobile layout ──────────────────────────────────────────────── */
 @media (max-width: 480px) {
-    body { padding: 1rem 1rem; }
-    header h1 { font-size: 1.4rem; }
-    header { margin-bottom: 1.5rem; padding-bottom: 1rem; }
-
-    .card-list li a { padding: 0.8rem 1rem; }
-    .card-list li a .card-title { font-size: 1.05rem; }
-
-    .line { max-width: 100%; padding: 0.6rem 0.8rem; }
-    .line.speaker-c { margin-left: 0; }
-    .line.speaker-d { margin-right: 0; }
-
-    .play-btn { width: 44px; height: 44px; }
-    .play-btn svg { width: 16px; height: 16px; }
-    .play-combined .play-btn { width: 48px; height: 48px; }
-    .play-combined .play-btn svg { width: 20px; height: 20px; }
-
     .gmail-body { padding: 1rem; }
     .syndic-sign { padding: 1.5rem 1rem; }
 }
-
-.flag-hidden { display: none; }

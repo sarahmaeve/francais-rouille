@@ -362,8 +362,11 @@ fn build_dialog_page(
         .collect();
 
     let has_translation = content_dir
-        .join(format!("{}_en.md", page.slug))
-        .exists();
+        .join(format!("{}_en.txt", page.slug))
+        .exists()
+        || content_dir
+            .join(format!("{}_en.md", page.slug))
+            .exists();
     let has_quiz = config
         .sections
         .iter()
@@ -417,11 +420,40 @@ fn build_fragment_page(
     let fragment_path = content_dir.join(format!("{}.html", page.slug));
     let fragment = std::fs::read_to_string(&fragment_path)?;
 
-    // Fragment pages don't generate translations automatically, so only
-    // link to a translation if the HTML file already exists.
-    let has_translation = output_dir
-        .join(format!("translations/{}_en.html", page.slug))
-        .exists();
+    // Check for a fragment translation: either an _en.html in content
+    // (which we'll wrap with the template) or an already-existing HTML
+    // file in the output translations directory.
+    let translation_source = content_dir.join(format!("{}_en.html", page.slug));
+    let has_translation = translation_source.exists()
+        || output_dir
+            .join(format!("translations/{}_en.html", page.slug))
+            .exists();
+
+    // Generate the fragment translation if source exists.
+    if translation_source.exists() {
+        let trans_content = std::fs::read_to_string(&translation_source)?;
+        let mut trans_ctx = Context::new();
+        trans_ctx.insert("chapter", &config.chapter);
+        trans_ctx.insert("title", &page.title);
+        trans_ctx.insert("description", &page.description);
+        trans_ctx.insert("slug", &page.slug);
+        trans_ctx.insert("vocab_page", &config.chapter.vocab_page);
+        trans_ctx.insert("content", &trans_content);
+        if let Some(ref flag) = page.flag {
+            trans_ctx.insert("flag", flag);
+        }
+        if !page.resources.is_empty() {
+            trans_ctx.insert("resources", &page.resources);
+        }
+        let trans_html = tera.render("fragment_translation.html", &trans_ctx)?;
+        let translations_dir = output_dir.join("translations");
+        std::fs::create_dir_all(&translations_dir)?;
+        std::fs::write(
+            translations_dir.join(format!("{}_en.html", page.slug)),
+            trans_html,
+        )?;
+        println!("  wrote translations/{}_en.html (fragment)", page.slug);
+    }
     let has_quiz = config
         .sections
         .iter()
@@ -467,15 +499,24 @@ fn build_translation_page(
     content_dir: &Path,
     output_dir: &Path,
 ) -> Result<(), Box<dyn std::error::Error>> {
+    // Try _en.txt first (same dialog format as French), then fall back to _en.md.
+    let txt_path = content_dir.join(format!("{}_en.txt", page.slug));
     let md_path = content_dir.join(format!("{}_en.md", page.slug));
-    let content = match std::fs::read_to_string(&md_path) {
-        Ok(c) => c,
-        Err(_) => return Ok(()), // No translation file — skip silently.
-    };
 
-    let title = parse_md_title(&content).unwrap_or_else(|| page.title.clone());
-    let characters = parse_characters_md(&content);
-    let dialog_lines = parse_dialog_md(&content);
+    let (title, characters, dialog_lines) = if let Ok(content) = std::fs::read_to_string(&txt_path) {
+        let title_line = content.lines().next().unwrap_or("").trim().to_string();
+        let title = if title_line.is_empty() { page.title.clone() } else { title_line };
+        let characters = parse_characters(&content);
+        let lines = dialog::parse_dialog(&content);
+        (title, characters, lines)
+    } else if let Ok(content) = std::fs::read_to_string(&md_path) {
+        let title = parse_md_title(&content).unwrap_or_else(|| page.title.clone());
+        let characters = parse_characters_md(&content);
+        let lines = parse_dialog_md(&content);
+        (title, characters, lines)
+    } else {
+        return Ok(()); // No translation file — skip silently.
+    };
 
     // Assign speaker classes in order of first appearance.
     let classes = ["speaker-a", "speaker-b", "speaker-c", "speaker-d"];
