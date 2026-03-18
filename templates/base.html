@@ -37,6 +37,19 @@
         {% block main %}{% endblock main %}
     </main>
 
+    {% if resources %}
+    <aside class="resources">
+        <h2>Pour aller plus loin</h2>
+        <ul>
+        {% for r in resources %}
+            <li>
+                {% if r.url %}<a href="{{ r.url }}" rel="noopener" target="_blank">{{ r.title | safe }}</a>{% else %}<span class="resource-title">{{ r.title | safe }}</span>{% endif %}{% if r.note %} <span class="resource-note">({{ r.note }})</span>{% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </aside>
+    {% endif %}
+
     {% block footer %}
     <footer>
         <a href="index.html">Retour à l'accueil</a>

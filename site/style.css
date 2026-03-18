@@ -140,6 +140,21 @@ h2 {
     vertical-align: middle;
 }
 
+.new-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    background: var(--gold);
+    color: #fff;
+    padding: 0.1rem 0.45rem;
+    border-radius: 3px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
 footer {
     max-width: 800px;
     margin: 0 auto;

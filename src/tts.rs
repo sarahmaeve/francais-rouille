@@ -129,15 +129,20 @@ impl GoogleTts {
     }
 
     /// Synthesizes plain `text` using the given voice and returns raw audio bytes.
+    ///
+    /// Roman numerals in royal names and century notation are converted to
+    /// spoken French before sending to the API (e.g. "Guillaume IX" →
+    /// "Guillaume neuf", "XIIIe siècle" → "treizième siècle").
     pub async fn synthesize(
         &self,
         text: &str,
         voice: &Voice,
         format: AudioFormat,
     ) -> Result<Vec<u8>, TtsError> {
+        let normalized = normalize_roman_numerals(text);
         self.synthesize_input(
             SynthesisInput {
-                text: Some(text),
+                text: Some(&normalized),
                 ssml: None,
             },
             voice,
@@ -282,6 +287,151 @@ impl GoogleTts {
     }
 }
 
+/// Parse a Roman numeral string (I through XX) into its integer value.
+fn parse_roman(s: &str) -> Option<u32> {
+    match s {
+        "I" => Some(1),
+        "II" => Some(2),
+        "III" => Some(3),
+        "IV" => Some(4),
+        "V" => Some(5),
+        "VI" => Some(6),
+        "VII" => Some(7),
+        "VIII" => Some(8),
+        "IX" => Some(9),
+        "X" => Some(10),
+        "XI" => Some(11),
+        "XII" => Some(12),
+        "XIII" => Some(13),
+        "XIV" => Some(14),
+        "XV" => Some(15),
+        "XVI" => Some(16),
+        "XVII" => Some(17),
+        "XVIII" => Some(18),
+        "XIX" => Some(19),
+        "XX" => Some(20),
+        _ => None,
+    }
+}
+
+/// French cardinal number words (1–20).
+const CARDINALS: &[&str] = &[
+    "", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit",
+    "neuf", "dix", "onze", "douze", "treize", "quatorze", "quinze",
+    "seize", "dix-sept", "dix-huit", "dix-neuf", "vingt",
+];
+
+/// French ordinal number words (1–20).
+const ORDINALS: &[&str] = &[
+    "", "premier", "deuxième", "troisième", "quatrième", "cinquième",
+    "sixième", "septième", "huitième", "neuvième", "dixième", "onzième",
+    "douzième", "treizième", "quatorzième", "quinzième", "seizième",
+    "dix-septième", "dix-huitième", "dix-neuvième", "vingtième",
+];
+
+/// Returns true if `c` is a Roman numeral character.
+fn is_roman(c: char) -> bool {
+    matches!(c, 'I' | 'V' | 'X')
+}
+
+/// Normalize Roman numerals in French text for TTS.
+///
+/// Handles three patterns:
+/// - "Ier" / "Ière" → "premier" / "première" (e.g. "François Ier")
+/// - Century notation: "XIIe" / "XIIIe" → "douzième" / "treizième"
+/// - Royal/papal names: "Guillaume IX" → "Guillaume neuf"
+fn normalize_roman_numerals(text: &str) -> String {
+    let words: Vec<&str> = text.split_whitespace().collect();
+    let mut result: Vec<String> = Vec::with_capacity(words.len());
+
+    let mut i = 0;
+    while i < words.len() {
+        let word = words[i];
+
+        // Pattern 1: "Ier" or "Ière" (standalone word) → premier/première
+        if word == "Ier" {
+            result.push("premier".into());
+            i += 1;
+            continue;
+        }
+        if word == "Ière" {
+            result.push("première".into());
+            i += 1;
+            continue;
+        }
+
+        // Pattern 2: Century notation — "XIIe", "XIIIe", "XIe", etc.
+        // Also handles "XIIe," (with trailing punctuation).
+        if word.len() >= 3 {
+            // Find where the Roman part ends.
+            let roman_end = word.chars().take_while(|c| is_roman(*c)).count();
+            if roman_end >= 1 {
+                let roman_part = &word[..roman_end];
+                let suffix = &word[roman_end..];
+                // Check for ordinal suffix (e, è, ème) possibly followed by punctuation.
+                let is_ordinal = suffix.starts_with("e ")
+                    || suffix == "e"
+                    || suffix.starts_with("e,")
+                    || suffix.starts_with("e.")
+                    || suffix.starts_with("e;")
+                    || suffix.starts_with("e\u{00A0}")
+                    || suffix.starts_with("è")
+                    || suffix.starts_with("ème");
+
+                if is_ordinal {
+                    if let Some(val) = parse_roman(roman_part) {
+                        if (val as usize) < ORDINALS.len() {
+                            // Keep the punctuation after "e"/"è"/"ème".
+                            let punct_start = if suffix.starts_with("ème") {
+                                3
+                            } else if suffix.starts_with("è") {
+                                suffix.chars().next().map(|c| c.len_utf8()).unwrap_or(1)
+                            } else {
+                                1
+                            };
+                            let trailing = &suffix[punct_start..];
+                            result.push(format!(
+                                "{}{}",
+                                ORDINALS[val as usize],
+                                trailing,
+                            ));
+                            i += 1;
+                            continue;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Pattern 3: Roman numeral after a capitalized word (royal name).
+        // e.g. "Guillaume IX", "Raimond V", "Innocent III"
+        // Check if current word is all Roman numerals and previous word
+        // starts with uppercase (a name).
+        if !word.is_empty()
+            && word.chars().all(is_roman)
+            && i > 0
+            && words[i - 1]
+                .chars()
+                .next()
+                .is_some_and(|c| c.is_uppercase())
+        {
+            if let Some(val) = parse_roman(word) {
+                if (val as usize) < CARDINALS.len() {
+                    result.push(CARDINALS[val as usize].into());
+                    i += 1;
+                    continue;
+                }
+            }
+        }
+
+        // Default: keep the word as-is.
+        result.push(word.to_string());
+        i += 1;
+    }
+
+    result.join(" ")
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -357,6 +507,91 @@ mod tests {
         assert_eq!(AudioFormat::from_str("OGG_OPUS"), Some(AudioFormat::OggOpus));
         assert_eq!(AudioFormat::from_str("opus"), Some(AudioFormat::OggOpus));
         assert_eq!(AudioFormat::from_str("wav"), None);
+    }
+
+    #[test]
+    fn roman_royal_names() {
+        assert_eq!(
+            normalize_roman_numerals("Guillaume IX d'Aquitaine"),
+            "Guillaume neuf d'Aquitaine"
+        );
+        assert_eq!(
+            normalize_roman_numerals("le comte Raimond V tenait"),
+            "le comte Raimond cinq tenait"
+        );
+        assert_eq!(
+            normalize_roman_numerals("le pape Innocent III a lancé"),
+            "le pape Innocent trois a lancé"
+        );
+        assert_eq!(
+            normalize_roman_numerals("Louis XIV était roi"),
+            "Louis quatorze était roi"
+        );
+    }
+
+    #[test]
+    fn roman_first_monarch() {
+        assert_eq!(
+            normalize_roman_numerals("François Ier a signé"),
+            "François premier a signé"
+        );
+        assert_eq!(
+            normalize_roman_numerals("Élisabeth Ière d'Angleterre"),
+            "Élisabeth première d'Angleterre"
+        );
+    }
+
+    #[test]
+    fn roman_century_notation() {
+        assert_eq!(
+            normalize_roman_numerals("au XIIe siècle"),
+            "au douzième siècle"
+        );
+        assert_eq!(
+            normalize_roman_numerals("du XIIIe siècle"),
+            "du treizième siècle"
+        );
+        assert_eq!(
+            normalize_roman_numerals("le XIXe siècle"),
+            "le dix-neuvième siècle"
+        );
+        assert_eq!(
+            normalize_roman_numerals("XIIe et XIIIe siècle"),
+            "douzième et treizième siècle"
+        );
+    }
+
+    #[test]
+    fn roman_century_with_punctuation() {
+        assert_eq!(
+            normalize_roman_numerals("au XIIIe, les Cathares"),
+            "au treizième, les Cathares"
+        );
+    }
+
+    #[test]
+    fn roman_preserves_plain_text() {
+        let plain = "Bonjour, comment allez-vous ?";
+        assert_eq!(normalize_roman_numerals(plain), plain);
+    }
+
+    #[test]
+    fn roman_does_not_convert_standalone_i() {
+        // A standalone "I" not preceded by a capitalized name should not convert.
+        // In French text this is unlikely, but ensure no false positive.
+        let text = "et I et II sont des chiffres";
+        assert_eq!(
+            normalize_roman_numerals(text),
+            "et I et II sont des chiffres"
+        );
+    }
+
+    #[test]
+    fn roman_multiple_in_one_sentence() {
+        assert_eq!(
+            normalize_roman_numerals("Henri IV et Louis XVI au XVIIe siècle"),
+            "Henri quatre et Louis seize au dix-septième siècle"
+        );
     }
 
     #[test]

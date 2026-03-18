@@ -1,0 +1,39 @@
+[site]
+title = "Français Rouillé"
+subtitle = "Apprenez le français par la pratique"
+tagline = "Dialogues, textes et audio pour dérouiller votre français"
+description = "Textes et dialogues authentiques avec audio pour apprendre le français. Niveau B1 et au-delà. Vocabulaire, traductions et exercices interactifs."
+canonical_url = "https://francais-rouille.pages.dev/index.html"
+intro = "Textes et dialogues authentiques pour les apprenants de niveau B1 et au-delà. Chaque chapitre propose des situations de la vie quotidienne en France, avec vocabulaire, traductions et audio."
+footer = "Français Rouillé — Textes pour dérouiller votre français"
+
+[[levels]]
+heading = "Niveau B1 — Intermédiaire"
+
+[[levels.chapters]]
+slug = "b1-vie-quotidienne"
+title = "Textes B1 — La Vie Quotidienne"
+description = "Naviguer dans le métro, commander dans une boulangerie, chercher un appartement à Paris, réserver un taxi, et plus encore."
+meta = "10 textes · Dialogues, annonces et vocabulaire · Audio disponible"
+
+[[levels.chapters]]
+slug = "b1-appartement"
+title = "La Vie en Appartement — Lyon, Croix-Rousse"
+description = "Maeve et Irene s'installent dans leur appartement à Lyon. Pannes de chauffage, courrier perdu, voisins et fibre optique."
+meta = "6 textes · Emails, dialogues, avis et vocabulaire · Audio disponible"
+
+[[levels]]
+heading = "Niveau B2 — Intermédiaire avancé"
+
+[[levels.chapters]]
+slug = "b2-toulouse-medieval"
+title = "Toulouse Médiévale — Histoire et Visite Guidée"
+description = "Visite à pied du centre historique de Toulouse. Les Cathares, la croisade des Albigeois, la Basilique Saint-Sernin et l'Église des Jacobins."
+meta = "5 textes · Monologues, dialogue et carte · Audio disponible"
+
+[[levels.chapters]]
+slug = "b2-librairie-occitane"
+title = "La Librairie Occitane — Langue, Histoire et Culture"
+description = "Irene découvre la culture occitane dans une librairie de Toulouse. Les troubadours, la langue d'oc, et la renaissance occitane contemporaine."
+meta = "6 textes · Dialogues, monologue, article et carte · Audio disponible"
+new = true

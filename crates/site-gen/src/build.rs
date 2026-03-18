@@ -14,6 +14,44 @@ pub struct ChapterConfig {
     pub sections: Vec<SectionConfig>,
 }
 
+// ── Site-level config (site.toml) ────────────────────────────────────────
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SiteConfig {
+    pub site: SiteMeta,
+    pub levels: Vec<LevelConfig>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SiteMeta {
+    pub title: String,
+    pub subtitle: String,
+    pub tagline: String,
+    pub description: String,
+    pub canonical_url: String,
+    pub intro: String,
+    pub footer: String,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct LevelConfig {
+    pub heading: String,
+    pub chapters: Vec<SiteChapterEntry>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct SiteChapterEntry {
+    pub slug: String,
+    pub title: String,
+    pub description: String,
+    pub meta: String,
+    pub flag: Option<String>,
+    #[serde(default)]
+    pub new: bool,
+}
+
+// ── Chapter-level config (chapter.toml) ──────────────────────────────────
+
 #[derive(Debug, Deserialize, Serialize)]
 pub struct ChapterMeta {
     pub title: String,
@@ -36,6 +74,21 @@ pub struct SectionConfig {
 }
 
 #[derive(Debug, Deserialize, Serialize, Clone)]
+pub struct Resource {
+    /// Resource type: "video", "book", or "link".
+    #[serde(rename = "type")]
+    pub resource_type: String,
+    /// Display title.
+    pub title: String,
+    /// URL (for videos and links).
+    #[serde(default)]
+    pub url: String,
+    /// Additional note (e.g. duration, language, publisher).
+    #[serde(default)]
+    pub note: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct PageConfig {
     pub slug: String,
     pub title: String,
@@ -45,6 +98,8 @@ pub struct PageConfig {
     pub subtitle: Option<String>,
     pub audio_dir: Option<String>,
     pub flag: Option<String>,
+    #[serde(default)]
+    pub resources: Vec<Resource>,
 }
 
 /// Section data for the chapter index template, enriched with audio info.
@@ -331,6 +386,9 @@ fn build_dialog_page(
     if let Some(ref flag) = page.flag {
         ctx.insert("flag", flag);
     }
+    if !page.resources.is_empty() {
+        ctx.insert("resources", &page.resources);
+    }
     if let Some(base) = base_url {
         ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
     }
@@ -383,6 +441,9 @@ fn build_fragment_page(
     ctx.insert("content", &fragment);
     if let Some(ref flag) = page.flag {
         ctx.insert("flag", flag);
+    }
+    if !page.resources.is_empty() {
+        ctx.insert("resources", &page.resources);
     }
     if let Some(base) = base_url {
         ctx.insert("canonical_url", &format!("{}/{}.html", base, page.slug));
@@ -459,6 +520,9 @@ fn build_translation_page(
     if let Some(ref flag) = page.flag {
         ctx.insert("flag", flag);
     }
+    if !page.resources.is_empty() {
+        ctx.insert("resources", &page.resources);
+    }
 
     let html = tera.render("translation.html", &ctx)?;
 
@@ -532,6 +596,31 @@ fn build_chapter_index(
 
 /// Generate a `sitemap.xml` listing all HTML pages under `site_dir`.
 ///
+/// Generate the site root `index.html` from `site.toml` and the
+/// `site_index.html` template.
+pub fn generate_site_index(
+    site_config_path: &Path,
+    templates_dir: &Path,
+    output_dir: &Path,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let config_str = std::fs::read_to_string(site_config_path)?;
+    let config: SiteConfig = toml::from_str(&config_str)?;
+
+    let template_glob = format!("{}/**/*.html", templates_dir.display());
+    let tera = Tera::new(&template_glob)?;
+
+    let mut ctx = Context::new();
+    ctx.insert("site", &config.site);
+    ctx.insert("levels", &config.levels);
+
+    let html = tera.render("site_index.html", &ctx)?;
+    let out_path = output_dir.join("index.html");
+    std::fs::write(&out_path, html)?;
+
+    println!("  wrote site index.html");
+    Ok(())
+}
+
 /// Walks the site directory, collects `.html` pages (skipping `404.html`),
 /// and writes a standard XML sitemap. Dialog and chapter index pages get
 /// higher priority than translations and reference pages.

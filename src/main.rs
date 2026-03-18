@@ -263,8 +263,8 @@ fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     let output_root = site_dir.join("chapters");
 
     // Discover chapters.
-    let chapters: Vec<String> = if let Some(name) = chapter_filter {
-        vec![name]
+    let chapters: Vec<String> = if let Some(ref name) = chapter_filter {
+        vec![name.clone()]
     } else {
         let mut names = Vec::new();
         for entry in std::fs::read_dir(&content_root)? {
@@ -289,6 +289,14 @@ fn run_build_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         let output_dir = output_root.join(chapter);
         println!("Building chapter: {chapter}");
         build::build_chapter(&content_dir, &output_dir, &templates_dir, site_url.as_deref())?;
+    }
+
+    // Generate site index from site.toml (only for full builds, not single-chapter).
+    if chapter_filter.is_none() {
+        let site_config = content_root.join("site.toml");
+        if site_config.exists() {
+            site_gen::build::generate_site_index(&site_config, &templates_dir, &site_dir)?;
+        }
     }
 
     // Generate sitemap if a site URL is provided.

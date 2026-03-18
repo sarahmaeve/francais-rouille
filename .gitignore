@@ -4,6 +4,9 @@ debug
 target
 testdata
 
+# macOS
+.DS_Store
+
 # TTS output
 output
 

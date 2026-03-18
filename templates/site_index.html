@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }} — {{ site.subtitle }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:title" content="{{ site.title }} — {{ site.subtitle }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="canonical" href="{{ site.canonical_url }}">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Français <span class="accent">Rouillé</span></h1>
+        <p class="subtitle">{{ site.subtitle }}</p>
+        <p class="tagline">{{ site.tagline }}</p>
+    </div>
+
+    <div class="content">
+        <p class="intro">{{ site.intro }}</p>
+
+    {% for level in levels %}
+        <h2>{{ level.heading }}</h2>
+        <ul class="chapter-list">
+        {% for chapter in level.chapters %}
+            <li{% if chapter.flag %} data-flag="{{ chapter.flag }}" class="flag-hidden"{% endif %}>
+                <a href="chapters/{{ chapter.slug }}/index.html">
+                    <span class="chapter-title">{{ chapter.title }}{% if chapter.new %} <span class="new-badge">Nouveau</span>{% endif %}</span>
+                    <span class="chapter-desc">{{ chapter.description }}</span>
+                    <span class="chapter-meta">{{ chapter.meta }}</span>
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    </div>
+
+    <footer>
+        {{ site.footer }}
+    </footer>
+
+    <script src="shared/flags.js"></script>
+    <script src="shared/analytics.js"></script>
+</body>
+</html>

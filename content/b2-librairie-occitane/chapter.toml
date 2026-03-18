@@ -1,0 +1,72 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "La Librairie Occitane — Langue, Histoire et Culture"
+level = "B2"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B2 — La Librairie Occitane"
+
+# --- Carte ---
+
+[[sections]]
+heading = "Contexte"
+
+[[sections.pages]]
+slug = "00_carte_occitanie"
+title = "Carte de l'Occitanie Historique"
+description = "Carte schématique du territoire historique de la langue d'oc, centré sur Toulouse."
+type = "fragment"
+
+[[sections.pages]]
+slug = "01_histoire_occitan"
+title = "L'Occitan : Langue d'Oc, Langue Oubliée ?"
+description = "Histoire de la langue occitane, de l'âge d'or des troubadours à la situation actuelle."
+type = "fragment"
+
+# --- Dialogues ---
+
+[[sections]]
+heading = "À la Librairie"
+
+[[sections.pages]]
+slug = "02_decouverte_librairie"
+title = "Découverte de la Librairie"
+description = "Irene, touriste américaine, découvre la Librariá La Tuta d'Òc et apprend l'existence de la culture occitane."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_troubadours_livres"
+title = "Les Troubadours et leurs Livres"
+description = "Irene s'intéresse aux livres sur l'ancien occitan et l'histoire des troubadours."
+type = "dialog"
+resources = [
+    { type = "video", title = "A Chantar — Comtessa de Dia (c. 1175)", url = "https://www.youtube.com/watch?v=guknssbN8yM", note = "vidéo YouTube" },
+]
+
+[[sections.pages]]
+slug = "04_culture_occitane_toulouse"
+title = "La Culture Occitane à Toulouse"
+description = "Le libraire parle des autres lieux et artistes liés à la culture occitane à Toulouse."
+type = "dialog"
+
+# --- Monologue ---
+
+[[sections]]
+heading = "Témoignage"
+
+[[sections.pages]]
+slug = "05_lecon_occitan"
+title = "Une Leçon d'Occitan"
+description = "Une enseignante explique l'histoire de l'occitan à des élèves de collège en visite à la librairie."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B2 — La Librairie Occitane"
+description = "Mots et expressions clés avec traductions en anglais."
+type = "static"

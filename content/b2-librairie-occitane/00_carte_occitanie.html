@@ -1,0 +1,248 @@
+<header>
+    <h1>Carte de l'Occitanie Historique</h1>
+    <p>Le territoire de la langue d'oc au Moyen Âge</p>
+</header>
+
+<div class="map-container">
+    <svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background -->
+        <rect width="700" height="520" fill="#e8f0f8"/>
+
+        <!-- ═══ Water bodies ═══════════════════════════════════════════ -->
+
+        <!-- Mediterranean Sea -->
+        <path d="M320,470 Q370,450 430,460 Q490,445 540,455 Q590,445 640,450 L700,460 L700,520 L280,520 Q295,490 320,470Z"
+              fill="#8bbad4" opacity="0.5"/>
+        <text x="560" y="500" fill="#5a8aab" font-size="12" font-family="Georgia, serif"
+              font-style="italic">Mer Méditerranée</text>
+
+        <!-- Atlantic coast -->
+        <path d="M0,80 Q15,120 8,170 Q3,220 0,270 L0,520 L40,520
+               Q25,470 30,420 Q35,370 25,320 Q15,270 20,220 Q25,170 18,120 Q12,80 0,80Z"
+              fill="#8bbad4" opacity="0.45"/>
+        <text x="8" y="320" fill="#5a8aab" font-size="11" font-family="Georgia, serif"
+              font-style="italic" transform="rotate(-90, 8, 320)">Océan Atlantique</text>
+
+        <!-- Gulf of Lion -->
+        <path d="M380,470 Q420,460 460,465 Q500,455 520,460"
+              fill="none" stroke="#8bbad4" stroke-width="1" opacity="0.3"/>
+        <text x="435" y="478" fill="#5a8aab" font-size="8" font-family="Georgia, serif"
+              font-style="italic">Golfe du Lion</text>
+
+        <!-- ═══ Rivers ═════════════════════════════════════════════════ -->
+
+        <!-- Garonne -->
+        <path d="M310,355 Q270,340 220,330 Q170,325 130,345 Q90,365 50,390 Q30,405 15,430"
+              fill="none" stroke="#8bbad4" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+        <text x="100" y="360" fill="#5a8aab" font-size="9" font-family="Georgia, serif"
+              font-style="italic">La Garonne</text>
+
+        <!-- Rhône -->
+        <path d="M545,100 Q540,150 535,200 Q530,250 540,300 Q545,340 550,380 Q555,420 560,460"
+              fill="none" stroke="#8bbad4" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+        <text x="553" y="270" fill="#5a8aab" font-size="9" font-family="Georgia, serif"
+              font-style="italic" transform="rotate(85, 553, 270)">Le Rhône</text>
+
+        <!-- Loire (partial, north) -->
+        <path d="M120,120 Q180,105 240,100 Q300,95 360,100"
+              fill="none" stroke="#8bbad4" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+        <text x="230" y="96" fill="#5a8aab" font-size="8" font-family="Georgia, serif"
+              font-style="italic">La Loire</text>
+
+        <!-- Dordogne -->
+        <path d="M200,290 Q160,285 120,295 Q80,310 50,330"
+              fill="none" stroke="#8bbad4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        <text x="115" y="288" fill="#5a8aab" font-size="8" font-family="Georgia, serif"
+              font-style="italic">La Dordogne</text>
+
+        <!-- Aude -->
+        <path d="M360,400 Q380,420 400,440 Q410,455 420,465"
+              fill="none" stroke="#8bbad4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+        <!-- ═══ Territories ════════════════════════════════════════════ -->
+
+        <!-- Historical Occitania territory (more detailed shape) -->
+        <path d="M55,155 Q100,140 160,120 Q220,105 290,100 Q360,100 430,115
+               Q500,135 560,170 Q610,210 630,270 Q635,320 620,370
+               Q590,410 540,440 Q480,460 420,465 Q360,460 310,450
+               Q260,440 210,430 Q160,420 120,400 Q85,380 65,350
+               Q50,310 45,260 Q42,210 55,155Z"
+              fill="#f5e6c8" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+
+        <!-- Dialect region boundaries (subtle) -->
+        <!-- Gascon -->
+        <path d="M55,155 Q120,200 160,270 Q180,330 160,420"
+              fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,5" opacity="0.35"/>
+        <!-- Languedocien / Provençal -->
+        <path d="M430,115 Q440,200 450,300 Q455,380 420,465"
+              fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,5" opacity="0.35"/>
+        <!-- Limousin / Auvergnat -->
+        <path d="M160,120 Q200,170 240,210 Q290,240 360,250 Q430,230 500,135"
+              fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,5" opacity="0.35"/>
+
+        <!-- Dialect region labels -->
+        <text x="105" y="310" text-anchor="middle" fill="#a08030" font-size="11"
+              font-family="Georgia, serif" font-style="italic" opacity="0.6">Gascon</text>
+        <text x="170" y="180" text-anchor="middle" fill="#a08030" font-size="10"
+              font-family="Georgia, serif" font-style="italic" opacity="0.6">Limousin</text>
+        <text x="350" y="175" text-anchor="middle" fill="#a08030" font-size="10"
+              font-family="Georgia, serif" font-style="italic" opacity="0.6">Auvergnat</text>
+        <text x="310" y="370" text-anchor="middle" fill="#a08030" font-size="11"
+              font-family="Georgia, serif" font-style="italic" opacity="0.6">Languedocien</text>
+        <text x="520" y="320" text-anchor="middle" fill="#a08030" font-size="11"
+              font-family="Georgia, serif" font-style="italic" opacity="0.6">Provençal</text>
+
+        <!-- Large territory label -->
+        <text x="330" y="270" text-anchor="middle" fill="#8b6914" font-size="20"
+              font-family="Georgia, serif" font-weight="bold" letter-spacing="8" opacity="0.3">OCCITÀNIA</text>
+
+        <!-- Langue d'oïl territory (north, very faded) -->
+        <path d="M55,155 Q100,140 160,120 Q220,105 290,100 Q360,100 430,115
+               Q500,80 560,50 L700,0 L0,0 L0,80 Q30,120 55,155Z"
+              fill="#d4dce8" stroke="#8899aa" stroke-width="1" stroke-dasharray="6,4" opacity="0.25"/>
+        <text x="300" y="55" text-anchor="middle" fill="#667788" font-size="14"
+              font-family="Georgia, serif" font-style="italic" opacity="0.7">Langue d'oïl</text>
+
+        <!-- ═══ Linguistic boundary ════════════════════════════════════ -->
+
+        <path d="M30,160 Q100,145 180,125 Q260,108 340,105 Q420,110 500,135 Q560,160 610,200"
+              fill="none" stroke="#996633" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.6"/>
+        <text x="510" y="145" fill="#996633" font-size="9" font-family="Georgia, serif"
+              font-style="italic">Frontière linguistique (approx.)</text>
+
+        <!-- ═══ Mountains ══════════════════════════════════════════════ -->
+
+        <!-- Pyrenees -->
+        <path d="M100,430 Q150,410 200,415 Q250,405 300,410 Q350,400 400,408 Q440,400 480,415 Q510,420 530,435"
+              fill="none" stroke="#8b7355" stroke-width="3" opacity="0.45"/>
+        <!-- Mountain peaks -->
+        <path d="M180,415 l6,-12 l6,12 M220,410 l5,-10 l5,10 M260,408 l7,-14 l7,14 M310,405 l6,-12 l6,12
+               M360,403 l5,-10 l5,10 M410,405 l7,-14 l7,14 M460,410 l5,-10 l5,10"
+              fill="none" stroke="#8b7355" stroke-width="1.5" opacity="0.35"/>
+        <text x="310" y="430" text-anchor="middle" fill="#8b7355" font-size="11"
+              font-family="Georgia, serif" font-style="italic">Pyrénées</text>
+
+        <!-- Massif Central (hint) -->
+        <path d="M300,170 l5,-8 l5,8 M320,165 l4,-7 l4,7 M340,170 l5,-8 l5,8 M360,168 l4,-6 l4,6"
+              fill="none" stroke="#8b7355" stroke-width="1" opacity="0.3"/>
+        <text x="330" y="160" text-anchor="middle" fill="#8b7355" font-size="8"
+              font-family="Georgia, serif" font-style="italic" opacity="0.5">Massif Central</text>
+
+        <!-- Alps (hint) -->
+        <path d="M600,150 l6,-10 l6,10 M615,145 l5,-9 l5,9 M630,150 l6,-10 l6,10"
+              fill="none" stroke="#8b7355" stroke-width="1.5" opacity="0.35"/>
+        <text x="615" y="168" text-anchor="middle" fill="#8b7355" font-size="8"
+              font-family="Georgia, serif" font-style="italic" opacity="0.5">Alpes</text>
+
+        <!-- ═══ Spain / Italy labels ═══════════════════════════════════ -->
+
+        <text x="230" y="470" text-anchor="middle" fill="#999" font-size="11"
+              font-family="Georgia, serif" font-style="italic">Aragon</text>
+        <text x="420" y="490" text-anchor="middle" fill="#999" font-size="11"
+              font-family="Georgia, serif" font-style="italic">Catalogne</text>
+        <text x="660" y="230" text-anchor="middle" fill="#999" font-size="10"
+              font-family="Georgia, serif" font-style="italic" opacity="0.6">Italie</text>
+
+        <!-- ═══ Cities ═════════════════════════════════════════════════ -->
+
+        <!-- Toulouse (focal point) -->
+        <circle cx="310" cy="355" r="9" fill="#c9a84c" stroke="#1a2744" stroke-width="2.5"/>
+        <text x="310" y="343" text-anchor="middle" fill="#1a2744" font-size="14"
+              font-family="Georgia, serif" font-weight="bold">Toulouse</text>
+
+        <!-- Major Occitan cities -->
+        <circle cx="440" cy="390" r="4.5" fill="#2c3e6b"/>
+        <text x="455" y="394" fill="#2c3e6b" font-size="11" font-family="Georgia, serif">Montpellier</text>
+
+        <circle cx="170" cy="325" r="4.5" fill="#2c3e6b"/>
+        <text x="155" y="322" fill="#2c3e6b" font-size="11" font-family="Georgia, serif" text-anchor="end">Bordeaux</text>
+
+        <circle cx="540" cy="350" r="4.5" fill="#2c3e6b"/>
+        <text x="555" y="354" fill="#2c3e6b" font-size="11" font-family="Georgia, serif">Marseille</text>
+
+        <circle cx="530" cy="275" r="4.5" fill="#2c3e6b"/>
+        <text x="515" y="270" fill="#2c3e6b" font-size="11" font-family="Georgia, serif" text-anchor="end">Avignon</text>
+
+        <circle cx="220" cy="380" r="4" fill="#2c3e6b"/>
+        <text x="235" y="384" fill="#2c3e6b" font-size="10" font-family="Georgia, serif">Pau</text>
+
+        <circle cx="375" cy="410" r="4" fill="#2c3e6b"/>
+        <text x="375" y="405" fill="#2c3e6b" font-size="10" font-family="Georgia, serif" text-anchor="middle">Carcassonne</text>
+
+        <circle cx="575" cy="200" r="4" fill="#2c3e6b"/>
+        <text x="560" y="196" fill="#2c3e6b" font-size="10" font-family="Georgia, serif" text-anchor="end">Grenoble</text>
+
+        <circle cx="175" cy="230" r="4" fill="#2c3e6b"/>
+        <text x="190" y="234" fill="#2c3e6b" font-size="10" font-family="Georgia, serif">Limoges</text>
+
+        <circle cx="320" cy="200" r="4" fill="#2c3e6b"/>
+        <text x="335" y="204" fill="#2c3e6b" font-size="10" font-family="Georgia, serif">Clermont</text>
+
+        <circle cx="590" cy="310" r="4" fill="#2c3e6b"/>
+        <text x="577" y="305" fill="#2c3e6b" font-size="10" font-family="Georgia, serif" text-anchor="end">Nice</text>
+
+        <circle cx="135" cy="305" r="4" fill="#2c3e6b"/>
+        <text x="120" y="300" fill="#2c3e6b" font-size="10" font-family="Georgia, serif" text-anchor="end">Périgueux</text>
+
+        <circle cx="240" cy="295" r="4" fill="#2c3e6b"/>
+        <text x="255" y="299" fill="#2c3e6b" font-size="10" font-family="Georgia, serif">Cahors</text>
+
+        <circle cx="270" cy="400" r="3.5" fill="#2c3e6b"/>
+        <text x="270" y="415" fill="#2c3e6b" font-size="9" font-family="Georgia, serif" text-anchor="middle">Foix</text>
+
+        <circle cx="460" cy="340" r="3.5" fill="#2c3e6b"/>
+        <text x="475" y="344" fill="#2c3e6b" font-size="9" font-family="Georgia, serif">Nîmes</text>
+
+        <circle cx="410" cy="300" r="3.5" fill="#2c3e6b"/>
+        <text x="425" y="296" fill="#2c3e6b" font-size="9" font-family="Georgia, serif">Albi</text>
+
+        <circle cx="185" cy="385" r="3.5" fill="#2c3e6b"/>
+        <text x="170" y="398" fill="#2c3e6b" font-size="9" font-family="Georgia, serif" text-anchor="end">Bayonne</text>
+
+        <circle cx="470" cy="440" r="3.5" fill="#2c3e6b"/>
+        <text x="485" y="444" fill="#2c3e6b" font-size="9" font-family="Georgia, serif">Béziers</text>
+
+        <!-- Northern cities (for reference, outside Occitania) -->
+        <circle cx="350" cy="60" r="3" fill="#8899aa" opacity="0.5"/>
+        <text x="365" y="64" fill="#8899aa" font-size="9" font-family="Georgia, serif" opacity="0.6">Paris</text>
+
+        <circle cx="180" cy="80" r="3" fill="#8899aa" opacity="0.5"/>
+        <text x="195" y="84" fill="#8899aa" font-size="9" font-family="Georgia, serif" opacity="0.6">Tours</text>
+
+        <circle cx="450" cy="75" r="3" fill="#8899aa" opacity="0.5"/>
+        <text x="465" y="79" fill="#8899aa" font-size="9" font-family="Georgia, serif" opacity="0.6">Lyon</text>
+
+        <!-- Poitiers (important for troubadours) -->
+        <circle cx="140" cy="160" r="3.5" fill="#2c3e6b" opacity="0.6"/>
+        <text x="155" y="164" fill="#2c3e6b" font-size="9" font-family="Georgia, serif" opacity="0.7">Poitiers</text>
+
+        <!-- ═══ Legend ═════════════════════════════════════════════════ -->
+
+        <rect x="10" y="460" width="260" height="52" rx="5" fill="#fff" stroke="#ccc" stroke-width="1" opacity="0.92"/>
+
+        <rect x="20" y="470" width="14" height="10" fill="#f5e6c8" stroke="#c9a84c" stroke-width="1"/>
+        <text x="40" y="479" fill="#333" font-size="9" font-family="Georgia, serif">Territoire occitanophone historique</text>
+
+        <line x1="20" y1="490" x2="36" y2="490" stroke="#996633" stroke-width="2" stroke-dasharray="4,2"/>
+        <text x="40" y="494" fill="#333" font-size="9" font-family="Georgia, serif">Frontière linguistique (approx.)</text>
+
+        <line x1="20" y1="504" x2="36" y2="504" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,4"/>
+        <text x="40" y="508" fill="#333" font-size="9" font-family="Georgia, serif">Limites dialectales (gascon, languedocien, etc.)</text>
+    </svg>
+</div>
+
+<div class="info-section">
+    <h2>L'espace occitan</h2>
+    <p>L'occitan, ou langue d'oc, couvrait historiquement un vaste territoire
+    dans le sud de la France actuelle, du Limousin à la Provence, de l'Auvergne
+    aux Pyrénées. Toulouse en était le centre culturel et politique.</p>
+    <p>La langue se divisait en plusieurs dialectes — gascon à l'ouest,
+    languedocien au centre, provençal à l'est, limousin et auvergnat au nord —
+    mais les locuteurs de ces différents dialectes se comprenaient entre eux.
+    C'est Guillaume IX d'Aquitaine, duc de Poitiers, qui est considéré comme
+    le premier troubadour connu.</p>
+    <p>La frontière linguistique avec la langue d'oïl (le français du nord)
+    passait approximativement au niveau d'une ligne Bordeaux-Grenoble.
+    Au sud des Pyrénées, le catalan et l'aragonais partageaient de nombreux
+    traits avec l'occitan.</p>
+</div>

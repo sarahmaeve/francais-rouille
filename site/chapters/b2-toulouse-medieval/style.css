@@ -751,6 +751,53 @@ footer a:hover {
     -webkit-overflow-scrolling: touch;
 }
 
+/* Resources / Pour aller plus loin */
+.resources {
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-left: 4px solid var(--blue);
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resources h2 {
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: 0.6rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources li {
+    padding: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.resources a {
+    color: var(--navy);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+.resource-title {
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.resource-note {
+    color: #888;
+    font-size: 0.85rem;
+}
+
 /* Experimental content warning bar */
 .butter-bar {
     background: #fff3cd;

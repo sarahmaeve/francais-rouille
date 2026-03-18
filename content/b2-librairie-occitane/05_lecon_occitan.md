@@ -1,0 +1,18 @@
+# Une Leçon d’Occitan
+
+**Personnages :**
+- **Madame Vidal** — une enseignante de collège
+
+**Madame Vidal :** Allez, on se regroupe ici, tout le monde. Vous voyez cette librairie ? Tous les livres ici sont en occitan ou parlent de la culture occitane. Et je sais ce que vous pensez : « l’occitan, c’est quoi ? » Eh bien, c’est justement pour ça qu’on est là.
+
+**Madame Vidal :** Alors, pour commencer : l’occitan, c’est la langue que vos arrière-grands-parents parlaient. Pas tous, mais beaucoup d’entre eux. Ici à Toulouse, il y a encore cinquante ans, les gens du marché parlaient occitan entre eux. C’était la langue normale, la langue de la vie de tous les jours.
+
+**Madame Vidal :** Et cette langue, elle est bien plus ancienne que le français. Au Moyen Âge, l’occitan était une des langues les plus prestigieuses d’Europe. Les troubadours — vous en avez entendu parler en cours, non ? — ils n’écrivaient pas en français. Ils écrivaient en occitan, en « langue d’oc ». D’ailleurs, c’est de là que vient le nom de notre région : l’Occitanie. Le mot vient directement de « langue d’oc ».
+
+**Madame Vidal :** Mais alors, pourquoi est-ce qu’on ne la parle plus ? C’est une bonne question. D’abord, il y a eu la croisade contre les Cathares, au XIIIe siècle. Le nord de la France a envahi le sud, et les nobles du nord ont remplacé les nobles du sud. Le pouvoir a changé de langue. Ensuite, en 1539, le roi François Ier a signé l’ordonnance de Villers-Cotterêts, qui a imposé le français dans tous les documents officiels. L’occitan est devenu une langue « d’en bas », la langue des paysans et des ouvriers.
+
+**Madame Vidal :** Et puis, il y a eu l’école de la République. Oui, l’école — celle où vous allez tous les jours. À partir du XIXe siècle, les instituteurs avaient pour mission de faire disparaître les langues régionales. Si un enfant parlait occitan en classe, on le punissait. On lui mettait parfois un sabot autour du cou — on appelait ça le « signal ». Imaginez qu’on vous punisse parce que vous parlez la langue de votre famille. C’est exactement ce qui s’est passé ici, dans des écoles comme la vôtre.
+
+**Madame Vidal :** Aujourd’hui, la situation est différente. L’occitan est reconnu comme patrimoine culturel. Il y a des écoles bilingues — les calandretas — où des enfants de votre âge apprennent en occitan et en français. Il y a des musiciens, des écrivains, des artistes qui créent en occitan. Et il y a des librairies comme celle-ci qui gardent cette culture vivante.
+
+**Madame Vidal :** Alors, quand vous verrez les panneaux bilingues dans le métro ou dans les rues, vous saurez maintenant que ce n’est pas de la décoration. C’est le souvenir d’une langue qui a été la nôtre pendant des siècles. Et peut-être que certains d’entre vous auront envie de l’apprendre — ce serait une belle façon de renouer avec l’histoire de votre ville. Bon, allez, on va regarder les livres. Et pas de bruit, on est dans une librairie !
