@@ -7,6 +7,9 @@ testdata
 # macOS
 .DS_Store
 
+# Claude Code personal settings (skills are committed separately)
+.claude/settings.local.json
+
 # TTS output
 output
 

@@ -117,3 +117,21 @@ in the chapter index. `shared/flags.js` (loaded on every page) checks
 - **Register known flags:** add entries to the `KNOWN_FLAGS` array in
   `shared/flags-ui.js`
 - **Promote to production:** remove the `flag` line from `chapter.toml`
+
+### Creating New Chapters
+
+Use the `/create-chapter` skill to generate a complete chapter from an
+English prompt file:
+
+```
+/create-chapter <prompt-file> <chapter-slug>
+```
+
+The skill runs in three phases:
+1. **Content generation** — creates all French content, English translations,
+   vocabulary, chapter config, and site index entry
+2. **Validation** — checks French grammar, typography, and translation accuracy
+3. **Asset generation** — generates TTS audio and builds HTML
+
+The skill pauses for manual review between phases 1 and 2. See
+`.claude/skills/create-chapter.md` for full documentation.
