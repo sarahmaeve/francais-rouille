@@ -70,3 +70,9 @@ slug = "vocabulaire"
 title = "Vocabulaire B2 — La Librairie Occitane"
 description = "Mots et expressions clés avec traductions en anglais."
 type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez votre compréhension"
+description = "Choix multiple et compréhension orale."
+type = "static"

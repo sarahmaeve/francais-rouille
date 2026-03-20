@@ -110,6 +110,105 @@ FILL_IN_BLANK: [
     }
 ],
 
+LISTENING: [
+    {
+        type: "topic",
+        audio_src: "audio/01_paris_metro/lines/04_marc.mp3",
+        transcript: "Oui, il faut changer à la station Marcadet-Poissonniers. C\u2019est à trois arrêts d\u2019ici.",
+        options: [
+            "Giving directions for changing metro lines",
+            "Explaining how to buy a metro ticket",
+            "Describing the history of the Paris metro",
+            "Warning about pickpockets on public transport"
+        ],
+        answer: 0
+    },
+    {
+        type: "topic",
+        audio_src: "audio/05_appel_agence/lines/09_thomas.mp3",
+        transcript: "C\u2019est vrai que le bas de la rue est animé avec les bars et les restaurants. Mais l\u2019appartement est plus haut sur la rue, c\u2019est beaucoup plus calme. Et puis la chambre donne sur la cour, donc vous n\u2019entendez presque rien.",
+        options: [
+            "Describing what shops are available in the neighborhood",
+            "Explaining the apartment\u2019s layout and number of rooms",
+            "Reassuring a tenant that the apartment is quiet despite a lively street",
+            "Recommending nearby bars and restaurants"
+        ],
+        answer: 2
+    },
+    {
+        type: "topic",
+        audio_src: "audio/07_boulangerie/lines/06_monsieur_duval.mp3",
+        transcript: "C\u2019est une pâte feuilletée croustillante avec une mousse à la noisette du Piémont et un cœur de caramel au beurre salé. On le saupoudre de noisettes torréfiées et d\u2019un peu de fleur de sel.",
+        options: [
+            "Listing the prices on the bakery menu",
+            "Describing the ingredients of a specialty pastry",
+            "Explaining how to make croissants at home",
+            "Recommending a chocolate dessert from Belgium"
+        ],
+        answer: 1
+    },
+    {
+        type: "topic",
+        audio_src: "audio/08_taxi_hotel/lines/06_emilie.mp3",
+        transcript: "Depuis notre quartier, près de la Gare du Nord, il faut compter entre trente et quarante-cinq minutes pour l\u2019aéroport. Ça dépend du terminal.",
+        options: [
+            "Giving the fixed fare for a taxi to the airport",
+            "Explaining how to take the train to the airport",
+            "Estimating travel time from a hotel to the airport",
+            "Describing the location of the hotel near Gare du Nord"
+        ],
+        answer: 2
+    },
+    {
+        type: "next",
+        audio_src: "audio/02_viennoiserie/lines/03_antoine.mp3",
+        transcript: "Les pains au chocolat viennent de sortir du four, ils sont encore tout chauds. Et nos chaussons aux pommes sont très bons aussi.",
+        options: [
+            "La cliente passe sa commande",
+            "Le boulanger ferme la boutique",
+            "La cliente se plaint du prix",
+            "Le boulanger s\u2019excuse de ne plus avoir de croissants"
+        ],
+        answer: 0
+    },
+    {
+        type: "next",
+        audio_src: "audio/03_directions_toulouse/lines/01_nadia.mp3",
+        transcript: "Pardon, monsieur, je suis un peu perdue. Est-ce que vous connaissez la Place du Capitole ?",
+        options: [
+            "L\u2019habitant confirme et demande si elle est à pied",
+            "L\u2019habitant dit qu\u2019il ne connaît pas la ville",
+            "Nadia décide de prendre un taxi",
+            "L\u2019habitant lui vend un plan de la ville"
+        ],
+        answer: 0
+    },
+    {
+        type: "next",
+        audio_src: "audio/06_discussion_quartier/lines/06_yasmine.mp3",
+        transcript: "Ah carrément ! Y\u2019a le marché de la Bastille le jeudi et le dimanche, il est génial. Les fruits et légumes sont super frais, et y\u2019a un fromager là-bas, il est incroyable.",
+        options: [
+            "Camille pose des questions sur les restaurants du coin",
+            "Yasmine propose de déménager dans un autre quartier",
+            "Camille décide que le quartier est trop cher",
+            "Yasmine se plaint du bruit du marché"
+        ],
+        answer: 0
+    },
+    {
+        type: "next",
+        audio_src: "audio/10_rentree_cm2/lines/05_olivier.mp3",
+        transcript: "Chloé aussi commence à s\u2019adapter. Ce qui l\u2019a surprise, c\u2019est la quantité de devoirs. En CM1, elle avait une demi-heure de travail le soir, mais maintenant c\u2019est presque une heure.",
+        options: [
+            "Un autre parent partage un problème scolaire similaire",
+            "Olivier annonce que sa fille change d\u2019école",
+            "Les parents décident d\u2019annuler les devoirs",
+            "Chloé arrive et demande de rentrer à la maison"
+        ],
+        answer: 0
+    }
+],
+
 DRAG_DROP: [
     // 01 — Métro
     {
