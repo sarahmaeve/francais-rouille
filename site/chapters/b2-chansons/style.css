@@ -1,0 +1,35 @@
+/* b2-chansons — chapter-specific overrides */
+
+/* Inrocks concert poster */
+.inrocks-poster { background: #0a0a0a; color: #fff; border-radius: 10px; padding: 2.5rem 2rem; text-align: center; font-family: system-ui, -apple-system, sans-serif; }
+.inrocks-header { margin-bottom: 2rem; }
+.inrocks-brand { font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; color: #e63946; font-weight: 700; margin-bottom: 0.3rem; }
+.inrocks-presents { font-size: 0.9rem; color: #888; font-style: italic; }
+
+.inrocks-hero { margin-bottom: 2rem; }
+.inrocks-title { font-size: 2.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #fff; margin: 0 0 0.5rem; line-height: 1.1; }
+.inrocks-subtitle { font-size: 1.1rem; color: #ccc; font-style: italic; }
+
+.inrocks-lineup { margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.inrocks-artist { padding: 0.8rem 1.2rem; border: 1px solid #333; border-radius: 6px; }
+.inrocks-artist-headliner { border-color: #e63946; background: rgba(230, 57, 70, 0.1); }
+.artist-name { display: block; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.inrocks-artist-headliner .artist-name { font-size: 1.8rem; color: #e63946; }
+.artist-set { display: block; font-size: 0.85rem; color: #999; margin-top: 0.2rem; }
+
+.inrocks-details { margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.inrocks-detail { font-size: 0.95rem; color: #ccc; }
+.detail-icon { margin-right: 0.5rem; }
+
+.inrocks-cta { margin-bottom: 1.5rem; }
+.cta-button { display: inline-block; background: #e63946; color: #fff; padding: 0.8rem 2rem; border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.9rem; }
+
+.inrocks-footer { color: #666; font-size: 0.85rem; }
+.inrocks-note { margin-bottom: 0.3rem; }
+.inrocks-hashtag { color: #e63946; font-weight: 600; }
+
+@media (max-width: 480px) {
+    .inrocks-poster { padding: 1.5rem 1rem; }
+    .inrocks-title { font-size: 1.6rem; }
+    .inrocks-artist-headliner .artist-name { font-size: 1.4rem; }
+}

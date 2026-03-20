@@ -36,4 +36,11 @@ slug = "b2-librairie-occitane"
 title = "La Librairie Occitane — Langue, Histoire et Culture"
 description = "Irene découvre la culture occitane dans une librairie de Toulouse. Les troubadours, la langue d'oc, et la renaissance occitane contemporaine."
 meta = "6 textes · Dialogues, monologue, article et carte · Audio disponible"
+new = false
+
+[[levels.chapters]]
+slug = "b2-chansons"
+title = "Chansons Populaires — Opinions et Débats Culturels"
+description = "Trois discussions entre amis sur Indila, Les Trois Mousquetaires au cinéma et le dernier album de Zaz. Exprimer et défendre son avis."
+meta = "5 textes · Dialogues, publicité et guide d'expressions · Audio disponible"
 new = true

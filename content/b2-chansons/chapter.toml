@@ -1,0 +1,64 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Chansons Populaires — Opinions et Débats Culturels"
+level = "B2"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B2 — Chansons Populaires"
+
+# --- Contexte ---
+
+[[sections]]
+heading = "Contexte"
+
+[[sections.pages]]
+slug = "00_concert_inrocks"
+title = "Concert Impromptu — Les Inrockuptibles"
+description = "Affiche publicitaire pour un concert surprise organisé par Les Inrocks."
+type = "fragment"
+
+[[sections.pages]]
+slug = "01_expressions_musique"
+title = "Parler Musique Pour Les Nuls"
+description = "Guide des expressions et de l'argot pour donner son avis sur la musique."
+type = "fragment"
+
+# --- Dialogues ---
+
+[[sections]]
+heading = "Discussions"
+
+[[sections.pages]]
+slug = "02_chansons_indila"
+title = "Les Chansons d'Indila"
+description = "Trois étudiants discutent de leurs chansons préférées d'Indila et de celles qu'ils aiment moins."
+type = "dialog"
+resources = [
+    { type = "video", title = "Indila — Dernière Danse (clip officiel)", url = "https://www.youtube.com/watch?v=K5KAc5CoCuk", note = "vidéo YouTube" },
+]
+
+[[sections.pages]]
+slug = "03_films_mousquetaires"
+title = "Les Trois Mousquetaires au Cinéma"
+description = "Maeve et Irene débattent des récents films Les Trois Mousquetaires, entre déception et moments forts."
+type = "dialog"
+
+[[sections.pages]]
+slug = "04_album_zaz"
+title = "Le Dernier Album de Zaz"
+description = "Matthieu et Rebecca comparent Sains et saufs aux albums précédents de Zaz."
+type = "dialog"
+resources = [
+    { type = "link", title = "Zaz — Site officiel", url = "https://www.zazofficial.com/", note = "site officiel" },
+]
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B2 — Chansons Populaires"
+description = "Mots et expressions clés avec traductions en anglais."
+type = "static"
