@@ -223,6 +223,64 @@
     color: var(--blue);
 }
 
+/* Listening comprehension */
+.quiz-listen-prompt {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--navy);
+    line-height: 1.5;
+}
+
+.quiz-listen-audio {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.quiz-listen-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.quiz-listen-btn:hover {
+    background: var(--blue);
+}
+
+.quiz-listen-btn.playing {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.quiz-listen-icon {
+    flex-shrink: 0;
+}
+
+.quiz-listen-transcript {
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    background: var(--cream);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.quiz-listen-transcript-label {
+    font-weight: bold;
+    color: var(--navy);
+}
+
 /* Drag and drop */
 .quiz-dd-sentence {
     font-size: 1.1rem;

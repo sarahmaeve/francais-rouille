@@ -283,6 +283,111 @@ class QuizEngine {
         this.container.querySelector('.quiz-card').appendChild(nextBtn);
     }
 
+    // --- Listening Comprehension ---
+
+    loadListening(data) {
+        this.score = 0;
+        this.current = 0;
+        this.questions = shuffle(data.slice());
+        this.total = this.questions.length;
+        this.renderListeningQuestion();
+    }
+
+    renderListeningQuestion() {
+        if (this.current >= this.total) {
+            this.showScore('listen', () => this.app.startListening());
+            return;
+        }
+
+        var q = this.questions[this.current];
+        var isTopic = q.type === 'topic';
+        var promptText = isTopic
+            ? 'Listen, then choose the best description of what the speaker is saying.'
+            : 'Écoutez, puis choisissez ce qui pourrait suivre dans la conversation.';
+
+        var optionsHtml = q.options.map(function(opt, i) {
+            return '<button class="quiz-option" data-index="' + i + '">' + opt + '</button>';
+        }).join('');
+
+        this.container.innerHTML =
+            this.showProgress() +
+            '<div class="quiz-card">' +
+                '<div class="quiz-listen-prompt">' + promptText + '</div>' +
+                '<div class="quiz-listen-audio">' +
+                    '<button class="quiz-listen-btn" id="listen-play">' +
+                        '<svg class="quiz-listen-icon" viewBox="0 0 24 24" width="22" height="22">' +
+                            '<polygon points="6,3 20,12 6,21" fill="currentColor"/>' +
+                        '</svg>' +
+                        '<span>Écouter</span>' +
+                    '</button>' +
+                    '<audio id="listen-audio" src="' + q.audio_src + '" preload="auto"></audio>' +
+                '</div>' +
+                '<div class="quiz-options">' + optionsHtml + '</div>' +
+                '<div class="quiz-feedback" id="quiz-feedback"></div>' +
+            '</div>';
+
+        this.applyProgress();
+
+        var audio = document.getElementById('listen-audio');
+        var playBtn = document.getElementById('listen-play');
+        playBtn.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.currentTime = 0;
+                audio.play();
+                playBtn.classList.add('playing');
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+                playBtn.classList.remove('playing');
+            }
+        });
+        audio.addEventListener('ended', function() {
+            playBtn.classList.remove('playing');
+        });
+
+        var self = this;
+        this.container.querySelectorAll('.quiz-option').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                self.checkListening(parseInt(btn.dataset.index, 10));
+            });
+        });
+    }
+
+    checkListening(selectedIndex) {
+        var q = this.questions[this.current];
+        var buttons = this.container.querySelectorAll('.quiz-option');
+        var feedback = document.getElementById('quiz-feedback');
+
+        buttons.forEach(function(btn) { btn.disabled = true; });
+        buttons[q.answer].classList.add('correct');
+
+        if (selectedIndex === q.answer) {
+            this.score++;
+            feedback.className = 'quiz-feedback correct';
+            feedback.textContent = 'Correct !';
+        } else {
+            buttons[selectedIndex].classList.add('wrong');
+            feedback.className = 'quiz-feedback wrong';
+            feedback.innerHTML = 'La bonne réponse : <strong>' + q.options[q.answer] + '</strong>';
+        }
+
+        // Show transcript after answering
+        if (q.transcript) {
+            var transcriptEl = document.createElement('div');
+            transcriptEl.className = 'quiz-listen-transcript';
+            transcriptEl.innerHTML = '<span class="quiz-listen-transcript-label">Transcription :</span> ' + q.transcript;
+            this.container.querySelector('.quiz-card').appendChild(transcriptEl);
+        }
+
+        this.current++;
+        var nextBtn = document.createElement('button');
+        nextBtn.className = 'quiz-btn quiz-next';
+        nextBtn.textContent = this.current >= this.total ? 'Voir le score' : 'Suivant';
+        var self = this;
+        nextBtn.onclick = function() { self.renderListeningQuestion(); };
+        this.container.querySelector('.quiz-card').appendChild(nextBtn);
+    }
+
     // --- Drag and Drop ---
 
     loadDragDrop(data) {
@@ -428,6 +533,7 @@ class QuizApp {
         this.vocabUrl = vocabUrl;
         this.fillInBlank = quizData.FILL_IN_BLANK || [];
         this.dragDrop = quizData.DRAG_DROP || [];
+        this.listening = quizData.LISTENING || [];
         this.vocabData = [];
         this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
         this.currentTab = null;
@@ -452,6 +558,7 @@ class QuizApp {
         if (type === 'mc') this.startMC();
         else if (type === 'fitb') this.startFITB();
         else if (type === 'dd') this.startDD();
+        else if (type === 'listen') this.startListening();
     }
 
     async startMC() {
@@ -489,6 +596,16 @@ class QuizApp {
         }
         this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
         this.engine.loadDragDrop(this.dragDrop);
+    }
+
+    startListening() {
+        if (this.listening.length === 0) {
+            this.engine.container.innerHTML =
+                '<div class="quiz-card"><p>Pas encore de questions pour ce type.</p></div>';
+            return;
+        }
+        this.engine = new QuizEngine(document.getElementById('quiz-container'), this);
+        this.engine.loadListening(this.listening);
     }
 }
 
