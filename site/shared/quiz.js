@@ -28,33 +28,7 @@ function pickDistractors(correctEntry, pool, n) {
 }
 
 // --- Vocabulary Parser ---
-
-async function fetchVocab(url) {
-    const resp = await fetch(url);
-    const html = await resp.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const sections = doc.querySelectorAll('.vocab-section');
-    const entries = [];
-
-    sections.forEach(section => {
-        const heading = section.querySelector('h2');
-        const sectionName = heading ? heading.textContent.trim() : '';
-        const rows = section.querySelectorAll('tr');
-        rows.forEach(row => {
-            const cells = row.querySelectorAll('td');
-            if (cells.length >= 2) {
-                entries.push({
-                    french: cells[0].textContent.trim(),
-                    english: cells[1].textContent.trim(),
-                    section: sectionName
-                });
-            }
-        });
-    });
-
-    return entries;
-}
+// fetchVocab(url) is provided by vocab.js (loaded before this script).
 
 // --- Quiz Engine ---
 
@@ -299,38 +273,41 @@ class QuizEngine {
             return;
         }
 
-        var q = this.questions[this.current];
-        var isTopic = q.type === 'topic';
-        var promptText = isTopic
+        const q = this.questions[this.current];
+        const promptText = q.type === 'topic'
             ? 'Listen, then choose the best description of what the speaker is saying.'
             : 'Écoutez, puis choisissez ce qui pourrait suivre dans la conversation.';
 
-        var optionsHtml = q.options.map(function(opt, i) {
-            return '<button class="quiz-option" data-index="' + i + '">' + opt + '</button>';
-        }).join('');
+        const optionsHtml = q.options.map((opt, i) =>
+            `<button class="quiz-option" data-index="${i}">${opt}</button>`
+        ).join('');
 
-        this.container.innerHTML =
-            this.showProgress() +
-            '<div class="quiz-card">' +
-                '<div class="quiz-listen-prompt">' + promptText + '</div>' +
-                '<div class="quiz-listen-audio">' +
-                    '<button class="quiz-listen-btn" id="listen-play">' +
-                        '<svg class="quiz-listen-icon" viewBox="0 0 24 24" width="22" height="22">' +
-                            '<polygon points="6,3 20,12 6,21" fill="currentColor"/>' +
-                        '</svg>' +
-                        '<span>Écouter</span>' +
-                    '</button>' +
-                    '<audio id="listen-audio" src="' + q.audio_src + '" preload="auto"></audio>' +
-                '</div>' +
-                '<div class="quiz-options">' + optionsHtml + '</div>' +
-                '<div class="quiz-feedback" id="quiz-feedback"></div>' +
-            '</div>';
+        this.container.innerHTML = `
+            ${this.showProgress()}
+            <div class="quiz-card">
+                <div class="quiz-listen-prompt">${promptText}</div>
+                <div class="quiz-listen-audio">
+                    <button class="quiz-listen-btn" id="listen-play">
+                        <svg class="quiz-listen-icon" viewBox="0 0 24 24" width="22" height="22">
+                            <polygon points="6,3 20,12 6,21" fill="currentColor"/>
+                        </svg>
+                        <span>Écouter</span>
+                    </button>
+                    <audio id="listen-audio" preload="auto"></audio>
+                </div>
+                <div class="quiz-options">${optionsHtml}</div>
+                <div class="quiz-feedback" id="quiz-feedback"></div>
+            </div>
+        `;
+
+        // Set audio src via DOM property (avoids string interpolation in HTML)
+        document.getElementById('listen-audio').src = q.audio_src;
 
         this.applyProgress();
 
-        var audio = document.getElementById('listen-audio');
-        var playBtn = document.getElementById('listen-play');
-        playBtn.addEventListener('click', function() {
+        const audio = document.getElementById('listen-audio');
+        const playBtn = document.getElementById('listen-play');
+        playBtn.addEventListener('click', () => {
             if (audio.paused) {
                 audio.currentTime = 0;
                 audio.play();
@@ -341,24 +318,23 @@ class QuizEngine {
                 playBtn.classList.remove('playing');
             }
         });
-        audio.addEventListener('ended', function() {
+        audio.addEventListener('ended', () => {
             playBtn.classList.remove('playing');
         });
 
-        var self = this;
-        this.container.querySelectorAll('.quiz-option').forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                self.checkListening(parseInt(btn.dataset.index, 10));
+        this.container.querySelectorAll('.quiz-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.checkListening(parseInt(btn.dataset.index, 10));
             });
         });
     }
 
     checkListening(selectedIndex) {
-        var q = this.questions[this.current];
-        var buttons = this.container.querySelectorAll('.quiz-option');
-        var feedback = document.getElementById('quiz-feedback');
+        const q = this.questions[this.current];
+        const buttons = this.container.querySelectorAll('.quiz-option');
+        const feedback = document.getElementById('quiz-feedback');
 
-        buttons.forEach(function(btn) { btn.disabled = true; });
+        buttons.forEach(btn => { btn.disabled = true; });
         buttons[q.answer].classList.add('correct');
 
         if (selectedIndex === q.answer) {
@@ -368,23 +344,26 @@ class QuizEngine {
         } else {
             buttons[selectedIndex].classList.add('wrong');
             feedback.className = 'quiz-feedback wrong';
-            feedback.innerHTML = 'La bonne réponse : <strong>' + q.options[q.answer] + '</strong>';
+            feedback.innerHTML = `La bonne réponse : <strong>${q.options[q.answer]}</strong>`;
         }
 
         // Show transcript after answering
         if (q.transcript) {
-            var transcriptEl = document.createElement('div');
+            const transcriptEl = document.createElement('div');
             transcriptEl.className = 'quiz-listen-transcript';
-            transcriptEl.innerHTML = '<span class="quiz-listen-transcript-label">Transcription :</span> ' + q.transcript;
+            const label = document.createElement('span');
+            label.className = 'quiz-listen-transcript-label';
+            label.textContent = 'Transcription : ';
+            transcriptEl.appendChild(label);
+            transcriptEl.appendChild(document.createTextNode(q.transcript));
             this.container.querySelector('.quiz-card').appendChild(transcriptEl);
         }
 
         this.current++;
-        var nextBtn = document.createElement('button');
+        const nextBtn = document.createElement('button');
         nextBtn.className = 'quiz-btn quiz-next';
         nextBtn.textContent = this.current >= this.total ? 'Voir le score' : 'Suivant';
-        var self = this;
-        nextBtn.onclick = function() { self.renderListeningQuestion(); };
+        nextBtn.onclick = () => this.renderListeningQuestion();
         this.container.querySelector('.quiz-card').appendChild(nextBtn);
     }
 

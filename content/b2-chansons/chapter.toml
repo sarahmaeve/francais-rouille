@@ -68,3 +68,9 @@ slug = "quiz"
 title = "Quiz — Testez votre compréhension"
 description = "Choix multiple et compréhension orale."
 type = "static"
+
+[[sections.pages]]
+slug = "flashcards"
+title = "Flashcards"
+description = "Révisez le vocabulaire avec des cartes mémoire."
+type = "static"
