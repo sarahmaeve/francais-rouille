@@ -19,6 +19,16 @@
     font-style: italic;
 }
 
+.dash-restricted {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-top: 0.4rem;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
 .dash-body {
     max-width: 800px;
     margin: 0 auto;
