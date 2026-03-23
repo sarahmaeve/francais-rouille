@@ -70,13 +70,39 @@ async function totalPageviews(db, since) {
 }
 
 async function mostActivePage(db, since) {
-    const row = await db
+    const rows = await db
         .prepare(
-            "SELECT page, COUNT(*) AS cnt FROM events WHERE event = 'pageview' AND ts >= ? GROUP BY page ORDER BY cnt DESC LIMIT 1"
+            "SELECT page, COUNT(*) AS cnt FROM events WHERE event = 'pageview' AND ts >= ? GROUP BY page ORDER BY cnt DESC LIMIT 2"
         )
         .bind(since)
-        .first();
-    return row ? { page: row.page, views: row.cnt } : null;
+        .all();
+
+    var top = null;
+    var topNonRoot = null;
+
+    for (const row of rows.results || []) {
+        if (!top) {
+            top = { page: row.page, views: row.cnt };
+        }
+        if (row.page !== '/' && row.page !== '/index.html' && !topNonRoot) {
+            topNonRoot = { page: row.page, views: row.cnt };
+        }
+    }
+
+    // If top is root but we didn't get a non-root in top 2, query again.
+    if (top && (top.page === '/' || top.page === '/index.html') && !topNonRoot) {
+        const row = await db
+            .prepare(
+                "SELECT page, COUNT(*) AS cnt FROM events WHERE event = 'pageview' AND ts >= ? AND page != '/' AND page != '/index.html' GROUP BY page ORDER BY cnt DESC LIMIT 1"
+            )
+            .bind(since)
+            .first();
+        if (row) {
+            topNonRoot = { page: row.page, views: row.cnt };
+        }
+    }
+
+    return { top: top, top_non_root: topNonRoot };
 }
 
 async function avgTimeOnPage(db, since) {

@@ -118,13 +118,23 @@
             setText('stat-avg-time-detail', 'No data');
         }
 
-        // Most active page.
-        if (data.most_active_page) {
-            setText('stat-active-page', formatNumber(data.most_active_page.views) + ' views');
-            setText('stat-active-page-detail', data.most_active_page.page);
+        // Most active page (overall).
+        var map = data.most_active_page || {};
+        if (map.top) {
+            setText('stat-active-page', formatNumber(map.top.views) + ' views');
+            setText('stat-active-page-detail', map.top.page);
         } else {
             setText('stat-active-page', '—');
             setText('stat-active-page-detail', 'No data');
+        }
+
+        // Most active page (non-root).
+        if (map.top_non_root) {
+            setText('stat-active-page-nr', formatNumber(map.top_non_root.views) + ' views');
+            setText('stat-active-page-nr-detail', map.top_non_root.page);
+        } else {
+            setText('stat-active-page-nr', '—');
+            setText('stat-active-page-nr-detail', 'No data');
         }
 
         // Top audio file.
