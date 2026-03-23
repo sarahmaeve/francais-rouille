@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dashboard — Français Rouillé</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../shared/dashboard.css">
+</head>
+<body>
+    <div class="dash-header">
+        <h1>Dashboard</h1>
+        <p>Français Rouillé Analytics</p>
+    </div>
+
+    <div class="dash-body">
+        <div id="token-prompt" class="dash-token-form">
+            <label for="token-input">Enter dashboard token</label>
+            <input id="token-input" class="dash-token-input" type="password"
+                   autocomplete="off" spellcheck="false">
+        </div>
+
+        <div id="dashboard" class="dash-hidden">
+            <div class="dash-controls">
+                <button class="dash-btn dash-btn-active" data-period="day">Day</button>
+                <button class="dash-btn" data-period="week">Week</button>
+                <button class="dash-btn" data-period="month">Month</button>
+                <button class="dash-btn dash-refresh" id="refresh-btn">Refresh</button>
+            </div>
+
+            <div id="status" class="dash-status"></div>
+
+            <div id="loading" class="dash-loading dash-hidden">Loading…</div>
+            <div id="error" class="dash-error dash-hidden"></div>
+
+            <div id="cards" class="dash-cards dash-hidden">
+                <div class="dash-card">
+                    <div class="dash-card-label">Total Page Views</div>
+                    <div class="dash-card-value" id="stat-pageviews">—</div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-card-label">Avg Time on Page</div>
+                    <div class="dash-card-value" id="stat-avg-time">—</div>
+                    <div class="dash-card-detail" id="stat-avg-time-detail"></div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-card-label">Most Active Page</div>
+                    <div class="dash-card-value" id="stat-active-page">—</div>
+                    <div class="dash-card-detail" id="stat-active-page-detail"></div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-card-label">Top Audio File</div>
+                    <div class="dash-card-value" id="stat-audio-file">—</div>
+                    <div class="dash-card-detail" id="stat-audio-file-detail"></div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-card-label">Top Chapter (Audio Completions)</div>
+                    <div class="dash-card-value" id="stat-audio-page">—</div>
+                    <div class="dash-card-detail" id="stat-audio-page-detail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Français Rouillé — Dashboard
+    </footer>
+
+    <script src="../shared/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* Dashboard styles */
+
+.dash-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 50%, #4a6491 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 2rem 2rem;
+}
+
+.dash-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.02em;
+}
+
+.dash-header p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.dash-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Token prompt */
+.dash-token-form {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.dash-token-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.dash-token-input {
+    font-family: monospace;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    width: 20rem;
+    max-width: 90%;
+}
+
+/* Controls bar */
+.dash-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.dash-btn {
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.dash-btn:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.dash-btn-active {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy);
+}
+
+.dash-btn-active:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+}
+
+.dash-refresh {
+    margin-left: auto;
+}
+
+/* Status text */
+.dash-status {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+/* Stat cards grid */
+.dash-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.dash-card {
+    background: #fff;
+    border: 1px solid var(--light-gray);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+}
+
+.dash-card-label {
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #999;
+    margin-bottom: 0.4rem;
+}
+
+.dash-card-value {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--navy);
+    word-break: break-word;
+}
+
+.dash-card-detail {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.3rem;
+    word-break: break-all;
+}
+
+/* Error state */
+.dash-error {
+    background: #fff5f5;
+    border: 1px solid #e8c4c4;
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    color: #8b3a3a;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Loading state */
+.dash-loading {
+    text-align: center;
+    padding: 3rem 0;
+    color: #999;
+    font-style: italic;
+}
+
+/* Hidden utility */
+.dash-hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .dash-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dash-refresh {
+        margin-left: 0;
+    }
+}
