@@ -1,0 +1,66 @@
+Où Manger ? — Le Traiteur et le Restaurant
+
+Personnages :
+- Alice — une touriste américaine fatiguée après les courses
+- Paul — le mari d’Alice
+- Serveur — un serveur dans un restaurant du centre commercial
+
+Alice : Paul, j’ai faim. Ça fait deux heures qu’on fait les magasins. On mange quelque chose ?
+
+Paul : Oui, moi aussi. Il y a quoi comme restaurants dans ce centre commercial ?
+
+Alice : Il y a un McDonald's, mais on n’a pas traversé l’Atlantique pour manger chez McDo. Regarde, il y a un traiteur là-bas. C’est quoi exactement, un traiteur ?
+
+Paul : Si j’ai bien compris, c’est un magasin qui vend des plats préparés. De la cuisine toute faite, mais de qualité. On peut acheter un plat et le manger sur place ou l’emporter.
+
+Alice : Ah, un peu comme un deli aux États-Unis ?
+
+Paul : Oui, en quelque sorte. Mais en plus raffiné. Regarde la vitrine, ça a l’air délicieux.
+
+Alice : C’est vrai. Mais je ne comprends pas la moitié des plats. C’est quoi, un parmentier de canard ?
+
+Paul : Aucune idée. On demande ?
+
+Alice : Non, attends. Il y a aussi un petit restaurant juste à côté. On pourrait s’asseoir et commander tranquillement. J’ai mal aux pieds.
+
+Paul : Bonne idée. Allons voir s’ils ont de la place.
+
+Serveur : Bonjour, vous êtes deux ? Vous voulez déjeuner ?
+
+Alice : Oui, s’il vous plaît. Est-ce qu’on peut voir la carte avant de s’installer ?
+
+Serveur : Bien sûr, voilà la carte. On a aussi un plat du jour aujourd’hui, c’est un filet de cabillaud avec du riz et des légumes, à treize euros.
+
+Paul : Merci. On regarde et on vous dit.
+
+Alice : Alors, voyons… Qu’est-ce que c’est, des rillettes ?
+
+Paul : C’est de la viande effilochée, en général du porc. On l’étale sur du pain. C’est une spécialité française.
+
+Alice : Ah, un peu comme du pulled pork en pâté ? Ça me tente. Et un croque-monsieur, on connaît, c’est facile.
+
+Paul : Moi, je vais prendre le plat du jour. Le cabillaud, c’est de la morue, non ?
+
+Serveur : Presque ! C’est le même poisson, mais en France, on dit cabillaud quand il est frais, et morue quand il est séché et salé. Aujourd’hui, le nôtre est bien frais, vous allez voir.
+
+Alice : Ah, bonne idée, le cabillaud. C’est léger. Et comme boisson, on prend quoi ?
+
+Paul : Une carafe d’eau, c’est gratuit ici en France, non ?
+
+Alice : Oui, on peut demander une carafe d’eau du robinet. C’est normal au restaurant. Mais je prendrais bien un petit verre de cidre aussi, on est en Bretagne après tout.
+
+Serveur : Vous avez choisi ?
+
+Alice : Oui. Pour moi, les rillettes en entrée et un croque-monsieur. Et un verre de cidre brut, s’il vous plaît.
+
+Paul : Et pour moi, le plat du jour, le cabillaud. Et une carafe d’eau, s’il vous plaît.
+
+Serveur : Très bien. Vous voulez du pain avec ?
+
+Paul : Oui, s’il vous plaît.
+
+Serveur : Parfait, je vous apporte tout ça.
+
+Alice : Merci. Ah, et est-ce qu’on peut avoir la carte des desserts après ?
+
+Serveur : Bien sûr, je vous la donne avec les plats.

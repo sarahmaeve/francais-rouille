@@ -1,0 +1,52 @@
+Shopping at Carrefour
+
+Characters:
+- Alice — an American tourist living in Brittany
+- Paul — Alice's husband, also American
+- Employee — an employee in the fruit and vegetable section at Carrefour
+
+Alice: Okay, we're finally at Carrefour. It's huge in here, isn't it?
+
+Paul: Yeah, it's much bigger than the little shop near our place. Where do we start?
+
+Alice: We need onions, Diet Coke, and beef. Let's start with the vegetables — they're right there.
+
+Paul: Okay. Ah, I can see the potatoes and the carrots, but I can't find the onions.
+
+Alice: Me neither. Let's ask someone. Excuse me, sir, can you help us?
+
+Employee: Of course, what are you looking for?
+
+Alice: We're looking for onions. We can't find them in the aisle.
+
+Employee: The onions are at the end of the aisle, on the left past the leeks. We just restocked them.
+
+Paul: Thanks. And for the beef, where exactly is that?
+
+Employee: The butcher counter is at the back of the store, past the dairy section. You'll see the counter with the butcher.
+
+Alice: There's also pre-packaged meat, right?
+
+Employee: Yes, there's a self-service section right next to the butcher counter. You'll find steaks, roasts, and stewing cuts.
+
+Paul: Great. And the Diet Coke, which aisle is that?
+
+Employee: The drinks are in aisle seven. The Coke is next to the sparkling water.
+
+Alice: Aisle seven, got it. Thank you very much, sir.
+
+Employee: You're welcome. Good luck with your shopping!
+
+Paul: He said aisle seven for the Diet Coke. Do you want to go there while I head to the butcher counter?
+
+Alice: Good idea. Shall we meet at the checkouts in fifteen minutes?
+
+Paul: Sounds good. Don't forget to get a six-pack — the last one only lasted three days.
+
+Alice: Yeah, I'll get two, that way we're set for the week. Get some rib steaks if they're not too expensive.
+
+Paul: And if they're too expensive?
+
+Alice: Get sirloin then — it's great for the barbecue too.
+
+Paul: OK. See you in a bit!

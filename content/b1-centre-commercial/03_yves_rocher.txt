@@ -1,0 +1,49 @@
+Chez Yves Rocher — Soins et Shampoings
+
+Personnages :
+- Alice — une touriste américaine qui cherche des produits de soin
+- Conseillère — une conseillère de vente chez Yves Rocher
+
+Alice : Bonjour, madame. Je cherche un soin pour le visage et un shampoing réparateur.
+
+Conseillère : Bonjour ! Bienvenue chez Yves Rocher. Pour le soin du visage, vous avez quel type de peau ?
+
+Alice : Je pense que j’ai la peau mixte. J’ai le front un peu gras, mais les joues sont plutôt sèches.
+
+Conseillère : D’accord, c’est très courant. Je vous recommande notre crème hydratante pour peaux mixtes. Elle est légère et elle ne rend pas la peau grasse.
+
+Alice : Ça a l’air bien. Et elle protège du soleil aussi ?
+
+Conseillère : Celle-ci n’a pas de protection solaire. Mais on a une version avec un indice 30 si vous voulez. En Bretagne, même quand il fait gris, le soleil peut être fort.
+
+Alice : Ah oui, bonne idée. Je vais prendre celle avec la protection solaire. C’est combien ?
+
+Conseillère : Elle est à vingt-deux euros. Et en ce moment, on a une offre : pour deux produits achetés, le troisième est à moitié prix.
+
+Alice : Ah, c’est intéressant. Alors parlons du shampoing. Mes cheveux sont très abîmés à cause du calcaire de l’eau ici.
+
+Conseillère : Oui, l’eau est assez dure en Bretagne, c’est un problème classique. On a une gamme réparatrice qui marche très bien. Ce shampoing nourrit les cheveux en profondeur.
+
+Alice : Il est à base de quoi ?
+
+Conseillère : C’est à base de beurre de karité et d’huile de jojoba. Tout est d’origine végétale, c’est notre spécialité chez Yves Rocher.
+
+Alice : Super. Et il y a un après-shampoing qui va avec ?
+
+Conseillère : Oui, on a le masque réparateur de la même gamme. Vous le laissez poser cinq minutes après le shampoing, et ça fait vraiment la différence. On le recommande une ou deux fois par semaine.
+
+Alice : D’accord. Et avec l’offre, ça fait combien pour les trois produits ?
+
+Conseillère : Alors, la crème à vingt-deux euros, le shampoing à douze euros, et le masque réparateur qui est normalement à quinze euros passe à sept euros cinquante avec la réduction. Ça fait quarante et un euros cinquante en tout.
+
+Alice : Très bien, je prends les trois. Vous avez un programme de fidélité ?
+
+Conseillère : Oui, vous avez une carte de fidélité ? On peut vous en créer une, c’est gratuit.
+
+Alice : Non, je n’en ai pas, mais je veux bien en créer une. On ne sait jamais, je reviendrai peut-être.
+
+Conseillère : Parfait, il me faut juste une adresse mail. Je vous emballe tout ça.
+
+Alice : Merci beaucoup, vous m’avez très bien conseillée.
+
+Conseillère : Avec plaisir. Bonne journée !

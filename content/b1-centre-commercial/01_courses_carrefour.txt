@@ -1,0 +1,52 @@
+Les Courses au Carrefour
+
+Personnages :
+- Alice — une touriste américaine qui habite en Bretagne
+- Paul — le mari d’Alice, également américain
+- Employé — un employé du rayon fruits et légumes chez Carrefour
+
+Alice : Bon, on est enfin au Carrefour. C’est immense ici, non ?
+
+Paul : Oui, c’est beaucoup plus grand que le petit magasin à côté de chez nous. Par où on commence ?
+
+Alice : On a besoin d’oignons, de Coca light et de viande de bœuf. On commence par les légumes, c’est juste là.
+
+Paul : D’accord. Ah, je vois les pommes de terre et les carottes, mais je ne trouve pas les oignons.
+
+Alice : Moi non plus. On va demander à quelqu’un. Excusez-moi, monsieur, est-ce que vous pouvez nous aider ?
+
+Employé : Bien sûr, qu’est-ce que vous cherchez ?
+
+Alice : On cherche des oignons. On ne les trouve pas dans le rayon.
+
+Employé : Les oignons, c’est au bout de l’allée, à gauche après les poireaux. On vient de les remettre en rayon.
+
+Paul : Merci. Et pour la viande de bœuf, c’est où exactement ?
+
+Employé : La boucherie est au fond du magasin, après les produits laitiers. Vous allez voir le comptoir avec le boucher.
+
+Alice : Il y a aussi de la viande en barquette, non ?
+
+Employé : Oui, il y a le rayon libre-service juste à côté de la boucherie. Vous trouverez des steaks, des rôtis et des morceaux pour les ragoûts.
+
+Paul : Super. Et le Coca light, c’est dans quel rayon ?
+
+Employé : Les boissons sont dans l’allée sept. Le Coca, c’est à côté des eaux gazeuses.
+
+Alice : Allée sept, d’accord. Merci beaucoup, monsieur.
+
+Employé : De rien. Bon courage pour vos courses !
+
+Paul : Il a dit allée sept pour le Coca light. Tu veux y aller pendant que je vais à la boucherie ?
+
+Alice : Bonne idée. On se retrouve aux caisses dans quinze minutes ?
+
+Paul : Ça marche. N’oublie pas de prendre un pack de six, le dernier a duré seulement trois jours.
+
+Alice : Oui, je vais en prendre deux, comme ça on est tranquilles pour la semaine. Prends des entrecôtes si elles ne sont pas trop chères.
+
+Paul : Et si elles sont trop chères ?
+
+Alice : Prends du faux-filet alors, c’est très bien aussi pour le barbecue.
+
+Paul : OK. À tout à l’heure !

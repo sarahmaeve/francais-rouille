@@ -22,6 +22,13 @@ title = "La Vie en Appartement — Lyon, Croix-Rousse"
 description = "Maeve et Irene s'installent dans leur appartement à Lyon. Pannes de chauffage, courrier perdu, voisins et fibre optique."
 meta = "6 textes · Emails, dialogues, avis et vocabulaire · Audio disponible"
 
+[[levels.chapters]]
+slug = "b1-centre-commercial"
+title = "Au Centre Commercial — La Madeleine, Saint-Malo"
+description = "Alice et Paul font les courses au centre commercial La Madeleine. Hypermarché, boutiques, traiteur et restaurant."
+meta = "6 textes · Dialogues, carte et menu · Audio disponible"
+new = true
+
 [[levels]]
 heading = "Niveau B2 — Intermédiaire avancé"
 

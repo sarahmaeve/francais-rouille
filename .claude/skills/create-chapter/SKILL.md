@@ -80,10 +80,20 @@ user confirmation.**
    theme. Include French-English pairs in tables wrapped with
    `<div class="vocab-table-wrap">`.
 
-8. **Copy the chapter stylesheet** from an existing B2 chapter:
-   ```bash
-   cp site/chapters/b2-toulouse-medieval/style.css site/chapters/<chapter-slug>/style.css
-   ```
+8. **Create a chapter stylesheet** at
+   `site/chapters/<chapter-slug>/style.css`. Each chapter has its own
+   `style.css` for chapter-specific overrides (the shared styles live in
+   `shared/chapter.css`). **Do not copy another chapter's stylesheet
+   wholesale.** Instead:
+   - Check which CSS classes the chapter's fragments actually use.
+   - Look in existing chapter stylesheets (`site/chapters/*/style.css`)
+     for definitions of those classes and copy only the ones needed.
+   - If the chapter has no fragment-specific classes, write a minimal
+     placeholder:
+     ```css
+     /* <chapter-slug> — no chapter-specific overrides */
+     /* All styles provided by shared/chapter.css */
+     ```
 
 9. **Add the chapter** to `content/site.toml` under the appropriate level
    section. Set `new = true` for the new chapter.
@@ -132,28 +142,34 @@ After the user confirms the content looks good:
 
 After the user approves the validated content:
 
-1. **Generate audio** for each dialog and monologue:
+1. **Check for the TTS API key.** Audio generation requires the
+   `GOOGLE_TTS_API_KEY` environment variable. Before running any TTS
+   commands, ask the user to provide the key if it is not already set.
+   Pass it inline with the command (`GOOGLE_TTS_API_KEY='...' cargo run
+   -- dialog ...`) rather than persisting it to any file or settings.
+
+2. **Generate audio** for each dialog and monologue:
    ```bash
    cargo run -- dialog content/<chapter-slug>/<slug>.txt \
        site/chapters/<chapter-slug>/audio/<slug>
    ```
 
-2. **Build the chapter HTML:**
+3. **Build the chapter HTML:**
    ```bash
    cargo run -- build <chapter-slug>
    ```
 
-3. **Rebuild the site index** (full build):
+4. **Rebuild the site index** (full build):
    ```bash
    cargo run -- build
    ```
 
-4. **Run CSP validation:**
+5. **Run CSP validation:**
    ```bash
    cargo run -- check-csp
    ```
 
-5. **Report completion** with:
+6. **Report completion** with:
    - Total audio files generated
    - Total HTML pages generated
    - CSP check result

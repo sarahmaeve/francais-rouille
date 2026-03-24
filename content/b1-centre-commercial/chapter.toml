@@ -1,0 +1,64 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Au Centre Commercial — La Madeleine, Saint-Malo"
+level = "B1"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B1 — Au Centre Commercial"
+
+# --- Carte et Textes ---
+
+[[sections]]
+heading = "Plan et Menus"
+
+[[sections.pages]]
+slug = "00_carte_centre_commercial"
+title = "Plan du Centre Commercial"
+description = "Le plan du centre commercial La Madeleine à Saint-Malo avec ses trois niveaux de boutiques."
+type = "fragment"
+
+[[sections.pages]]
+slug = "05_carte_traiteur"
+title = "Carte Traiteur — Ruellan"
+description = "La carte complète du traiteur artisanal Ruellan à Saint-Malo."
+type = "fragment"
+
+# --- Dialogues ---
+
+[[sections]]
+heading = "Dialogues"
+
+[[sections.pages]]
+slug = "01_courses_carrefour"
+title = "Les Courses au Carrefour"
+description = "Alice et Paul cherchent des oignons, du Coca light et de la viande de bœuf au Carrefour."
+type = "dialog"
+
+[[sections.pages]]
+slug = "02_chaussures_sport"
+title = "À la Recherche de Chaussures de Sport"
+description = "Alice et Paul cherchent des chaussures de course à l'Intersport du centre commercial."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_yves_rocher"
+title = "Chez Yves Rocher — Soins et Shampoings"
+description = "Alice discute de produits de soin et de shampoings réparateurs avec une conseillère."
+type = "dialog"
+
+[[sections.pages]]
+slug = "04_restaurant_traiteur"
+title = "Où Manger ? — Le Traiteur et le Restaurant"
+description = "Alice et Paul cherchent un endroit pour manger et découvrent le traiteur et le restaurant."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire"
+description = "Mots et expressions clés avec traductions en anglais."
+type = "static"

@@ -1,0 +1,49 @@
+At Yves Rocher — Skincare and Shampoos
+
+Characters:
+- Alice — an American tourist looking for skincare products
+- Sales Advisor — a sales advisor at Yves Rocher
+
+Alice: Hello, ma'am. I'm looking for a skincare product for my face and a restorative shampoo.
+
+Sales Advisor: Hello! Welcome to Yves Rocher. For the face cream, what's your skin type?
+
+Alice: I think I have combination skin. My forehead is a bit oily, but my cheeks are quite dry.
+
+Sales Advisor: Okay, that's very common. I'd recommend our moisturizer for combination skin. It's lightweight and it doesn't make your skin greasy.
+
+Alice: That sounds good. And does it protect from the sun too?
+
+Sales Advisor: This one doesn't have sun protection. But we have a version with SPF 30 if you'd like. In Brittany, even when it's overcast, the sun can be strong.
+
+Alice: Oh yes, good idea. I'll take the one with sun protection. How much is it?
+
+Sales Advisor: It's twenty-two euros. And right now, we have an offer: buy two products and the third one is half price.
+
+Alice: Oh, that's nice. So let's talk about the shampoo. My hair is very damaged because of the hard water here.
+
+Sales Advisor: Yes, the water is quite hard in Brittany — it's a classic problem. We have a restorative range that works really well. This shampoo nourishes the hair deeply.
+
+Alice: What's it made from?
+
+Sales Advisor: It's made with shea butter and jojoba oil. Everything is plant-based — that's our specialty at Yves Rocher.
+
+Alice: Great. And is there a conditioner that goes with it?
+
+Sales Advisor: Yes, we have the restorative mask from the same range. You leave it on for five minutes after the shampoo, and it really makes a difference. We recommend it once or twice a week.
+
+Alice: Okay. And with the offer, how much is it for all three products?
+
+Sales Advisor: So, the cream at twenty-two euros, the shampoo at twelve euros, and the restorative mask which is normally fifteen euros comes to seven euros fifty with the discount. That's forty-one euros fifty in total.
+
+Alice: Great, I'll take all three. Do you have a loyalty program?
+
+Sales Advisor: Yes, do you have a loyalty card? We can set one up for you — it's free.
+
+Alice: No, I don't have one, but I'd like to set one up. You never know, I might come back.
+
+Sales Advisor: Perfect, I just need an email address. I'll wrap everything up for you.
+
+Alice: Thank you so much, you've been really helpful.
+
+Sales Advisor: My pleasure. Have a lovely day!
