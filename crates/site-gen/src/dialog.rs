@@ -22,11 +22,16 @@ pub fn parse_dialog(content: &str) -> Vec<DialogLine> {
         .filter_map(|line| {
             let line = line.trim();
             // Skip lines starting with `-` (character descriptions) and
-            // lines that don't contain the ` : ` dialog delimiter.
+            // lines that don't contain a dialog delimiter.
             if line.is_empty() || line.starts_with('-') {
                 return None;
             }
-            let (speaker, text) = line.split_once(" : ")?;
+            // French uses ` : ` (space before colon); English uses `: `.
+            // Try the French delimiter first to avoid splitting on a bare
+            // colon inside the spoken text.
+            let (speaker, text) = line
+                .split_once(" : ")
+                .or_else(|| line.split_once(": "))?;
             let speaker = speaker.trim();
             // Reject non-dialog lines that happen to contain ` : ` (e.g.
             // "Personnages :") by requiring the speaker portion to be a
@@ -134,6 +139,42 @@ Monsieur Duval : Notre éclair au chocolat noir, c'est notre meilleure vente.
         assert_eq!(
             lines[0].text,
             "Il y a tout : des supermarchés, des pharmacies."
+        );
+    }
+
+    #[test]
+    fn parse_english_colon_delimiter() {
+        let input = "\
+Shopping at Carrefour
+
+Characters:
+- Alice — an American tourist
+- Paul — Alice's husband
+
+Alice: Okay, we're finally at Carrefour. It's huge in here, isn't it?
+
+Paul: Yeah, it's much bigger than the little shop near our place.
+";
+        let lines = parse_dialog(input);
+        assert_eq!(lines.len(), 2);
+        assert_eq!(lines[0].speaker, "Alice");
+        assert_eq!(
+            lines[0].text,
+            "Okay, we're finally at Carrefour. It's huge in here, isn't it?"
+        );
+        assert_eq!(lines[1].speaker, "Paul");
+    }
+
+    #[test]
+    fn parse_english_colon_in_text() {
+        // English-style delimiter with a colon later in the text.
+        let input = "Employee: There's everything: supermarkets, pharmacies.";
+        let lines = parse_dialog(input);
+        assert_eq!(lines.len(), 1);
+        assert_eq!(lines[0].speaker, "Employee");
+        assert_eq!(
+            lines[0].text,
+            "There's everything: supermarkets, pharmacies."
         );
     }
 
