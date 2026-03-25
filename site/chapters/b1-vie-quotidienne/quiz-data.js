@@ -137,7 +137,7 @@ LISTENING: [
     },
     {
         type: "topic",
-        audio_src: "audio/07_boulangerie/lines/06_monsieur_duval.mp3",
+        audio_src: "audio/07_boulangerie/lines/10_monsieur_duval.mp3",
         transcript: "C\u2019est une pâte feuilletée croustillante avec une mousse à la noisette du Piémont et un cœur de caramel au beurre salé. On le saupoudre de noisettes torréfiées et d\u2019un peu de fleur de sel.",
         options: [
             "Listing the prices on the bakery menu",
