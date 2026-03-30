@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
     background-color: var(--cream);
     color: var(--text);
     line-height: 1.7;
@@ -33,6 +33,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 1.8rem;
     color: var(--navy);
     margin-bottom: 0.3rem;
@@ -84,6 +85,7 @@ nav.breadcrumb a:hover {
 }
 
 .section-heading {
+    font-family: 'Playfair Display', 'Georgia', serif;
     color: var(--navy);
     margin: 0 0 1rem;
 }

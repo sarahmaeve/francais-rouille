@@ -28,6 +28,10 @@
 /chapters/*/style.css
   Cache-Control: public, max-age=604800
 
+# Font files are immutable — cache aggressively
+/shared/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # Images are stripped and immutable once added — cache aggressively
 /chapters/*/images/*
   Cache-Control: public, max-age=31536000, immutable

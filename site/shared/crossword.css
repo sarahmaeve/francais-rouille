@@ -47,7 +47,7 @@
     left: 2px;
     font-size: 0.6rem;
     color: var(--blue);
-    font-family: sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     pointer-events: none;
     font-weight: bold;
     line-height: 1;
@@ -136,7 +136,7 @@
     font-weight: bold;
     color: var(--navy);
     margin-right: 0.3rem;
-    font-family: sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 0.85rem;
 }
 

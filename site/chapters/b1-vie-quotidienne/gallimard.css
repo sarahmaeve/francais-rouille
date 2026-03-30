@@ -20,7 +20,7 @@ body {
     letter-spacing: 3px;
     color: #8b0000;
     margin-bottom: 0.8rem;
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', 'Georgia', serif;
 }
 .gallimard-name {
     font-size: 1.6rem;
@@ -29,7 +29,7 @@ body {
     text-transform: uppercase;
     color: #1a1a1a;
     margin-bottom: 0.2rem;
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', 'Georgia', serif;
 }
 .gallimard-collection {
     font-size: 0.9rem;
