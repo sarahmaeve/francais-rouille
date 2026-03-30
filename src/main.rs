@@ -1,8 +1,9 @@
 mod build;
 mod dialog;
+mod image;
 mod tts;
 
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 use tts::{AudioFormat, GoogleTts};
 
 use crate::dialog::{french::French, spanish::Spanish, slugify, Language, Voice};
@@ -14,6 +15,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} verify-language [<chapter>] [--lang fr-FR] [--fix] [--strict]  Check/fix typographic rules");
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
+    eprintln!("  {prog} prepare-image <path> --chapter <ch> [--role hero|thumbnail|page] Prepare image for site");
     eprintln!("  {prog} check-csp     [--site DIR]                                  Verify HTML against CSP");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
@@ -44,6 +46,15 @@ fn print_help() {
     println!("           from JPEG and PNG images. <path> can be a single file or a");
     println!("           directory (recursive). Without --output, overwrites in place.");
     println!("           Use --keep-icc to preserve ICC color profiles.");
+    println!("  prepare-image <path> --chapter <chapter> [options]");
+    println!("           Strip metadata, resize, and convert an image to WebP for the");
+    println!("           site. Outputs are placed in site/chapters/<chapter>/images/.");
+    println!("           Use --chapter landing for the landing page hero.");
+    println!("           --role hero|thumbnail|page  Image role (default: page).");
+    println!("           --slug NAME                 Base filename (required for page role).");
+    println!("           --widths W,W                Comma-separated widths (default: 800,400).");
+    println!("           --quality N                 WebP quality 0–100 (default: 80).");
+    println!("           Requires magick (ImageMagick) and cwebp on PATH.");
     println!("  check-csp [--site DIR]");
     println!("           Scan HTML files for Content Security Policy violations.");
     println!("           Checks for inline scripts, inline styles, event handlers,");
@@ -90,7 +101,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "dialog" => run_dialog_mode(&args).await,
         "build" => run_build_mode(&args),
         "verify-language" => run_verify_language(&args),
-        "strip-metadata" => run_strip_metadata(&args),
+        "strip-metadata" => image::run_strip_metadata(&args),
+        "prepare-image" => image::run_prepare_image(&args),
         "check-csp" => run_check_csp(&args),
         _ => {
             print_usage(&args[0]);
@@ -404,77 +416,6 @@ fn run_verify_language(args: &[String]) -> Result<(), Box<dyn std::error::Error>
     Ok(())
 }
 
-fn run_strip_metadata(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
-    if args.len() < 3 {
-        eprintln!(
-            "Usage: {} strip-metadata <path> [--output DIR] [--keep-icc]",
-            args[0]
-        );
-        std::process::exit(1);
-    }
-
-    let input_path = PathBuf::from(&args[2]);
-    let mut output_dir: Option<PathBuf> = None;
-    let mut keep_icc = false;
-
-    let mut i = 3;
-    while i < args.len() {
-        match args[i].as_str() {
-            "--output" | "-o" => {
-                i += 1;
-                output_dir = Some(PathBuf::from(
-                    args.get(i).ok_or("--output requires a value")?,
-                ));
-            }
-            "--keep-icc" => {
-                keep_icc = true;
-            }
-            other => {
-                return Err(format!("unknown flag: {other}").into());
-            }
-        }
-        i += 1;
-    }
-
-    let opts = image_strip::StripOptions { keep_icc };
-
-    // Collect files to process.
-    let files = if input_path.is_dir() {
-        collect_images(&input_path)?
-    } else if input_path.is_file() {
-        vec![input_path.clone()]
-    } else {
-        return Err(format!("path does not exist: {}", input_path.display()).into());
-    };
-
-    if files.is_empty() {
-        eprintln!("No JPEG or PNG files found in {}", input_path.display());
-        std::process::exit(1);
-    }
-
-    let mut total_saved: u64 = 0;
-    for file in &files {
-        let out = match &output_dir {
-            Some(dir) => {
-                let name = file.file_name().unwrap();
-                dir.join(name)
-            }
-            None => file.clone(), // overwrite in place
-        };
-
-        let report = image_strip::strip_metadata(file, &out, &opts)?;
-        println!("{report}");
-        total_saved += report.bytes_before.saturating_sub(report.bytes_after);
-    }
-
-    println!(
-        "\nProcessed {} file(s), saved {} bytes total.",
-        files.len(),
-        total_saved
-    );
-    Ok(())
-}
-
 fn run_check_csp(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     let mut site_dir = PathBuf::from("site");
 
@@ -515,21 +456,6 @@ fn run_check_csp(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         );
         std::process::exit(1);
     }
-}
-
-fn collect_images(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error> {
-    let mut results = Vec::new();
-    for entry in std::fs::read_dir(dir)? {
-        let entry = entry?;
-        let path = entry.path();
-        if path.is_dir() {
-            results.extend(collect_images(&path)?);
-        } else if image_strip::detect_format(&path).is_some() {
-            results.push(path);
-        }
-    }
-    results.sort();
-    Ok(results)
 }
 
 fn truncate(s: &str, max: usize) -> String {
