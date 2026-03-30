@@ -193,11 +193,14 @@ pub fn run_prepare_image(args: &[String]) -> Result<(), Box<dyn std::error::Erro
     };
     std::fs::create_dir_all(&output_dir)?;
 
-    // Step 1: Strip metadata to a temp file.
+    // Step 1: Auto-orient (bake EXIF rotation into pixels), then strip metadata.
     let temp_dir = tempfile::tempdir()?;
+    let oriented_path = temp_dir.path().join("oriented.jpg");
+    run_magick(&input_path, &oriented_path, &["-auto-orient"])?;
+
     let stripped_path = temp_dir.path().join("stripped.jpg");
     let strip_report =
-        image_strip::strip_metadata(&input_path, &stripped_path, &image_strip::StripOptions::default())?;
+        image_strip::strip_metadata(&oriented_path, &stripped_path, &image_strip::StripOptions::default())?;
     println!("Stripped metadata: {strip_report}");
 
     // Step 2: Generate outputs based on role.

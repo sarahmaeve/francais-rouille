@@ -19,29 +19,54 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 50%, #4a6491 100%);
+    position: relative;
+    overflow: hidden;
+    min-height: 320px;
+}
+
+.hero-slides {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hero-img.active {
+    opacity: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(26, 39, 68, 0.75) 0%,
+        rgba(44, 62, 107, 0.6) 50%,
+        rgba(74, 100, 145, 0.55) 100%
+    );
+}
+
+.hero-text {
+    position: relative;
     color: #fff;
     text-align: center;
     padding: 4rem 2rem 3rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background:
-        radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.15) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
 }
 
 .hero h1 {
     font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 2.8rem;
     margin-bottom: 0.3rem;
-    position: relative;
     letter-spacing: 0.02em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 .accent {
@@ -52,14 +77,14 @@ body {
     font-size: 1.15rem;
     font-style: italic;
     opacity: 0.9;
-    position: relative;
     margin-bottom: 0.5rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero .tagline {
     font-size: 0.95rem;
     opacity: 0.7;
-    position: relative;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .content {

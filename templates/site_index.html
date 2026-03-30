@@ -16,9 +16,18 @@
 </head>
 <body>
     <div class="hero">
-        <h1>Français <span class="accent">Rouillé</span></h1>
-        <p class="subtitle">{{ site.subtitle }}</p>
-        <p class="tagline">{{ site.tagline }}</p>
+        <div class="hero-slides">
+            <img class="hero-img active" src="shared/images/rooftops-sunset-800w.webp" alt="" srcset="shared/images/rooftops-sunset-400w.webp 400w, shared/images/rooftops-sunset-800w.webp 800w" sizes="100vw">
+            <img class="hero-img" src="shared/images/pantheon-800w.webp" alt="" srcset="shared/images/pantheon-400w.webp 400w, shared/images/pantheon-800w.webp 800w" sizes="100vw">
+            <img class="hero-img" src="shared/images/paris-street-800w.webp" alt="" srcset="shared/images/paris-street-400w.webp 400w, shared/images/paris-street-800w.webp 800w" sizes="100vw">
+            <img class="hero-img" src="shared/images/church-night-800w.webp" alt="" srcset="shared/images/church-night-400w.webp 400w, shared/images/church-night-800w.webp 800w" sizes="100vw">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>Français <span class="accent">Rouillé</span></h1>
+            <p class="subtitle">{{ site.subtitle }}</p>
+            <p class="tagline">{{ site.tagline }}</p>
+        </div>
     </div>
 
     <div class="content">
@@ -46,5 +55,6 @@
 
     <script src="shared/flags.js"></script>
     <script src="shared/analytics.js"></script>
+    <script src="shared/hero-slides.js"></script>
 </body>
 </html>
