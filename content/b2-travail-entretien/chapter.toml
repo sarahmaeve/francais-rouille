@@ -1,0 +1,70 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Le Monde du Travail — Entretien, Négociation, Évaluation"
+level = "B2"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B2 — Le Monde du Travail"
+
+# --- Contexte ---
+
+[[sections]]
+heading = "Contexte"
+
+[[sections.pages]]
+slug = "00_lettre_offre"
+title = "Lettre de Motivation et Offre d'Emploi"
+description = "La lettre de Nadia et l'annonce LinkedIn qui l'ont précédée, avec le lexique du recrutement à la française."
+type = "fragment"
+
+# --- Dialogues ---
+
+[[sections]]
+heading = "Chez Pixelune — Une Carrière en Quatre Scènes"
+
+[[sections.pages]]
+slug = "01_entretien_embauche"
+title = "L'Entretien d'Embauche"
+description = "Nadia Lefort est reçue par la DRH et le PDG de Pixelune pour un poste d'ingénieure senior."
+type = "dialog"
+
+[[sections.pages]]
+slug = "02_negociation_salariale"
+title = "La Négociation Salariale"
+description = "Nadia négocie au téléphone la proposition d'embauche : fixe, variable, prime de bienvenue et clause de révision."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_entretien_annuel"
+title = "L'Entretien Annuel d'Évaluation"
+description = "Un an plus tard, Nadia fait le point avec Clément et demande une promotion au poste de lead engineer."
+type = "dialog"
+
+[[sections.pages]]
+slug = "04_pot_depart"
+title = "Le Pot de Départ de Marc"
+description = "Après vingt-huit ans dans l'entreprise, Marc part à la retraite. Discours, émotion et charcuterie."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B2 — Le Monde du Travail"
+description = "Mots et expressions clés du travail en entreprise française."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez votre compréhension"
+description = "Choix multiple, texte à trous et compréhension orale."
+type = "static"
+
+[[sections.pages]]
+slug = "flashcards"
+title = "Flashcards"
+description = "Révisez le vocabulaire avec des cartes mémoire."
+type = "static"

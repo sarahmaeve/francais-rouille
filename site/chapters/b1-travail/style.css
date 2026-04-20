@@ -1,0 +1,134 @@
+/* b1-travail — chapter-specific overrides */
+
+/* The email fragment reuses the Gmail window styling already used by
+   b1-appartement. Those classes are chapter-scoped at the moment, so
+   we keep a local copy here. If we ever promote them to shared, we
+   can strip this block. */
+
+.gmail-window {
+    background: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #202124;
+}
+
+.gmail-toolbar {
+    background: #f2f6fc;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.gmail-toolbar .gmail-back { color: #5f6368; font-size: 1.2rem; cursor: default; }
+.gmail-toolbar .gmail-actions { display: flex; gap: 0.6rem; color: #5f6368; font-size: 0.8rem; }
+.gmail-toolbar .gmail-actions span { padding: 0.2rem 0.5rem; border-radius: 4px; cursor: default; }
+
+.gmail-subject { padding: 1rem 1.2rem 0.5rem; font-size: 1.25rem; font-weight: 400; color: #202124; }
+
+.gmail-label {
+    display: inline-block;
+    background: #e8eaed;
+    color: #5f6368;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.gmail-meta {
+    padding: 0.5rem 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    border-bottom: 1px solid #dadce0;
+}
+
+.gmail-avatar {
+    width: 40px; height: 40px;
+    background: #1a73e8; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 500; font-size: 1rem; flex-shrink: 0;
+}
+
+.gmail-sender-info { flex: 1; }
+.gmail-sender-name { font-weight: 500; color: #202124; }
+.gmail-sender-email { color: #5f6368; font-size: 0.8rem; }
+.gmail-to { color: #5f6368; font-size: 0.8rem; }
+.gmail-date { color: #5f6368; font-size: 0.8rem; white-space: nowrap; }
+
+.gmail-body { padding: 1.2rem 1.2rem 1.2rem 4.2rem; line-height: 1.7; }
+.gmail-body p { margin-bottom: 0.8rem; }
+.gmail-body .signature { margin-top: 1.2rem; color: #5f6368; font-size: 0.85rem; }
+
+@media (max-width: 480px) {
+    .gmail-body { padding: 1rem; }
+}
+
+/* --- Email fragment: side-panel glossary layout --- */
+
+.email-and-glossary {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .email-and-glossary {
+        grid-template-columns: 1fr;
+    }
+}
+
+.email-tips {
+    background: #faf6ef;
+    border-left: 4px solid var(--navy);
+    border-radius: 0 6px 6px 0;
+    padding: 1.5rem 1.8rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.email-tips h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.email-tips-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-tips-list li {
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.email-tips-list li::before {
+    content: '✶';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent, #c64b3a);
+    font-weight: 700;
+}
+
+.email-tips-list strong {
+    color: #1f2a36;
+}

@@ -1,0 +1,60 @@
+L’Entretien d’Embauche chez Pixelune
+
+Personnages :
+- Hélène Barbier — la directrice des ressources humaines de Pixelune
+- Clément Rivière — le PDG cofondateur de Pixelune
+- Nadia Lefort — une ingénieure candidate au poste de Senior Data-Viz
+
+Hélène : Bonjour madame Lefort, merci d’être venue. Je vous en prie, installez-vous. Je suis Hélène Barbier, DRH, et voici Clément Rivière, notre président et cofondateur.
+
+Clément : Bonjour, madame, enchanté. Je vous remercie d’avoir accepté notre invitation. On va essayer de rendre cet entretien le plus constructif possible pour tout le monde.
+
+Nadia : Bonjour à tous les deux. Merci à vous de me recevoir. J’étais très curieuse de découvrir vos locaux, et je dois dire que l’endroit est vraiment agréable.
+
+Hélène : Merci ! Pour commencer, pourriez-vous nous parler rapidement de votre parcours, et nous dire ce qui vous a donné envie de postuler chez nous ?
+
+Nadia : Bien sûr. J’ai fait une école d’ingénieurs à Compiègne, puis un mastère spécialisé en data science à Télécom Paris. J’ai commencé comme data analyst dans un cabinet de conseil, où je suis restée deux ans. Ensuite, je suis passée en interne chez un acteur de la presse en ligne, où j’occupe actuellement un poste de lead data-viz depuis bientôt quatre ans.
+
+Clément : Quatre ans, c’est une belle durée. Qu’est-ce qui vous pousse à partir ?
+
+Nadia : Plusieurs choses, en fait. D’une part, j’ai le sentiment d’avoir un peu fait le tour du poste, techniquement parlant. Nos outils sont matures, nos pipelines sont en place, et les nouveaux projets se ressemblent. D’autre part, je cherche un environnement où la visualisation de données est vraiment au cœur du produit, et pas juste un support pour la rédaction. Ce que vous faites chez Pixelune correspond parfaitement à cette envie.
+
+Hélène : Pouvez-vous nous parler d’une réalisation dont vous êtes particulièrement fière ?
+
+Nadia : Oui, je pense à une grande enquête interactive qu’on a publiée sur les inégalités territoriales en France, en 2024. J’ai conçu l’architecture de visualisation de bout en bout, depuis le choix des représentations jusqu’à l’optimisation pour le mobile. Le projet a été repris par plusieurs médias européens et a remporté un prix aux Data Journalism Awards.
+
+Clément : Excellent. Et à l’inverse, est-ce que vous pourriez nous raconter un échec dont vous avez tiré des enseignements ?
+
+Nadia : Oui, volontiers. En 2023, j’avais porté un projet de refonte complète de notre bibliothèque interne de composants graphiques. Techniquement, c’était une belle idée. Mais je n’avais pas suffisamment consulté les journalistes en amont, et au moment du déploiement, ils se sont retrouvés face à des outils qu’ils trouvaient moins intuitifs que les anciens. On a dû faire marche arrière sur plusieurs choix. Ce que j’en ai tiré, c’est qu’une bonne architecture technique ne suffit pas — il faut co-construire avec les utilisateurs finaux, même quand ils ne sont pas techniques.
+
+Clément : C’est une leçon importante, en effet. Dans votre poste actuel, comment gérez-vous les désaccords au sein d’une équipe technique ?
+
+Nadia : J’essaie de ramener la discussion sur les faits et sur les critères. Quand deux approches s’opposent, je propose qu’on formalise ensemble ce qu’on attend vraiment — performance, maintenabilité, simplicité d’usage — et qu’on évalue chaque option sur ces axes. Cela étant, je sais aussi qu’il y a des moments où il faut trancher, et si la décision revient à moi, je la prends, quitte à revenir dessus plus tard si les faits m’ont donné tort.
+
+Hélène : J’aimerais revenir sur un point concret. Pouvez-vous nous parler d’une situation où vous avez dû défendre une décision qui n’était pas populaire ?
+
+Nadia : Oui, il y en a une qui me vient à l’esprit. Au moment de la refonte dont je parlais, j’avais pris la décision de geler toute nouvelle fonctionnalité pendant trois mois, le temps de stabiliser la base. Les journalistes n’étaient pas contents, la rédaction en chef encore moins. Mais j’étais convaincue qu’on accumulait une dette technique qui allait nous coûter bien plus cher si on n’agissait pas. J’ai présenté un document chiffré, avec les coûts de maintenance projetés sur douze mois, et j’ai défendu ma position en comité. Au bout du compte, la direction a validé le gel. Après coup, la qualité du code a nettement progressé.
+
+Clément : Merci. De notre côté, avez-vous des questions à nous poser sur le poste ou sur Pixelune ?
+
+Nadia : Oui, plusieurs. D’abord, quelle autonomie technique aurait la personne sur ce poste ? Je veux dire, sur les choix d’outils, de librairies, d’architecture ?
+
+Clément : Beaucoup d’autonomie, concrètement. On a une charte technique assez légère, qu’on fait évoluer collectivement. Toutefois, pour les gros choix structurants, on passe par un comité d’architecture, qui se réunit tous les deux mois.
+
+Nadia : Je vois. Ensuite, concernant le télétravail ?
+
+Hélène : Nous sommes sur un modèle hybride, trois jours au bureau, deux jours à distance. Les jours au bureau ne sont pas imposés, mais on demande que le mardi soit un jour commun, parce que c’est le jour des rituels d’équipe.
+
+Nadia : Parfait. Et enfin, sur la formation continue ?
+
+Hélène : Nous avons un budget formation individuel de mille cinq cents euros par an, auquel s’ajoutent des formations internes. Nous finançons également les conférences, dans la limite d’une par an par personne.
+
+Nadia : Merci, ces éléments sont très clairs. Et pour la suite ?
+
+Hélène : Nous avons un ou deux autres candidats à recevoir cette semaine. Je vous recontacte d’ici une dizaine de jours, quel que soit le résultat. Si nous poursuivons avec vous, il y aura une dernière rencontre plus technique avec l’équipe data.
+
+Nadia : Très bien. Je vous remercie pour cet échange, c’était vraiment intéressant de mon côté.
+
+Clément : Merci à vous, madame Lefort. Bonne fin de journée.
+
+Hélène : Je vous raccompagne. Par ici, s’il vous plaît.

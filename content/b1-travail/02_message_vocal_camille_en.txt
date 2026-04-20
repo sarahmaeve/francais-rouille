@@ -1,0 +1,6 @@
+Voicemail to a Colleague
+
+Characters:
+- Maeve Carrick — leaving an urgent message on Camille's voicemail
+
+Maeve: Yes, hi Camille, it's Maeve, it's quarter to eleven. I know you're in a client meeting all morning, so I'm leaving you a message — sorry to bother you. It's actually about the Garonne Énergie homepage mockup. I finished version two last night, with the feedback Raphaël passed on to me, and someone absolutely needs to validate it before one, because our deliverable goes to the client at two. So, if you happen to have ten minutes between two meetings, that would be great. Otherwise, two options: either you send me a quick note on Slack and I'll tell you exactly where it is on the drive, or you call me back before one. My number is zero six, seventeen, fifty-three, eighty-two, sixty-four. I repeat: zero six, seventeen, fifty-three, eighty-two, sixty-four. There we go. Thanks so much Camille, good luck with your meeting, speak to you later.

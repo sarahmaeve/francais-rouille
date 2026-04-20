@@ -1,7 +1,5 @@
 use std::collections::HashMap;
 
-use rand::seq::SliceRandom;
-
 use crate::dialog::{DialogLine, Gender};
 
 /// A TTS voice identified by its language code and Google Cloud voice name.
@@ -76,32 +74,60 @@ pub fn parse_character_genders(content: &str, lang: &dyn Language) -> HashMap<St
     genders
 }
 
-/// Build an ordered voice list: preferred voices first (in order), then
-/// the remaining voices shuffled for variety.
-fn build_voice_order(preferred: &[Voice], rest: &[Voice]) -> Vec<Voice> {
-    let mut rng = rand::rng();
+/// Build an ordered voice list: preferred voices first (in their
+/// declared order, because Studio voices handle French TTS better than
+/// the Chirp3-HD / Neural2 / Wavenet alternatives), then the remaining
+/// voices permuted deterministically by `seed` for variety.
+///
+/// The ordering of the *fallback* tier is what changes per call: we
+/// want the same dialog to produce the same voice assignments every
+/// time (idempotent re-synth), but two different dialogs with the same
+/// character count should not assign the same fallback voices to their
+/// second-speaker-of-a-gender.
+///
+/// `seed` is typically the dialog slug.
+fn build_voice_order(preferred: &[Voice], rest: &[Voice], seed: &str) -> Vec<Voice> {
     let mut ordered: Vec<Voice> = preferred.to_vec();
     let mut fallback: Vec<Voice> = rest.to_vec();
-    fallback.shuffle(&mut rng);
+    // Sort fallbacks by hash(seed || voice.name). Same seed → same
+    // order, always. Different seeds → different permutations, because
+    // the hash is a strong function of both inputs.
+    fallback.sort_by_cached_key(|v| {
+        let mut hasher = blake3::Hasher::new();
+        hasher.update(seed.as_bytes());
+        hasher.update(b"\0");
+        hasher.update(v.name.as_bytes());
+        // 8 bytes of the digest is more than enough to order ~20 voices
+        // without ties, and fits in a [u8; 8] sort key.
+        let mut key = [0u8; 8];
+        key.copy_from_slice(&hasher.finalize().as_bytes()[..8]);
+        key
+    });
     ordered.extend(fallback);
     ordered
 }
 
 /// Assign distinct voices to speakers based on detected gender.
 ///
-/// Preferred voices (e.g. Studio) are assigned first. When a dialog has
-/// more speakers of one gender than there are preferred voices, additional
-/// speakers receive randomly-selected voices from the rest of the pool.
+/// Preferred voices (e.g. Studio) are assigned first — a dialog with a
+/// single speaker per gender always uses the preferred voice, which is
+/// the best-sounding Google voice for each language. When a dialog has
+/// more speakers of one gender than there are preferred voices, the
+/// additional speakers receive voices from the fallback pool, in an
+/// order that is deterministic per `dialog_slug` (so re-runs reproduce
+/// the same assignments).
+///
 /// Each character keeps the same voice throughout the dialog.
 pub fn assign_voices(
     lines: &[DialogLine],
     genders: &HashMap<String, Gender>,
     lang: &dyn Language,
+    dialog_slug: &str,
 ) -> HashMap<String, Voice> {
     let pool = lang.voice_pool();
 
-    let female_voices = build_voice_order(pool.preferred_female, pool.female);
-    let male_voices = build_voice_order(pool.preferred_male, pool.male);
+    let female_voices = build_voice_order(pool.preferred_female, pool.female, dialog_slug);
+    let male_voices = build_voice_order(pool.preferred_male, pool.male, dialog_slug);
 
     let mut map = HashMap::new();
     let mut female_idx: usize = 0;
@@ -226,7 +252,7 @@ Carlos : Buenos días.
 ";
         let lines = parse_dialog(content);
         let genders = parse_character_genders(content, &TestLang);
-        let voices = assign_voices(&lines, &genders, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang, "test_slug");
         assert_eq!(voices.len(), 2);
         assert!(all_female().contains(&voices["María"]));
         assert!(all_male().contains(&voices["Carlos"]));
@@ -244,7 +270,7 @@ Eva : Hola.
 ";
         let lines = parse_dialog(content);
         let genders = parse_character_genders(content, &TestLang);
-        let voices = assign_voices(&lines, &genders, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang, "test_slug");
         assert!(all_female().contains(&voices["Ana"]));
         assert!(all_female().contains(&voices["Eva"]));
         assert_ne!(voices["Ana"], voices["Eva"]);
@@ -257,7 +283,7 @@ Eva : Hola.
             DialogLine { speaker: "Stranger".into(), text: "Hey".into() },
         ];
         let genders = HashMap::new();
-        let voices = assign_voices(&lines, &genders, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang, "test_slug");
         assert!(all_female().contains(&voices["Unknown"]));
         assert!(all_male().contains(&voices["Stranger"]));
     }
@@ -272,7 +298,7 @@ Isabelle : Bienvenue.
 ";
         let lines = parse_dialog(content);
         let genders = parse_character_genders(content, &TestLang);
-        let voices = assign_voices(&lines, &genders, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang, "test_slug");
         assert_eq!(voices["Isabelle"].name, "xx-XX-Studio-F");
     }
 
@@ -288,7 +314,7 @@ Carlos : Buenos días.
 ";
         let lines = parse_dialog(content);
         let genders = parse_character_genders(content, &TestLang);
-        let voices = assign_voices(&lines, &genders, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang, "test_slug");
         assert_eq!(voices["María"].name, "xx-XX-Studio-F");
         assert_eq!(voices["Carlos"].name, "xx-XX-Studio-M");
     }
@@ -305,11 +331,74 @@ Eva : Hola.
 ";
         let lines = parse_dialog(content);
         let genders = parse_character_genders(content, &TestLang);
-        let voices = assign_voices(&lines, &genders, &TestLang);
+        let voices = assign_voices(&lines, &genders, &TestLang, "test_slug");
         // First female speaker gets preferred.
         assert_eq!(voices["Ana"].name, "xx-XX-Studio-F");
         // Second female speaker gets a fallback voice.
         assert!(TEST_FEMALE.contains(&voices["Eva"]),
             "second speaker should get a fallback voice, got: {}", voices["Eva"].name);
+    }
+
+    /// Same dialog slug → same voice assignments, every time.
+    ///
+    /// This is the contract that makes cached re-synth possible: if the
+    /// dialog hasn't changed, running `assign_voices` again must yield
+    /// the same voice per speaker — otherwise the `audio_hash` for each
+    /// line would shift and every line would become a cache miss.
+    #[test]
+    fn same_slug_yields_same_voices() {
+        let content = "\
+- Ana — una doctora
+- Eva — una abogada
+
+Ana : Hola.
+
+Eva : Hola.
+";
+        let lines = parse_dialog(content);
+        let genders = parse_character_genders(content, &TestLang);
+        let first  = assign_voices(&lines, &genders, &TestLang, "chapter_05");
+        let second = assign_voices(&lines, &genders, &TestLang, "chapter_05");
+        assert_eq!(first["Ana"], second["Ana"]);
+        assert_eq!(first["Eva"], second["Eva"]);
+    }
+
+    /// Different dialog slugs permute the fallback pool — so two
+    /// different dialogs with two female speakers don't both put the
+    /// same fallback voice on their second-speaker. Provides variety
+    /// across the repo without sacrificing reproducibility within a
+    /// dialog.
+    #[test]
+    fn different_slugs_can_produce_different_fallback_voices() {
+        let content = "\
+- Ana — una doctora
+- Eva — una abogada
+
+Ana : Hola.
+
+Eva : Hola.
+";
+        let lines = parse_dialog(content);
+        let genders = parse_character_genders(content, &TestLang);
+
+        // Collect Eva's voice across several distinct slugs. With a
+        // 2-element fallback pool we expect to see both voices appear.
+        let eva_voices: std::collections::HashSet<String> = ["a", "b", "c", "d", "e", "f", "g", "h"]
+            .iter()
+            .map(|slug| {
+                assign_voices(&lines, &genders, &TestLang, slug)["Eva"].name.to_string()
+            })
+            .collect();
+
+        // In a 2-voice fallback pool, 8 distinct slugs should cover both
+        // voices with probability ~1 − 2 × 0.5⁸ ≈ 0.992. If this test
+        // flakes, either the hash has stopped acting as a good
+        // permutation or we got extraordinarily unlucky.
+        assert_eq!(
+            eva_voices.len(),
+            2,
+            "expected the second-speaker voice to vary across different \
+             dialog slugs, but it was always: {eva_voices:?}",
+        );
     }
 }

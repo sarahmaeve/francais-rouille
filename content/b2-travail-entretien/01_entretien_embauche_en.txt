@@ -1,0 +1,60 @@
+The Job Interview at Pixelune
+
+Characters:
+- Hélène Barbier — the HR director at Pixelune
+- Clément Rivière — the CEO and co-founder of Pixelune
+- Nadia Lefort — an engineer interviewing for the Senior Data-Viz role
+
+Hélène: Good morning, Ms. Lefort, thank you for coming in. Please, have a seat. I'm Hélène Barbier, HR director, and this is Clément Rivière, our CEO and co-founder.
+
+Clément: Good morning, pleased to meet you. Thank you for accepting our invitation. We'll do our best to make this interview as useful as possible for everyone.
+
+Nadia: Good morning to both of you. Thank you for having me. I was really curious to see your offices, and I have to say, this is a lovely space.
+
+Hélène: Thank you! To start, could you walk us briefly through your career, and tell us what drew you to apply with us?
+
+Nadia: Of course. I did an engineering school in Compiègne, then a specialised master's in data science at Télécom Paris. I started out as a data analyst at a consulting firm, where I stayed for two years. Then I moved in-house at an online news outlet, where I've been a lead data-viz for almost four years.
+
+Clément: Four years — that's a solid run. What's pushing you to leave?
+
+Nadia: A few things, actually. On one hand, I feel I've reached the limits of the role, technically. Our tools are mature, our pipelines are stable, and new projects look very much like the previous ones. On the other hand, I'm looking for an environment where data visualisation is genuinely at the heart of the product, not just a support function for editorial work. What you're doing at Pixelune fits that ambition exactly.
+
+Hélène: Could you tell us about an achievement you are particularly proud of?
+
+Nadia: Yes, I think of a large interactive investigation we published on territorial inequalities in France, in 2024. I designed the visualisation architecture end-to-end, from choosing the right visual forms to optimising for mobile. The project was picked up by several European news outlets and won an award at the Data Journalism Awards.
+
+Clément: Excellent. And conversely, could you tell us about a failure you learned from?
+
+Nadia: Yes, happily. In 2023, I'd led a complete overhaul of our internal graphics component library. Technically, it was a good idea. But I hadn't consulted the journalists enough up front, and when we rolled it out, they found themselves facing tools they considered less intuitive than the old ones. We had to roll back several decisions. What I took from that is: good technical architecture isn't enough — you have to co-build with the end users, even when they aren't technical.
+
+Clément: That's an important lesson, indeed. In your current role, how do you handle disagreements within a technical team?
+
+Nadia: I try to bring the discussion back to facts and to criteria. When two approaches clash, I suggest we formalise together what we actually want — performance, maintainability, ease of use — and score each option on those axes. That said, I also know there are moments when someone has to decide, and if the call is mine, I make it — even if I have to come back on it later, if the facts prove me wrong.
+
+Hélène: I'd like to come back to something concrete. Could you tell us about a time when you had to defend an unpopular decision?
+
+Nadia: Yes, one comes to mind. During the overhaul I just mentioned, I decided to freeze all new features for three months, to stabilise the codebase. The journalists weren't happy, and the editor-in-chief even less so. But I was convinced we were accumulating technical debt that would cost us far more if we didn't act. I presented a costed document, with maintenance projections over twelve months, and I defended my position in committee. In the end, management approved the freeze. In hindsight, the quality of the code improved significantly.
+
+Clément: Thank you. On our side — do you have any questions for us about the role or about Pixelune?
+
+Nadia: Yes, several. First, how much technical autonomy would the person in this role have — on choice of tools, libraries, architecture?
+
+Clément: A lot of autonomy, in practice. We have a fairly light technical charter, which we evolve collectively. However, for major structural decisions, we go through an architecture committee that meets every two months.
+
+Nadia: I see. Next, about remote work?
+
+Hélène: We follow a hybrid model — three days in the office, two days remote. The office days aren't fixed, but we ask that Tuesday be a shared day, because that's when we run our team rituals.
+
+Nadia: Perfect. And finally — on continuing education?
+
+Hélène: We have an individual training budget of one thousand five hundred euros per year, on top of internal training. We also fund conferences, capped at one per person per year.
+
+Nadia: Thank you, that's all very clear. And what are the next steps?
+
+Hélène: We have one or two other candidates to see this week. I'll get back to you within around ten days, whatever the outcome. If we continue with you, there will be a final, more technical meeting with the data team.
+
+Nadia: Very good. Thank you for the conversation — it was genuinely interesting from my side too.
+
+Clément: Thank you, Ms. Lefort. Have a good rest of the day.
+
+Hélène: Let me show you out. This way, please.

@@ -1,0 +1,59 @@
+L’Entretien Annuel d’Évaluation
+
+Personnages :
+- Clément Rivière — le PDG de Pixelune, qui mène l’entretien annuel
+- Nadia Lefort — désormais senior data-viz engineer chez Pixelune depuis un an
+
+Clément : Bonjour Nadia, entre, installe-toi. Café, thé, rien ?
+
+Nadia : Un verre d’eau, volontiers. Merci.
+
+Clément : Voilà. Alors, ton entretien annuel. Ça passe vite, quand même, un an. J’ai relu hier soir tes objectifs de l’an dernier, et tout ce que tu as livré. Je te propose qu’on commence par mon retour à moi, puis qu’on te laisse le temps de faire le tien, et enfin qu’on parle de la suite. Ça te convient ?
+
+Nadia : Parfait, oui.
+
+Clément : Bon. Première chose : je veux te dire que ton intégration a vraiment été remarquable. Tu avais fixé, avec Hélène et moi, trois grands objectifs pour ta première année — la refonte du module de graphes temporels, l’encadrement technique de la nouvelle recrue, et la contribution à la roadmap produit. Sur les trois, on est largement au rendez-vous, voire au-delà.
+
+Nadia : Merci, c’est agréable à entendre.
+
+Clément : Sur la refonte, ce qui m’a frappé, c’est la rigueur de ta démarche. Tu avais proposé ce projet dès janvier, et nous l’avons livré fin juin, dans les délais et avec une qualité de code qui a vraiment élevé le niveau de l’équipe. Les retours des clients sont excellents — on a mesuré une baisse de vingt pour cent du temps de rendu sur les gros datasets, c’est du concret.
+
+Nadia : Oui, sur ce projet, ce qui a fait la différence, c’est qu’on a pris le temps de faire des ateliers avec les utilisateurs en amont. J’avais beaucoup appris de mon expérience précédente, où j’avais justement zappé cette étape.
+
+Clément : Exactement. Sur l’encadrement de Julien, là aussi, je trouve que tu as fait un travail très juste. Il me disait la semaine dernière qu’il avait énormément progressé, et surtout qu’il se sentait en confiance pour prendre des initiatives. Ce n’est pas évident, de transmettre sans étouffer.
+
+Nadia : Julien est quelqu’un de solide, il est volontaire, il pose les bonnes questions. J’ai essayé de lui laisser de la marge tout en étant disponible quand il en avait besoin.
+
+Clément : Cela étant dit, je voudrais qu’on parle aussi de ce qui peut progresser. Rien de dramatique, on est d’accord. Deux choses principales. La première, c’est la communication transverse. Tu es très bien ancrée dans la tech, mais on remarque parfois — et on me le remonte — que les échanges avec le produit et le commercial pourraient être plus fluides. Tu as tendance à rester dans ton couloir.
+
+Nadia : D’accord, c’est un retour que je prends. Concrètement, tu penses à quoi ?
+
+Clément : Par exemple, quand il y a un changement de priorité côté produit, on gagnerait à ce que tu participes plus tôt aux discussions, pour challenger ou infléchir, plutôt que de découvrir la décision en sprint planning. Je pense qu’il y a une marge de progression sur ta présence dans ces moments-là.
+
+Nadia : Je vois. C’est vrai que j’ai tendance à laisser Jean s’en occuper, et à me concentrer sur la partie technique. Je vais travailler dessus.
+
+Clément : Deuxième point : la posture de lead. Tu encadres très bien Julien, comme je te le disais. Mais la question qui va se poser dans les six prochains mois, c’est comment tu te positionnes par rapport à une équipe plus large. Ton périmètre va probablement s’étendre.
+
+Nadia : Justement, c’est un point que je voulais aborder. Je voulais te parler de mon évolution, et du fait que je me sens prête, aujourd’hui, à prendre la fonction de lead engineer sur toute la partie data-viz. Avec, évidemment, une revalorisation salariale et une montée en responsabilité formalisée.
+
+Clément : Je m’attendais à ce que tu me poses la question, et je comprends parfaitement la démarche. Je vais être franc : sur le principe, je suis favorable. Sur le timing, il faut qu’on en discute sérieusement. Marc part à la retraite dans six mois, et sa succession, c’est un vrai enjeu. Donc ce que je te propose, c’est qu’on construise un plan clair sur les six prochains mois.
+
+Nadia : Je t’écoute.
+
+Clément : Je te propose qu’on fixe trois jalons. D’ici trois mois, tu auras repris en main les rituels d’équipe data-viz, tu te seras positionnée plus fortement dans les discussions produit — on en a déjà parlé —, et tu auras suivi une formation en leadership technique, que je vais te financer sur le budget formation étendu. D’ici six mois, tu auras mené ta première évaluation annuelle pour Julien, et tu auras présenté ta vision pour l’équipe à l’occasion d’un séminaire interne. Au terme de ces six mois, si tout se passe comme je l’imagine, on passe officiellement au poste de lead, avec une revalorisation que je situerais autour de dix pour cent du fixe.
+
+Nadia : C’est un plan ambitieux, mais juste. Je le prends. Une question, sur le séminaire — c’est un format imposé ou je peux proposer quelque chose de plus original ?
+
+Clément : Carte blanche. Surprends-nous.
+
+Nadia : Bien. Et sur la formation, tu as une recommandation ou c’est moi qui propose ?
+
+Clément : Propose, et on en discute. Il y a un programme à l’École des Mines qui a bonne réputation, j’en ai entendu parler récemment, mais regarde ce que tu trouves.
+
+Nadia : D’accord. Merci pour ce cadrage, c’est très clair. Je repars avec de la visibilité.
+
+Clément : C’est l’idée. Je te propose qu’on refasse un point informel dans trois mois, pour mesurer l’avancée. On formalisera tout ça par écrit, évidemment.
+
+Nadia : Parfait. Merci Clément.
+
+Clément : Merci à toi, Nadia. Tu fais du beau boulot.

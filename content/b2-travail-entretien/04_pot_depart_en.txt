@@ -1,0 +1,61 @@
+Marc's Farewell Party
+
+Characters:
+- Clément Rivière — the CEO, giving the speech
+- Marc Toussaint — the engineer retiring after twenty-eight years
+- Nadia Lefort — Marc's successor as head of the data-viz team
+- Julien — a junior engineer on the data-viz team
+
+Clément: Everyone, please, we're ready to start. Come on, gather round. Right. If the open space could quiet down just a touch, we'll open the champagne properly — I think that would please Marc.
+
+Marc: Oh, don't mind me, you know I hate a fuss.
+
+Clément: That's exactly why we're making one, Marc. So here we go. I'll keep it short, because I know you hate speeches. Twenty-eight years. Twenty-eight years Marc has been at Pixelune. To put it in perspective, when Marc joined, we fitted into a flat in the 11th, above a bakery — and, by the way, the bakery is still there.
+
+Marc: Well, that at least hasn't changed.
+
+Clément: No, that hasn't changed. What has changed, on the other hand, is just about everything else. We were five, we're eighty. We worked on a single product, today we have twelve. And through all that motion, there was Marc. The same desk, more or less — well, he's moved three times, but always by the window, we know you. And above all, the same rigour, the same patience, the same way of taking a complex question and turning it around until it becomes simple.
+
+Marc: Stop, you're going to make me blush.
+
+Clément: I won't go through the list of projects, because we'd still be here tomorrow. But I wanted to mention two or three things. First, Marc is, I believe, the only person in the company to have written code that we still use, and it shipped in two thousand and three. Three.
+
+Marc: Technically, that's actually a bit worrying.
+
+Clément: No, it's reassuring. Second, Marc is the origin of the code-review culture we have at Pixelune — the one our new starters always tell us is one of the best they've ever worked with. That's his legacy, and it will outlive him by a long way. And third, Marc is the man who, one December evening in two thousand and eleven, stayed until four in the morning to save a collapsing client demo — thanks to whom, the next day, we signed the contract that funded our first two years. So, Marc, I'll say it simply: thank you. For everything.
+
+Marc: Right, thanks Clément, truly. Wait, let me put my glass down. Now — I wanted to say a few words too, but I'll be even shorter, because otherwise I really am going to cry. And nobody wants to see that, believe me. Twenty-eight years is a long time. The strange thing is, it never felt long to me. I was lucky, early on, to land on a project that interested me, with people who interested me even more. And every time I told myself "maybe I could go look elsewhere," some new thing was starting here, and I'd end up signing on for another three years. So of course, eventually, you hit twenty-eight.
+
+Clément: Makes sense.
+
+Marc: What I'll miss most, paradoxically, is not the code. I can write code at home if I want. What I'll miss is you. The half-past-eleven coffee, the friendly arguments about architecture choices, the end-of-day conversations whose beginnings none of us remember. So I'll tell you something: be kind to the new starters. That's real advice. They're more fragile than they look, and they learn by watching us. And be kind to the ones who've been here a long time too, by the way, because they're more fragile than they look as well.
+
+Nadia: Bravo Marc!
+
+Marc: And above all — above all — don't touch my sofa at the back of the open space. It's mine. Julien knows what I'm talking about.
+
+Julien: I've always said that sofa had your name on it.
+
+Marc: There we go. Thank you everyone. Drink, eat, and live long.
+
+Clément: Right, Nadia, over to you if you want to say a word.
+
+Nadia: Very quickly, yes. Marc, it's not easy to follow someone like you. When Clément told me, a few months ago, that he was considering this, my first reaction was worry. Because I knew very well everything you had built, and everything you meant to the team. But you've mentored me so generously over these past months, without ever putting me on the spot, that I feel ready. So I'll just say this: thank you, for your trust, and for your time. We'll do our best to honour what you've put in place.
+
+Marc: You'll be fine. And if you mess things up, I'll come back to haunt you.
+
+Nadia: Understood.
+
+Clément: All right, raise your glasses. To Marc!
+
+Everyone: To Marc!
+
+Julien: Hey Marc, now that you're a free man, what are you going to do with your time?
+
+Marc: Oh, I have three projects. One: completely redo the roof of the house in the Lot region, that'll take me the autumn. Two: buy a little sailboat and learn to sail the Mediterranean properly. And three, the most important — look after my grandchildren on Wednesdays, because my daughter has been asking me for five years.
+
+Julien: And you're not going to be bored, honestly?
+
+Marc: Julien, listen to me carefully. I haven't been bored since nineteen ninety-six. I'm not about to start now.
+
+Clément: Right, come on, let's attack the charcuterie before it dries out!

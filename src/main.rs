@@ -1,18 +1,20 @@
 mod build;
 mod dialog;
 mod image;
+mod serve;
 mod tts;
 
 use std::path::PathBuf;
-use tts::{AudioFormat, GoogleTts};
+use tts::{plan_dialog, AudioFormat, GoogleTts};
 
-use crate::dialog::{french::French, spanish::Spanish, slugify, Language, Voice};
+use crate::dialog::{french::French, spanish::Spanish, Language, Voice};
 
 fn print_usage(prog: &str) {
     eprintln!("Usage:");
     eprintln!("  {prog} file   <input.txt> <output>  [--format mp3|ogg] [--lang fr-FR|es-US]  Synthesize a text file");
-    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]  Synthesize a dialog");
+    eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined] [--dry-run]  Synthesize a dialog");
     eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
+    eprintln!("  {prog} serve  [--site DIR] [--port N]                       Serve site/ locally for preview");
     eprintln!("  {prog} verify-language [<chapter>] [--lang fr-FR] [--fix] [--strict]  Check/fix typographic rules");
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
     eprintln!("  {prog} prepare-image <path> --chapter <ch> [--role hero|thumbnail|page] Prepare image for site");
@@ -33,9 +35,17 @@ fn print_help() {
     println!("  file     Convert a plain text file to a single audio file.");
     println!("  dialog   Parse a dialog text file, assign a distinct voice to each");
     println!("           character based on gender, and produce per-line audio files in");
-    println!("           <output_dir>/lines/.");
+    println!("           <output_dir>/lines/. A `.manifest.json` sidecar records the");
+    println!("           hash of each generated file; re-runs skip unchanged lines.");
+    println!("           Use --dry-run to plan without calling the TTS API (no API key");
+    println!("           required) and report how many lines would be synthesized vs");
+    println!("           reused from cache.");
     println!("  build    Generate HTML pages and chapter indexes from content/.");
     println!("           Use --output (-o) to write to a different directory (default: site/).");
+    println!("  serve    Serve a directory on 127.0.0.1 for local browser preview.");
+    println!("           Use --site to override the directory (default: site/).");
+    println!("           Use --port to choose the TCP port (default: 8000).");
+    println!("           Blocks until you Ctrl-C. Logs every request.");
     println!("  verify-language");
     println!("           Check content files against typographic rules for a language.");
     println!("           Use --fix to auto-correct violations in place.");
@@ -100,6 +110,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "file" => run_file_mode(&args).await,
         "dialog" => run_dialog_mode(&args).await,
         "build" => run_build_mode(&args),
+        "serve" => serve::run_serve(&args),
         "verify-language" => run_verify_language(&args),
         "strip-metadata" => image::run_strip_metadata(&args),
         "prepare-image" => image::run_prepare_image(&args),
@@ -194,7 +205,7 @@ async fn run_file_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>
 
 async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     if args.len() < 4 {
-        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined]", args[0]);
+        eprintln!("Usage: {} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined] [--dry-run]", args[0]);
         std::process::exit(1);
     }
 
@@ -203,30 +214,80 @@ async fn run_dialog_mode(args: &[String]) -> Result<(), Box<dyn std::error::Erro
     let format = parse_format(args)?;
     let lang = parse_language(args)?;
     let combined = args.iter().any(|a| a == "--combined");
+    let dry_run = args.iter().any(|a| a == "--dry-run");
     let ext = format.extension();
     let lines_dir = output_dir.join("lines");
 
     std::fs::create_dir_all(&lines_dir)?;
 
     let content = std::fs::read_to_string(input_path)?;
+
+    // Derive the dialog slug from the input file's stem, e.g.
+    // `content/b1-vie-quotidienne/02_viennoiserie.txt` → `02_viennoiserie`.
+    // The slug scopes the per-dialog voice assignment and the per-line
+    // content-addressed audio hashes.
+    let dialog_slug: String = std::path::Path::new(input_path)
+        .file_stem()
+        .and_then(|s| s.to_str())
+        .ok_or("could not derive dialog slug from input path")?
+        .to_string();
+
+    // --dry-run: plan without calling the TTS API, report counts, exit.
+    // Deliberately does NOT require GOOGLE_TTS_API_KEY to be set.
+    if dry_run {
+        let plan = plan_dialog(&dialog_slug, &content, format, lang.as_ref(), &lines_dir)?;
+        println!(
+            "[dry-run] {} (slug: {dialog_slug}, lang: {}, format: {ext})",
+            input_path,
+            lang.code(),
+        );
+        for line in &plan.lines {
+            let tag = if line.cached { "cache" } else { "synth" };
+            println!(
+                "  [{tag}] {} — {} ({}): {}...",
+                line.filename,
+                line.speaker,
+                line.voice,
+                truncate(&line.text, 50),
+            );
+        }
+        println!();
+        println!(
+            "Would synthesize {} line(s), would reuse {} from cache.",
+            plan.to_synthesize,
+            plan.reused,
+        );
+        return Ok(());
+    }
+
     let tts = GoogleTts::from_env()?;
 
-    println!("Synthesizing dialog from {input_path} (lang: {}, format: {ext})...", lang.code());
-    let result = tts.synthesize_dialog(&content, format, combined, lang.as_ref()).await?;
+    println!("Synthesizing dialog from {input_path} (slug: {dialog_slug}, lang: {}, format: {ext})...", lang.code());
+    let result = tts
+        .synthesize_dialog(&dialog_slug, &content, format, combined, lang.as_ref(), &lines_dir)
+        .await?;
 
+    // synthesize_dialog has already written every per-line MP3 (or
+    // left a cached one in place) and persisted .manifest.json. All
+    // we do here is report.
     for line in &result.lines {
-        let filename = format!(
-            "{:02}_{}.{ext}",
-            line.index,
-            slugify(&line.speaker),
+        let tag = if line.cached { "cache" } else { "synth" };
+        println!(
+            "  [{tag}] {} — {}: {}...",
+            line.filename,
+            line.speaker,
+            truncate(&line.text, 50),
         );
-        let path = lines_dir.join(&filename);
-        std::fs::write(&path, &line.data)?;
-        println!("  {} — {}: {}...", filename, line.speaker, truncate(&line.text, 50));
     }
 
     println!();
-    println!("Wrote {} individual {ext} files to {}", result.lines.len(), lines_dir.display());
+    println!(
+        "{} line(s) under {}  ({} synthesized, {} reused from cache)",
+        result.lines.len(),
+        lines_dir.display(),
+        result.synthesized,
+        result.reused,
+    );
 
     if combined {
         let combined_path = output_dir.join(format!("combined.{ext}"));

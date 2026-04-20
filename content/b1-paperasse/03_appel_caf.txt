@@ -1,0 +1,65 @@
+Appel à la CAF pour l’APL
+
+Personnages :
+- Maeve Carrick — qui appelle la CAF depuis chez elle
+- M. Lefèvre — un conseiller de la CAF de Loire-Atlantique, au téléphone
+
+M. Lefèvre : Caisse d’allocations familiales de la Loire-Atlantique, Jérôme Lefèvre à votre écoute, bonjour.
+
+Maeve : Bonjour monsieur, je vous appelle au sujet de mon dossier APL.
+
+M. Lefèvre : Très bien, je vais ouvrir votre dossier. Votre numéro d’allocataire, s’il vous plaît ?
+
+Maeve : Je l’ai sous les yeux, c’est le sept, deux, quatre, zéro, neuf, huit, cinq, six.
+
+M. Lefèvre : Sept, deux, quatre, zéro, neuf, huit, cinq, six. Un instant, je recherche. Voilà. Madame Carrick, c’est bien ça ?
+
+Maeve : Oui, Maeve Carrick, avec un C-A-R-R-I-C-K à la fin.
+
+M. Lefèvre : Très bien. Pour confirmation, pouvez-vous me donner votre date de naissance et votre code postal actuel ?
+
+Maeve : Je suis née le quatorze mars mille neuf cent quatre-vingt-douze. Et mon code postal à Nantes, c’est le quarante-quatre mille.
+
+M. Lefèvre : Parfait, c’est vous. Alors, je regarde. Votre dossier APL a été déposé en ligne le mois dernier, c’est ça. Je vois qu’il est en attente, parce qu’il manque deux pièces justificatives.
+
+Maeve : Ah, je n’avais pas vu. Lesquelles ?
+
+M. Lefèvre : D’abord, il nous manque votre quittance de loyer la plus récente. Ensuite, il nous manque l’attestation du propriétaire, qui confirme que vous êtes bien locataire chez lui.
+
+Maeve : D’accord. Mais je ne comprends pas bien la différence entre une quittance et une attestation. C’est quoi la différence, exactement ?
+
+M. Lefèvre : Très bonne question. La quittance de loyer, c’est le document que votre propriétaire vous remet chaque mois, ou que votre gestionnaire locatif génère, qui atteste que vous avez bien payé le loyer pour un mois précis. Ça doit mentionner le montant, la période, et votre nom. L’attestation du propriétaire, elle, c’est un document rédigé sur papier libre par votre propriétaire, qui atteste que vous êtes bien son locataire, depuis telle date, à telle adresse, pour un loyer mensuel de tel montant.
+
+Maeve : D’accord, je vois. Pour la quittance, j’ai accès à mon espace locataire en ligne, je vais pouvoir la télécharger sans souci. Par contre, pour l’attestation, il faut que je la demande à mon propriétaire ?
+
+M. Lefèvre : Exactement.
+
+Maeve : Et comment faut-il que je les envoie ? Par courrier ?
+
+M. Lefèvre : Non, non, surtout pas. Ça prendrait des semaines. Vous allez sur le site caf.fr, vous vous connectez à votre espace personnel, et dans la rubrique « mon dossier », vous avez la possibilité de téléverser vos pièces justificatives directement.
+
+Maeve : Téléverser, ça veut dire uploader, c’est ça ?
+
+M. Lefèvre : Oui, tout à fait. Le PDF ou la photo, c’est très bien. Faites attention que le document soit lisible, bien cadré, et dans un format accepté — PDF, JPEG, ou PNG.
+
+Maeve : D’accord. Et une fois que j’aurai téléversé, il faut combien de temps pour que le dossier soit traité ?
+
+M. Lefèvre : Une fois les pièces reçues, le délai de traitement est habituellement de deux à trois semaines. Vous recevrez un SMS dès que votre dossier sera validé.
+
+Maeve : Parfait. Une dernière question : à partir de quand est-ce que je recevrai l’aide ? Je veux dire, est-ce que je recevrai les arriérés depuis mon emménagement, ou seulement à partir du mois où le dossier est validé ?
+
+M. Lefèvre : Alors, très bonne question aussi. L’APL est versée à partir du mois qui suit la date de dépôt complet de votre demande. Donc, pour vous, le premier versement portera sur le mois prochain, une fois que nous aurons reçu et validé les pièces manquantes. Il n’y a pas de rétroactivité au moment de l’emménagement, malheureusement.
+
+Maeve : D’accord, c’est un peu dommage, mais c’est clair. Merci beaucoup pour vos explications, monsieur.
+
+M. Lefèvre : Je vous en prie. Vous voulez que je vous envoie un récapitulatif par message, dans votre espace personnel ?
+
+Maeve : Oui, avec plaisir, comme ça je n’oublie rien.
+
+M. Lefèvre : C’est noté, je le fais tout de suite. Autre chose, madame Carrick ?
+
+Maeve : Non, c’est bon, je vous remercie.
+
+M. Lefèvre : Très bien. Je vous souhaite une bonne journée. Bonne fin de journée.
+
+Maeve : Bonne journée à vous aussi, au revoir.

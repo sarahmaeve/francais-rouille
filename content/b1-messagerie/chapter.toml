@@ -1,0 +1,81 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Messagerie Vocale — Cinq Messages du Quotidien"
+level = "B1"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B1 — Messagerie Vocale (format expérimental)"
+
+# All pages in this chapter are gated behind the "voicemail-trial" feature
+# flag while we evaluate the format in user testing.
+
+# --- Introduction ---
+
+[[sections]]
+heading = "Introduction"
+
+[[sections.pages]]
+slug = "00_intro_messagerie"
+title = "Messagerie Vocale — Mode d'Emploi"
+description = "Une courte introduction au format du message vocal : pourquoi c'est une compétence à part, et comment l'aborder."
+type = "fragment"
+flag = "voicemail-trial"
+
+# --- Messages vocaux ---
+
+[[sections]]
+heading = "Cinq Messages Vocaux"
+
+[[sections.pages]]
+slug = "01_rappel_medecin"
+title = "Rappel de Rendez-vous — Cabinet Médical"
+description = "La secrétaire d'un cabinet médical lyonnais confirme un rendez-vous pour le lendemain."
+type = "dialog"
+flag = "voicemail-trial"
+
+[[sections.pages]]
+slug = "02_maitresse_cm2"
+title = "La Maîtresse de CM2 à une Maman"
+description = "La maîtresse de Louis demande à sa mère de passer brièvement à l'école demain matin suite à un petit incident à la récréation."
+type = "dialog"
+flag = "voicemail-trial"
+
+[[sections.pages]]
+slug = "03_camille_annule"
+title = "Camille Annule le Dîner"
+description = "Une amie parisienne laisse un message informel pour annuler un dîner à la dernière minute et proposer deux dates de remplacement."
+type = "dialog"
+flag = "voicemail-trial"
+
+[[sections.pages]]
+slug = "04_plombier_bruno"
+title = "Bruno le Plombier Confirme le Passage"
+description = "Le plombier confirme une intervention pour le lendemain dans un créneau précis, avec quelques instructions pratiques."
+type = "dialog"
+flag = "voicemail-trial"
+
+[[sections.pages]]
+slug = "05_banque_securite"
+title = "La Banque — Rappel Sécurité"
+description = "Une conseillère de la prévention des fraudes signale une opération inhabituelle et rappelle les règles de sécurité."
+type = "dialog"
+flag = "voicemail-trial"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B1 — Messagerie Vocale"
+description = "Mots et expressions clés pour décoder un message vocal en français."
+type = "static"
+flag = "voicemail-trial"
+
+[[sections.pages]]
+slug = "flashcards"
+title = "Flashcards"
+description = "Révisez le vocabulaire avec des cartes mémoire."
+type = "static"
+flag = "voicemail-trial"

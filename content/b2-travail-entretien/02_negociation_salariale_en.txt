@@ -1,0 +1,51 @@
+The Salary Negotiation
+
+Characters:
+- Hélène Barbier — Pixelune's HR director, on the phone
+- Nadia Lefort — the successful candidate, on the phone
+
+Hélène: Hello Ms. Lefort, this is Hélène Barbier, from Pixelune. Is this a bad time?
+
+Nadia: Hello Hélène! Not at all, I'm between two meetings but I have half an hour. How are you?
+
+Hélène: Very well, thank you. I have good news — I'm calling to make you an offer. You convinced us, Clément and me. The data team was also very enthusiastic after meeting you.
+
+Nadia: Oh, thank you, that's really lovely to hear.
+
+Hélène: So here's what we're offering. A permanent, full-time contract, management status on a day-count forfeit, the role of senior data-viz engineer. On the base salary, we propose sixty-two thousand euros gross annually, over twelve months. On top of that, a target variable of five thousand euros, linked to team and individual objectives.
+
+Nadia: Understood.
+
+Hélène: On benefits: meal vouchers at nine euros per day, with sixty percent covered, a full company health plan with seventy percent covered for the employee, twenty-five days of paid leave and eleven RTT days. We also cover fifty percent of the Paris travel pass. We don't currently have a thirteenth-month bonus — the company's policy is more to invest in variable pay and annual raises.
+
+Nadia: Thank you for the offer, Hélène — it's clear and well-structured. May I tell you, in full transparency, what gives me pause?
+
+Hélène: Of course, please.
+
+Nadia: On the base, I was aiming for a target around sixty-eight thousand. I did a small market survey before the interview — I looked at comparable postings at Doctolib, Datadog, BlaBlaCar, at Glassdoor grids and LinkedIn Salary. For a senior profile with my years of experience and the data-viz specialism, the median sits between sixty-five and seventy-five thousand. So your offer looks a bit below market, although I understand you are a smaller company.
+
+Hélène: I understand your position, and thank you for doing that homework. On our side, we operate with an internal salary grid, which lets us maintain some consistency across employees. That grid, for your level, leads us to the offer I've just made. If I raised your base to sixty-eight, I would create a gap with people who have been with us for several years, and that would raise an internal fairness issue, which I really can't do.
+
+Nadia: I completely understand that grid logic, and I respect the fairness requirement. That said, would it be possible to work on other levers?
+
+Hélène: That's exactly what I wanted to propose. Here's what I thought through before this conversation. First, we can raise the target variable from five to eight thousand euros, with realistically calibrated objectives. Second, I can commit to a salary review clause at six months, based on your observed contribution — which, in practice, brings the annual raise forward by a year. Third, we can offer a welcome bonus of three thousand euros gross, paid at the end of the probation period.
+
+Nadia: That's an interesting proposal. If I total it up over the first year, with the welcome bonus and the variable fully achieved, what are we looking at, roughly?
+
+Hélène: Sixty-two base, plus eight variable target, plus three welcome bonus — a theoretical first-year package of seventy-three thousand gross, if all goes well.
+
+Nadia: Right. And if I understand correctly, the six-month review — it's on what exactly? The base, or the whole package?
+
+Hélène: The base. The idea is that at six months we do a check-in, and if your onboarding has gone well — which I don't doubt — we readjust your base. My own target is for us to land at sixty-six or sixty-seven at the end of that review.
+
+Nadia: Very good. I think this combination works for me, on condition that the review clause is clearly written into the contract, with a specific date and objective criteria.
+
+Hélène: Absolutely, that's the principle. I'll draft an anticipated amendment that will be annexed to the contract. You'll have it all in front of you before signing.
+
+Nadia: Perfect. So, subject to re-reading the contract, we can say we have a deal.
+
+Hélène: Excellent. I'm truly delighted. I'll send you the final contract by Friday. You'll have a week to read it through at your own pace. I'm at your disposal for any questions, of course.
+
+Nadia: Thank you Hélène, truly. Have a good end of the week.
+
+Hélène: Same to you, and very soon in the team.

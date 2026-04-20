@@ -1,0 +1,70 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "La Paperasse — Administration Française au Quotidien"
+level = "B1"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B1 — La Paperasse"
+
+# --- Contexte ---
+
+[[sections]]
+heading = "Contexte"
+
+[[sections.pages]]
+slug = "00_cerfa_titre_sejour"
+title = "Le Cerfa — Demande de Titre de Séjour"
+description = "Un formulaire Cerfa annoté et le lexique de la paperasse française — justificatif, récépissé, copie intégrale, et les autres mots qu'on rencontre à tous les guichets."
+type = "fragment"
+
+# --- Dialogues ---
+
+[[sections]]
+heading = "Les Démarches de Maeve"
+
+[[sections.pages]]
+slug = "01_repondeur_prefecture"
+title = "Répondeur de la Préfecture"
+description = "Le message vocal enregistré de la préfecture de la Loire-Atlantique. Écoute et compréhension d'un serveur vocal administratif."
+type = "dialog"
+
+[[sections.pages]]
+slug = "02_guichet_prefecture"
+title = "Au Guichet de la Préfecture"
+description = "Maeve dépose son dossier de renouvellement de titre de séjour. Son justificatif de domicile est trop ancien — négociation polie."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_appel_caf"
+title = "Appel à la CAF pour l'APL"
+description = "Maeve appelle la CAF pour débloquer son aide au logement. Différence entre quittance et attestation, téléversement des pièces."
+type = "dialog"
+
+[[sections.pages]]
+slug = "04_mairie_acte_naissance"
+title = "À la Mairie pour un Acte de Naissance"
+description = "Maeve prépare son dossier de PACS. Copie intégrale, traduction assermentée, certificat de coutume et convention Cerfa."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B1 — La Paperasse"
+description = "Mots et expressions clés de l'administration française."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez votre compréhension"
+description = "Choix multiple, texte à trous et compréhension orale."
+type = "static"
+
+[[sections.pages]]
+slug = "flashcards"
+title = "Flashcards"
+description = "Révisez le vocabulaire avec des cartes mémoire."
+type = "static"

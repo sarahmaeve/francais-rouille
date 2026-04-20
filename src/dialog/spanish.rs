@@ -23,7 +23,6 @@ static FEMALE: &[Voice] = &[
     Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Kore" },
     Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Laomedeia" },
     Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Leda" },
-    Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Pulcherrima" },
     Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Sulafat" },
     Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Vindemiatrix" },
     Voice { language_code: "es-US", name: "es-US-Chirp3-HD-Zephyr" },

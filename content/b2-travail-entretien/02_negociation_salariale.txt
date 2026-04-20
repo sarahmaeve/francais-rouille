@@ -1,0 +1,51 @@
+La Négociation Salariale
+
+Personnages :
+- Hélène Barbier — la DRH de Pixelune, au téléphone
+- Nadia Lefort — la candidate retenue, au téléphone
+
+Hélène : Bonjour madame Lefort, c’est Hélène Barbier, de Pixelune. Est-ce que je vous dérange ?
+
+Nadia : Bonjour Hélène ! Non, pas du tout, je suis entre deux réunions mais j’ai une demi-heure devant moi. Comment allez-vous ?
+
+Hélène : Très bien, merci. J’ai une bonne nouvelle — je vous appelle pour vous faire une proposition. Vous nous avez convaincus, Clément et moi. L’équipe data a été très enthousiaste aussi, après votre rencontre avec eux.
+
+Nadia : Oh, merci, ça me fait vraiment plaisir à entendre.
+
+Hélène : Donc, voici ce qu’on vous propose. Un CDI à temps plein, statut cadre au forfait jours, poste de senior data-viz engineer. Sur le fixe, nous vous proposons soixante-deux mille euros bruts annuels sur douze mois. S’y ajoute un variable cible de cinq mille euros, lié aux objectifs d’équipe et individuels.
+
+Nadia : D’accord.
+
+Hélène : Côté avantages : les tickets-restaurant à neuf euros par jour, pris en charge à soixante pour cent, une mutuelle d’entreprise complète prise en charge à soixante-dix pour cent pour le salarié, vingt-cinq jours de congés et onze jours de RTT. On prend aussi en charge cinquante pour cent du Navigo. Nous n’avons pas de treizième mois à ce stade, la politique de l’entreprise étant plutôt d’investir dans le variable et dans les augmentations annuelles.
+
+Nadia : Je vous remercie pour cette proposition, Hélène, c’est clair et bien structuré. Est-ce que je peux vous dire, en toute transparence, ce qui m’interroge un peu ?
+
+Hélène : Bien sûr, je vous en prie.
+
+Nadia : Sur le fixe, j’étais partie sur une cible autour de soixante-huit mille euros. J’ai fait une petite étude de marché avant l’entretien — j’ai regardé les annonces comparables chez Doctolib, Datadog, BlaBlaCar, sur les grilles de Glassdoor et sur LinkedIn Salary. Pour un profil senior avec mes années d’expérience et avec la spécialité data-viz, la médiane se situe entre soixante-cinq et soixante-quinze mille. Donc votre proposition me paraît un peu en dessous du marché, même si je comprends que vous êtes une structure plus petite.
+
+Hélène : Je comprends votre position, et je vous remercie d’avoir fait ce travail en amont. De notre côté, nous fonctionnons avec une grille salariale interne, qui nous permet de maintenir une certaine cohérence entre les collaborateurs. Cette grille, pour votre niveau, nous mène à la proposition que je viens de vous faire. Si je montais le fixe à soixante-huit, je créerais un écart avec des personnes déjà en poste depuis plusieurs années, et cela poserait un problème d’équité interne, que je ne peux pas me permettre.
+
+Nadia : Je comprends tout à fait cette logique de grille, et je respecte cette exigence d’équité. Cela étant, serait-il envisageable qu’on travaille sur d’autres leviers ?
+
+Hélène : C’est exactement ce que je voulais vous proposer. Voici ce à quoi j’ai réfléchi en anticipant cet échange. Premièrement, on peut passer le variable cible de cinq à huit mille euros, avec des objectifs calibrés de façon réaliste. Deuxièmement, je peux m’engager sur une clause de révision salariale à six mois, fondée sur votre contribution observée — ce qui, en pratique, anticipe d’un an la revalorisation annuelle. Troisièmement, nous pouvons prévoir une prime de bienvenue de trois mille euros bruts, versée à la fin de la période d’essai.
+
+Nadia : C’est une proposition intéressante. Si je fais le total sur la première année, avec la prime de bienvenue et le variable cible atteint, on arrive à combien, approximativement ?
+
+Hélène : Soixante-deux de fixe, plus huit de variable cible, plus trois de prime de bienvenue — soit un package théorique de soixante-treize mille bruts sur la première année, si tout se passe bien.
+
+Nadia : D’accord. Et si je comprends bien, la révision à six mois, elle porte sur quoi exactement ? Sur le fixe, ou sur l’ensemble ?
+
+Hélène : Sur le fixe. L’idée, c’est qu’à six mois, on fait un point d’étape, et si votre intégration est réussie — ce dont je ne doute pas — on réajuste votre fixe. L’objectif, pour moi, c’est qu’on arrive à soixante-six ou soixante-sept à l’issue de cette révision.
+
+Nadia : Très bien. Je pense que cette combinaison me convient, à condition que la clause de révision soit bien inscrite dans le contrat, avec une date précise et des critères objectifs.
+
+Hélène : Absolument, c’est le principe. Je vais rédiger un avenant anticipé, qui sera annexé au contrat. Vous aurez le tout sous les yeux avant de signer.
+
+Nadia : Parfait. Alors, sous réserve de relire le contrat, on peut dire qu’on est d’accord.
+
+Hélène : Excellent. Je suis vraiment ravie. Je vous envoie le contrat définitif d’ici vendredi. Vous aurez une semaine pour le relire tranquillement. Je reste à votre disposition pour toute question, bien entendu.
+
+Nadia : Merci Hélène, merci vraiment. Bonne fin de semaine.
+
+Hélène : Bonne fin de semaine à vous, et à très vite dans l’équipe.

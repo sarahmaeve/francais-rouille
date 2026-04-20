@@ -1,0 +1,61 @@
+Le Pot de Départ de Marc
+
+Personnages :
+- Clément Rivière — le PDG, qui prononce le discours
+- Marc Toussaint — l’ingénieur qui part en retraite après vingt-huit ans
+- Nadia Lefort — la successeure de Marc à la tête de l’équipe data-viz
+- Julien — un ingénieur junior de l’équipe data-viz
+
+Clément : Mes amis, s’il vous plaît, on va pouvoir commencer. Venez, approchez-vous tous. Bon. Si l’open space pouvait faire un tout petit peu silence, on ouvrirait le champagne dans les règles, je pense que ça ferait plaisir à Marc.
+
+Marc : Ah, ne te gêne pas, tu sais bien que j’aime pas qu’on fasse des histoires.
+
+Clément : Précisément, c’est pour ça qu’on en fait, Marc. Alors voilà. Je vais faire court, parce que je sais que tu détestes les discours. Vingt-huit ans. Vingt-huit ans que Marc est chez Pixelune. Pour mettre les choses en perspective, quand Marc est arrivé, on tenait dans un appartement du onzième arrondissement, au-dessus d’une boulangerie, et la boulangerie, d’ailleurs, elle existe toujours.
+
+Marc : Ça au moins ça n’a pas changé.
+
+Clément : Non, ça n’a pas changé. Ce qui a changé, en revanche, c’est à peu près tout le reste. On était cinq, on est quatre-vingts. On travaillait sur un unique produit, on en a douze aujourd’hui. Et au milieu de tout ce mouvement, il y a eu Marc. Le même bureau, à peu près — enfin, il a déménagé trois fois, mais toujours à côté de la fenêtre, on te connaît. Et surtout, la même rigueur, la même patience, la même façon de prendre une question complexe et de la retourner dans tous les sens jusqu’à ce qu’elle devienne simple.
+
+Marc : Arrête, tu vas me faire rougir.
+
+Clément : Je ne vais pas m’étendre sur la liste des projets, parce qu’on y serait encore demain. Mais je voulais juste rappeler deux ou trois choses. La première, c’est que Marc est, je crois, la seule personne de l’entreprise à avoir écrit du code dont on se sert encore, alors qu’il a été livré en deux mille trois. Trois.
+
+Marc : Techniquement, c’est quand même un peu inquiétant, ça.
+
+Clément : Non, c’est rassurant. Deuxièmement, Marc est à l’origine de la culture de relecture de code qu’on a chez Pixelune, et que nos nouveaux arrivants nous disent toujours être l’une des meilleures qu’ils aient connues. C’est son héritage, et il va nous survivre longtemps. Et troisièmement, Marc est l’homme qui, un soir de décembre deux mille onze, est resté jusqu’à quatre heures du matin pour sauver une démo client qui s’effondrait — et grâce auquel, le lendemain, on a signé le contrat qui a financé nos deux premières années. Donc, Marc, je le dis simplement : merci. Pour tout.
+
+Marc : Bon, merci Clément, merci vraiment. Alors attendez, laissez-moi poser mon verre. Non, parce que moi aussi je voulais dire deux mots, mais je vais faire encore plus court, parce que sinon je vais vraiment pleurer. Et personne n’a envie de voir ça, croyez-moi. Vingt-huit ans, c’est long. Ce qui est étonnant, c’est que ça ne m’a jamais paru long. J’ai eu la chance, très tôt, de tomber sur un projet qui m’intéressait, avec des gens qui m’intéressaient encore plus. Et puis, chaque fois que je me suis dit « tiens, je pourrais peut-être aller voir ailleurs », il y avait un nouveau truc qui démarrait ici, et je me retrouvais à signer pour trois ans de plus. Alors forcément, au bout d’un moment, ça fait vingt-huit.
+
+Clément : Ça se comprend.
+
+Marc : Ce qui me manquera le plus, paradoxalement, c’est pas le code. Le code, je peux en faire chez moi si j’ai envie. Ce qui me manquera, c’est vous. C’est le café de onze heures trente, c’est les engueulades amicales sur les choix d’architecture, c’est les discussions à rallonge en fin de journée dont on ne se rappelle plus le début. Alors je vais vous dire un truc : soyez sympas avec les jeunes qui arrivent. C’est un vrai conseil, ça. Ils sont plus fragiles qu’ils n’en ont l’air, et ils apprennent en nous regardant. Et puis soyez sympas avec ceux qui sont là depuis longtemps aussi, d’ailleurs, parce qu’ils sont plus fragiles qu’ils n’en ont l’air aussi.
+
+Nadia : Bravo Marc !
+
+Marc : Et surtout, surtout — ne touchez pas à mon canapé, au fond de l’open space. Il est à moi. Julien sait de quoi je parle.
+
+Julien : Je l’ai toujours dit, ce canapé, il avait ton nom écrit dessus.
+
+Marc : Voilà. Merci tout le monde. Buvez, mangez, et vivez longtemps.
+
+Clément : Allez, Nadia, à toi si tu veux dire un mot.
+
+Nadia : Très rapidement, oui. Marc, ce n’est pas facile de prendre la suite de quelqu’un comme toi. Quand Clément m’a dit, il y a quelques mois, qu’il envisageait ça, ma première réaction, ça a été de l’inquiétude. Parce que je savais très bien tout ce que tu avais construit, et tout ce que tu représentais pour l’équipe. Mais tu m’as tellement bien accompagnée, ces derniers mois, avec une générosité totale, sans jamais me mettre en difficulté, que je me sens prête. Alors je te dis juste : merci, pour ta confiance, et pour ton temps. On va essayer de faire honneur à ce que tu as mis en place.
+
+Marc : Tu vas y arriver. Et si tu fais n’importe quoi, je reviens te hanter.
+
+Nadia : Compris.
+
+Clément : Allez, on lève nos verres. À Marc !
+
+Tout le monde : À Marc !
+
+Julien : Dis, Marc, maintenant que tu es libre, tu vas en faire quoi de ton temps ?
+
+Marc : Oh, j’ai trois projets. Un : refaire entièrement la toiture de la maison dans le Lot, ça va me prendre l’automne. Deux : acheter un petit voilier et apprendre à naviguer sérieusement sur la Méditerranée. Et trois, le plus important, c’est de garder mes petits-enfants le mercredi, parce que ma fille me le demande depuis cinq ans.
+
+Julien : Et tu vas pas t’ennuyer, franchement ?
+
+Marc : Julien, écoute-moi bien. Je ne me suis pas ennuyé depuis mille neuf cent quatre-vingt-seize. Je ne vais pas commencer maintenant.
+
+Clément : Bon, allez, on attaque la charcuterie avant qu’elle ne sèche !

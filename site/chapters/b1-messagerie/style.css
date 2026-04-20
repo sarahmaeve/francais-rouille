@@ -1,0 +1,25 @@
+/* b1-messagerie — chapter-specific overrides (experimental voicemail trial) */
+
+/* The intro fragment uses the messagerie-tips list */
+.messagerie-tips {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.2rem 0 1.8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    max-width: 42rem;
+}
+
+.messagerie-tips li {
+    background: #faf6ef;
+    border-left: 4px solid var(--navy);
+    padding: 0.85rem 1.1rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.messagerie-tips strong {
+    color: var(--navy);
+}

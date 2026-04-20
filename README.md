@@ -3,7 +3,8 @@
 *Rusty French* — a French language learning tool with authentic texts, dialogues, and
 text-to-speech audio for B1+ learners.
 
-Browse the content by opening `site/index.html` in a browser.
+Browse the content with `cargo run -- serve` (recommended) or by opening
+`site/index.html` directly in a browser.
 
 ## What's inside
 
@@ -18,9 +19,20 @@ lines.
 
 ### Browse the content
 
+Run the built-in static-file dev server and open
+[http://127.0.0.1:8000](http://127.0.0.1:8000):
+
 ```
-open site/index.html
+cargo run -- serve
+# or pick a different port:
+cargo run -- serve --port 3000
 ```
+
+The server is localhost-only, serves from `site/` (override with
+`--site DIR`), and does not enforce the production CSP — use
+`cargo run -- check-csp` before deploying. You can also still just
+`open site/index.html`, but some interactive JS (quiz fetches, future
+audio tooling) expects a real origin, so the dev server is recommended.
 
 ### Generate audio with the CLI
 

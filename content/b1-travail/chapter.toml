@@ -1,0 +1,65 @@
+[chapter]
+title = "Français Rouillé"
+subtitle = "Premier Jour au Bureau — Nantes, Atelier Clairac"
+level = "B1"
+vocab_page = "vocabulaire"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B1 — Premier Jour au Bureau"
+
+# --- Dialogues et textes ---
+
+[[sections]]
+heading = "Premier Jour chez Atelier Clairac"
+
+[[sections.pages]]
+slug = "01_accueil_rh"
+title = "L'Accueil RH — Premier Jour à Nantes"
+description = "Maeve arrive chez Atelier Clairac. Anaïs fait le tour des locaux, du badge, de la machine à café et des salles portant des noms de rivières."
+type = "dialog"
+
+[[sections.pages]]
+slug = "02_message_vocal_camille"
+title = "Message Vocal à une Collègue"
+description = "Maeve laisse un message urgent sur la messagerie de Camille pour faire valider une maquette avant un livrable client."
+type = "dialog"
+
+[[sections.pages]]
+slug = "03_email_rtt"
+title = "Email — Demande de RTT"
+description = "Maeve écrit à Ludo pour prolonger le week-end de la Toussaint, avec un guide des conventions de l'email pro en France."
+type = "fragment"
+
+[[sections.pages]]
+slug = "04_dejeuner_cantine"
+title = "Déjeuner à la Cantine"
+description = "Maeve déjeune avec Raphaël, Camille et Sébastien. Conversation informelle sur les quartiers de Nantes, le foot du jeudi et les clients pénibles."
+type = "dialog"
+
+[[sections.pages]]
+slug = "05_reunion_lundi"
+title = "La Réunion d'Équipe du Lundi"
+description = "Tour de table hebdomadaire chez Atelier Clairac. Chacun fait son point, flag un point bloquant, et Maeve fait son premier point."
+type = "dialog"
+
+# --- Référence ---
+
+[[sections]]
+heading = "Référence"
+
+[[sections.pages]]
+slug = "vocabulaire"
+title = "Vocabulaire B1 — Premier Jour au Bureau"
+description = "Mots et expressions clés du travail en entreprise française."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez votre compréhension"
+description = "Choix multiple, texte à trous et compréhension orale."
+type = "static"
+
+[[sections.pages]]
+slug = "flashcards"
+title = "Flashcards"
+description = "Révisez le vocabulaire avec des cartes mémoire."
+type = "static"

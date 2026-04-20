@@ -1,0 +1,55 @@
+La Réunion d’Équipe du Lundi
+
+Personnages :
+- Ludo Pasquier — le directeur général, qui anime la réunion
+- Anaïs Belmont — la responsable RH
+- Raphaël Noguès — designer, vingt-neuf ans
+- Camille Perret — designer senior
+- Sébastien Roy — développeur
+- Maeve Carrick — la nouvelle designer, à sa première réunion hebdomadaire
+
+Ludo : Bon, salut tout le monde, on va pouvoir démarrer. C’est dix heures trois, on a dix minutes devant nous. Pour rappel, aujourd’hui on accueille officiellement Maeve dans l’équipe. Maeve, bienvenue, on est contents de t’avoir avec nous.
+
+Maeve : Merci Ludo, moi aussi je suis contente d’être là.
+
+Ludo : Bon, deux points généraux avant le tour de table. Un : la visite client de l’agence régionale de Pays de la Loire, c’est jeudi après-midi. Ils arrivent à quatorze heures, ils restent deux heures. Camille et moi on pilote, mais si certains d’entre vous veulent passer dire bonjour, c’est bienvenu. Deux : Anaïs, tu voulais dire un mot sur le séminaire ?
+
+Anaïs : Oui, rapidement. Le séminaire annuel, c’est confirmé pour les jeudi et vendredi de la deuxième semaine de décembre, à Guérande. J’envoie les infos pratiques cette semaine.
+
+Ludo : Parfait, merci. Bon, on fait le tour. Raphaël, tu commences ?
+
+Raphaël : Ouais, alors la semaine dernière j’ai fini la deuxième version de la maquette Garonne Énergie, avec les retours que Maeve a intégrés de son côté. Cette semaine, je bosse sur la direction artistique pour la nouvelle collection Peillon Mobilier. Point bloquant : j’ai toujours pas reçu les visuels haute définition de l’imprimerie, alors qu’ils devaient arriver vendredi. Je relance ce matin, mais si ça coince, on va avoir un souci sur le rétroplanning.
+
+Ludo : C’est Imprim'Atlantique, ça ?
+
+Raphaël : Ouais.
+
+Ludo : OK. Si tu n’as rien aujourd’hui à midi, tu me transfères le dernier mail et je les appelle moi-même. C’est pas la première fois qu’ils nous font le coup.
+
+Raphaël : Merci Ludo.
+
+Ludo : Camille ?
+
+Camille : Moi, la semaine dernière, j’ai livré la charte graphique pour le musée Jules-Verne, j’attends leur retour. Je lance cette semaine la nouvelle vague pour Ouest-France, sur les rubriques lifestyle. Jeudi, je suis sur la visite client avec Ludo. Sinon, pas de point bloquant. Ah si, un truc : je prends ma mercredi après-midi en RTT cette semaine, pour le rendez-vous à l’école de ma fille.
+
+Ludo : Noté, pas de souci.
+
+Ludo : Sébastien ?
+
+Sébastien : Alors, sur la semaine qui vient de passer, j’ai fini la migration du back-office vers la nouvelle version de l’hébergement. Ça s’est passé sans accroc. Cette semaine, je m’attaque à la refonte du tunnel de commande pour Peillon — toujours le même client. J’ai besoin des éléments de Raphaël vers jeudi, donc si les visuels arrivent d’ici là, c’est parfait. Pas de point bloquant pour moi.
+
+Ludo : OK. Maeve, à toi. Tu veux te lancer, pour ta première fois ?
+
+Maeve : Oui, avec plaisir. Alors, comme vous le savez, j’ai commencé ce matin. J’ai fait ma visite avec Anaïs, et j’ai rencontré l’équipe. Raphaël m’a briefée sur Garonne Énergie. Cette semaine, je vais prendre en main le dossier, reprendre les retours clients des dernières versions, et je pense pouvoir proposer une troisième version d’ici vendredi. Pas de point bloquant, je vais surtout lire et me mettre à niveau.
+
+Ludo : Super. Mets-toi à ton rythme. Si tu as besoin d’aide, Raphaël est à côté de toi, et Camille a une vraie mémoire du client, elle peut t’aider si tu veux comprendre leurs manies.
+
+Maeve : D’accord, merci.
+
+Ludo : Bon, décisions. Un : Raphaël, tu me transfères le mail Imprim'Atlantique avant midi, j’appelle cet après-midi. Deux : Sébastien, tu prévois un créneau avec Raphaël jeudi matin pour récupérer les visuels dès qu’ils arrivent. Trois : Camille, tu dégages une heure dans la semaine pour briefer Maeve sur l’historique Garonne Énergie, tu te cales avec elle directement.
+
+Camille : Impec, je te bloque ça, Maeve, je t’envoie une invit'.
+
+Ludo : Bien. Autre chose ? Non ? Bon, ben, on se revoit jeudi pour la revue, allez, bon café.
+
+Sébastien : Bon café !

@@ -1,0 +1,6 @@
+Voicemail — Appointment Reminder from the Medical Practice
+
+Characters:
+- Ms. Boutet — the secretary at Dr Roche's medical practice, in Lyon
+
+Ms. Boutet: Good morning Ms. Carrick, this is Caroline Boutet, medical secretary at Dr Roche's practice, four rue Lanterne in the first arrondissement. I'm simply calling to confirm your appointment for tomorrow, Thursday twenty-third of April, at two-thirty, with Dr Roche. Please come in about ten minutes before the appointment time, to reception, with your carte Vitale and your mutuelle card, as well as your most recent test results if you have any. A reminder that in case of a scheduling conflict, any cancellation must be made at least twenty-four hours in advance, failing which the consultation may be charged. For any question, you can reach us on zero four, seventy-eight, twenty-seven, forty-two, sixteen, during the practice's opening hours, Monday to Friday from half past eight to seven p.m. Have a good day, see you tomorrow, Ms. Carrick.

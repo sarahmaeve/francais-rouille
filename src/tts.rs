@@ -4,7 +4,9 @@ use serde::{Deserialize, Serialize};
 use std::path::Path;
 use thiserror::Error;
 
-use crate::dialog::{self, DialogLine, Language, Voice};
+use site_gen::audio::{audio_hash, canonical_text, Manifest};
+
+use crate::dialog::{self, slugify, DialogLine, Language, Voice};
 
 /// Audio encoding format for TTS output.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -98,18 +100,121 @@ struct SynthesizeResponse {
 }
 
 /// Result of synthesizing an entire dialog.
+///
+/// After `synthesize_dialog` returns, all per-line audio files have
+/// been written (or left in place, if cached) under `lines_dir`, and
+/// the manifest has been saved. The caller only needs this struct to
+/// report progress and to decide whether to write `combined.mp3`.
 pub struct DialogAudio {
-    /// One audio file per dialog line, in order.
+    /// One entry per dialog line, in spoken order.
     pub lines: Vec<LineAudio>,
-    /// All lines concatenated with silence between them (empty if not requested).
+    /// All lines concatenated with silence between them. Empty if
+    /// `combined` was `false`.
     pub combined: Vec<u8>,
+    /// Number of lines newly synthesized via the TTS API on this run.
+    pub synthesized: usize,
+    /// Number of lines reused from disk via manifest cache hits.
+    pub reused: usize,
 }
 
+// Public descriptive record for one spoken line. `index` and `hash`
+// are informational — useful for callers, tests, and future features
+// (e.g. a verbose mode that prints the hash). The current CLI doesn't
+// read them, hence the allow.
+#[allow(dead_code)]
 pub struct LineAudio {
     pub index: usize,
     pub speaker: String,
     pub text: String,
-    pub data: Vec<u8>,
+    /// On-disk filename within `lines_dir`, e.g. `01_bruno.mp3`.
+    pub filename: String,
+    /// Content address produced by `audio_hash` for this line.
+    pub hash: String,
+    /// `true` if the file on disk was reused (manifest hit), `false`
+    /// if the line was freshly synthesized.
+    pub cached: bool,
+}
+
+/// Result of [`plan_dialog`] — the read-only twin of
+/// [`GoogleTts::synthesize_dialog`]. Produced without any TTS API call,
+/// so a caller can estimate cost or verify CI cache state without a
+/// Google Cloud key.
+pub struct DialogPlan {
+    pub lines: Vec<LinePlan>,
+    /// Number of lines that would require a TTS call.
+    pub to_synthesize: usize,
+    /// Number of lines that would be served from the cache.
+    pub reused: usize,
+}
+
+#[allow(dead_code)]
+pub struct LinePlan {
+    pub index: usize,
+    pub speaker: String,
+    pub text: String,
+    pub filename: String,
+    pub voice: String,
+    pub hash: String,
+    /// `true` if the line is already cached on disk with the expected
+    /// hash; `false` if it would need to be synthesized.
+    pub cached: bool,
+}
+
+/// Plan a dialog synthesis run without calling the TTS API.
+///
+/// Performs the same parsing, voice assignment, and cache lookup as
+/// [`GoogleTts::synthesize_dialog`], but stops short of any network
+/// call or file write. Intended for `--dry-run`: tell the user what
+/// would be synthesized and what would be reused.
+///
+/// Does not require a `GOOGLE_TTS_API_KEY`.
+pub fn plan_dialog(
+    dialog_slug: &str,
+    content: &str,
+    format: AudioFormat,
+    lang: &dyn Language,
+    lines_dir: &Path,
+) -> Result<DialogPlan, TtsError> {
+    let parsed = dialog::parse_dialog(content);
+    if parsed.is_empty() {
+        return Err(TtsError::EmptyDialog);
+    }
+
+    let genders = dialog::parse_character_genders(content, lang);
+    let voice_map = dialog::assign_voices(&parsed, &genders, lang, dialog_slug);
+
+    let ext = format.extension();
+    let manifest = Manifest::load_or_new(lines_dir, dialog_slug);
+
+    let mut lines = Vec::with_capacity(parsed.len());
+    let mut to_synthesize = 0usize;
+    let mut reused = 0usize;
+
+    for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
+        let voice = &voice_map[&speaker];
+        let filename = format!("{:02}_{}.{ext}", i + 1, slugify(&speaker));
+        let hash = audio_hash(dialog_slug, &speaker, &canonical_text(&text), voice.name);
+        let path = lines_dir.join(&filename);
+
+        let cached = manifest.is_cached(&filename, &hash) && path.exists();
+        if cached {
+            reused += 1;
+        } else {
+            to_synthesize += 1;
+        }
+
+        lines.push(LinePlan {
+            index: i + 1,
+            speaker,
+            text,
+            filename,
+            voice: voice.name.to_string(),
+            hash,
+            cached,
+        });
+    }
+
+    Ok(DialogPlan { lines, to_synthesize, reused })
 }
 
 #[derive(Debug)]
@@ -230,17 +335,35 @@ impl GoogleTts {
         Ok(())
     }
 
-    /// Synthesize an entire dialog file using a language-specific
-    /// implementation for gender detection and voice selection.
+    /// Synthesize an entire dialog with manifest-based caching.
     ///
-    /// Returns per-line audio and, when `combined` is true, a single
-    /// concatenated file with silence gaps between lines.
+    /// For each line:
+    ///
+    /// 1. Compute the expected filename (e.g. `01_bruno.mp3`) and its
+    ///    [`audio_hash`] from the current `(slug, speaker, text, voice)`.
+    /// 2. If the manifest records the same filename with the same hash
+    ///    and the MP3 file is on disk, reuse it verbatim — no API call.
+    /// 3. Otherwise, call TTS, write the MP3 to `lines_dir`, and record
+    ///    the new `filename → hash` entry in the manifest.
+    ///
+    /// After all lines are handled, the updated manifest is saved to
+    /// `lines_dir/.manifest.json`.
+    ///
+    /// When `combined` is `true`, the returned [`DialogAudio::combined`]
+    /// contains all lines concatenated with inter-line silence. The
+    /// silence clip is itself cached at `lines_dir/.silence.<ext>` so
+    /// that a fully-cached re-run hits zero API calls.
+    ///
+    /// `lines_dir` must exist. The caller is expected to `mkdir -p` it
+    /// before invoking.
     pub async fn synthesize_dialog(
         &self,
+        dialog_slug: &str,
         content: &str,
         format: AudioFormat,
         combined: bool,
         lang: &dyn Language,
+        lines_dir: &Path,
     ) -> Result<DialogAudio, TtsError> {
         let parsed = dialog::parse_dialog(content);
         if parsed.is_empty() {
@@ -248,42 +371,87 @@ impl GoogleTts {
         }
 
         let genders = dialog::parse_character_genders(content, lang);
-        let voice_map = dialog::assign_voices(&parsed, &genders, lang);
+        let voice_map = dialog::assign_voices(&parsed, &genders, lang, dialog_slug);
 
-        // Pre-generate the silence segment once (only needed for combined).
-        let first_voice = &voice_map[&parsed[0].speaker];
-        let silence = if combined {
-            Some(
-                self.synthesize_silence(PAUSE_BETWEEN_LINES_MS, first_voice, format)
-                    .await?,
-            )
-        } else {
-            None
-        };
+        let ext = format.extension();
+        let mut manifest = Manifest::load_or_new(lines_dir, dialog_slug);
 
         let mut lines = Vec::with_capacity(parsed.len());
-        let mut combined_data = Vec::new();
+        let mut line_bytes: Vec<Vec<u8>> = Vec::with_capacity(parsed.len());
+        let mut synthesized = 0usize;
+        let mut reused = 0usize;
 
         for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
             let voice = &voice_map[&speaker];
-            let audio = self.synthesize(&text, voice, format).await?;
+            let filename = format!("{:02}_{}.{ext}", i + 1, slugify(&speaker));
+            let hash = audio_hash(dialog_slug, &speaker, &canonical_text(&text), voice.name);
+            let path = lines_dir.join(&filename);
 
-            if let Some(ref silence) = silence {
-                if i > 0 {
-                    combined_data.extend_from_slice(silence);
-                }
-                combined_data.extend_from_slice(&audio);
+            let (bytes, cached) = if manifest.is_cached(&filename, &hash) && path.exists() {
+                // Cache hit: reuse the existing file verbatim.
+                (std::fs::read(&path)?, true)
+            } else {
+                // Cache miss: synthesize, write, update manifest.
+                let bytes = self.synthesize(&text, voice, format).await?;
+                std::fs::write(&path, &bytes)?;
+                manifest.insert(filename.clone(), hash.clone());
+                (bytes, false)
+            };
+
+            if cached {
+                reused += 1;
+            } else {
+                synthesized += 1;
             }
 
+            line_bytes.push(bytes);
             lines.push(LineAudio {
                 index: i + 1,
                 speaker,
                 text,
-                data: audio,
+                filename,
+                hash,
+                cached,
             });
         }
 
-        Ok(DialogAudio { lines, combined: combined_data })
+        // Handle combined track. Silence is cached at a fixed filename
+        // regardless of voice — the audible difference between silence
+        // clips produced by different voices is inaudible, and this
+        // keeps a fully-cached re-run to zero API calls.
+        let combined_data = if combined {
+            let silence_path = lines_dir.join(format!(".silence.{ext}"));
+            let silence = if silence_path.exists() {
+                std::fs::read(&silence_path)?
+            } else {
+                let first_voice = &voice_map[&lines[0].speaker];
+                let bytes = self
+                    .synthesize_silence(PAUSE_BETWEEN_LINES_MS, first_voice, format)
+                    .await?;
+                std::fs::write(&silence_path, &bytes)?;
+                bytes
+            };
+
+            let mut combined_data = Vec::new();
+            for (i, bytes) in line_bytes.iter().enumerate() {
+                if i > 0 {
+                    combined_data.extend_from_slice(&silence);
+                }
+                combined_data.extend_from_slice(bytes);
+            }
+            combined_data
+        } else {
+            Vec::new()
+        };
+
+        manifest.save(lines_dir)?;
+
+        Ok(DialogAudio {
+            lines,
+            combined: combined_data,
+            synthesized,
+            reused,
+        })
     }
 }
 

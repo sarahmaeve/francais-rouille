@@ -1,0 +1,6 @@
+Message Vocal à une Collègue
+
+Personnages :
+- Maeve Carrick — qui laisse un message urgent sur la messagerie de Camille
+
+Maeve : Oui, bonjour Camille, c’est Maeve, il est onze heures moins le quart. Je sais que t’es en réunion client toute la matinée, du coup je te laisse un message, désolée de te déranger. En fait, c’est pour la maquette de la page d’accueil Garonne Énergie, là. J’ai fini la version deux hier soir, avec les retours que Raphaël m’a remontés, et il faut absolument que quelqu’un la valide avant treize heures, parce que notre livrable part chez le client à quatorze heures. Du coup, si jamais tu as dix minutes entre deux réunions, ce serait super. Sinon, deux options : soit tu m’envoies un petit mot sur Slack, et je te dis où elle est exactement sur le drive, soit tu me rappelles avant treize heures. Mon numéro, c’est le zéro six, dix-sept, cinquante-trois, quatre-vingt-deux, soixante-quatre. Je répète : zéro six, dix-sept, cinquante-trois, quatre-vingt-deux, soixante-quatre. Voilà. Merci beaucoup Camille, bonne réunion, à tout à l’heure.

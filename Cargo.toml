@@ -17,5 +17,9 @@ tera = "1"
 tempfile = "3"
 toml = "0.8"
 
+# Local static-file dev server (`cargo run -- serve`).
+tiny_http = "0.12"
+mime_guess = "2"
+
 [workspace]
 members = [".", "crates/site-gen", "crates/image-strip"]

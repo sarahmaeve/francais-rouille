@@ -1,0 +1,6 @@
+Voicemail — The Bank with a Security Reminder
+
+Characters:
+- Ms. Vasseur — an advisor at the fraud-prevention service, BNP Paribas
+
+Ms. Vasseur: Good afternoon, Mr. Dumas, I'm Ms. Vasseur, from the fraud-prevention service at BNP Paribas, Saint-Malo branch. I'm calling you this Wednesday the twenty-ninth of April, at ten past four, about your current account. Our system has detected an unusual transaction on your bank card over the past few hours, and we'd like to check it with you. Please be reassured, this is not an emergency, we have not blocked your card. We're simply asking you, as soon as possible, to call us back on the number shown on the back of your bank card, or to log in to your online area on the BNP Paribas website, to validate or dispute this transaction. For the record, I want to remind you that the bank will never ask you for your PIN code, whether by phone, by email, or by SMS. If anyone asks for it, that is a fraud attempt. If in any doubt, come to the branch in person with ID. Good end of afternoon, Mr. Dumas.

@@ -1,0 +1,55 @@
+The Monday Team Meeting
+
+Characters:
+- Ludo Pasquier — the CEO, running the meeting
+- Anaïs Belmont — the HR manager
+- Raphaël Noguès — designer, twenty-nine
+- Camille Perret — senior designer
+- Sébastien Roy — developer
+- Maeve Carrick — the new designer, at her first weekly
+
+Ludo: Right, hi everyone, we can get going. It's three past ten, we have ten minutes. Reminder — today we officially welcome Maeve into the team. Maeve, welcome, we're happy to have you with us.
+
+Maeve: Thanks Ludo, I'm happy to be here too.
+
+Ludo: OK, two general points before we go round. One: the client visit from the Pays de la Loire regional agency is Thursday afternoon. They arrive at two, they stay two hours. Camille and I are running it, but if any of you want to drop by and say hello, you're welcome. Two: Anaïs, you wanted to say a word about the offsite?
+
+Anaïs: Yes, briefly. The annual offsite is confirmed for the Thursday and Friday of the second week of December, in Guérande. I'll send out the practical info this week.
+
+Ludo: Perfect, thanks. Right, let's go round. Raphaël, you kick off?
+
+Raphaël: Yeah, so last week I finished version two of the Garonne Énergie mockup, with the feedback Maeve integrated on her side. This week, I'm working on the art direction for the new Peillon Mobilier collection. Blocker: I still haven't received the high-res visuals from the print shop, even though they were due Friday. I'm chasing this morning, but if it drags, we'll have an issue on the schedule.
+
+Ludo: That's Imprim'Atlantique, right?
+
+Raphaël: Yep.
+
+Ludo: OK. If you have nothing by midday today, forward me the last email and I'll call them myself. It's not the first time they've done this to us.
+
+Raphaël: Thanks Ludo.
+
+Ludo: Camille?
+
+Camille: Me, last week I delivered the style guide for the Jules-Verne museum, waiting on their feedback. I'm kicking off this week the new wave for Ouest-France, on the lifestyle sections. Thursday, I'm on the client visit with Ludo. Otherwise, no blockers. Oh, one thing: I'm taking Wednesday afternoon off on RTT this week, for a meeting at my daughter's school.
+
+Ludo: Noted, no problem.
+
+Ludo: Sébastien?
+
+Sébastien: Right, for last week, I finished migrating the back-office to the new hosting version. No hiccups. This week, I'm tackling the rework of the checkout flow for Peillon — still the same client. I need elements from Raphaël around Thursday, so if the visuals arrive by then, we're good. No blockers on my side.
+
+Ludo: OK. Maeve, over to you. Want to go for it, for your first time?
+
+Maeve: Yes, happy to. So — as you know, I started this morning. I did my tour with Anaïs, and I've met the team. Raphaël briefed me on Garonne Énergie. This week, I'll take the file in hand, review the client feedback on the latest versions, and I think I can propose a version three by Friday. No blockers, I'll mainly be reading and ramping up.
+
+Ludo: Great. Take it at your own pace. If you need help, Raphaël is right next to you, and Camille has a real memory for the client — she can help if you want to understand their quirks.
+
+Maeve: OK, thanks.
+
+Ludo: Right, decisions. One: Raphaël, forward me the Imprim'Atlantique email before midday, I'll call this afternoon. Two: Sébastien, book a slot with Raphaël Thursday morning to pick up the visuals as soon as they arrive. Three: Camille, carve out an hour this week to brief Maeve on the Garonne Énergie history, arrange that directly with her.
+
+Camille: Great, I'll lock it in — Maeve, I'll send you an invite.
+
+Ludo: Good. Anything else? No? All right, see you Thursday for the review. Enjoy your coffees!
+
+Sébastien: Enjoy!

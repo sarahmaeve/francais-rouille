@@ -1,0 +1,307 @@
+/* b1-paperasse — chapter-specific overrides */
+
+/* Layout: Cerfa form on the left, glossary on the right */
+.cerfa-and-glossary {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
+}
+
+@media (max-width: 1000px) {
+    .cerfa-and-glossary {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- The Cerfa form itself (flat document mock-up) --- */
+
+.cerfa-form {
+    background: #fefefe;
+    border: 1px solid #b8b8b8;
+    padding: 2rem 2.2rem;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #111;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cerfa-header {
+    border-bottom: 2px solid #0a3161;
+    padding-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.cerfa-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.7rem;
+    color: #0a3161;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+}
+
+.cerfa-republique {
+    text-align: left;
+}
+
+.cerfa-republique strong {
+    letter-spacing: 0.12em;
+}
+
+.cerfa-devise {
+    font-style: italic;
+    font-size: 0.62rem;
+}
+
+.cerfa-ministere {
+    text-align: right;
+    font-style: italic;
+}
+
+.cerfa-title {
+    text-align: center;
+}
+
+.cerfa-title h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 0.3rem 0;
+    color: #0a3161;
+}
+
+.cerfa-ref {
+    font-size: 0.78rem;
+    color: #555;
+    font-style: italic;
+}
+
+.cerfa-instructions {
+    font-size: 0.74rem;
+    color: #555;
+    font-style: italic;
+    padding: 0.4rem 0.6rem;
+    background: #f4f4f0;
+    border-left: 3px solid #0a3161;
+    margin-bottom: 1.2rem;
+}
+
+.cerfa-section {
+    margin-bottom: 1.4rem;
+    padding: 0.2rem 0;
+}
+
+.cerfa-section h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #0a3161;
+    background: #e8eef5;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 0.8rem;
+    border-left: 3px solid #0a3161;
+}
+
+.cerfa-field {
+    margin-bottom: 0.7rem;
+}
+
+.cerfa-field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.cerfa-field label {
+    display: block;
+    font-size: 0.75rem;
+    color: #444;
+    margin-bottom: 0.25rem;
+}
+
+.cerfa-input {
+    border-bottom: 1px solid #333;
+    min-height: 1.4rem;
+    padding: 0.15rem 0.3rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.88rem;
+    color: #111;
+    background: #fcfcf7;
+}
+
+.cerfa-input.filled {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #0a3161;
+}
+
+.cerfa-checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.2rem 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+}
+
+.cerfa-checks-column {
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.cerfa-check {
+    color: #555;
+}
+
+.cerfa-check.ticked {
+    color: #0a3161;
+    font-weight: 700;
+}
+
+.cerfa-piece-list {
+    padding-left: 1.2rem;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.cerfa-piece-list li {
+    margin-bottom: 0.3rem;
+}
+
+.cerfa-section-signature {
+    border-top: 1px dashed #888;
+    padding-top: 1rem;
+    margin-top: 1.8rem;
+}
+
+.cerfa-declaration {
+    font-size: 0.82rem;
+    font-style: italic;
+    color: #333;
+    background: #faf8f2;
+    padding: 0.8rem 1rem;
+    border-left: 3px solid #9a8844;
+    margin-bottom: 1rem;
+}
+
+.cerfa-signature-box {
+    margin-top: 1.2rem;
+    max-width: 20rem;
+}
+
+.cerfa-signature {
+    border: 1px dashed #888;
+    padding: 0.7rem 1rem;
+    min-height: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #0a3161;
+    background: #fcfcf7;
+}
+
+/* --- Inline annotation markers --- */
+
+.anno-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25em;
+    height: 1.25em;
+    background: var(--accent, #c64b3a);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.68em;
+    font-weight: 700;
+    vertical-align: super;
+    line-height: 1;
+    margin: 0 0.1em;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.anno-dot::before {
+    content: attr(data-n);
+}
+
+/* --- Glossary of paperasse terms --- */
+
+.paperasse-glossary {
+    padding: 1.8rem 2rem;
+    background: #faf6ef;
+    border-left: 4px solid var(--navy);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.93rem;
+    line-height: 1.6;
+}
+
+.paperasse-glossary h2 {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    color: var(--navy);
+}
+
+.paperasse-glossary h3 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+}
+
+.paperasse-glossary dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.paperasse-glossary dt {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1f2a36;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.paperasse-glossary dt .dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;
+    height: 1.6em;
+    background: var(--accent, #c64b3a);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.paperasse-glossary dd {
+    margin-left: 2.1em;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    color: #3a3a3a;
+}
+
+.paperasse-glossary dl.paperasse-extras dd {
+    margin-left: 0;
+}
+
+.paperasse-glossary dl.paperasse-extras dt {
+    color: #0a3161;
+    font-style: italic;
+}

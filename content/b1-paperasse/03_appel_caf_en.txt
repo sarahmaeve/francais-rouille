@@ -1,0 +1,65 @@
+Phone Call to the CAF for Housing Benefit
+
+Characters:
+- Maeve Carrick — calling the CAF from home
+- Mr. Lefèvre — a CAF advisor for Loire-Atlantique, on the phone
+
+Mr. Lefèvre: Family Allowance Fund for Loire-Atlantique, Jérôme Lefèvre speaking, good morning.
+
+Maeve: Good morning, sir. I'm calling about my APL application.
+
+Mr. Lefèvre: Very well, I'll pull up your file. Your beneficiary number, please?
+
+Maeve: I have it here — seven, two, four, zero, nine, eight, five, six.
+
+Mr. Lefèvre: Seven, two, four, zero, nine, eight, five, six. One moment, I'm looking. There. Ms. Carrick, correct?
+
+Maeve: Yes — Maeve Carrick, spelt C-A-R-R-I-C-K.
+
+Mr. Lefèvre: Very good. For confirmation, could you give me your date of birth and your current postcode?
+
+Maeve: I was born on March fourteenth, nineteen ninety-two. And my Nantes postcode is forty-four thousand.
+
+Mr. Lefèvre: Perfect, that's you. Right, I'm looking. Your APL application was submitted online last month, correct. I can see it's on hold because two supporting documents are missing.
+
+Maeve: Oh, I hadn't noticed. Which ones?
+
+Mr. Lefèvre: First, we're missing your most recent rent receipt. Next, we're missing an attestation from your landlord confirming that you are indeed their tenant.
+
+Maeve: All right. But I don't quite understand the difference between a rent receipt and an attestation. What is the difference, exactly?
+
+Mr. Lefèvre: Very good question. The rent receipt is the document your landlord gives you each month — or that your property manager generates — certifying that you have paid the rent for a specific month. It must show the amount, the period, and your name. The landlord's attestation is a document drafted on plain paper by your landlord, certifying that you are indeed their tenant, since such-and-such a date, at such-and-such an address, for a monthly rent of such-and-such an amount.
+
+Maeve: OK, I see. For the receipt, I have access to my online tenant portal, so I'll be able to download it without trouble. But for the attestation, I'll have to ask my landlord directly?
+
+Mr. Lefèvre: Exactly.
+
+Maeve: And how should I send them? By post?
+
+Mr. Lefèvre: No, no, definitely not. That would take weeks. You go to caf.fr, log in to your personal area, and in the "my file" section, you can upload your supporting documents directly.
+
+Maeve: "Téléverser" means to upload, right?
+
+Mr. Lefèvre: Yes, exactly. A PDF or a photo is fine. Just make sure the document is legible, properly framed, and in an accepted format — PDF, JPEG, or PNG.
+
+Maeve: OK. And once I've uploaded, how long does it take for the file to be processed?
+
+Mr. Lefèvre: Once we receive the documents, the processing time is usually two to three weeks. You'll get an SMS as soon as your file is validated.
+
+Maeve: Perfect. One last question: from when will I start receiving the benefit? I mean, will I get arrears from the time I moved in, or only from the month the file is validated?
+
+Mr. Lefèvre: Another very good question. The APL is paid from the month following the date of full submission of your application. So, for you, the first payment will be for next month, once we've received and validated the missing documents. There is no retroactivity to the move-in date, unfortunately.
+
+Maeve: OK — a bit of a shame, but it's clear. Thank you very much for the explanations, sir.
+
+Mr. Lefèvre: You're welcome. Would you like me to send you a summary by message, in your personal area?
+
+Maeve: Yes, please, that way I won't forget anything.
+
+Mr. Lefèvre: Noted, I'll do it right away. Anything else, Ms. Carrick?
+
+Maeve: No, that's all, thank you.
+
+Mr. Lefèvre: Very good. I wish you a good day. Goodbye.
+
+Maeve: Same to you. Goodbye.
