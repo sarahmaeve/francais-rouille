@@ -3,6 +3,7 @@ mod dialog;
 mod image;
 mod serve;
 mod tts;
+mod voice_report;
 
 use std::path::PathBuf;
 use tts::{plan_dialog, AudioFormat, GoogleTts};
@@ -15,6 +16,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} dialog <input.txt> <output_dir> [--format mp3|ogg] [--lang fr-FR|es-US] [--combined] [--dry-run]  Synthesize a dialog");
     eprintln!("  {prog} build  [<chapter>] [--output DIR] [--site-url URL]  Generate HTML + sitemap");
     eprintln!("  {prog} serve  [--site DIR] [--port N]                       Serve site/ locally for preview");
+    eprintln!("  {prog} voice-report [<chapter>] [--lang fr-FR|es-US] [--consistency]  Show per-dialog speaker→voice map");
     eprintln!("  {prog} verify-language [<chapter>] [--lang fr-FR] [--fix] [--strict]  Check/fix typographic rules");
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
     eprintln!("  {prog} prepare-image <path> --chapter <ch> [--role hero|thumbnail|page] Prepare image for site");
@@ -111,6 +113,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "dialog" => run_dialog_mode(&args).await,
         "build" => run_build_mode(&args),
         "serve" => serve::run_serve(&args),
+        "voice-report" => voice_report::run_voice_report(&args),
         "verify-language" => run_verify_language(&args),
         "strip-metadata" => image::run_strip_metadata(&args),
         "prepare-image" => image::run_prepare_image(&args),

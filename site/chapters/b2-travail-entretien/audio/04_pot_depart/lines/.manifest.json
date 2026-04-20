@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "dialog_slug": "04_pot_depart",
+  "entries": {
+    "01_clement.mp3": "145b7d56fc68c4ff",
+    "02_marc.mp3": "7f8e87279df009b0",
+    "03_clement.mp3": "7ad502b3d7223cd9",
+    "04_marc.mp3": "151da0073c385e61",
+    "05_clement.mp3": "8aea8de301811660",
+    "06_marc.mp3": "3e0395470aa380c8",
+    "07_clement.mp3": "fb31db7741d4be8a",
+    "08_marc.mp3": "cd2f593a29f23e41",
+    "09_clement.mp3": "fb9b3275c0b8b95b",
+    "10_marc.mp3": "e1835c620535010a",
+    "11_clement.mp3": "d32bc47f192ba399",
+    "12_marc.mp3": "4b2d2fe5c0f2ed6a",
+    "13_nadia.mp3": "40396170c85e2f9f",
+    "14_marc.mp3": "d888354e32360abc",
+    "15_julien.mp3": "0003d59d41ec5fe7",
+    "16_marc.mp3": "3cc0e41f7d4b4894",
+    "17_clement.mp3": "30ec3b763ec409dd",
+    "18_nadia.mp3": "186b6f509a3ede85",
+    "19_marc.mp3": "ac542ff043eeacdd",
+    "20_nadia.mp3": "7086d5ef3dbd04bb",
+    "21_clement.mp3": "d7f29155d423d1b2",
+    "22_tout_le_monde.mp3": "3356cf536354d95c",
+    "23_julien.mp3": "edc5e136f266a52b",
+    "24_marc.mp3": "12f6f92abd0b454a",
+    "25_julien.mp3": "7d92de6ef2fbb3b1",
+    "26_marc.mp3": "088d2953243f161b",
+    "27_clement.mp3": "786f721bfc0f2188"
+  }
+}

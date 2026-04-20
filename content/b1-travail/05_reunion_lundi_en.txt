@@ -3,9 +3,9 @@ The Monday Team Meeting
 Characters:
 - Ludo Pasquier — the CEO, running the meeting
 - Anaïs Belmont — the HR manager
-- Raphaël Noguès — designer, twenty-nine
-- Camille Perret — senior designer
-- Sébastien Roy — developer
+- Raphaël Noguès — a designer, twenty-nine
+- Camille Perret — a senior designer
+- Sébastien Roy — a developer
 - Maeve Carrick — the new designer, at her first weekly
 
 Ludo: Right, hi everyone, we can get going. It's three past ten, we have ten minutes. Reminder — today we officially welcome Maeve into the team. Maeve, welcome, we're happy to have you with us.

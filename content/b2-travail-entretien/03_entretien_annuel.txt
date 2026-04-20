@@ -2,7 +2,7 @@ L’Entretien Annuel d’Évaluation
 
 Personnages :
 - Clément Rivière — le PDG de Pixelune, qui mène l’entretien annuel
-- Nadia Lefort — désormais senior data-viz engineer chez Pixelune depuis un an
+- Nadia Lefort — une senior data-viz engineer chez Pixelune depuis un an
 
 Clément : Bonjour Nadia, entre, installe-toi. Café, thé, rien ?
 

@@ -45,8 +45,33 @@ pub trait Language {
 
 /// Parse character descriptions and detect gender using a language-specific
 /// implementation.
+///
+/// Indexes each character by the **full name** in the character block
+/// *and* by the **first word** of that name, when unambiguous — so a
+/// character introduced as `- Maeve Carrick — une designer américaine`
+/// is found regardless of whether dialog lines say `Maeve :` or
+/// `Maeve Carrick :`. This matters because `assign_voices` looks up
+/// gender by `line.speaker` (the bare name from each dialog line), and
+/// authors reasonably use the short form in dialogue while spelling
+/// out the surname in the character block.
+///
+/// First-word aliases are added only when:
+/// - the first word differs from the full name (i.e. there actually
+///   *is* a shorter form to alias),
+/// - the first word isn't obviously a title abbreviation (ends in `.`
+///   or is too short to be a real first name — excludes `M.`, `Mme`,
+///   `Dr.`, etc.; those work via full-name match because the dialog
+///   line also uses the title),
+/// - every character sharing that first word was detected with the
+///   same gender (if two characters named "Camille" have different
+///   genders, the first-word alias is dropped and authors must use
+///   the full name in dialog).
+///
+/// Full-name matches always win over first-word aliases.
 pub fn parse_character_genders(content: &str, lang: &dyn Language) -> HashMap<String, Gender> {
-    let mut genders = HashMap::new();
+    // First pass: extract all (full_name, gender) pairs from character
+    // block lines.
+    let mut direct: HashMap<String, Gender> = HashMap::new();
 
     for line in content.lines() {
         let line = line.trim();
@@ -67,11 +92,57 @@ pub fn parse_character_genders(content: &str, lang: &dyn Language) -> HashMap<St
         let description = description.trim().to_lowercase();
 
         if let Some(gender) = lang.detect_gender(&description) {
-            genders.insert(name, gender);
+            direct.insert(name, gender);
         }
     }
 
-    genders
+    // Second pass: compute first-word aliases that are safe to add.
+    let mut first_word_votes: HashMap<String, Vec<Gender>> = HashMap::new();
+    for (name, gender) in &direct {
+        let Some(first) = name.split_whitespace().next() else {
+            continue;
+        };
+        if first == name {
+            // No surname to alias over — full name is already a single word.
+            continue;
+        }
+        if is_title_abbreviation(first) {
+            // Skip titles: the dialog line will include the title (e.g.
+            // "Mme Dubreuil :") so the full-name match handles it.
+            continue;
+        }
+        first_word_votes
+            .entry(first.to_string())
+            .or_default()
+            .push(*gender);
+    }
+
+    let mut out = direct;
+    for (first, votes) in first_word_votes {
+        // A full-name match for this first word already exists — don't
+        // clobber it with an alias.
+        if out.contains_key(&first) {
+            continue;
+        }
+        // Require gender consensus across every character sharing this
+        // first word. If two "Camille"s disagree, we refuse to alias.
+        let first_gender = votes[0];
+        if votes.iter().all(|g| *g == first_gender) {
+            out.insert(first, first_gender);
+        }
+    }
+    out
+}
+
+/// Heuristic: treat short period-terminated tokens as title
+/// abbreviations that should not be aliased on. Covers `M.`, `Mr.`,
+/// `Dr.`, `Prof.` Explicitly includes `Mme` and `Mlle` which don't
+/// carry a period but are just as title-like.
+fn is_title_abbreviation(word: &str) -> bool {
+    if word.ends_with('.') {
+        return true;
+    }
+    matches!(word, "Mme" | "Mlle" | "Mrs" | "Ms")
 }
 
 /// Build an ordered voice list: preferred voices first (in their
@@ -238,6 +309,85 @@ mod tests {
         let genders = parse_character_genders(content, &TestLang);
         assert_eq!(genders["María"], Gender::Female);
         assert_eq!(genders["Carlos"], Gender::Male);
+    }
+
+    /// Character block with a surname; dialog lines will use the first
+    /// name only. The lookup must resolve via the first-word alias.
+    #[test]
+    fn first_name_alias_resolves_to_gender() {
+        let content = "\
+- María Garcia — una estudiante
+- Carlos Rodríguez — un profesor";
+        let genders = parse_character_genders(content, &TestLang);
+        // Full names present.
+        assert_eq!(genders["María Garcia"], Gender::Female);
+        assert_eq!(genders["Carlos Rodríguez"], Gender::Male);
+        // First-word aliases also present — this is the new behaviour.
+        assert_eq!(genders["María"], Gender::Female);
+        assert_eq!(genders["Carlos"], Gender::Male);
+    }
+
+    /// When two characters share a first name and agree on gender,
+    /// the alias is kept.
+    #[test]
+    fn first_name_alias_agrees_when_same_gender() {
+        let content = "\
+- Camille Perret — una doctora
+- Camille Rodríguez — una abogada";
+        let genders = parse_character_genders(content, &TestLang);
+        assert_eq!(genders["Camille Perret"], Gender::Female);
+        assert_eq!(genders["Camille Rodríguez"], Gender::Female);
+        assert_eq!(genders["Camille"], Gender::Female);
+    }
+
+    /// When two characters share a first name but their genders
+    /// disagree, the alias is dropped — the author must use the full
+    /// name in dialogue to disambiguate.
+    #[test]
+    fn first_name_alias_dropped_on_gender_conflict() {
+        let content = "\
+- Camille Perret — una doctora
+- Camille Rodríguez — un profesor";
+        let genders = parse_character_genders(content, &TestLang);
+        assert_eq!(genders["Camille Perret"], Gender::Female);
+        assert_eq!(genders["Camille Rodríguez"], Gender::Male);
+        assert!(!genders.contains_key("Camille"),
+            "ambiguous first-name alias must not be set");
+    }
+
+    /// Titles like "M." or "Mme" are not aliased — the dialog will
+    /// carry the title too, so the full-name match is enough, and
+    /// aliasing a bare title would be meaningless.
+    #[test]
+    fn title_abbreviations_are_not_aliased() {
+        // TestLang doesn't have M./Mme in its article set, but it does
+        // recognise "una"/"un" — so we can only check that the
+        // alias-wouldn't-apply side works here. The specific check is
+        // that the first word is recognised as a title, not aliased on.
+        assert!(is_title_abbreviation("M."));
+        assert!(is_title_abbreviation("Mme"));
+        assert!(is_title_abbreviation("Mlle"));
+        assert!(is_title_abbreviation("Dr."));
+        assert!(is_title_abbreviation("Prof."));
+        assert!(!is_title_abbreviation("Maeve"));
+        assert!(!is_title_abbreviation("Camille"));
+    }
+
+    /// Full-name matches must win over first-word aliases — a character
+    /// introduced as a single-word name takes priority over any alias
+    /// computed from a longer name.
+    #[test]
+    fn full_name_match_wins_over_alias() {
+        // If one character is just "María" and another is "María
+        // Garcia", the key "María" → Gender::Female is set directly
+        // (from "María"). The alias pass must not clobber it, even if
+        // the aliased gender would agree here.
+        let content = "\
+- María — una doctora
+- María Garcia — una abogada";
+        let genders = parse_character_genders(content, &TestLang);
+        assert_eq!(genders["María"], Gender::Female);
+        assert_eq!(genders["María Garcia"], Gender::Female);
     }
 
     #[test]

@@ -171,12 +171,27 @@ first name. Do not silently add a fourth Camille.
    it. Drift is how we got the Irish/American tension.
 3. **Give surnames to distinguish homonyms.** "Camille" by itself is
    now ambiguous; "Camille Perret" resolves cleanly.
-4. **Voice recommendations are non-binding** until the step-2 audio
-   pipeline lands. Once `content/voices.toml` exists, the canonical
-   voice for each recurring character lives there; this file keeps
-   the character prose description and the *recommended* voice, so a
-   reviewer can tell whether `voices.toml` agrees with the narrative
-   intent.
-5. **English translations must match.** When you edit a character
+4. **The character-block description must start with a gendered
+   article or noun** so the TTS gender detector can pick it up.
+   Concretely, every `- Name — description` line's description
+   should begin with `une`, `la`, `l'X` (feminine noun), `un`, `le`,
+   or similar, so `detect_gender` returns `Female` or `Male` rather
+   than falling back to alternating assignment. Bad:
+   `- Nadia Lefort — désormais senior data-viz engineer`. Good:
+   `- Nadia Lefort — une senior data-viz engineer`. The gender
+   detector runs *only* on that first word — if it misses, the
+   character ends up with an arbitrary voice that may not match
+   their actual gender. Run `cargo run -- voice-report <chapter>`
+   after authoring to confirm every speaker shows `[Female]` or
+   `[Male]`, not `[fallback]`.
+5. **Voice drift across chapters is accepted for now.** Recurring
+   characters (Maeve, Camille, Nadia) get different voices in
+   different dialogs because voice assignment runs per-dialog
+   (first speaker of each gender gets the preferred Studio voice;
+   subsequent speakers get a Chirp3-HD fallback). The learner hears
+   consistent voices *within* a dialog but not across. A future
+   `voices.toml` could pin recurring characters to specific voices
+   globally; it hasn't been built yet.
+6. **English translations must match.** When you edit a character
    description in French, update the `_en` counterpart in the same
    commit.

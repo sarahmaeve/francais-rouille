@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "dialog_slug": "01_entretien_embauche",
+  "entries": {
+    "01_helene.mp3": "07a4d9ee87b18db9",
+    "02_clement.mp3": "c6e00932c7127a9e",
+    "03_nadia.mp3": "2500f12caae3cb4c",
+    "04_helene.mp3": "241b0fbcfa3a6f3e",
+    "05_nadia.mp3": "e39b6d1ce632d7d3",
+    "06_clement.mp3": "585a1613b9483737",
+    "07_nadia.mp3": "9ab558e62833d5b2",
+    "08_helene.mp3": "cf75d3b868502edd",
+    "09_nadia.mp3": "e8d6a6ea3feb9b70",
+    "10_clement.mp3": "44d3d82fdd15309a",
+    "11_nadia.mp3": "d1a9501fca1e3b68",
+    "12_clement.mp3": "e7a315231cc833ec",
+    "13_nadia.mp3": "04725499535101a3",
+    "14_helene.mp3": "2f1ff4cd0f0da4a6",
+    "15_nadia.mp3": "8ff2c57634664d61",
+    "16_clement.mp3": "52d3d6e28f78fcdb",
+    "17_nadia.mp3": "603e2b6ebc99660a",
+    "18_clement.mp3": "c2729968f09935b7",
+    "19_nadia.mp3": "bd5518b2a55cd745",
+    "20_helene.mp3": "e7efd48b1b740b12",
+    "21_nadia.mp3": "c6e1a37062ffbc7b",
+    "22_helene.mp3": "a0931182e9438843",
+    "23_nadia.mp3": "d25d9d1ce72d528b",
+    "24_helene.mp3": "7df4d0622d3e7821",
+    "25_nadia.mp3": "a628e1481170e20c",
+    "26_clement.mp3": "18cf35cafa5fd624",
+    "27_helene.mp3": "4ffaa10224839f00"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "dialog_slug": "05_reunion_lundi",
+  "entries": {
+    "01_ludo.mp3": "53a13bfa7261e12f",
+    "02_maeve.mp3": "29b299513268b58b",
+    "03_ludo.mp3": "27ad32328ca33ec2",
+    "04_anais.mp3": "f06a5432624b20a6",
+    "05_ludo.mp3": "4e2302dab67de3de",
+    "06_raphael.mp3": "64b890ba9b7cb9a5",
+    "07_ludo.mp3": "40d1c584721223b2",
+    "08_raphael.mp3": "c9b922c697881d78",
+    "09_ludo.mp3": "ad36a446113e9729",
+    "10_raphael.mp3": "b5fd4e08284fcdbc",
+    "11_ludo.mp3": "83afb70e9d1e54ad",
+    "12_camille.mp3": "a2db3b5fa77287eb",
+    "13_ludo.mp3": "e41149fab6020866",
+    "14_ludo.mp3": "93afe35586b01568",
+    "15_sebastien.mp3": "3e4ad0210713b282",
+    "16_ludo.mp3": "be9b53df3b3a9940",
+    "17_maeve.mp3": "289871d00204e115",
+    "18_ludo.mp3": "995a48926475a723",
+    "19_maeve.mp3": "e66185e8d5b1aae4",
+    "20_ludo.mp3": "4e4bda0fbbc61551",
+    "21_camille.mp3": "8de0f3e3604ba85f",
+    "22_ludo.mp3": "017bb87381c78320",
+    "23_sebastien.mp3": "ed25ae5bca715c6d"
+  }
+}
