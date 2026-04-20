@@ -46,10 +46,9 @@ new = true
 [[levels.chapters]]
 slug = "b1-messagerie"
 title = "Messagerie Vocale — Cinq Messages du Quotidien"
-description = "Un format expérimental. Cinq messages vocaux en français naturel : rappel médical, maîtresse d'école, amie qui annule, plombier, banque."
-meta = "6 textes · Monologues vocaux · Format expérimental · Audio disponible"
+description = "Cinq messages vocaux en français naturel : rappel médical, maîtresse d'école, amie qui annule, plombier, banque. Entraînement à l'écoute du format répondeur."
+meta = "6 textes · Monologues vocaux · Audio disponible"
 new = true
-flag = "voicemail-trial"
 
 [[levels]]
 heading = "Niveau B2 — Intermédiaire avancé"
