@@ -3,6 +3,7 @@ The Annual Performance Review
 Characters:
 - Clément Rivière — Pixelune's CEO, leading the annual review
 - Nadia Lefort — a Senior Data-Viz Engineer at Pixelune for one year
+- Jean — Pixelune's product manager (PM), mentioned in the exchange but absent from the room
 
 Clément: Hi Nadia, come in, have a seat. Coffee, tea, anything?
 
@@ -30,7 +31,7 @@ Nadia: Fair, I take that feedback. Concretely, what do you have in mind?
 
 Clément: For instance, when there's a priority shift on the product side, we'd benefit from you joining those conversations earlier, to challenge or reshape the decision, rather than discovering it in sprint planning. I think there's room to grow in your presence in those moments.
 
-Nadia: I see. It's true I tend to let Jean handle that, and focus on the technical piece. I'll work on it.
+Nadia: I see. It's true I tend to let Jean, our PM, handle that, and focus on the technical piece. I'll work on it.
 
 Clément: Second point: the lead posture. You mentor Julien very well, as I said. But the question that's going to come up over the next six months is how you position yourself in relation to a broader team. Your scope will probably expand.
 

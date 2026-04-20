@@ -16,6 +16,9 @@ slug = "00_cerfa_titre_sejour"
 title = "Le Cerfa — Demande de Titre de Séjour"
 description = "Un formulaire Cerfa annoté et le lexique de la paperasse française — justificatif, récépissé, copie intégrale, et les autres mots qu'on rencontre à tous les guichets."
 type = "fragment"
+resources = [
+    { type = "link", title = "service-public.fr — Fiche F1618 (Le PACS, conditions et procédure)", url = "https://www.service-public.gouv.fr/particuliers/vosdroits/F1618", note = "fiche officielle" },
+]
 
 # --- Dialogues ---
 

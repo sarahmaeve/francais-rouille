@@ -3,6 +3,7 @@ L’Entretien Annuel d’Évaluation
 Personnages :
 - Clément Rivière — le PDG de Pixelune, qui mène l’entretien annuel
 - Nadia Lefort — une senior data-viz engineer chez Pixelune depuis un an
+- Jean — le chef de produit (PM) de Pixelune, mentionné dans l’échange mais absent de la pièce
 
 Clément : Bonjour Nadia, entre, installe-toi. Café, thé, rien ?
 
@@ -30,7 +31,7 @@ Nadia : D’accord, c’est un retour que je prends. Concrètement, tu penses à
 
 Clément : Par exemple, quand il y a un changement de priorité côté produit, on gagnerait à ce que tu participes plus tôt aux discussions, pour challenger ou infléchir, plutôt que de découvrir la décision en sprint planning. Je pense qu’il y a une marge de progression sur ta présence dans ces moments-là.
 
-Nadia : Je vois. C’est vrai que j’ai tendance à laisser Jean s’en occuper, et à me concentrer sur la partie technique. Je vais travailler dessus.
+Nadia : Je vois. C’est vrai que j’ai tendance à laisser Jean, notre PM, s’en occuper, et à me concentrer sur la partie technique. Je vais travailler dessus.
 
 Clément : Deuxième point : la posture de lead. Tu encadres très bien Julien, comme je te le disais. Mais la question qui va se poser dans les six prochains mois, c’est comment tu te positionnes par rapport à une équipe plus large. Ton périmètre va probablement s’étendre.
 
