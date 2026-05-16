@@ -10,13 +10,15 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="fr_FR">
     {% if canonical_url %}<link rel="canonical" href="{{ canonical_url | safe }}">{% endif %}
-    <link rel="preload" href="../../shared/fonts/playfair-display-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../shared/fonts/cormorant-garamond-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../../shared/fonts.css">
     <link rel="stylesheet" href="../../shared/chapter.css">
     <link rel="stylesheet" href="style.css">
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
+    <div class="spine" aria-hidden="true">Français Rouillé · {{ chapter.level | default(value="B1") }}</div>
+
     {% if flag %}
     <div class="butter-bar" role="alert">
         <strong>Avis :</strong> Contenu expérimental &mdash; <strong>Caution:</strong> Experimental content

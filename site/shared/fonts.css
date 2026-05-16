@@ -34,6 +34,48 @@
     src: url('fonts/source-serif-4-italic-var.woff2') format('woff2');
 }
 
+/* Cormorant Garamond — editorial display headlines */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/cormorant-garamond-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/cormorant-garamond-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/cormorant-garamond-600-italic.woff2') format('woff2');
+}
+
+/* IBM Plex Mono — editorial metadata & folio labels */
+@font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/ibm-plex-mono-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/ibm-plex-mono-600.woff2') format('woff2');
+}
+
 /* Source Sans 3 — UI elements, badges, metadata */
 @font-face {
     font-family: 'Source Sans 3';
