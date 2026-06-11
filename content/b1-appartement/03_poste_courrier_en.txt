@@ -11,7 +11,7 @@ The clerk : Hello. Do you have the tracking number?
 
 Maeve : Yes, here it is. It's a registered letter with acknowledgment of receipt.
 
-The clerk : All right. Hold on, let me check... So, the parcel left the United States on February 18th. It went through customs at Roissy on the 25th. After that, I have nothing more in the system.
+The clerk : All right. Hold on, let me check... So, the letter left the United States on February 18th. It went through customs at Roissy on the 25th. After that, I have nothing more in the system.
 
 Maeve : Nothing more? But what does that mean? Is it lost?
 

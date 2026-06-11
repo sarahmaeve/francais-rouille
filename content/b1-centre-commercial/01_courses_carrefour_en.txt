@@ -1,7 +1,7 @@
 Shopping at Carrefour
 
 Characters:
-- Alice — an American tourist living in Brittany
+- Alice — an American living in Brittany
 - Paul — Alice's husband, also American
 - Employee — an employee in the fruit and vegetable section at Carrefour
 

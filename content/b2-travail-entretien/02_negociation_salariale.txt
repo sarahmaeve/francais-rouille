@@ -1,4 +1,4 @@
-La Négociation Salariale
+La négociation salariale
 
 Personnages :
 - Hélène Barbier — la DRH de Pixelune, au téléphone
@@ -8,7 +8,7 @@ Hélène : Bonjour madame Lefort, c’est Hélène Barbier, de Pixelune. Est-ce 
 
 Nadia : Bonjour Hélène ! Non, pas du tout, je suis entre deux réunions mais j’ai une demi-heure devant moi. Comment allez-vous ?
 
-Hélène : Très bien, merci. J’ai une bonne nouvelle — je vous appelle pour vous faire une proposition. Vous nous avez convaincus, Clément et moi. L’équipe data a été très enthousiaste aussi, après votre rencontre avec eux.
+Hélène : Très bien, merci. J’ai une bonne nouvelle, Nadia — je vous appelle pour vous faire une proposition. Vous nous avez convaincus, Clément et moi. L’équipe data a été très enthousiaste aussi, après votre rencontre avec eux.
 
 Nadia : Oh, merci, ça me fait vraiment plaisir à entendre.
 
@@ -40,7 +40,7 @@ Hélène : Sur le fixe. L’idée, c’est qu’à six mois, on fait un point d�
 
 Nadia : Très bien. Je pense que cette combinaison me convient, à condition que la clause de révision soit bien inscrite dans le contrat, avec une date précise et des critères objectifs.
 
-Hélène : Absolument, c’est le principe. Je vais rédiger un avenant anticipé, qui sera annexé au contrat. Vous aurez le tout sous les yeux avant de signer.
+Hélène : Absolument, c’est le principe. La clause de révision figurera noir sur blanc dans le contrat, avec la date et les critères. Vous aurez le tout sous les yeux avant de signer.
 
 Nadia : Parfait. Alors, sous réserve de relire le contrat, on peut dire qu’on est d’accord.
 

@@ -1,7 +1,7 @@
 Where to Eat? — The Traiteur and the Restaurant
 
 Characters:
-- Alice — an American tourist tired after shopping
+- Alice — an American living in Brittany, tired after shopping
 - Paul — Alice's husband
 - Waiter — a waiter in a restaurant in the shopping center
 
@@ -29,7 +29,7 @@ Waiter: Hello, two of you? Would you like lunch?
 
 Alice: Yes, please. Could we see the menu before we sit down?
 
-Waiter: Of course, here's the menu. We also have a daily special today — it's a cod fillet with rice and vegetables, for thirteen euros.
+Waiter: Of course, here's the menu. Today, the daily special is a cod fillet with rice and vegetables, for thirteen euros.
 
 Paul: Thanks. We'll have a look and let you know.
 

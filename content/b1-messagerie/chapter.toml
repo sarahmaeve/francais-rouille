@@ -1,10 +1,10 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "Messagerie Vocale — Cinq Messages du Quotidien"
+subtitle = "Messagerie vocale — Cinq messages du quotidien"
 level = "B1"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B1 — Messagerie Vocale"
+footer_suffix = "Niveau B1 — Messagerie vocale"
 
 # --- Introduction ---
 
@@ -13,42 +13,42 @@ heading = "Introduction"
 
 [[sections.pages]]
 slug = "00_intro_messagerie"
-title = "Messagerie Vocale — Mode d'Emploi"
+title = "Messagerie vocale — Mode d'emploi"
 description = "Une courte introduction au format du message vocal : pourquoi c'est une compétence à part, et comment l'aborder."
 type = "fragment"
 
 # --- Messages vocaux ---
 
 [[sections]]
-heading = "Cinq Messages Vocaux"
+heading = "Cinq messages vocaux"
 
 [[sections.pages]]
 slug = "01_rappel_medecin"
-title = "Rappel de Rendez-vous — Cabinet Médical"
+title = "Rappel de rendez-vous — Cabinet médical"
 description = "La secrétaire d'un cabinet médical lyonnais confirme un rendez-vous pour le lendemain."
 type = "dialog"
 
 [[sections.pages]]
 slug = "02_maitresse_cm2"
-title = "La Maîtresse de CM2 à une Maman"
-description = "La maîtresse de Louis demande à sa mère de passer brièvement à l'école demain matin suite à un petit incident à la récréation."
+title = "La maîtresse de CM2 à une maman"
+description = "La maîtresse de Louis demande à sa mère de passer brièvement à l'école le lendemain matin suite à un petit incident à la récréation."
 type = "dialog"
 
 [[sections.pages]]
 slug = "03_camille_annule"
-title = "Camille Annule le Dîner"
+title = "Camille annule le dîner"
 description = "Une amie parisienne laisse un message informel pour annuler un dîner à la dernière minute et proposer deux dates de remplacement."
 type = "dialog"
 
 [[sections.pages]]
 slug = "04_plombier_bruno"
-title = "Bruno le Plombier Confirme le Passage"
+title = "Bruno le plombier confirme le passage"
 description = "Le plombier confirme une intervention pour le lendemain dans un créneau précis, avec quelques instructions pratiques."
 type = "dialog"
 
 [[sections.pages]]
 slug = "05_banque_securite"
-title = "La Banque — Rappel Sécurité"
+title = "La banque — Rappel sécurité"
 description = "Une conseillère de la prévention des fraudes signale une opération inhabituelle et rappelle les règles de sécurité."
 type = "dialog"
 
@@ -59,12 +59,12 @@ heading = "Référence"
 
 [[sections.pages]]
 slug = "vocabulaire"
-title = "Vocabulaire B1 — Messagerie Vocale"
+title = "Vocabulaire B1 — Messagerie vocale"
 description = "Mots et expressions clés pour décoder un message vocal en français."
 type = "static"
 
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"

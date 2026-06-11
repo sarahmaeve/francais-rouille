@@ -1,7 +1,7 @@
 At Yves Rocher — Skincare and Shampoos
 
 Characters:
-- Alice — an American tourist looking for skincare products
+- Alice — an American living in Brittany, looking for skincare products
 - Sales Advisor — a sales advisor at Yves Rocher
 
 Alice: Hello, ma'am. I'm looking for a skincare product for my face and a restorative shampoo.
@@ -20,9 +20,9 @@ Alice: Oh yes, good idea. I'll take the one with sun protection. How much is it?
 
 Sales Advisor: It's twenty-two euros. And right now, we have an offer: buy two products and the third one is half price.
 
-Alice: Oh, that's nice. So let's talk about the shampoo. My hair is very damaged because of the hard water here.
+Alice: Oh, that's nice. So let's talk about the shampoo. My hair is very damaged because of the salt and the wind here, by the sea.
 
-Sales Advisor: Yes, the water is quite hard in Brittany — it's a classic problem. We have a restorative range that works really well. This shampoo nourishes the hair deeply.
+Sales Advisor: Yes, the salt and the wind really damage your hair — it's a classic problem on the coast. We have a restorative range that works really well. This shampoo nourishes the hair deeply.
 
 Alice: What's it made from?
 

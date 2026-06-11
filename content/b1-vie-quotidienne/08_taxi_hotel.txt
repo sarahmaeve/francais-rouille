@@ -1,4 +1,4 @@
-Réserver un Taxi à l’Hôtel — Gare du Nord vers CDG
+Réserver un taxi à l’hôtel — Gare du Nord vers CDG
 
 Personnages :
 - David — un voyageur qui séjourne dans un hôtel près de la Gare du Nord
@@ -22,9 +22,9 @@ David : Je suis au terminal 2E. C’est le plus loin, non ?
 
 David : Et pour le prix, ça coûte combien à peu près ?
 
-Émilie : Le tarif entre Paris et CDG est un forfait fixe. C’est cinquante-trois euros pour la rive droite. Comme nous sommes dans le 10e arrondissement, c’est ce tarif-là.
+Émilie : Le tarif entre Paris et CDG est un forfait fixe. C’est cinquante-six euros pour la rive droite. Comme nous sommes dans le 10e arrondissement, c’est ce tarif-là.
 
-David : D’accord, cinquante-trois euros. C’est le même prix pour tous les taxis ?
+David : D’accord, cinquante-six euros. C’est le même prix pour tous les taxis ?
 
 Émilie : Oui, c’est un tarif réglementé. Tous les taxis parisiens officiels doivent appliquer ce forfait. Pas de surprises.
 
@@ -38,7 +38,7 @@ David : Je paierai par carte, c’est plus simple. Et le taxi viendra me cherche
 
 David : Est-ce qu’il faut donner un pourboire ?
 
-Émilie : Ce n’est pas obligatoire en France, mais c’est apprécié. En général, les gens arrondissent au chiffre supérieur ou ajoutent deux ou trois euros.
+Émilie : Ce n’est pas obligatoire en France, mais c’est apprécié. En général, les gens arrondissent à l’euro supérieur ou ajoutent deux ou trois euros.
 
 David : Parfait, merci pour toutes ces informations. Vous pouvez confirmer la réservation ?
 

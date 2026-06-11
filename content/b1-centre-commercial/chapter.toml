@@ -1,25 +1,25 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "Au Centre Commercial — La Madeleine, Saint-Malo"
+subtitle = "Au centre commercial — La Madeleine, Saint-Malo"
 level = "B1"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B1 — Au Centre Commercial"
+footer_suffix = "Niveau B1 — Au centre commercial"
 
 # --- Carte et Textes ---
 
 [[sections]]
-heading = "Plan et Menus"
+heading = "Plan et menus"
 
 [[sections.pages]]
 slug = "00_carte_centre_commercial"
-title = "Plan du Centre Commercial"
+title = "Plan du centre commercial"
 description = "Le plan du centre commercial La Madeleine à Saint-Malo avec ses trois niveaux de boutiques."
 type = "fragment"
 
 [[sections.pages]]
 slug = "05_carte_traiteur"
-title = "Carte Traiteur — Ruellan"
+title = "Carte traiteur — Ruellan"
 description = "La carte complète du traiteur artisanal Ruellan à Saint-Malo."
 type = "fragment"
 
@@ -30,25 +30,25 @@ heading = "Dialogues"
 
 [[sections.pages]]
 slug = "01_courses_carrefour"
-title = "Les Courses au Carrefour"
+title = "Les courses au Carrefour"
 description = "Alice et Paul cherchent des oignons, du Coca light et de la viande de bœuf au Carrefour."
 type = "dialog"
 
 [[sections.pages]]
 slug = "02_chaussures_sport"
-title = "À la Recherche de Chaussures de Sport"
+title = "À la recherche de chaussures de sport"
 description = "Alice et Paul cherchent des chaussures de course à l'Intersport du centre commercial."
 type = "dialog"
 
 [[sections.pages]]
 slug = "03_yves_rocher"
-title = "Chez Yves Rocher — Soins et Shampoings"
+title = "Chez Yves Rocher — Soins et shampoings"
 description = "Alice discute de produits de soin et de shampoings réparateurs avec une conseillère."
 type = "dialog"
 
 [[sections.pages]]
 slug = "04_restaurant_traiteur"
-title = "Où Manger ? — Le Traiteur et le Restaurant"
+title = "Où manger ? — Le traiteur et le restaurant"
 description = "Alice et Paul cherchent un endroit pour manger et découvrent le traiteur et le restaurant."
 type = "dialog"
 

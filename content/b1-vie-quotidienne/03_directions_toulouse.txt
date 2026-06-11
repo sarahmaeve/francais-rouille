@@ -1,4 +1,4 @@
-Demander son Chemin à Toulouse
+Demander son chemin à Toulouse
 
 Personnages :
 - Nadia — une étudiante qui vient d’arriver à Toulouse
@@ -14,7 +14,7 @@ Pierre : À pied, c’est environ dix minutes. Continuez tout droit sur cette ru
 
 Nadia : D’accord, tout droit. Et ensuite ?
 
-Pierre : Ensuite, vous allez arriver à un grand carrefour. Tournez à gauche sur la rue d’Alsace-Lorraine.
+Pierre : Ensuite, vous allez arriver à un grand carrefour. Tournez à gauche dans la rue d’Alsace-Lorraine.
 
 Nadia : La rue d’Alsace-Lorraine, c’est une grande rue ?
 

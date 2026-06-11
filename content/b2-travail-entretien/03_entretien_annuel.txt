@@ -1,4 +1,4 @@
-L’Entretien Annuel d’Évaluation
+L’entretien annuel d’évaluation
 
 Personnages :
 - Clément Rivière — le PDG de Pixelune, qui mène l’entretien annuel
@@ -41,7 +41,7 @@ Clément : Je m’attendais à ce que tu me poses la question, et je comprends p
 
 Nadia : Je t’écoute.
 
-Clément : Je te propose qu’on fixe trois jalons. D’ici trois mois, tu auras repris en main les rituels d’équipe data-viz, tu te seras positionnée plus fortement dans les discussions produit — on en a déjà parlé —, et tu auras suivi une formation en leadership technique, que je vais te financer sur le budget formation étendu. D’ici six mois, tu auras mené ta première évaluation annuelle pour Julien, et tu auras présenté ta vision pour l’équipe à l’occasion d’un séminaire interne. Au terme de ces six mois, si tout se passe comme je l’imagine, on passe officiellement au poste de lead, avec une revalorisation que je situerais autour de dix pour cent du fixe.
+Clément : Je te propose qu’on fixe trois jalons. D’ici trois mois, tu auras repris en main les rituels d’équipe data-viz, tu te seras positionnée plus fortement dans les discussions produit — on en a déjà parlé —, et tu auras suivi une formation en leadership technique, que je vais te financer sur le budget formation étendu. D’ici six mois, tu auras mené ton premier entretien annuel, celui de Julien, et tu auras présenté ta vision pour l’équipe à l’occasion d’un séminaire interne. Au terme de ces six mois, si tout se passe comme je l’imagine, on passe officiellement au poste de lead, avec une revalorisation que je situerais autour de dix pour cent du fixe.
 
 Nadia : C’est un plan ambitieux, mais juste. Je le prends. Une question, sur le séminaire — c’est un format imposé ou je peux proposer quelque chose de plus original ?
 

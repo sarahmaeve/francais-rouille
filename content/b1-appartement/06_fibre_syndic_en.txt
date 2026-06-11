@@ -2,7 +2,7 @@ The Fiber Optic Installation
 
 Characters:
 - Irene — Maeve's partner, a tenant on the third floor
-- Monsieur Reynaud — the president of the building management association
+- Monsieur Reynaud — the building's volunteer syndic (resident property manager)
 
 
 Irene : Hello, Monsieur Reynaud. Sorry to bother you. Would you have a few minutes?
@@ -27,7 +27,7 @@ Monsieur Reynaud : Yes, that's the maximum. In practice, it's often faster. I ca
 
 Irene : Very well, I'll ask Orange to send the letter tomorrow. As for the lease, I can get you a copy this afternoon.
 
-Monsieur Reynaud : Perfect. Bring it to my office — I'm here until six p.m. There's just one important point: the technician must be careful not to drill new holes in the load-bearing walls. He must use the existing cable runs.
+Monsieur Reynaud : Perfect. Drop it in my mailbox, or come hand it to me — I'm home until six p.m. There's just one important point: the technician must be careful not to drill new holes in the load-bearing walls. He must use the existing cable runs.
 
 Irene : I'll pass that instruction on to the technician. Is there anything else we need to know?
 

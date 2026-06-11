@@ -12,40 +12,40 @@ heading = "Niveau B1 — Intermédiaire"
 
 [[levels.chapters]]
 slug = "b1-vie-quotidienne"
-title = "Textes B1 — La Vie Quotidienne"
+title = "Textes B1 — La vie quotidienne"
 description = "Naviguer dans le métro, commander dans une boulangerie, chercher un appartement à Paris, réserver un taxi, et plus encore."
-meta = "10 textes · Dialogues, annonces et vocabulaire · Audio disponible"
+meta = "11 textes · Dialogues, annonces et vocabulaire · Audio disponible"
 
 [[levels.chapters]]
 slug = "b1-appartement"
-title = "La Vie en Appartement — Lyon, Croix-Rousse"
+title = "La vie en appartement — Lyon, Croix-Rousse"
 description = "Maeve et Irene s'installent dans leur appartement à Lyon. Pannes de chauffage, courrier perdu, voisins et fibre optique."
 meta = "6 textes · Emails, dialogues, avis et vocabulaire · Audio disponible"
 
 [[levels.chapters]]
 slug = "b1-centre-commercial"
-title = "Au Centre Commercial — La Madeleine, Saint-Malo"
+title = "Au centre commercial — La Madeleine, Saint-Malo"
 description = "Alice et Paul font les courses au centre commercial La Madeleine. Hypermarché, boutiques, traiteur et restaurant."
 meta = "6 textes · Dialogues, carte et menu · Audio disponible"
 new = false
 
 [[levels.chapters]]
 slug = "b1-travail"
-title = "Premier Jour au Bureau — Nantes, Atelier Clairac"
+title = "Premier jour au bureau — Nantes, Atelier Clairac"
 description = "Maeve commence chez une agence de design à Nantes. Accueil RH, message vocal urgent, demande de RTT, déjeuner à la cantine et réunion d'équipe du lundi."
 meta = "5 textes · Dialogue, message vocal, email et guide de l'email pro · Audio disponible"
 new = true
 
 [[levels.chapters]]
 slug = "b1-paperasse"
-title = "La Paperasse — Administration Française au Quotidien"
+title = "La paperasse — Administration française au quotidien"
 description = "Maeve affronte la paperasse française : répondeur de la préfecture, renouvellement de titre de séjour, appel à la CAF et dossier de PACS à la mairie."
 meta = "5 textes · Cerfa annoté, répondeur, dialogues guichet et téléphone · Audio disponible"
 new = true
 
 [[levels.chapters]]
 slug = "b1-messagerie"
-title = "Messagerie Vocale — Cinq Messages du Quotidien"
+title = "Messagerie vocale — Cinq messages du quotidien"
 description = "Cinq messages vocaux en français naturel : rappel médical, maîtresse d'école, amie qui annule, plombier, banque. Entraînement à l'écoute du format répondeur."
 meta = "6 textes · Monologues vocaux · Audio disponible"
 new = true
@@ -55,27 +55,27 @@ heading = "Niveau B2 — Intermédiaire avancé"
 
 [[levels.chapters]]
 slug = "b2-toulouse-medieval"
-title = "Toulouse Médiévale — Histoire et Visite Guidée"
+title = "Toulouse médiévale — Histoire et visite guidée"
 description = "Visite à pied du centre historique de Toulouse. Les Cathares, la croisade des Albigeois, la Basilique Saint-Sernin et l'Église des Jacobins."
-meta = "5 textes · Monologues, dialogue et carte · Audio disponible"
+meta = "7 textes · Monologues, dialogue, carte et guide de grammaire · Audio disponible"
 
 [[levels.chapters]]
 slug = "b2-librairie-occitane"
-title = "La Librairie Occitane — Langue, Histoire et Culture"
+title = "La librairie occitane — Langue, histoire et culture"
 description = "Irene découvre la culture occitane dans une librairie de Toulouse. Les troubadours, la langue d'oc, et la renaissance occitane contemporaine."
 meta = "6 textes · Dialogues, monologue, article et carte · Audio disponible"
 new = false
 
 [[levels.chapters]]
 slug = "b2-chansons"
-title = "Chansons Populaires — Opinions et Débats Culturels"
+title = "Chansons populaires — Opinions et débats culturels"
 description = "Trois discussions entre amis sur Indila, Les Trois Mousquetaires au cinéma et le dernier album de Zaz. Exprimer et défendre son avis."
 meta = "5 textes · Dialogues, publicité et guide d'expressions · Audio disponible"
 new = false
 
 [[levels.chapters]]
 slug = "b2-travail-entretien"
-title = "Le Monde du Travail — Entretien, Négociation, Évaluation"
+title = "Le monde du travail — Entretien, négociation, évaluation"
 description = "Une carrière en quatre scènes chez la startup parisienne Pixelune : entretien d'embauche, négociation salariale, évaluation annuelle et pot de départ."
 meta = "5 textes · Dialogues, lettre de motivation annotée et offre d'emploi · Audio disponible"
 new = true

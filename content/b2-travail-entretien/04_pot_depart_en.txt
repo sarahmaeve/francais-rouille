@@ -22,7 +22,7 @@ Clément: I won't go through the list of projects, because we'd still be here to
 
 Marc: Technically, that's actually a bit worrying.
 
-Clément: No, it's reassuring. Second, Marc is the origin of the code-review culture we have at Pixelune — the one our new starters always tell us is one of the best they've ever worked with. That's his legacy, and it will outlive him by a long way. And third, Marc is the man who, one December evening in two thousand and eleven, stayed until four in the morning to save a collapsing client demo — thanks to whom, the next day, we signed the contract that funded our first two years. So, Marc, I'll say it simply: thank you. For everything.
+Clément: No, it's reassuring. Second, Marc is the origin of the code-review culture we have at Pixelune — the one our new starters always tell us is one of the best they've ever worked with. That's his legacy, and it will outlive him by a long way. And third, Marc is the man who, one December evening in two thousand and eleven, stayed until four in the morning to save a collapsing client demo — thanks to whom, the next day, we signed the contract that kept us going for the next two years. So, Marc, I'll say it simply: thank you. For everything.
 
 Marc: Right, thanks Clément, truly. Wait, let me put my glass down. Now — I wanted to say a few words too, but I'll be even shorter, because otherwise I really am going to cry. And nobody wants to see that, believe me. Twenty-eight years is a long time. The strange thing is, it never felt long to me. I was lucky, early on, to land on a project that interested me, with people who interested me even more. And every time I told myself "maybe I could go look elsewhere," some new thing was starting here, and I'd end up signing on for another three years. So of course, eventually, you hit twenty-eight.
 
@@ -48,7 +48,7 @@ Nadia: Understood.
 
 Clément: All right, raise your glasses. To Marc!
 
-Everyone: To Marc!
+Nadia: To Marc!
 
 Julien: Hey Marc, now that you're a free man, what are you going to do with your time?
 

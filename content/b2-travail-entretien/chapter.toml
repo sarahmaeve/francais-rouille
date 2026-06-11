@@ -1,10 +1,10 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "Le Monde du Travail — Entretien, Négociation, Évaluation"
+subtitle = "Le monde du travail — Entretien, négociation, évaluation"
 level = "B2"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B2 — Le Monde du Travail"
+footer_suffix = "Niveau B2 — Le monde du travail"
 
 # --- Contexte ---
 
@@ -13,36 +13,36 @@ heading = "Contexte"
 
 [[sections.pages]]
 slug = "00_lettre_offre"
-title = "Lettre de Motivation et Offre d'Emploi"
-description = "La lettre de Nadia et l'annonce LinkedIn qui l'ont précédée, avec le lexique du recrutement à la française."
+title = "Lettre de motivation et offre d’emploi"
+description = "La lettre de Nadia et l’annonce LinkedIn qui l’a précédée, avec le lexique du recrutement à la française."
 type = "fragment"
 
 # --- Dialogues ---
 
 [[sections]]
-heading = "Chez Pixelune — Une Carrière en Quatre Scènes"
+heading = "Chez Pixelune — Une carrière en quatre scènes"
 
 [[sections.pages]]
 slug = "01_entretien_embauche"
-title = "L'Entretien d'Embauche"
+title = "L’entretien d’embauche"
 description = "Nadia Lefort est reçue par la DRH et le PDG de Pixelune pour un poste d'ingénieure senior."
 type = "dialog"
 
 [[sections.pages]]
 slug = "02_negociation_salariale"
-title = "La Négociation Salariale"
+title = "La négociation salariale"
 description = "Nadia négocie au téléphone la proposition d'embauche : fixe, variable, prime de bienvenue et clause de révision."
 type = "dialog"
 
 [[sections.pages]]
 slug = "03_entretien_annuel"
-title = "L'Entretien Annuel d'Évaluation"
+title = "L’entretien annuel d’évaluation"
 description = "Un an plus tard, Nadia fait le point avec Clément et demande une promotion au poste de lead engineer."
 type = "dialog"
 
 [[sections.pages]]
 slug = "04_pot_depart"
-title = "Le Pot de Départ de Marc"
+title = "Le pot de départ de Marc"
 description = "Après vingt-huit ans dans l'entreprise, Marc part à la retraite. Discours, émotion et charcuterie."
 type = "dialog"
 
@@ -53,7 +53,7 @@ heading = "Référence"
 
 [[sections.pages]]
 slug = "vocabulaire"
-title = "Vocabulaire B2 — Le Monde du Travail"
+title = "Vocabulaire B2 — Le monde du travail"
 description = "Mots et expressions clés du travail en entreprise française."
 type = "static"
 
@@ -66,5 +66,5 @@ type = "static"
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"

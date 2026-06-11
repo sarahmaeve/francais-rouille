@@ -1,0 +1,31 @@
+Ordering at the Restaurant
+
+Characters:
+- Émilie — a customer having dinner with a friend
+- Julien — the restaurant's waiter
+
+Julien : Good evening, ladies. Welcome to Léon. Do you have a reservation?
+
+Émilie : Yes, I booked a table for two under the name Émilie Moreau.
+
+Julien : Perfect, it's the table by the window. Follow me, please.
+
+Émilie : Thank you. Do you have a daily set menu?
+
+Julien : Yes, today we're offering onion soup as a starter, duck confit as the main course, and apple tart for dessert.
+
+Émilie : That sounds delicious. I'll have the daily set menu, please.
+
+Julien : Very good. And for your friend?
+
+Émilie : She's going to look at the menu. Do you have any vegetarian dishes?
+
+Julien : Of course. We have a mushroom risotto and a warm goat-cheese salad.
+
+Émilie : The risotto — she'll like that. And for drinks, what do you recommend with the duck?
+
+Julien : I'd suggest a glass of Cahors — it's a red wine from the South-West that goes very well with the confit.
+
+Émilie : Perfect, two glasses of Cahors then. Thank you very much!
+
+Julien : Noted. I'll bring your drinks right away.

@@ -1,7 +1,7 @@
-Chez Yves Rocher — Soins et Shampoings
+Chez Yves Rocher — Soins et shampoings
 
 Personnages :
-- Alice — une touriste américaine qui cherche des produits de soin
+- Alice — une Américaine installée en Bretagne qui cherche des produits de soin
 - Conseillère — une conseillère de vente chez Yves Rocher
 
 Alice : Bonjour, madame. Je cherche un soin pour le visage et un shampoing réparateur.
@@ -20,9 +20,9 @@ Alice : Ah oui, bonne idée. Je vais prendre celle avec la protection solaire. C
 
 Conseillère : Elle est à vingt-deux euros. Et en ce moment, on a une offre : pour deux produits achetés, le troisième est à moitié prix.
 
-Alice : Ah, c’est intéressant. Alors parlons du shampoing. Mes cheveux sont très abîmés à cause du calcaire de l’eau ici.
+Alice : Ah, c’est intéressant. Alors parlons du shampoing. Mes cheveux sont très abîmés à cause du sel et du vent ici, au bord de la mer.
 
-Conseillère : Oui, l’eau est assez dure en Bretagne, c’est un problème classique. On a une gamme réparatrice qui marche très bien. Ce shampoing nourrit les cheveux en profondeur.
+Conseillère : Oui, le sel et le vent abîment beaucoup les cheveux, c’est un problème classique sur la côte. On a une gamme réparatrice qui marche très bien. Ce shampoing nourrit les cheveux en profondeur.
 
 Alice : Il est à base de quoi ?
 

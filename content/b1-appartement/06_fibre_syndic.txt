@@ -1,8 +1,8 @@
-L’Installation de la Fibre Optique
+L’installation de la fibre optique
 
 Personnages :
 - Irene — la compagne de Maeve, locataire au troisième étage
-- Monsieur Reynaud — le président du syndic de copropriété
+- Monsieur Reynaud — le syndic bénévole de la copropriété
 
 Irene : Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m’accorder ?
 
@@ -26,7 +26,7 @@ Monsieur Reynaud : Oui, c’est le maximum. En pratique, c’est souvent plus ra
 
 Irene : Très bien, je vais demander à Orange d’envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi.
 
-Monsieur Reynaud : Parfait. Apportez-la à ma loge, je suis là jusqu’à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.
+Monsieur Reynaud : Parfait. Déposez-la dans ma boîte aux lettres, ou passez me la remettre — je suis chez moi jusqu’à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.
 
 Irene : Je transmettrai cette consigne au technicien. Est-ce qu’il y a autre chose que nous devons savoir ?
 

@@ -1,4 +1,4 @@
-Commander au Restaurant
+Commander au restaurant
 
 Personnages :
 - Émilie — une cliente qui dîne avec une amie
@@ -20,7 +20,7 @@ Julien : Très bien. Et pour votre amie ?
 
 Émilie : Elle va regarder la carte. Est-ce que vous avez des plats végétariens ?
 
-Julien : Bien sûr. Nous avons un risotto aux champignons et une salade niçoise avec du fromage de chèvre.
+Julien : Bien sûr. Nous avons un risotto aux champignons et une salade de chèvre chaud.
 
 Émilie : Le risotto, ça lui plaira. Et pour les boissons, qu'est-ce que vous recommandez avec le canard ?
 

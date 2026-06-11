@@ -1,4 +1,4 @@
-Découverte de la Librairie
+Découverte de la librairie
 
 Personnages :
 - Irene — une touriste américaine qui visite Toulouse
@@ -6,7 +6,7 @@ Personnages :
 
 Irene : Bonjour ! J’ai vu votre vitrine en me promenant dans la rue. C’est une librairie en… ce n’est pas du français, n’est-ce pas ?
 
-Arnaud : Bonjour ! Non, ce n’est pas du français. C’est de l’occitan, la langue historique de cette région. Bienvenue à La Tuta d’Òc — ça veut dire « tout en langue d’oc ».
+Arnaud : Bonjour ! Non, ce n’est pas du français. C’est de l’occitan, la langue historique de cette région. Bienvenue à La Tuta d’Òc — ça veut dire « la tanière d’oc ». Un petit refuge pour la langue, si vous voulez.
 
 Irene : L’occitan ? Je ne savais même pas que cette langue existait. Je pensais que tout le monde en France parlait français.
 
@@ -14,7 +14,7 @@ Arnaud : C’est ce qu’on croit souvent à l’étranger. Mais avant que le fr
 
 Irene : Vraiment ? Depuis quand est-ce que ça existe ?
 
-Arnaud : Depuis le Moyen Âge au moins. Les troubadours, vous en avez entendu parler ? Ces poètes du XIIe et XIIIe siècle qui ont inventé la poésie d’amour courtois — ils écrivaient en occitan, pas en français.
+Arnaud : Depuis le Moyen Âge au moins. Les troubadours, vous en avez entendu parler ? Ces poètes des XIIe et XIIIe siècles qui ont inventé la poésie d’amour courtois — ils écrivaient en occitan, pas en français.
 
 Irene : Les troubadours ! Oui, j’en ai entendu parler, mais je croyais qu’ils écrivaient en vieux français.
 

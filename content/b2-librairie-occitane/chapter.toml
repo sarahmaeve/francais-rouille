@@ -1,10 +1,10 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "La Librairie Occitane — Langue, Histoire et Culture"
+subtitle = "La librairie occitane — Langue, histoire et culture"
 level = "B2"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B2 — La Librairie Occitane"
+footer_suffix = "Niveau B2 — La librairie occitane"
 
 # --- Carte ---
 
@@ -13,13 +13,13 @@ heading = "Contexte"
 
 [[sections.pages]]
 slug = "00_carte_occitanie"
-title = "Carte de l'Occitanie Historique"
+title = "Carte de l'Occitanie historique"
 description = "Carte schématique du territoire historique de la langue d'oc, centré sur Toulouse."
 type = "fragment"
 
 [[sections.pages]]
 slug = "01_histoire_occitan"
-title = "L'Occitan : Langue d'Oc, Langue Oubliée ?"
+title = "L'occitan : Langue d'oc, langue oubliée ?"
 description = "Histoire de la langue occitane, de l'âge d'or des troubadours à la situation actuelle."
 type = "fragment"
 
@@ -30,13 +30,13 @@ heading = "À la Librairie"
 
 [[sections.pages]]
 slug = "02_decouverte_librairie"
-title = "Découverte de la Librairie"
+title = "Découverte de la librairie"
 description = "Irene, touriste américaine, découvre la Librariá La Tuta d'Òc et apprend l'existence de la culture occitane."
 type = "dialog"
 
 [[sections.pages]]
 slug = "03_troubadours_livres"
-title = "Les Troubadours et leurs Livres"
+title = "Les troubadours et leurs livres"
 description = "Irene s'intéresse aux livres sur l'ancien occitan et l'histoire des troubadours."
 type = "dialog"
 resources = [
@@ -45,7 +45,7 @@ resources = [
 
 [[sections.pages]]
 slug = "04_culture_occitane_toulouse"
-title = "La Culture Occitane à Toulouse"
+title = "La culture occitane à Toulouse"
 description = "Le libraire parle des autres lieux et artistes liés à la culture occitane à Toulouse."
 type = "dialog"
 
@@ -56,7 +56,7 @@ heading = "Témoignage"
 
 [[sections.pages]]
 slug = "05_lecon_occitan"
-title = "Une Leçon d'Occitan"
+title = "Une leçon d'occitan"
 description = "Une enseignante explique l'histoire de l'occitan à des élèves de collège en visite à la librairie."
 type = "dialog"
 
@@ -67,7 +67,7 @@ heading = "Référence"
 
 [[sections.pages]]
 slug = "vocabulaire"
-title = "Vocabulaire B2 — La Librairie Occitane"
+title = "Vocabulaire B2 — La librairie occitane"
 description = "Mots et expressions clés avec traductions en anglais."
 type = "static"
 
@@ -80,5 +80,5 @@ type = "static"
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"

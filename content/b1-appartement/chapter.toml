@@ -13,37 +13,37 @@ heading = "Textes et Dialogues"
 
 [[sections.pages]]
 slug = "01_email_chauffage"
-title = "Email — Panne de Chauffage"
+title = "Email — Panne de chauffage"
 description = "Maeve écrit à l'agence immobilière pour signaler une panne de chauffage."
 type = "static"
 
 [[sections.pages]]
 slug = "02_reparation_chauffage"
-title = "La Réparation du Chauffage"
+title = "La réparation du chauffage"
 description = "Bruno le technicien vient réparer le chauffage de Maeve."
 type = "dialog"
 
 [[sections.pages]]
 slug = "03_poste_courrier"
-title = "À la Poste — Le Courrier"
-description = "Maeve va à la poste pour récupérer un colis."
+title = "À la Poste — Le courrier"
+description = "Maeve se renseigne sur un courrier recommandé qui n’est jamais arrivé."
 type = "dialog"
 
 [[sections.pages]]
 slug = "04_avis_chien"
-title = "Avis du Syndic — Chiens en Laisse"
+title = "Avis du syndic — Chiens en laisse"
 description = "Un avis affiché dans le hall de l'immeuble."
 type = "static"
 
 [[sections.pages]]
 slug = "05_chat_perdu"
-title = "Chat Perdu — Conversation entre Voisines"
-description = "Maeve et Irene discutent d'un chat perdu dans l'immeuble."
+title = "Chat perdu — Conversation entre voisins"
+description = "Maeve et Irene cherchent leur chat avec l’aide des voisins."
 type = "dialog"
 
 [[sections.pages]]
 slug = "06_fibre_syndic"
-title = "La Fibre Optique — Réunion du Syndic"
+title = "La fibre optique — Demande au syndic"
 description = "Irene et Monsieur Reynaud discutent de l'installation de la fibre."
 type = "dialog"
 
@@ -66,12 +66,12 @@ type = "static"
 
 [[sections.pages]]
 slug = "mots-croises"
-title = "Mots Croisés"
+title = "Mots croisés"
 description = "Grille de mots croisés sur le vocabulaire du chapitre."
 type = "static"
 
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"

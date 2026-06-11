@@ -23,9 +23,9 @@ David : I'm at Terminal 2E. That's the farthest one, right?
 
 David : And for the price, roughly how much does it cost?
 
-Émilie : The fare between Paris and CDG is a fixed flat rate. It's fifty-three euros from the Right Bank. Since we're in the 10th arrondissement, that's the rate that applies.
+Émilie : The fare between Paris and CDG is a fixed flat rate. It's fifty-six euros from the Right Bank. Since we're in the 10th arrondissement, that's the rate that applies.
 
-David : Okay, fifty-three euros. Is it the same price for all taxis?
+David : Okay, fifty-six euros. Is it the same price for all taxis?
 
 Émilie : Yes, it's a regulated fare. All official Parisian taxis must charge this flat rate. No surprises.
 

@@ -1,4 +1,4 @@
-Visite à la Boulangerie — Les Spécialités de la Maison
+Visite à la boulangerie — Les spécialités de la maison
 
 Personnages :
 - Claire — une cliente curieuse qui entre dans la boulangerie
@@ -10,11 +10,11 @@ Monsieur Duval : Bonjour, madame ! Merci, c’est gentil. Qu’est-ce qui vous t
 
 Claire : Justement, j’hésite beaucoup. Qu’est-ce que vous me recommandez ? Je cherche quelque chose de spécial.
 
-Monsieur Duval : Alors, si vous aimez le chocolat, je vous recommande notre éclair au chocolat noir. C’est notre meilleure vente.
+Monsieur Duval : Alors, si vous aimez le chocolat, je vous recommande notre éclair au chocolat noir. C’est ce qui se vend le mieux.
 
 Claire : Un éclair au chocolat noir ? Qu’est-ce qu’il a de particulier ?
 
-Monsieur Duval : On utilise du chocolat noir à soixante-douze pour cent, importé directement d’un artisan belge. La crème pâtissière est faite chaque matin, et le glaçage est préparé à la minute.
+Monsieur Duval : On utilise du chocolat noir à soixante-douze pour cent, qui vient directement de chez un artisan belge. La crème pâtissière est faite chaque matin, et le glaçage est préparé à la minute.
 
 Claire : Ça a l’air incroyable. Et il y a autre chose que vous recommandez ?
 
@@ -34,7 +34,7 @@ Monsieur Duval : Excellent choix ! L’éclair, c’est trois euros cinquante, e
 
 Claire : Parfait. Est-ce que vous avez une carte de fidélité ?
 
-Monsieur Duval : Oui, bien sûr. À votre dixième achat, vous recevez une viennoiserie gratuite. Je vous en prépare une tout de suite.
+Monsieur Duval : Oui, bien sûr. À votre dixième achat, vous recevez une viennoiserie gratuite. Je vous fais une carte tout de suite.
 
 Claire : Super ! Merci beaucoup, monsieur. Je suis sûre que je vais revenir très vite.
 

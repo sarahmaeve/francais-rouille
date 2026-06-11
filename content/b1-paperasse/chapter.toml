@@ -1,10 +1,10 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "La Paperasse — Administration Française au Quotidien"
+subtitle = "La paperasse — Administration française au quotidien"
 level = "B1"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B1 — La Paperasse"
+footer_suffix = "Niveau B1 — La paperasse"
 
 # --- Contexte ---
 
@@ -13,7 +13,7 @@ heading = "Contexte"
 
 [[sections.pages]]
 slug = "00_cerfa_titre_sejour"
-title = "Le Cerfa — Demande de Titre de Séjour"
+title = "Le Cerfa — Demande de titre de séjour"
 description = "Un formulaire Cerfa annoté et le lexique de la paperasse française — justificatif, récépissé, copie intégrale, et les autres mots qu'on rencontre à tous les guichets."
 type = "fragment"
 resources = [
@@ -23,17 +23,17 @@ resources = [
 # --- Dialogues ---
 
 [[sections]]
-heading = "Les Démarches de Maeve"
+heading = "Les démarches de Maeve"
 
 [[sections.pages]]
 slug = "01_repondeur_prefecture"
-title = "Répondeur de la Préfecture"
+title = "Répondeur de la préfecture"
 description = "Le message vocal enregistré de la préfecture de la Loire-Atlantique. Écoute et compréhension d'un serveur vocal administratif."
 type = "dialog"
 
 [[sections.pages]]
 slug = "02_guichet_prefecture"
-title = "Au Guichet de la Préfecture"
+title = "Au guichet de la préfecture"
 description = "Maeve dépose son dossier de renouvellement de titre de séjour. Son justificatif de domicile est trop ancien — négociation polie."
 type = "dialog"
 
@@ -45,8 +45,8 @@ type = "dialog"
 
 [[sections.pages]]
 slug = "04_mairie_acte_naissance"
-title = "À la Mairie pour un Acte de Naissance"
-description = "Maeve prépare son dossier de PACS. Copie intégrale, traduction assermentée, certificat de coutume et convention Cerfa."
+title = "À la mairie pour un acte de naissance"
+description = "Quelques mois plus tôt : Maeve prépare son dossier de PACS. Copie intégrale, traduction assermentée, certificat de coutume et convention Cerfa."
 type = "dialog"
 
 # --- Référence ---
@@ -56,7 +56,7 @@ heading = "Référence"
 
 [[sections.pages]]
 slug = "vocabulaire"
-title = "Vocabulaire B1 — La Paperasse"
+title = "Vocabulaire B1 — La paperasse"
 description = "Mots et expressions clés de l'administration française."
 type = "static"
 
@@ -69,5 +69,5 @@ type = "static"
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"

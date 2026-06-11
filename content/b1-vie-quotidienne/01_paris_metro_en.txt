@@ -7,7 +7,7 @@ Characters:
 
 Léa : Excuse me, sir, can you help me? I'm looking for the line to get to Montmartre.
 
-Marc : Of course! You need to take line 12 in the direction of Mairie d'Issy. Uh, sorry, in the direction of Front Populaire.
+Marc : Of course! You need to take line 12 in the direction of Mairie d'Issy.
 
 Léa : Okay, but I'm on line 4 right now. Do I need to transfer?
 
@@ -15,7 +15,7 @@ Marc : Yes, you need to transfer at the Marcadet-Poissonniers station. It's thre
 
 Léa : And after the transfer, is it far?
 
-Marc : No, not at all. After the transfer, you get off at Abbesses. It's only two stops.
+Marc : No, not at all. After the transfer, you get off at Abbesses. It's only three stops.
 
 Léa : Abbesses, okay. Do I need to buy a new ticket for the transfer?
 

@@ -3,7 +3,7 @@ The Job Interview at Pixelune
 Characters:
 - Hélène Barbier — the HR director at Pixelune
 - Clément Rivière — the CEO and co-founder of Pixelune
-- Nadia Lefort — an engineer interviewing for the Senior Data-Viz role
+- Nadia Lefort — an engineer interviewing for the Senior Data-Viz Engineer role
 
 Hélène: Good morning, Ms. Lefort, thank you for coming in. Please, have a seat. I'm Hélène Barbier, HR director, and this is Clément Rivière, our CEO and co-founder.
 
@@ -33,9 +33,9 @@ Nadia: I try to bring the discussion back to facts and to criteria. When two app
 
 Hélène: I'd like to come back to something concrete. Could you tell us about a time when you had to defend an unpopular decision?
 
-Nadia: Yes, one comes to mind. During the overhaul I just mentioned, I decided to freeze all new features for three months, to stabilise the codebase. The journalists weren't happy, and the editor-in-chief even less so. But I was convinced we were accumulating technical debt that would cost us far more if we didn't act. I presented a costed document, with maintenance projections over twelve months, and I defended my position in committee. In the end, management approved the freeze. In hindsight, the quality of the code improved significantly.
+Nadia: Yes, one comes to mind. During the overhaul I just mentioned, I decided to freeze all new features for three months, to stabilise the codebase. The journalists weren't happy, and the editor-in-chief even less so. But I was convinced we were accumulating technical debt that would cost us far more if we didn't act. I presented a costed document, with maintenance projections over twelve months, and I defended my position in committee. In the end, management approved the freeze. Afterwards, the quality of the code improved significantly.
 
-Clément: Thank you. On our side — do you have any questions for us about the role or about Pixelune?
+Clément: Thank you. And on your side — do you have any questions for us about the role or about Pixelune?
 
 Nadia: Yes, several. First, how much technical autonomy would the person in this role have — on choice of tools, libraries, architecture?
 
@@ -53,7 +53,7 @@ Nadia: Thank you, that's all very clear. And what are the next steps?
 
 Hélène: We have one or two other candidates to see this week. I'll get back to you within around ten days, whatever the outcome. If we continue with you, there will be a final, more technical meeting with the data team.
 
-Nadia: Very good. Thank you for the conversation — it was genuinely interesting from my side too.
+Nadia: Very good. Thank you — this has been a genuinely interesting conversation for me.
 
 Clément: Thank you, Ms. Lefort. Have a good rest of the day.
 

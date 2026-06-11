@@ -1,10 +1,10 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "Chansons Populaires — Opinions et Débats Culturels"
+subtitle = "Chansons populaires — Opinions et débats culturels"
 level = "B2"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B2 — Chansons Populaires"
+footer_suffix = "Niveau B2 — Chansons populaires"
 
 # --- Contexte ---
 
@@ -13,13 +13,13 @@ heading = "Contexte"
 
 [[sections.pages]]
 slug = "00_concert_inrocks"
-title = "Concert Impromptu — Les Inrockuptibles"
+title = "Concert impromptu — Les Inrockuptibles"
 description = "Affiche publicitaire pour un concert surprise organisé par Les Inrocks."
 type = "fragment"
 
 [[sections.pages]]
 slug = "01_expressions_musique"
-title = "Parler Musique Pour Les Nuls"
+title = "Parler musique pour les Nuls"
 description = "Guide des expressions et de l'argot pour donner son avis sur la musique."
 type = "fragment"
 
@@ -30,7 +30,7 @@ heading = "Discussions"
 
 [[sections.pages]]
 slug = "02_chansons_indila"
-title = "Les Chansons d'Indila"
+title = "Les chansons d'Indila"
 description = "Trois étudiants discutent de leurs chansons préférées d'Indila et de celles qu'ils aiment moins."
 type = "dialog"
 resources = [
@@ -39,13 +39,13 @@ resources = [
 
 [[sections.pages]]
 slug = "03_films_mousquetaires"
-title = "Les Trois Mousquetaires au Cinéma"
+title = "Les Trois Mousquetaires au cinéma"
 description = "Maeve et Irene débattent des récents films Les Trois Mousquetaires, entre déception et moments forts."
 type = "dialog"
 
 [[sections.pages]]
 slug = "04_album_zaz"
-title = "Le Dernier Album de Zaz"
+title = "Le dernier album de Zaz"
 description = "Matthieu et Rebecca comparent Sains et saufs aux albums précédents de Zaz."
 type = "dialog"
 resources = [
@@ -59,7 +59,7 @@ heading = "Référence"
 
 [[sections.pages]]
 slug = "vocabulaire"
-title = "Vocabulaire B2 — Chansons Populaires"
+title = "Vocabulaire B2 — Chansons populaires"
 description = "Mots et expressions clés avec traductions en anglais."
 type = "static"
 
@@ -72,5 +72,5 @@ type = "static"
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"

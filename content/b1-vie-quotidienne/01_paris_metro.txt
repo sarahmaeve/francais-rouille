@@ -1,4 +1,4 @@
-Naviguer dans le Métro Parisien
+Naviguer dans le métro parisien
 
 Personnages :
 - Léa — une touriste qui visite Paris pour la première fois
@@ -6,7 +6,7 @@ Personnages :
 
 Léa : Excusez-moi, monsieur, est-ce que vous pouvez m’aider ? Je cherche la ligne pour aller à Montmartre.
 
-Marc : Bien sûr ! Vous devez prendre la ligne 12 en direction de Mairie d’Issy. Euh, pardon, en direction de Front Populaire.
+Marc : Bien sûr ! Vous devez prendre la ligne 12 en direction de Mairie d’Issy.
 
 Léa : D’accord, mais je suis sur la ligne 4 en ce moment. Est-ce que je dois changer ?
 
@@ -14,7 +14,7 @@ Marc : Oui, il faut changer à la station Marcadet-Poissonniers. C’est à troi
 
 Léa : Et après le changement, c’est loin ?
 
-Marc : Non, pas du tout. Après le changement, vous descendez à Abbesses. C’est seulement deux arrêts.
+Marc : Non, pas du tout. Après le changement, vous descendez à Abbesses. C’est seulement trois arrêts.
 
 Léa : Abbesses, d’accord. Est-ce qu’il faut acheter un nouveau ticket pour la correspondance ?
 

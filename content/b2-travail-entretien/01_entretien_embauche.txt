@@ -1,9 +1,9 @@
-L’Entretien d’Embauche chez Pixelune
+L’entretien d’embauche chez Pixelune
 
 Personnages :
 - Hélène Barbier — la directrice des ressources humaines de Pixelune
 - Clément Rivière — le PDG cofondateur de Pixelune
-- Nadia Lefort — une ingénieure candidate au poste de Senior Data-Viz
+- Nadia Lefort — une ingénieure candidate au poste de Senior Data-Viz Engineer
 
 Hélène : Bonjour madame Lefort, merci d’être venue. Je vous en prie, installez-vous. Je suis Hélène Barbier, DRH, et voici Clément Rivière, notre président et cofondateur.
 
@@ -29,13 +29,13 @@ Nadia : Oui, volontiers. En 2023, j’avais porté un projet de refonte complèt
 
 Clément : C’est une leçon importante, en effet. Dans votre poste actuel, comment gérez-vous les désaccords au sein d’une équipe technique ?
 
-Nadia : J’essaie de ramener la discussion sur les faits et sur les critères. Quand deux approches s’opposent, je propose qu’on formalise ensemble ce qu’on attend vraiment — performance, maintenabilité, simplicité d’usage — et qu’on évalue chaque option sur ces axes. Cela étant, je sais aussi qu’il y a des moments où il faut trancher, et si la décision revient à moi, je la prends, quitte à revenir dessus plus tard si les faits m’ont donné tort.
+Nadia : J’essaie de ramener la discussion sur les faits et sur les critères. Quand deux approches s’opposent, je propose qu’on formalise ensemble ce qu’on attend vraiment — performance, maintenabilité, simplicité d’usage — et qu’on évalue chaque option sur ces axes. Cela étant, je sais aussi qu’il y a des moments où il faut trancher, et si la décision me revient, je la prends, quitte à revenir dessus plus tard si les faits m’ont donné tort.
 
 Hélène : J’aimerais revenir sur un point concret. Pouvez-vous nous parler d’une situation où vous avez dû défendre une décision qui n’était pas populaire ?
 
-Nadia : Oui, il y en a une qui me vient à l’esprit. Au moment de la refonte dont je parlais, j’avais pris la décision de geler toute nouvelle fonctionnalité pendant trois mois, le temps de stabiliser la base. Les journalistes n’étaient pas contents, la rédaction en chef encore moins. Mais j’étais convaincue qu’on accumulait une dette technique qui allait nous coûter bien plus cher si on n’agissait pas. J’ai présenté un document chiffré, avec les coûts de maintenance projetés sur douze mois, et j’ai défendu ma position en comité. Au bout du compte, la direction a validé le gel. Après coup, la qualité du code a nettement progressé.
+Nadia : Oui, il y en a une qui me vient à l’esprit. Au moment de la refonte dont je parlais, j’avais pris la décision de geler toute nouvelle fonctionnalité pendant trois mois, le temps de stabiliser la base. Les journalistes n’étaient pas contents, la rédaction en chef encore moins. Mais j’étais convaincue qu’on accumulait une dette technique qui allait nous coûter bien plus cher si on n’agissait pas. J’ai présenté un document chiffré, avec les coûts de maintenance projetés sur douze mois, et j’ai défendu ma position en comité. Au bout du compte, la direction a validé le gel. Par la suite, la qualité du code a nettement progressé.
 
-Clément : Merci. De notre côté, avez-vous des questions à nous poser sur le poste ou sur Pixelune ?
+Clément : Merci. De votre côté, avez-vous des questions à nous poser sur le poste ou sur Pixelune ?
 
 Nadia : Oui, plusieurs. D’abord, quelle autonomie technique aurait la personne sur ce poste ? Je veux dire, sur les choix d’outils, de librairies, d’architecture ?
 
@@ -53,7 +53,7 @@ Nadia : Merci, ces éléments sont très clairs. Et pour la suite ?
 
 Hélène : Nous avons un ou deux autres candidats à recevoir cette semaine. Je vous recontacte d’ici une dizaine de jours, quel que soit le résultat. Si nous poursuivons avec vous, il y aura une dernière rencontre plus technique avec l’équipe data.
 
-Nadia : Très bien. Je vous remercie pour cet échange, c’était vraiment intéressant de mon côté.
+Nadia : Très bien. Je vous remercie, ça a été un échange vraiment intéressant pour moi.
 
 Clément : Merci à vous, madame Lefort. Bonne fin de journée.
 

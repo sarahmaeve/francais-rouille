@@ -18,7 +18,7 @@ Sébastien: Right, what are we having? Plat du jour is coley in beurre blanc. I'
 
 Raphaël: I'm going to the salad bar, I need something green today.
 
-Camille: It's Wednesday, there's the Italian buffet. I'll have pasta with tomato, that'll do me. You, Maeve?
+Camille: It's Monday, there's the Italian buffet. I'll have pasta with tomato, that'll do me. You, Maeve?
 
 Maeve: I'm looking. What exactly is coley?
 
@@ -30,7 +30,7 @@ Camille: Completely. It's the signature sauce here. If you've never tasted it, n
 
 Maeve: Perfect. Let's go.
 
-Camille: So, Maeve, important first question. Where are you living in Nantes?
+Camille: So, Maeve, important first question. Where are you staying, for now?
 
 Maeve: For now, I'm in a short-term furnished rental in the centre, around Graslin. But I'll be looking for something more stable from next month.
 
@@ -54,7 +54,7 @@ Raphaël: Me? Still with my parents. Shame on me. I've been looking for six mont
 
 Camille: I'm in Bouffay, the historic centre. It's super handy for going out. On the downside, it's noisy on Friday nights, I sleep with earplugs.
 
-Sébastien: I live in Rezé, just across the Loire. It's basically the suburbs of Nantes, but it's nice — I have a little garden, and it's five tram stops.
+Sébastien: I live in Rezé, just across the Loire. It's the southern suburbs of Nantes, but it's nice — I have a little garden, and it's five tram stops.
 
 Camille: Another really important question: Maeve, do you do any sport?
 
@@ -68,13 +68,13 @@ Raphaël: That's part of the activity, yes.
 
 Maeve: I'd love to try. I'm not a great footballer, but I can run.
 
-Sébastien: Honestly, you're already better equipped than I was on my first match.
+Sébastien: Honestly, you'll already do better than me from your very first match.
 
-Camille: By the way, did you see the Garonne Énergie brief yesterday? The client wants to redo everything, again.
+Camille: By the way, did you see the Garonne Énergie brief on Friday? The client wants to redo everything, again.
 
 Raphaël: Oh no, seriously?
 
-Camille: Yes, he sent a mail at ten p.m. last night. A classic. Basically, he wants "more impact", "more modern", but he can't tell us what that means.
+Camille: Yes, he sent a mail at ten p.m. on Friday night. A classic. Basically, he wants "more impact", "more modern", but he can't tell us what that means.
 
 Sébastien: Ah, we're in vague-feedback season.
 
@@ -86,7 +86,7 @@ Raphaël: It's a decent trick. Works eight times out of ten.
 
 Sébastien: And the other two, he calls you back on a Friday at five p.m. with a new idea.
 
-Everyone: Ha ha ha.
+Maeve: Haha, we have that in the States too.
 
 Camille: Right, shall we head back? I've got a call at two.
 

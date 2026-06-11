@@ -1,7 +1,7 @@
-Où Manger ? — Le Traiteur et le Restaurant
+Où manger ? — Le traiteur et le restaurant
 
 Personnages :
-- Alice — une touriste américaine fatiguée après les courses
+- Alice — une Américaine installée en Bretagne, fatiguée après les courses
 - Paul — le mari d’Alice
 - Serveur — un serveur dans un restaurant du centre commercial
 
@@ -29,7 +29,7 @@ Serveur : Bonjour, vous êtes deux ? Vous voulez déjeuner ?
 
 Alice : Oui, s’il vous plaît. Est-ce qu’on peut voir la carte avant de s’installer ?
 
-Serveur : Bien sûr, voilà la carte. On a aussi un plat du jour aujourd’hui, c’est un filet de cabillaud avec du riz et des légumes, à treize euros.
+Serveur : Bien sûr, voilà la carte. Aujourd’hui, le plat du jour, c’est un filet de cabillaud avec du riz et des légumes, à treize euros.
 
 Paul : Merci. On regarde et on vous dit.
 

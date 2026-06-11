@@ -1,7 +1,7 @@
-À la Recherche de Chaussures de Sport
+À la recherche de chaussures de sport
 
 Personnages :
-- Alice — une touriste américaine qui fait du shopping au centre commercial La Madeleine
+- Alice — une Américaine installée en Bretagne qui fait du shopping au centre commercial La Madeleine
 - Paul — le mari d’Alice
 - Vendeuse — une vendeuse dans une boutique de sport
 
@@ -13,13 +13,13 @@ Alice : Je ne sais pas, on va regarder le plan. Tiens, il y a un panneau là-bas
 
 Paul : Alors… Carrefour en bas, des boutiques de vêtements au premier étage… Ah, il y a un Intersport au deuxième étage.
 
-Alice : Intersport, c’est bien ça. On prend l’escalator ?
+Alice : Intersport, c’est parfait. On prend l’escalator ?
 
 Paul : Oui, allons-y. C’est à côté de quoi ?
 
 Alice : D’après le plan, c’est au deuxième étage, à côté de la Fnac.
 
-Paul : OK, je le vois. Entrons.
+Paul : OK, je le vois. Allez, on entre ?
 
 Vendeuse : Bonjour ! Je peux vous aider ?
 

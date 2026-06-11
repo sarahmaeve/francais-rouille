@@ -1,4 +1,4 @@
-À la Boulangerie
+À la boulangerie
 
 Personnages :
 - Sophie — une cliente qui entre dans la boulangerie le matin
@@ -12,9 +12,9 @@ Antoine : Les pains au chocolat viennent de sortir du four, ils sont encore tout
 
 Sophie : Mmm, ça sent vraiment bon. Je vais prendre deux pains au chocolat et un chausson aux pommes, s’il vous plaît.
 
-Antoine : Excellent choix. C’est pour manger ici ou pour emporter ?
+Antoine : Excellent choix. C’est sur place ou à emporter ?
 
-Sophie : Pour emporter, s’il vous plaît. C’est pour le petit-déjeuner au bureau.
+Sophie : À emporter, s’il vous plaît. C’est pour le petit-déjeuner au bureau.
 
 Antoine : D’accord. Est-ce que vous voulez autre chose ? Nous avons aussi des croissants au beurre et des brioches.
 

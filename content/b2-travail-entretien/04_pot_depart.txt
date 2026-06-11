@@ -1,12 +1,12 @@
-Le Pot de Départ de Marc
+Le pot de départ de Marc
 
 Personnages :
 - Clément Rivière — le PDG, qui prononce le discours
 - Marc Toussaint — l’ingénieur qui part en retraite après vingt-huit ans
-- Nadia Lefort — la successeur de Marc à la tête de l’équipe data-viz
+- Nadia Lefort — la successeure de Marc à la tête de l’équipe data-viz
 - Julien — un ingénieur junior de l’équipe data-viz
 
-Clément : Mes amis, s’il vous plaît, on va pouvoir commencer. Venez, approchez-vous tous. Bon. Si l’open space pouvait faire un tout petit peu silence, on ouvrirait le champagne dans les règles, je pense que ça ferait plaisir à Marc.
+Clément : Mes amis, s’il vous plaît, on va pouvoir commencer. Venez, approchez-vous tous. Bon. Si l’open space pouvait faire un tout petit peu de silence, on ouvrirait le champagne dans les règles, je pense que ça ferait plaisir à Marc.
 
 Marc : Ah, ne te gêne pas, tu sais bien que j’aime pas qu’on fasse des histoires.
 
@@ -22,7 +22,7 @@ Clément : Je ne vais pas m’étendre sur la liste des projets, parce qu’on y
 
 Marc : Techniquement, c’est quand même un peu inquiétant, ça.
 
-Clément : Non, c’est rassurant. Deuxièmement, Marc est à l’origine de la culture de relecture de code qu’on a chez Pixelune, et que nos nouveaux arrivants nous disent toujours être l’une des meilleures qu’ils aient connues. C’est son héritage, et il va nous survivre longtemps. Et troisièmement, Marc est l’homme qui, un soir de décembre deux mille onze, est resté jusqu’à quatre heures du matin pour sauver une démo client qui s’effondrait — et grâce auquel, le lendemain, on a signé le contrat qui a financé nos deux premières années. Donc, Marc, je le dis simplement : merci. Pour tout.
+Clément : Non, c’est rassurant. Deuxièmement, Marc est à l’origine de la culture de relecture de code qu’on a chez Pixelune, et que nos nouveaux arrivants nous disent toujours être l’une des meilleures qu’ils aient connues. C’est son héritage, et il va nous survivre longtemps. Et troisièmement, Marc est l’homme qui, un soir de décembre deux mille onze, est resté jusqu’à quatre heures du matin pour sauver une démo client qui s’effondrait — et grâce auquel, le lendemain, on a signé le contrat qui nous a fait vivre pendant les deux années suivantes. Donc, Marc, je le dis simplement : merci. Pour tout.
 
 Marc : Bon, merci Clément, merci vraiment. Alors attendez, laissez-moi poser mon verre. Non, parce que moi aussi je voulais dire deux mots, mais je vais faire encore plus court, parce que sinon je vais vraiment pleurer. Et personne n’a envie de voir ça, croyez-moi. Vingt-huit ans, c’est long. Ce qui est étonnant, c’est que ça ne m’a jamais paru long. J’ai eu la chance, très tôt, de tomber sur un projet qui m’intéressait, avec des gens qui m’intéressaient encore plus. Et puis, chaque fois que je me suis dit « tiens, je pourrais peut-être aller voir ailleurs », il y avait un nouveau truc qui démarrait ici, et je me retrouvais à signer pour trois ans de plus. Alors forcément, au bout d’un moment, ça fait vingt-huit.
 
@@ -48,7 +48,7 @@ Nadia : Compris.
 
 Clément : Allez, on lève nos verres. À Marc !
 
-Tout le monde : À Marc !
+Nadia : À Marc !
 
 Julien : Dis, Marc, maintenant que tu es libre, tu vas en faire quoi de ton temps ?
 

@@ -10,11 +10,11 @@ Maeve: Good morning, sir. I'm calling about my APL application.
 
 Mr. Lefèvre: Very well, I'll pull up your file. Your beneficiary number, please?
 
-Maeve: I have it here — seven, two, four, zero, nine, eight, five, six.
+Maeve: I have it here — seven, two, four, zero, nine, eight, five.
 
-Mr. Lefèvre: Seven, two, four, zero, nine, eight, five, six. One moment, I'm looking. There. Ms. Carrick, correct?
+Mr. Lefèvre: Seven, two, four, zero, nine, eight, five. One moment, I'm looking. There. Ms. Carrick, correct?
 
-Maeve: Yes — Maeve Carrick, spelt C-A-R-R-I-C-K.
+Maeve: Yes — Maeve Carrick: C, A, double R, I, C, K.
 
 Mr. Lefèvre: Very good. For confirmation, could you give me your date of birth and your current postcode?
 
@@ -24,7 +24,7 @@ Mr. Lefèvre: Perfect, that's you. Right, I'm looking. Your APL application was 
 
 Maeve: Oh, I hadn't noticed. Which ones?
 
-Mr. Lefèvre: First, we're missing your most recent rent receipt. Next, we're missing an attestation from your landlord confirming that you are indeed their tenant.
+Mr. Lefèvre: First, we're missing your most recent rent receipt. Next, we're missing the rent attestation filled in by your landlord, confirming that you are indeed their tenant.
 
 Maeve: All right. But I don't quite understand the difference between a rent receipt and an attestation. What is the difference, exactly?
 
@@ -46,9 +46,9 @@ Maeve: OK. And once I've uploaded, how long does it take for the file to be proc
 
 Mr. Lefèvre: Once we receive the documents, the processing time is usually two to three weeks. You'll get an SMS as soon as your file is validated.
 
-Maeve: Perfect. One last question: from when will I start receiving the benefit? I mean, will I get arrears from the time I moved in, or only from the month the file is validated?
+Maeve: Perfect. One last question: from when will I start receiving the benefit? I mean, will I get a back payment going back to when I moved in, or only from the month the file is validated?
 
-Mr. Lefèvre: Another very good question. The APL is paid from the month following the date of full submission of your application. So, for you, the first payment will be for next month, once we've received and validated the missing documents. There is no retroactivity to the move-in date, unfortunately.
+Mr. Lefèvre: Another very good question. The APL is paid from the month following the date your application was submitted. You submitted last month, so your entitlement starts this month. The payment itself will arrive once we've received and validated the missing documents. The entitlement does not go back to your move-in date, unfortunately.
 
 Maeve: OK — a bit of a shame, but it's clear. Thank you very much for the explanations, sir.
 
@@ -60,6 +60,6 @@ Mr. Lefèvre: Noted, I'll do it right away. Anything else, Ms. Carrick?
 
 Maeve: No, that's all, thank you.
 
-Mr. Lefèvre: Very good. I wish you a good day. Goodbye.
+Mr. Lefèvre: Very good. I wish you a good rest of the day.
 
 Maeve: Same to you. Goodbye.

@@ -1,4 +1,4 @@
-Au Guichet de la Préfecture
+Au guichet de la préfecture
 
 Personnages :
 - Mme Dubreuil — une agente d’accueil à la préfecture de la Loire-Atlantique
@@ -6,7 +6,7 @@ Personnages :
 
 Mme Dubreuil : Bonjour madame, bonjour. Vous avez votre convocation ?
 
-Maeve : Bonjour madame. Oui, la voici, et j’ai aussi imprimé le courriel de confirmation.
+Maeve : Bonjour madame. Oui, la voici, et j’ai aussi imprimé le mail de confirmation.
 
 Mme Dubreuil : Parfait. Madame Carrick, Maeve Carrick. Renouvellement de titre de séjour. D’accord. Alors on va reprendre votre dossier ensemble, dans l’ordre, s’il vous plaît. Passeport en cours de validité, d’abord.
 
@@ -28,11 +28,11 @@ Mme Dubreuil : Il faut un justificatif récent, c’est-à-dire de moins de troi
 
 Maeve : J’ai mon avis d’imposition, est-ce que ça pourrait marcher ?
 
-Mme Dubreuil : Non, malheureusement. L’avis d’imposition est accepté comme justificatif complémentaire, mais pas comme justificatif principal pour le titre de séjour. Il me faut vraiment une facture courante ou une quittance.
+Mme Dubreuil : Non, malheureusement. L’avis d’imposition est accepté comme justificatif complémentaire, mais pas comme justificatif principal pour le titre de séjour. Il me faut vraiment une facture récente ou une quittance.
 
 Maeve : Et mon contrat de bail ?
 
-Mme Dubreuil : Le contrat de bail non plus, parce qu’il est signé il y a plus d’un an. Ce qu’il faudrait, c’est que votre propriétaire vous fasse une attestation récente, ou bien que vous m’apportiez une quittance de loyer datée du mois dernier, ou encore une facture Internet récente.
+Mme Dubreuil : Le contrat de bail non plus, parce qu’il a été signé il y a plus d’un an. Ce qu’il faudrait, c’est que votre propriétaire vous fasse une attestation récente, ou bien que vous m’apportiez une quittance de loyer datée du mois dernier, ou encore une facture Internet récente.
 
 Maeve : D’accord. Je peux télécharger ma dernière facture Free depuis mon espace client, je pense.
 
@@ -50,9 +50,9 @@ Maeve : Oui, mon contrat de travail, mes trois derniers bulletins de salaire, et
 
 Mme Dubreuil : Pourquoi France Travail, vous avez été au chômage ?
 
-Maeve : Non, c’est une attestation de non-inscription, qu’on m’a demandée sur la liste des pièces.
+Maeve : Non, c’est une attestation de non-inscription, qui figurait sur la liste des pièces.
 
-Mme Dubreuil : Ah, très bien. C’est exact. Parfait, tout est là de ce côté-là. Il me manque donc uniquement le justificatif de domicile récent. Voici ce que je vous propose : je vous remets un récépissé qui atteste du dépôt de votre dossier à ce jour. Ce récépissé, il prouve que votre démarche est en cours, et il vaut autorisation de séjour provisoire. Il est valable six mois.
+Mme Dubreuil : Ah, très bien. C’est exact. Parfait, tout est là de ce côté-là. Il me manque donc uniquement le justificatif de domicile récent. Voici ce que je vous propose : je vous remets un récépissé qui atteste du dépôt de votre dossier à ce jour. Ce récépissé, il prouve que votre démarche est en cours, et il vaut autorisation provisoire de séjour. Il est valable six mois.
 
 Maeve : Ah, super, merci. Donc je peux continuer à travailler normalement avec ce document ?
 
@@ -60,15 +60,15 @@ Mme Dubreuil : Oui, tout à fait. Vous pouvez travailler, voyager dans l’espac
 
 Maeve : Oui, parfaitement.
 
-Mme Dubreuil : Très bien, je le bloque. Vous recevrez la confirmation par courriel dans la journée. Pour ce rendez-vous, il faut que vous apportiez uniquement le justificatif de domicile manquant. Tout le reste, je l’ai déjà scanné.
+Mme Dubreuil : Très bien, je le bloque. Vous recevrez la confirmation par mail dans la journée. Pour ce rendez-vous, il faut que vous apportiez uniquement le justificatif de domicile manquant. Tout le reste, je l’ai déjà scanné.
 
 Maeve : D’accord. Et si jamais je ne peux pas imprimer la facture Free, il y a un autre moyen ?
 
-Mme Dubreuil : Oui. Vous pouvez venir avec la facture sur votre téléphone, et nous l’imprimons ici, au guichet. Ça arrive souvent. Ou sinon, vous pouvez demander à votre bailleur une simple attestation d’hébergement datée, sur papier libre.
+Mme Dubreuil : Oui. Vous pouvez venir avec la facture sur votre téléphone, et nous l’imprimons ici, au guichet. Ça arrive souvent. Ou sinon, vous pouvez demander à votre bailleur une attestation de loyer récente.
 
 Maeve : Parfait. Merci pour votre patience.
 
-Mme Dubreuil : Il n’y a pas de quoi. Tenez, votre récépissé, votre passeport, votre ancien titre. Votre convocation pour le six mai est dans le courriel que vous allez recevoir.
+Mme Dubreuil : Il n’y a pas de quoi. Tenez, votre récépissé, votre passeport, votre ancien titre. Votre convocation pour le six mai est dans le mail que vous allez recevoir.
 
 Maeve : Merci beaucoup. Bonne journée, madame.
 

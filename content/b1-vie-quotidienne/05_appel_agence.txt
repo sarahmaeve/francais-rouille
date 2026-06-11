@@ -1,4 +1,4 @@
-Appel Téléphonique — Renseignements sur l’Appartement
+Appel téléphonique — Renseignements sur l’appartement
 
 Personnages :
 - Camille — une jeune professionnelle qui cherche un appartement
@@ -20,7 +20,7 @@ Thomas : C’est un excellent quartier. La rue de la Roquette est très bien sit
 
 Camille : Et au niveau du bruit ? J’ai lu que la rue de la Roquette est assez animée le soir.
 
-Thomas : C’est vrai que le bas de la rue est animé avec les bars et les restaurants. Mais l’appartement est plus haut sur la rue, c’est beaucoup plus calme. Et puis la chambre donne sur la cour, donc vous n’entendez presque rien.
+Thomas : C’est vrai que le bas de la rue est animé avec les bars et les restaurants. Mais l’appartement est plus haut dans la rue, c’est beaucoup plus calme. Et puis la chambre donne sur la cour, donc vous n’entendez presque rien.
 
 Camille : Ah, c’est rassurant. Il y a des espaces verts pas loin ?
 
@@ -44,4 +44,4 @@ Thomas : C’est noté. On se retrouve devant l’immeuble, au 87 rue de la Roqu
 
 Camille : Merci beaucoup, Thomas. À vendredi alors !
 
-Thomas : À vendredi, Camille. Bonne journée !
+Thomas : À vendredi, madame. Bonne journée !

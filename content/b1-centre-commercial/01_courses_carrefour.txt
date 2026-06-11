@@ -1,7 +1,7 @@
-Les Courses au Carrefour
+Les courses au Carrefour
 
 Personnages :
-- Alice — une touriste américaine qui habite en Bretagne
+- Alice — une Américaine installée en Bretagne
 - Paul — le mari d’Alice, également américain
 - Employé — un employé du rayon fruits et légumes chez Carrefour
 
@@ -27,7 +27,7 @@ Employé : La boucherie est au fond du magasin, après les produits laitiers. Vo
 
 Alice : Il y a aussi de la viande en barquette, non ?
 
-Employé : Oui, il y a le rayon libre-service juste à côté de la boucherie. Vous trouverez des steaks, des rôtis et des morceaux pour les ragoûts.
+Employé : Oui, il y a le rayon libre-service juste à côté de la boucherie. Vous trouverez des steaks, des rôtis et de la viande à mijoter.
 
 Paul : Super. Et le Coca light, c’est dans quel rayon ?
 
@@ -41,7 +41,7 @@ Paul : Il a dit allée sept pour le Coca light. Tu veux y aller pendant que je v
 
 Alice : Bonne idée. On se retrouve aux caisses dans quinze minutes ?
 
-Paul : Ça marche. N’oublie pas de prendre un pack de six, le dernier a duré seulement trois jours.
+Paul : Ça marche. N’oublie pas de prendre un pack de six, le dernier n’a duré que trois jours.
 
 Alice : Oui, je vais en prendre deux, comme ça on est tranquilles pour la semaine. Prends des entrecôtes si elles ne sont pas trop chères.
 

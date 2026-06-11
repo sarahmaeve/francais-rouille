@@ -5,10 +5,7 @@
     'use strict';
 
     /** Known flags — add entries here as new experiments are created. */
-    var KNOWN_FLAGS = [
-        { name: 'new-dining', description: 'Experimental dining dialog (B1)' },
-        { name: 'grammar', description: 'Grammar tips page (B2)' }
-    ];
+    var KNOWN_FLAGS = [];
 
     function render() {
         var active = window.FrFlags.active();

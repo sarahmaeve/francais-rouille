@@ -1,37 +1,37 @@
 [chapter]
 title = "Français Rouillé"
-subtitle = "Toulouse Médiévale — Histoire et Visite Guidée"
+subtitle = "Toulouse médiévale — Histoire et visite guidée"
 level = "B2"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
-footer_suffix = "Niveau B2 — Toulouse Médiévale"
+footer_suffix = "Niveau B2 — Toulouse médiévale"
 
 # --- Carte ---
 
 [[sections]]
-heading = "Visite Guidée"
+heading = "Visite guidée"
 
 [[sections.pages]]
 slug = "00_carte_toulouse"
-title = "Carte de la Visite Guidée"
+title = "Carte de la visite guidée"
 description = "Carte et itinéraire de la visite à pied du Toulouse médiéval."
 type = "fragment"
 
 # --- Monologues et Dialogue ---
 
 [[sections]]
-heading = "Monologues et Dialogue"
+heading = "Monologues et dialogue"
 
 [[sections.pages]]
 slug = "01_histoire_cathares"
-title = "Toulouse Médiévale et les Cathares"
+title = "Toulouse médiévale et les Cathares"
 description = "La guide Isabelle raconte l'histoire médiévale de Toulouse et l'origine du catharisme."
 type = "dialog"
 
 [[sections.pages]]
 slug = "02_basilique_saint_sernin"
-title = "La Basilique Saint-Sernin"
-description = "La guide Isabelle raconte l'histoire et la construction de la Basilique Saint-Sernin."
+title = "La basilique Saint-Sernin"
+description = "La guide Isabelle raconte l'histoire et la construction de la basilique Saint-Sernin."
 type = "dialog"
 
 [[sections.pages]]
@@ -42,8 +42,8 @@ type = "dialog"
 
 [[sections.pages]]
 slug = "04_dominicains_jacobins"
-title = "L'Ordre des Dominicains et l'Église des Jacobins"
-description = "La guide Isabelle explique l'histoire de l'ordre dominicain devant l'Église des Jacobins."
+title = "L'ordre des Dominicains et l'église des Jacobins"
+description = "La guide Isabelle explique l'histoire de l'ordre dominicain devant l'église des Jacobins."
 type = "dialog"
 
 # --- Diagrammes ---
@@ -53,7 +53,7 @@ heading = "Diagrammes"
 
 [[sections.pages]]
 slug = "05_architecture_romane"
-title = "Architecture d'une Église Romane"
+title = "Architecture d'une église romane"
 description = "Plan au sol et coupe transversale annotés d'une église romane de pèlerinage."
 type = "fragment"
 
@@ -67,7 +67,6 @@ slug = "06_grammaire"
 title = "Grammaire B2 : Raconter l'histoire"
 description = "Le plus-que-parfait et les pronoms relatifs dont et où — avec des exemples tirés de la visite guidée."
 type = "fragment"
-flag = "grammar"
 
 # --- Référence ---
 
@@ -89,5 +88,5 @@ type = "static"
 [[sections.pages]]
 slug = "flashcards"
 title = "Flashcards"
-description = "Révisez le vocabulaire avec des cartes mémoire."
+description = "Révisez le vocabulaire avec des cartes de révision."
 type = "static"
