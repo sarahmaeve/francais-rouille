@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "dialog_slug": "05_appel_agence",
+  "entries": {
+    "01_thomas.mp3": "d50fdd9b776f0e1d",
+    "02_camille.mp3": "2ede72d5517fa52a",
+    "03_thomas.mp3": "66b36d51a51d7fdb",
+    "04_camille.mp3": "613a5ae39badf29a",
+    "05_thomas.mp3": "18b74996717ea57d",
+    "06_camille.mp3": "479b1eb576b7481c",
+    "07_thomas.mp3": "f58febe49e1efbaa",
+    "08_camille.mp3": "23bae59e6cde293a",
+    "09_thomas.mp3": "4a61dba077376684",
+    "10_camille.mp3": "fcddb2a47a5e0f98",
+    "11_thomas.mp3": "ca1a53de893724d4",
+    "12_camille.mp3": "83c211afd498fff4",
+    "13_thomas.mp3": "e135cc24a56ac384",
+    "14_camille.mp3": "c598ac214ee0928e",
+    "15_thomas.mp3": "97fa42e45ba449e9",
+    "16_camille.mp3": "c8caf73e2bd16bd9",
+    "17_thomas.mp3": "fb6b51f6ab42687e",
+    "18_camille.mp3": "eae0c30fd867f3d8",
+    "19_thomas.mp3": "90d0b16f57bcad0b",
+    "20_camille.mp3": "df03ec20c91cfd59",
+    "21_thomas.mp3": "dd805f4a6abd1187"
+  }
+}

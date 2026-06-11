@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "dialog_slug": "05_chat_perdu",
+  "entries": {
+    "01_maeve.mp3": "49c28b7c26c2f0cc",
+    "02_helene.mp3": "7c7b8d6692312748",
+    "03_irene.mp3": "86606031921ebef9",
+    "04_helene.mp3": "792a53c1d28de63e",
+    "05_karim.mp3": "23532ac78c4f0137",
+    "06_maeve.mp3": "7f962580a2cb9375",
+    "07_karim.mp3": "af51ebaeca4bde51",
+    "08_irene.mp3": "bdf95f4b7d552c05",
+    "09_helene.mp3": "b7804e270bb6cc49",
+    "10_maeve.mp3": "843fad9a694353ec",
+    "11_karim.mp3": "0e7853415e99daeb",
+    "12_irene.mp3": "ed5bea65a09c87e8",
+    "13_karim.mp3": "068efe88196913e0",
+    "14_helene.mp3": "54eb42b9a0150243",
+    "15_maeve.mp3": "dc823a9de088d1b3",
+    "16_helene.mp3": "b59975d465489382",
+    "17_karim.mp3": "3eedb23663ce1d05",
+    "18_irene.mp3": "2068dd0916a6fe22"
+  }
+}

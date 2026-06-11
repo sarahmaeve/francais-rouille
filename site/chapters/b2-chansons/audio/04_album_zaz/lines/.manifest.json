@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "dialog_slug": "04_album_zaz",
+  "entries": {
+    "01_matthieu.mp3": "39ed5089aba597fb",
+    "02_rebecca.mp3": "42e6aa86b9407e81",
+    "03_matthieu.mp3": "a8e5f5ae9d8aca97",
+    "04_rebecca.mp3": "c9d16334bf221e25",
+    "05_matthieu.mp3": "90eb9aa90f67fcfb",
+    "06_rebecca.mp3": "9109f53b76d0e054",
+    "07_matthieu.mp3": "05e060e5366fb6ad",
+    "08_rebecca.mp3": "5b1706ab86998ef2",
+    "09_matthieu.mp3": "a5d6456841b381d5",
+    "10_rebecca.mp3": "6d6c830056024d4b",
+    "11_matthieu.mp3": "318f6e4e0641b6b0",
+    "12_rebecca.mp3": "f69ca1c0e5ae85de",
+    "13_matthieu.mp3": "a011a3046cae5476",
+    "14_rebecca.mp3": "7e942e338f8d4b64",
+    "15_matthieu.mp3": "85c0ba34e42ec022",
+    "16_rebecca.mp3": "3ba351f35c00d1ac",
+    "17_matthieu.mp3": "c7bcce7a3f951b1e",
+    "18_rebecca.mp3": "7b3901fcd5dd18ce",
+    "19_matthieu.mp3": "28f9226c4e38b754"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "dialog_slug": "01_paris_metro",
+  "entries": {
+    "01_lea.mp3": "4928eb643df65cbd",
+    "02_marc.mp3": "ca3df12626544e79",
+    "03_lea.mp3": "49f18364b1bedb7a",
+    "04_marc.mp3": "76367f3692cb2add",
+    "05_lea.mp3": "412c4ffe4e90ee38",
+    "06_marc.mp3": "8466a9a311acf9b0",
+    "07_lea.mp3": "ea60694b9a83086a",
+    "08_marc.mp3": "130a660e03d18db6",
+    "09_lea.mp3": "92011841bfc443bb",
+    "10_marc.mp3": "5fca38374c882212",
+    "11_lea.mp3": "d4361ad9f42e7320",
+    "12_marc.mp3": "da7ddfa55d3c60fd",
+    "13_lea.mp3": "6eecd8eb3da91412",
+    "14_marc.mp3": "27c3236bbc1c5a18",
+    "15_lea.mp3": "e11f138a77cd2a58",
+    "16_marc.mp3": "b58e854e9939907b"
+  }
+}

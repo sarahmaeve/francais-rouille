@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "dialog_slug": "01_courses_carrefour",
+  "entries": {
+    "01_alice.mp3": "282b0e285e772ad9",
+    "02_paul.mp3": "4df09f0c8be6e889",
+    "03_alice.mp3": "7b384ce75e55231c",
+    "04_paul.mp3": "45c1af7cb63df852",
+    "05_alice.mp3": "a5707614a180ff54",
+    "06_employe.mp3": "79dd999e91535735",
+    "07_alice.mp3": "7cfdd00ea92c8e80",
+    "08_employe.mp3": "ef09dd4b6563c5a1",
+    "09_paul.mp3": "18bee2ea821842fd",
+    "10_employe.mp3": "99ab76600043a10f",
+    "11_alice.mp3": "144c590bcfd62f63",
+    "12_employe.mp3": "4925b7841b81394d",
+    "13_paul.mp3": "e1f344af5a573981",
+    "14_employe.mp3": "18cbf6a72418d2e6",
+    "15_alice.mp3": "328d0cd5ef7a7b88",
+    "16_employe.mp3": "a2e08639fe42c628",
+    "17_paul.mp3": "c48fd4e2bb2c389b",
+    "18_alice.mp3": "05e1b33168239cd2",
+    "19_paul.mp3": "30dd8b08bd4a69d4",
+    "20_alice.mp3": "f8fbf920b678fbf5",
+    "21_paul.mp3": "193f4acef57c5ca6",
+    "22_alice.mp3": "1cb4bb315ba1f0cf",
+    "23_paul.mp3": "0b918d3c12b2a524"
+  }
+}

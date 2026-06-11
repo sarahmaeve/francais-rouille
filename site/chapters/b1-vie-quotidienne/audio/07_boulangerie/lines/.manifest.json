@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "dialog_slug": "07_boulangerie",
+  "entries": {
+    "01_claire.mp3": "504396927dc6ecfc",
+    "02_monsieur_duval.mp3": "dddb559e3dcc8cc1",
+    "03_claire.mp3": "e439d1d409b28785",
+    "04_monsieur_duval.mp3": "d99689adc31dd38f",
+    "05_claire.mp3": "b55466e0f3257c8a",
+    "06_monsieur_duval.mp3": "81aa86b7df5b3be6",
+    "07_claire.mp3": "fcf94141771ad029",
+    "08_monsieur_duval.mp3": "e127da39a35b0df7",
+    "09_claire.mp3": "dee184ab7b6faac1",
+    "10_monsieur_duval.mp3": "1cc6122b4ae89141",
+    "11_claire.mp3": "10767f3006d79c3c",
+    "12_monsieur_duval.mp3": "3f18b92d1755b1a2",
+    "13_claire.mp3": "b5832d70c47be8ff",
+    "14_monsieur_duval.mp3": "cf03915efb9d1055",
+    "15_claire.mp3": "660a8ca10f575302",
+    "16_monsieur_duval.mp3": "14adf2c584d8baa3",
+    "17_claire.mp3": "b36c8890e4f93885",
+    "18_monsieur_duval.mp3": "d8fc6c6b7d990ca2"
+  }
+}

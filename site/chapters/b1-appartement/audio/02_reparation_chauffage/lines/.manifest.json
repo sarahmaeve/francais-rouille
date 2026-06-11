@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "dialog_slug": "02_reparation_chauffage",
+  "entries": {
+    "01_bruno.mp3": "56415a6534fc951f",
+    "02_maeve.mp3": "e2ad4ba1ee7efdd8",
+    "03_bruno.mp3": "41dcbb90e8df4a11",
+    "04_maeve.mp3": "d55d0065695d4d40",
+    "05_bruno.mp3": "4b90f8aedd10fcae",
+    "06_maeve.mp3": "71c2ddbbed225c06",
+    "07_bruno.mp3": "a4d7678da71d3200",
+    "08_maeve.mp3": "9e245440590f1d6d",
+    "09_bruno.mp3": "d8edfe08c1242909",
+    "10_maeve.mp3": "cd4e532e78b715ab",
+    "11_bruno.mp3": "799b74af2f8d58c5",
+    "12_maeve.mp3": "7004941195975877",
+    "13_bruno.mp3": "b4609cebbbdea805",
+    "14_maeve.mp3": "092a7ed449513335",
+    "15_bruno.mp3": "cae5645fae7bf367",
+    "16_maeve.mp3": "4fa35102fbccde21",
+    "17_bruno.mp3": "4b4359c4e7313875"
+  }
+}

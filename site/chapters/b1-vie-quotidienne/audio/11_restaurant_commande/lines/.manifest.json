@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "dialog_slug": "11_restaurant_commande",
+  "entries": {
+    "01_julien.mp3": "32f56ab6ea270035",
+    "02_emilie.mp3": "abeaa1dbc5a8dbd3",
+    "03_julien.mp3": "5b2794e823bd776a",
+    "04_emilie.mp3": "5f706ca75221a746",
+    "05_julien.mp3": "ebda23aa6d2ec4e9",
+    "06_emilie.mp3": "293f7b94bea7b4fe",
+    "07_julien.mp3": "460e2c734ac78892",
+    "08_emilie.mp3": "c9c207d34d970af3",
+    "09_julien.mp3": "3b735051bb1289d7",
+    "10_emilie.mp3": "05cce65d044df21c",
+    "11_julien.mp3": "34e2c4ef3dbd97e7",
+    "12_emilie.mp3": "0714fc060a3872a2",
+    "13_julien.mp3": "25bdacff81d763f1"
+  }
+}
