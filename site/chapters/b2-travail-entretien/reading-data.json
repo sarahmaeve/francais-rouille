@@ -1,0 +1,461 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "neo_ruraux_b2_01",
+      "level": "B2",
+      "title": "Les néo-ruraux",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Quitter la ville",
+          "sentences": [
+            "Depuis quelques années, on observe un phénomène qui aurait surpris nos grands-parents : de jeunes citadins, diplômés et bien rémunérés, quittent Paris ou Lyon pour s’installer dans des villages de quelques centaines d’habitants.",
+            "La presse les a baptisés les « néo-ruraux ».",
+            "Beaucoup affirment fuir le bruit, la pollution et le coût exorbitant des loyers.",
+            "Mais à les écouter de plus près, on devine une motivation plus profonde : le désir de retrouver une vie dont ils maîtrisent le rythme.",
+            "Léa, ancienne consultante de trente-deux ans, a troqué son appartement parisien contre une vieille ferme dans le Cantal.",
+            "« Je ne gagne plus la moitié de mon ancien salaire, reconnaît-elle, mais je n’ai jamais eu autant le sentiment d’exister. »",
+            "Elle cultive son potager, travaille à distance trois jours par semaine et s’est engagée dans l’association qui tente de rouvrir l’épicerie du village, fermée depuis une décennie.",
+            "Tout n’est pourtant pas idyllique.",
+            "L’isolement pèse, surtout l’hiver ; les services publics se raréfient ; et l’accueil des habitants de longue date oscille parfois entre la curiosité et la méfiance.",
+            "Certains maires, eux, voient dans ces arrivées une chance inespérée de ranimer des communes que l’on disait condamnées."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Quel est le thème central du texte ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Les difficultés économiques des agriculteurs traditionnels."
+            },
+            {
+              "id": "B",
+              "text": "L’installation de jeunes urbains dans des villages ruraux et ses ambivalences."
+            },
+            {
+              "id": "C",
+              "text": "La fermeture des commerces de proximité à la campagne."
+            },
+            {
+              "id": "D",
+              "text": "La hausse des loyers dans les grandes villes."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "inference",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "En écrivant « à les écouter de plus près, on devine une motivation plus profonde », l’auteur suggère que :",
+          "options": [
+            {
+              "id": "A",
+              "text": "les néo-ruraux mentent sur leurs véritables raisons."
+            },
+            {
+              "id": "B",
+              "text": "les raisons avancées (bruit, loyers) recouvrent un besoin plus existentiel."
+            },
+            {
+              "id": "C",
+              "text": "personne ne comprend vraiment pourquoi ils partent."
+            },
+            {
+              "id": "D",
+              "text": "leur motivation est avant tout financière."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q3",
+          "skill": "vocab_in_context",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Dans « a troqué son appartement contre une vieille ferme », « troquer » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "vendre à perte"
+            },
+            {
+              "id": "B",
+              "text": "échanger"
+            },
+            {
+              "id": "C",
+              "text": "rénover"
+            },
+            {
+              "id": "D",
+              "text": "louer"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q4",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Léa gagne désormais plus qu’auparavant."
+            },
+            {
+              "id": "b",
+              "text": "L’épicerie du village est fermée depuis environ dix ans."
+            },
+            {
+              "id": "c",
+              "text": "Léa a des enfants qui l’ont suivie à la campagne."
+            },
+            {
+              "id": "d",
+              "text": "Tous les habitants de longue date accueillent froidement les nouveaux venus."
+            }
+          ],
+          "answer": {
+            "a": "F",
+            "b": "V",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "points": 3,
+          "prompt": "Quels inconvénients de la vie rurale le texte mentionne-t-il ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "L’isolement, surtout en hiver."
+            },
+            {
+              "id": "B",
+              "text": "La raréfaction des services publics."
+            },
+            {
+              "id": "C",
+              "text": "L’absence totale d’accès à Internet."
+            },
+            {
+              "id": "D",
+              "text": "La méfiance possible de certains habitants."
+            },
+            {
+              "id": "E",
+              "text": "Un climat trop chaud l’été."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "points": 1,
+          "source": "A",
+          "prompt": "Surlignez la phrase qui marque le mieux que l’auteur nuance l’image positive de la vie rurale.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              7
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semaine_quatre_jours_b2_01",
+      "level": "B2-C1",
+      "title": "La semaine de quatre jours",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Travailler moins pour travailler mieux",
+          "sentences": [
+            "Et si l’on travaillait quatre jours par semaine sans perdre un centime de salaire ?",
+            "L’idée, longtemps jugée utopique, gagne du terrain.",
+            "Ses promoteurs défendent un principe simple, résumé par la formule « 100-80-100 » : cent pour cent du salaire, quatre-vingts pour cent du temps de travail, et cent pour cent de la productivité.",
+            "Autrement dit, on réduit la durée hebdomadaire — souvent à trente-deux heures — sans allonger les journées.",
+            "Plusieurs entreprises, en France comme ailleurs en Europe, ont mené des expérimentations.",
+            "Leurs responsables avancent des résultats encourageants : une baisse de l’absentéisme, des salariés plus reposés et, parfois, une productivité maintenue, voire améliorée.",
+            "Pour les défenseurs de la mesure, le raisonnement est limpide : un employé qui dispose de davantage de temps pour souffler revient au travail plus concentré et plus motivé.",
+            "Reste à savoir si ce qui fonctionne dans une start-up du numérique peut s’étendre à l’ensemble de l’économie."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "« À quel prix ? »",
+          "sentences": [
+            "« Quatre jours, oui, mais à quel prix ? » s’interroge Karim Benali, directeur des ressources humaines dans une entreprise de logistique.",
+            "Dans son secteur, réduire la semaine à trente-deux heures est tout simplement impossible : les entrepôts tournent en continu et les commandes n’attendent pas.",
+            "« Quand on nous parle de semaine de quatre jours, précise-t-il, il s’agit le plus souvent de répartir les mêmes heures sur quatre jours au lieu de cinq. Mes équipes finiraient à dix-neuf heures, ce qui arrange rarement les parents. »",
+            "Il redoute aussi une intensification du travail : « À vouloir tout caser en quatre jours, on risque d’épuiser les gens, pas de les soulager. »",
+            "Karim ne rejette pas l’idée par principe.",
+            "Il réclame seulement qu’on cesse de la présenter comme une recette universelle.",
+            "« Ce qui convient à un bureau ne convient pas forcément à un entrepôt ou à un hôpital. »"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "source": "A",
+          "points": 1,
+          "prompt": "Selon le texte A, le principe « 100-80-100 » signifie que les salariés :",
+          "options": [
+            {
+              "id": "A",
+              "text": "travaillent plus d’heures afin de gagner davantage."
+            },
+            {
+              "id": "B",
+              "text": "réduisent leur temps de travail tout en conservant leur salaire."
+            },
+            {
+              "id": "C",
+              "text": "renoncent à une partie de leur salaire en échange d’un jour de congé."
+            },
+            {
+              "id": "D",
+              "text": "doivent doubler leur productivité pour mériter un quatrième jour de repos."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Dans « davantage de temps pour souffler » (texte A), le verbe « souffler » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "se plaindre"
+            },
+            {
+              "id": "B",
+              "text": "se reposer"
+            },
+            {
+              "id": "C",
+              "text": "travailler plus vite"
+            },
+            {
+              "id": "D",
+              "text": "reprendre sa respiration après un effort physique"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "source": "A",
+          "points": 4,
+          "prompt": "D’après le texte A : Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Le texte affirme que ce modèle peut être adopté par toutes les entreprises."
+            },
+            {
+              "id": "b",
+              "text": "Certaines entreprises ont constaté une baisse de l’absentéisme."
+            },
+            {
+              "id": "c",
+              "text": "Le texte précise combien d’entreprises ont participé aux expérimentations."
+            },
+            {
+              "id": "d",
+              "text": "Passer à quatre jours suppose d’allonger les journées de travail."
+            }
+          ],
+          "answer": {
+            "a": "F",
+            "b": "V",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "mc_single",
+          "id": "q4",
+          "skill": "inference",
+          "difficulty": 4,
+          "source": "B",
+          "points": 1,
+          "prompt": "Quelle est la position de Karim Benali à l’égard de la semaine de quatre jours ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Il y est fermement opposé et la juge dangereuse."
+            },
+            {
+              "id": "B",
+              "text": "Il l’approuve sans réserve, quel que soit le secteur."
+            },
+            {
+              "id": "C",
+              "text": "Il la trouve envisageable, mais inadaptée à certains métiers."
+            },
+            {
+              "id": "D",
+              "text": "Il estime qu’elle ne concerne que le travail de bureau."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quels arguments Karim avance-t-il contre une application générale de la semaine de quatre jours ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dans la logistique, l’activité ne s’arrête jamais."
+            },
+            {
+              "id": "B",
+              "text": "Des journées qui s’achèvent plus tard compliquent la vie des parents."
+            },
+            {
+              "id": "C",
+              "text": "Le passage à quatre jours ferait exploser la masse salariale."
+            },
+            {
+              "id": "D",
+              "text": "Le travail risque de s’intensifier."
+            },
+            {
+              "id": "E",
+              "text": "Les salariés sont hostiles à tout changement d’habitude."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui montre que Karim ne condamne pas l’idée en elle-même.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En quoi les deux textes ne décrivent-ils pas tout à fait la même réalité ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le texte A présente une réduction du temps de travail, alors que le texte B évoque surtout les mêmes heures réparties sur quatre journées plus longues."
+            },
+            {
+              "id": "B",
+              "text": "Le texte A concerne la France, tandis que le texte B porte sur le reste de l’Europe."
+            },
+            {
+              "id": "C",
+              "text": "Le texte A s’intéresse aux salariés, le texte B uniquement aux employeurs."
+            },
+            {
+              "id": "D",
+              "text": "Les deux textes décrivent exactement le même dispositif."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "mc_single",
+          "id": "q8",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Sur quel point les deux textes se rejoignent-ils ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tous deux affirment que le modèle convient à l’ensemble des métiers."
+            },
+            {
+              "id": "B",
+              "text": "Tous deux soulèvent la question de l’application de ce modèle à toute l’économie."
+            },
+            {
+              "id": "C",
+              "text": "Tous deux rejettent catégoriquement la semaine de quatre jours."
+            },
+            {
+              "id": "D",
+              "text": "Tous deux s’appuient sur les mêmes entreprises pour se justifier."
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

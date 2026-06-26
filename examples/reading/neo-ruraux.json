@@ -1,0 +1,118 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "neo_ruraux_b2_01",
+      "level": "B2",
+      "title": "Les néo-ruraux",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Quitter la ville",
+          "sentences": [
+            "Depuis quelques années, on observe un phénomène qui aurait surpris nos grands-parents : de jeunes citadins, diplômés et bien rémunérés, quittent Paris ou Lyon pour s’installer dans des villages de quelques centaines d’habitants.",
+            "La presse les a baptisés les « néo-ruraux ».",
+            "Beaucoup affirment fuir le bruit, la pollution et le coût exorbitant des loyers.",
+            "Mais à les écouter de plus près, on devine une motivation plus profonde : le désir de retrouver une vie dont ils maîtrisent le rythme.",
+            "Léa, ancienne consultante de trente-deux ans, a troqué son appartement parisien contre une vieille ferme dans le Cantal.",
+            "« Je ne gagne plus la moitié de mon ancien salaire, reconnaît-elle, mais je n’ai jamais eu autant le sentiment d’exister. »",
+            "Elle cultive son potager, travaille à distance trois jours par semaine et s’est engagée dans l’association qui tente de rouvrir l’épicerie du village, fermée depuis une décennie.",
+            "Tout n’est pourtant pas idyllique.",
+            "L’isolement pèse, surtout l’hiver ; les services publics se raréfient ; et l’accueil des habitants de longue date oscille parfois entre la curiosité et la méfiance.",
+            "Certains maires, eux, voient dans ces arrivées une chance inespérée de ranimer des communes que l’on disait condamnées."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Quel est le thème central du texte ?",
+          "options": [
+            { "id": "A", "text": "Les difficultés économiques des agriculteurs traditionnels." },
+            { "id": "B", "text": "L’installation de jeunes urbains dans des villages ruraux et ses ambivalences." },
+            { "id": "C", "text": "La fermeture des commerces de proximité à la campagne." },
+            { "id": "D", "text": "La hausse des loyers dans les grandes villes." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "inference",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "En écrivant « à les écouter de plus près, on devine une motivation plus profonde », l’auteur suggère que :",
+          "options": [
+            { "id": "A", "text": "les néo-ruraux mentent sur leurs véritables raisons." },
+            { "id": "B", "text": "les raisons avancées (bruit, loyers) recouvrent un besoin plus existentiel." },
+            { "id": "C", "text": "personne ne comprend vraiment pourquoi ils partent." },
+            { "id": "D", "text": "leur motivation est avant tout financière." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q3",
+          "skill": "vocab_in_context",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Dans « a troqué son appartement contre une vieille ferme », « troquer » signifie :",
+          "options": [
+            { "id": "A", "text": "vendre à perte" },
+            { "id": "B", "text": "échanger" },
+            { "id": "C", "text": "rénover" },
+            { "id": "D", "text": "louer" }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q4",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "Léa gagne désormais plus qu’auparavant." },
+            { "id": "b", "text": "L’épicerie du village est fermée depuis environ dix ans." },
+            { "id": "c", "text": "Léa a des enfants qui l’ont suivie à la campagne." },
+            { "id": "d", "text": "Tous les habitants de longue date accueillent froidement les nouveaux venus." }
+          ],
+          "answer": { "a": "F", "b": "V", "c": "NP", "d": "F" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "points": 3,
+          "prompt": "Quels inconvénients de la vie rurale le texte mentionne-t-il ?",
+          "options": [
+            { "id": "A", "text": "L’isolement, surtout en hiver." },
+            { "id": "B", "text": "La raréfaction des services publics." },
+            { "id": "C", "text": "L’absence totale d’accès à Internet." },
+            { "id": "D", "text": "La méfiance possible de certains habitants." },
+            { "id": "E", "text": "Un climat trop chaud l’été." }
+          ],
+          "answer": ["A", "B", "D"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "points": 1,
+          "source": "A",
+          "prompt": "Surlignez la phrase qui marque le mieux que l’auteur nuance l’image positive de la vie rurale.",
+          "min_overlap": 0.6,
+          "accepted": [[7], [7, 8]]
+        }
+      ]
+    }
+  ]
+}

@@ -21,6 +21,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
     eprintln!("  {prog} prepare-image <path> --chapter <ch> [--role hero|thumbnail|page] Prepare image for site");
     eprintln!("  {prog} check-csp     [--site DIR]                                  Verify HTML against CSP");
+    eprintln!("  {prog} verify-quiz   [<file>] [--site DIR]                         Validate reading-data.json answer keys");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
@@ -72,6 +73,13 @@ fn print_help() {
     println!("           Checks for inline scripts, inline styles, event handlers,");
     println!("           form elements, and external resource URLs.");
     println!("           Default site directory: site/");
+    println!("  verify-quiz [<file>] [--site DIR]");
+    println!("           Validate reading-comprehension data. Parses reading-data.json");
+    println!("           and checks every answer key against the options, statements,");
+    println!("           and source sentences it references, so a malformed key cannot");
+    println!("           silently ship. Pass a single JSON file, or omit it to scan the");
+    println!("           site directory recursively. Default site directory: site/");
+    println!("           See docs/READING.md for the schema.");
     println!();
     println!("OPTIONS:");
     println!("  --format mp3|ogg     Audio encoding (default: mp3). Use \"ogg\" for OGG Opus.");
@@ -118,6 +126,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "strip-metadata" => image::run_strip_metadata(&args),
         "prepare-image" => image::run_prepare_image(&args),
         "check-csp" => run_check_csp(&args),
+        "verify-quiz" => run_verify_quiz(&args),
         _ => {
             print_usage(&args[0]);
             std::process::exit(1);
@@ -518,6 +527,71 @@ fn run_check_csp(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
             violations.len(),
             site_dir.display()
         );
+        std::process::exit(1);
+    }
+}
+
+fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
+    let mut site_dir = PathBuf::from("site");
+    let mut single_file: Option<PathBuf> = None;
+
+    let mut i = 2;
+    while i < args.len() {
+        match args[i].as_str() {
+            "--site" => {
+                i += 1;
+                site_dir = PathBuf::from(args.get(i).ok_or("--site requires a value")?);
+            }
+            other if !other.starts_with('-') && single_file.is_none() => {
+                single_file = Some(PathBuf::from(other));
+            }
+            other => {
+                return Err(format!("unknown flag: {other}").into());
+            }
+        }
+        i += 1;
+    }
+
+    // Determine which files to validate: an explicit file, or every
+    // reading-data.json under the site directory.
+    let files: Vec<PathBuf> = if let Some(file) = single_file {
+        if !file.is_file() {
+            eprintln!("File not found: {}", file.display());
+            std::process::exit(1);
+        }
+        vec![file]
+    } else {
+        if !site_dir.is_dir() {
+            eprintln!("Site directory not found: {}", site_dir.display());
+            std::process::exit(1);
+        }
+        let mut found = Vec::new();
+        site_gen::reading::collect_reading_files(&site_dir, &mut found)?;
+        found.sort();
+        found
+    };
+
+    if files.is_empty() {
+        println!("No reading-data.json files found under {}", site_dir.display());
+        return Ok(());
+    }
+
+    let mut errors = Vec::new();
+    for file in &files {
+        errors.extend(site_gen::reading::validate_file(file));
+    }
+
+    if errors.is_empty() {
+        println!(
+            "No problems found — {} reading file(s) valid.",
+            files.len()
+        );
+        Ok(())
+    } else {
+        for e in &errors {
+            eprintln!("{e}");
+        }
+        eprintln!("\nFound {} problem(s) in reading data.", errors.len());
         std::process::exit(1);
     }
 }
