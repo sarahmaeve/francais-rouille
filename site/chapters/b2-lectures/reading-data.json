@@ -1,0 +1,1798 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "neo_ruraux_b2_01",
+      "level": "B2",
+      "title": "Les néo-ruraux",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Quitter la ville",
+          "sentences": [
+            "Depuis quelques années, on observe un phénomène qui aurait surpris nos grands-parents : de jeunes citadins, diplômés et bien rémunérés, quittent Paris ou Lyon pour s’installer dans des villages de quelques centaines d’habitants.",
+            "La presse les a baptisés les « néo-ruraux ».",
+            "Beaucoup affirment fuir le bruit, la pollution et le coût exorbitant des loyers.",
+            "Mais à les écouter de plus près, on devine une motivation plus profonde : le désir de retrouver une vie dont ils maîtrisent le rythme.",
+            "Léa, ancienne consultante de trente-deux ans, a troqué son appartement parisien contre une vieille ferme dans le Cantal.",
+            "« Je ne gagne plus la moitié de mon ancien salaire, reconnaît-elle, mais je n’ai jamais eu autant le sentiment d’exister. »",
+            "Elle cultive son potager, travaille à distance trois jours par semaine et s’est engagée dans l’association qui tente de rouvrir l’épicerie du village, fermée depuis une décennie.",
+            "Tout n’est pourtant pas idyllique.",
+            "L’isolement pèse, surtout l’hiver ; les services publics se raréfient ; et l’accueil des habitants de longue date oscille parfois entre la curiosité et la méfiance.",
+            "Certains maires, eux, voient dans ces arrivées une chance inespérée de ranimer des communes que l’on disait condamnées."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Quel est le thème central du texte ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Les difficultés économiques des agriculteurs traditionnels."
+            },
+            {
+              "id": "B",
+              "text": "L’installation de jeunes urbains dans des villages ruraux et ses ambivalences."
+            },
+            {
+              "id": "C",
+              "text": "La fermeture des commerces de proximité à la campagne."
+            },
+            {
+              "id": "D",
+              "text": "La hausse des loyers dans les grandes villes."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "inference",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "En écrivant « à les écouter de plus près, on devine une motivation plus profonde », l’auteur suggère que :",
+          "options": [
+            {
+              "id": "A",
+              "text": "les néo-ruraux mentent sur leurs véritables raisons."
+            },
+            {
+              "id": "B",
+              "text": "les raisons avancées (bruit, loyers) recouvrent un besoin plus existentiel."
+            },
+            {
+              "id": "C",
+              "text": "personne ne comprend vraiment pourquoi ils partent."
+            },
+            {
+              "id": "D",
+              "text": "leur motivation est avant tout financière."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q3",
+          "skill": "vocab_in_context",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Dans « a troqué son appartement contre une vieille ferme », « troquer » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "vendre à perte"
+            },
+            {
+              "id": "B",
+              "text": "échanger"
+            },
+            {
+              "id": "C",
+              "text": "rénover"
+            },
+            {
+              "id": "D",
+              "text": "louer"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q4",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Léa gagne désormais plus qu’auparavant."
+            },
+            {
+              "id": "b",
+              "text": "L’épicerie du village est fermée depuis environ dix ans."
+            },
+            {
+              "id": "c",
+              "text": "Léa a des enfants qui l’ont suivie à la campagne."
+            },
+            {
+              "id": "d",
+              "text": "Tous les habitants de longue date accueillent froidement les nouveaux venus."
+            }
+          ],
+          "answer": {
+            "a": "F",
+            "b": "V",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "points": 3,
+          "prompt": "Quels inconvénients de la vie rurale le texte mentionne-t-il ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "L’isolement, surtout en hiver."
+            },
+            {
+              "id": "B",
+              "text": "La raréfaction des services publics."
+            },
+            {
+              "id": "C",
+              "text": "L’absence totale d’accès à Internet."
+            },
+            {
+              "id": "D",
+              "text": "La méfiance possible de certains habitants."
+            },
+            {
+              "id": "E",
+              "text": "Un climat trop chaud l’été."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "points": 1,
+          "source": "A",
+          "prompt": "Surlignez la phrase qui marque le mieux que l’auteur nuance l’image positive de la vie rurale.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              7
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semaine_quatre_jours_b2_01",
+      "level": "B2-C1",
+      "title": "La semaine de quatre jours",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Travailler moins pour travailler mieux",
+          "sentences": [
+            "Et si l’on travaillait quatre jours par semaine sans perdre un centime de salaire ?",
+            "L’idée, longtemps jugée utopique, gagne du terrain.",
+            "Ses promoteurs défendent un principe simple, résumé par la formule « 100-80-100 » : cent pour cent du salaire, quatre-vingts pour cent du temps de travail, et cent pour cent de la productivité.",
+            "Autrement dit, on réduit la durée hebdomadaire — souvent à trente-deux heures — sans allonger les journées.",
+            "Plusieurs entreprises, en France comme ailleurs en Europe, ont mené des expérimentations.",
+            "Leurs responsables avancent des résultats encourageants : une baisse de l’absentéisme, des salariés plus reposés et, parfois, une productivité maintenue, voire améliorée.",
+            "Pour les défenseurs de la mesure, le raisonnement est limpide : un employé qui dispose de davantage de temps pour souffler revient au travail plus concentré et plus motivé.",
+            "Reste à savoir si ce qui fonctionne dans une start-up du numérique peut s’étendre à l’ensemble de l’économie."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "« À quel prix ? »",
+          "sentences": [
+            "« Quatre jours, oui, mais à quel prix ? » s’interroge Karim Benali, directeur des ressources humaines dans une entreprise de logistique.",
+            "Dans son secteur, réduire la semaine à trente-deux heures est tout simplement impossible : les entrepôts tournent en continu et les commandes n’attendent pas.",
+            "« Quand on nous parle de semaine de quatre jours, précise-t-il, il s’agit le plus souvent de répartir les mêmes heures sur quatre jours au lieu de cinq. Mes équipes finiraient à dix-neuf heures, ce qui arrange rarement les parents. »",
+            "Il redoute aussi une intensification du travail : « À vouloir tout caser en quatre jours, on risque d’épuiser les gens, pas de les soulager. »",
+            "Karim ne rejette pas l’idée par principe.",
+            "Il réclame seulement qu’on cesse de la présenter comme une recette universelle.",
+            "« Ce qui convient à un bureau ne convient pas forcément à un entrepôt ou à un hôpital. »"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "source": "A",
+          "points": 1,
+          "prompt": "Selon le texte A, le principe « 100-80-100 » signifie que les salariés :",
+          "options": [
+            {
+              "id": "A",
+              "text": "travaillent plus d’heures afin de gagner davantage."
+            },
+            {
+              "id": "B",
+              "text": "réduisent leur temps de travail tout en conservant leur salaire."
+            },
+            {
+              "id": "C",
+              "text": "renoncent à une partie de leur salaire en échange d’un jour de congé."
+            },
+            {
+              "id": "D",
+              "text": "doivent doubler leur productivité pour mériter un quatrième jour de repos."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Dans « davantage de temps pour souffler » (texte A), le verbe « souffler » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "se plaindre"
+            },
+            {
+              "id": "B",
+              "text": "se reposer"
+            },
+            {
+              "id": "C",
+              "text": "travailler plus vite"
+            },
+            {
+              "id": "D",
+              "text": "reprendre sa respiration après un effort physique"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "source": "A",
+          "points": 4,
+          "prompt": "D’après le texte A : Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Le texte affirme que ce modèle peut être adopté par toutes les entreprises."
+            },
+            {
+              "id": "b",
+              "text": "Certaines entreprises ont constaté une baisse de l’absentéisme."
+            },
+            {
+              "id": "c",
+              "text": "Le texte précise combien d’entreprises ont participé aux expérimentations."
+            },
+            {
+              "id": "d",
+              "text": "Passer à quatre jours suppose d’allonger les journées de travail."
+            }
+          ],
+          "answer": {
+            "a": "F",
+            "b": "V",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "mc_single",
+          "id": "q4",
+          "skill": "inference",
+          "difficulty": 4,
+          "source": "B",
+          "points": 1,
+          "prompt": "Quelle est la position de Karim Benali à l’égard de la semaine de quatre jours ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Il y est fermement opposé et la juge dangereuse."
+            },
+            {
+              "id": "B",
+              "text": "Il l’approuve sans réserve, quel que soit le secteur."
+            },
+            {
+              "id": "C",
+              "text": "Il la trouve envisageable, mais inadaptée à certains métiers."
+            },
+            {
+              "id": "D",
+              "text": "Il estime qu’elle ne concerne que le travail de bureau."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quels arguments Karim avance-t-il contre une application générale de la semaine de quatre jours ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dans la logistique, l’activité ne s’arrête jamais."
+            },
+            {
+              "id": "B",
+              "text": "Des journées qui s’achèvent plus tard compliquent la vie des parents."
+            },
+            {
+              "id": "C",
+              "text": "Le passage à quatre jours ferait exploser la masse salariale."
+            },
+            {
+              "id": "D",
+              "text": "Le travail risque de s’intensifier."
+            },
+            {
+              "id": "E",
+              "text": "Les salariés sont hostiles à tout changement d’habitude."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui montre que Karim ne condamne pas l’idée en elle-même.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En quoi les deux textes ne décrivent-ils pas tout à fait la même réalité ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le texte A présente une réduction du temps de travail, alors que le texte B évoque surtout les mêmes heures réparties sur quatre journées plus longues."
+            },
+            {
+              "id": "B",
+              "text": "Le texte A concerne la France, tandis que le texte B porte sur le reste de l’Europe."
+            },
+            {
+              "id": "C",
+              "text": "Le texte A s’intéresse aux salariés, le texte B uniquement aux employeurs."
+            },
+            {
+              "id": "D",
+              "text": "Les deux textes décrivent exactement le même dispositif."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "mc_single",
+          "id": "q8",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Sur quel point les deux textes se rejoignent-ils ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tous deux affirment que le modèle convient à l’ensemble des métiers."
+            },
+            {
+              "id": "B",
+              "text": "Tous deux soulèvent la question de l’application de ce modèle à toute l’économie."
+            },
+            {
+              "id": "C",
+              "text": "Tous deux rejettent catégoriquement la semaine de quatre jours."
+            },
+            {
+              "id": "D",
+              "text": "Tous deux s’appuient sur les mêmes entreprises pour se justifier."
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "ia_creation_c1_01",
+      "level": "C1",
+      "title": "L’intelligence artificielle et la création artistique",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Un nouvel outil, pas un rival",
+          "sentences": [
+            "Depuis quelques années, des logiciels capables de produire des images, des textes ou des mélodies en quelques secondes bouleversent le monde de la création.",
+            "Pour leurs défenseurs, il ne faut pas y voir une menace, mais un outil de plus, comparable à l’appareil photo ou à l’ordinateur en leur temps.",
+            "Après tout, rappellent-ils, la machine ne décide rien seule : c’est l’humain qui la guide, qui choisit les mots, qui trie et retouche les résultats.",
+            "En 2022, une image produite à l’aide d’un tel logiciel a même remporté un concours d’art aux États-Unis, déclenchant une vive polémique.",
+            "Son auteur a répondu qu’il avait passé des heures à affiner ses instructions, comme un photographe règle son cadrage et sa lumière.",
+            "Ses partisans soulignent aussi que ces technologies rendent la création accessible à ceux qui n’ont jamais appris à dessiner ou à composer.",
+            "L’intelligence artificielle, concluent-ils, ne remplace pas l’artiste : elle élargit le cercle de ceux qui peuvent s’exprimer."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Mais qui est l’artiste ?",
+          "sentences": [
+            "D’autres voix s’élèvent pourtant contre cet enthousiasme.",
+            "Elles rappellent que ces logiciels n’inventent rien : ils ont été entraînés sur des millions d’œuvres existantes, souvent récupérées sans l’accord de leurs auteurs.",
+            "Dès 2018, le portrait d’« Edmond de Belamy », produit par un algorithme, a été vendu plus de 400 000 dollars dans une grande maison d’enchères — mais une partie du code provenait d’un autre créateur, qui n’a rien touché.",
+            "Pour ces critiques, la vraie question n’est pas technique mais morale : peut-on parler de création quand la machine se contente de recombiner le travail des autres ?",
+            "Ils craignent que des milliers d’illustrateurs et de musiciens ne voient leur métier dévalorisé du jour au lendemain.",
+            "Créer, insistent-ils, ce n’est pas seulement produire une belle image : c’est avoir quelque chose à dire.",
+            "Or une machine, aussi habile soit-elle, n’a ni intention ni expérience du monde."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Pour les défenseurs de ces logiciels (texte A), l’intelligence artificielle est avant tout :",
+          "options": [
+            {
+              "id": "A",
+              "text": "une menace qui condamne les artistes au chômage."
+            },
+            {
+              "id": "B",
+              "text": "un outil que l’humain doit guider."
+            },
+            {
+              "id": "C",
+              "text": "une mode passagère sans véritable avenir."
+            },
+            {
+              "id": "D",
+              "text": "un moyen de gagner de l’argent rapidement."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Dans « dévalorisé du jour au lendemain » (texte B), l’expression « du jour au lendemain » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "très progressivement, sur de longues années."
+            },
+            {
+              "id": "B",
+              "text": "très brusquement, en très peu de temps."
+            },
+            {
+              "id": "C",
+              "text": "une seule fois par jour."
+            },
+            {
+              "id": "D",
+              "text": "dans un avenir encore lointain."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Le texte B affirme que ces logiciels ont été entraînés sur des œuvres déjà existantes."
+            },
+            {
+              "id": "b",
+              "text": "D’après le texte A, la machine crée toute seule, sans aucune intervention humaine."
+            },
+            {
+              "id": "c",
+              "text": "Le texte B indique le nombre exact d’illustrateurs dont le métier est menacé."
+            },
+            {
+              "id": "d",
+              "text": "D’après le texte B, l’argent de la vente d’« Edmond de Belamy » a été partagé équitablement entre tous ceux qui y avaient contribué."
+            }
+          ],
+          "answer": {
+            "a": "V",
+            "b": "F",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quelles objections le texte B oppose-t-il à ces logiciels ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ils s’appuient sur des œuvres récupérées sans autorisation."
+            },
+            {
+              "id": "B",
+              "text": "Ils risquent de dévaloriser le métier d’illustrateur ou de musicien."
+            },
+            {
+              "id": "C",
+              "text": "Ils sont trop lents pour être réellement utiles."
+            },
+            {
+              "id": "D",
+              "text": "Une machine n’a ni intention ni expérience du monde."
+            },
+            {
+              "id": "E",
+              "text": "Ils coûtent beaucoup trop cher à l’achat."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase où l’auteur du texte B résume ce qu’est, selon lui, créer.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En quoi les deux textes s’opposent-ils le plus nettement ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le texte A nie l’existence de ces logiciels, alors que le texte B la confirme."
+            },
+            {
+              "id": "B",
+              "text": "Le texte A y voit un simple outil au service de l’humain, tandis que le texte B doute qu’on puisse parler de véritable création."
+            },
+            {
+              "id": "C",
+              "text": "Le texte A s’adresse aux musiciens, le texte B aux peintres."
+            },
+            {
+              "id": "D",
+              "text": "Les deux textes défendent exactement la même position."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Sur quel point les deux textes se rejoignent-ils malgré tout ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tous deux estiment que ces logiciels n’auront aucun effet sur les métiers artistiques."
+            },
+            {
+              "id": "B",
+              "text": "Tous deux reconnaissent qu’un être humain intervient dans le processus."
+            },
+            {
+              "id": "C",
+              "text": "Tous deux réclament l’interdiction de ces logiciels."
+            },
+            {
+              "id": "D",
+              "text": "Tous deux citent exactement les mêmes artistes."
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "anglicismes_b2_01",
+      "level": "B2-C1",
+      "title": "Le français face aux anglicismes",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Défendre une langue partagée",
+          "sentences": [
+            "La langue française n’a jamais cessé d’emprunter à ses voisines, mais l’arrivée massive de l’anglais inquiète une partie de ses défenseurs.",
+            "En 1994, une loi a rendu le français obligatoire dans la publicité, le monde du travail et les services publics, afin qu’aucun citoyen ne soit exclu par des termes étrangers.",
+            "Depuis, une commission officielle propose régulièrement des équivalents français aux mots venus de l’anglais, surtout dans les domaines techniques.",
+            "C’est ainsi qu’« e-mail » est devenu « courriel », et que « fake news » a été traduit par « infox », mot formé à partir d’« information » et d’« intoxication ».",
+            "Pour les partisans de cette politique, il ne s’agit pas de purisme, mais d’égalité : une langue que tout le monde comprend reste une langue partagée.",
+            "Ils ajoutent qu’une langue qui renonce à nommer les nouveautés finit par s’appauvrir et par dépendre entièrement d’une autre.",
+            "Protéger le français, selon eux, ce n’est pas le figer : c’est lui donner les moyens de rester vivant."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Une langue vit de ses emprunts",
+          "sentences": [
+            "D’autres trouvent ce combat un peu vain.",
+            "Les linguistes rappellent que toutes les langues vivantes empruntent, et que le français lui-même a donné des centaines de mots à l’anglais, de « rendez-vous » à « déjà-vu ».",
+            "Surtout, c’est l’usage qui tranche, et non les décrets : dans la vie courante, on dit toujours « e-mail » ou « mail », jamais « courriel ».",
+            "Le cas le plus célèbre reste « mot-dièse », proposé en 2013 pour remplacer « hashtag » : la traduction a été tournée en dérision et n’a jamais pris.",
+            "À l’inverse, certains équivalents, comme « infox », se sont installés sans difficulté, parce qu’ils étaient brefs et expressifs.",
+            "Pour ces observateurs, une langue ne se protège pas par la loi, mais par la création, la littérature et le plaisir de la parler.",
+            "Vouloir contrôler le vocabulaire des gens, concluent-ils, revient le plus souvent à courir derrière l’usage."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Pour les défenseurs du texte A, traduire les mots anglais sert avant tout :",
+          "options": [
+            {
+              "id": "A",
+              "text": "à imiter la mode venue des pays anglophones."
+            },
+            {
+              "id": "B",
+              "text": "à ce que toute la population puisse comprendre la langue."
+            },
+            {
+              "id": "C",
+              "text": "à enrichir les dictionnaires de mots rares et savants."
+            },
+            {
+              "id": "D",
+              "text": "à interdire l’enseignement des langues étrangères."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Dans « c’est l’usage qui tranche » (texte B), le verbe « trancher » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "couper quelque chose en morceaux."
+            },
+            {
+              "id": "B",
+              "text": "décider, l’emporter."
+            },
+            {
+              "id": "C",
+              "text": "hésiter pendant longtemps."
+            },
+            {
+              "id": "D",
+              "text": "traduire mot à mot."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Une loi de 1994 a rendu le français obligatoire dans la publicité et les services publics."
+            },
+            {
+              "id": "b",
+              "text": "Selon le texte B, « mot-dièse » a aussitôt remplacé « hashtag » dans l’usage courant."
+            },
+            {
+              "id": "c",
+              "text": "Le texte A indique le nombre total de mots traduits par la commission officielle."
+            },
+            {
+              "id": "d",
+              "text": "D’après le texte B, le français n’a jamais rien apporté à la langue anglaise."
+            }
+          ],
+          "answer": {
+            "a": "V",
+            "b": "F",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quels arguments le texte B avance-t-il ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Toutes les langues vivantes empruntent à d’autres."
+            },
+            {
+              "id": "B",
+              "text": "C’est l’usage, et non les décrets, qui impose les mots."
+            },
+            {
+              "id": "C",
+              "text": "Le français devrait abandonner tous ses mots d’origine étrangère."
+            },
+            {
+              "id": "D",
+              "text": "Certaines traductions, comme « infox », ont tout de même réussi."
+            },
+            {
+              "id": "E",
+              "text": "L’anglais devrait être interdit sur le territoire français."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui montre que, pour le texte A, protéger le français ne revient pas à le figer.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              6
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "Quelle est la principale divergence entre les deux textes ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le texte A pense qu’on peut guider la langue par des mots officiels, alors que le texte B estime que seul l’usage décide."
+            },
+            {
+              "id": "B",
+              "text": "Le texte A défend l’anglais, le texte B défend le français."
+            },
+            {
+              "id": "C",
+              "text": "Le texte A parle de littérature, le texte B de publicité."
+            },
+            {
+              "id": "D",
+              "text": "Les deux textes rejettent toute forme de traduction."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Sur quel point les deux textes se rejoignent-ils ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le français n’a jamais emprunté de mots à d’autres langues."
+            },
+            {
+              "id": "B",
+              "text": "Les langues s’enrichissent en empruntant les unes aux autres."
+            },
+            {
+              "id": "C",
+              "text": "Il faut interdire les mots anglais au moyen de la loi."
+            },
+            {
+              "id": "D",
+              "text": "Le mot « courriel » a remplacé « e-mail » partout en France."
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "notre_dame_c1_01",
+      "level": "C1",
+      "title": "La reconstruction de Notre-Dame de Paris",
+      "sources": [
+        {
+          "id": "A",
+          "title": "À l’identique : fidélité à la mémoire",
+          "sentences": [
+            "Dans la nuit du 15 avril 2019, le monde entier a regardé brûler la cathédrale Notre-Dame de Paris, dont la flèche et la toiture se sont effondrées en quelques heures.",
+            "Très vite, une question a divisé architectes et responsables politiques : fallait-il reconstruire à l’identique, ou inventer une forme nouvelle ?",
+            "Les partisans de la restauration à l’identique l’ont emporté, et la flèche détruite a été rebâtie telle que l’avait dessinée l’architecte Viollet-le-Duc au XIXe siècle.",
+            "Pour eux, une cathédrale n’est pas un bâtiment ordinaire : elle fait partie de la mémoire collective et de la silhouette de Paris.",
+            "Y toucher, c’était risquer de la défigurer et de trahir l’attachement de millions de gens.",
+            "Le chantier a aussi permis de redonner vie à des savoir-faire anciens, du travail de la pierre à la charpente en chêne, transmis de génération en génération.",
+            "Rouverte en décembre 2024, la cathédrale a retrouvé son visage familier, comme si la catastrophe n’avait été qu’une parenthèse."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Chaque siècle laisse sa marque",
+          "sentences": [
+            "Pourtant, l’idée d’un geste plus contemporain n’avait rien d’absurde.",
+            "Au lendemain de l’incendie, le président lui-même avait évoqué la possibilité d’un « geste architectural contemporain », et des projets de flèche en verre ou de toit-jardin avaient circulé.",
+            "Ses défenseurs faisaient remarquer que Notre-Dame n’a jamais cessé de changer au fil des siècles.",
+            "La flèche disparue dans les flammes n’était d’ailleurs pas médiévale : Viollet-le-Duc l’avait lui-même ajoutée au XIXe siècle, en réinventant le Moyen Âge à sa manière.",
+            "Reconstruire à l’identique, disaient-ils, revient à figer le monument à un instant précis, comme s’il devait cesser de vivre.",
+            "Chaque époque, selon eux, a le droit — et peut-être le devoir — de laisser sa trace sur les édifices dont elle hérite.",
+            "Y renoncer, c’était choisir la prudence et la mémoire plutôt que l’audace."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Pour les partisans de la reconstruction à l’identique (texte A), pourquoi ne fallait-il pas modifier la cathédrale ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Parce qu’une forme nouvelle aurait coûté beaucoup moins cher."
+            },
+            {
+              "id": "B",
+              "text": "Parce qu’elle appartient à la mémoire collective et qu’y toucher risquait de la défigurer."
+            },
+            {
+              "id": "C",
+              "text": "Parce que les matériaux modernes étaient introuvables."
+            },
+            {
+              "id": "D",
+              "text": "Parce que plus personne n’aimait l’ancienne flèche."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 4,
+          "source": "B",
+          "points": 1,
+          "prompt": "Dans « figer le monument à un instant précis » (texte B), le verbe « figer » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "fixer définitivement, rendre immobile."
+            },
+            {
+              "id": "B",
+              "text": "détruire entièrement."
+            },
+            {
+              "id": "C",
+              "text": "rendre plus beau qu’avant."
+            },
+            {
+              "id": "D",
+              "text": "déplacer vers un autre lieu."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "La flèche détruite en 2019 avait été conçue par Viollet-le-Duc au XIXe siècle."
+            },
+            {
+              "id": "b",
+              "text": "Le texte A indique que la cathédrale a rouvert en décembre 2024."
+            },
+            {
+              "id": "c",
+              "text": "Le texte B précise le coût total des travaux de reconstruction."
+            },
+            {
+              "id": "d",
+              "text": "D’après le texte B, Notre-Dame est restée identique à elle-même depuis le Moyen Âge."
+            }
+          ],
+          "answer": {
+            "a": "V",
+            "b": "V",
+            "c": "NP",
+            "d": "F"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 4,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quels arguments le texte B avance-t-il en faveur d’un geste contemporain ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "La cathédrale a déjà beaucoup changé au cours des siècles."
+            },
+            {
+              "id": "B",
+              "text": "La flèche disparue n’était pas médiévale, mais un ajout du XIXe siècle."
+            },
+            {
+              "id": "C",
+              "text": "Reconstruire à l’identique reviendrait à figer le monument."
+            },
+            {
+              "id": "D",
+              "text": "La pierre et le chêne sont des matériaux désormais dépassés."
+            },
+            {
+              "id": "E",
+              "text": "Une flèche en verre aurait sûrement coûté moins cher."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "C"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 4,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui révèle que la flèche détruite n’était pas d’origine médiévale.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              3
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Quelle conviction commune sous-tend les deux textes, malgré leur désaccord ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Notre-Dame est un monument sans grande importance."
+            },
+            {
+              "id": "B",
+              "text": "Notre-Dame compte profondément, et la façon de la reconstruire engage un rapport à l’histoire."
+            },
+            {
+              "id": "C",
+              "text": "Il aurait fallu raser la cathédrale pour bâtir tout autre chose."
+            },
+            {
+              "id": "D",
+              "text": "La reconstruction aurait dû être confiée à un autre pays."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En quoi le texte B nuance-t-il l’idée de « reconstruction à l’identique » défendue dans le texte A ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Il rappelle que la flèche reconstruite imitait en réalité une création du XIXe siècle, et non un original médiéval."
+            },
+            {
+              "id": "B",
+              "text": "Il affirme que la cathédrale n’a jamais réellement brûlé."
+            },
+            {
+              "id": "C",
+              "text": "Il prétend que Viollet-le-Duc était un architecte du Moyen Âge."
+            },
+            {
+              "id": "D",
+              "text": "Il soutient que rien n’a été détruit lors de l’incendie de 2019."
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "pollinisateurs_b2_01",
+      "level": "B2",
+      "title": "L’effondrement des pollinisateurs",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Les pollinisateurs en danger",
+          "sentences": [
+            "On les remarque à peine, et pourtant ils sont indispensables à notre assiette.",
+            "Les insectes pollinisateurs — abeilles, bourdons, papillons, syrphes — transportent le pollen d’une fleur à l’autre et permettent ainsi à de nombreuses plantes de produire des fruits et des graines.",
+            "Selon les scientifiques, près de trois cultures alimentaires sur quatre dépendent, au moins en partie, de cette pollinisation.",
+            "Sans elle, beaucoup de fruits, de légumes et d’oléagineux deviendraient rares ou bien plus chers.",
+            "Or, depuis plusieurs décennies, les populations de pollinisateurs déclinent dans une grande partie du monde, et l’Europe n’est pas épargnée.",
+            "Les causes sont multiples et se renforcent les unes les autres.",
+            "L’agriculture intensive, en couvrant d’immenses surfaces d’une seule culture, prive les insectes de la diversité de fleurs dont ils se nourrissent.",
+            "Certains pesticides, en particulier les néonicotinoïdes, affaiblissent ou tuent les abeilles ; la France en a d’ailleurs interdit l’usage sur les semences à partir de 2018.",
+            "À cela s’ajoutent le réchauffement climatique, qui dérègle le calendrier des floraisons, et des parasites comme le varroa, qui s’attaque aux ruches.",
+            "Face à ce constat, des solutions existent, et elles ne demandent pas toujours de grands moyens.",
+            "Replanter des haies, semer des bandes fleuries en bordure des champs, réduire les pesticides ou laisser une partie des jardins en herbe : autant de gestes qui redonnent aux pollinisateurs de quoi vivre.",
+            "Protéger ces petits animaux, en somme, c’est protéger une part de notre alimentation."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Quel est le thème central du texte ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "L’élevage des abeilles pour produire du miel."
+            },
+            {
+              "id": "B",
+              "text": "Le rôle des pollinisateurs, leur déclin et les moyens de les protéger."
+            },
+            {
+              "id": "C",
+              "text": "Les dangers des piqûres d’abeilles pour l’être humain."
+            },
+            {
+              "id": "D",
+              "text": "L’histoire de l’agriculture en Europe."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "points": 1,
+          "prompt": "Dans « l’Europe n’est pas épargnée » (le texte), cette expression signifie que l’Europe :",
+          "options": [
+            {
+              "id": "A",
+              "text": "est elle aussi touchée par le phénomène."
+            },
+            {
+              "id": "B",
+              "text": "est protégée de ce problème."
+            },
+            {
+              "id": "C",
+              "text": "dépense beaucoup d’argent pour les abeilles."
+            },
+            {
+              "id": "D",
+              "text": "ignore complètement la question."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 3,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "Près de trois cultures alimentaires sur quatre dépendent au moins en partie de la pollinisation."
+            },
+            {
+              "id": "b",
+              "text": "La France a interdit certains pesticides sur les semences à partir de 2018."
+            },
+            {
+              "id": "c",
+              "text": "Le texte affirme que les pollinisateurs ont déjà totalement disparu d’Europe."
+            },
+            {
+              "id": "d",
+              "text": "Le texte précise le nombre d’espèces d’abeilles vivant en France."
+            }
+          ],
+          "answer": {
+            "a": "V",
+            "b": "V",
+            "c": "F",
+            "d": "NP"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "points": 3,
+          "prompt": "Quelles causes du déclin des pollinisateurs le texte mentionne-t-il ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "L’agriculture intensive et la monoculture."
+            },
+            {
+              "id": "B",
+              "text": "Certains pesticides, comme les néonicotinoïdes."
+            },
+            {
+              "id": "C",
+              "text": "La chasse aux abeilles organisée par les agriculteurs."
+            },
+            {
+              "id": "D",
+              "text": "Le réchauffement climatique."
+            },
+            {
+              "id": "E",
+              "text": "La concurrence des oiseaux migrateurs."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Surlignez la phrase de conclusion qui résume l’enjeu du texte.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              11
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "inference",
+          "difficulty": 3,
+          "points": 1,
+          "prompt": "Que suggère le texte à propos des solutions au déclin des pollinisateurs ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Elles sont presque impossibles à mettre en œuvre."
+            },
+            {
+              "id": "B",
+              "text": "Elles exigent toujours d’énormes budgets."
+            },
+            {
+              "id": "C",
+              "text": "Certaines sont simples et à la portée de tous."
+            },
+            {
+              "id": "D",
+              "text": "Elles relèvent uniquement des scientifiques."
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "jo_paris_2024_b2_01",
+      "level": "B2",
+      "title": "L’héritage des Jeux olympiques de Paris 2024",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Un héritage pour la Seine-Saint-Denis",
+          "sentences": [
+            "À l’été 2024, du 26 juillet au 11 août, Paris a accueilli les Jeux olympiques, ouverts par une cérémonie inédite qui s’est déroulée non pas dans un stade, mais sur la Seine.",
+            "Pour les organisateurs, l’essentiel ne se jouait pas seulement pendant les compétitions, mais dans ce que les Jeux laisseraient derrière eux.",
+            "Une grande partie des investissements a profité à la Seine-Saint-Denis, le département le plus pauvre de France métropolitaine.",
+            "On y a construit le village des athlètes, destiné à devenir ensuite des logements, ainsi qu’un centre aquatique pour une zone qui manquait cruellement de piscines.",
+            "Surtout, plus d’un milliard d’euros ont été consacrés à dépolluer la Seine, afin que l’on puisse de nouveau s’y baigner.",
+            "Pour les défenseurs des Jeux, ces équipements et cette fierté collective constituent un héritage durable.",
+            "Accueillir le monde entier, disent-ils, a permis d’accélérer des projets qui auraient autrement pris des décennies."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "À quel prix, et pour qui ?",
+          "sentences": [
+            "Tout le monde ne partage pourtant pas cet enthousiasme.",
+            "Les Jeux olympiques coûtent très cher, et les budgets initiaux sont presque toujours dépassés.",
+            "À Paris comme ailleurs, des habitants modestes ont craint que la rénovation de leur quartier ne fasse grimper les loyers et ne finisse par les pousser à partir.",
+            "Certains se demandent aussi à qui profiteront vraiment les nouveaux équipements une fois la fête terminée.",
+            "La promesse de se baigner dans la Seine, par exemple, a été reportée à plusieurs reprises, faute d’une eau toujours assez propre.",
+            "Pour ces voix critiques, un héritage ne se décrète pas : il se mesure des années plus tard, quand les caméras sont parties.",
+            "La vraie question, selon elles, n’est pas de savoir si la fête a été belle, mais ce qu’il en restera pour les habitants."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Selon le texte A, qu’est-ce qui comptait le plus pour les organisateurs ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le nombre de médailles remportées par la France."
+            },
+            {
+              "id": "B",
+              "text": "Ce que les Jeux laisseraient derrière eux."
+            },
+            {
+              "id": "C",
+              "text": "La beauté de la cérémonie d’ouverture."
+            },
+            {
+              "id": "D",
+              "text": "Le classement final des autres pays."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Dans « une zone qui manquait cruellement de piscines » (texte A), « cruellement » signifie :",
+          "options": [
+            {
+              "id": "A",
+              "text": "d’une façon violente et méchante."
+            },
+            {
+              "id": "B",
+              "text": "de manière très importante, douloureusement."
+            },
+            {
+              "id": "C",
+              "text": "depuis très peu de temps."
+            },
+            {
+              "id": "D",
+              "text": "sans aucune raison précise."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "La cérémonie d’ouverture s’est déroulée sur la Seine, et non dans un stade."
+            },
+            {
+              "id": "b",
+              "text": "Selon le texte A, les investissements ont surtout profité aux quartiers riches de Paris."
+            },
+            {
+              "id": "c",
+              "text": "Le texte B affirme que la baignade dans la Seine a été reportée à plusieurs reprises."
+            },
+            {
+              "id": "d",
+              "text": "Le texte précise le nombre exact de logements prévus dans le village des athlètes."
+            }
+          ],
+          "answer": {
+            "a": "V",
+            "b": "F",
+            "c": "V",
+            "d": "NP"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quelles réserves le texte B exprime-t-il à l’égard des Jeux ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Leur coût élevé et le dépassement des budgets."
+            },
+            {
+              "id": "B",
+              "text": "Le risque de voir les loyers grimper et de pousser des habitants à partir."
+            },
+            {
+              "id": "C",
+              "text": "Le manque total d’intérêt du public."
+            },
+            {
+              "id": "D",
+              "text": "L’incertitude sur l’utilité réelle des équipements après la fête."
+            },
+            {
+              "id": "E",
+              "text": "L’absence de sportifs étrangers."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui exprime que, pour le texte B, un héritage ne se juge que longtemps après.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Comment les deux textes s’opposent-ils ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Le texte A juge l’héritage durable et positif, tandis que le texte B doute de ses bénéfices réels."
+            },
+            {
+              "id": "B",
+              "text": "Le texte A critique le coût des Jeux, alors que le texte B les défend."
+            },
+            {
+              "id": "C",
+              "text": "Le texte A parle de Paris, le texte B d’une tout autre ville."
+            },
+            {
+              "id": "D",
+              "text": "Les deux textes affirment que les Jeux n’ont rien laissé du tout."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Quelle préoccupation les deux textes partagent-ils, au-delà de leur désaccord ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Savoir quelle équipe a remporté le plus de médailles."
+            },
+            {
+              "id": "B",
+              "text": "Ce que les Jeux laisseront vraiment aux habitants, au-delà de la fête."
+            },
+            {
+              "id": "C",
+              "text": "Le choix des couleurs de la cérémonie d’ouverture."
+            },
+            {
+              "id": "D",
+              "text": "L’interdiction définitive de se baigner dans la Seine."
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "philosophie_c1_01",
+      "level": "C1",
+      "title": "La philosophie obligatoire au lycée",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Pourquoi enseigner la philosophie à tous ?",
+          "sentences": [
+            "Dans la plupart des pays, la philosophie reste réservée à l’université, voire à une poignée de spécialistes.",
+            "La France fait exception : depuis le début du XIXe siècle, chaque élève de terminale, quelle que soit sa filière, suit un cours de philosophie.",
+            "En voie générale, il s’agit même de quatre heures par semaine, et l’épreuve qui clôt l’année dure quatre heures.",
+            "Ce jour-là, les candidats choisissent entre deux sujets de dissertation et l’explication d’un texte d’auteur.",
+            "On peut s’interroger sur ce choix : à quoi bon faire disserter sur la liberté ou le bonheur des adolescents de dix-sept ans ?",
+            "Pour ses partisans, la réponse tient en une formule : il s’agit d’apprendre à penser par soi-même.",
+            "Dans une société où circulent en permanence des opinions toutes faites, savoir analyser un argument, repérer une contradiction ou défendre une idée n’est pas un luxe, mais un outil de citoyen.",
+            "La philosophie ne transmet pas des réponses, mais une exigence : celle de justifier ce que l’on avance.",
+            "Ses détracteurs, eux, jugent l’exercice trop abstrait et reprochent à l’épreuve de favoriser les élèves déjà à l’aise avec les mots.",
+            "Il est vrai qu’une dissertation de quatre heures ressemble peu aux compétences demandées dans la plupart des métiers.",
+            "Mais réduire la philosophie à son utilité immédiate, ce serait peut-être passer à côté de l’essentiel.",
+            "Former des esprits capables de douter, de nuancer et de se justifier reste, après deux siècles, un pari étonnamment moderne."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "points": 1,
+          "prompt": "Quel est le propos central du texte ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Décrire en détail le programme de philosophie de terminale."
+            },
+            {
+              "id": "B",
+              "text": "Réfléchir à la place et à l’utilité de la philosophie obligatoire au lycée."
+            },
+            {
+              "id": "C",
+              "text": "Raconter l’histoire de l’université française."
+            },
+            {
+              "id": "D",
+              "text": "Comparer les systèmes scolaires de plusieurs pays."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "inference",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Quelle est l’attitude de l’auteur à l’égard de la philosophie au lycée ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Il la rejette comme une pure perte de temps."
+            },
+            {
+              "id": "B",
+              "text": "Il en défend la valeur, tout en reconnaissant les critiques qu’on lui adresse."
+            },
+            {
+              "id": "C",
+              "text": "Il s’y montre totalement indifférent."
+            },
+            {
+              "id": "D",
+              "text": "Il estime qu’elle devrait être réservée aux meilleurs élèves."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q3",
+          "skill": "vocab_in_context",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Dans « des opinions toutes faites » (le texte), l’expression désigne :",
+          "options": [
+            {
+              "id": "A",
+              "text": "des idées préparées avec soin par des experts."
+            },
+            {
+              "id": "B",
+              "text": "des idées reçues, adoptées sans réflexion."
+            },
+            {
+              "id": "C",
+              "text": "des opinions qui sont toujours justes."
+            },
+            {
+              "id": "D",
+              "text": "des opinions formellement interdites."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q4",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            {
+              "id": "a",
+              "text": "En France, la philosophie n’est enseignée qu’à l’université."
+            },
+            {
+              "id": "b",
+              "text": "En voie générale, le cours de philosophie représente quatre heures par semaine."
+            },
+            {
+              "id": "c",
+              "text": "Le texte indique la note moyenne obtenue à l’épreuve de philosophie."
+            },
+            {
+              "id": "d",
+              "text": "Selon le texte, certains reprochent à l’épreuve d’avantager les élèves déjà à l’aise avec les mots."
+            }
+          ],
+          "answer": {
+            "a": "F",
+            "b": "V",
+            "c": "NP",
+            "d": "V"
+          }
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 4,
+          "points": 3,
+          "prompt": "D’après ses partisans (dans le texte), qu’apporte la philosophie ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Apprendre à penser par soi-même."
+            },
+            {
+              "id": "B",
+              "text": "Savoir analyser un argument et repérer une contradiction."
+            },
+            {
+              "id": "C",
+              "text": "Mémoriser les réponses données par les grands auteurs."
+            },
+            {
+              "id": "D",
+              "text": "L’exigence de justifier ce que l’on avance."
+            },
+            {
+              "id": "E",
+              "text": "La garantie d’obtenir plus tard un meilleur salaire."
+            }
+          ],
+          "answer": [
+            "A",
+            "B",
+            "D"
+          ],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 4,
+          "source": "A",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui formule l’objection principale des détracteurs de la philosophie.",
+          "min_overlap": 0.6,
+          "accepted": [
+            [
+              8
+            ]
+          ]
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "inference",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En écrivant que former des esprits capables de douter « reste un pari étonnamment moderne » (dernière phrase), l’auteur suggère que :",
+          "options": [
+            {
+              "id": "A",
+              "text": "la philosophie est dépassée et appartient au passé."
+            },
+            {
+              "id": "B",
+              "text": "cet enseignement ancien répond encore à un besoin très actuel."
+            },
+            {
+              "id": "C",
+              "text": "il faudrait supprimer la philosophie du lycée."
+            },
+            {
+              "id": "D",
+              "text": "les élèves d’aujourd’hui ne savent plus douter."
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

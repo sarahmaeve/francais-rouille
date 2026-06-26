@@ -79,3 +79,10 @@ title = "Le monde du travail — Entretien, négociation, évaluation"
 description = "Une carrière en quatre scènes chez la startup parisienne Pixelune : entretien d'embauche, négociation salariale, évaluation annuelle et pot de départ."
 meta = "5 textes · Dialogues, lettre de motivation annotée et offre d'emploi · Audio disponible"
 new = true
+
+[[levels.chapters]]
+slug = "b2-lectures"
+title = "Compréhension écrite — Société française contemporaine"
+description = "Huit textes B2–C1 avec questions auto-corrigées : néo-ruraux, semaine de quatre jours, IA et création, anglicismes, Notre-Dame, pollinisateurs, JO 2024 et philosophie au lycée."
+meta = "8 textes · Sources simples et appariées · Choix multiple, vrai/faux/non précisé et sélection de preuve · Sans audio"
+new = true

@@ -1,0 +1,120 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "pollinisateurs_b2_01",
+      "level": "B2",
+      "title": "L’effondrement des pollinisateurs",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Les pollinisateurs en danger",
+          "sentences": [
+            "On les remarque à peine, et pourtant ils sont indispensables à notre assiette.",
+            "Les insectes pollinisateurs — abeilles, bourdons, papillons, syrphes — transportent le pollen d’une fleur à l’autre et permettent ainsi à de nombreuses plantes de produire des fruits et des graines.",
+            "Selon les scientifiques, près de trois cultures alimentaires sur quatre dépendent, au moins en partie, de cette pollinisation.",
+            "Sans elle, beaucoup de fruits, de légumes et d’oléagineux deviendraient rares ou bien plus chers.",
+            "Or, depuis plusieurs décennies, les populations de pollinisateurs déclinent dans une grande partie du monde, et l’Europe n’est pas épargnée.",
+            "Les causes sont multiples et se renforcent les unes les autres.",
+            "L’agriculture intensive, en couvrant d’immenses surfaces d’une seule culture, prive les insectes de la diversité de fleurs dont ils se nourrissent.",
+            "Certains pesticides, en particulier les néonicotinoïdes, affaiblissent ou tuent les abeilles ; la France en a d’ailleurs interdit l’usage sur les semences à partir de 2018.",
+            "À cela s’ajoutent le réchauffement climatique, qui dérègle le calendrier des floraisons, et des parasites comme le varroa, qui s’attaque aux ruches.",
+            "Face à ce constat, des solutions existent, et elles ne demandent pas toujours de grands moyens.",
+            "Replanter des haies, semer des bandes fleuries en bordure des champs, réduire les pesticides ou laisser une partie des jardins en herbe : autant de gestes qui redonnent aux pollinisateurs de quoi vivre.",
+            "Protéger ces petits animaux, en somme, c’est protéger une part de notre alimentation."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 2,
+          "points": 1,
+          "prompt": "Quel est le thème central du texte ?",
+          "options": [
+            { "id": "A", "text": "L’élevage des abeilles pour produire du miel." },
+            { "id": "B", "text": "Le rôle des pollinisateurs, leur déclin et les moyens de les protéger." },
+            { "id": "C", "text": "Les dangers des piqûres d’abeilles pour l’être humain." },
+            { "id": "D", "text": "L’histoire de l’agriculture en Europe." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "points": 1,
+          "prompt": "Dans « l’Europe n’est pas épargnée » (le texte), cette expression signifie que l’Europe :",
+          "options": [
+            { "id": "A", "text": "est elle aussi touchée par le phénomène." },
+            { "id": "B", "text": "est protégée de ce problème." },
+            { "id": "C", "text": "dépense beaucoup d’argent pour les abeilles." },
+            { "id": "D", "text": "ignore complètement la question." }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 3,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "Près de trois cultures alimentaires sur quatre dépendent au moins en partie de la pollinisation." },
+            { "id": "b", "text": "La France a interdit certains pesticides sur les semences à partir de 2018." },
+            { "id": "c", "text": "Le texte affirme que les pollinisateurs ont déjà totalement disparu d’Europe." },
+            { "id": "d", "text": "Le texte précise le nombre d’espèces d’abeilles vivant en France." }
+          ],
+          "answer": { "a": "V", "b": "V", "c": "F", "d": "NP" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "points": 3,
+          "prompt": "Quelles causes du déclin des pollinisateurs le texte mentionne-t-il ?",
+          "options": [
+            { "id": "A", "text": "L’agriculture intensive et la monoculture." },
+            { "id": "B", "text": "Certains pesticides, comme les néonicotinoïdes." },
+            { "id": "C", "text": "La chasse aux abeilles organisée par les agriculteurs." },
+            { "id": "D", "text": "Le réchauffement climatique." },
+            { "id": "E", "text": "La concurrence des oiseaux migrateurs." }
+          ],
+          "answer": ["A", "B", "D"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Surlignez la phrase de conclusion qui résume l’enjeu du texte.",
+          "min_overlap": 0.6,
+          "accepted": [[11]]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "inference",
+          "difficulty": 3,
+          "points": 1,
+          "prompt": "Que suggère le texte à propos des solutions au déclin des pollinisateurs ?",
+          "options": [
+            { "id": "A", "text": "Elles sont presque impossibles à mettre en œuvre." },
+            { "id": "B", "text": "Elles exigent toujours d’énormes budgets." },
+            { "id": "C", "text": "Certaines sont simples et à la portée de tous." },
+            { "id": "D", "text": "Elles relèvent uniquement des scientifiques." }
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

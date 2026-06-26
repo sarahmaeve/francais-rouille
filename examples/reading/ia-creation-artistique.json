@@ -1,0 +1,146 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "ia_creation_c1_01",
+      "level": "C1",
+      "title": "L’intelligence artificielle et la création artistique",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Un nouvel outil, pas un rival",
+          "sentences": [
+            "Depuis quelques années, des logiciels capables de produire des images, des textes ou des mélodies en quelques secondes bouleversent le monde de la création.",
+            "Pour leurs défenseurs, il ne faut pas y voir une menace, mais un outil de plus, comparable à l’appareil photo ou à l’ordinateur en leur temps.",
+            "Après tout, rappellent-ils, la machine ne décide rien seule : c’est l’humain qui la guide, qui choisit les mots, qui trie et retouche les résultats.",
+            "En 2022, une image produite à l’aide d’un tel logiciel a même remporté un concours d’art aux États-Unis, déclenchant une vive polémique.",
+            "Son auteur a répondu qu’il avait passé des heures à affiner ses instructions, comme un photographe règle son cadrage et sa lumière.",
+            "Ses partisans soulignent aussi que ces technologies rendent la création accessible à ceux qui n’ont jamais appris à dessiner ou à composer.",
+            "L’intelligence artificielle, concluent-ils, ne remplace pas l’artiste : elle élargit le cercle de ceux qui peuvent s’exprimer."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Mais qui est l’artiste ?",
+          "sentences": [
+            "D’autres voix s’élèvent pourtant contre cet enthousiasme.",
+            "Elles rappellent que ces logiciels n’inventent rien : ils ont été entraînés sur des millions d’œuvres existantes, souvent récupérées sans l’accord de leurs auteurs.",
+            "Dès 2018, le portrait d’« Edmond de Belamy », produit par un algorithme, a été vendu plus de 400 000 dollars dans une grande maison d’enchères — mais une partie du code provenait d’un autre créateur, qui n’a rien touché.",
+            "Pour ces critiques, la vraie question n’est pas technique mais morale : peut-on parler de création quand la machine se contente de recombiner le travail des autres ?",
+            "Ils craignent que des milliers d’illustrateurs et de musiciens ne voient leur métier dévalorisé du jour au lendemain.",
+            "Créer, insistent-ils, ce n’est pas seulement produire une belle image : c’est avoir quelque chose à dire.",
+            "Or une machine, aussi habile soit-elle, n’a ni intention ni expérience du monde."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Pour les défenseurs de ces logiciels (texte A), l’intelligence artificielle est avant tout :",
+          "options": [
+            { "id": "A", "text": "une menace qui condamne les artistes au chômage." },
+            { "id": "B", "text": "un outil que l’humain doit guider." },
+            { "id": "C", "text": "une mode passagère sans véritable avenir." },
+            { "id": "D", "text": "un moyen de gagner de l’argent rapidement." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Dans « dévalorisé du jour au lendemain » (texte B), l’expression « du jour au lendemain » signifie :",
+          "options": [
+            { "id": "A", "text": "très progressivement, sur de longues années." },
+            { "id": "B", "text": "très brusquement, en très peu de temps." },
+            { "id": "C", "text": "une seule fois par jour." },
+            { "id": "D", "text": "dans un avenir encore lointain." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "Le texte B affirme que ces logiciels ont été entraînés sur des œuvres déjà existantes." },
+            { "id": "b", "text": "D’après le texte A, la machine crée toute seule, sans aucune intervention humaine." },
+            { "id": "c", "text": "Le texte B indique le nombre exact d’illustrateurs dont le métier est menacé." },
+            { "id": "d", "text": "D’après le texte B, l’argent de la vente d’« Edmond de Belamy » a été partagé équitablement entre tous ceux qui y avaient contribué." }
+          ],
+          "answer": { "a": "V", "b": "F", "c": "NP", "d": "F" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quelles objections le texte B oppose-t-il à ces logiciels ?",
+          "options": [
+            { "id": "A", "text": "Ils s’appuient sur des œuvres récupérées sans autorisation." },
+            { "id": "B", "text": "Ils risquent de dévaloriser le métier d’illustrateur ou de musicien." },
+            { "id": "C", "text": "Ils sont trop lents pour être réellement utiles." },
+            { "id": "D", "text": "Une machine n’a ni intention ni expérience du monde." },
+            { "id": "E", "text": "Ils coûtent beaucoup trop cher à l’achat." }
+          ],
+          "answer": ["A", "B", "D"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase où l’auteur du texte B résume ce qu’est, selon lui, créer.",
+          "min_overlap": 0.6,
+          "accepted": [[5], [5, 6]]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En quoi les deux textes s’opposent-ils le plus nettement ?",
+          "options": [
+            { "id": "A", "text": "Le texte A nie l’existence de ces logiciels, alors que le texte B la confirme." },
+            { "id": "B", "text": "Le texte A y voit un simple outil au service de l’humain, tandis que le texte B doute qu’on puisse parler de véritable création." },
+            { "id": "C", "text": "Le texte A s’adresse aux musiciens, le texte B aux peintres." },
+            { "id": "D", "text": "Les deux textes défendent exactement la même position." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Sur quel point les deux textes se rejoignent-ils malgré tout ?",
+          "options": [
+            { "id": "A", "text": "Tous deux estiment que ces logiciels n’auront aucun effet sur les métiers artistiques." },
+            { "id": "B", "text": "Tous deux reconnaissent qu’un être humain intervient dans le processus." },
+            { "id": "C", "text": "Tous deux réclament l’interdiction de ces logiciels." },
+            { "id": "D", "text": "Tous deux citent exactement les mêmes artistes." }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

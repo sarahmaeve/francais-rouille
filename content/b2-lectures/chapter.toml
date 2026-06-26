@@ -1,0 +1,20 @@
+[chapter]
+title = "Compréhension écrite — Société française contemporaine"
+subtitle = "Textes B2–C1 avec questions auto-corrigées"
+level = "B2"
+vocab_page = "comprehension"
+footer_text = "Français Rouillé"
+footer_suffix = "Niveau B2 — Compréhension écrite"
+
+# A reading-only chapter: every page is `static` or `fragment`, so the builder
+# generates no dialog audio. The reading exercises are delivered by the shared
+# quiz engine, which fetches reading-data.json at runtime.
+
+[[sections]]
+heading = "Textes et questions"
+
+[[sections.pages]]
+slug = "comprehension"
+title = "Huit textes, questions auto-corrigées"
+description = "Société, travail, environnement, langue, patrimoine et idées (B2–C1). Plusieurs paires de sources pour la synthèse. Choix multiple, vrai/faux/non précisé, réponses multiples et sélection de preuve."
+type = "static"

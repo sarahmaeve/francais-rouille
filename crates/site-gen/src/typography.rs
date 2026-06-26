@@ -248,6 +248,32 @@ pub fn rules_for_language(code: &str, strict: bool) -> Option<Box<dyn Typography
     }
 }
 
+// ── Text-level helpers ──────────────────────────────────────────────────
+
+/// Check a block of text line by line, returning violations with `line`/`col`
+/// populated. The `file` field is left empty for the caller to fill in.
+pub fn verify_text(text: &str, rules: &dyn TypographyRules) -> Vec<Violation> {
+    let mut violations = Vec::new();
+    for (i, line) in text.lines().enumerate() {
+        violations.extend(rules.check_line(line, i + 1));
+    }
+    violations
+}
+
+/// Apply typographic fixes to a block of text, preserving a trailing newline.
+pub fn fix_text(text: &str, rules: &dyn TypographyRules) -> String {
+    let fixed: String = text
+        .lines()
+        .map(|line| rules.fix_line(line))
+        .collect::<Vec<_>>()
+        .join("\n");
+    if text.ends_with('\n') && !fixed.ends_with('\n') {
+        fixed + "\n"
+    } else {
+        fixed
+    }
+}
+
 // ── File scanning ───────────────────────────────────────────────────────
 
 /// Check all content files in `content_dir` for typography violations.
@@ -266,13 +292,11 @@ pub fn verify_files(
 
     for file in &files {
         let text = std::fs::read_to_string(file)?;
-        for (i, line) in text.lines().enumerate() {
-            let mut line_violations = rules.check_line(line, i + 1);
-            for v in &mut line_violations {
-                v.file.clone_from(file);
-            }
-            all_violations.extend(line_violations);
+        let mut violations = verify_text(&text, rules);
+        for v in &mut violations {
+            v.file.clone_from(file);
         }
+        all_violations.extend(violations);
     }
 
     Ok(all_violations)
@@ -292,18 +316,7 @@ pub fn fix_files(
 
     for file in &files {
         let original = std::fs::read_to_string(file)?;
-        let fixed: String = original
-            .lines()
-            .map(|line| rules.fix_line(line))
-            .collect::<Vec<_>>()
-            .join("\n");
-
-        // Preserve trailing newline if the original had one.
-        let fixed = if original.ends_with('\n') && !fixed.ends_with('\n') {
-            fixed + "\n"
-        } else {
-            fixed
-        };
+        let fixed = fix_text(&original, rules);
 
         if fixed != original {
             std::fs::write(file, &fixed)?;
@@ -520,6 +533,31 @@ mod tests {
     fn fix_idempotent() {
         let line = "l\u{2019}homme dit\u{202F}: Bon\u{2026}";
         assert_eq!(french_strict().fix_line(line), line);
+    }
+
+    // ── Text-level helpers ──────────────────────────────────────────
+
+    #[test]
+    fn verify_text_reports_line_numbers() {
+        let text = "tout va bien\nl'homme arrive\nBon...";
+        let v = verify_text(text, &french());
+        assert_eq!(v.iter().filter(|v| v.rule == "apostrophe" && v.line == 2).count(), 1);
+        assert_eq!(v.iter().filter(|v| v.rule == "ellipsis" && v.line == 3).count(), 1);
+    }
+
+    #[test]
+    fn fix_text_corrects_and_preserves_trailing_newline() {
+        let text = "l'homme dit : Bon...\n";
+        let fixed = fix_text(text, &french());
+        assert_eq!(fixed, "l\u{2019}homme dit : Bon\u{2026}\n");
+    }
+
+    #[test]
+    fn fix_text_is_safe_on_json_like_lines() {
+        // Apostrophes only convert in elision context; JSON syntax is untouched.
+        let text = "{ \"text\": \"L'art d'aujourd'hui\" }";
+        let fixed = fix_text(text, &french());
+        assert_eq!(fixed, "{ \"text\": \"L\u{2019}art d\u{2019}aujourd\u{2019}hui\" }");
     }
 
     // ── File collection ─────────────────────────────────────────────
