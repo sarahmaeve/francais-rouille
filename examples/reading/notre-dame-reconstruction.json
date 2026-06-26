@@ -1,0 +1,146 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "notre_dame_c1_01",
+      "level": "C1",
+      "title": "La reconstruction de Notre-Dame de Paris",
+      "sources": [
+        {
+          "id": "A",
+          "title": "À l’identique : fidélité à la mémoire",
+          "sentences": [
+            "Dans la nuit du 15 avril 2019, le monde entier a regardé brûler la cathédrale Notre-Dame de Paris, dont la flèche et la toiture se sont effondrées en quelques heures.",
+            "Très vite, une question a divisé architectes et responsables politiques : fallait-il reconstruire à l’identique, ou inventer une forme nouvelle ?",
+            "Les partisans de la restauration à l’identique l’ont emporté, et la flèche détruite a été rebâtie telle que l’avait dessinée l’architecte Viollet-le-Duc au XIXe siècle.",
+            "Pour eux, une cathédrale n’est pas un bâtiment ordinaire : elle fait partie de la mémoire collective et de la silhouette de Paris.",
+            "Y toucher, c’était risquer de la défigurer et de trahir l’attachement de millions de gens.",
+            "Le chantier a aussi permis de redonner vie à des savoir-faire anciens, du travail de la pierre à la charpente en chêne, transmis de génération en génération.",
+            "Rouverte en décembre 2024, la cathédrale a retrouvé son visage familier, comme si la catastrophe n’avait été qu’une parenthèse."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Chaque siècle laisse sa marque",
+          "sentences": [
+            "Pourtant, l’idée d’un geste plus contemporain n’avait rien d’absurde.",
+            "Au lendemain de l’incendie, le président lui-même avait évoqué la possibilité d’un « geste architectural contemporain », et des projets de flèche en verre ou de toit-jardin avaient circulé.",
+            "Ses défenseurs faisaient remarquer que Notre-Dame n’a jamais cessé de changer au fil des siècles.",
+            "La flèche disparue dans les flammes n’était d’ailleurs pas médiévale : Viollet-le-Duc l’avait lui-même ajoutée au XIXe siècle, en réinventant le Moyen Âge à sa manière.",
+            "Reconstruire à l’identique, disaient-ils, revient à figer le monument à un instant précis, comme s’il devait cesser de vivre.",
+            "Chaque époque, selon eux, a le droit — et peut-être le devoir — de laisser sa trace sur les édifices dont elle hérite.",
+            "Y renoncer, c’était choisir la prudence et la mémoire plutôt que l’audace."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Pour les partisans de la reconstruction à l’identique (texte A), pourquoi ne fallait-il pas modifier la cathédrale ?",
+          "options": [
+            { "id": "A", "text": "Parce qu’une forme nouvelle aurait coûté beaucoup moins cher." },
+            { "id": "B", "text": "Parce qu’elle appartient à la mémoire collective et qu’y toucher risquait de la défigurer." },
+            { "id": "C", "text": "Parce que les matériaux modernes étaient introuvables." },
+            { "id": "D", "text": "Parce que plus personne n’aimait l’ancienne flèche." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 4,
+          "source": "B",
+          "points": 1,
+          "prompt": "Dans « figer le monument à un instant précis » (texte B), le verbe « figer » signifie :",
+          "options": [
+            { "id": "A", "text": "fixer définitivement, rendre immobile." },
+            { "id": "B", "text": "détruire entièrement." },
+            { "id": "C", "text": "rendre plus beau qu’avant." },
+            { "id": "D", "text": "déplacer vers un autre lieu." }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "La flèche détruite en 2019 avait été conçue par Viollet-le-Duc au XIXe siècle." },
+            { "id": "b", "text": "Le texte A indique que la cathédrale a rouvert en décembre 2024." },
+            { "id": "c", "text": "Le texte B précise le coût total des travaux de reconstruction." },
+            { "id": "d", "text": "D’après le texte B, Notre-Dame est restée identique à elle-même depuis le Moyen Âge." }
+          ],
+          "answer": { "a": "V", "b": "V", "c": "NP", "d": "F" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 4,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quels arguments le texte B avance-t-il en faveur d’un geste contemporain ?",
+          "options": [
+            { "id": "A", "text": "La cathédrale a déjà beaucoup changé au cours des siècles." },
+            { "id": "B", "text": "La flèche disparue n’était pas médiévale, mais un ajout du XIXe siècle." },
+            { "id": "C", "text": "Reconstruire à l’identique reviendrait à figer le monument." },
+            { "id": "D", "text": "La pierre et le chêne sont des matériaux désormais dépassés." },
+            { "id": "E", "text": "Une flèche en verre aurait sûrement coûté moins cher." }
+          ],
+          "answer": ["A", "B", "C"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 4,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui révèle que la flèche détruite n’était pas d’origine médiévale.",
+          "min_overlap": 0.6,
+          "accepted": [[3]]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Quelle conviction commune sous-tend les deux textes, malgré leur désaccord ?",
+          "options": [
+            { "id": "A", "text": "Notre-Dame est un monument sans grande importance." },
+            { "id": "B", "text": "Notre-Dame compte profondément, et la façon de la reconstruire engage un rapport à l’histoire." },
+            { "id": "C", "text": "Il aurait fallu raser la cathédrale pour bâtir tout autre chose." },
+            { "id": "D", "text": "La reconstruction aurait dû être confiée à un autre pays." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En quoi le texte B nuance-t-il l’idée de « reconstruction à l’identique » défendue dans le texte A ?",
+          "options": [
+            { "id": "A", "text": "Il rappelle que la flèche reconstruite imitait en réalité une création du XIXe siècle, et non un original médiéval." },
+            { "id": "B", "text": "Il affirme que la cathédrale n’a jamais réellement brûlé." },
+            { "id": "C", "text": "Il prétend que Viollet-le-Duc était un architecte du Moyen Âge." },
+            { "id": "D", "text": "Il soutient que rien n’a été détruit lors de l’incendie de 2019." }
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

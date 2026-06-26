@@ -1,0 +1,135 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "philosophie_c1_01",
+      "level": "C1",
+      "title": "La philosophie obligatoire au lycée",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Pourquoi enseigner la philosophie à tous ?",
+          "sentences": [
+            "Dans la plupart des pays, la philosophie reste réservée à l’université, voire à une poignée de spécialistes.",
+            "La France fait exception : depuis le début du XIXe siècle, chaque élève de terminale, quelle que soit sa filière, suit un cours de philosophie.",
+            "En voie générale, il s’agit même de quatre heures par semaine, et l’épreuve qui clôt l’année dure quatre heures.",
+            "Ce jour-là, les candidats choisissent entre deux sujets de dissertation et l’explication d’un texte d’auteur.",
+            "On peut s’interroger sur ce choix : à quoi bon faire disserter sur la liberté ou le bonheur des adolescents de dix-sept ans ?",
+            "Pour ses partisans, la réponse tient en une formule : il s’agit d’apprendre à penser par soi-même.",
+            "Dans une société où circulent en permanence des opinions toutes faites, savoir analyser un argument, repérer une contradiction ou défendre une idée n’est pas un luxe, mais un outil de citoyen.",
+            "La philosophie ne transmet pas des réponses, mais une exigence : celle de justifier ce que l’on avance.",
+            "Ses détracteurs, eux, jugent l’exercice trop abstrait et reprochent à l’épreuve de favoriser les élèves déjà à l’aise avec les mots.",
+            "Il est vrai qu’une dissertation de quatre heures ressemble peu aux compétences demandées dans la plupart des métiers.",
+            "Mais réduire la philosophie à son utilité immédiate, ce serait peut-être passer à côté de l’essentiel.",
+            "Former des esprits capables de douter, de nuancer et de se justifier reste, après deux siècles, un pari étonnamment moderne."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "points": 1,
+          "prompt": "Quel est le propos central du texte ?",
+          "options": [
+            { "id": "A", "text": "Décrire en détail le programme de philosophie de terminale." },
+            { "id": "B", "text": "Réfléchir à la place et à l’utilité de la philosophie obligatoire au lycée." },
+            { "id": "C", "text": "Raconter l’histoire de l’université française." },
+            { "id": "D", "text": "Comparer les systèmes scolaires de plusieurs pays." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "inference",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Quelle est l’attitude de l’auteur à l’égard de la philosophie au lycée ?",
+          "options": [
+            { "id": "A", "text": "Il la rejette comme une pure perte de temps." },
+            { "id": "B", "text": "Il en défend la valeur, tout en reconnaissant les critiques qu’on lui adresse." },
+            { "id": "C", "text": "Il s’y montre totalement indifférent." },
+            { "id": "D", "text": "Il estime qu’elle devrait être réservée aux meilleurs élèves." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q3",
+          "skill": "vocab_in_context",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Dans « des opinions toutes faites » (le texte), l’expression désigne :",
+          "options": [
+            { "id": "A", "text": "des idées préparées avec soin par des experts." },
+            { "id": "B", "text": "des idées reçues, adoptées sans réflexion." },
+            { "id": "C", "text": "des opinions qui sont toujours justes." },
+            { "id": "D", "text": "des opinions formellement interdites." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q4",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "En France, la philosophie n’est enseignée qu’à l’université." },
+            { "id": "b", "text": "En voie générale, le cours de philosophie représente quatre heures par semaine." },
+            { "id": "c", "text": "Le texte indique la note moyenne obtenue à l’épreuve de philosophie." },
+            { "id": "d", "text": "Selon le texte, certains reprochent à l’épreuve d’avantager les élèves déjà à l’aise avec les mots." }
+          ],
+          "answer": { "a": "F", "b": "V", "c": "NP", "d": "V" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q5",
+          "skill": "detail_aggregation",
+          "difficulty": 4,
+          "points": 3,
+          "prompt": "D’après ses partisans (dans le texte), qu’apporte la philosophie ?",
+          "options": [
+            { "id": "A", "text": "Apprendre à penser par soi-même." },
+            { "id": "B", "text": "Savoir analyser un argument et repérer une contradiction." },
+            { "id": "C", "text": "Mémoriser les réponses données par les grands auteurs." },
+            { "id": "D", "text": "L’exigence de justifier ce que l’on avance." },
+            { "id": "E", "text": "La garantie d’obtenir plus tard un meilleur salaire." }
+          ],
+          "answer": ["A", "B", "D"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q6",
+          "skill": "evidence_location",
+          "difficulty": 4,
+          "source": "A",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui formule l’objection principale des détracteurs de la philosophie.",
+          "min_overlap": 0.6,
+          "accepted": [[8]]
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "inference",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "En écrivant que former des esprits capables de douter « reste un pari étonnamment moderne » (dernière phrase), l’auteur suggère que :",
+          "options": [
+            { "id": "A", "text": "la philosophie est dépassée et appartient au passé." },
+            { "id": "B", "text": "cet enseignement ancien répond encore à un besoin très actuel." },
+            { "id": "C", "text": "il faudrait supprimer la philosophie du lycée." },
+            { "id": "D", "text": "les élèves d’aujourd’hui ne savent plus douter." }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "anglicismes_b2_01",
+      "level": "B2-C1",
+      "title": "Le français face aux anglicismes",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Défendre une langue partagée",
+          "sentences": [
+            "La langue française n’a jamais cessé d’emprunter à ses voisines, mais l’arrivée massive de l’anglais inquiète une partie de ses défenseurs.",
+            "En 1994, une loi a rendu le français obligatoire dans la publicité, le monde du travail et les services publics, afin qu’aucun citoyen ne soit exclu par des termes étrangers.",
+            "Depuis, une commission officielle propose régulièrement des équivalents français aux mots venus de l’anglais, surtout dans les domaines techniques.",
+            "C’est ainsi qu’« e-mail » est devenu « courriel », et que « fake news » a été traduit par « infox », mot formé à partir d’« information » et d’« intoxication ».",
+            "Pour les partisans de cette politique, il ne s’agit pas de purisme, mais d’égalité : une langue que tout le monde comprend reste une langue partagée.",
+            "Ils ajoutent qu’une langue qui renonce à nommer les nouveautés finit par s’appauvrir et par dépendre entièrement d’une autre.",
+            "Protéger le français, selon eux, ce n’est pas le figer : c’est lui donner les moyens de rester vivant."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Une langue vit de ses emprunts",
+          "sentences": [
+            "D’autres trouvent ce combat un peu vain.",
+            "Les linguistes rappellent que toutes les langues vivantes empruntent, et que le français lui-même a donné des centaines de mots à l’anglais, de « rendez-vous » à « déjà-vu ».",
+            "Surtout, c’est l’usage qui tranche, et non les décrets : dans la vie courante, on dit toujours « e-mail » ou « mail », jamais « courriel ».",
+            "Le cas le plus célèbre reste « mot-dièse », proposé en 2013 pour remplacer « hashtag » : la traduction a été tournée en dérision et n’a jamais pris.",
+            "À l’inverse, certains équivalents, comme « infox », se sont installés sans difficulté, parce qu’ils étaient brefs et expressifs.",
+            "Pour ces observateurs, une langue ne se protège pas par la loi, mais par la création, la littérature et le plaisir de la parler.",
+            "Vouloir contrôler le vocabulaire des gens, concluent-ils, revient le plus souvent à courir derrière l’usage."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Pour les défenseurs du texte A, traduire les mots anglais sert avant tout :",
+          "options": [
+            { "id": "A", "text": "à imiter la mode venue des pays anglophones." },
+            { "id": "B", "text": "à ce que toute la population puisse comprendre la langue." },
+            { "id": "C", "text": "à enrichir les dictionnaires de mots rares et savants." },
+            { "id": "D", "text": "à interdire l’enseignement des langues étrangères." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Dans « c’est l’usage qui tranche » (texte B), le verbe « trancher » signifie :",
+          "options": [
+            { "id": "A", "text": "couper quelque chose en morceaux." },
+            { "id": "B", "text": "décider, l’emporter." },
+            { "id": "C", "text": "hésiter pendant longtemps." },
+            { "id": "D", "text": "traduire mot à mot." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "Une loi de 1994 a rendu le français obligatoire dans la publicité et les services publics." },
+            { "id": "b", "text": "Selon le texte B, « mot-dièse » a aussitôt remplacé « hashtag » dans l’usage courant." },
+            { "id": "c", "text": "Le texte A indique le nombre total de mots traduits par la commission officielle." },
+            { "id": "d", "text": "D’après le texte B, le français n’a jamais rien apporté à la langue anglaise." }
+          ],
+          "answer": { "a": "V", "b": "F", "c": "NP", "d": "F" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quels arguments le texte B avance-t-il ?",
+          "options": [
+            { "id": "A", "text": "Toutes les langues vivantes empruntent à d’autres." },
+            { "id": "B", "text": "C’est l’usage, et non les décrets, qui impose les mots." },
+            { "id": "C", "text": "Le français devrait abandonner tous ses mots d’origine étrangère." },
+            { "id": "D", "text": "Certaines traductions, comme « infox », ont tout de même réussi." },
+            { "id": "E", "text": "L’anglais devrait être interdit sur le territoire français." }
+          ],
+          "answer": ["A", "B", "D"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui montre que, pour le texte A, protéger le français ne revient pas à le figer.",
+          "min_overlap": 0.6,
+          "accepted": [[6], [5, 6]]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 5,
+          "points": 1,
+          "prompt": "Quelle est la principale divergence entre les deux textes ?",
+          "options": [
+            { "id": "A", "text": "Le texte A pense qu’on peut guider la langue par des mots officiels, alors que le texte B estime que seul l’usage décide." },
+            { "id": "B", "text": "Le texte A défend l’anglais, le texte B défend le français." },
+            { "id": "C", "text": "Le texte A parle de littérature, le texte B de publicité." },
+            { "id": "D", "text": "Les deux textes rejettent toute forme de traduction." }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Sur quel point les deux textes se rejoignent-ils ?",
+          "options": [
+            { "id": "A", "text": "Le français n’a jamais emprunté de mots à d’autres langues." },
+            { "id": "B", "text": "Les langues s’enrichissent en empruntant les unes aux autres." },
+            { "id": "C", "text": "Il faut interdire les mots anglais au moyen de la loi." },
+            { "id": "D", "text": "Le mot « courriel » a remplacé « e-mail » partout en France." }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

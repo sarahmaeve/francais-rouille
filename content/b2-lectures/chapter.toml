@@ -15,6 +15,6 @@ heading = "Textes et questions"
 
 [[sections.pages]]
 slug = "comprehension"
-title = "Deux textes, questions auto-corrigées"
-description = "Les néo-ruraux et la semaine de quatre jours (sources appariées). Choix multiple, vrai/faux/non précisé, réponses multiples et sélection de preuve."
+title = "Huit textes, questions auto-corrigées"
+description = "Société, travail, environnement, langue, patrimoine et idées (B2–C1). Plusieurs paires de sources pour la synthèse. Choix multiple, vrai/faux/non précisé, réponses multiples et sélection de preuve."
 type = "static"

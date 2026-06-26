@@ -1,0 +1,146 @@
+{
+  "schema": "reading/v1",
+  "passages": [
+    {
+      "id": "jo_paris_2024_b2_01",
+      "level": "B2",
+      "title": "L’héritage des Jeux olympiques de Paris 2024",
+      "sources": [
+        {
+          "id": "A",
+          "title": "Un héritage pour la Seine-Saint-Denis",
+          "sentences": [
+            "À l’été 2024, du 26 juillet au 11 août, Paris a accueilli les Jeux olympiques, ouverts par une cérémonie inédite qui s’est déroulée non pas dans un stade, mais sur la Seine.",
+            "Pour les organisateurs, l’essentiel ne se jouait pas seulement pendant les compétitions, mais dans ce que les Jeux laisseraient derrière eux.",
+            "Une grande partie des investissements a profité à la Seine-Saint-Denis, le département le plus pauvre de France métropolitaine.",
+            "On y a construit le village des athlètes, destiné à devenir ensuite des logements, ainsi qu’un centre aquatique pour une zone qui manquait cruellement de piscines.",
+            "Surtout, plus d’un milliard d’euros ont été consacrés à dépolluer la Seine, afin que l’on puisse de nouveau s’y baigner.",
+            "Pour les défenseurs des Jeux, ces équipements et cette fierté collective constituent un héritage durable.",
+            "Accueillir le monde entier, disent-ils, a permis d’accélérer des projets qui auraient autrement pris des décennies."
+          ]
+        },
+        {
+          "id": "B",
+          "title": "À quel prix, et pour qui ?",
+          "sentences": [
+            "Tout le monde ne partage pourtant pas cet enthousiasme.",
+            "Les Jeux olympiques coûtent très cher, et les budgets initiaux sont presque toujours dépassés.",
+            "À Paris comme ailleurs, des habitants modestes ont craint que la rénovation de leur quartier ne fasse grimper les loyers et ne finisse par les pousser à partir.",
+            "Certains se demandent aussi à qui profiteront vraiment les nouveaux équipements une fois la fête terminée.",
+            "La promesse de se baigner dans la Seine, par exemple, a été reportée à plusieurs reprises, faute d’une eau toujours assez propre.",
+            "Pour ces voix critiques, un héritage ne se décrète pas : il se mesure des années plus tard, quand les caméras sont parties.",
+            "La vraie question, selon elles, n’est pas de savoir si la fête a été belle, mais ce qu’il en restera pour les habitants."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "type": "mc_single",
+          "id": "q1",
+          "skill": "main_idea",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Selon le texte A, qu’est-ce qui comptait le plus pour les organisateurs ?",
+          "options": [
+            { "id": "A", "text": "Le nombre de médailles remportées par la France." },
+            { "id": "B", "text": "Ce que les Jeux laisseraient derrière eux." },
+            { "id": "C", "text": "La beauté de la cérémonie d’ouverture." },
+            { "id": "D", "text": "Le classement final des autres pays." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "mc_single",
+          "id": "q2",
+          "skill": "vocab_in_context",
+          "difficulty": 3,
+          "source": "A",
+          "points": 1,
+          "prompt": "Dans « une zone qui manquait cruellement de piscines » (texte A), « cruellement » signifie :",
+          "options": [
+            { "id": "A", "text": "d’une façon violente et méchante." },
+            { "id": "B", "text": "de manière très importante, douloureusement." },
+            { "id": "C", "text": "depuis très peu de temps." },
+            { "id": "D", "text": "sans aucune raison précise." }
+          ],
+          "answer": "B"
+        },
+        {
+          "type": "true_false_notgiven",
+          "id": "q3",
+          "skill": "detail_inference",
+          "difficulty": 4,
+          "points": 4,
+          "prompt": "Vrai, Faux ou Non précisé ?",
+          "statements": [
+            { "id": "a", "text": "La cérémonie d’ouverture s’est déroulée sur la Seine, et non dans un stade." },
+            { "id": "b", "text": "Selon le texte A, les investissements ont surtout profité aux quartiers riches de Paris." },
+            { "id": "c", "text": "Le texte B affirme que la baignade dans la Seine a été reportée à plusieurs reprises." },
+            { "id": "d", "text": "Le texte précise le nombre exact de logements prévus dans le village des athlètes." }
+          ],
+          "answer": { "a": "V", "b": "F", "c": "V", "d": "NP" }
+        },
+        {
+          "type": "multi_select",
+          "id": "q4",
+          "skill": "detail_aggregation",
+          "difficulty": 3,
+          "source": "B",
+          "points": 3,
+          "prompt": "Quelles réserves le texte B exprime-t-il à l’égard des Jeux ?",
+          "options": [
+            { "id": "A", "text": "Leur coût élevé et le dépassement des budgets." },
+            { "id": "B", "text": "Le risque de voir les loyers grimper et de pousser des habitants à partir." },
+            { "id": "C", "text": "Le manque total d’intérêt du public." },
+            { "id": "D", "text": "L’incertitude sur l’utilité réelle des équipements après la fête." },
+            { "id": "E", "text": "L’absence de sportifs étrangers." }
+          ],
+          "answer": ["A", "B", "D"],
+          "scoring": "partial"
+        },
+        {
+          "type": "highlight_span",
+          "id": "q5",
+          "skill": "evidence_location",
+          "difficulty": 3,
+          "source": "B",
+          "points": 1,
+          "prompt": "Surlignez la phrase qui exprime que, pour le texte B, un héritage ne se juge que longtemps après.",
+          "min_overlap": 0.6,
+          "accepted": [[5], [5, 6]]
+        },
+        {
+          "type": "mc_single",
+          "id": "q6",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Comment les deux textes s’opposent-ils ?",
+          "options": [
+            { "id": "A", "text": "Le texte A juge l’héritage durable et positif, tandis que le texte B doute de ses bénéfices réels." },
+            { "id": "B", "text": "Le texte A critique le coût des Jeux, alors que le texte B les défend." },
+            { "id": "C", "text": "Le texte A parle de Paris, le texte B d’une tout autre ville." },
+            { "id": "D", "text": "Les deux textes affirment que les Jeux n’ont rien laissé du tout." }
+          ],
+          "answer": "A"
+        },
+        {
+          "type": "mc_single",
+          "id": "q7",
+          "skill": "cross_source_synthesis",
+          "difficulty": 4,
+          "points": 1,
+          "prompt": "Quelle préoccupation les deux textes partagent-ils, au-delà de leur désaccord ?",
+          "options": [
+            { "id": "A", "text": "Savoir quelle équipe a remporté le plus de médailles." },
+            { "id": "B", "text": "Ce que les Jeux laisseront vraiment aux habitants, au-delà de la fête." },
+            { "id": "C", "text": "Le choix des couleurs de la cérémonie d’ouverture." },
+            { "id": "D", "text": "L’interdiction définitive de se baigner dans la Seine." }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

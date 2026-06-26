@@ -21,7 +21,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
     eprintln!("  {prog} prepare-image <path> --chapter <ch> [--role hero|thumbnail|page] Prepare image for site");
     eprintln!("  {prog} check-csp     [--site DIR]                                  Verify HTML against CSP");
-    eprintln!("  {prog} verify-quiz   [<file>] [--site DIR]                         Validate reading-data.json answer keys");
+    eprintln!("  {prog} verify-quiz   [<file>] [--site DIR] [--fix]                 Validate reading-data.json keys + typography");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
@@ -73,12 +73,13 @@ fn print_help() {
     println!("           Checks for inline scripts, inline styles, event handlers,");
     println!("           form elements, and external resource URLs.");
     println!("           Default site directory: site/");
-    println!("  verify-quiz [<file>] [--site DIR]");
-    println!("           Validate reading-comprehension data. Parses reading-data.json");
-    println!("           and checks every answer key against the options, statements,");
-    println!("           and source sentences it references, so a malformed key cannot");
-    println!("           silently ship. Pass a single JSON file, or omit it to scan the");
-    println!("           site directory recursively. Default site directory: site/");
+    println!("  verify-quiz [<file>] [--site DIR] [--fix]");
+    println!("           Validate reading-comprehension data. Parses reading-data.json,");
+    println!("           checks every answer key against the options, statements, and");
+    println!("           source sentences it references, and verifies French typography");
+    println!("           (typographic apostrophes, ellipsis) in all text. Pass a single");
+    println!("           JSON file, or omit it to scan the site directory recursively.");
+    println!("           Use --fix to auto-correct typography. Default directory: site/");
     println!("           See docs/READING.md for the schema.");
     println!();
     println!("OPTIONS:");
@@ -534,6 +535,7 @@ fn run_check_csp(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
 fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     let mut site_dir = PathBuf::from("site");
     let mut single_file: Option<PathBuf> = None;
+    let mut fix = false;
 
     let mut i = 2;
     while i < args.len() {
@@ -541,6 +543,9 @@ fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
             "--site" => {
                 i += 1;
                 site_dir = PathBuf::from(args.get(i).ok_or("--site requires a value")?);
+            }
+            "--fix" => {
+                fix = true;
             }
             other if !other.starts_with('-') && single_file.is_none() => {
                 single_file = Some(PathBuf::from(other));
@@ -576,22 +581,58 @@ fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         return Ok(());
     }
 
-    let mut errors = Vec::new();
-    for file in &files {
-        errors.extend(site_gen::reading::validate_file(file));
+    // French typography rules (apostrophes, ellipsis) applied to all text.
+    let rules = site_gen::typography::rules_for_language("fr-FR", false)
+        .ok_or("fr-FR typography rules unavailable")?;
+
+    // --fix: auto-correct typography in place before re-validating.
+    if fix {
+        let mut fixed = 0;
+        for file in &files {
+            let original = std::fs::read_to_string(file)?;
+            let corrected = site_gen::typography::fix_text(&original, rules.as_ref());
+            if corrected != original {
+                std::fs::write(file, &corrected)?;
+                println!("fixed typography: {}", file.display());
+                fixed += 1;
+            }
+        }
+        if fixed == 0 {
+            println!("Typography already clean.");
+        }
     }
 
-    if errors.is_empty() {
-        println!(
-            "No problems found — {} reading file(s) valid.",
-            files.len()
-        );
+    // Structural validation (answer keys) + French typography checks.
+    let mut structural = Vec::new();
+    let mut typo = Vec::new();
+    for file in &files {
+        let text = std::fs::read_to_string(file)?;
+        structural.extend(site_gen::reading::validate_str(file, &text));
+        let mut violations = site_gen::typography::verify_text(&text, rules.as_ref());
+        for v in &mut violations {
+            v.file.clone_from(file);
+        }
+        typo.extend(violations);
+    }
+
+    if structural.is_empty() && typo.is_empty() {
+        println!("No problems found — {} reading file(s) valid.", files.len());
         Ok(())
     } else {
-        for e in &errors {
+        for e in &structural {
             eprintln!("{e}");
         }
-        eprintln!("\nFound {} problem(s) in reading data.", errors.len());
+        for v in &typo {
+            eprintln!("{v}");
+        }
+        eprintln!(
+            "\nFound {} structural problem(s) and {} typography issue(s).",
+            structural.len(),
+            typo.len(),
+        );
+        if !typo.is_empty() && !fix {
+            eprintln!("Run verify-quiz --fix to auto-correct typography.");
+        }
         std::process::exit(1);
     }
 }
