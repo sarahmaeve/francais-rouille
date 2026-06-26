@@ -943,7 +943,9 @@ class QuizApp {
 
     switchTab(type) {
         document.querySelectorAll('.quiz-tab').forEach(t => t.classList.remove('active'));
-        document.querySelector(`.quiz-tab[data-type="${type}"]`).classList.add('active');
+        // A reading-only page may have no tab bar at all.
+        const tab = document.querySelector(`.quiz-tab[data-type="${type}"]`);
+        if (tab) tab.classList.add('active');
         this.currentTab = type;
 
         if (type === 'mc') this.startMC();
@@ -1031,9 +1033,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var data = (typeof QUIZ_DATA !== 'undefined') ? QUIZ_DATA : {};
     var vocabUrl = container.dataset.vocabUrl || 'vocabulaire.html';
     var app = new QuizApp(vocabUrl, data);
-    // Open whichever tab is marked active, else the first one present.
+    // Open whichever tab is marked active, else the first one present, else the
+    // container's declared default (a reading-only page sets data-default-tab).
     var active = document.querySelector('.quiz-tab.active') || document.querySelector('.quiz-tab');
-    app.switchTab(active ? active.dataset.type : 'mc');
+    app.switchTab(active ? active.dataset.type : (container.dataset.defaultTab || 'mc'));
 });
 
 // --- Self-tests (run via browser console: runTests()) ---

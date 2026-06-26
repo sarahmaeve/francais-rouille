@@ -1,0 +1,274 @@
+/* b2-travail-entretien — chapter-specific overrides */
+
+/* Two-column layout for the cover letter + job posting fragment */
+.two-column-docs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .two-column-docs {
+        grid-template-columns: 1fr;
+    }
+}
+
+.doc-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.doc-label {
+    font-family: 'Source Sans 3', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+/* --- Paper-style letter --- */
+
+.letter-paper {
+    background: #fffef7;
+    border: 1px solid #e8e2d4;
+    padding: 2.5rem 2rem;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: #2b2b2b;
+    position: relative;
+}
+
+.letter-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.82rem;
+}
+
+.letter-sender {
+    font-weight: 500;
+}
+
+.letter-recipient {
+    text-align: right;
+}
+
+.letter-place-date {
+    grid-column: 1 / -1;
+    text-align: right;
+    margin-top: 0.6rem;
+    font-style: italic;
+}
+
+.letter-object {
+    margin-bottom: 1.4rem;
+    font-size: 0.9rem;
+}
+
+.letter-opening {
+    margin-bottom: 1.2rem;
+}
+
+.letter-paper p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.letter-signature {
+    margin-top: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+}
+
+/* --- LinkedIn-style job ad card --- */
+
+.linkedin-card {
+    background: #fff;
+    border: 1px solid #d7dde5;
+    border-radius: 8px;
+    padding: 1.4rem 1.6rem;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #1f2a36;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.linkedin-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.linkedin-logo {
+    width: 48px;
+    height: 48px;
+    background: #0a66c2;
+    color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+}
+
+.linkedin-company {
+    font-weight: 600;
+    color: #1f2a36;
+}
+
+.linkedin-company-sub {
+    font-size: 0.78rem;
+    color: #56687a;
+}
+
+.linkedin-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0a66c2;
+    margin: 0.4rem 0 0.6rem;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.linkedin-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.1rem;
+}
+
+.linkedin-tags .tag {
+    background: #eef3f8;
+    color: #3c4e62;
+    padding: 0.18rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+.linkedin-section {
+    margin-top: 1rem;
+}
+
+.linkedin-section h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2a36;
+    margin-bottom: 0.45rem;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.linkedin-section ul {
+    padding-left: 1.2rem;
+}
+
+.linkedin-section li {
+    margin-bottom: 0.35rem;
+}
+
+.linkedin-footer {
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e7ecf1;
+    text-align: right;
+}
+
+.linkedin-apply {
+    background: #0a66c2;
+    color: #fff;
+    padding: 0.45rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-block;
+    cursor: default;
+}
+
+/* --- Inline annotation markers --- */
+
+.anno-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25em;
+    height: 1.25em;
+    background: var(--accent, #c64b3a);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.68em;
+    font-weight: 700;
+    vertical-align: super;
+    line-height: 1;
+    margin: 0 0.1em;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.anno-dot::before {
+    content: attr(data-n);
+}
+
+/* --- Glossary of recruitment jargon --- */
+
+.jargon-glossary {
+    margin-top: 3rem;
+    padding: 1.8rem 2rem;
+    background: #faf6ef;
+    border-left: 4px solid var(--navy);
+    border-radius: 0 6px 6px 0;
+}
+
+.jargon-glossary h2 {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--navy);
+}
+
+.jargon-glossary dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+}
+
+.jargon-glossary dt {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1f2a36;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.jargon-glossary dt .dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;
+    height: 1.6em;
+    background: var(--accent, #c64b3a);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.jargon-glossary dd {
+    margin-left: 2.1em;
+    margin-top: 0.2rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #3a3a3a;
+}
