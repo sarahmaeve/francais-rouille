@@ -6,7 +6,7 @@ use thiserror::Error;
 
 use site_gen::audio::{audio_hash, canonical_text, Manifest};
 
-use crate::dialog::{self, slugify, DialogLine, Language, Voice};
+use crate::dialog::{self, DialogLine, Language, Voice};
 
 /// Audio encoding format for TTS output.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -192,7 +192,7 @@ pub fn plan_dialog(
 
     for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
         let voice = &voice_map[&speaker];
-        let filename = format!("{:02}_{}.{ext}", i + 1, slugify(&speaker));
+        let filename = dialog::line_audio_filename(i + 1, &speaker, ext);
         let hash = audio_hash(dialog_slug, &speaker, &canonical_text(&text), voice.name);
         let path = lines_dir.join(&filename);
 
@@ -383,7 +383,7 @@ impl GoogleTts {
 
         for (i, DialogLine { speaker, text }) in parsed.into_iter().enumerate() {
             let voice = &voice_map[&speaker];
-            let filename = format!("{:02}_{}.{ext}", i + 1, slugify(&speaker));
+            let filename = dialog::line_audio_filename(i + 1, &speaker, ext);
             let hash = audio_hash(dialog_slug, &speaker, &canonical_text(&text), voice.name);
             let path = lines_dir.join(&filename);
 

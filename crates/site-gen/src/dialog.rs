@@ -68,6 +68,18 @@ pub fn slugify(name: &str) -> String {
         .join("_")
 }
 
+/// Filename for the per-line audio of the `n`-th spoken line (1-based).
+///
+/// This is the single source of truth for the per-line naming convention
+/// (`{:02}_{slug}.{ext}`, e.g. line 1 spoken by *Léa* → `01_lea.mp3`). Both
+/// the TTS writer that produces the MP3s and every consumer that references
+/// them (dialog HTML, dictée/translation exercise data) call this, so the
+/// name a generator points at can never silently drift from the name the
+/// synthesizer wrote.
+pub fn line_audio_filename(n: usize, speaker: &str, ext: &str) -> String {
+    format!("{:02}_{}.{}", n, slugify(speaker), ext)
+}
+
 fn strip_diacritic(c: char) -> Option<char> {
     match c {
         'À' | 'Á' | 'Â' | 'Ã' | 'Ä' | 'Å' | 'à' | 'á' | 'â' | 'ã' | 'ä' | 'å' => Some('a'),
@@ -184,5 +196,12 @@ Paul: Yeah, it's much bigger than the little shop near our place.
         assert_eq!(slugify("Claire"), "claire");
         assert_eq!(slugify("Émilie"), "emilie");
         assert_eq!(slugify("M. Duval"), "m_duval");
+    }
+
+    #[test]
+    fn line_audio_filename_pads_and_slugs() {
+        assert_eq!(line_audio_filename(1, "Léa", "mp3"), "01_lea.mp3");
+        assert_eq!(line_audio_filename(12, "Monsieur Duval", "mp3"), "12_monsieur_duval.mp3");
+        assert_eq!(line_audio_filename(3, "Marc", "ogg"), "03_marc.ogg");
     }
 }

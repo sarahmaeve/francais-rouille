@@ -1,0 +1,995 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "01_paris_metro",
+      "title": "Naviguer dans le métro parisien",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/01_lea.mp3",
+          "text": "Excusez-moi, monsieur, est-ce que vous pouvez m’aider ? Je cherche la ligne pour aller à Montmartre."
+        },
+        {
+          "n": 2,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/02_marc.mp3",
+          "text": "Bien sûr ! Vous devez prendre la ligne 12 en direction de Mairie d’Issy."
+        },
+        {
+          "n": 3,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/03_lea.mp3",
+          "text": "D’accord, mais je suis sur la ligne 4 en ce moment. Est-ce que je dois changer ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/04_marc.mp3",
+          "text": "Oui, il faut changer à la station Marcadet-Poissonniers. C’est à trois arrêts d’ici."
+        },
+        {
+          "n": 5,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/05_lea.mp3",
+          "text": "Et après le changement, c’est loin ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/06_marc.mp3",
+          "text": "Non, pas du tout. Après le changement, vous descendez à Abbesses. C’est seulement trois arrêts."
+        },
+        {
+          "n": 7,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/07_lea.mp3",
+          "text": "Abbesses, d’accord. Est-ce qu’il faut acheter un nouveau ticket pour la correspondance ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/08_marc.mp3",
+          "text": "Non, votre ticket est valable pour tout le trajet, tant que vous ne sortez pas de la station."
+        },
+        {
+          "n": 9,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/09_lea.mp3",
+          "text": "Ah, c’est pratique ! Et les couloirs de correspondance, ils sont bien indiqués ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/10_marc.mp3",
+          "text": "Oui, vous allez voir des panneaux orange avec le numéro de la ligne. Suivez les flèches pour la ligne 12."
+        },
+        {
+          "n": 11,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/11_lea.mp3",
+          "text": "Merci beaucoup. J’avais peur de me perdre, c’est mon premier jour à Paris."
+        },
+        {
+          "n": 12,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/12_marc.mp3",
+          "text": "Ne vous inquiétez pas, le métro a l’air compliqué, mais on s’y habitue vite. Vous avez un plan ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/13_lea.mp3",
+          "text": "Oui, j’ai téléchargé une application sur mon téléphone, mais elle ne marche pas bien sous terre."
+        },
+        {
+          "n": 14,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/14_marc.mp3",
+          "text": "C’est normal, il n’y a pas toujours de réseau dans le métro. Regardez le plan affiché sur le quai, c’est plus fiable."
+        },
+        {
+          "n": 15,
+          "speaker": "Léa",
+          "audio": "audio/01_paris_metro/lines/15_lea.mp3",
+          "text": "Bonne idée. Merci encore pour votre aide, vous êtes très gentil !"
+        },
+        {
+          "n": 16,
+          "speaker": "Marc",
+          "audio": "audio/01_paris_metro/lines/16_marc.mp3",
+          "text": "De rien, bon séjour à Paris ! Montmartre est magnifique, vous allez adorer."
+        }
+      ]
+    },
+    {
+      "id": "02_viennoiserie",
+      "title": "À la boulangerie",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/01_antoine.mp3",
+          "text": "Bonjour, madame ! Qu’est-ce qui vous ferait plaisir ce matin ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/02_sophie.mp3",
+          "text": "Bonjour ! Alors, j’hésite un peu. Qu’est-ce que vous me conseillez aujourd’hui ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/03_antoine.mp3",
+          "text": "Les pains au chocolat viennent de sortir du four, ils sont encore tout chauds. Et nos chaussons aux pommes sont très bons aussi."
+        },
+        {
+          "n": 4,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/04_sophie.mp3",
+          "text": "Mmm, ça sent vraiment bon. Je vais prendre deux pains au chocolat et un chausson aux pommes, s’il vous plaît."
+        },
+        {
+          "n": 5,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/05_antoine.mp3",
+          "text": "Excellent choix. C’est sur place ou à emporter ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/06_sophie.mp3",
+          "text": "À emporter, s’il vous plaît. C’est pour le petit-déjeuner au bureau."
+        },
+        {
+          "n": 7,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/07_antoine.mp3",
+          "text": "D’accord. Est-ce que vous voulez autre chose ? Nous avons aussi des croissants au beurre et des brioches."
+        },
+        {
+          "n": 8,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/08_sophie.mp3",
+          "text": "Est-ce que les croissants sont faits maison ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/09_antoine.mp3",
+          "text": "Oui, absolument. Tout est fait ici, dans notre atelier, chaque matin à partir de quatre heures."
+        },
+        {
+          "n": 10,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/10_sophie.mp3",
+          "text": "Dans ce cas, ajoutez trois croissants, s’il vous plaît. Mes collègues vont être contents."
+        },
+        {
+          "n": 11,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/11_antoine.mp3",
+          "text": "Avec plaisir. Alors, deux pains au chocolat, un chausson aux pommes et trois croissants. C’est tout ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/12_sophie.mp3",
+          "text": "Oui, c’est tout. Ça fait combien ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/13_antoine.mp3",
+          "text": "Ça vous fait huit euros cinquante, s’il vous plaît."
+        },
+        {
+          "n": 14,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/14_sophie.mp3",
+          "text": "Voilà, je paie par carte. Est-ce que le sans contact marche ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Antoine",
+          "audio": "audio/02_viennoiserie/lines/15_antoine.mp3",
+          "text": "Oui, bien sûr. Posez votre carte ici. Et voilà, c’est bon ! Merci et bonne journée, madame !"
+        },
+        {
+          "n": 16,
+          "speaker": "Sophie",
+          "audio": "audio/02_viennoiserie/lines/16_sophie.mp3",
+          "text": "Merci à vous ! À demain, sûrement. Bonne journée !"
+        }
+      ]
+    },
+    {
+      "id": "03_directions_toulouse",
+      "title": "Demander son chemin à Toulouse",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/01_nadia.mp3",
+          "text": "Pardon, monsieur, je suis un peu perdue. Est-ce que vous connaissez la Place du Capitole ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/02_pierre.mp3",
+          "text": "Oui, bien sûr, ce n’est pas très loin d’ici. Vous êtes à pied ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/03_nadia.mp3",
+          "text": "Oui, je préfère marcher pour découvrir la ville. C’est à combien de minutes environ ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/04_pierre.mp3",
+          "text": "À pied, c’est environ dix minutes. Continuez tout droit sur cette rue jusqu’au bout."
+        },
+        {
+          "n": 5,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/05_nadia.mp3",
+          "text": "D’accord, tout droit. Et ensuite ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/06_pierre.mp3",
+          "text": "Ensuite, vous allez arriver à un grand carrefour. Tournez à gauche dans la rue d’Alsace-Lorraine."
+        },
+        {
+          "n": 7,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/07_nadia.mp3",
+          "text": "La rue d’Alsace-Lorraine, c’est une grande rue ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/08_pierre.mp3",
+          "text": "Oui, c’est une rue commerçante très connue. Il y a beaucoup de magasins, vous ne pouvez pas la rater."
+        },
+        {
+          "n": 9,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/09_nadia.mp3",
+          "text": "Très bien. Et je continue sur cette rue ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/10_pierre.mp3",
+          "text": "Oui, vous la suivez pendant environ cinq minutes. Vous allez passer devant une église sur votre droite."
+        },
+        {
+          "n": 11,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/11_nadia.mp3",
+          "text": "Et la Place du Capitole est juste après ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/12_pierre.mp3",
+          "text": "Presque. Après l’église, prenez la deuxième rue à droite. Vous allez déboucher directement sur la place."
+        },
+        {
+          "n": 13,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/13_nadia.mp3",
+          "text": "Super, ça a l’air simple. Est-ce qu’il y a un endroit pour manger sur la place ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/14_pierre.mp3",
+          "text": "Il y a plein de restaurants et de cafés tout autour. Mais attention, ceux sur la place sont un peu chers. Je vous conseille les petites rues juste derrière."
+        },
+        {
+          "n": 15,
+          "speaker": "Nadia",
+          "audio": "audio/03_directions_toulouse/lines/15_nadia.mp3",
+          "text": "Merci beaucoup pour vos conseils ! C’est vraiment gentil."
+        },
+        {
+          "n": 16,
+          "speaker": "Pierre",
+          "audio": "audio/03_directions_toulouse/lines/16_pierre.mp3",
+          "text": "De rien, bienvenue à Toulouse ! Vous verrez, c’est une ville très agréable."
+        }
+      ]
+    },
+    {
+      "id": "05_appel_agence",
+      "title": "Appel téléphonique — L'agence immobilière",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/01_thomas.mp3",
+          "text": "Agence Belleville Immobilier, bonjour ! Thomas à l’appareil, comment puis-je vous aider ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/02_camille.mp3",
+          "text": "Bonjour, je vous appelle au sujet de l’annonce pour le deux pièces rue de la Roquette. Est-ce que l’appartement est toujours disponible ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/03_thomas.mp3",
+          "text": "Oui, tout à fait, il est encore disponible. Vous avez des questions ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/04_camille.mp3",
+          "text": "Oui, plusieurs. D’abord, est-ce que l’appartement est meublé ou vide ?"
+        },
+        {
+          "n": 5,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/05_thomas.mp3",
+          "text": "Il est loué vide. Par contre, la cuisine est entièrement équipée, comme indiqué dans l’annonce."
+        },
+        {
+          "n": 6,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/06_camille.mp3",
+          "text": "D’accord. Et le quartier, c’est comment ? Je ne connais pas très bien le 11e."
+        },
+        {
+          "n": 7,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/07_thomas.mp3",
+          "text": "C’est un excellent quartier. La rue de la Roquette est très bien située, entre Bastille et Voltaire. Il y a tout ce qu’il faut à proximité : des supermarchés, des pharmacies, des boulangeries."
+        },
+        {
+          "n": 8,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/08_camille.mp3",
+          "text": "Et au niveau du bruit ? J’ai lu que la rue de la Roquette est assez animée le soir."
+        },
+        {
+          "n": 9,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/09_thomas.mp3",
+          "text": "C’est vrai que le bas de la rue est animé avec les bars et les restaurants. Mais l’appartement est plus haut dans la rue, c’est beaucoup plus calme. Et puis la chambre donne sur la cour, donc vous n’entendez presque rien."
+        },
+        {
+          "n": 10,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/10_camille.mp3",
+          "text": "Ah, c’est rassurant. Il y a des espaces verts pas loin ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/11_thomas.mp3",
+          "text": "Oui, le square Maurice-Gardette est à quelques minutes. Et si vous aimez vous promener, le cimetière du Père-Lachaise est très agréable, beaucoup de Parisiens y vont pour marcher au calme."
+        },
+        {
+          "n": 12,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/12_camille.mp3",
+          "text": "Très bien. Pour les transports, c’est pratique ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/13_thomas.mp3",
+          "text": "Très pratique. Voltaire est à cinq minutes à pied, et Bastille à dix minutes. Avec Bastille, vous avez trois lignes de métro, donc vous pouvez aller partout rapidement."
+        },
+        {
+          "n": 14,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/14_camille.mp3",
+          "text": "Parfait. Et au niveau du dossier, qu’est-ce qu’il faut fournir ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/15_thomas.mp3",
+          "text": "Il faut vos trois derniers bulletins de salaire, votre contrat de travail, une pièce d’identité et votre dernier avis d’imposition. Vos revenus doivent être au moins trois fois le montant du loyer."
+        },
+        {
+          "n": 16,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/16_camille.mp3",
+          "text": "D’accord, je peux préparer tout ça. Est-ce que je pourrais visiter l’appartement cette semaine ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/17_thomas.mp3",
+          "text": "Bien sûr. Je peux vous proposer jeudi à 14 heures ou vendredi à 10 heures. Qu’est-ce qui vous arrange ?"
+        },
+        {
+          "n": 18,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/18_camille.mp3",
+          "text": "Vendredi à 10 heures, ce serait parfait pour moi."
+        },
+        {
+          "n": 19,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/19_thomas.mp3",
+          "text": "C’est noté. On se retrouve devant l’immeuble, au 87 rue de la Roquette. Vous verrez le digicode, je vous ouvrirai."
+        },
+        {
+          "n": 20,
+          "speaker": "Camille",
+          "audio": "audio/05_appel_agence/lines/20_camille.mp3",
+          "text": "Merci beaucoup, Thomas. À vendredi alors !"
+        },
+        {
+          "n": 21,
+          "speaker": "Thomas",
+          "audio": "audio/05_appel_agence/lines/21_thomas.mp3",
+          "text": "À vendredi, madame. Bonne journée !"
+        }
+      ]
+    },
+    {
+      "id": "06_discussion_quartier",
+      "title": "Discussion sur le quartier — Français familier",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/01_camille.mp3",
+          "text": "Excusez-moi, je peux vous poser une question ? Je pense m’installer dans le coin et je voulais savoir comment c’est de vivre ici."
+        },
+        {
+          "n": 2,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/02_yasmine.mp3",
+          "text": "Ah ouais, vous cherchez dans le quartier ? Moi ça fait cinq ans que j’habite ici, franchement c’est top."
+        },
+        {
+          "n": 3,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/03_camille.mp3",
+          "text": "C’est vrai ? Qu’est-ce qui vous plaît le plus ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/04_yasmine.mp3",
+          "text": "Ben, déjà y'a une ambiance de ouf. C’est vivant, y'a toujours un truc qui se passe. Et les gens sont sympas, c’est pas comme dans certains quartiers où personne se parle."
+        },
+        {
+          "n": 5,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/05_camille.mp3",
+          "text": "Et pour faire ses courses, c’est bien ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/06_yasmine.mp3",
+          "text": "Ah carrément ! Y'a le marché de la Bastille le jeudi et le dimanche, il est génial. Les fruits et légumes sont super frais, et y'a un fromager là-bas, il est incroyable. Sinon y'a le Franprix au coin de la rue, il ferme tard, c’est pratique."
+        },
+        {
+          "n": 7,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/07_camille.mp3",
+          "text": "Et au niveau des restos ? J’ai vu qu’il y en a pas mal dans le coin."
+        },
+        {
+          "n": 8,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/08_yasmine.mp3",
+          "text": "Ouais, y'en a plein. Si vous aimez bien manger sans vous ruiner, y'a des petites adresses rue Keller et rue de Charonne qui sont vraiment chouettes. Évitez les attrape-touristes autour de Bastille par contre, c’est pas terrible et c’est cher."
+        },
+        {
+          "n": 9,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/09_camille.mp3",
+          "text": "Bon à savoir. Et le soir, c’est bruyant ? L’agent m’a dit que c’est calme en haut de la Roquette, mais bon…"
+        },
+        {
+          "n": 10,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/10_yasmine.mp3",
+          "text": "Non mais il a raison, hein. En bas c’est la fête le week-end, c’est sûr. Mais au-dessus de la rue de Charonne, c’est peinard. Moi je dors les fenêtres ouvertes en été, zéro souci."
+        },
+        {
+          "n": 11,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/11_camille.mp3",
+          "text": "C’est rassurant. Et vous trouvez que c’est sûr le soir ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/12_yasmine.mp3",
+          "text": "Ouais, franchement, j’ai jamais eu de problème. Y'a du monde dans les rues jusqu’à assez tard, donc on se sent pas seule. C’est un quartier qui vit, quoi."
+        },
+        {
+          "n": 13,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/13_camille.mp3",
+          "text": "Et il y a des endroits sympas pour se balader le week-end ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/14_yasmine.mp3",
+          "text": "Grave ! Le Père-Lachaise, c’est juste à côté, c’est hyper beau et super calme. Et sinon le canal Saint-Martin est pas loin, c’est nickel pour un dimanche tranquille. Les gens pique-niquent au bord de l’eau, c’est chill."
+        },
+        {
+          "n": 15,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/15_camille.mp3",
+          "text": "Ça donne envie ! Je crois que je vais me plaire ici."
+        },
+        {
+          "n": 16,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/16_yasmine.mp3",
+          "text": "Ah mais carrément ! Une fois qu’on est dans le 11e, on veut plus en partir. C’est un peu comme un village dans Paris, vous allez voir."
+        },
+        {
+          "n": 17,
+          "speaker": "Camille",
+          "audio": "audio/06_discussion_quartier/lines/17_camille.mp3",
+          "text": "Merci beaucoup, c’est sympa d’avoir pris le temps de discuter avec moi !"
+        },
+        {
+          "n": 18,
+          "speaker": "Yasmine",
+          "audio": "audio/06_discussion_quartier/lines/18_yasmine.mp3",
+          "text": "Mais de rien ! Et si vous emménagez, passez prendre un café ici, c’est mon QG. Bienvenue dans le quartier !"
+        }
+      ]
+    },
+    {
+      "id": "07_boulangerie",
+      "title": "Visite à la boulangerie — Les spécialités",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/01_claire.mp3",
+          "text": "Bonjour, monsieur ! Votre vitrine est magnifique. Tout a l’air délicieux."
+        },
+        {
+          "n": 2,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/02_monsieur_duval.mp3",
+          "text": "Bonjour, madame ! Merci, c’est gentil. Qu’est-ce qui vous tente aujourd’hui ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/03_claire.mp3",
+          "text": "Justement, j’hésite beaucoup. Qu’est-ce que vous me recommandez ? Je cherche quelque chose de spécial."
+        },
+        {
+          "n": 4,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/04_monsieur_duval.mp3",
+          "text": "Alors, si vous aimez le chocolat, je vous recommande notre éclair au chocolat noir. C’est ce qui se vend le mieux."
+        },
+        {
+          "n": 5,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/05_claire.mp3",
+          "text": "Un éclair au chocolat noir ? Qu’est-ce qu’il a de particulier ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/06_monsieur_duval.mp3",
+          "text": "On utilise du chocolat noir à soixante-douze pour cent, qui vient directement de chez un artisan belge. La crème pâtissière est faite chaque matin, et le glaçage est préparé à la minute."
+        },
+        {
+          "n": 7,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/07_claire.mp3",
+          "text": "Ça a l’air incroyable. Et il y a autre chose que vous recommandez ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/08_monsieur_duval.mp3",
+          "text": "Oui, absolument. Notre spécialité maison, c’est le Paris-Noisette. C’est une création originale de ma femme."
+        },
+        {
+          "n": 9,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/09_claire.mp3",
+          "text": "Le Paris-Noisette ? Je ne connais pas du tout. C’est quoi exactement ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/10_monsieur_duval.mp3",
+          "text": "C’est une pâte feuilletée croustillante avec une mousse à la noisette du Piémont et un cœur de caramel au beurre salé. On le saupoudre de noisettes torréfiées et d’un peu de fleur de sel."
+        },
+        {
+          "n": 11,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/11_claire.mp3",
+          "text": "Oh là là, ça semble extraordinaire. C’est votre femme qui a inventé cette recette ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/12_monsieur_duval.mp3",
+          "text": "Oui, elle est pâtissière aussi. Elle a travaillé dix ans chez Ladurée avant qu’on ouvre notre propre boutique. Le Paris-Noisette, c’est sa fierté."
+        },
+        {
+          "n": 13,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/13_claire.mp3",
+          "text": "Eh bien, je vais prendre les deux ! Un éclair au chocolat noir et un Paris-Noisette, s’il vous plaît."
+        },
+        {
+          "n": 14,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/14_monsieur_duval.mp3",
+          "text": "Excellent choix ! L’éclair, c’est trois euros cinquante, et le Paris-Noisette, c’est cinq euros. Ça vous fait huit euros cinquante en tout."
+        },
+        {
+          "n": 15,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/15_claire.mp3",
+          "text": "Parfait. Est-ce que vous avez une carte de fidélité ?"
+        },
+        {
+          "n": 16,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/16_monsieur_duval.mp3",
+          "text": "Oui, bien sûr. À votre dixième achat, vous recevez une viennoiserie gratuite. Je vous fais une carte tout de suite."
+        },
+        {
+          "n": 17,
+          "speaker": "Claire",
+          "audio": "audio/07_boulangerie/lines/17_claire.mp3",
+          "text": "Super ! Merci beaucoup, monsieur. Je suis sûre que je vais revenir très vite."
+        },
+        {
+          "n": 18,
+          "speaker": "Monsieur Duval",
+          "audio": "audio/07_boulangerie/lines/18_monsieur_duval.mp3",
+          "text": "J’espère bien ! Bonne dégustation, madame. Et si vous aimez le Paris-Noisette, dites-le à vos amis !"
+        }
+      ]
+    },
+    {
+      "id": "08_taxi_hotel",
+      "title": "Réserver un taxi à l'hôtel",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/01_david.mp3",
+          "text": "Bonsoir, excusez-moi de vous déranger. J’aurais besoin de réserver un taxi pour demain matin très tôt."
+        },
+        {
+          "n": 2,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/02_emilie.mp3",
+          "text": "Bonsoir, monsieur. Pas de souci, je suis là pour ça. C’est pour aller où ?"
+        },
+        {
+          "n": 3,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/03_david.mp3",
+          "text": "À l’aéroport Charles de Gaulle. Mon vol est à neuf heures, donc je voudrais partir à cinq heures trente."
+        },
+        {
+          "n": 4,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/04_emilie.mp3",
+          "text": "Cinq heures trente, d’accord. C’est une bonne idée de partir tôt. À cette heure-là, il n’y a pas beaucoup de circulation, mais il vaut mieux prévoir de la marge."
+        },
+        {
+          "n": 5,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/05_david.mp3",
+          "text": "Justement, le trajet dure combien de temps en général ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/06_emilie.mp3",
+          "text": "Depuis notre quartier, près de la Gare du Nord, il faut compter entre trente et quarante-cinq minutes pour l’aéroport. Ça dépend du terminal."
+        },
+        {
+          "n": 7,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/07_david.mp3",
+          "text": "Je suis au terminal 2E. C’est le plus loin, non ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/08_emilie.mp3",
+          "text": "Oui, le terminal 2E est un peu plus loin, mais à cinq heures trente, les routes sont dégagées. Vous devriez arriver en trente-cinq minutes environ."
+        },
+        {
+          "n": 9,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/09_david.mp3",
+          "text": "Et pour le prix, ça coûte combien à peu près ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/10_emilie.mp3",
+          "text": "Le tarif entre Paris et CDG est un forfait fixe. C’est cinquante-six euros pour la rive droite. Comme nous sommes dans le 10e arrondissement, c’est ce tarif-là."
+        },
+        {
+          "n": 11,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/11_david.mp3",
+          "text": "D’accord, cinquante-six euros. C’est le même prix pour tous les taxis ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/12_emilie.mp3",
+          "text": "Oui, c’est un tarif réglementé. Tous les taxis parisiens officiels doivent appliquer ce forfait. Pas de surprises."
+        },
+        {
+          "n": 13,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/13_david.mp3",
+          "text": "Très bien, c’est rassurant. Et je paie comment ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/14_emilie.mp3",
+          "text": "Vous pouvez payer par carte bancaire directement dans le taxi. La plupart des chauffeurs acceptent aussi le sans contact. Vous pouvez aussi payer en espèces si vous préférez."
+        },
+        {
+          "n": 15,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/15_david.mp3",
+          "text": "Je paierai par carte, c’est plus simple. Et le taxi viendra me chercher ici, devant l’hôtel ?"
+        },
+        {
+          "n": 16,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/16_emilie.mp3",
+          "text": "Exactement. Le chauffeur sera devant l’entrée principale à cinq heures trente. Je vais réserver avec notre compagnie partenaire, ils sont toujours ponctuels."
+        },
+        {
+          "n": 17,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/17_david.mp3",
+          "text": "Est-ce qu’il faut donner un pourboire ?"
+        },
+        {
+          "n": 18,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/18_emilie.mp3",
+          "text": "Ce n’est pas obligatoire en France, mais c’est apprécié. En général, les gens arrondissent à l’euro supérieur ou ajoutent deux ou trois euros."
+        },
+        {
+          "n": 19,
+          "speaker": "David",
+          "audio": "audio/08_taxi_hotel/lines/19_david.mp3",
+          "text": "Parfait, merci pour toutes ces informations. Vous pouvez confirmer la réservation ?"
+        },
+        {
+          "n": 20,
+          "speaker": "Émilie",
+          "audio": "audio/08_taxi_hotel/lines/20_emilie.mp3",
+          "text": "C’est fait, monsieur. Taxi réservé pour demain, cinq heures trente, devant l’hôtel, destination CDG terminal 2E. Bon voyage !"
+        }
+      ]
+    },
+    {
+      "id": "10_rentree_cm2",
+      "title": "La rentrée en CM2 — Le premier mois",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Sandrine",
+          "audio": "audio/10_rentree_cm2/lines/01_sandrine.mp3",
+          "text": "Ah, bonjour Olivier ! Bonjour Fatima ! Ça fait plaisir de vous voir. Alors, comment ça se passe pour vos enfants ? Le premier mois en CM2, c’est un grand changement, non ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Olivier",
+          "audio": "audio/10_rentree_cm2/lines/02_olivier.mp3",
+          "text": "Bonjour ! Oui, ma fille Chloé était un peu stressée au début. Elle avait peur d’avoir un maître plus sévère que l’année dernière."
+        },
+        {
+          "n": 3,
+          "speaker": "Fatima",
+          "audio": "audio/10_rentree_cm2/lines/03_fatima.mp3",
+          "text": "C’est pareil pour mon fils Adam. Il ne connaissait pas beaucoup d’élèves dans sa classe cette année, alors il était inquiet."
+        },
+        {
+          "n": 4,
+          "speaker": "Sandrine",
+          "audio": "audio/10_rentree_cm2/lines/04_sandrine.mp3",
+          "text": "Lucas aussi, il ne voulait pas y aller la première semaine. Mais maintenant, il adore sa maîtresse. Elle organise des projets en groupe, et ça lui plaît beaucoup."
+        },
+        {
+          "n": 5,
+          "speaker": "Olivier",
+          "audio": "audio/10_rentree_cm2/lines/05_olivier.mp3",
+          "text": "Chloé aussi commence à s’adapter. Ce qui l’a surprise, c’est la quantité de devoirs. En CM1, elle avait une demi-heure de travail le soir, mais maintenant c’est presque une heure."
+        },
+        {
+          "n": 6,
+          "speaker": "Fatima",
+          "audio": "audio/10_rentree_cm2/lines/06_fatima.mp3",
+          "text": "Ah oui, les devoirs ! Adam passe beaucoup de temps sur les mathématiques. Les fractions et les problèmes de géométrie, c’est nouveau pour lui. Il me demande de l’aide tous les soirs."
+        },
+        {
+          "n": 7,
+          "speaker": "Sandrine",
+          "audio": "audio/10_rentree_cm2/lines/07_sandrine.mp3",
+          "text": "Lucas a le même problème avec la conjugaison. Le passé simple, le subjonctif… Il trouve ça très difficile. Je lui ai acheté un petit cahier d’exercices pour s’entraîner."
+        },
+        {
+          "n": 8,
+          "speaker": "Olivier",
+          "audio": "audio/10_rentree_cm2/lines/08_olivier.mp3",
+          "text": "C’est une bonne idée. Chloé, elle, adore les sciences. Sa maîtresse leur fait des expériences en classe, et la semaine dernière, ils ont étudié le système solaire. Elle en parle tout le temps à la maison."
+        },
+        {
+          "n": 9,
+          "speaker": "Fatima",
+          "audio": "audio/10_rentree_cm2/lines/09_fatima.mp3",
+          "text": "Adam aussi aime les sciences ! Par contre, il a du mal avec les dictées. L’orthographe, c’est vraiment son point faible. Est-ce que la maîtresse fait des dictées toutes les semaines chez vous aussi ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Sandrine",
+          "audio": "audio/10_rentree_cm2/lines/10_sandrine.mp3",
+          "text": "Oui, tous les vendredis. Lucas a eu sept sur dix la semaine dernière. Il était fier de lui. Mais ce qui me préoccupe un peu, c’est l’année prochaine. Le collège, c’est un autre monde."
+        },
+        {
+          "n": 11,
+          "speaker": "Olivier",
+          "audio": "audio/10_rentree_cm2/lines/11_olivier.mp3",
+          "text": "J’y pense aussi. Chloé me pose déjà des questions sur le collège. Elle veut savoir si elle va garder ses amis, comment ça fonctionne avec les différents professeurs…"
+        },
+        {
+          "n": 12,
+          "speaker": "Fatima",
+          "audio": "audio/10_rentree_cm2/lines/12_fatima.mp3",
+          "text": "Moi, je me demande si Adam sera prêt. En CM2, ils sont les plus grands de l’école. Au collège, ils redeviennent les plus petits. C’est un gros changement."
+        },
+        {
+          "n": 13,
+          "speaker": "Sandrine",
+          "audio": "audio/10_rentree_cm2/lines/13_sandrine.mp3",
+          "text": "C’est vrai. Mais il reste encore neuf mois pour les préparer. Et d’après ce que je vois, les enfants s’adaptent vite. Lucas a déjà fait deux nouveaux amis ce mois-ci."
+        },
+        {
+          "n": 14,
+          "speaker": "Olivier",
+          "audio": "audio/10_rentree_cm2/lines/14_olivier.mp3",
+          "text": "Chloé aussi. Elle s’est inscrite à l’atelier théâtre de l’école, et elle adore ça. Ça lui donne confiance en elle."
+        },
+        {
+          "n": 15,
+          "speaker": "Fatima",
+          "audio": "audio/10_rentree_cm2/lines/15_fatima.mp3",
+          "text": "C’est super. Adam fait l’atelier informatique. Il apprend à programmer avec Scratch. Il est tellement content qu’il veut me montrer ses projets tous les soirs !"
+        },
+        {
+          "n": 16,
+          "speaker": "Sandrine",
+          "audio": "audio/10_rentree_cm2/lines/16_sandrine.mp3",
+          "text": "C’est bien qu’il y ait autant d’activités. Bon, les voilà qui sortent ! On se retrouve la semaine prochaine ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Olivier",
+          "audio": "audio/10_rentree_cm2/lines/17_olivier.mp3",
+          "text": "Avec plaisir ! Bonne soirée à vous deux."
+        },
+        {
+          "n": 18,
+          "speaker": "Fatima",
+          "audio": "audio/10_rentree_cm2/lines/18_fatima.mp3",
+          "text": "Bonne soirée ! Et bon courage avec les devoirs ce soir !"
+        }
+      ]
+    },
+    {
+      "id": "11_restaurant_commande",
+      "title": "Commander au restaurant",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/01_julien.mp3",
+          "text": "Bonsoir, mesdames. Bienvenue chez Léon. Vous avez réservé ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Émilie",
+          "audio": "audio/11_restaurant_commande/lines/02_emilie.mp3",
+          "text": "Oui, j'ai réservé une table pour deux au nom d'Émilie Moreau."
+        },
+        {
+          "n": 3,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/03_julien.mp3",
+          "text": "Parfait, c'est la table près de la fenêtre. Suivez-moi, s'il vous plaît."
+        },
+        {
+          "n": 4,
+          "speaker": "Émilie",
+          "audio": "audio/11_restaurant_commande/lines/04_emilie.mp3",
+          "text": "Merci. Est-ce que vous avez un menu du jour ?"
+        },
+        {
+          "n": 5,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/05_julien.mp3",
+          "text": "Oui, aujourd'hui nous proposons une soupe à l'oignon en entrée, un confit de canard en plat principal et une tarte aux pommes en dessert."
+        },
+        {
+          "n": 6,
+          "speaker": "Émilie",
+          "audio": "audio/11_restaurant_commande/lines/06_emilie.mp3",
+          "text": "Ça a l'air délicieux. Je vais prendre le menu du jour, s'il vous plaît."
+        },
+        {
+          "n": 7,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/07_julien.mp3",
+          "text": "Très bien. Et pour votre amie ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Émilie",
+          "audio": "audio/11_restaurant_commande/lines/08_emilie.mp3",
+          "text": "Elle va regarder la carte. Est-ce que vous avez des plats végétariens ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/09_julien.mp3",
+          "text": "Bien sûr. Nous avons un risotto aux champignons et une salade de chèvre chaud."
+        },
+        {
+          "n": 10,
+          "speaker": "Émilie",
+          "audio": "audio/11_restaurant_commande/lines/10_emilie.mp3",
+          "text": "Le risotto, ça lui plaira. Et pour les boissons, qu'est-ce que vous recommandez avec le canard ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/11_julien.mp3",
+          "text": "Je vous conseille un verre de Cahors, c'est un vin rouge du Sud-Ouest qui accompagne très bien le confit."
+        },
+        {
+          "n": 12,
+          "speaker": "Émilie",
+          "audio": "audio/11_restaurant_commande/lines/12_emilie.mp3",
+          "text": "Parfait, deux verres de Cahors alors. Merci beaucoup !"
+        },
+        {
+          "n": 13,
+          "speaker": "Julien",
+          "audio": "audio/11_restaurant_commande/lines/13_julien.mp3",
+          "text": "C'est noté. Je vous apporte les boissons tout de suite."
+        }
+      ]
+    }
+  ]
+}
