@@ -5,6 +5,8 @@ level = "B1"
 vocab_page = "vocabulaire_b1"
 footer_text = "Français Rouillé"
 footer_suffix = "Niveau B1"
+dictee = true
+translation = true
 
 # --- Dialogues ---
 

@@ -21,7 +21,7 @@ fn print_usage(prog: &str) {
     eprintln!("  {prog} strip-metadata <path> [--output DIR] [--keep-icc]            Strip image EXIF/metadata");
     eprintln!("  {prog} prepare-image <path> --chapter <ch> [--role hero|thumbnail|page] Prepare image for site");
     eprintln!("  {prog} check-csp     [--site DIR]                                  Verify HTML against CSP");
-    eprintln!("  {prog} verify-quiz   [<file>] [--site DIR] [--fix]                 Validate reading-data.json keys + typography");
+    eprintln!("  {prog} verify-quiz   [<file>] [--site DIR] [--fix]                 Validate reading/dictée/translation data + typography");
     eprintln!("  {prog} --help                             Show detailed help");
     eprintln!();
     eprintln!("Audio format defaults to mp3. Language defaults to fr-FR.");
@@ -74,13 +74,19 @@ fn print_help() {
     println!("           form elements, and external resource URLs.");
     println!("           Default site directory: site/");
     println!("  verify-quiz [<file>] [--site DIR] [--fix]");
-    println!("           Validate reading-comprehension data. Parses reading-data.json,");
-    println!("           checks every answer key against the options, statements, and");
-    println!("           source sentences it references, and verifies French typography");
-    println!("           (typographic apostrophes, ellipsis) in all text. Pass a single");
-    println!("           JSON file, or omit it to scan the site directory recursively.");
-    println!("           Use --fix to auto-correct typography. Default directory: site/");
-    println!("           See docs/READING.md for the schema.");
+    println!("           Validate exercise data. Dispatches by filename to the right");
+    println!("           validator:");
+    println!("             reading-data.json     — answer keys reference real options,");
+    println!("                                     statements, and source sentences");
+    println!("             dictee-data.json      — dense line numbers, non-empty text,");
+    println!("                                     every referenced MP3 exists on disk");
+    println!("             translation-data.json — unique ids, non-empty fr/en pairs");
+    println!("           and verifies French typography (typographic apostrophes,");
+    println!("           ellipsis) — on all text for reading/dictée, and on the French");
+    println!("           side only for translation. Pass a single JSON file, or omit it");
+    println!("           to scan the site directory recursively. Use --fix to");
+    println!("           auto-correct typography. Default directory: site/");
+    println!("           See docs/READING.md, docs/DICTEE.md, docs/TRANSLATION.md.");
     println!();
     println!("OPTIONS:");
     println!("  --format mp3|ogg     Audio encoding (default: mp3). Use \"ogg\" for OGG Opus.");
@@ -558,7 +564,8 @@ fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     }
 
     // Determine which files to validate: an explicit file, or every
-    // reading-data.json under the site directory.
+    // exercise-data JSON (reading / dictée / translation) under the site
+    // directory. Each is dispatched by filename to its own validator.
     let files: Vec<PathBuf> = if let Some(file) = single_file {
         if !file.is_file() {
             eprintln!("File not found: {}", file.display());
@@ -572,25 +579,35 @@ fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         }
         let mut found = Vec::new();
         site_gen::reading::collect_reading_files(&site_dir, &mut found)?;
+        site_gen::dictee::collect_files(&site_dir, &mut found)?;
+        site_gen::translation::collect_files(&site_dir, &mut found)?;
         found.sort();
         found
     };
 
     if files.is_empty() {
-        println!("No reading-data.json files found under {}", site_dir.display());
+        println!("No exercise-data JSON files found under {}", site_dir.display());
         return Ok(());
     }
 
-    // French typography rules (apostrophes, ellipsis) applied to all text.
+    // French typography rules (apostrophes, ellipsis). Applied to all text in
+    // reading/dictée files (all-French), and to the French `fr` side only in
+    // translation files.
     let rules = site_gen::typography::rules_for_language("fr-FR", false)
         .ok_or("fr-FR typography rules unavailable")?;
 
-    // --fix: auto-correct typography in place before re-validating.
+    // --fix: auto-correct French typography in place before re-validating.
+    // Whole-blob fixing is safe for the all-French reading/dictée files;
+    // translation files are field-scoped so English is never touched.
     if fix {
         let mut fixed = 0;
         for file in &files {
             let original = std::fs::read_to_string(file)?;
-            let corrected = site_gen::typography::fix_text(&original, rules.as_ref());
+            let corrected = if file_kind(file) == FileKind::Translation {
+                fix_translation_french(&original, rules.as_ref())
+            } else {
+                site_gen::typography::fix_text(&original, rules.as_ref())
+            };
             if corrected != original {
                 std::fs::write(file, &corrected)?;
                 println!("fixed typography: {}", file.display());
@@ -602,21 +619,44 @@ fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         }
     }
 
-    // Structural validation (answer keys) + French typography checks.
-    let mut structural = Vec::new();
+    // Structural validation + French typography checks, dispatched per kind.
+    let mut structural: Vec<String> = Vec::new();
     let mut typo = Vec::new();
     for file in &files {
         let text = std::fs::read_to_string(file)?;
-        structural.extend(site_gen::reading::validate_str(file, &text));
-        let mut violations = site_gen::typography::verify_text(&text, rules.as_ref());
-        for v in &mut violations {
-            v.file.clone_from(file);
+        match file_kind(file) {
+            FileKind::Reading => {
+                structural.extend(site_gen::reading::validate_str(file, &text).iter().map(|e| e.to_string()));
+                typo.extend(typo_violations(file, &text, rules.as_ref()));
+            }
+            FileKind::Dictee => {
+                structural.extend(site_gen::dictee::validate_file(file).iter().map(|e| e.to_string()));
+                typo.extend(typo_violations(file, &text, rules.as_ref()));
+            }
+            FileKind::Translation => {
+                structural.extend(site_gen::translation::validate_str(file, &text).iter().map(|e| e.to_string()));
+                // Typography on the French side only. Line/col positions in
+                // the generated JSON are ephemeral (rewritten every build),
+                // so violations are located by exercise id (= source dialog
+                // slug) and spoken-line number instead.
+                for (loc, fr) in site_gen::translation::french_texts_located(&text) {
+                    for v in site_gen::typography::verify_text(&fr, rules.as_ref()) {
+                        typo.push(format!(
+                            "{}: {loc}: [{}] found {}, expected {} (col {})",
+                            file.display(),
+                            v.rule,
+                            v.found,
+                            v.expected,
+                            v.col,
+                        ));
+                    }
+                }
+            }
         }
-        typo.extend(violations);
     }
 
     if structural.is_empty() && typo.is_empty() {
-        println!("No problems found — {} reading file(s) valid.", files.len());
+        println!("No problems found — {} exercise file(s) valid.", files.len());
         Ok(())
     } else {
         for e in &structural {
@@ -634,6 +674,62 @@ fn run_verify_quiz(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
             eprintln!("Run verify-quiz --fix to auto-correct typography.");
         }
         std::process::exit(1);
+    }
+}
+
+/// The three kinds of exercise-data JSON, distinguished by filename.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+enum FileKind {
+    Reading,
+    Dictee,
+    Translation,
+}
+
+fn file_kind(path: &std::path::Path) -> FileKind {
+    match path.file_name().and_then(|n| n.to_str()) {
+        Some("dictee-data.json") => FileKind::Dictee,
+        Some("translation-data.json") => FileKind::Translation,
+        _ => FileKind::Reading,
+    }
+}
+
+/// Run French typography checks over `text`, rendering each violation as a
+/// `file:line:col` message. Pass the whole file's contents so the positions
+/// are meaningful.
+fn typo_violations(
+    file: &std::path::Path,
+    text: &str,
+    rules: &dyn site_gen::typography::TypographyRules,
+) -> Vec<String> {
+    let mut violations = site_gen::typography::verify_text(text, rules);
+    violations
+        .iter_mut()
+        .map(|v| {
+            v.file = file.to_path_buf();
+            v.to_string()
+        })
+        .collect()
+}
+
+/// Fix French typography in a translation file's `fr` fields only, leaving the
+/// English `en` side (and JSON structure) untouched. Returns the file text
+/// unchanged if it does not parse (structural validation reports that).
+fn fix_translation_french(
+    json: &str,
+    rules: &dyn site_gen::typography::TypographyRules,
+) -> String {
+    let mut doc: site_gen::translation::TranslationFile = match serde_json::from_str(json) {
+        Ok(d) => d,
+        Err(_) => return json.to_string(),
+    };
+    for ex in &mut doc.exercises {
+        for line in &mut ex.lines {
+            line.fr = site_gen::typography::fix_text(&line.fr, rules);
+        }
+    }
+    match serde_json::to_string_pretty(&doc) {
+        Ok(s) => format!("{s}\n"),
+        Err(_) => json.to_string(),
     }
 }
 

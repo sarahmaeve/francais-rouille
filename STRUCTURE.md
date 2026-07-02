@@ -26,6 +26,11 @@ Each chapter directory contains:
 - `translations/` — English HTML versions (e.g. `01_example_en.html`)
 - `vocabulaire.html` — vocabulary reference page
 - `quiz.html` + `quiz-data.js` — interactive quiz
+- `reading-data.json` — reading-comprehension exercises (see `docs/READING.md`)
+- `dictee-data.json` — generated dictée exercises, opt-in via
+  `[chapter] dictee = true` (see `docs/DICTEE.md`)
+- `translation-data.json` — generated FR→EN translation practice, opt-in via
+  `[chapter] translation = true` (see `docs/TRANSLATION.md`)
 - `mots-croises.html` — crossword puzzle (where applicable)
 - `audio/` — generated TTS audio
   - `audio/<dialog_name>/combined.mp3`

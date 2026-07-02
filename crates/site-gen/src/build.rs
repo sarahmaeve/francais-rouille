@@ -5,7 +5,7 @@ use std::path::Path;
 use serde::{Deserialize, Serialize};
 use tera::{Context, Tera};
 
-use crate::dialog::{self, slugify};
+use crate::dialog;
 
 /// Chapter configuration loaded from `chapter.toml`.
 #[derive(Debug, Deserialize)]
@@ -61,6 +61,12 @@ pub struct ChapterMeta {
     pub vocab_page: String,
     pub footer_text: String,
     pub footer_suffix: String,
+    /// Opt in to generating `dictee-data.json` for this chapter's dialogs.
+    #[serde(default)]
+    pub dictee: bool,
+    /// Opt in to generating `translation-data.json` for this chapter's dialogs.
+    #[serde(default)]
+    pub translation: bool,
 }
 
 fn default_level() -> String {
@@ -303,6 +309,13 @@ pub fn build_chapter(
     }
 
     build_chapter_index(&tera, &config, output_dir, base_url.as_deref())?;
+
+    // Generated exercise data (opt-in per chapter). These read the same
+    // dialog `.txt` files and reference the per-line MP3s written under
+    // `output_dir`, so they run after the page loop.
+    crate::dictee::generate_chapter(content_dir, output_dir, &config)?;
+    crate::translation::generate_chapter(content_dir, output_dir, &config)?;
+
     Ok(())
 }
 
@@ -319,6 +332,18 @@ fn build_dialog_page(
 
     let characters = parse_characters(&content);
     let dialog_lines = dialog::parse_dialog(&content);
+
+    // Surface any drift between this dialog and its parallel `_en.txt`
+    // translation. Opted-in translation chapters treat this as fatal (see
+    // translation::generate_chapter); here in the always-on build path it is
+    // a warning, so it hardens every parallel pair in the repo without
+    // surprise-breaking an unrelated build.
+    let en_txt = content_dir.join(format!("{}_en.txt", page.slug));
+    if let Ok(en_content) = std::fs::read_to_string(&en_txt) {
+        for e in crate::translation::check_alignment(&content, &en_content) {
+            eprintln!("  warning: {} translation drift: {}", page.slug, e);
+        }
+    }
 
     // Assign speaker classes in order of first appearance.
     let classes = ["speaker-a", "speaker-b", "speaker-c", "speaker-d"];
@@ -350,7 +375,7 @@ fn build_dialog_page(
         .enumerate()
         .map(|(i, line)| {
             let index = format!("{:02}", i + 1);
-            let audio_file = format!("{}_{}.mp3", index, slugify(&line.speaker));
+            let audio_file = dialog::line_audio_filename(i + 1, &line.speaker, "mp3");
             DialogLineData {
                 index,
                 speaker: line.speaker.clone(),
@@ -1374,7 +1399,7 @@ audio_dir = "custom/audio/path"
                 speaker: line.speaker.clone(),
                 speaker_class: speaker_classes[&line.speaker].clone(),
                 text: line.text.clone(),
-                audio_file: format!("{:02}_{}.mp3", i + 1, slugify(&line.speaker)),
+                audio_file: dialog::line_audio_filename(i + 1, &line.speaker, "mp3"),
             })
             .collect();
 
@@ -1531,6 +1556,8 @@ type = "dialog"
             vocab_page: "v".into(),
             footer_text: "F".into(),
             footer_suffix: "B".into(),
+            dictee: false,
+            translation: false,
         };
 
         let sections = vec![IndexSectionData {
