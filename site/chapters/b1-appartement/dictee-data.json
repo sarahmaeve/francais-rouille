@@ -1,0 +1,431 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "02_reparation_chauffage",
+      "title": "La réparation du chauffage",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/01_bruno.mp3",
+          "text": "Bonjour madame ! C’est moi le chauffagiste, Bruno. On m’a dit que vous aviez un souci avec le chauffage ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/02_maeve.mp3",
+          "text": "Bonjour ! Oui, merci d’être venu. Les radiateurs ne chauffent plus du tout depuis une semaine."
+        },
+        {
+          "n": 3,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/03_bruno.mp3",
+          "text": "Ouais, ça m’étonne pas avec ces vieilles installations. Bon, je vais jeter un œil à la chaudière. Elle est où ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/04_maeve.mp3",
+          "text": "Dans le placard de l’entrée, je crois."
+        },
+        {
+          "n": 5,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/05_bruno.mp3",
+          "text": "Ah ouais, voilà. Bon alors, le problème c’est que la vanne trois voies est bloquée, et en plus y'a de l’air dans le circuit. C’est pour ça que vos radiateurs sont froids. Faut que je purge tout le système et que je remplace la vanne."
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/06_maeve.mp3",
+          "text": "Pardon, je n’ai pas bien compris. La vanne… trois voies ? Et purger, ça veut dire quoi exactement ?"
+        },
+        {
+          "n": 7,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/07_bruno.mp3",
+          "text": "Ah oui, pardon ! Alors en gros, y'a une pièce dans la chaudière, une sorte de robinet, qui envoie l’eau chaude dans les radiateurs. Ce robinet-là, il est cassé. Il bouge plus. Du coup, l’eau chaude passe plus."
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/08_maeve.mp3",
+          "text": "D’accord, je comprends mieux. Et purger ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/09_bruno.mp3",
+          "text": "Purger, c’est enlever l’air qui est coincé dans les tuyaux. Quand y'a de l’air dans les radiateurs, l’eau chaude peut pas circuler correctement. Donc même si le robinet marchait, les radiateurs seraient quand même pas super chauds. Faut vider l’air pour que l’eau passe bien partout."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/10_maeve.mp3",
+          "text": "Ah, je vois ! Comme quand on ouvre le petit robinet en haut du radiateur et que ça fait « pschit » ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/11_bruno.mp3",
+          "text": "Exactement ! Vous avez tout compris. Bon, la bonne nouvelle, c’est que j’ai la pièce dans mon camion. Je peux tout réparer aujourd’hui, ça devrait prendre une heure, une heure et demie max."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/12_maeve.mp3",
+          "text": "Oh, c’est super ! Ça fait une semaine qu’on gèle ici. On a dû acheter des chauffages électriques."
+        },
+        {
+          "n": 13,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/13_bruno.mp3",
+          "text": "Ah ouais, ça je comprends. En plus, ici à la Croix-Rousse, vous êtes en hauteur, y fait encore plus froid qu’en bas. Bon, je m’y mets tout de suite."
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/14_maeve.mp3",
+          "text": "Merci beaucoup. Est-ce que je dois payer quelque chose ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/15_bruno.mp3",
+          "text": "Non non, c’est l’agence qui prend en charge. C’est un problème de vétusté, c’est pas de votre faute. Par contre, je vous conseille de purger les radiateurs vous-même une fois par an, au début de l’hiver. Comme ça vous aurez plus ce problème."
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/02_reparation_chauffage/lines/16_maeve.mp3",
+          "text": "D’accord, je ferai ça. Merci pour l’explication, c’est très gentil."
+        },
+        {
+          "n": 17,
+          "speaker": "Bruno",
+          "audio": "audio/02_reparation_chauffage/lines/17_bruno.mp3",
+          "text": "De rien ! Allez, dans une heure vous aurez bien chaud."
+        }
+      ]
+    },
+    {
+      "id": "03_poste_courrier",
+      "title": "À la Poste — Le courrier",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/01_maeve.mp3",
+          "text": "Bonjour, monsieur. Je viens pour un courrier recommandé que j’attends depuis trois semaines. Il vient des États-Unis et il n’est toujours pas arrivé."
+        },
+        {
+          "n": 2,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/02_le_guichetier.mp3",
+          "text": "Bonjour. Vous avez le numéro de suivi ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/03_maeve.mp3",
+          "text": "Oui, le voici. C’est un envoi recommandé avec accusé de réception."
+        },
+        {
+          "n": 4,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/04_le_guichetier.mp3",
+          "text": "D’accord. Attendez, je regarde… Alors, le courrier a quitté les États-Unis le 18 février. Il est passé par la douane à Roissy le 25. Après, je n’ai plus rien dans le système."
+        },
+        {
+          "n": 5,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/05_maeve.mp3",
+          "text": "Plus rien ? Mais ça veut dire quoi ? Il est perdu ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/06_le_guichetier.mp3",
+          "text": "Pas forcément. Il peut être bloqué à la douane, ou en attente de distribution dans un centre de tri. Ça arrive avec les envois internationaux, surtout en ce moment, on a du retard."
+        },
+        {
+          "n": 7,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/07_maeve.mp3",
+          "text": "Mais trois semaines, c’est quand même très long, non ? Ce sont des documents importants. J’en ai besoin pour une démarche administrative."
+        },
+        {
+          "n": 8,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/08_le_guichetier.mp3",
+          "text": "Je comprends, madame. Mais je ne peux pas faire grand-chose depuis mon guichet. Il faudrait faire une réclamation en ligne sur le site de La Poste. Vous avez un compte ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/09_maeve.mp3",
+          "text": "Non, pas encore. Comment est-ce que je fais ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/10_le_guichetier.mp3",
+          "text": "Vous allez sur laposte.fr, vous créez un compte, et ensuite vous allez dans « Aide et réclamations ». Vous entrez le numéro de suivi et vous décrivez le problème."
+        },
+        {
+          "n": 11,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/11_maeve.mp3",
+          "text": "D’accord. Et après, qu’est-ce qui se passe ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/12_le_guichetier.mp3",
+          "text": "Ils ouvrent une enquête. En général, ils répondent sous dix jours ouvrés. Si le courrier est vraiment perdu, vous pouvez demander une indemnisation, mais il faut que l’expéditeur fasse aussi une démarche de son côté."
+        },
+        {
+          "n": 13,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/13_maeve.mp3",
+          "text": "Dix jours ? C’est long. Est-ce qu’il n’y a pas un moyen d’accélérer les choses ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/14_le_guichetier.mp3",
+          "text": "Malheureusement non, c’est la procédure. Vous pouvez aussi appeler le 3631, c’est le service client. Mais bon, les délais sont les mêmes. Excusez-moi, il y a du monde derrière vous. Autre chose ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Maeve",
+          "audio": "audio/03_poste_courrier/lines/15_maeve.mp3",
+          "text": "Non, c’est tout. Merci quand même."
+        },
+        {
+          "n": 16,
+          "speaker": "Le guichetier",
+          "audio": "audio/03_poste_courrier/lines/16_le_guichetier.mp3",
+          "text": "De rien. Bonne journée, madame. Au suivant, s’il vous plaît !"
+        }
+      ]
+    },
+    {
+      "id": "05_chat_perdu",
+      "title": "Chat perdu — Conversation entre voisins",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Maeve",
+          "audio": "audio/05_chat_perdu/lines/01_maeve.mp3",
+          "text": "Hélène ! Karim ! Excusez-moi de vous déranger, mais est-ce que vous avez vu un chat gris ce matin ? Le nôtre a disparu."
+        },
+        {
+          "n": 2,
+          "speaker": "Hélène",
+          "audio": "audio/05_chat_perdu/lines/02_helene.mp3",
+          "text": "Un chat gris ? Comment il est exactement ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "audio": "audio/05_chat_perdu/lines/03_irene.mp3",
+          "text": "Il est gris foncé avec une petite tache blanche sur le poitrail. Il s’appelle Moustache. Il est sorti ce matin par la fenêtre de la cuisine et il n’est pas revenu."
+        },
+        {
+          "n": 4,
+          "speaker": "Hélène",
+          "audio": "audio/05_chat_perdu/lines/04_helene.mp3",
+          "text": "Oh, le pauvre ! Non, je ne l’ai pas vu aujourd’hui. Mais vous savez, les chats du quartier, ils se baladent souvent sur les toits. C’est la Croix-Rousse, y'a des passages partout."
+        },
+        {
+          "n": 5,
+          "speaker": "Karim",
+          "audio": "audio/05_chat_perdu/lines/05_karim.mp3",
+          "text": "Moi j’ai vu un chat gris hier soir dans la cour, vers vingt-deux heures. Il était sur le mur du fond. C’est peut-être le vôtre ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/05_chat_perdu/lines/06_maeve.mp3",
+          "text": "C’est possible ! Il adore grimper sur les murs. On l’a cherché dans tout l’appartement, dans la cage d’escalier, dans la cave, mais rien."
+        },
+        {
+          "n": 7,
+          "speaker": "Karim",
+          "audio": "audio/05_chat_perdu/lines/07_karim.mp3",
+          "text": "Vous avez regardé dans les traboules ? Y'en a une juste à côté de l’immeuble. Les chats adorent se planquer là-dedans."
+        },
+        {
+          "n": 8,
+          "speaker": "Irene",
+          "audio": "audio/05_chat_perdu/lines/08_irene.mp3",
+          "text": "Les traboules, c’est les passages couverts, c’est ça ? On n’a pas encore pensé à regarder là."
+        },
+        {
+          "n": 9,
+          "speaker": "Hélène",
+          "audio": "audio/05_chat_perdu/lines/09_helene.mp3",
+          "text": "Oui, essayez celle qui donne sur la montée de la Grande-Côte. Et aussi, mettez sa litière sur le balcon. Paraît que l’odeur les aide à retrouver le chemin."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/05_chat_perdu/lines/10_maeve.mp3",
+          "text": "Bonne idée ! On va faire ça tout de suite."
+        },
+        {
+          "n": 11,
+          "speaker": "Karim",
+          "audio": "audio/05_chat_perdu/lines/11_karim.mp3",
+          "text": "Sinon, vous pouvez mettre une annonce sur le groupe Facebook du quartier. C’est « Habitants de la Croix-Rousse ». Les gens sont super réactifs dessus. Ma voisine a retrouvé son chat comme ça la semaine dernière."
+        },
+        {
+          "n": 12,
+          "speaker": "Irene",
+          "audio": "audio/05_chat_perdu/lines/12_irene.mp3",
+          "text": "Ah oui, c’est malin. Tu peux nous envoyer le lien, Karim ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Karim",
+          "audio": "audio/05_chat_perdu/lines/13_karim.mp3",
+          "text": "Ouais, je vous envoie ça par texto. Mettez une photo de Moustache avec votre numéro. Ça ira vite."
+        },
+        {
+          "n": 14,
+          "speaker": "Hélène",
+          "audio": "audio/05_chat_perdu/lines/14_helene.mp3",
+          "text": "Et moi, je vais prévenir la gardienne. Elle voit tout ce qui se passe dans l’immeuble. Si votre chat est dans les parties communes, elle le trouvera."
+        },
+        {
+          "n": 15,
+          "speaker": "Maeve",
+          "audio": "audio/05_chat_perdu/lines/15_maeve.mp3",
+          "text": "Merci beaucoup à vous deux. On est vraiment inquiètes."
+        },
+        {
+          "n": 16,
+          "speaker": "Hélène",
+          "audio": "audio/05_chat_perdu/lines/16_helene.mp3",
+          "text": "T’inquiète pas, ma belle. Les chats, ça revient toujours. Mon ancien chat disparaissait pendant trois jours et il revenait comme si de rien n’était."
+        },
+        {
+          "n": 17,
+          "speaker": "Karim",
+          "audio": "audio/05_chat_perdu/lines/17_karim.mp3",
+          "text": "Ouais, stressez pas trop. Il est sûrement en train de faire la tournée des toits. Il va revenir quand il aura faim !"
+        },
+        {
+          "n": 18,
+          "speaker": "Irene",
+          "audio": "audio/05_chat_perdu/lines/18_irene.mp3",
+          "text": "J’espère que tu as raison. Merci pour votre aide, c’est vraiment gentil de votre part."
+        }
+      ]
+    },
+    {
+      "id": "06_fibre_syndic",
+      "title": "La fibre optique — Demande au syndic",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/01_irene.mp3",
+          "text": "Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m’accorder ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/02_monsieur_reynaud.mp3",
+          "text": "Bonjour, madame. Oui, bien sûr, je vous écoute."
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/03_irene.mp3",
+          "text": "Voilà, ma compagne et moi souhaiterions faire installer la fibre optique dans notre appartement. Nous avons contacté Orange, et un technicien pourrait passer la semaine prochaine. Cependant, ils nous ont dit qu’il fallait l’autorisation du syndic pour faire passer le câble dans les parties communes."
+        },
+        {
+          "n": 4,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/04_monsieur_reynaud.mp3",
+          "text": "Oui, en effet, c’est la procédure. Le câble doit passer par la colonne montante de l’immeuble, et toute intervention dans les parties communes nécessite un accord."
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/05_irene.mp3",
+          "text": "Est-ce qu’il serait possible d’obtenir cette autorisation rapidement ? Nous travaillons toutes les deux depuis la maison, et notre connexion ADSL actuelle est vraiment insuffisante."
+        },
+        {
+          "n": 6,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/06_monsieur_reynaud.mp3",
+          "text": "Je comprends tout à fait. En principe, la loi est de votre côté. Les copropriétaires ne peuvent pas s’opposer à l’installation de la fibre pour un locataire. C’est le droit à la fibre, c’est dans la loi."
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/07_irene.mp3",
+          "text": "Ah, c’est rassurant. Alors, quelles sont les démarches à suivre ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/08_monsieur_reynaud.mp3",
+          "text": "Il faudrait que votre opérateur, Orange dans votre cas, nous envoie un courrier officiel décrivant les travaux prévus. Ensuite, je transmets ça au conseil syndical, et normalement on donne l’accord sous quinze jours."
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/09_irene.mp3",
+          "text": "Quinze jours ? C’est le délai habituel ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/10_monsieur_reynaud.mp3",
+          "text": "Oui, c’est le maximum. En pratique, c’est souvent plus rapide. Je peux accélérer les choses si le dossier est complet. Il me faut la lettre d’Orange avec le plan d’installation, et une copie de votre bail."
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/11_irene.mp3",
+          "text": "Très bien, je vais demander à Orange d’envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi."
+        },
+        {
+          "n": 12,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/12_monsieur_reynaud.mp3",
+          "text": "Parfait. Déposez-la dans ma boîte aux lettres, ou passez me la remettre — je suis chez moi jusqu’à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants."
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/13_irene.mp3",
+          "text": "Je transmettrai cette consigne au technicien. Est-ce qu’il y a autre chose que nous devons savoir ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/14_monsieur_reynaud.mp3",
+          "text": "Non, c’est tout. Ah si, une petite chose : prévenez vos voisins du troisième le jour de l’installation, parce que le technicien aura besoin d’accéder au palier et ça peut faire un peu de bruit. C’est une question de courtoisie."
+        },
+        {
+          "n": 15,
+          "speaker": "Irene",
+          "audio": "audio/06_fibre_syndic/lines/15_irene.mp3",
+          "text": "Bien sûr, nous les préviendrons. Merci beaucoup, Monsieur Reynaud. Je vous apporte la copie du bail tout à l’heure."
+        },
+        {
+          "n": 16,
+          "speaker": "Monsieur Reynaud",
+          "audio": "audio/06_fibre_syndic/lines/16_monsieur_reynaud.mp3",
+          "text": "Je vous en prie, madame. Bonne journée."
+        }
+      ]
+    }
+  ]
+}

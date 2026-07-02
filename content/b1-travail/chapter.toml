@@ -5,6 +5,8 @@ level = "B1"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
 footer_suffix = "Niveau B1 — Premier jour au bureau"
+dictee = true
+translation = true
 
 # --- Dialogues et textes ---
 
@@ -50,6 +52,12 @@ heading = "Référence"
 slug = "vocabulaire"
 title = "Vocabulaire B1 — Premier jour au bureau"
 description = "Mots et expressions clés du travail en entreprise française."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez vos connaissances"
+description = "Choix multiple, dictée et traduction."
 type = "static"
 
 [[sections.pages]]

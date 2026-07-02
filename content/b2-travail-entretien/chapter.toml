@@ -5,6 +5,8 @@ level = "B2"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
 footer_suffix = "Niveau B2 — Le monde du travail"
+dictee = true
+translation = true
 
 # --- Contexte ---
 

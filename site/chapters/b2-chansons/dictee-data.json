@@ -1,0 +1,365 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "02_chansons_indila",
+      "title": "Les chansons d'Indila",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/01_lea.mp3",
+          "text": "Vous avez vu qu’Indila est redevenue virale sur les réseaux ? « Dernière Danse » a dépassé le milliard de vues sur YouTube. C’est dingue pour une chanson qui a plus de dix ans."
+        },
+        {
+          "n": 2,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/02_hugo.mp3",
+          "text": "Oui, j’ai vu ça. Apparemment, c’est grâce à TikTok — les gens la redécouvrent, surtout aux États-Unis. Elle est devenue la chanteuse française la plus écoutée là-bas."
+        },
+        {
+          "n": 3,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/03_yasmine.mp3",
+          "text": "Ce qui est fou, c’est qu’elle n’a sorti qu’un seul album. « Mini World », c’était en 2014, et depuis, à part un single en 2019, plus rien. Quasi silence radio."
+        },
+        {
+          "n": 4,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/04_hugo.mp3",
+          "text": "C’est quand même bizarre, non ? Tu as un tube planétaire, une carrière qui décolle, et tu disparais pendant dix ans. Je ne comprends pas."
+        },
+        {
+          "n": 5,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/05_lea.mp3",
+          "text": "Moi, je respecte ça. Elle a toujours été très discrète. Pas d’interviews, pas de réseaux sociaux, pas de scandales. Dans un monde où tout le monde se met en scène en permanence, c’est rafraîchissant."
+        },
+        {
+          "n": 6,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/06_yasmine.mp3",
+          "text": "Rafraîchissant, peut-être, mais frustrant aussi. Parce que « Mini World », l’album, il y avait des pépites incroyables. « S.O.S. » est magnifique, « Tourner dans le vide » aussi. Et on attend la suite depuis une éternité."
+        },
+        {
+          "n": 7,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/07_hugo.mp3",
+          "text": "Moi, j’ai un avis un peu différent. « Dernière Danse », c’est indiscutable — le genre de chanson qui te donne des frissons à chaque écoute. Mais le reste de l’album, je trouvais ça inégal. Il y avait des morceaux assez quelconques au milieu."
+        },
+        {
+          "n": 8,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/08_lea.mp3",
+          "text": "Je ne suis pas d’accord du tout. C’est juste que « Dernière Danse » a tellement cartonné que les gens n’ont pas pris la peine d’écouter le reste. « Love Story », par exemple, c’est complètement différent — il y a un côté cinématographique que j’adore."
+        },
+        {
+          "n": 9,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/09_yasmine.mp3",
+          "text": "C’est un peu le piège du tube, ça. Quand tu as un titre qui explose comme ça, tout le monde juge l’artiste sur cette seule chanson. Moi, ce que j’aime chez Indila, c’est son mélange de cultures musicales — il y a des influences orientales, indiennes, un peu de flamenco parfois."
+        },
+        {
+          "n": 10,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/10_hugo.mp3",
+          "text": "Ouais, ça c’est intéressant, je te l’accorde. Mais parfois je trouve que la production est trop lisse. On dirait que tout est passé à la moulinette. Il n’y a pas assez de grain, de rugosité."
+        },
+        {
+          "n": 11,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/11_lea.mp3",
+          "text": "C’est parce que tu écoutes trop de rock indé, Hugo. Tout n’est pas obligé de sonner comme si c’était enregistré dans un garage."
+        },
+        {
+          "n": 12,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/12_hugo.mp3",
+          "text": "Eh, ce n’est pas ce que je dis ! Je dis juste que quand la production est trop propre, ça enlève l’émotion. Regarde les vieux enregistrements d’Oum Kalthoum — c’est brut, c’est imparfait, et c’est justement pour ça que c’est bouleversant."
+        },
+        {
+          "n": 13,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/13_yasmine.mp3",
+          "text": "OK, mais tu compares une chanteuse pop française à Oum Kalthoum, là. C’est un peu exagéré, non ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/14_hugo.mp3",
+          "text": "Je ne compare pas les artistes, je compare l’approche. L’imperfection, c’est ce qui rend la musique humaine."
+        },
+        {
+          "n": 15,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/15_lea.mp3",
+          "text": "Bon, on ne va pas être d’accord là-dessus. Mais ce qui est sûr, c’est que sa voix est exceptionnelle. Ce mélange d’influences — le raï, la chanson française, la pop orientale — il n’y a personne d’autre qui fait ça en France."
+        },
+        {
+          "n": 16,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/16_yasmine.mp3",
+          "text": "Là, on est tous d’accord. Et apparemment, il y a des rumeurs sur un deuxième album. On l’a vue tourner un clip à Paris, près de la tour Eiffel. Rien d’officiel, mais ça donne de l’espoir."
+        },
+        {
+          "n": 17,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/17_hugo.mp3",
+          "text": "Ça fait dix ans qu’on entend des rumeurs. Moi, je n’y crois plus trop."
+        },
+        {
+          "n": 18,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/18_lea.mp3",
+          "text": "Moi, j’y crois. Et quand il sortira, je serai la première à l’écouter. Même si c’est dans dix ans de plus."
+        },
+        {
+          "n": 19,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/19_yasmine.mp3",
+          "text": "En fait, je pense que le problème d’Indila, c’est qu’elle ne sort pas assez de musique. Les gens oublient et passent à autre chose. Enfin, visiblement pas, vu les chiffres sur YouTube. Peut-être que le mystère, c’est justement ce qui entretient la fascination."
+        },
+        {
+          "n": 20,
+          "speaker": "Hugo",
+          "audio": "audio/02_chansons_indila/lines/20_hugo.mp3",
+          "text": "Ou alors, c’est un choix artistique. Elle préfère prendre son temps plutôt que de sortir un album par an pour rester visible. Ça, je respecte."
+        },
+        {
+          "n": 21,
+          "speaker": "Léa",
+          "audio": "audio/02_chansons_indila/lines/21_lea.mp3",
+          "text": "Exactement. La qualité plutôt que la quantité. C’est rare, de nos jours."
+        },
+        {
+          "n": 22,
+          "speaker": "Yasmine",
+          "audio": "audio/02_chansons_indila/lines/22_yasmine.mp3",
+          "text": "Bon, on est d’accord sur un truc au moins : Indila a du talent, même si on n’est pas d’accord sur tout ce qu’elle en fait. Ou plutôt, sur ce qu’elle n’en fait pas."
+        }
+      ]
+    },
+    {
+      "id": "03_films_mousquetaires",
+      "title": "Les Trois Mousquetaires au cinéma",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/01_irene.mp3",
+          "text": "Tu as fini par regarder « Milady » ? Parce que moi, je l’ai vu la semaine dernière et j’ai des choses à dire."
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/02_maeve.mp3",
+          "text": "Oui ! Je l’ai regardé vendredi soir. Et alors, qu’est-ce que tu en as pensé ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/03_irene.mp3",
+          "text": "Honnêtement ? J’ai trouvé ça aussi sombre que le premier. « D’Artagnan » m’avait déjà un peu déçue par son ton — c’est censé être une histoire d’aventure, de panache, et au final on se retrouve avec un truc hyper sérieux, presque déprimant par moments."
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/04_maeve.mp3",
+          "text": "C’est drôle, parce que moi, le côté sombre ne m’a pas dérangée. J’ai trouvé que ça donnait du poids à l’histoire. Ce n’est pas un film Marvel où tout est léger et sans conséquences."
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/05_irene.mp3",
+          "text": "Oui, mais il y a un juste milieu, quand même. Dumas, à la base, c’est du roman-feuilleton, c’est du divertissement. Les personnages sont censés être flamboyants, drôles, un peu fanfarons. Dans les films, on dirait qu’ils portent le poids du monde sur leurs épaules."
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/06_maeve.mp3",
+          "text": "Je te l’accorde pour D’Artagnan. François Civil est très bien, mais son personnage manque de légèreté. Par contre, les scènes d’action sont vraiment réussies. Le duel dans l’église, tu t’en souviens ? C’était spectaculaire."
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/07_irene.mp3",
+          "text": "Ah ça oui, les chorégraphies de combat sont impressionnantes. C’est ce qui m’a empêchée de décrocher complètement. Mais entre les scènes d’action, il y a des longueurs. Les intrigues politiques sont mal expliquées — si tu ne connais pas le roman, tu es perdue."
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/08_maeve.mp3",
+          "text": "C’est vrai que c’est dense. Mais moi, j’avais lu le résumé avant, donc j’ai pu suivre. Et puis, il faut parler d’Eva Green. Elle est incroyable en Milady. C’est la meilleure chose dans les deux films."
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/09_irene.mp3",
+          "text": "Là, on est entièrement d’accord. Eva Green est parfaite. Chaque scène où elle apparaît, tu ne peux pas regarder ailleurs. Elle a une présence à l’écran qui est juste… fascinante. Même quand le scénario est bancal, elle te tient en haleine."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/10_maeve.mp3",
+          "text": "Et Milady est un personnage tellement complexe. Méchante, oui, mais avec des motivations qu’on comprend. Eva Green joue toutes ces nuances. C’est une immense actrice."
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/11_irene.mp3",
+          "text": "Absolument. D’ailleurs, je trouve que le deuxième film est un peu meilleur que le premier, justement parce qu’il y a plus de Milady. Ses scènes avec D’Artagnan ont une vraie tension."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/12_maeve.mp3",
+          "text": "Oui, c’est ça. Et la fin laisse la porte ouverte pour un troisième film. Tu crois qu’ils vont le faire ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/13_irene.mp3",
+          "text": "J’en sais rien. Les critiques étaient correctes mais pas dithyrambiques, et au box-office, ça n’a pas été le triomphe espéré. En France ça a bien marché, mais à l’international, c’est passé un peu inaperçu."
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/14_maeve.mp3",
+          "text": "Ce serait dommage de ne pas finir la trilogie. L’histoire n’est pas terminée, et puis les costumes, les décors — c’est quand même du beau cinéma français. Il faudrait plus de films d’aventure comme ça en France."
+        },
+        {
+          "n": 15,
+          "speaker": "Irene",
+          "audio": "audio/03_films_mousquetaires/lines/15_irene.mp3",
+          "text": "Peut-être. Mais si c’est pour refaire la même chose en encore plus sombre, je ne suis pas sûre d’être au rendez-vous. Sauf si Eva Green est dedans, évidemment."
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/03_films_mousquetaires/lines/16_maeve.mp3",
+          "text": "Évidemment. Sans Eva Green, ce n’est même pas la peine."
+        }
+      ]
+    },
+    {
+      "id": "04_album_zaz",
+      "title": "Le dernier album de Zaz",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/01_matthieu.mp3",
+          "text": "Tu as écouté « Sains et saufs » en entier ? Moi, je l’ai mis en boucle toute la semaine. Je suis complètement accro."
+        },
+        {
+          "n": 2,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/02_rebecca.mp3",
+          "text": "Oui, je l’ai écouté deux fois. Et… comment dire… je suis un peu mitigée."
+        },
+        {
+          "n": 3,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/03_matthieu.mp3",
+          "text": "Ah bon ? Qu’est-ce qui ne t’a pas plu ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/04_rebecca.mp3",
+          "text": "Ce n’est pas que ça ne m’a pas plu. C’est juste que… ce n’est plus la Zaz que j’aimais. Le premier album, celui avec « Je veux », c’était brut, c’était de la chanson de rue avec une énergie folle. On sentait que cette fille chantait avec ses tripes. Là, sur « Sains et saufs », c’est plus posé, plus travaillé, plus… sage."
+        },
+        {
+          "n": 5,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/05_matthieu.mp3",
+          "text": "Mais justement, c’est ce que j’aime. Elle a mûri. Tu ne peux pas demander à une artiste de refaire le même album pendant vingt ans. « Je veux » avait cette énergie de la rue, oui, mais on ne peut pas chanter comme ça éternellement."
+        },
+        {
+          "n": 6,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/06_rebecca.mp3",
+          "text": "Je ne lui demande pas de refaire la même chose. Mais par exemple, « Mon cœur tu es fou », c’est joli, bien sûr, mais ça pourrait être chanté par n’importe qui. Il n’y a plus cette voix rauque, ce grain qui la rendait unique. On dirait qu’elle s’est assagie."
+        },
+        {
+          "n": 7,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/07_matthieu.mp3",
+          "text": "Je ne suis pas d’accord. Écoute « La flamme » — c’est puissant, c’est engagé, et sa voix est toujours là. Elle ne crie plus, d’accord, mais elle a appris à utiliser les nuances. C’est ça, évoluer."
+        },
+        {
+          "n": 8,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/08_rebecca.mp3",
+          "text": "« La flamme », c’est vrai, c’est le morceau que j’ai préféré sur l’album. Avec « Au pays des merveilles » aussi — celui-là a un côté un peu espiègle qui rappelle ses débuts."
+        },
+        {
+          "n": 9,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/09_matthieu.mp3",
+          "text": "Tu vois ! Il y a de tout sur cet album. Et puis le duo avec Raphaël à la fin, « Une passerelle vers la mer », c’est magnifique. Leurs deux voix se mélangent super bien."
+        },
+        {
+          "n": 10,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/10_rebecca.mp3",
+          "text": "Oui, le duo est réussi, je te l’accorde. Mais tu ne trouves pas que globalement, la production est trop léchée ? Sur ses premiers albums, il y avait des imperfections, des accidents sonores, et c’est ce qui donnait du caractère. Là, tout est lissé, mixé à la perfection. Ça manque de spontanéité."
+        },
+        {
+          "n": 11,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/11_matthieu.mp3",
+          "text": "C’est le premier album qu’elle sort chez le label tôt Ou tard. Peut-être que le changement de label a influencé la direction artistique. Mais moi, je vois ça comme une évolution naturelle. Brel aussi a commencé dans les cabarets et il a fini par faire des albums orchestraux. Personne ne lui en a voulu."
+        },
+        {
+          "n": 12,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/12_rebecca.mp3",
+          "text": "Tu compares Zaz à Brel, maintenant ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/13_matthieu.mp3",
+          "text": "Non, je fais un parallèle sur l’évolution artistique. Chaque artiste a le droit de grandir. Et je préfère une Zaz qui explore de nouveaux territoires plutôt qu’une Zaz qui fait du fan service en recyclant « Je veux » à l’infini."
+        },
+        {
+          "n": 14,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/14_rebecca.mp3",
+          "text": "OK, c’est un argument valable. Mais est-ce que tu ne penses pas qu’elle a perdu une partie de son public en route ? Les gens qui l’ont découverte grâce à la vidéo dans la rue, ils ne se retrouvent peut-être plus dans cette musique-là."
+        },
+        {
+          "n": 15,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/15_matthieu.mp3",
+          "text": "Peut-être, mais elle en a gagné d’autres. Et puis « Sains et saufs », le titre, il dit tout — comme si elle disait qu’elle a traversé quelque chose et qu’elle est toujours là, debout. Il y a une maturité émotionnelle que je trouve très touchante."
+        },
+        {
+          "n": 16,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/16_rebecca.mp3",
+          "text": "C’est vrai que les textes sont plus personnels. « Je pardonne », par exemple, c’est clairement autobiographique. Et c’est bien écrit, je ne le nie pas."
+        },
+        {
+          "n": 17,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/17_matthieu.mp3",
+          "text": "Voilà. Alors, verdict final ? Tu le gardes dans ta playlist ou pas ?"
+        },
+        {
+          "n": 18,
+          "speaker": "Rebecca",
+          "audio": "audio/04_album_zaz/lines/18_rebecca.mp3",
+          "text": "Je garde « La flamme », « Au pays des merveilles » et le duo avec Raphaël. Le reste, je suis moins convaincue. Mais je suis prête à réécouter — parfois, les albums qui ne plaisent pas tout de suite sont ceux qui vieillissent le mieux."
+        },
+        {
+          "n": 19,
+          "speaker": "Matthieu",
+          "audio": "audio/04_album_zaz/lines/19_matthieu.mp3",
+          "text": "C’est exactement ce que j’allais dire. Laisse-lui une chance, tu verras."
+        }
+      ]
+    }
+  ]
+}

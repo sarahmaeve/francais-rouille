@@ -1,0 +1,502 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "02_reparation_chauffage",
+      "title": "La réparation du chauffage",
+      "audio_base": "audio/02_reparation_chauffage/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Bruno",
+          "fr": "Bonjour madame ! C’est moi le chauffagiste, Bruno. On m’a dit que vous aviez un souci avec le chauffage ?",
+          "en": "Hello, ma'am! I'm the heating guy, Bruno. I was told you've got a problem with the heating?",
+          "audio": "01_bruno.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Bonjour ! Oui, merci d’être venu. Les radiateurs ne chauffent plus du tout depuis une semaine.",
+          "en": "Hello! Yes, thank you for coming. The radiators haven't been heating at all for a week.",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Bruno",
+          "fr": "Ouais, ça m’étonne pas avec ces vieilles installations. Bon, je vais jeter un œil à la chaudière. Elle est où ?",
+          "en": "Yeah, doesn't surprise me with these old systems. Right, I'll take a look at the boiler. Where is it?",
+          "audio": "03_bruno.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "Dans le placard de l’entrée, je crois.",
+          "en": "In the hallway cupboard, I think.",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Bruno",
+          "fr": "Ah ouais, voilà. Bon alors, le problème c’est que la vanne trois voies est bloquée, et en plus y'a de l’air dans le circuit. C’est pour ça que vos radiateurs sont froids. Faut que je purge tout le système et que je remplace la vanne.",
+          "en": "Ah yeah, there it is. So, the problem is the three-way valve is stuck, and on top of that there's air in the system. That's why your radiators are cold. I need to bleed the whole system and replace the valve.",
+          "audio": "05_bruno.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "Pardon, je n’ai pas bien compris. La vanne… trois voies ? Et purger, ça veut dire quoi exactement ?",
+          "en": "Sorry, I didn't quite understand. The three-way... valve? And bleed — what does that mean exactly?",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Bruno",
+          "fr": "Ah oui, pardon ! Alors en gros, y'a une pièce dans la chaudière, une sorte de robinet, qui envoie l’eau chaude dans les radiateurs. Ce robinet-là, il est cassé. Il bouge plus. Du coup, l’eau chaude passe plus.",
+          "en": "Oh right, sorry! So basically, there's a part in the boiler, a kind of tap, that sends hot water to the radiators. That tap is broken. It doesn't move anymore. So the hot water can't get through.",
+          "audio": "07_bruno.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "D’accord, je comprends mieux. Et purger ?",
+          "en": "Okay, that makes more sense. And bleeding?",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Bruno",
+          "fr": "Purger, c’est enlever l’air qui est coincé dans les tuyaux. Quand y'a de l’air dans les radiateurs, l’eau chaude peut pas circuler correctement. Donc même si le robinet marchait, les radiateurs seraient quand même pas super chauds. Faut vider l’air pour que l’eau passe bien partout.",
+          "en": "Bleeding is removing the air that's trapped in the pipes. When there's air in the radiators, the hot water can't circulate properly. So even if the tap was working, the radiators still wouldn't get very hot. You need to get the air out so the water flows everywhere.",
+          "audio": "09_bruno.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Ah, je vois ! Comme quand on ouvre le petit robinet en haut du radiateur et que ça fait « pschit » ?",
+          "en": "Ah, I see! Like when you open the little tap at the top of the radiator and it goes \"pshhh\"?",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Bruno",
+          "fr": "Exactement ! Vous avez tout compris. Bon, la bonne nouvelle, c’est que j’ai la pièce dans mon camion. Je peux tout réparer aujourd’hui, ça devrait prendre une heure, une heure et demie max.",
+          "en": "Exactly! You've got it. So, the good news is I've got the part in my van. I can fix everything today — should take about an hour, hour and a half tops.",
+          "audio": "11_bruno.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "Oh, c’est super ! Ça fait une semaine qu’on gèle ici. On a dû acheter des chauffages électriques.",
+          "en": "Oh, that's great! We've been freezing here for a week. We had to buy electric space heaters.",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Bruno",
+          "fr": "Ah ouais, ça je comprends. En plus, ici à la Croix-Rousse, vous êtes en hauteur, y fait encore plus froid qu’en bas. Bon, je m’y mets tout de suite.",
+          "en": "Yeah, I get that. Plus up in Croix-Rousse, you're higher up, it's even colder than down below. Right, I'll get started straight away.",
+          "audio": "13_bruno.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "Merci beaucoup. Est-ce que je dois payer quelque chose ?",
+          "en": "Thank you so much. Do I need to pay anything?",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Bruno",
+          "fr": "Non non, c’est l’agence qui prend en charge. C’est un problème de vétusté, c’est pas de votre faute. Par contre, je vous conseille de purger les radiateurs vous-même une fois par an, au début de l’hiver. Comme ça vous aurez plus ce problème.",
+          "en": "No no, the agency's covering it. It's a wear-and-tear problem, it's not your fault. But I'd recommend bleeding the radiators yourself once a year, at the start of winter. That way you won't have this issue again.",
+          "audio": "15_bruno.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "D’accord, je ferai ça. Merci pour l’explication, c’est très gentil.",
+          "en": "Okay, I'll do that. Thanks for the explanation, that's very kind.",
+          "audio": "16_maeve.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Bruno",
+          "fr": "De rien ! Allez, dans une heure vous aurez bien chaud.",
+          "en": "No problem! Come on, in an hour you'll be nice and warm.",
+          "audio": "17_bruno.mp3"
+        }
+      ]
+    },
+    {
+      "id": "03_poste_courrier",
+      "title": "À la Poste — Le courrier",
+      "audio_base": "audio/03_poste_courrier/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Maeve",
+          "fr": "Bonjour, monsieur. Je viens pour un courrier recommandé que j’attends depuis trois semaines. Il vient des États-Unis et il n’est toujours pas arrivé.",
+          "en": "Hello, sir. I'm here about a registered letter I've been waiting for for three weeks. It's coming from the United States and it still hasn't arrived.",
+          "audio": "01_maeve.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Le guichetier",
+          "fr": "Bonjour. Vous avez le numéro de suivi ?",
+          "en": "Hello. Do you have the tracking number?",
+          "audio": "02_le_guichetier.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Maeve",
+          "fr": "Oui, le voici. C’est un envoi recommandé avec accusé de réception.",
+          "en": "Yes, here it is. It's a registered letter with acknowledgment of receipt.",
+          "audio": "03_maeve.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Le guichetier",
+          "fr": "D’accord. Attendez, je regarde… Alors, le courrier a quitté les États-Unis le 18 février. Il est passé par la douane à Roissy le 25. Après, je n’ai plus rien dans le système.",
+          "en": "All right. Hold on, let me check... So, the letter left the United States on February 18th. It went through customs at Roissy on the 25th. After that, I have nothing more in the system.",
+          "audio": "04_le_guichetier.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Maeve",
+          "fr": "Plus rien ? Mais ça veut dire quoi ? Il est perdu ?",
+          "en": "Nothing more? But what does that mean? Is it lost?",
+          "audio": "05_maeve.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Le guichetier",
+          "fr": "Pas forcément. Il peut être bloqué à la douane, ou en attente de distribution dans un centre de tri. Ça arrive avec les envois internationaux, surtout en ce moment, on a du retard.",
+          "en": "Not necessarily. It could be held up at customs, or waiting to be sorted at a distribution center. It happens with international shipments, especially right now — we're running behind.",
+          "audio": "06_le_guichetier.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Maeve",
+          "fr": "Mais trois semaines, c’est quand même très long, non ? Ce sont des documents importants. J’en ai besoin pour une démarche administrative.",
+          "en": "But three weeks is still a very long time, isn't it? These are important documents. I need them for an administrative procedure.",
+          "audio": "07_maeve.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Le guichetier",
+          "fr": "Je comprends, madame. Mais je ne peux pas faire grand-chose depuis mon guichet. Il faudrait faire une réclamation en ligne sur le site de La Poste. Vous avez un compte ?",
+          "en": "I understand, ma'am. But there's not much I can do from my window. You would need to file a complaint online on the La Poste website. Do you have an account?",
+          "audio": "08_le_guichetier.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Maeve",
+          "fr": "Non, pas encore. Comment est-ce que je fais ?",
+          "en": "No, not yet. How do I do that?",
+          "audio": "09_maeve.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Le guichetier",
+          "fr": "Vous allez sur laposte.fr, vous créez un compte, et ensuite vous allez dans « Aide et réclamations ». Vous entrez le numéro de suivi et vous décrivez le problème.",
+          "en": "You go to laposte.fr, you create an account, and then you go to \"Help and Complaints.\" You enter the tracking number and describe the problem.",
+          "audio": "10_le_guichetier.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et après, qu’est-ce qui se passe ?",
+          "en": "Okay. And then what happens?",
+          "audio": "11_maeve.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Le guichetier",
+          "fr": "Ils ouvrent une enquête. En général, ils répondent sous dix jours ouvrés. Si le courrier est vraiment perdu, vous pouvez demander une indemnisation, mais il faut que l’expéditeur fasse aussi une démarche de son côté.",
+          "en": "They open an investigation. Generally, they respond within ten business days. If the letter is truly lost, you can request compensation, but the sender also has to file a claim on their end.",
+          "audio": "12_le_guichetier.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Maeve",
+          "fr": "Dix jours ? C’est long. Est-ce qu’il n’y a pas un moyen d’accélérer les choses ?",
+          "en": "Ten days? That's a long time. Isn't there a way to speed things up?",
+          "audio": "13_maeve.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Le guichetier",
+          "fr": "Malheureusement non, c’est la procédure. Vous pouvez aussi appeler le 3631, c’est le service client. Mais bon, les délais sont les mêmes. Excusez-moi, il y a du monde derrière vous. Autre chose ?",
+          "en": "Unfortunately not — that's the procedure. You can also call 3631, that's customer service. But the timeframes are the same. Excuse me, there are people waiting behind you. Anything else?",
+          "audio": "14_le_guichetier.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Maeve",
+          "fr": "Non, c’est tout. Merci quand même.",
+          "en": "No, that's all. Thanks anyway.",
+          "audio": "15_maeve.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Le guichetier",
+          "fr": "De rien. Bonne journée, madame. Au suivant, s’il vous plaît !",
+          "en": "You're welcome. Have a good day, ma'am. Next, please!",
+          "audio": "16_le_guichetier.mp3"
+        }
+      ]
+    },
+    {
+      "id": "05_chat_perdu",
+      "title": "Chat perdu — Conversation entre voisins",
+      "audio_base": "audio/05_chat_perdu/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Maeve",
+          "fr": "Hélène ! Karim ! Excusez-moi de vous déranger, mais est-ce que vous avez vu un chat gris ce matin ? Le nôtre a disparu.",
+          "en": "Hélène! Karim! Sorry to bother you, but have you seen a gray cat this morning? Ours has disappeared.",
+          "audio": "01_maeve.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Hélène",
+          "fr": "Un chat gris ? Comment il est exactement ?",
+          "en": "A gray cat? What does it look like exactly?",
+          "audio": "02_helene.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "fr": "Il est gris foncé avec une petite tache blanche sur le poitrail. Il s’appelle Moustache. Il est sorti ce matin par la fenêtre de la cuisine et il n’est pas revenu.",
+          "en": "He's dark gray with a small white spot on his chest. His name is Moustache. He got out this morning through the kitchen window and he hasn't come back.",
+          "audio": "03_irene.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Hélène",
+          "fr": "Oh, le pauvre ! Non, je ne l’ai pas vu aujourd’hui. Mais vous savez, les chats du quartier, ils se baladent souvent sur les toits. C’est la Croix-Rousse, y'a des passages partout.",
+          "en": "Oh, the poor thing! No, I haven't seen him today. But you know, the neighborhood cats often wander around on the rooftops. This is Croix-Rousse — there are passageways everywhere.",
+          "audio": "04_helene.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Karim",
+          "fr": "Moi j’ai vu un chat gris hier soir dans la cour, vers vingt-deux heures. Il était sur le mur du fond. C’est peut-être le vôtre ?",
+          "en": "I saw a gray cat last night in the courtyard, around ten p.m. It was on the back wall. Maybe it's yours?",
+          "audio": "05_karim.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "C’est possible ! Il adore grimper sur les murs. On l’a cherché dans tout l’appartement, dans la cage d’escalier, dans la cave, mais rien.",
+          "en": "Maybe! He loves climbing on walls. We searched the whole apartment, the stairwell, the basement, but nothing.",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Karim",
+          "fr": "Vous avez regardé dans les traboules ? Y'en a une juste à côté de l’immeuble. Les chats adorent se planquer là-dedans.",
+          "en": "Have you looked in the traboules? There's one right next to the building. Cats love hiding in there.",
+          "audio": "07_karim.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Irene",
+          "fr": "Les traboules, c’est les passages couverts, c’est ça ? On n’a pas encore pensé à regarder là.",
+          "en": "The traboules — those are the covered passageways, right? We haven't thought of looking there yet.",
+          "audio": "08_irene.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Hélène",
+          "fr": "Oui, essayez celle qui donne sur la montée de la Grande-Côte. Et aussi, mettez sa litière sur le balcon. Paraît que l’odeur les aide à retrouver le chemin.",
+          "en": "Yes, try the one that opens onto the montée de la Grande-Côte. Also, put his litter box on the balcony. Apparently the smell helps them find their way back.",
+          "audio": "09_helene.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Bonne idée ! On va faire ça tout de suite.",
+          "en": "Good idea! We'll do that right away.",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Karim",
+          "fr": "Sinon, vous pouvez mettre une annonce sur le groupe Facebook du quartier. C’est « Habitants de la Croix-Rousse ». Les gens sont super réactifs dessus. Ma voisine a retrouvé son chat comme ça la semaine dernière.",
+          "en": "Otherwise, you can post on the neighborhood Facebook group. It's called \"Habitants de la Croix-Rousse.\" People are super responsive on there. My neighbor found her cat that way last week.",
+          "audio": "11_karim.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Irene",
+          "fr": "Ah oui, c’est malin. Tu peux nous envoyer le lien, Karim ?",
+          "en": "Oh yeah, that's smart. Can you send us the link, Karim?",
+          "audio": "12_irene.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Karim",
+          "fr": "Ouais, je vous envoie ça par texto. Mettez une photo de Moustache avec votre numéro. Ça ira vite.",
+          "en": "Yeah, I'll text it to you. Put a photo of Moustache with your number. It'll go fast.",
+          "audio": "13_karim.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Hélène",
+          "fr": "Et moi, je vais prévenir la gardienne. Elle voit tout ce qui se passe dans l’immeuble. Si votre chat est dans les parties communes, elle le trouvera.",
+          "en": "And I'll tell the concierge. She sees everything that goes on in the building. If your cat is somewhere in the common areas, she'll find him.",
+          "audio": "14_helene.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Maeve",
+          "fr": "Merci beaucoup à vous deux. On est vraiment inquiètes.",
+          "en": "Thank you both so much. We're really worried.",
+          "audio": "15_maeve.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Hélène",
+          "fr": "T’inquiète pas, ma belle. Les chats, ça revient toujours. Mon ancien chat disparaissait pendant trois jours et il revenait comme si de rien n’était.",
+          "en": "Don't worry, sweetie. Cats always come back. My old cat used to disappear for three days and come back like nothing happened.",
+          "audio": "16_helene.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Karim",
+          "fr": "Ouais, stressez pas trop. Il est sûrement en train de faire la tournée des toits. Il va revenir quand il aura faim !",
+          "en": "Yeah, don't stress too much. He's probably doing the rounds on the rooftops. He'll come back when he's hungry!",
+          "audio": "17_karim.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Irene",
+          "fr": "J’espère que tu as raison. Merci pour votre aide, c’est vraiment gentil de votre part.",
+          "en": "I hope you're right. Thanks for your help — that's really kind of you.",
+          "audio": "18_irene.mp3"
+        }
+      ]
+    },
+    {
+      "id": "06_fibre_syndic",
+      "title": "La fibre optique — Demande au syndic",
+      "audio_base": "audio/06_fibre_syndic/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "fr": "Bonjour, Monsieur Reynaud. Excusez-moi de vous déranger. Auriez-vous quelques minutes à m’accorder ?",
+          "en": "Hello, Monsieur Reynaud. Sorry to bother you. Would you have a few minutes?",
+          "audio": "01_irene.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Bonjour, madame. Oui, bien sûr, je vous écoute.",
+          "en": "Hello, madam. Yes, of course, go ahead.",
+          "audio": "02_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "fr": "Voilà, ma compagne et moi souhaiterions faire installer la fibre optique dans notre appartement. Nous avons contacté Orange, et un technicien pourrait passer la semaine prochaine. Cependant, ils nous ont dit qu’il fallait l’autorisation du syndic pour faire passer le câble dans les parties communes.",
+          "en": "Well, my partner and I would like to have fiber optic installed in our apartment. We contacted Orange, and a technician could come next week. However, they told us we need authorization from the building management to run the cable through the common areas.",
+          "audio": "03_irene.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Oui, en effet, c’est la procédure. Le câble doit passer par la colonne montante de l’immeuble, et toute intervention dans les parties communes nécessite un accord.",
+          "en": "Yes, indeed, that's the procedure. The cable has to go through the building's riser, and any work in the common areas requires approval.",
+          "audio": "04_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "fr": "Est-ce qu’il serait possible d’obtenir cette autorisation rapidement ? Nous travaillons toutes les deux depuis la maison, et notre connexion ADSL actuelle est vraiment insuffisante.",
+          "en": "Would it be possible to get this authorization quickly? We both work from home, and our current ADSL connection is really inadequate.",
+          "audio": "05_irene.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Je comprends tout à fait. En principe, la loi est de votre côté. Les copropriétaires ne peuvent pas s’opposer à l’installation de la fibre pour un locataire. C’est le droit à la fibre, c’est dans la loi.",
+          "en": "I completely understand. In principle, the law is on your side. The co-owners cannot oppose the installation of fiber for a tenant. It's the right to fiber — it's written in the law.",
+          "audio": "06_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "fr": "Ah, c’est rassurant. Alors, quelles sont les démarches à suivre ?",
+          "en": "Ah, that's reassuring. So, what are the steps to follow?",
+          "audio": "07_irene.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Il faudrait que votre opérateur, Orange dans votre cas, nous envoie un courrier officiel décrivant les travaux prévus. Ensuite, je transmets ça au conseil syndical, et normalement on donne l’accord sous quinze jours.",
+          "en": "Your provider — Orange in your case — would need to send us an official letter describing the planned work. Then I pass it on to the building council, and normally we give approval within two weeks.",
+          "audio": "08_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "fr": "Quinze jours ? C’est le délai habituel ?",
+          "en": "Two weeks? Is that the usual timeframe?",
+          "audio": "09_irene.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Oui, c’est le maximum. En pratique, c’est souvent plus rapide. Je peux accélérer les choses si le dossier est complet. Il me faut la lettre d’Orange avec le plan d’installation, et une copie de votre bail.",
+          "en": "Yes, that's the maximum. In practice, it's often faster. I can speed things up if the file is complete. I need the letter from Orange with the installation plan, and a copy of your lease.",
+          "audio": "10_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "fr": "Très bien, je vais demander à Orange d’envoyer le courrier dès demain. Pour le bail, je peux vous faire une copie cet après-midi.",
+          "en": "Very well, I'll ask Orange to send the letter tomorrow. As for the lease, I can get you a copy this afternoon.",
+          "audio": "11_irene.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Parfait. Déposez-la dans ma boîte aux lettres, ou passez me la remettre — je suis chez moi jusqu’à dix-huit heures. Il y a juste un point important : le technicien devra veiller à ne pas percer de nouveaux trous dans les murs porteurs. Il doit utiliser les chemins de câble existants.",
+          "en": "Perfect. Drop it in my mailbox, or come hand it to me — I'm home until six p.m. There's just one important point: the technician must be careful not to drill new holes in the load-bearing walls. He must use the existing cable runs.",
+          "audio": "12_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "fr": "Je transmettrai cette consigne au technicien. Est-ce qu’il y a autre chose que nous devons savoir ?",
+          "en": "I'll pass that instruction on to the technician. Is there anything else we need to know?",
+          "audio": "13_irene.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Non, c’est tout. Ah si, une petite chose : prévenez vos voisins du troisième le jour de l’installation, parce que le technicien aura besoin d’accéder au palier et ça peut faire un peu de bruit. C’est une question de courtoisie.",
+          "en": "No, that's all. Oh wait, one small thing: let your neighbors on the third floor know on the day of the installation, because the technician will need access to the landing and it might be a bit noisy. It's a matter of courtesy.",
+          "audio": "14_monsieur_reynaud.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Irene",
+          "fr": "Bien sûr, nous les préviendrons. Merci beaucoup, Monsieur Reynaud. Je vous apporte la copie du bail tout à l’heure.",
+          "en": "Of course, we'll let them know. Thank you very much, Monsieur Reynaud. I'll bring you the copy of the lease later today.",
+          "audio": "15_irene.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Monsieur Reynaud",
+          "fr": "Je vous en prie, madame. Bonne journée.",
+          "en": "You're welcome, madam. Have a good day.",
+          "audio": "16_monsieur_reynaud.mp3"
+        }
+      ]
+    }
+  ]
+}

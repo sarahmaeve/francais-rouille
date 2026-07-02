@@ -1,0 +1,789 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "01_accueil_rh",
+      "title": "L'accueil RH — Premier jour à Nantes",
+      "audio_base": "audio/01_accueil_rh/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Anaïs",
+          "fr": "Bonjour, Maeve, bienvenue ! Vous êtes bien à l’heure, c’est parfait. Je suis Anaïs, la RH. On s’est vues en visio, mais c’est sympa de vous rencontrer en vrai.",
+          "en": "Good morning, Maeve, welcome! You're right on time, that's perfect. I'm Anaïs, HR. We met on a video call, but it's nice to meet you in person.",
+          "audio": "01_anais.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Bonjour Anaïs ! Oui, très sympa aussi. J’avais un peu peur d’arriver en retard, avec le tram.",
+          "en": "Good morning, Anaïs! Yes, lovely to meet you too. I was a bit worried about being late, with the tram.",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Anaïs",
+          "fr": "Ne vous inquiétez pas, tout le monde arrive entre neuf heures et neuf heures trente, c’est très souple. Alors, on va faire le tour rapidement, je vais vous donner votre badge, votre ordinateur, et on va aussi voir deux ou trois choses pratiques. Vous me suivez ?",
+          "en": "Don't worry, everyone arrives between nine and half past, it's very flexible. So — we'll do a quick tour, I'll give you your badge and your laptop, and we'll go through a couple of practical things. Shall we?",
+          "audio": "03_anais.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "Oui, bien sûr.",
+          "en": "Yes, of course.",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Anaïs",
+          "fr": "Alors là, juste à l’entrée, c’est l’accueil. Vous voyez, on passe le badge sur le lecteur pour ouvrir la porte. Pour l’instant, j’ouvre avec le mien, et on va aller chercher le vôtre dans mon bureau tout à l’heure.",
+          "en": "So here, right by the entrance, is reception. You see — you tap your badge on the reader to open the door. For now, I'll open with mine, and we'll pick yours up in my office in a moment.",
+          "audio": "05_anais.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et le badge, il sert aussi à autre chose ?",
+          "en": "Got it. And what else is the badge for?",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Anaïs",
+          "fr": "Oui, il sert à ouvrir les portes, et aussi à payer à la machine à café et à la cantine. C’est un peu notre couteau suisse, ce badge.",
+          "en": "It opens the doors, and you can also pay with it at the coffee machine and the canteen. It's our Swiss Army knife, this badge.",
+          "audio": "07_anais.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "Ah, très pratique !",
+          "en": "Oh, that's practical!",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Anaïs",
+          "fr": "Voici l’open space. On est une quarantaine en tout, mais tout le monde n’est pas là ce matin — certains sont en télétravail le lundi. Votre bureau est là, à côté de la fenêtre. Raphaël, que vous allez rencontrer, est juste en face.",
+          "en": "Here's the open space. We're about forty people in total, but not everyone is in this morning — some are working from home on Mondays. Your desk is there, by the window. Raphaël, whom you're about to meet, is right opposite.",
+          "audio": "09_anais.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Oh, c’est lumineux, c’est agréable.",
+          "en": "Oh, it's bright, it's lovely.",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Anaïs",
+          "fr": "Oui, on a de la chance. Là, au fond, c’est la salle de réunion principale, on l’appelle « Loire ». Et la petite salle là-bas, c’est « Erdre ». Toutes nos salles portent des noms de rivières, c’est une petite tradition de la maison.",
+          "en": "Yes, we're lucky. Over there at the back, that's the main meeting room, we call it \"Loire\". The smaller room over there is \"Erdre\". All our rooms are named after rivers, it's a little tradition of the house.",
+          "audio": "11_anais.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "C’est joli. Et la cuisine, elle est où ?",
+          "en": "That's nice. And where's the kitchen?",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Anaïs",
+          "fr": "Juste derrière vous. Venez, on y va. Alors voilà, la cuisine-cafétéria. Il y a un frigo — chacun range ses affaires, on fait le ménage le vendredi soir à tour de rôle. Et là, la machine à café. Attention, c’est une machine à grains, elle est redoutable, les gens en boivent trop.",
+          "en": "Right behind you. Come on, let's go. So — here's the kitchen-lounge. There's a fridge — everyone stores their things, and we clean it on Friday evenings, in turn. And there, the coffee machine. Watch out, it's a bean-to-cup machine, it's lethal, people drink far too much.",
+          "audio": "13_anais.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "Haha, je vais faire attention.",
+          "en": "Haha, I'll be careful.",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Anaïs",
+          "fr": "Vous prenez votre café comment ?",
+          "en": "How do you take your coffee?",
+          "audio": "15_anais.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "Un allongé, sans sucre.",
+          "en": "An allongé — a long espresso — no sugar.",
+          "audio": "16_maeve.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Anaïs",
+          "fr": "Alors vous appuyez ici, « Americano ». Voilà, c’est tout simple. La terrasse, c’est par là, derrière la porte vitrée. Les gens y déjeunent dès qu’il fait beau.",
+          "en": "Then you press here, \"Americano\". There, easy. The terrace is out through the glass door. People have lunch out there as soon as it's sunny.",
+          "audio": "17_anais.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "fr": "Super. Et pour la pause déjeuner, comment ça marche ?",
+          "en": "Great. And how does lunch break work?",
+          "audio": "18_maeve.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Anaïs",
+          "fr": "On a deux options. Soit on va à la cantine collective, qui est à cent mètres dans la rue — il y a une appli interne pour commander le matin, c’est pratique. Soit on va au restaurant du coin ou on mange sur le pouce ici. Vous pouvez aussi apporter votre gamelle.",
+          "en": "We have two options. Either you go to the collective canteen, which is a hundred metres down the street — there's an internal app to order in the morning, it's handy. Or you go to the restaurant on the corner, or you grab something quick here. You can also bring your own lunchbox.",
+          "audio": "19_anais.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "fr": "D’accord, et les horaires de déjeuner, c’est fixe ?",
+          "en": "OK, and are lunch hours fixed?",
+          "audio": "20_maeve.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Anaïs",
+          "fr": "Non, c’est libre, en général entre midi et quatorze heures. L’équipe mange souvent ensemble vers treize heures, mais rien n’est imposé.",
+          "en": "No, it's flexible, generally between noon and two. The team often eats together around one, but nothing is required.",
+          "audio": "21_anais.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Anaïs",
+          "fr": "Bon, continuons. Les toilettes sont au fond du couloir, à droite. Voici la salle de repos, avec un petit canapé, c’est là qu’on se pose quand on a besoin de souffler. Et par là-bas, c’est mon bureau. Allons-y pour votre équipement.",
+          "en": "Right, let's continue. The toilets are at the end of the corridor on the right. Here's the break room, with a little sofa, that's where we go when we need a breather. And over there is my office. Let's head there for your equipment.",
+          "audio": "22_anais.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Anaïs",
+          "fr": "Voilà. Alors, je vous remets votre badge d’accès et votre ordinateur portable. L’ordinateur est déjà configuré. Votre identifiant pour la messagerie professionnelle, c’est maeve.carrick, et le mot de passe temporaire est sur la fiche. Vous le changerez tout à l’heure.",
+          "en": "There we are. So, I'm giving you your access badge and your laptop. The laptop is already set up. Your login for the work mailbox is maeve.carrick, and the temporary password is on the sheet. You'll change it in a bit.",
+          "audio": "23_anais.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "fr": "Super, merci.",
+          "en": "Great, thanks.",
+          "audio": "24_maeve.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "Anaïs",
+          "fr": "Pour le Wi-Fi interne, c’est « AtelierClairac », mot de passe sur la fiche aussi. Le Wi-Fi invité, vous ne vous en servirez pas, c’est pour les visiteurs.",
+          "en": "For the internal Wi-Fi, it's \"AtelierClairac\", password also on the sheet. The guest Wi-Fi you won't use, that's for visitors.",
+          "audio": "25_anais.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Ludo",
+          "fr": "Ah, Maeve ! Bienvenue chez nous !",
+          "en": "Ah, Maeve! Welcome aboard!",
+          "audio": "26_ludo.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "Anaïs",
+          "fr": "Ludo, je te présente Maeve, officiellement.",
+          "en": "Ludo, let me introduce you to Maeve, officially.",
+          "audio": "27_anais.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Ludo",
+          "fr": "Enchanté, Maeve. Je suis Ludo, le directeur. Tutoie-moi, on est plutôt cool ici. Tu as fait bon voyage depuis Lyon ?",
+          "en": "Pleased to meet you, Maeve. I'm Ludo, the director. Use \"tu\" with me, we're pretty laid-back here. Did you have a good trip down from Lyon?",
+          "audio": "28_ludo.mp3"
+        },
+        {
+          "n": 29,
+          "speaker": "Maeve",
+          "fr": "Bonjour Ludo. Oui, très bien, merci. Le TGV, c’est impeccable.",
+          "en": "Hello Ludo. Yes, very good, thanks. The TGV is fantastic.",
+          "audio": "29_maeve.mp3"
+        },
+        {
+          "n": 30,
+          "speaker": "Ludo",
+          "fr": "Parfait. Bon, Anaïs va bien t’expliquer tout ça. On se voit cet après-midi ? Je te propose qu’on prenne un café à quinze heures, qu’on fasse connaissance un peu plus tranquillement.",
+          "en": "Perfect. Right, Anaïs will walk you through everything. Shall we catch up this afternoon? I suggest we grab a coffee at three, get to know each other a bit more quietly.",
+          "audio": "30_ludo.mp3"
+        },
+        {
+          "n": 31,
+          "speaker": "Maeve",
+          "fr": "Avec plaisir, à tout à l’heure.",
+          "en": "With pleasure, see you later.",
+          "audio": "31_maeve.mp3"
+        },
+        {
+          "n": 32,
+          "speaker": "Ludo",
+          "fr": "À tout à l’heure. Anaïs, tu lui montreras la machine à grains, hein, c’est vital.",
+          "en": "See you later. Anaïs, you'll show her the bean-to-cup machine, yes? That's critical.",
+          "audio": "32_ludo.mp3"
+        },
+        {
+          "n": 33,
+          "speaker": "Anaïs",
+          "fr": "Déjà fait, Ludo. Bon, on continue. Pour le pointage, on n’a pas de système rigide, mais vous verrez, il y a un petit outil qui s’appelle Clockify sur l’ordi, qu’on remplit plutôt en fin de semaine pour le suivi des projets.",
+          "en": "Already done, Ludo. Right, let's keep going. For timesheets, we don't have anything rigid, but you'll see — there's a little tool called Clockify on your laptop that we fill in rather at the end of the week, for project tracking.",
+          "audio": "33_anais.mp3"
+        },
+        {
+          "n": 34,
+          "speaker": "Maeve",
+          "fr": "D’accord.",
+          "en": "OK.",
+          "audio": "34_maeve.mp3"
+        },
+        {
+          "n": 35,
+          "speaker": "Anaïs",
+          "fr": "Raphaël va venir vous chercher dans dix minutes pour vous intégrer à son équipe. Il va vous faire un petit tour d’horizon de ce sur quoi ils travaillent. Et ce midi, on a prévu que vous déjeuniez avec une partie de l’équipe à la cantine. Vous êtes attendue, quoi.",
+          "en": "Raphaël will come and fetch you in ten minutes to bring you into his team. He'll take you through what they're working on. And at lunchtime, we've arranged for you to eat with some of the team at the canteen. You're expected, basically.",
+          "audio": "35_anais.mp3"
+        },
+        {
+          "n": 36,
+          "speaker": "Maeve",
+          "fr": "Merci, c’est très bien organisé.",
+          "en": "Thank you, this is all very well organised.",
+          "audio": "36_maeve.mp3"
+        },
+        {
+          "n": 37,
+          "speaker": "Anaïs",
+          "fr": "On essaie ! Je vous laisse vous installer. Si vous avez la moindre question, vous passez me voir, hein, n’hésitez pas.",
+          "en": "We try! I'll leave you to settle in. If you have any questions at all, come find me — don't hesitate.",
+          "audio": "37_anais.mp3"
+        },
+        {
+          "n": 38,
+          "speaker": "Maeve",
+          "fr": "Entendu, merci beaucoup Anaïs.",
+          "en": "Understood, thanks so much Anaïs.",
+          "audio": "38_maeve.mp3"
+        },
+        {
+          "n": 39,
+          "speaker": "Anaïs",
+          "fr": "À tout à l’heure !",
+          "en": "See you later!",
+          "audio": "39_anais.mp3"
+        }
+      ]
+    },
+    {
+      "id": "02_message_vocal_camille",
+      "title": "Message vocal à une collègue",
+      "audio_base": "audio/02_message_vocal_camille/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Maeve",
+          "fr": "Oui, bonjour Camille, c’est Maeve, il est onze heures moins le quart. Je sais que t’es en réunion client toute la matinée, du coup je te laisse un message, désolée de te déranger. En fait, c’est pour la maquette de la page d’accueil Garonne Énergie, là. J’ai fini la version deux hier soir, avec les retours que Raphaël m’a remontés, et il faut absolument que quelqu’un la valide avant treize heures, parce que notre livrable part chez le client à quatorze heures. Du coup, si jamais tu as dix minutes entre deux réunions, ce serait super. Sinon, deux options : soit tu m’envoies un petit mot sur Slack, et je te dis où elle est exactement sur le drive, soit tu me rappelles avant treize heures. Mon numéro, c’est le zéro six, dix-sept, cinquante-trois, quatre-vingt-deux, soixante-quatre. Je répète : zéro six, dix-sept, cinquante-trois, quatre-vingt-deux, soixante-quatre. Voilà. Merci beaucoup Camille, bonne réunion, à tout à l’heure.",
+          "en": "Yes, hi Camille, it's Maeve, it's quarter to eleven. I know you're in a client meeting all morning, so I'm leaving you a message — sorry to bother you. It's actually about the Garonne Énergie homepage mockup. I finished version two last night, with the feedback Raphaël passed on to me, and someone absolutely needs to validate it before one, because our deliverable goes to the client at two. So, if you happen to have ten minutes between two meetings, that would be great. Otherwise, two options: either you send me a quick note on Slack and I'll tell you exactly where it is on the drive, or you call me back before one. My number is zero six, seventeen, fifty-three, eighty-two, sixty-four. I repeat: zero six, seventeen, fifty-three, eighty-two, sixty-four. There we go. Thanks so much Camille, good luck with your meeting, speak to you later.",
+          "audio": "01_maeve.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04_dejeuner_cantine",
+      "title": "Déjeuner à la cantine",
+      "audio_base": "audio/04_dejeuner_cantine/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Raphaël",
+          "fr": "Alors, Maeve, t’as survécu à la visite guidée d’Anaïs ?",
+          "en": "So, Maeve, you survived Anaïs's guided tour?",
+          "audio": "01_raphael.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "J’ai survécu, oui ! C’est beaucoup d’informations en une matinée, mais tout est bien expliqué. Le badge, les rivières, la machine à grains…",
+          "en": "I survived, yes! It's a lot of information in one morning, but everything is clearly explained. The badge, the rivers, the bean-to-cup machine...",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Camille",
+          "fr": "La machine à grains, c’est l’épreuve d’intégration. Si tu ne t’es pas brûlé les doigts au moins une fois pendant la première semaine, tu n’es pas vraiment des nôtres.",
+          "en": "The bean-to-cup is the onboarding trial. If you haven't burnt your fingers on it at least once during your first week, you're not really one of us.",
+          "audio": "03_camille.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "Haha, j’ai été prévenue !",
+          "en": "Haha, I've been warned!",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Sébastien",
+          "fr": "Bon, on prend quoi ? Moi, le plat du jour, c’est du lieu noir au beurre blanc. Je tente.",
+          "en": "Right, what are we having? Plat du jour is coley in beurre blanc. I'll go for that.",
+          "audio": "05_sebastien.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Raphaël",
+          "fr": "Moi, je vais au bar à salades, j’ai besoin de verdure aujourd’hui.",
+          "en": "I'm going to the salad bar, I need something green today.",
+          "audio": "06_raphael.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Camille",
+          "fr": "C’est lundi, y a le buffet italien. Je prends des pâtes à la tomate, ça me suffira. Et toi, Maeve ?",
+          "en": "It's Monday, there's the Italian buffet. I'll have pasta with tomato, that'll do me. You, Maeve?",
+          "audio": "07_camille.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "Je regarde. Le lieu noir, c’est quoi exactement ?",
+          "en": "I'm looking. What exactly is coley?",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Sébastien",
+          "fr": "C’est un poisson, genre cabillaud mais un peu plus fort en goût. C’est pas mal, franchement.",
+          "en": "It's a fish, similar to cod but with a slightly stronger taste. It's pretty good, actually.",
+          "audio": "09_sebastien.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "OK, je prends le poisson aussi. Le beurre blanc, c’est très nantais, non ?",
+          "en": "OK, I'll have the fish too. Beurre blanc is very Nantes, isn't it?",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Camille",
+          "fr": "Complètement. C’est la sauce de référence ici. Si tu ne l’as jamais goûté, c’est le bon moment.",
+          "en": "Completely. It's the signature sauce here. If you've never tasted it, now's the time.",
+          "audio": "11_camille.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "Parfait. Allons-y.",
+          "en": "Perfect. Let's go.",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Camille",
+          "fr": "Bon, Maeve, première question importante. Tu loges où, pour l’instant ?",
+          "en": "So, Maeve, important first question. Where are you staying, for now?",
+          "audio": "13_camille.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "Pour l’instant, je suis en location meublée courte durée dans le centre, du côté de Graslin. Mais je vais chercher quelque chose de plus stable à partir du mois prochain.",
+          "en": "For now, I'm in a short-term furnished rental in the centre, around Graslin. But I'll be looking for something more stable from next month.",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Sébastien",
+          "fr": "Graslin, c’est sympa mais c’est cher. Tu vises quel genre de quartier pour ta vraie recherche ?",
+          "en": "Graslin is nice but expensive. What kind of neighbourhood are you aiming for in your real search?",
+          "audio": "15_sebastien.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "Je sais pas trop encore. J’aime bien être proche du tram, pour venir au boulot sans voiture. Et je cherche quelque chose de vivant, mais pas fou non plus — j’aime bien dormir la nuit.",
+          "en": "I'm not sure yet. I like being close to the tram, to get to work without a car. And I want somewhere lively, but not crazy — I like sleeping at night.",
+          "audio": "16_maeve.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Raphaël",
+          "fr": "Les Hauts-Pavés, c’est un bon compromis. C’est un peu plus au nord, c’est vivant, y a des commerces, y a des bars tranquilles, et le tram est juste à côté.",
+          "en": "Les Hauts-Pavés is a good compromise. It's a bit further north, it's lively, there are shops, there are quiet bars, and the tram is right there.",
+          "audio": "17_raphael.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Camille",
+          "fr": "Ouais, les Hauts-Pavés, ou même l’île de Nantes. L’île, c’est plus récent, plus moderne. Les loyers sont un peu plus élevés, mais t’as la Loire juste à côté, et les Machines de l’île, et le Hangar à Bananes le week-end.",
+          "en": "Yeah, Hauts-Pavés, or even the Île de Nantes. The island is newer, more modern. The rents are a bit higher, but you have the Loire right there, and the Machines de l'île, and Hangar à Bananes at the weekend.",
+          "audio": "18_camille.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Maeve",
+          "fr": "Le Hangar à Bananes ?",
+          "en": "Hangar à Bananes?",
+          "audio": "19_maeve.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Sébastien",
+          "fr": "C’est un ancien quai, ils en ont fait une zone de bars et de restos au bord de l’eau. L’été, c’est vivant, c’est agréable.",
+          "en": "It's a former dock — they turned it into a zone of bars and restaurants by the water. In summer, it's busy, it's nice.",
+          "audio": "20_sebastien.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Camille",
+          "fr": "Évite Malakoff, par contre. Enfin, évite pas — ça reste Nantes — mais pour un premier appart, je te conseille pas, c’est un peu moins sympa comme quartier.",
+          "en": "Avoid Malakoff, though. Or rather — don't avoid it, it's still Nantes — but for a first flat, I'd recommend against it, it's a slightly less pleasant area.",
+          "audio": "21_camille.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "fr": "Noté, merci. Et vous, vous habitez où ?",
+          "en": "Noted, thanks. And where do all of you live?",
+          "audio": "22_maeve.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Raphaël",
+          "fr": "Moi, chez mes parents, encore. Honte à moi. Je cherche depuis six mois, mais les loyers, franchement…",
+          "en": "Me? Still with my parents. Shame on me. I've been looking for six months, but honestly, the rents...",
+          "audio": "23_raphael.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Camille",
+          "fr": "Moi, au Bouffay, c’est le centre historique. C’est hyper pratique pour sortir le soir. Par contre, y a du bruit le vendredi soir, je dors avec des boules Quiès.",
+          "en": "I'm in Bouffay, the historic centre. It's super handy for going out. On the downside, it's noisy on Friday nights, I sleep with earplugs.",
+          "audio": "24_camille.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "Sébastien",
+          "fr": "Moi, j’habite Rezé, juste de l’autre côté de la Loire. C’est la banlieue sud de Nantes, mais c’est cool, j’ai un petit jardin, et c’est cinq stations de tram.",
+          "en": "I live in Rezé, just across the Loire. It's the southern suburbs of Nantes, but it's nice — I have a little garden, and it's five tram stops.",
+          "audio": "25_sebastien.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Camille",
+          "fr": "Sinon, question vraiment importante : Maeve, tu fais du sport, toi ?",
+          "en": "Another really important question: Maeve, do you do any sport?",
+          "audio": "26_camille.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "Maeve",
+          "fr": "Oui, j’aime bien courir, et je fais du yoga une fois par semaine quand j’y pense.",
+          "en": "Yes, I like running, and I do yoga once a week when I remember.",
+          "audio": "27_maeve.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Raphaël",
+          "fr": "Ah, parfait ! On a un match amical entre collègues tous les jeudis soir, à l’île de Nantes, sur le terrain à côté de l’entrepôt. C’est mixte, c’est très détendu, c’est vraiment pas de la compétition, c’est surtout pour le plaisir.",
+          "en": "Oh, perfect! We have a friendly football match between colleagues every Thursday evening, on Île de Nantes, on the pitch next to the warehouse. It's mixed, very relaxed, not competitive at all — it's mostly for fun.",
+          "audio": "28_raphael.mp3"
+        },
+        {
+          "n": 29,
+          "speaker": "Camille",
+          "fr": "Surtout pour boire une bière après, tu veux dire.",
+          "en": "Mostly for the post-game beer, you mean.",
+          "audio": "29_camille.mp3"
+        },
+        {
+          "n": 30,
+          "speaker": "Raphaël",
+          "fr": "Ça fait partie de l’activité, oui.",
+          "en": "That's part of the activity, yes.",
+          "audio": "30_raphael.mp3"
+        },
+        {
+          "n": 31,
+          "speaker": "Maeve",
+          "fr": "Je veux bien essayer. Je suis pas forte en foot, mais je peux courir.",
+          "en": "I'd love to try. I'm not a great footballer, but I can run.",
+          "audio": "31_maeve.mp3"
+        },
+        {
+          "n": 32,
+          "speaker": "Sébastien",
+          "fr": "Franchement, tu feras déjà mieux que moi dès ton premier match.",
+          "en": "Honestly, you'll already do better than me from your very first match.",
+          "audio": "32_sebastien.mp3"
+        },
+        {
+          "n": 33,
+          "speaker": "Camille",
+          "fr": "Au fait, vous avez vu le dossier Garonne Énergie vendredi ? Le client veut tout revoir, encore.",
+          "en": "By the way, did you see the Garonne Énergie brief on Friday? The client wants to redo everything, again.",
+          "audio": "33_camille.mp3"
+        },
+        {
+          "n": 34,
+          "speaker": "Raphaël",
+          "fr": "Oh non, sérieusement ?",
+          "en": "Oh no, seriously?",
+          "audio": "34_raphael.mp3"
+        },
+        {
+          "n": 35,
+          "speaker": "Camille",
+          "fr": "Ouais, il a envoyé un mail à vingt-deux heures vendredi soir. Du grand classique. En gros, il veut « plus d’impact », « plus de modernité », mais il peut pas nous dire ce que ça veut dire.",
+          "en": "Yes, he sent a mail at ten p.m. on Friday night. A classic. Basically, he wants \"more impact\", \"more modern\", but he can't tell us what that means.",
+          "audio": "35_camille.mp3"
+        },
+        {
+          "n": 36,
+          "speaker": "Sébastien",
+          "fr": "Ah, on est en pleine période de retours flous, là.",
+          "en": "Ah, we're in vague-feedback season.",
+          "audio": "36_sebastien.mp3"
+        },
+        {
+          "n": 37,
+          "speaker": "Maeve",
+          "fr": "Qu’est-ce que vous faites, dans ce cas ?",
+          "en": "So what do you do in that case?",
+          "audio": "37_maeve.mp3"
+        },
+        {
+          "n": 38,
+          "speaker": "Camille",
+          "fr": "On propose trois directions visuelles différentes, et on le laisse choisir. Comme ça, il s’approprie le choix, et on reprend la main. C’est un classique du métier.",
+          "en": "We propose three different visual directions, and let him choose. That way, he owns the decision, and we take back control. It's a classic move in this business.",
+          "audio": "38_camille.mp3"
+        },
+        {
+          "n": 39,
+          "speaker": "Raphaël",
+          "fr": "Elle est pas mal, cette technique. Ça marche huit fois sur dix.",
+          "en": "It's a decent trick. Works eight times out of ten.",
+          "audio": "39_raphael.mp3"
+        },
+        {
+          "n": 40,
+          "speaker": "Sébastien",
+          "fr": "Et les deux autres fois, il te rappelle le vendredi à dix-sept heures avec une nouvelle idée.",
+          "en": "And the other two, he calls you back on a Friday at five p.m. with a new idea.",
+          "audio": "40_sebastien.mp3"
+        },
+        {
+          "n": 41,
+          "speaker": "Maeve",
+          "fr": "Ha ha, ça existe aussi aux États-Unis, ça.",
+          "en": "Haha, we have that in the States too.",
+          "audio": "41_maeve.mp3"
+        },
+        {
+          "n": 42,
+          "speaker": "Camille",
+          "fr": "Bon, on y retourne ? Moi, j’ai un call à quatorze heures.",
+          "en": "Right, shall we head back? I've got a call at two.",
+          "audio": "42_camille.mp3"
+        },
+        {
+          "n": 43,
+          "speaker": "Raphaël",
+          "fr": "Je te rejoins, je passe juste aux toilettes.",
+          "en": "Catch up with you — I'm just popping to the loo.",
+          "audio": "43_raphael.mp3"
+        },
+        {
+          "n": 44,
+          "speaker": "Sébastien",
+          "fr": "Bonne aprem, Maeve. Bienvenue, vraiment.",
+          "en": "Have a good afternoon, Maeve. Welcome, genuinely.",
+          "audio": "44_sebastien.mp3"
+        },
+        {
+          "n": 45,
+          "speaker": "Maeve",
+          "fr": "Merci ! À tout à l’heure.",
+          "en": "Thanks! See you later.",
+          "audio": "45_maeve.mp3"
+        }
+      ]
+    },
+    {
+      "id": "05_reunion_lundi",
+      "title": "La réunion d'équipe du lundi",
+      "audio_base": "audio/05_reunion_lundi/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Ludo",
+          "fr": "Bon, salut tout le monde, on va pouvoir démarrer. Il est dix heures trois, on a dix minutes devant nous. Pour rappel, aujourd’hui on accueille officiellement Maeve dans l’équipe. Maeve, bienvenue, on est contents de t’avoir avec nous.",
+          "en": "Right, hi everyone, we can get going. It's three past ten, we have ten minutes. Reminder — today we officially welcome Maeve into the team. Maeve, welcome, we're happy to have you with us.",
+          "audio": "01_ludo.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Merci Ludo, moi aussi je suis contente d’être là.",
+          "en": "Thanks Ludo, I'm happy to be here too.",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Ludo",
+          "fr": "Bon, deux points généraux avant le tour de table. Un : la visite client de l’agence régionale des Pays de la Loire, c’est jeudi après-midi. Ils arrivent à quatorze heures, ils restent deux heures. Camille et moi on pilote, mais si certains d’entre vous veulent passer dire bonjour, c’est bienvenu. Deux : Anaïs, tu voulais dire un mot sur le séminaire ?",
+          "en": "OK, two general points before we go round. One: the client visit from the Pays de la Loire regional agency is Thursday afternoon. They arrive at two, they stay two hours. Camille and I are running it, but if any of you want to drop by and say hello, you're welcome. Two: Anaïs, you wanted to say a word about the offsite?",
+          "audio": "03_ludo.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Anaïs",
+          "fr": "Oui, rapidement. Le séminaire annuel, c’est confirmé pour les jeudi et vendredi de la deuxième semaine de décembre, à Guérande. J’envoie les infos pratiques cette semaine.",
+          "en": "Yes, briefly. The annual offsite is confirmed for the Thursday and Friday of the second week of December, in Guérande. I'll send out the practical info this week.",
+          "audio": "04_anais.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Ludo",
+          "fr": "Parfait, merci. Bon, on fait le tour. Raphaël, tu commences ?",
+          "en": "Perfect, thanks. Right, let's go round. Raphaël, you kick off?",
+          "audio": "05_ludo.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Raphaël",
+          "fr": "Ouais, alors la semaine dernière j’ai fini la deuxième version de la maquette Garonne Énergie, avec les retours qu’on a intégrés. Cette semaine, je bosse sur la direction artistique pour la nouvelle collection Peillon Mobilier. Point bloquant : j’ai toujours pas reçu les visuels haute définition du photographe, alors qu’ils devaient arriver vendredi. Je relance ce matin, mais si ça coince, on va avoir un souci sur le rétroplanning.",
+          "en": "Yeah, so last week I finished version two of the Garonne Énergie mockup, with the feedback we integrated. This week, I'm working on the art direction for the new Peillon Mobilier collection. Blocker: I still haven't received the high-res visuals from the photographer, even though they were due Friday. I'm chasing this morning, but if it drags, we'll have an issue on the schedule.",
+          "audio": "06_raphael.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Ludo",
+          "fr": "C’est Studio Atlantique, ça ?",
+          "en": "That's Studio Atlantique, right?",
+          "audio": "07_ludo.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Raphaël",
+          "fr": "Ouais.",
+          "en": "Yep.",
+          "audio": "08_raphael.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Ludo",
+          "fr": "OK. Si tu n’as rien aujourd’hui à midi, tu me transfères le dernier mail et je les appelle moi-même. C’est pas la première fois qu’ils nous font le coup.",
+          "en": "OK. If you have nothing by midday today, forward me the last email and I'll call them myself. It's not the first time they've done this to us.",
+          "audio": "09_ludo.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Raphaël",
+          "fr": "Merci Ludo.",
+          "en": "Thanks Ludo.",
+          "audio": "10_raphael.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Ludo",
+          "fr": "Camille ?",
+          "en": "Camille?",
+          "audio": "11_ludo.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Camille",
+          "fr": "Moi, la semaine dernière, j’ai livré la charte graphique pour le musée Jules-Verne, j’attends leur retour. Je lance cette semaine la nouvelle vague pour Ouest-France, sur les rubriques lifestyle. Jeudi, je suis sur la visite client avec Ludo. Sinon, pas de point bloquant. Ah si, un truc : je prends mon mercredi après-midi en RTT cette semaine, pour le rendez-vous à l’école de ma fille.",
+          "en": "Me, last week I delivered the style guide for the Jules-Verne museum, waiting on their feedback. I'm kicking off this week the new wave for Ouest-France, on the lifestyle sections. Thursday, I'm on the client visit with Ludo. Otherwise, no blockers. Oh, one thing: I'm taking Wednesday afternoon off on RTT this week, for a meeting at my daughter's school.",
+          "audio": "12_camille.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Ludo",
+          "fr": "Noté, pas de souci.",
+          "en": "Noted, no problem.",
+          "audio": "13_ludo.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Ludo",
+          "fr": "Sébastien ?",
+          "en": "Sébastien?",
+          "audio": "14_ludo.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Sébastien",
+          "fr": "Alors, sur la semaine qui vient de passer, j’ai fini la migration du back-office vers le nouvel hébergement. Ça s’est passé sans accroc. Cette semaine, je m’attaque à la refonte du tunnel de commande pour Peillon — toujours le même client. J’ai besoin des éléments de Raphaël vers jeudi, donc si les visuels arrivent d’ici là, c’est parfait. Pas de point bloquant pour moi.",
+          "en": "Right, for last week, I finished migrating the back-office to the new hosting. No hiccups. This week, I'm tackling the rework of the checkout flow for Peillon — still the same client. I need elements from Raphaël around Thursday, so if the visuals arrive by then, we're good. No blockers on my side.",
+          "audio": "15_sebastien.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Ludo",
+          "fr": "OK. Maeve, à toi. Tu veux te lancer, pour ta première fois ?",
+          "en": "OK. Maeve, over to you. Want to go for it, for your first time?",
+          "audio": "16_ludo.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Maeve",
+          "fr": "Oui, avec plaisir. Alors, comme vous le savez, j’ai commencé ce matin. J’ai fait ma visite avec Anaïs, et j’ai rencontré l’équipe. Raphaël m’a briefée sur Garonne Énergie. Cette semaine, je vais prendre en main le dossier, reprendre les retours clients des dernières versions, et je pense pouvoir proposer une troisième version d’ici vendredi. Pas de point bloquant, je vais surtout lire et me mettre à niveau.",
+          "en": "Yes, happy to. So — as you know, I started this morning. I did my tour with Anaïs, and I've met the team. Raphaël briefed me on Garonne Énergie. This week, I'll take the file in hand, review the client feedback on the latest versions, and I think I can propose a version three by Friday. No blockers, I'll mainly be reading and ramping up.",
+          "audio": "17_maeve.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Ludo",
+          "fr": "Super. Mets-toi à ton rythme. Si tu as besoin d’aide, Raphaël est à côté de toi, et Camille connaît le client par cœur, elle peut t’aider si tu veux comprendre leurs manies.",
+          "en": "Great. Take it at your own pace. If you need help, Raphaël is right next to you, and Camille knows the client by heart — she can help if you want to understand their quirks.",
+          "audio": "18_ludo.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Maeve",
+          "fr": "D’accord, merci.",
+          "en": "OK, thanks.",
+          "audio": "19_maeve.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Ludo",
+          "fr": "Bon, décisions. Un : Raphaël, tu me transfères le mail Studio Atlantique avant midi, j’appelle cet après-midi. Deux : Sébastien, tu prévois un créneau avec Raphaël jeudi matin pour récupérer les visuels dès qu’ils arrivent. Trois : Camille, tu dégages une heure dans la semaine pour briefer Maeve sur l’historique Garonne Énergie, tu te cales avec elle directement.",
+          "en": "Right, decisions. One: Raphaël, forward me the Studio Atlantique email before midday, I'll call this afternoon. Two: Sébastien, book a slot with Raphaël Thursday morning to pick up the visuals as soon as they arrive. Three: Camille, carve out an hour this week to brief Maeve on the Garonne Énergie history, arrange that directly with her.",
+          "audio": "20_ludo.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Camille",
+          "fr": "Impec, je te bloque ça, Maeve, je t’envoie une invit'.",
+          "en": "Great, I'll lock it in — Maeve, I'll send you an invite.",
+          "audio": "21_camille.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Ludo",
+          "fr": "Bien. Autre chose ? Non ? Bon, ben, on se revoit jeudi pour la revue, allez, bon café.",
+          "en": "Good. Anything else? No? All right, see you Thursday for the review. Enjoy your coffees!",
+          "audio": "22_ludo.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Sébastien",
+          "fr": "Bon café !",
+          "en": "Enjoy!",
+          "audio": "23_sebastien.mp3"
+        }
+      ]
+    }
+  ]
+}

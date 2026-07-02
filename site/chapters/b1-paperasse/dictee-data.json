@@ -1,0 +1,617 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "01_repondeur_prefecture",
+      "title": "Répondeur de la préfecture",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Le répondeur automatique",
+          "audio": "audio/01_repondeur_prefecture/lines/01_le_repondeur_automatique.mp3",
+          "text": "Bienvenue sur le serveur vocal de la préfecture de la Loire-Atlantique. Nos services d’accueil du public sont ouverts du lundi au vendredi, de neuf heures à douze heures trente, et de treize heures trente à seize heures. La préfecture est fermée le mercredi après-midi, ainsi que les jours fériés. Nous vous informons que la plupart des démarches concernant les titres de séjour se font désormais en ligne, sur le site de l’administration numérique française, à l’adresse administration-etrangers-en-france.interieur.gouv.fr. Aucun dossier n’est accepté au guichet sans rendez-vous préalable confirmé par courrier électronique. Afin d’être orienté vers le service concerné, veuillez faire votre choix parmi les options suivantes. Pour les cartes grises et les permis de conduire, tapez un. Pour les titres de séjour et les demandes de naturalisation, tapez deux. Pour parler à un agent d’accueil, entre neuf heures et onze heures, uniquement les mardis et jeudis, tapez trois. En cas d’urgence administrative, veuillez vous rendre sur notre site internet, rubrique urgences, ou contacter votre mairie de résidence. Pour réécouter ce message, tapez zéro. Pour revenir au menu principal à tout moment, appuyez sur la touche étoile. Nous vous souhaitons une bonne journée."
+        }
+      ]
+    },
+    {
+      "id": "02_guichet_prefecture",
+      "title": "Au guichet de la préfecture",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/01_mme_dubreuil.mp3",
+          "text": "Bonjour madame, bonjour. Vous avez votre convocation ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/02_maeve.mp3",
+          "text": "Bonjour madame. Oui, la voici, et j’ai aussi imprimé le mail de confirmation."
+        },
+        {
+          "n": 3,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/03_mme_dubreuil.mp3",
+          "text": "Parfait. Madame Carrick, Maeve Carrick. Renouvellement de titre de séjour. D’accord. Alors on va reprendre votre dossier ensemble, dans l’ordre, s’il vous plaît. Passeport en cours de validité, d’abord."
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/04_maeve.mp3",
+          "text": "Voilà."
+        },
+        {
+          "n": 5,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/05_mme_dubreuil.mp3",
+          "text": "Merci. Ancien titre de séjour ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/06_maeve.mp3",
+          "text": "Oui, tenez."
+        },
+        {
+          "n": 7,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/07_mme_dubreuil.mp3",
+          "text": "Très bien. Justificatif de domicile de moins de trois mois, ensuite."
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/08_maeve.mp3",
+          "text": "Alors, j’ai apporté ma dernière facture EDF."
+        },
+        {
+          "n": 9,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/09_mme_dubreuil.mp3",
+          "text": "Voyons voir. Ah, je suis désolée, elle date du onze janvier. Nous sommes le vingt-deux avril. Cette facture a plus de trois mois. Elle n’est malheureusement pas recevable."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/10_maeve.mp3",
+          "text": "Ah, je ne savais pas, je pensais que le dernier paiement comptait. Qu’est-ce que je peux apporter à la place ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/11_mme_dubreuil.mp3",
+          "text": "Il faut un justificatif récent, c’est-à-dire de moins de trois mois. Cela peut être une facture d’électricité, de gaz, d’eau, d’internet, ou une quittance de loyer émise par votre bailleur."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/12_maeve.mp3",
+          "text": "J’ai mon avis d’imposition, est-ce que ça pourrait marcher ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/13_mme_dubreuil.mp3",
+          "text": "Non, malheureusement. L’avis d’imposition est accepté comme justificatif complémentaire, mais pas comme justificatif principal pour le titre de séjour. Il me faut vraiment une facture récente ou une quittance."
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/14_maeve.mp3",
+          "text": "Et mon contrat de bail ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/15_mme_dubreuil.mp3",
+          "text": "Le contrat de bail non plus, parce qu’il a été signé il y a plus d’un an. Ce qu’il faudrait, c’est que votre propriétaire vous fasse une attestation récente, ou bien que vous m’apportiez une quittance de loyer datée du mois dernier, ou encore une facture Internet récente."
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/16_maeve.mp3",
+          "text": "D’accord. Je peux télécharger ma dernière facture Free depuis mon espace client, je pense."
+        },
+        {
+          "n": 17,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/17_mme_dubreuil.mp3",
+          "text": "Très bien. Si vous pouvez la télécharger, l’imprimer et revenir, nous pouvons compléter le dossier. La facture doit être nominative, à votre nom, avec l’adresse exacte indiquée."
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/18_maeve.mp3",
+          "text": "D’accord. Pour le reste du dossier, c’est bon ?"
+        },
+        {
+          "n": 19,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/19_mme_dubreuil.mp3",
+          "text": "Voyons. Trois photos d’identité aux normes ?"
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/20_maeve.mp3",
+          "text": "Oui."
+        },
+        {
+          "n": 21,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/21_mme_dubreuil.mp3",
+          "text": "Très bien. Elles sont correctes. Justificatif de ressources ?"
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/22_maeve.mp3",
+          "text": "Oui, mon contrat de travail, mes trois derniers bulletins de salaire, et l’attestation France Travail."
+        },
+        {
+          "n": 23,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/23_mme_dubreuil.mp3",
+          "text": "Pourquoi France Travail, vous avez été au chômage ?"
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/24_maeve.mp3",
+          "text": "Non, c’est une attestation de non-inscription, qui figurait sur la liste des pièces."
+        },
+        {
+          "n": 25,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/25_mme_dubreuil.mp3",
+          "text": "Ah, très bien. C’est exact. Parfait, tout est là de ce côté-là. Il me manque donc uniquement le justificatif de domicile récent. Voici ce que je vous propose : je vous remets un récépissé qui atteste du dépôt de votre dossier à ce jour. Ce récépissé, il prouve que votre démarche est en cours, et il vaut autorisation provisoire de séjour. Il est valable six mois."
+        },
+        {
+          "n": 26,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/26_maeve.mp3",
+          "text": "Ah, super, merci. Donc je peux continuer à travailler normalement avec ce document ?"
+        },
+        {
+          "n": 27,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/27_mme_dubreuil.mp3",
+          "text": "Oui, tout à fait. Vous pouvez travailler, voyager dans l’espace Schengen, et tout ce que vous faisiez avant. Par contre, il est essentiel que vous complétiez votre dossier rapidement. Je vous fixe un nouveau rendez-vous dans quinze jours. Est-ce que le six mai, à dix heures, vous convient ?"
+        },
+        {
+          "n": 28,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/28_maeve.mp3",
+          "text": "Oui, parfaitement."
+        },
+        {
+          "n": 29,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/29_mme_dubreuil.mp3",
+          "text": "Très bien, je le bloque. Vous recevrez la confirmation par mail dans la journée. Pour ce rendez-vous, il faut que vous apportiez uniquement le justificatif de domicile manquant. Tout le reste, je l’ai déjà scanné."
+        },
+        {
+          "n": 30,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/30_maeve.mp3",
+          "text": "D’accord. Et si jamais je ne peux pas imprimer la facture Free, il y a un autre moyen ?"
+        },
+        {
+          "n": 31,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/31_mme_dubreuil.mp3",
+          "text": "Oui. Vous pouvez venir avec la facture sur votre téléphone, et nous l’imprimons ici, au guichet. Ça arrive souvent. Ou sinon, vous pouvez demander à votre bailleur une attestation de loyer récente."
+        },
+        {
+          "n": 32,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/32_maeve.mp3",
+          "text": "Parfait. Merci pour votre patience."
+        },
+        {
+          "n": 33,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/33_mme_dubreuil.mp3",
+          "text": "Il n’y a pas de quoi. Tenez, votre récépissé, votre passeport, votre ancien titre. Votre convocation pour le six mai est dans le mail que vous allez recevoir."
+        },
+        {
+          "n": 34,
+          "speaker": "Maeve",
+          "audio": "audio/02_guichet_prefecture/lines/34_maeve.mp3",
+          "text": "Merci beaucoup. Bonne journée, madame."
+        },
+        {
+          "n": 35,
+          "speaker": "Mme Dubreuil",
+          "audio": "audio/02_guichet_prefecture/lines/35_mme_dubreuil.mp3",
+          "text": "Bonne journée à vous. Suivante, s’il vous plaît !"
+        }
+      ]
+    },
+    {
+      "id": "03_appel_caf",
+      "title": "Appel à la CAF pour l'APL",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/01_m_lefevre.mp3",
+          "text": "Caisse d’allocations familiales de la Loire-Atlantique, Jérôme Lefèvre à votre écoute, bonjour."
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/02_maeve.mp3",
+          "text": "Bonjour monsieur, je vous appelle au sujet de mon dossier APL."
+        },
+        {
+          "n": 3,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/03_m_lefevre.mp3",
+          "text": "Très bien, je vais ouvrir votre dossier. Votre numéro d’allocataire, s’il vous plaît ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/04_maeve.mp3",
+          "text": "Je l’ai sous les yeux, c’est le sept, deux, quatre, zéro, neuf, huit, cinq."
+        },
+        {
+          "n": 5,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/05_m_lefevre.mp3",
+          "text": "Sept, deux, quatre, zéro, neuf, huit, cinq. Un instant, je recherche. Voilà. Madame Carrick, c’est bien ça ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/06_maeve.mp3",
+          "text": "Oui, Maeve Carrick : C, A, deux R, I, C, K."
+        },
+        {
+          "n": 7,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/07_m_lefevre.mp3",
+          "text": "Très bien. Pour confirmation, pouvez-vous me donner votre date de naissance et votre code postal actuel ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/08_maeve.mp3",
+          "text": "Je suis née le quatorze mars mille neuf cent quatre-vingt-douze. Et mon code postal à Nantes, c’est le quarante-quatre mille."
+        },
+        {
+          "n": 9,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/09_m_lefevre.mp3",
+          "text": "Parfait, c’est vous. Alors, je regarde. Votre dossier APL a été déposé en ligne le mois dernier, c’est ça. Je vois qu’il est en attente, parce qu’il manque deux pièces justificatives."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/10_maeve.mp3",
+          "text": "Ah, je n’avais pas vu. Lesquelles ?"
+        },
+        {
+          "n": 11,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/11_m_lefevre.mp3",
+          "text": "D’abord, il nous manque votre quittance de loyer la plus récente. Ensuite, il nous manque l’attestation de loyer remplie par votre propriétaire, qui confirme que vous êtes bien locataire chez lui."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/12_maeve.mp3",
+          "text": "D’accord. Mais je ne comprends pas bien la différence entre une quittance et une attestation. C’est quoi la différence, exactement ?"
+        },
+        {
+          "n": 13,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/13_m_lefevre.mp3",
+          "text": "Très bonne question. La quittance de loyer, c’est le document que votre propriétaire vous remet chaque mois, ou que votre gestionnaire locatif génère, qui atteste que vous avez bien payé le loyer pour un mois précis. Ça doit mentionner le montant, la période, et votre nom. L’attestation du propriétaire, elle, c’est un document rédigé sur papier libre par votre propriétaire, qui atteste que vous êtes bien son locataire, depuis telle date, à telle adresse, pour un loyer mensuel de tel montant."
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/14_maeve.mp3",
+          "text": "D’accord, je vois. Pour la quittance, j’ai accès à mon espace locataire en ligne, je vais pouvoir la télécharger sans souci. Par contre, pour l’attestation, il faut que je la demande à mon propriétaire ?"
+        },
+        {
+          "n": 15,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/15_m_lefevre.mp3",
+          "text": "Exactement."
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/16_maeve.mp3",
+          "text": "Et comment faut-il que je les envoie ? Par courrier ?"
+        },
+        {
+          "n": 17,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/17_m_lefevre.mp3",
+          "text": "Non, non, surtout pas. Ça prendrait des semaines. Vous allez sur le site caf.fr, vous vous connectez à votre espace personnel, et dans la rubrique « mon dossier », vous avez la possibilité de téléverser vos pièces justificatives directement."
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/18_maeve.mp3",
+          "text": "Téléverser, ça veut dire uploader, c’est ça ?"
+        },
+        {
+          "n": 19,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/19_m_lefevre.mp3",
+          "text": "Oui, tout à fait. Le PDF ou la photo, c’est très bien. Faites attention que le document soit lisible, bien cadré, et dans un format accepté — PDF, JPEG, ou PNG."
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/20_maeve.mp3",
+          "text": "D’accord. Et une fois que j’aurai téléversé, il faut combien de temps pour que le dossier soit traité ?"
+        },
+        {
+          "n": 21,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/21_m_lefevre.mp3",
+          "text": "Une fois les pièces reçues, le délai de traitement est habituellement de deux à trois semaines. Vous recevrez un SMS dès que votre dossier sera validé."
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/22_maeve.mp3",
+          "text": "Parfait. Une dernière question : à partir de quand est-ce que je recevrai l’aide ? Je veux dire, est-ce que je toucherai un rappel depuis mon emménagement, ou seulement à partir du mois où le dossier est validé ?"
+        },
+        {
+          "n": 23,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/23_m_lefevre.mp3",
+          "text": "Alors, très bonne question aussi. L’APL est versée à partir du mois qui suit la date de dépôt de votre demande. Vous avez déposé le mois dernier, donc votre droit commence ce mois-ci. Le versement, lui, arrivera une fois que nous aurons reçu et validé les pièces manquantes. Le droit ne remonte pas à la date de votre emménagement, malheureusement."
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/24_maeve.mp3",
+          "text": "D’accord, c’est un peu dommage, mais c’est clair. Merci beaucoup pour vos explications, monsieur."
+        },
+        {
+          "n": 25,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/25_m_lefevre.mp3",
+          "text": "Je vous en prie. Vous voulez que je vous envoie un récapitulatif par message, dans votre espace personnel ?"
+        },
+        {
+          "n": 26,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/26_maeve.mp3",
+          "text": "Oui, avec plaisir, comme ça je n’oublie rien."
+        },
+        {
+          "n": 27,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/27_m_lefevre.mp3",
+          "text": "C’est noté, je le fais tout de suite. Autre chose, madame Carrick ?"
+        },
+        {
+          "n": 28,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/28_maeve.mp3",
+          "text": "Non, c’est bon, je vous remercie."
+        },
+        {
+          "n": 29,
+          "speaker": "M. Lefèvre",
+          "audio": "audio/03_appel_caf/lines/29_m_lefevre.mp3",
+          "text": "Très bien. Je vous souhaite une bonne fin de journée."
+        },
+        {
+          "n": 30,
+          "speaker": "Maeve",
+          "audio": "audio/03_appel_caf/lines/30_maeve.mp3",
+          "text": "Bonne journée à vous aussi, au revoir."
+        }
+      ]
+    },
+    {
+      "id": "04_mairie_acte_naissance",
+      "title": "À la mairie pour un acte de naissance",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/01_sabrina.mp3",
+          "text": "Bonjour madame, bonjour. Vous avez pris un ticket ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/02_maeve.mp3",
+          "text": "Bonjour. Oui, j’ai le numéro B quarante-sept."
+        },
+        {
+          "n": 3,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/03_sabrina.mp3",
+          "text": "C’est bon, c’est votre tour. Qu’est-ce que je peux faire pour vous ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/04_maeve.mp3",
+          "text": "Alors, je viens pour me renseigner. Je souhaiterais me pacser avec ma compagne ici à Nantes, et j’aimerais savoir quelles pièces je dois apporter pour constituer mon dossier, parce que je suis américaine."
+        },
+        {
+          "n": 5,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/05_sabrina.mp3",
+          "text": "D’accord. Alors, pour un PACS avec un partenaire étranger, on demande trois pièces principales. La première, c’est votre acte de naissance, en copie intégrale, de moins de six mois puisque vous êtes née à l’étranger. La deuxième, c’est une traduction assermentée de cet acte, si vous l’avez en anglais. Et la troisième, c’est un certificat de coutume, que vous obtenez auprès de votre consulat ou de votre ambassade."
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/06_maeve.mp3",
+          "text": "D’accord. Alors j’ai bien ma copie intégrale d’acte de naissance, que j’ai fait demander par ma mère la semaine dernière aux États-Unis. Mais elle est évidemment en anglais."
+        },
+        {
+          "n": 7,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/07_sabrina.mp3",
+          "text": "Oui, c’est normal. Il faut donc la faire traduire par un traducteur assermenté près la cour d’appel. C’est très important : une traduction classique ne suffit pas. Le traducteur doit être inscrit sur la liste officielle des experts judiciaires."
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/08_maeve.mp3",
+          "text": "D’accord. Et où est-ce que je peux trouver un traducteur assermenté ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/09_sabrina.mp3",
+          "text": "Je peux vous donner trois noms, ils sont sur la liste de la cour d’appel de Rennes, qui est notre cour de rattachement. Tenez, je vous les note. Madame Lefort, à Nantes, vingt-cinq rue de la Fosse. Monsieur Kennedy, à Rennes, également inscrit pour l’anglais. Et madame O'Connor, à Angers. Tous les trois traduisent l’anglais vers le français."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/10_maeve.mp3",
+          "text": "Et combien ça coûte, en moyenne ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/11_sabrina.mp3",
+          "text": "Les tarifs varient selon les traducteurs, mais pour un acte de naissance, comptez entre soixante et quatre-vingts euros. Parfois, c’est un peu plus si l’acte est long. Et comptez environ une semaine pour la traduction."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/12_maeve.mp3",
+          "text": "D’accord. Et le certificat de coutume, c’est quoi exactement ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/13_sabrina.mp3",
+          "text": "C’est un document délivré par votre ambassade ou votre consulat. En gros, il explique la loi de votre pays — et il est souvent accompagné d’un certificat de célibat, qui confirme que vous êtes libre de conclure un PACS."
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/14_maeve.mp3",
+          "text": "D’accord. Et je dois contacter le consulat des États-Unis à Paris pour ça ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/15_sabrina.mp3",
+          "text": "Oui, tout à fait. L’ambassade des États-Unis, à Paris, délivre ce document. Il faut généralement compter deux à trois semaines. Pensez à vérifier sur leur site les pièces qu’ils demandent de votre côté."
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/16_maeve.mp3",
+          "text": "D’accord. Une fois que j’ai tout ça, comment je fais pour la signature ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/17_sabrina.mp3",
+          "text": "Vous prenez un rendez-vous à la mairie, soit en ligne sur le site de la mairie de Nantes, soit directement au guichet ici. La signature a lieu dans une petite salle, en présence d’un officier d’état civil — ce n’est pas moi qui m’en occupe, c’est un collègue spécialisé. Vous venez avec votre compagne, vous signez la convention de PACS, et c’est tout."
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/18_maeve.mp3",
+          "text": "Combien de temps ça prend, la signature ?"
+        },
+        {
+          "n": 19,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/19_sabrina.mp3",
+          "text": "Environ quinze à vingt minutes. C’est une formalité simple, une fois que le dossier est complet."
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/20_maeve.mp3",
+          "text": "Et est-ce qu’il y a un délai d’attente pour obtenir un rendez-vous ?"
+        },
+        {
+          "n": 21,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/21_sabrina.mp3",
+          "text": "En ce moment, nous avons environ trois semaines d’attente. Je vous conseille de prendre rendez-vous dès que vous commencez à rassembler les pièces, pour que le rendez-vous tombe à peu près au moment où votre dossier sera complet."
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/22_maeve.mp3",
+          "text": "Super astuce, je vais faire ça. Dernière question : est-ce qu’il faut que nous apportions quelque chose le jour de la signature ?"
+        },
+        {
+          "n": 23,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/23_sabrina.mp3",
+          "text": "Oui, vos pièces d’identité à toutes les deux, en original, bien sûr. Et la convention de PACS, que vous aurez rédigée vous-mêmes — ou alors vous utilisez la convention type du formulaire Cerfa. Je peux vous imprimer le modèle, si vous voulez."
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/24_maeve.mp3",
+          "text": "Oui, ce serait gentil, merci."
+        },
+        {
+          "n": 25,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/25_sabrina.mp3",
+          "text": "Voilà, je vous imprime le Cerfa de convention de PACS. Vous avez deux options : soit vous utilisez la convention type proposée par l’administration, soit vous faites rédiger une convention personnalisée par un notaire. La convention type est gratuite et largement suffisante dans la plupart des cas."
+        },
+        {
+          "n": 26,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/26_maeve.mp3",
+          "text": "Parfait. Je pense qu’on va partir sur la convention type."
+        },
+        {
+          "n": 27,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/27_sabrina.mp3",
+          "text": "Très bien. Alors, récapitulatif : un, acte de naissance en copie intégrale récente ; deux, sa traduction assermentée ; trois, certificat de coutume du consulat ; quatre, vos deux pièces d’identité ; cinq, la convention de PACS complétée. Et six, la déclaration conjointe de PACS — le formulaire Cerfa — avec les attestations sur l’honneur de non-parenté et de résidence commune. Une fois tout ça réuni, vous prenez rendez-vous, vous venez ensemble, vous signez."
+        },
+        {
+          "n": 28,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/28_maeve.mp3",
+          "text": "Super clair. Merci beaucoup, madame."
+        },
+        {
+          "n": 29,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/29_sabrina.mp3",
+          "text": "Je vous en prie. Tenez, la liste des traducteurs et le formulaire. Bon courage pour vos démarches, et félicitations pour votre projet."
+        },
+        {
+          "n": 30,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/30_maeve.mp3",
+          "text": "Merci beaucoup, c’est très gentil."
+        },
+        {
+          "n": 31,
+          "speaker": "Sabrina",
+          "audio": "audio/04_mairie_acte_naissance/lines/31_sabrina.mp3",
+          "text": "Bonne journée, madame Carrick. Au revoir."
+        },
+        {
+          "n": 32,
+          "speaker": "Maeve",
+          "audio": "audio/04_mairie_acte_naissance/lines/32_maeve.mp3",
+          "text": "Au revoir."
+        }
+      ]
+    }
+  ]
+}

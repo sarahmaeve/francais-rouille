@@ -1,0 +1,425 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "02_chansons_indila",
+      "title": "Les chansons d'Indila",
+      "audio_base": "audio/02_chansons_indila/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Léa",
+          "fr": "Vous avez vu qu’Indila est redevenue virale sur les réseaux ? « Dernière Danse » a dépassé le milliard de vues sur YouTube. C’est dingue pour une chanson qui a plus de dix ans.",
+          "en": "Did you see that Indila has gone viral again on social media? \"Dernière Danse\" has passed a billion views on YouTube. That's crazy for a song that's over ten years old.",
+          "audio": "01_lea.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Hugo",
+          "fr": "Oui, j’ai vu ça. Apparemment, c’est grâce à TikTok — les gens la redécouvrent, surtout aux États-Unis. Elle est devenue la chanteuse française la plus écoutée là-bas.",
+          "en": "Yeah, I saw that. Apparently it's thanks to TikTok — people are rediscovering her, especially in the US. She's become the most-listened-to French singer over there.",
+          "audio": "02_hugo.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Yasmine",
+          "fr": "Ce qui est fou, c’est qu’elle n’a sorti qu’un seul album. « Mini World », c’était en 2014, et depuis, à part un single en 2019, plus rien. Quasi silence radio.",
+          "en": "What's wild is that she's only released one album. \"Mini World\" was in 2014, and since then, apart from a single in 2019, nothing. Practically radio silence.",
+          "audio": "03_yasmine.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Hugo",
+          "fr": "C’est quand même bizarre, non ? Tu as un tube planétaire, une carrière qui décolle, et tu disparais pendant dix ans. Je ne comprends pas.",
+          "en": "That's pretty weird, isn't it? You have a worldwide hit, a career taking off, and you disappear for ten years. I don't get it.",
+          "audio": "04_hugo.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Léa",
+          "fr": "Moi, je respecte ça. Elle a toujours été très discrète. Pas d’interviews, pas de réseaux sociaux, pas de scandales. Dans un monde où tout le monde se met en scène en permanence, c’est rafraîchissant.",
+          "en": "I respect it, personally. She's always been very private. No interviews, no social media, no scandals. In a world where everyone is performing their life 24/7, it's refreshing.",
+          "audio": "05_lea.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Yasmine",
+          "fr": "Rafraîchissant, peut-être, mais frustrant aussi. Parce que « Mini World », l’album, il y avait des pépites incroyables. « S.O.S. » est magnifique, « Tourner dans le vide » aussi. Et on attend la suite depuis une éternité.",
+          "en": "Refreshing, maybe, but frustrating too. Because \"Mini World,\" the album — there were incredible gems on it. \"S.O.S.\" is gorgeous, \"Tourner dans le vide\" too. And we've been waiting for a follow-up for an eternity.",
+          "audio": "06_yasmine.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Hugo",
+          "fr": "Moi, j’ai un avis un peu différent. « Dernière Danse », c’est indiscutable — le genre de chanson qui te donne des frissons à chaque écoute. Mais le reste de l’album, je trouvais ça inégal. Il y avait des morceaux assez quelconques au milieu.",
+          "en": "I have a slightly different take. \"Dernière Danse\" is beyond question — the kind of song that gives you chills every time you hear it. But the rest of the album, I found it uneven. There were some pretty mediocre tracks in the middle.",
+          "audio": "07_hugo.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Léa",
+          "fr": "Je ne suis pas d’accord du tout. C’est juste que « Dernière Danse » a tellement cartonné que les gens n’ont pas pris la peine d’écouter le reste. « Love Story », par exemple, c’est complètement différent — il y a un côté cinématographique que j’adore.",
+          "en": "I completely disagree. It's just that \"Dernière Danse\" was such a massive hit that people didn't bother listening to the rest. \"Love Story,\" for example, is completely different — there's a cinematic quality to it that I love.",
+          "audio": "08_lea.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Yasmine",
+          "fr": "C’est un peu le piège du tube, ça. Quand tu as un titre qui explose comme ça, tout le monde juge l’artiste sur cette seule chanson. Moi, ce que j’aime chez Indila, c’est son mélange de cultures musicales — il y a des influences orientales, indiennes, un peu de flamenco parfois.",
+          "en": "That's kind of the hit single trap. When you have a track that blows up like that, everyone judges the artist on that one song alone. What I love about Indila is her blend of musical cultures — there are Middle Eastern influences, Indian, a bit of flamenco sometimes.",
+          "audio": "09_yasmine.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Hugo",
+          "fr": "Ouais, ça c’est intéressant, je te l’accorde. Mais parfois je trouve que la production est trop lisse. On dirait que tout est passé à la moulinette. Il n’y a pas assez de grain, de rugosité.",
+          "en": "Yeah, that's interesting, I'll give you that. But sometimes I find the production too polished. It's like everything has been autotuned to nothing. There's not enough grit, not enough roughness.",
+          "audio": "10_hugo.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Léa",
+          "fr": "C’est parce que tu écoutes trop de rock indé, Hugo. Tout n’est pas obligé de sonner comme si c’était enregistré dans un garage.",
+          "en": "That's because you listen to too much indie rock, Hugo. Not everything has to sound like it was recorded in a garage.",
+          "audio": "11_lea.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Hugo",
+          "fr": "Eh, ce n’est pas ce que je dis ! Je dis juste que quand la production est trop propre, ça enlève l’émotion. Regarde les vieux enregistrements d’Oum Kalthoum — c’est brut, c’est imparfait, et c’est justement pour ça que c’est bouleversant.",
+          "en": "Hey, that's not what I'm saying! I'm just saying that when the production is too clean, it strips away the emotion. Look at the old Oum Kalthoum recordings — they're raw, they're imperfect, and that's exactly why they're so moving.",
+          "audio": "12_hugo.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Yasmine",
+          "fr": "OK, mais tu compares une chanteuse pop française à Oum Kalthoum, là. C’est un peu exagéré, non ?",
+          "en": "OK, but you're comparing a French pop singer to Oum Kalthoum there. That's a bit of a stretch, isn't it?",
+          "audio": "13_yasmine.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Hugo",
+          "fr": "Je ne compare pas les artistes, je compare l’approche. L’imperfection, c’est ce qui rend la musique humaine.",
+          "en": "I'm not comparing the artists, I'm comparing the approach. Imperfection is what makes music human.",
+          "audio": "14_hugo.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Léa",
+          "fr": "Bon, on ne va pas être d’accord là-dessus. Mais ce qui est sûr, c’est que sa voix est exceptionnelle. Ce mélange d’influences — le raï, la chanson française, la pop orientale — il n’y a personne d’autre qui fait ça en France.",
+          "en": "OK, we're not going to agree on that. But what's certain is that her voice is exceptional. That blend of influences — raï, French chanson, Middle Eastern pop — nobody else does that in France.",
+          "audio": "15_lea.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Yasmine",
+          "fr": "Là, on est tous d’accord. Et apparemment, il y a des rumeurs sur un deuxième album. On l’a vue tourner un clip à Paris, près de la tour Eiffel. Rien d’officiel, mais ça donne de l’espoir.",
+          "en": "We all agree on that. And apparently there are rumors about a second album. She was spotted filming a music video in Paris, near the Eiffel Tower. Nothing official, but it gives us hope.",
+          "audio": "16_yasmine.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Hugo",
+          "fr": "Ça fait dix ans qu’on entend des rumeurs. Moi, je n’y crois plus trop.",
+          "en": "We've been hearing rumors for ten years. I don't really believe it anymore.",
+          "audio": "17_hugo.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Léa",
+          "fr": "Moi, j’y crois. Et quand il sortira, je serai la première à l’écouter. Même si c’est dans dix ans de plus.",
+          "en": "I believe it. And when it comes out, I'll be the first to listen. Even if it takes another ten years.",
+          "audio": "18_lea.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Yasmine",
+          "fr": "En fait, je pense que le problème d’Indila, c’est qu’elle ne sort pas assez de musique. Les gens oublient et passent à autre chose. Enfin, visiblement pas, vu les chiffres sur YouTube. Peut-être que le mystère, c’est justement ce qui entretient la fascination.",
+          "en": "Actually, I think Indila's problem is that she doesn't release enough music. People forget and move on. Well, apparently not, given the YouTube numbers. Maybe the mystery is exactly what keeps the fascination alive.",
+          "audio": "19_yasmine.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Hugo",
+          "fr": "Ou alors, c’est un choix artistique. Elle préfère prendre son temps plutôt que de sortir un album par an pour rester visible. Ça, je respecte.",
+          "en": "Or maybe it's an artistic choice. She'd rather take her time than release an album a year just to stay visible. That, I respect.",
+          "audio": "20_hugo.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Léa",
+          "fr": "Exactement. La qualité plutôt que la quantité. C’est rare, de nos jours.",
+          "en": "Exactly. Quality over quantity. That's rare these days.",
+          "audio": "21_lea.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Yasmine",
+          "fr": "Bon, on est d’accord sur un truc au moins : Indila a du talent, même si on n’est pas d’accord sur tout ce qu’elle en fait. Ou plutôt, sur ce qu’elle n’en fait pas.",
+          "en": "Well, at least we can agree on one thing: Indila has talent, even if we don't agree on everything she does with it. Or rather, everything she doesn't do with it.",
+          "audio": "22_yasmine.mp3"
+        }
+      ]
+    },
+    {
+      "id": "03_films_mousquetaires",
+      "title": "Les Trois Mousquetaires au cinéma",
+      "audio_base": "audio/03_films_mousquetaires/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "fr": "Tu as fini par regarder « Milady » ? Parce que moi, je l’ai vu la semaine dernière et j’ai des choses à dire.",
+          "en": "Did you end up watching \"Milady\"? Because I saw it last week and I have things to say.",
+          "audio": "01_irene.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Oui ! Je l’ai regardé vendredi soir. Et alors, qu’est-ce que tu en as pensé ?",
+          "en": "Yes! I watched it Friday night. So, what did you think?",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "fr": "Honnêtement ? J’ai trouvé ça aussi sombre que le premier. « D’Artagnan » m’avait déjà un peu déçue par son ton — c’est censé être une histoire d’aventure, de panache, et au final on se retrouve avec un truc hyper sérieux, presque déprimant par moments.",
+          "en": "Honestly? I found it just as dark as the first one. \"D'Artagnan\" had already disappointed me a bit with its tone — it's supposed to be a story of adventure, of panache, and in the end you get something super serious, almost depressing at times.",
+          "audio": "03_irene.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "C’est drôle, parce que moi, le côté sombre ne m’a pas dérangée. J’ai trouvé que ça donnait du poids à l’histoire. Ce n’est pas un film Marvel où tout est léger et sans conséquences.",
+          "en": "That's funny, because the dark side didn't bother me. I thought it gave the story weight. It's not a Marvel movie where everything is light and consequence-free.",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "fr": "Oui, mais il y a un juste milieu, quand même. Dumas, à la base, c’est du roman-feuilleton, c’est du divertissement. Les personnages sont censés être flamboyants, drôles, un peu fanfarons. Dans les films, on dirait qu’ils portent le poids du monde sur leurs épaules.",
+          "en": "Sure, but there's a middle ground, you know. At its core, Dumas is serialized fiction, it's entertainment. The characters are supposed to be flamboyant, funny, a bit boastful. In the films, it's like they carry the weight of the world on their shoulders.",
+          "audio": "05_irene.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "Je te l’accorde pour D’Artagnan. François Civil est très bien, mais son personnage manque de légèreté. Par contre, les scènes d’action sont vraiment réussies. Le duel dans l’église, tu t’en souviens ? C’était spectaculaire.",
+          "en": "I'll give you that for D'Artagnan. François Civil is great, but his character lacks lightness. On the other hand, the action scenes are really well done. The duel in the church — remember that? It was spectacular.",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "fr": "Ah ça oui, les chorégraphies de combat sont impressionnantes. C’est ce qui m’a empêchée de décrocher complètement. Mais entre les scènes d’action, il y a des longueurs. Les intrigues politiques sont mal expliquées — si tu ne connais pas le roman, tu es perdue.",
+          "en": "Oh yes, the fight choreography is impressive. That's what kept me from tuning out completely. But between the action scenes, there are slow stretches. The political intrigues are poorly explained — if you haven't read the novel, you're lost.",
+          "audio": "07_irene.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "C’est vrai que c’est dense. Mais moi, j’avais lu le résumé avant, donc j’ai pu suivre. Et puis, il faut parler d’Eva Green. Elle est incroyable en Milady. C’est la meilleure chose dans les deux films.",
+          "en": "That's true, it's dense. But I'd read a summary beforehand, so I could follow along. And we have to talk about Eva Green. She's incredible as Milady. She's the best thing in both films.",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "fr": "Là, on est entièrement d’accord. Eva Green est parfaite. Chaque scène où elle apparaît, tu ne peux pas regarder ailleurs. Elle a une présence à l’écran qui est juste… fascinante. Même quand le scénario est bancal, elle te tient en haleine.",
+          "en": "We completely agree on that. Eva Green is perfect. Every scene she appears in, you can't look away. She has a screen presence that's just… mesmerizing. Even when the script is shaky, she holds you.",
+          "audio": "09_irene.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Et Milady est un personnage tellement complexe. Méchante, oui, mais avec des motivations qu’on comprend. Eva Green joue toutes ces nuances. C’est une immense actrice.",
+          "en": "And Milady is such a complex character. Villainous, yes, but with motivations you can understand. Eva Green plays all those nuances. She's a world-class actress.",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "fr": "Absolument. D’ailleurs, je trouve que le deuxième film est un peu meilleur que le premier, justement parce qu’il y a plus de Milady. Ses scènes avec D’Artagnan ont une vraie tension.",
+          "en": "Absolutely. Actually, I think the second film is a bit better than the first, precisely because there's more Milady. Her scenes with D'Artagnan have real tension.",
+          "audio": "11_irene.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "Oui, c’est ça. Et la fin laisse la porte ouverte pour un troisième film. Tu crois qu’ils vont le faire ?",
+          "en": "Yes, exactly. And the ending leaves the door open for a third film. Do you think they'll make it?",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "fr": "J’en sais rien. Les critiques étaient correctes mais pas dithyrambiques, et au box-office, ça n’a pas été le triomphe espéré. En France ça a bien marché, mais à l’international, c’est passé un peu inaperçu.",
+          "en": "No idea. The reviews were decent but not glowing, and at the box office, it wasn't the triumph they'd hoped for. It did well in France, but internationally, it went somewhat unnoticed.",
+          "audio": "13_irene.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "Ce serait dommage de ne pas finir la trilogie. L’histoire n’est pas terminée, et puis les costumes, les décors — c’est quand même du beau cinéma français. Il faudrait plus de films d’aventure comme ça en France.",
+          "en": "It'd be a shame not to finish the trilogy. The story isn't over, and the costumes, the sets — it's still beautiful French cinema. We need more adventure films like this in France.",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Irene",
+          "fr": "Peut-être. Mais si c’est pour refaire la même chose en encore plus sombre, je ne suis pas sûre d’être au rendez-vous. Sauf si Eva Green est dedans, évidemment.",
+          "en": "Maybe. But if it's going to be the same thing only even darker, I'm not sure I'll show up. Unless Eva Green is in it, obviously.",
+          "audio": "15_irene.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "Évidemment. Sans Eva Green, ce n’est même pas la peine.",
+          "en": "Obviously. Without Eva Green, there's no point.",
+          "audio": "16_maeve.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04_album_zaz",
+      "title": "Le dernier album de Zaz",
+      "audio_base": "audio/04_album_zaz/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Matthieu",
+          "fr": "Tu as écouté « Sains et saufs » en entier ? Moi, je l’ai mis en boucle toute la semaine. Je suis complètement accro.",
+          "en": "Have you listened to \"Sains et saufs\" all the way through? I've had it on repeat all week. I'm completely hooked.",
+          "audio": "01_matthieu.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Rebecca",
+          "fr": "Oui, je l’ai écouté deux fois. Et… comment dire… je suis un peu mitigée.",
+          "en": "Yes, I listened to it twice. And… how should I put this… I'm a bit mixed on it.",
+          "audio": "02_rebecca.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Matthieu",
+          "fr": "Ah bon ? Qu’est-ce qui ne t’a pas plu ?",
+          "en": "Really? What didn't you like?",
+          "audio": "03_matthieu.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Rebecca",
+          "fr": "Ce n’est pas que ça ne m’a pas plu. C’est juste que… ce n’est plus la Zaz que j’aimais. Le premier album, celui avec « Je veux », c’était brut, c’était de la chanson de rue avec une énergie folle. On sentait que cette fille chantait avec ses tripes. Là, sur « Sains et saufs », c’est plus posé, plus travaillé, plus… sage.",
+          "en": "It's not that I didn't like it. It's just that… this isn't the Zaz I used to love. The first album, the one with \"Je veux,\" was raw, it was street music with incredible energy. You could feel that this woman was singing from her gut. On \"Sains et saufs,\" it's more restrained, more polished, more… tame.",
+          "audio": "04_rebecca.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Matthieu",
+          "fr": "Mais justement, c’est ce que j’aime. Elle a mûri. Tu ne peux pas demander à une artiste de refaire le même album pendant vingt ans. « Je veux » avait cette énergie de la rue, oui, mais on ne peut pas chanter comme ça éternellement.",
+          "en": "But that's exactly what I like about it. She's matured. You can't ask an artist to make the same album for twenty years. \"Je veux\" had that street energy, sure, but you can't sing like that forever.",
+          "audio": "05_matthieu.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Rebecca",
+          "fr": "Je ne lui demande pas de refaire la même chose. Mais par exemple, « Mon cœur tu es fou », c’est joli, bien sûr, mais ça pourrait être chanté par n’importe qui. Il n’y a plus cette voix rauque, ce grain qui la rendait unique. On dirait qu’elle s’est assagie.",
+          "en": "I'm not asking her to do the same thing again. But for example, \"Mon cœur tu es fou\" — it's pretty, sure, but it could be sung by anyone. That husky voice, that grit that made her unique — it's not there anymore. It's like she's mellowed out.",
+          "audio": "06_rebecca.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Matthieu",
+          "fr": "Je ne suis pas d’accord. Écoute « La flamme » — c’est puissant, c’est engagé, et sa voix est toujours là. Elle ne crie plus, d’accord, mais elle a appris à utiliser les nuances. C’est ça, évoluer.",
+          "en": "I disagree. Listen to \"La flamme\" — it's powerful, it's heartfelt, and her voice is still there. She doesn't belt anymore, fine, but she's learned to use nuance. That's what evolving means.",
+          "audio": "07_matthieu.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Rebecca",
+          "fr": "« La flamme », c’est vrai, c’est le morceau que j’ai préféré sur l’album. Avec « Au pays des merveilles » aussi — celui-là a un côté un peu espiègle qui rappelle ses débuts.",
+          "en": "\"La flamme\" — that's true, that's my favorite track on the album. Along with \"Au pays des merveilles\" — that one has a sort of playful quality that recalls her early work.",
+          "audio": "08_rebecca.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Matthieu",
+          "fr": "Tu vois ! Il y a de tout sur cet album. Et puis le duo avec Raphaël à la fin, « Une passerelle vers la mer », c’est magnifique. Leurs deux voix se mélangent super bien.",
+          "en": "See! There's a bit of everything on this album. And the duet with Raphaël at the end, \"Une passerelle vers la mer\" — it's gorgeous. Their two voices blend really well.",
+          "audio": "09_matthieu.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Rebecca",
+          "fr": "Oui, le duo est réussi, je te l’accorde. Mais tu ne trouves pas que globalement, la production est trop léchée ? Sur ses premiers albums, il y avait des imperfections, des accidents sonores, et c’est ce qui donnait du caractère. Là, tout est lissé, mixé à la perfection. Ça manque de spontanéité.",
+          "en": "Yes, the duet works, I'll give you that. But don't you think that overall, the production is too slick? On her early albums, there were imperfections, sonic accidents, and that's what gave them character. Here, everything is smoothed out, mixed to perfection. It lacks spontaneity.",
+          "audio": "10_rebecca.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Matthieu",
+          "fr": "C’est le premier album qu’elle sort chez le label tôt Ou tard. Peut-être que le changement de label a influencé la direction artistique. Mais moi, je vois ça comme une évolution naturelle. Brel aussi a commencé dans les cabarets et il a fini par faire des albums orchestraux. Personne ne lui en a voulu.",
+          "en": "It's the first album she's released on the label tôt Ou tard. Maybe the label change influenced the artistic direction. But I see it as a natural evolution. Brel started out in cabarets too, and he ended up making orchestral albums. Nobody held it against him.",
+          "audio": "11_matthieu.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Rebecca",
+          "fr": "Tu compares Zaz à Brel, maintenant ?",
+          "en": "You're comparing Zaz to Brel now?",
+          "audio": "12_rebecca.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Matthieu",
+          "fr": "Non, je fais un parallèle sur l’évolution artistique. Chaque artiste a le droit de grandir. Et je préfère une Zaz qui explore de nouveaux territoires plutôt qu’une Zaz qui fait du fan service en recyclant « Je veux » à l’infini.",
+          "en": "No, I'm drawing a parallel about artistic evolution. Every artist has the right to grow. And I'd rather have a Zaz who explores new territory than a Zaz who panders to fans by recycling \"Je veux\" endlessly.",
+          "audio": "13_matthieu.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Rebecca",
+          "fr": "OK, c’est un argument valable. Mais est-ce que tu ne penses pas qu’elle a perdu une partie de son public en route ? Les gens qui l’ont découverte grâce à la vidéo dans la rue, ils ne se retrouvent peut-être plus dans cette musique-là.",
+          "en": "OK, that's a fair argument. But don't you think she's lost part of her audience along the way? The people who discovered her through the street video might not see themselves in this music anymore.",
+          "audio": "14_rebecca.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Matthieu",
+          "fr": "Peut-être, mais elle en a gagné d’autres. Et puis « Sains et saufs », le titre, il dit tout — comme si elle disait qu’elle a traversé quelque chose et qu’elle est toujours là, debout. Il y a une maturité émotionnelle que je trouve très touchante.",
+          "en": "Maybe, but she's gained others. And then the title, \"Sains et saufs\" — \"safe and sound\" — says it all, as if she's saying she's been through something and she's still here, still standing. There's an emotional maturity to it that I find really moving.",
+          "audio": "15_matthieu.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Rebecca",
+          "fr": "C’est vrai que les textes sont plus personnels. « Je pardonne », par exemple, c’est clairement autobiographique. Et c’est bien écrit, je ne le nie pas.",
+          "en": "It's true that the lyrics are more personal. \"Je pardonne,\" for example, is clearly autobiographical. And it's well written, I won't deny that.",
+          "audio": "16_rebecca.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Matthieu",
+          "fr": "Voilà. Alors, verdict final ? Tu le gardes dans ta playlist ou pas ?",
+          "en": "There you go. So, final verdict? Are you keeping it in your playlist or not?",
+          "audio": "17_matthieu.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Rebecca",
+          "fr": "Je garde « La flamme », « Au pays des merveilles » et le duo avec Raphaël. Le reste, je suis moins convaincue. Mais je suis prête à réécouter — parfois, les albums qui ne plaisent pas tout de suite sont ceux qui vieillissent le mieux.",
+          "en": "I'm keeping \"La flamme,\" \"Au pays des merveilles,\" and the duet with Raphaël. The rest, I'm less convinced. But I'm willing to listen again — sometimes the albums that don't grab you right away are the ones that age best.",
+          "audio": "18_rebecca.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Matthieu",
+          "fr": "C’est exactement ce que j’allais dire. Laisse-lui une chance, tu verras.",
+          "en": "That's exactly what I was going to say. Give it a chance, you'll see.",
+          "audio": "19_matthieu.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "01_accueil_rh",
+      "title": "L'accueil RH — Premier jour à Nantes",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/01_anais.mp3",
+          "text": "Bonjour, Maeve, bienvenue ! Vous êtes bien à l’heure, c’est parfait. Je suis Anaïs, la RH. On s’est vues en visio, mais c’est sympa de vous rencontrer en vrai."
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/02_maeve.mp3",
+          "text": "Bonjour Anaïs ! Oui, très sympa aussi. J’avais un peu peur d’arriver en retard, avec le tram."
+        },
+        {
+          "n": 3,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/03_anais.mp3",
+          "text": "Ne vous inquiétez pas, tout le monde arrive entre neuf heures et neuf heures trente, c’est très souple. Alors, on va faire le tour rapidement, je vais vous donner votre badge, votre ordinateur, et on va aussi voir deux ou trois choses pratiques. Vous me suivez ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/04_maeve.mp3",
+          "text": "Oui, bien sûr."
+        },
+        {
+          "n": 5,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/05_anais.mp3",
+          "text": "Alors là, juste à l’entrée, c’est l’accueil. Vous voyez, on passe le badge sur le lecteur pour ouvrir la porte. Pour l’instant, j’ouvre avec le mien, et on va aller chercher le vôtre dans mon bureau tout à l’heure."
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/06_maeve.mp3",
+          "text": "D’accord. Et le badge, il sert aussi à autre chose ?"
+        },
+        {
+          "n": 7,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/07_anais.mp3",
+          "text": "Oui, il sert à ouvrir les portes, et aussi à payer à la machine à café et à la cantine. C’est un peu notre couteau suisse, ce badge."
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/08_maeve.mp3",
+          "text": "Ah, très pratique !"
+        },
+        {
+          "n": 9,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/09_anais.mp3",
+          "text": "Voici l’open space. On est une quarantaine en tout, mais tout le monde n’est pas là ce matin — certains sont en télétravail le lundi. Votre bureau est là, à côté de la fenêtre. Raphaël, que vous allez rencontrer, est juste en face."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/10_maeve.mp3",
+          "text": "Oh, c’est lumineux, c’est agréable."
+        },
+        {
+          "n": 11,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/11_anais.mp3",
+          "text": "Oui, on a de la chance. Là, au fond, c’est la salle de réunion principale, on l’appelle « Loire ». Et la petite salle là-bas, c’est « Erdre ». Toutes nos salles portent des noms de rivières, c’est une petite tradition de la maison."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/12_maeve.mp3",
+          "text": "C’est joli. Et la cuisine, elle est où ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/13_anais.mp3",
+          "text": "Juste derrière vous. Venez, on y va. Alors voilà, la cuisine-cafétéria. Il y a un frigo — chacun range ses affaires, on fait le ménage le vendredi soir à tour de rôle. Et là, la machine à café. Attention, c’est une machine à grains, elle est redoutable, les gens en boivent trop."
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/14_maeve.mp3",
+          "text": "Haha, je vais faire attention."
+        },
+        {
+          "n": 15,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/15_anais.mp3",
+          "text": "Vous prenez votre café comment ?"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/16_maeve.mp3",
+          "text": "Un allongé, sans sucre."
+        },
+        {
+          "n": 17,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/17_anais.mp3",
+          "text": "Alors vous appuyez ici, « Americano ». Voilà, c’est tout simple. La terrasse, c’est par là, derrière la porte vitrée. Les gens y déjeunent dès qu’il fait beau."
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/18_maeve.mp3",
+          "text": "Super. Et pour la pause déjeuner, comment ça marche ?"
+        },
+        {
+          "n": 19,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/19_anais.mp3",
+          "text": "On a deux options. Soit on va à la cantine collective, qui est à cent mètres dans la rue — il y a une appli interne pour commander le matin, c’est pratique. Soit on va au restaurant du coin ou on mange sur le pouce ici. Vous pouvez aussi apporter votre gamelle."
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/20_maeve.mp3",
+          "text": "D’accord, et les horaires de déjeuner, c’est fixe ?"
+        },
+        {
+          "n": 21,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/21_anais.mp3",
+          "text": "Non, c’est libre, en général entre midi et quatorze heures. L’équipe mange souvent ensemble vers treize heures, mais rien n’est imposé."
+        },
+        {
+          "n": 22,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/22_anais.mp3",
+          "text": "Bon, continuons. Les toilettes sont au fond du couloir, à droite. Voici la salle de repos, avec un petit canapé, c’est là qu’on se pose quand on a besoin de souffler. Et par là-bas, c’est mon bureau. Allons-y pour votre équipement."
+        },
+        {
+          "n": 23,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/23_anais.mp3",
+          "text": "Voilà. Alors, je vous remets votre badge d’accès et votre ordinateur portable. L’ordinateur est déjà configuré. Votre identifiant pour la messagerie professionnelle, c’est maeve.carrick, et le mot de passe temporaire est sur la fiche. Vous le changerez tout à l’heure."
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/24_maeve.mp3",
+          "text": "Super, merci."
+        },
+        {
+          "n": 25,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/25_anais.mp3",
+          "text": "Pour le Wi-Fi interne, c’est « AtelierClairac », mot de passe sur la fiche aussi. Le Wi-Fi invité, vous ne vous en servirez pas, c’est pour les visiteurs."
+        },
+        {
+          "n": 26,
+          "speaker": "Ludo",
+          "audio": "audio/01_accueil_rh/lines/26_ludo.mp3",
+          "text": "Ah, Maeve ! Bienvenue chez nous !"
+        },
+        {
+          "n": 27,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/27_anais.mp3",
+          "text": "Ludo, je te présente Maeve, officiellement."
+        },
+        {
+          "n": 28,
+          "speaker": "Ludo",
+          "audio": "audio/01_accueil_rh/lines/28_ludo.mp3",
+          "text": "Enchanté, Maeve. Je suis Ludo, le directeur. Tutoie-moi, on est plutôt cool ici. Tu as fait bon voyage depuis Lyon ?"
+        },
+        {
+          "n": 29,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/29_maeve.mp3",
+          "text": "Bonjour Ludo. Oui, très bien, merci. Le TGV, c’est impeccable."
+        },
+        {
+          "n": 30,
+          "speaker": "Ludo",
+          "audio": "audio/01_accueil_rh/lines/30_ludo.mp3",
+          "text": "Parfait. Bon, Anaïs va bien t’expliquer tout ça. On se voit cet après-midi ? Je te propose qu’on prenne un café à quinze heures, qu’on fasse connaissance un peu plus tranquillement."
+        },
+        {
+          "n": 31,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/31_maeve.mp3",
+          "text": "Avec plaisir, à tout à l’heure."
+        },
+        {
+          "n": 32,
+          "speaker": "Ludo",
+          "audio": "audio/01_accueil_rh/lines/32_ludo.mp3",
+          "text": "À tout à l’heure. Anaïs, tu lui montreras la machine à grains, hein, c’est vital."
+        },
+        {
+          "n": 33,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/33_anais.mp3",
+          "text": "Déjà fait, Ludo. Bon, on continue. Pour le pointage, on n’a pas de système rigide, mais vous verrez, il y a un petit outil qui s’appelle Clockify sur l’ordi, qu’on remplit plutôt en fin de semaine pour le suivi des projets."
+        },
+        {
+          "n": 34,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/34_maeve.mp3",
+          "text": "D’accord."
+        },
+        {
+          "n": 35,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/35_anais.mp3",
+          "text": "Raphaël va venir vous chercher dans dix minutes pour vous intégrer à son équipe. Il va vous faire un petit tour d’horizon de ce sur quoi ils travaillent. Et ce midi, on a prévu que vous déjeuniez avec une partie de l’équipe à la cantine. Vous êtes attendue, quoi."
+        },
+        {
+          "n": 36,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/36_maeve.mp3",
+          "text": "Merci, c’est très bien organisé."
+        },
+        {
+          "n": 37,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/37_anais.mp3",
+          "text": "On essaie ! Je vous laisse vous installer. Si vous avez la moindre question, vous passez me voir, hein, n’hésitez pas."
+        },
+        {
+          "n": 38,
+          "speaker": "Maeve",
+          "audio": "audio/01_accueil_rh/lines/38_maeve.mp3",
+          "text": "Entendu, merci beaucoup Anaïs."
+        },
+        {
+          "n": 39,
+          "speaker": "Anaïs",
+          "audio": "audio/01_accueil_rh/lines/39_anais.mp3",
+          "text": "À tout à l’heure !"
+        }
+      ]
+    },
+    {
+      "id": "02_message_vocal_camille",
+      "title": "Message vocal à une collègue",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Maeve",
+          "audio": "audio/02_message_vocal_camille/lines/01_maeve.mp3",
+          "text": "Oui, bonjour Camille, c’est Maeve, il est onze heures moins le quart. Je sais que t’es en réunion client toute la matinée, du coup je te laisse un message, désolée de te déranger. En fait, c’est pour la maquette de la page d’accueil Garonne Énergie, là. J’ai fini la version deux hier soir, avec les retours que Raphaël m’a remontés, et il faut absolument que quelqu’un la valide avant treize heures, parce que notre livrable part chez le client à quatorze heures. Du coup, si jamais tu as dix minutes entre deux réunions, ce serait super. Sinon, deux options : soit tu m’envoies un petit mot sur Slack, et je te dis où elle est exactement sur le drive, soit tu me rappelles avant treize heures. Mon numéro, c’est le zéro six, dix-sept, cinquante-trois, quatre-vingt-deux, soixante-quatre. Je répète : zéro six, dix-sept, cinquante-trois, quatre-vingt-deux, soixante-quatre. Voilà. Merci beaucoup Camille, bonne réunion, à tout à l’heure."
+        }
+      ]
+    },
+    {
+      "id": "04_dejeuner_cantine",
+      "title": "Déjeuner à la cantine",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/01_raphael.mp3",
+          "text": "Alors, Maeve, t’as survécu à la visite guidée d’Anaïs ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/02_maeve.mp3",
+          "text": "J’ai survécu, oui ! C’est beaucoup d’informations en une matinée, mais tout est bien expliqué. Le badge, les rivières, la machine à grains…"
+        },
+        {
+          "n": 3,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/03_camille.mp3",
+          "text": "La machine à grains, c’est l’épreuve d’intégration. Si tu ne t’es pas brûlé les doigts au moins une fois pendant la première semaine, tu n’es pas vraiment des nôtres."
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/04_maeve.mp3",
+          "text": "Haha, j’ai été prévenue !"
+        },
+        {
+          "n": 5,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/05_sebastien.mp3",
+          "text": "Bon, on prend quoi ? Moi, le plat du jour, c’est du lieu noir au beurre blanc. Je tente."
+        },
+        {
+          "n": 6,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/06_raphael.mp3",
+          "text": "Moi, je vais au bar à salades, j’ai besoin de verdure aujourd’hui."
+        },
+        {
+          "n": 7,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/07_camille.mp3",
+          "text": "C’est lundi, y a le buffet italien. Je prends des pâtes à la tomate, ça me suffira. Et toi, Maeve ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/08_maeve.mp3",
+          "text": "Je regarde. Le lieu noir, c’est quoi exactement ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/09_sebastien.mp3",
+          "text": "C’est un poisson, genre cabillaud mais un peu plus fort en goût. C’est pas mal, franchement."
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/10_maeve.mp3",
+          "text": "OK, je prends le poisson aussi. Le beurre blanc, c’est très nantais, non ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/11_camille.mp3",
+          "text": "Complètement. C’est la sauce de référence ici. Si tu ne l’as jamais goûté, c’est le bon moment."
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/12_maeve.mp3",
+          "text": "Parfait. Allons-y."
+        },
+        {
+          "n": 13,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/13_camille.mp3",
+          "text": "Bon, Maeve, première question importante. Tu loges où, pour l’instant ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/14_maeve.mp3",
+          "text": "Pour l’instant, je suis en location meublée courte durée dans le centre, du côté de Graslin. Mais je vais chercher quelque chose de plus stable à partir du mois prochain."
+        },
+        {
+          "n": 15,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/15_sebastien.mp3",
+          "text": "Graslin, c’est sympa mais c’est cher. Tu vises quel genre de quartier pour ta vraie recherche ?"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/16_maeve.mp3",
+          "text": "Je sais pas trop encore. J’aime bien être proche du tram, pour venir au boulot sans voiture. Et je cherche quelque chose de vivant, mais pas fou non plus — j’aime bien dormir la nuit."
+        },
+        {
+          "n": 17,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/17_raphael.mp3",
+          "text": "Les Hauts-Pavés, c’est un bon compromis. C’est un peu plus au nord, c’est vivant, y a des commerces, y a des bars tranquilles, et le tram est juste à côté."
+        },
+        {
+          "n": 18,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/18_camille.mp3",
+          "text": "Ouais, les Hauts-Pavés, ou même l’île de Nantes. L’île, c’est plus récent, plus moderne. Les loyers sont un peu plus élevés, mais t’as la Loire juste à côté, et les Machines de l’île, et le Hangar à Bananes le week-end."
+        },
+        {
+          "n": 19,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/19_maeve.mp3",
+          "text": "Le Hangar à Bananes ?"
+        },
+        {
+          "n": 20,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/20_sebastien.mp3",
+          "text": "C’est un ancien quai, ils en ont fait une zone de bars et de restos au bord de l’eau. L’été, c’est vivant, c’est agréable."
+        },
+        {
+          "n": 21,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/21_camille.mp3",
+          "text": "Évite Malakoff, par contre. Enfin, évite pas — ça reste Nantes — mais pour un premier appart, je te conseille pas, c’est un peu moins sympa comme quartier."
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/22_maeve.mp3",
+          "text": "Noté, merci. Et vous, vous habitez où ?"
+        },
+        {
+          "n": 23,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/23_raphael.mp3",
+          "text": "Moi, chez mes parents, encore. Honte à moi. Je cherche depuis six mois, mais les loyers, franchement…"
+        },
+        {
+          "n": 24,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/24_camille.mp3",
+          "text": "Moi, au Bouffay, c’est le centre historique. C’est hyper pratique pour sortir le soir. Par contre, y a du bruit le vendredi soir, je dors avec des boules Quiès."
+        },
+        {
+          "n": 25,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/25_sebastien.mp3",
+          "text": "Moi, j’habite Rezé, juste de l’autre côté de la Loire. C’est la banlieue sud de Nantes, mais c’est cool, j’ai un petit jardin, et c’est cinq stations de tram."
+        },
+        {
+          "n": 26,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/26_camille.mp3",
+          "text": "Sinon, question vraiment importante : Maeve, tu fais du sport, toi ?"
+        },
+        {
+          "n": 27,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/27_maeve.mp3",
+          "text": "Oui, j’aime bien courir, et je fais du yoga une fois par semaine quand j’y pense."
+        },
+        {
+          "n": 28,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/28_raphael.mp3",
+          "text": "Ah, parfait ! On a un match amical entre collègues tous les jeudis soir, à l’île de Nantes, sur le terrain à côté de l’entrepôt. C’est mixte, c’est très détendu, c’est vraiment pas de la compétition, c’est surtout pour le plaisir."
+        },
+        {
+          "n": 29,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/29_camille.mp3",
+          "text": "Surtout pour boire une bière après, tu veux dire."
+        },
+        {
+          "n": 30,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/30_raphael.mp3",
+          "text": "Ça fait partie de l’activité, oui."
+        },
+        {
+          "n": 31,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/31_maeve.mp3",
+          "text": "Je veux bien essayer. Je suis pas forte en foot, mais je peux courir."
+        },
+        {
+          "n": 32,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/32_sebastien.mp3",
+          "text": "Franchement, tu feras déjà mieux que moi dès ton premier match."
+        },
+        {
+          "n": 33,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/33_camille.mp3",
+          "text": "Au fait, vous avez vu le dossier Garonne Énergie vendredi ? Le client veut tout revoir, encore."
+        },
+        {
+          "n": 34,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/34_raphael.mp3",
+          "text": "Oh non, sérieusement ?"
+        },
+        {
+          "n": 35,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/35_camille.mp3",
+          "text": "Ouais, il a envoyé un mail à vingt-deux heures vendredi soir. Du grand classique. En gros, il veut « plus d’impact », « plus de modernité », mais il peut pas nous dire ce que ça veut dire."
+        },
+        {
+          "n": 36,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/36_sebastien.mp3",
+          "text": "Ah, on est en pleine période de retours flous, là."
+        },
+        {
+          "n": 37,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/37_maeve.mp3",
+          "text": "Qu’est-ce que vous faites, dans ce cas ?"
+        },
+        {
+          "n": 38,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/38_camille.mp3",
+          "text": "On propose trois directions visuelles différentes, et on le laisse choisir. Comme ça, il s’approprie le choix, et on reprend la main. C’est un classique du métier."
+        },
+        {
+          "n": 39,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/39_raphael.mp3",
+          "text": "Elle est pas mal, cette technique. Ça marche huit fois sur dix."
+        },
+        {
+          "n": 40,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/40_sebastien.mp3",
+          "text": "Et les deux autres fois, il te rappelle le vendredi à dix-sept heures avec une nouvelle idée."
+        },
+        {
+          "n": 41,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/41_maeve.mp3",
+          "text": "Ha ha, ça existe aussi aux États-Unis, ça."
+        },
+        {
+          "n": 42,
+          "speaker": "Camille",
+          "audio": "audio/04_dejeuner_cantine/lines/42_camille.mp3",
+          "text": "Bon, on y retourne ? Moi, j’ai un call à quatorze heures."
+        },
+        {
+          "n": 43,
+          "speaker": "Raphaël",
+          "audio": "audio/04_dejeuner_cantine/lines/43_raphael.mp3",
+          "text": "Je te rejoins, je passe juste aux toilettes."
+        },
+        {
+          "n": 44,
+          "speaker": "Sébastien",
+          "audio": "audio/04_dejeuner_cantine/lines/44_sebastien.mp3",
+          "text": "Bonne aprem, Maeve. Bienvenue, vraiment."
+        },
+        {
+          "n": 45,
+          "speaker": "Maeve",
+          "audio": "audio/04_dejeuner_cantine/lines/45_maeve.mp3",
+          "text": "Merci ! À tout à l’heure."
+        }
+      ]
+    },
+    {
+      "id": "05_reunion_lundi",
+      "title": "La réunion d'équipe du lundi",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/01_ludo.mp3",
+          "text": "Bon, salut tout le monde, on va pouvoir démarrer. Il est dix heures trois, on a dix minutes devant nous. Pour rappel, aujourd’hui on accueille officiellement Maeve dans l’équipe. Maeve, bienvenue, on est contents de t’avoir avec nous."
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "audio": "audio/05_reunion_lundi/lines/02_maeve.mp3",
+          "text": "Merci Ludo, moi aussi je suis contente d’être là."
+        },
+        {
+          "n": 3,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/03_ludo.mp3",
+          "text": "Bon, deux points généraux avant le tour de table. Un : la visite client de l’agence régionale des Pays de la Loire, c’est jeudi après-midi. Ils arrivent à quatorze heures, ils restent deux heures. Camille et moi on pilote, mais si certains d’entre vous veulent passer dire bonjour, c’est bienvenu. Deux : Anaïs, tu voulais dire un mot sur le séminaire ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Anaïs",
+          "audio": "audio/05_reunion_lundi/lines/04_anais.mp3",
+          "text": "Oui, rapidement. Le séminaire annuel, c’est confirmé pour les jeudi et vendredi de la deuxième semaine de décembre, à Guérande. J’envoie les infos pratiques cette semaine."
+        },
+        {
+          "n": 5,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/05_ludo.mp3",
+          "text": "Parfait, merci. Bon, on fait le tour. Raphaël, tu commences ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Raphaël",
+          "audio": "audio/05_reunion_lundi/lines/06_raphael.mp3",
+          "text": "Ouais, alors la semaine dernière j’ai fini la deuxième version de la maquette Garonne Énergie, avec les retours qu’on a intégrés. Cette semaine, je bosse sur la direction artistique pour la nouvelle collection Peillon Mobilier. Point bloquant : j’ai toujours pas reçu les visuels haute définition du photographe, alors qu’ils devaient arriver vendredi. Je relance ce matin, mais si ça coince, on va avoir un souci sur le rétroplanning."
+        },
+        {
+          "n": 7,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/07_ludo.mp3",
+          "text": "C’est Studio Atlantique, ça ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Raphaël",
+          "audio": "audio/05_reunion_lundi/lines/08_raphael.mp3",
+          "text": "Ouais."
+        },
+        {
+          "n": 9,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/09_ludo.mp3",
+          "text": "OK. Si tu n’as rien aujourd’hui à midi, tu me transfères le dernier mail et je les appelle moi-même. C’est pas la première fois qu’ils nous font le coup."
+        },
+        {
+          "n": 10,
+          "speaker": "Raphaël",
+          "audio": "audio/05_reunion_lundi/lines/10_raphael.mp3",
+          "text": "Merci Ludo."
+        },
+        {
+          "n": 11,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/11_ludo.mp3",
+          "text": "Camille ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Camille",
+          "audio": "audio/05_reunion_lundi/lines/12_camille.mp3",
+          "text": "Moi, la semaine dernière, j’ai livré la charte graphique pour le musée Jules-Verne, j’attends leur retour. Je lance cette semaine la nouvelle vague pour Ouest-France, sur les rubriques lifestyle. Jeudi, je suis sur la visite client avec Ludo. Sinon, pas de point bloquant. Ah si, un truc : je prends mon mercredi après-midi en RTT cette semaine, pour le rendez-vous à l’école de ma fille."
+        },
+        {
+          "n": 13,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/13_ludo.mp3",
+          "text": "Noté, pas de souci."
+        },
+        {
+          "n": 14,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/14_ludo.mp3",
+          "text": "Sébastien ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Sébastien",
+          "audio": "audio/05_reunion_lundi/lines/15_sebastien.mp3",
+          "text": "Alors, sur la semaine qui vient de passer, j’ai fini la migration du back-office vers le nouvel hébergement. Ça s’est passé sans accroc. Cette semaine, je m’attaque à la refonte du tunnel de commande pour Peillon — toujours le même client. J’ai besoin des éléments de Raphaël vers jeudi, donc si les visuels arrivent d’ici là, c’est parfait. Pas de point bloquant pour moi."
+        },
+        {
+          "n": 16,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/16_ludo.mp3",
+          "text": "OK. Maeve, à toi. Tu veux te lancer, pour ta première fois ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Maeve",
+          "audio": "audio/05_reunion_lundi/lines/17_maeve.mp3",
+          "text": "Oui, avec plaisir. Alors, comme vous le savez, j’ai commencé ce matin. J’ai fait ma visite avec Anaïs, et j’ai rencontré l’équipe. Raphaël m’a briefée sur Garonne Énergie. Cette semaine, je vais prendre en main le dossier, reprendre les retours clients des dernières versions, et je pense pouvoir proposer une troisième version d’ici vendredi. Pas de point bloquant, je vais surtout lire et me mettre à niveau."
+        },
+        {
+          "n": 18,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/18_ludo.mp3",
+          "text": "Super. Mets-toi à ton rythme. Si tu as besoin d’aide, Raphaël est à côté de toi, et Camille connaît le client par cœur, elle peut t’aider si tu veux comprendre leurs manies."
+        },
+        {
+          "n": 19,
+          "speaker": "Maeve",
+          "audio": "audio/05_reunion_lundi/lines/19_maeve.mp3",
+          "text": "D’accord, merci."
+        },
+        {
+          "n": 20,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/20_ludo.mp3",
+          "text": "Bon, décisions. Un : Raphaël, tu me transfères le mail Studio Atlantique avant midi, j’appelle cet après-midi. Deux : Sébastien, tu prévois un créneau avec Raphaël jeudi matin pour récupérer les visuels dès qu’ils arrivent. Trois : Camille, tu dégages une heure dans la semaine pour briefer Maeve sur l’historique Garonne Énergie, tu te cales avec elle directement."
+        },
+        {
+          "n": 21,
+          "speaker": "Camille",
+          "audio": "audio/05_reunion_lundi/lines/21_camille.mp3",
+          "text": "Impec, je te bloque ça, Maeve, je t’envoie une invit'."
+        },
+        {
+          "n": 22,
+          "speaker": "Ludo",
+          "audio": "audio/05_reunion_lundi/lines/22_ludo.mp3",
+          "text": "Bien. Autre chose ? Non ? Bon, ben, on se revoit jeudi pour la revue, allez, bon café."
+        },
+        {
+          "n": 23,
+          "speaker": "Sébastien",
+          "audio": "audio/05_reunion_lundi/lines/23_sebastien.mp3",
+          "text": "Bon café !"
+        }
+      ]
+    }
+  ]
+}

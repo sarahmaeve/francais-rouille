@@ -5,6 +5,8 @@ level = "B2"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
 footer_suffix = "Niveau B2 — Toulouse médiévale"
+dictee = true
+translation = true
 
 # --- Carte ---
 

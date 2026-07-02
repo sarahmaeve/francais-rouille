@@ -5,6 +5,8 @@ level = "B1"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
 footer_suffix = "Niveau B1 — Au centre commercial"
+dictee = true
+translation = true
 
 # --- Carte et Textes ---
 
@@ -61,4 +63,10 @@ heading = "Référence"
 slug = "vocabulaire"
 title = "Vocabulaire"
 description = "Mots et expressions clés avec traductions en anglais."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez vos connaissances"
+description = "Choix multiple, dictée et traduction."
 type = "static"

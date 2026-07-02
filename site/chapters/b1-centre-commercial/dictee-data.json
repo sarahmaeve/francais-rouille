@@ -1,0 +1,647 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "01_courses_carrefour",
+      "title": "Les courses au Carrefour",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/01_alice.mp3",
+          "text": "Bon, on est enfin au Carrefour. C’est immense ici, non ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/02_paul.mp3",
+          "text": "Oui, c’est beaucoup plus grand que le petit magasin à côté de chez nous. Par où on commence ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/03_alice.mp3",
+          "text": "On a besoin d’oignons, de Coca light et de viande de bœuf. On commence par les légumes, c’est juste là."
+        },
+        {
+          "n": 4,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/04_paul.mp3",
+          "text": "D’accord. Ah, je vois les pommes de terre et les carottes, mais je ne trouve pas les oignons."
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/05_alice.mp3",
+          "text": "Moi non plus. On va demander à quelqu’un. Excusez-moi, monsieur, est-ce que vous pouvez nous aider ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Employé",
+          "audio": "audio/01_courses_carrefour/lines/06_employe.mp3",
+          "text": "Bien sûr, qu’est-ce que vous cherchez ?"
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/07_alice.mp3",
+          "text": "On cherche des oignons. On ne les trouve pas dans le rayon."
+        },
+        {
+          "n": 8,
+          "speaker": "Employé",
+          "audio": "audio/01_courses_carrefour/lines/08_employe.mp3",
+          "text": "Les oignons, c’est au bout de l’allée, à gauche après les poireaux. On vient de les remettre en rayon."
+        },
+        {
+          "n": 9,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/09_paul.mp3",
+          "text": "Merci. Et pour la viande de bœuf, c’est où exactement ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Employé",
+          "audio": "audio/01_courses_carrefour/lines/10_employe.mp3",
+          "text": "La boucherie est au fond du magasin, après les produits laitiers. Vous allez voir le comptoir avec le boucher."
+        },
+        {
+          "n": 11,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/11_alice.mp3",
+          "text": "Il y a aussi de la viande en barquette, non ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Employé",
+          "audio": "audio/01_courses_carrefour/lines/12_employe.mp3",
+          "text": "Oui, il y a le rayon libre-service juste à côté de la boucherie. Vous trouverez des steaks, des rôtis et de la viande à mijoter."
+        },
+        {
+          "n": 13,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/13_paul.mp3",
+          "text": "Super. Et le Coca light, c’est dans quel rayon ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Employé",
+          "audio": "audio/01_courses_carrefour/lines/14_employe.mp3",
+          "text": "Les boissons sont dans l’allée sept. Le Coca, c’est à côté des eaux gazeuses."
+        },
+        {
+          "n": 15,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/15_alice.mp3",
+          "text": "Allée sept, d’accord. Merci beaucoup, monsieur."
+        },
+        {
+          "n": 16,
+          "speaker": "Employé",
+          "audio": "audio/01_courses_carrefour/lines/16_employe.mp3",
+          "text": "De rien. Bon courage pour vos courses !"
+        },
+        {
+          "n": 17,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/17_paul.mp3",
+          "text": "Il a dit allée sept pour le Coca light. Tu veux y aller pendant que je vais à la boucherie ?"
+        },
+        {
+          "n": 18,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/18_alice.mp3",
+          "text": "Bonne idée. On se retrouve aux caisses dans quinze minutes ?"
+        },
+        {
+          "n": 19,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/19_paul.mp3",
+          "text": "Ça marche. N’oublie pas de prendre un pack de six, le dernier n’a duré que trois jours."
+        },
+        {
+          "n": 20,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/20_alice.mp3",
+          "text": "Oui, je vais en prendre deux, comme ça on est tranquilles pour la semaine. Prends des entrecôtes si elles ne sont pas trop chères."
+        },
+        {
+          "n": 21,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/21_paul.mp3",
+          "text": "Et si elles sont trop chères ?"
+        },
+        {
+          "n": 22,
+          "speaker": "Alice",
+          "audio": "audio/01_courses_carrefour/lines/22_alice.mp3",
+          "text": "Prends du faux-filet alors, c’est très bien aussi pour le barbecue."
+        },
+        {
+          "n": 23,
+          "speaker": "Paul",
+          "audio": "audio/01_courses_carrefour/lines/23_paul.mp3",
+          "text": "OK. À tout à l’heure !"
+        }
+      ]
+    },
+    {
+      "id": "02_chaussures_sport",
+      "title": "À la recherche de chaussures de sport",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "audio": "audio/02_chaussures_sport/lines/01_alice.mp3",
+          "text": "Paul, il te faut des chaussures de course, non ? On devrait en profiter pendant qu’on est ici."
+        },
+        {
+          "n": 2,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/02_paul.mp3",
+          "text": "Oui, les miennes sont complètement usées. Mais il y a un magasin de sport dans ce centre commercial ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "audio": "audio/02_chaussures_sport/lines/03_alice.mp3",
+          "text": "Je ne sais pas, on va regarder le plan. Tiens, il y a un panneau là-bas."
+        },
+        {
+          "n": 4,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/04_paul.mp3",
+          "text": "Alors… Carrefour en bas, des boutiques de vêtements au premier étage… Ah, il y a un Intersport au deuxième étage."
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "audio": "audio/02_chaussures_sport/lines/05_alice.mp3",
+          "text": "Intersport, c’est parfait. On prend l’escalator ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/06_paul.mp3",
+          "text": "Oui, allons-y. C’est à côté de quoi ?"
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "audio": "audio/02_chaussures_sport/lines/07_alice.mp3",
+          "text": "D’après le plan, c’est au deuxième étage, à côté de la Fnac."
+        },
+        {
+          "n": 8,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/08_paul.mp3",
+          "text": "OK, je le vois. Allez, on entre ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/09_vendeuse.mp3",
+          "text": "Bonjour ! Je peux vous aider ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/10_paul.mp3",
+          "text": "Bonjour. Je cherche des chaussures de course. Je fais du jogging trois fois par semaine."
+        },
+        {
+          "n": 11,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/11_vendeuse.mp3",
+          "text": "D’accord. Vous faites quelle pointure ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/12_paul.mp3",
+          "text": "Euh… en pointure française, je ne suis pas sûr. Aux États-Unis, je fais du 10."
+        },
+        {
+          "n": 13,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/13_vendeuse.mp3",
+          "text": "Ça correspond à peu près à un 43 ou un 44. On va essayer les deux. Vous courez sur quel terrain ? Sur route ou sur des chemins ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/14_paul.mp3",
+          "text": "Surtout sur route. Parfois sur des chemins de terre, mais c’est rare."
+        },
+        {
+          "n": 15,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/15_vendeuse.mp3",
+          "text": "Alors je vous recommande un modèle avec un bon amorti. Regardez, on a celles-ci en promotion. Elles étaient à quatre-vingt-dix euros, maintenant elles sont à soixante-cinq."
+        },
+        {
+          "n": 16,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/16_paul.mp3",
+          "text": "Ah, c’est une bonne affaire. Je peux les essayer en 43 ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/17_vendeuse.mp3",
+          "text": "Bien sûr, je vais les chercher en réserve. Asseyez-vous, j’en ai pour une minute."
+        },
+        {
+          "n": 18,
+          "speaker": "Alice",
+          "audio": "audio/02_chaussures_sport/lines/18_alice.mp3",
+          "text": "Elles sont pas mal, celles-là. La couleur te plaît ?"
+        },
+        {
+          "n": 19,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/19_paul.mp3",
+          "text": "La couleur, je m’en fiche, du moment qu’elles sont confortables."
+        },
+        {
+          "n": 20,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/20_vendeuse.mp3",
+          "text": "Voilà, le 43. Essayez avec les deux pieds, c’est important."
+        },
+        {
+          "n": 21,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/21_paul.mp3",
+          "text": "Elles sont confortables. Mais elles serrent un peu au niveau des orteils."
+        },
+        {
+          "n": 22,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/22_vendeuse.mp3",
+          "text": "Je vais chercher le 44 alors. Ça arrive souvent avec cette marque, ils taillent un peu petit."
+        },
+        {
+          "n": 23,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/23_paul.mp3",
+          "text": "Merci."
+        },
+        {
+          "n": 24,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/24_vendeuse.mp3",
+          "text": "Voilà le 44. Essayez celles-ci."
+        },
+        {
+          "n": 25,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/25_paul.mp3",
+          "text": "Ah oui, c’est beaucoup mieux. Elles me vont très bien. Alice, qu’est-ce que tu en penses ?"
+        },
+        {
+          "n": 26,
+          "speaker": "Alice",
+          "audio": "audio/02_chaussures_sport/lines/26_alice.mp3",
+          "text": "Elles sont très bien. Et à soixante-cinq euros, on ne va pas trouver mieux."
+        },
+        {
+          "n": 27,
+          "speaker": "Paul",
+          "audio": "audio/02_chaussures_sport/lines/27_paul.mp3",
+          "text": "D’accord, je les prends. Vous acceptez la carte bancaire ?"
+        },
+        {
+          "n": 28,
+          "speaker": "Vendeuse",
+          "audio": "audio/02_chaussures_sport/lines/28_vendeuse.mp3",
+          "text": "Oui, bien sûr. La caisse est par ici."
+        }
+      ]
+    },
+    {
+      "id": "03_yves_rocher",
+      "title": "Chez Yves Rocher — Soins et shampoings",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/01_alice.mp3",
+          "text": "Bonjour, madame. Je cherche un soin pour le visage et un shampoing réparateur."
+        },
+        {
+          "n": 2,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/02_conseillere.mp3",
+          "text": "Bonjour ! Bienvenue chez Yves Rocher. Pour le soin du visage, vous avez quel type de peau ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/03_alice.mp3",
+          "text": "Je pense que j’ai la peau mixte. J’ai le front un peu gras, mais les joues sont plutôt sèches."
+        },
+        {
+          "n": 4,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/04_conseillere.mp3",
+          "text": "D’accord, c’est très courant. Je vous recommande notre crème hydratante pour peaux mixtes. Elle est légère et elle ne rend pas la peau grasse."
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/05_alice.mp3",
+          "text": "Ça a l’air bien. Et elle protège du soleil aussi ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/06_conseillere.mp3",
+          "text": "Celle-ci n’a pas de protection solaire. Mais on a une version avec un indice 30 si vous voulez. En Bretagne, même quand il fait gris, le soleil peut être fort."
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/07_alice.mp3",
+          "text": "Ah oui, bonne idée. Je vais prendre celle avec la protection solaire. C’est combien ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/08_conseillere.mp3",
+          "text": "Elle est à vingt-deux euros. Et en ce moment, on a une offre : pour deux produits achetés, le troisième est à moitié prix."
+        },
+        {
+          "n": 9,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/09_alice.mp3",
+          "text": "Ah, c’est intéressant. Alors parlons du shampoing. Mes cheveux sont très abîmés à cause du sel et du vent ici, au bord de la mer."
+        },
+        {
+          "n": 10,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/10_conseillere.mp3",
+          "text": "Oui, le sel et le vent abîment beaucoup les cheveux, c’est un problème classique sur la côte. On a une gamme réparatrice qui marche très bien. Ce shampoing nourrit les cheveux en profondeur."
+        },
+        {
+          "n": 11,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/11_alice.mp3",
+          "text": "Il est à base de quoi ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/12_conseillere.mp3",
+          "text": "C’est à base de beurre de karité et d’huile de jojoba. Tout est d’origine végétale, c’est notre spécialité chez Yves Rocher."
+        },
+        {
+          "n": 13,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/13_alice.mp3",
+          "text": "Super. Et il y a un après-shampoing qui va avec ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/14_conseillere.mp3",
+          "text": "Oui, on a le masque réparateur de la même gamme. Vous le laissez poser cinq minutes après le shampoing, et ça fait vraiment la différence. On le recommande une ou deux fois par semaine."
+        },
+        {
+          "n": 15,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/15_alice.mp3",
+          "text": "D’accord. Et avec l’offre, ça fait combien pour les trois produits ?"
+        },
+        {
+          "n": 16,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/16_conseillere.mp3",
+          "text": "Alors, la crème à vingt-deux euros, le shampoing à douze euros, et le masque réparateur qui est normalement à quinze euros passe à sept euros cinquante avec la réduction. Ça fait quarante et un euros cinquante en tout."
+        },
+        {
+          "n": 17,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/17_alice.mp3",
+          "text": "Très bien, je prends les trois. Vous avez un programme de fidélité ?"
+        },
+        {
+          "n": 18,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/18_conseillere.mp3",
+          "text": "Oui, vous avez une carte de fidélité ? On peut vous en créer une, c’est gratuit."
+        },
+        {
+          "n": 19,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/19_alice.mp3",
+          "text": "Non, je n’en ai pas, mais je veux bien en créer une. On ne sait jamais, je reviendrai peut-être."
+        },
+        {
+          "n": 20,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/20_conseillere.mp3",
+          "text": "Parfait, il me faut juste une adresse mail. Je vous emballe tout ça."
+        },
+        {
+          "n": 21,
+          "speaker": "Alice",
+          "audio": "audio/03_yves_rocher/lines/21_alice.mp3",
+          "text": "Merci beaucoup, vous m’avez très bien conseillée."
+        },
+        {
+          "n": 22,
+          "speaker": "Conseillère",
+          "audio": "audio/03_yves_rocher/lines/22_conseillere.mp3",
+          "text": "Avec plaisir. Bonne journée !"
+        }
+      ]
+    },
+    {
+      "id": "04_restaurant_traiteur",
+      "title": "Où manger ? — Le traiteur et le restaurant",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/01_alice.mp3",
+          "text": "Paul, j’ai faim. Ça fait deux heures qu’on fait les magasins. On mange quelque chose ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/02_paul.mp3",
+          "text": "Oui, moi aussi. Il y a quoi comme restaurants dans ce centre commercial ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/03_alice.mp3",
+          "text": "Il y a un McDonald's, mais on n’a pas traversé l’Atlantique pour manger chez McDo. Regarde, il y a un traiteur là-bas. C’est quoi exactement, un traiteur ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/04_paul.mp3",
+          "text": "Si j’ai bien compris, c’est un magasin qui vend des plats préparés. De la cuisine toute faite, mais de qualité. On peut acheter un plat et le manger sur place ou l’emporter."
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/05_alice.mp3",
+          "text": "Ah, un peu comme un deli aux États-Unis ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/06_paul.mp3",
+          "text": "Oui, en quelque sorte. Mais en plus raffiné. Regarde la vitrine, ça a l’air délicieux."
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/07_alice.mp3",
+          "text": "C’est vrai. Mais je ne comprends pas la moitié des plats. C’est quoi, un parmentier de canard ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/08_paul.mp3",
+          "text": "Aucune idée. On demande ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/09_alice.mp3",
+          "text": "Non, attends. Il y a aussi un petit restaurant juste à côté. On pourrait s’asseoir et commander tranquillement. J’ai mal aux pieds."
+        },
+        {
+          "n": 10,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/10_paul.mp3",
+          "text": "Bonne idée. Allons voir s’ils ont de la place."
+        },
+        {
+          "n": 11,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/11_serveur.mp3",
+          "text": "Bonjour, vous êtes deux ? Vous voulez déjeuner ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/12_alice.mp3",
+          "text": "Oui, s’il vous plaît. Est-ce qu’on peut voir la carte avant de s’installer ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/13_serveur.mp3",
+          "text": "Bien sûr, voilà la carte. Aujourd’hui, le plat du jour, c’est un filet de cabillaud avec du riz et des légumes, à treize euros."
+        },
+        {
+          "n": 14,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/14_paul.mp3",
+          "text": "Merci. On regarde et on vous dit."
+        },
+        {
+          "n": 15,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/15_alice.mp3",
+          "text": "Alors, voyons… Qu’est-ce que c’est, des rillettes ?"
+        },
+        {
+          "n": 16,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/16_paul.mp3",
+          "text": "C’est de la viande effilochée, en général du porc. On l’étale sur du pain. C’est une spécialité française."
+        },
+        {
+          "n": 17,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/17_alice.mp3",
+          "text": "Ah, un peu comme du pulled pork en pâté ? Ça me tente. Et un croque-monsieur, on connaît, c’est facile."
+        },
+        {
+          "n": 18,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/18_paul.mp3",
+          "text": "Moi, je vais prendre le plat du jour. Le cabillaud, c’est de la morue, non ?"
+        },
+        {
+          "n": 19,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/19_serveur.mp3",
+          "text": "Presque ! C’est le même poisson, mais en France, on dit cabillaud quand il est frais, et morue quand il est séché et salé. Aujourd’hui, le nôtre est bien frais, vous allez voir."
+        },
+        {
+          "n": 20,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/20_alice.mp3",
+          "text": "Ah, bonne idée, le cabillaud. C’est léger. Et comme boisson, on prend quoi ?"
+        },
+        {
+          "n": 21,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/21_paul.mp3",
+          "text": "Une carafe d’eau, c’est gratuit ici en France, non ?"
+        },
+        {
+          "n": 22,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/22_alice.mp3",
+          "text": "Oui, on peut demander une carafe d’eau du robinet. C’est normal au restaurant. Mais je prendrais bien un petit verre de cidre aussi, on est en Bretagne après tout."
+        },
+        {
+          "n": 23,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/23_serveur.mp3",
+          "text": "Vous avez choisi ?"
+        },
+        {
+          "n": 24,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/24_alice.mp3",
+          "text": "Oui. Pour moi, les rillettes en entrée et un croque-monsieur. Et un verre de cidre brut, s’il vous plaît."
+        },
+        {
+          "n": 25,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/25_paul.mp3",
+          "text": "Et pour moi, le plat du jour, le cabillaud. Et une carafe d’eau, s’il vous plaît."
+        },
+        {
+          "n": 26,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/26_serveur.mp3",
+          "text": "Très bien. Vous voulez du pain avec ?"
+        },
+        {
+          "n": 27,
+          "speaker": "Paul",
+          "audio": "audio/04_restaurant_traiteur/lines/27_paul.mp3",
+          "text": "Oui, s’il vous plaît."
+        },
+        {
+          "n": 28,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/28_serveur.mp3",
+          "text": "Parfait, je vous apporte tout ça."
+        },
+        {
+          "n": 29,
+          "speaker": "Alice",
+          "audio": "audio/04_restaurant_traiteur/lines/29_alice.mp3",
+          "text": "Merci. Ah, et est-ce qu’on peut avoir la carte des desserts après ?"
+        },
+        {
+          "n": 30,
+          "speaker": "Serveur",
+          "audio": "audio/04_restaurant_traiteur/lines/30_serveur.mp3",
+          "text": "Bien sûr, je vous la donne avec les plats."
+        }
+      ]
+    }
+  ]
+}

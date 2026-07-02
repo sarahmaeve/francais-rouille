@@ -1,0 +1,215 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "01_histoire_cathares",
+      "title": "Toulouse médiévale et les Cathares",
+      "audio_base": "audio/01_histoire_cathares/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Isabelle",
+          "fr": "Bienvenue à Toulouse, la Ville rose. Nous sommes ici sur la place du Capitole, et je vais vous raconter l’histoire fascinante de cette ville au Moyen Âge.",
+          "en": "Welcome to Toulouse, the Pink City. We are here on the Place du Capitole, and I'm going to tell you the fascinating history of this city in the Middle Ages.",
+          "audio": "01_isabelle.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "fr": "Au douzième siècle, Toulouse était l’une des villes les plus importantes d’Europe. Les comtes de Toulouse régnaient sur un vaste territoire qui s’étendait de la Garonne jusqu’à la Provence. La ville jouissait d’une grande autonomie, gouvernée par ses capitouls — les magistrats élus par les bourgeois de la cité. C’était une époque de prospérité remarquable.",
+          "en": "In the 12th century, Toulouse was one of the most important cities in Europe. The Counts of Toulouse ruled over a vast territory that stretched from the Garonne to Provence. The city enjoyed great autonomy, governed by its capitouls — magistrates elected by the city's bourgeoisie. It was a time of remarkable prosperity.",
+          "audio": "02_isabelle.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Isabelle",
+          "fr": "Mais Toulouse était aussi au cœur d’un mouvement religieux qui allait bouleverser toute la région : le catharisme. Les Cathares — qu’on appelait aussi les « Bonshommes » ou les « Parfaits » — prêchaient une forme de christianisme radicalement différente de celle de Rome. Ils croyaient en un monde dualiste, où le bien et le mal s’affrontaient. Pour eux, le monde matériel avait été créé par une force mauvaise, et seul l’esprit était divin.",
+          "en": "But Toulouse was also at the heart of a religious movement that would upend the entire region: Catharism. The Cathars — also called the \"Good Men\" or the \"Perfects\" — preached a form of Christianity radically different from that of Rome. They believed in a dualist world, where good and evil were in conflict. For them, the material world had been created by an evil force, and only the spirit was divine.",
+          "audio": "03_isabelle.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "fr": "Les Cathares rejetaient la hiérarchie de l’Église catholique, ses sacrements et sa richesse. Ils vivaient dans la pauvreté et la simplicité. Leur message séduisait beaucoup de gens, y compris des nobles et des bourgeois du Languedoc. Les comtes de Toulouse, sans être eux-mêmes cathares, toléraient cette religion et refusaient de persécuter leurs sujets.",
+          "en": "The Cathars rejected the hierarchy of the Catholic Church, its sacraments, and its wealth. They lived in poverty and simplicity. Their message appealed to many people, including nobles and bourgeois of the Languedoc. The Counts of Toulouse, without being Cathars themselves, tolerated this religion and refused to persecute their subjects.",
+          "audio": "04_isabelle.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Isabelle",
+          "fr": "Cette tolérance allait provoquer la colère de Rome. En 1209, le pape Innocent III a lancé la croisade des Albigeois — la première croisade dirigée contre des chrétiens en terre chrétienne. Les armées du nord de la France sont descendues vers le sud, et rien ne serait plus jamais pareil pour Toulouse.",
+          "en": "This tolerance would provoke the wrath of Rome. In 1209, Pope Innocent III launched the Albigensian Crusade — the first crusade directed against Christians on Christian soil. The armies of northern France descended southward, and nothing would ever be the same for Toulouse.",
+          "audio": "05_isabelle.mp3"
+        }
+      ]
+    },
+    {
+      "id": "02_basilique_saint_sernin",
+      "title": "La basilique Saint-Sernin",
+      "audio_base": "audio/02_basilique_saint_sernin/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Isabelle",
+          "fr": "Nous voici devant la basilique Saint-Sernin, la plus grande église romane conservée d’Europe. Regardez ce clocher octogonal qui domine Toulouse — c’est l’un des symboles de la ville. Prenez le temps d’admirer l’harmonie de cette construction en brique rose et en pierre blanche.",
+          "en": "Here we are in front of the Basilique Saint-Sernin, the largest preserved Romanesque church in Europe. Look at this octagonal bell tower that dominates Toulouse — it's one of the city's symbols. Take a moment to admire the harmony of this construction in pink brick and white stone.",
+          "audio": "01_isabelle.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "fr": "La basilique porte le nom de saint Saturnin, le premier évêque de Toulouse, martyrisé en l’an 250. Selon la tradition, il a été attaché à un taureau furieux et traîné dans les rues de la ville. La rue du Taur, que nous avons empruntée tout à l’heure, tire son nom de cet épisode.",
+          "en": "The basilica is named after Saint Saturninus, the first bishop of Toulouse, martyred in the year 250. According to tradition, he was tied to a raging bull and dragged through the streets of the city. The Rue du Taur, which we walked along earlier, takes its name from this episode.",
+          "audio": "02_isabelle.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Isabelle",
+          "fr": "La construction de l’édifice actuel a commencé vers 1080 et s’est poursuivie pendant plus de deux siècles. L’église a été bâtie pour accueillir les reliques de saint Saturnin et pour recevoir les pèlerins qui se rendaient à Saint-Jacques-de-Compostelle. Toulouse se trouvait en effet sur la Via Tolosana, l’une des quatre grandes routes de pèlerinage qui traversaient la France.",
+          "en": "Construction of the current building began around 1080 and continued for more than two centuries. The church was built to house the relics of Saint Saturninus and to receive pilgrims traveling to Santiago de Compostela. Toulouse was situated on the Via Tolosana, one of the four great pilgrimage routes that crossed France.",
+          "audio": "03_isabelle.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "fr": "Observez l’architecture : la nef centrale est flanquée de doubles bas-côtés surmontés de tribunes. Cette disposition permettait de faire circuler un grand nombre de pèlerins dans le déambulatoire, autour du chœur, où ils pouvaient vénérer les reliques sans interrompre les offices. L’abside est ornée de chapelles rayonnantes, typiques de l’art roman de pèlerinage.",
+          "en": "Observe the architecture: the central nave is flanked by double side aisles topped with galleries. This layout allowed large numbers of pilgrims to circulate in the ambulatory, around the choir, where they could venerate the relics without interrupting the religious services. The apse is adorned with radiating chapels, typical of pilgrimage Romanesque art.",
+          "audio": "04_isabelle.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Isabelle",
+          "fr": "Il faut savoir que pendant la croisade des Albigeois, Saint-Sernin a joué un rôle important. C’était le cœur spirituel de la communauté toulousaine restée fidèle à Rome, face aux Cathares. Après la croisade, l’Inquisition y a tenu certaines de ses assemblées. Cette basilique a donc été le témoin silencieux des heures les plus sombres de Toulouse.",
+          "en": "It's important to know that during the Albigensian Crusade, Saint-Sernin played an important role. It was the spiritual heart of the Toulouse community that remained faithful to Rome, standing against the Cathars. After the crusade, the Inquisition held some of its assemblies here. This basilica was therefore the silent witness to Toulouse's darkest hours.",
+          "audio": "05_isabelle.mp3"
+        }
+      ]
+    },
+    {
+      "id": "03_questions_cathares",
+      "title": "Questions sur les Cathares",
+      "audio_base": "audio/03_questions_cathares/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Thomas",
+          "fr": "Excusez-moi, Isabelle. Vous avez dit que les Cathares rejetaient l’Église catholique. Mais est-ce qu’ils se considéraient quand même comme chrétiens ?",
+          "en": "Excuse me, Isabelle. You said the Cathars rejected the Catholic Church. But did they still consider themselves Christians?",
+          "audio": "01_thomas.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "fr": "Absolument. Les Cathares se voyaient comme les véritables chrétiens, les héritiers directs des apôtres. Ils lisaient l’Évangile de Jean avec une dévotion particulière et pratiquaient un seul sacrement qu’ils appelaient le consolamentum — une imposition des mains qui purifiait l’âme.",
+          "en": "Absolutely. The Cathars saw themselves as the true Christians, the direct heirs of the apostles. They read the Gospel of John with particular devotion and practiced a single sacrament they called the consolamentum — a laying on of hands that purified the soul.",
+          "audio": "02_isabelle.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Émilie",
+          "fr": "Et la croisade, elle a duré combien de temps exactement ?",
+          "en": "And the crusade, how long did it last exactly?",
+          "audio": "03_emilie.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "fr": "La croisade des Albigeois a duré vingt ans, de 1209 à 1229. Mais les persécutions ont continué bien après. Le premier grand massacre a eu lieu à Béziers, en 1209, où les croisés ont tué des milliers de personnes — cathares et catholiques confondus. C’est là qu’on attribue au légat papal Arnaud Amaury la phrase terrible : « Tuez-les tous, Dieu reconnaîtra les siens. »",
+          "en": "The Albigensian Crusade lasted twenty years, from 1209 to 1229. But the persecutions continued long after. The first great massacre took place at Béziers, in 1209, where the crusaders killed thousands of people — Cathars and Catholics alike. It is there that the papal legate Arnaud Amaury is attributed the terrible phrase: \"Kill them all, God will recognize his own.\"",
+          "audio": "04_isabelle.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Thomas",
+          "fr": "C’est effroyable. Et Toulouse, elle a été attaquée aussi ?",
+          "en": "That's horrifying. And Toulouse, was it attacked too?",
+          "audio": "05_thomas.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Isabelle",
+          "fr": "Toulouse a été assiégée plusieurs fois. Le comte Raymond VI a d’abord été contraint de se soumettre, puis il s’est révolté. En 1218, Simon de Montfort, le chef des croisés, a été tué pendant le siège de Toulouse par une pierre lancée depuis les remparts — probablement par des femmes qui défendaient la ville.",
+          "en": "Toulouse was besieged several times. Count Raymond VI was first forced to submit, then he revolted. In 1218, Simon de Montfort, the leader of the crusaders, was killed during the siege of Toulouse by a stone launched from the ramparts — probably by women who were defending the city.",
+          "audio": "06_isabelle.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Émilie",
+          "fr": "Qu’est-il arrivé aux Cathares après la croisade ?",
+          "en": "What happened to the Cathars after the crusade?",
+          "audio": "07_emilie.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Isabelle",
+          "fr": "L’Inquisition a été créée en 1233, précisément pour traquer les derniers Cathares. Le dernier grand bûcher a eu lieu à Montségur, en 1244, où plus de deux cents Parfaits ont choisi de mourir plutôt que de renier leur foi. Le catharisme a progressivement disparu au cours du quatorzième siècle.",
+          "en": "The Inquisition was created in 1233, precisely to hunt down the last Cathars. The last great burning took place at Montségur, in 1244, where more than two hundred Perfects chose to die rather than renounce their faith. Catharism gradually disappeared over the course of the 14th century.",
+          "audio": "08_isabelle.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Thomas",
+          "fr": "C’est une histoire tragique. Merci de nous l’avoir racontée avec autant de détails.",
+          "en": "It's a tragic story. Thank you for telling it to us with such detail.",
+          "audio": "09_thomas.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Isabelle",
+          "fr": "C’est une histoire qu’il faut connaître. Elle nous rappelle les dangers de l’intolérance religieuse. Allons maintenant voir un lieu directement lié à cette histoire — l’église des Jacobins.",
+          "en": "It's a story that must be known. It reminds us of the dangers of religious intolerance. Let's now go see a place directly connected to this history — the Église des Jacobins.",
+          "audio": "10_isabelle.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04_dominicains_jacobins",
+      "title": "L'ordre des Dominicains et l'église des Jacobins",
+      "audio_base": "audio/04_dominicains_jacobins/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Isabelle",
+          "fr": "Nous sommes maintenant devant l’église des Jacobins, l’un des plus beaux monuments gothiques du Midi de la France. Mais avant d’admirer l’architecture, laissez-moi vous expliquer pourquoi ce lieu existe.",
+          "en": "We are now in front of the Église des Jacobins, one of the most beautiful Gothic monuments in the south of France. But before we admire the architecture, let me explain why this place exists.",
+          "audio": "01_isabelle.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "fr": "En 1215, un prêtre castillan nommé Dominique de Guzmán est arrivé à Toulouse avec une mission : combattre l’hérésie cathare, non pas par les armes, mais par la parole et par l’exemple. Dominique avait voyagé dans le Languedoc pendant des années et il avait compris que les Cathares séduisaient le peuple parce qu’ils vivaient dans la pauvreté, contrairement aux prélats catholiques qui étalaient leur richesse.",
+          "en": "In 1215, a Castilian priest named Dominic de Guzmán arrived in Toulouse with a mission: to combat the Cathar heresy, not with weapons, but with words and example. Dominic had traveled through the Languedoc for years and he had understood that the Cathars attracted the people because they lived in poverty, unlike the Catholic prelates who displayed their wealth.",
+          "audio": "02_isabelle.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Isabelle",
+          "fr": "Dominique a donc fondé un ordre de frères prêcheurs — les Dominicains — qui devaient vivre dans la même austérité que les Cathares tout en prêchant la doctrine catholique. L’ordre, fondé ici même à Toulouse en 1215, a été officiellement approuvé par le pape Honorius III en 1216. Toulouse est ainsi le berceau de l’ordre dominicain.",
+          "en": "Dominic therefore founded an order of preaching friars — the Dominicans — who were to live in the same austerity as the Cathars while preaching Catholic doctrine. The order, founded right here in Toulouse in 1215, was officially approved by Pope Honorius III in 1216. Toulouse is thus the cradle of the Dominican order.",
+          "audio": "03_isabelle.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "fr": "Les frères se sont d’abord installés dans une petite église, puis ils ont construit ce couvent magnifique à partir de 1229 — l’année même où la croisade des Albigeois a pris fin. L’architecture que vous voyez reflète leur idéal de simplicité : pas de sculptures ornementales, des lignes pures, de la brique.",
+          "en": "The friars first settled in a small church, then they built this magnificent convent starting in 1229 — the very year the Albigensian Crusade ended. The architecture you see reflects their ideal of simplicity: no ornamental sculptures, clean lines, brick.",
+          "audio": "04_isabelle.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Isabelle",
+          "fr": "Mais entrons. La merveille se trouve à l’intérieur : le fameux « palmier des Jacobins ». C’est une colonne unique de vingt-huit mètres de haut dont les nervures s’ouvrent en éventail au sommet, comme les branches d’un palmier. C’est un chef-d’œuvre de l’art gothique méridional, d’une élégance saisissante.",
+          "en": "But let's go inside. The wonder is found within: the famous \"palm tree of the Jacobins.\" It is a single column twenty-eight meters tall whose ribs fan out at the top, like the branches of a palm tree. It is a masterpiece of southern Gothic art, of striking elegance.",
+          "audio": "05_isabelle.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Isabelle",
+          "fr": "Il y a aussi un détail remarquable : sous le maître-autel reposent les reliques de saint Thomas d’Aquin, le plus grand théologien de l’Église médiévale, qui était lui-même dominicain. Ses restes ont été transférés ici en 1369, faisant de cette église un lieu de pèlerinage intellectuel autant que spirituel.",
+          "en": "There is also a remarkable detail: beneath the high altar rest the relics of Saint Thomas Aquinas, the greatest theologian of the medieval Church, who was himself a Dominican. His remains were transferred here in 1369, making this church a place of intellectual pilgrimage as much as spiritual.",
+          "audio": "06_isabelle.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "01_courses_carrefour",
+      "title": "Les courses au Carrefour",
+      "audio_base": "audio/01_courses_carrefour/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "fr": "Bon, on est enfin au Carrefour. C’est immense ici, non ?",
+          "en": "Okay, we're finally at Carrefour. It's huge in here, isn't it?",
+          "audio": "01_alice.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Paul",
+          "fr": "Oui, c’est beaucoup plus grand que le petit magasin à côté de chez nous. Par où on commence ?",
+          "en": "Yeah, it's much bigger than the little shop near our place. Where do we start?",
+          "audio": "02_paul.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "fr": "On a besoin d’oignons, de Coca light et de viande de bœuf. On commence par les légumes, c’est juste là.",
+          "en": "We need onions, Diet Coke, and beef. Let's start with the vegetables — they're right there.",
+          "audio": "03_alice.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Paul",
+          "fr": "D’accord. Ah, je vois les pommes de terre et les carottes, mais je ne trouve pas les oignons.",
+          "en": "Okay. Ah, I can see the potatoes and the carrots, but I can't find the onions.",
+          "audio": "04_paul.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "fr": "Moi non plus. On va demander à quelqu’un. Excusez-moi, monsieur, est-ce que vous pouvez nous aider ?",
+          "en": "Me neither. Let's ask someone. Excuse me, sir, can you help us?",
+          "audio": "05_alice.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Employé",
+          "fr": "Bien sûr, qu’est-ce que vous cherchez ?",
+          "en": "Of course, what are you looking for?",
+          "audio": "06_employe.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "fr": "On cherche des oignons. On ne les trouve pas dans le rayon.",
+          "en": "We're looking for onions. We can't find them in the aisle.",
+          "audio": "07_alice.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Employé",
+          "fr": "Les oignons, c’est au bout de l’allée, à gauche après les poireaux. On vient de les remettre en rayon.",
+          "en": "The onions are at the end of the aisle, on the left past the leeks. We just restocked them.",
+          "audio": "08_employe.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Paul",
+          "fr": "Merci. Et pour la viande de bœuf, c’est où exactement ?",
+          "en": "Thanks. And for the beef, where exactly is that?",
+          "audio": "09_paul.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Employé",
+          "fr": "La boucherie est au fond du magasin, après les produits laitiers. Vous allez voir le comptoir avec le boucher.",
+          "en": "The butcher counter is at the back of the store, past the dairy section. You'll see the counter with the butcher.",
+          "audio": "10_employe.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Alice",
+          "fr": "Il y a aussi de la viande en barquette, non ?",
+          "en": "There's also pre-packaged meat, right?",
+          "audio": "11_alice.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Employé",
+          "fr": "Oui, il y a le rayon libre-service juste à côté de la boucherie. Vous trouverez des steaks, des rôtis et de la viande à mijoter.",
+          "en": "Yes, there's a self-service section right next to the butcher counter. You'll find steaks, roasts, and stewing cuts.",
+          "audio": "12_employe.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Paul",
+          "fr": "Super. Et le Coca light, c’est dans quel rayon ?",
+          "en": "Great. And the Diet Coke, which aisle is that?",
+          "audio": "13_paul.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Employé",
+          "fr": "Les boissons sont dans l’allée sept. Le Coca, c’est à côté des eaux gazeuses.",
+          "en": "The drinks are in aisle seven. The Coke is next to the sparkling water.",
+          "audio": "14_employe.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Alice",
+          "fr": "Allée sept, d’accord. Merci beaucoup, monsieur.",
+          "en": "Aisle seven, got it. Thank you very much, sir.",
+          "audio": "15_alice.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Employé",
+          "fr": "De rien. Bon courage pour vos courses !",
+          "en": "You're welcome. Good luck with your shopping!",
+          "audio": "16_employe.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Paul",
+          "fr": "Il a dit allée sept pour le Coca light. Tu veux y aller pendant que je vais à la boucherie ?",
+          "en": "He said aisle seven for the Diet Coke. Do you want to go there while I head to the butcher counter?",
+          "audio": "17_paul.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Alice",
+          "fr": "Bonne idée. On se retrouve aux caisses dans quinze minutes ?",
+          "en": "Good idea. Shall we meet at the checkouts in fifteen minutes?",
+          "audio": "18_alice.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Paul",
+          "fr": "Ça marche. N’oublie pas de prendre un pack de six, le dernier n’a duré que trois jours.",
+          "en": "Sounds good. Don't forget to get a six-pack — the last one only lasted three days.",
+          "audio": "19_paul.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Alice",
+          "fr": "Oui, je vais en prendre deux, comme ça on est tranquilles pour la semaine. Prends des entrecôtes si elles ne sont pas trop chères.",
+          "en": "Yeah, I'll get two, that way we're set for the week. Get some rib steaks if they're not too expensive.",
+          "audio": "20_alice.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Paul",
+          "fr": "Et si elles sont trop chères ?",
+          "en": "And if they're too expensive?",
+          "audio": "21_paul.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Alice",
+          "fr": "Prends du faux-filet alors, c’est très bien aussi pour le barbecue.",
+          "en": "Get sirloin then — it's great for the barbecue too.",
+          "audio": "22_alice.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Paul",
+          "fr": "OK. À tout à l’heure !",
+          "en": "OK. See you in a bit!",
+          "audio": "23_paul.mp3"
+        }
+      ]
+    },
+    {
+      "id": "02_chaussures_sport",
+      "title": "À la recherche de chaussures de sport",
+      "audio_base": "audio/02_chaussures_sport/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "fr": "Paul, il te faut des chaussures de course, non ? On devrait en profiter pendant qu’on est ici.",
+          "en": "Paul, you need running shoes, right? We should take advantage while we're here.",
+          "audio": "01_alice.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Paul",
+          "fr": "Oui, les miennes sont complètement usées. Mais il y a un magasin de sport dans ce centre commercial ?",
+          "en": "Yeah, mine are completely worn out. But is there a sports shop in this mall?",
+          "audio": "02_paul.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "fr": "Je ne sais pas, on va regarder le plan. Tiens, il y a un panneau là-bas.",
+          "en": "I don't know, let's look at the directory. Look, there's a sign over there.",
+          "audio": "03_alice.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Paul",
+          "fr": "Alors… Carrefour en bas, des boutiques de vêtements au premier étage… Ah, il y a un Intersport au deuxième étage.",
+          "en": "So… Carrefour downstairs, clothing shops on the first floor… Ah, there's an Intersport on the second floor.",
+          "audio": "04_paul.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "fr": "Intersport, c’est parfait. On prend l’escalator ?",
+          "en": "Intersport, that's perfect. Shall we take the escalator?",
+          "audio": "05_alice.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Paul",
+          "fr": "Oui, allons-y. C’est à côté de quoi ?",
+          "en": "Yes, let's go. What's it next to?",
+          "audio": "06_paul.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "fr": "D’après le plan, c’est au deuxième étage, à côté de la Fnac.",
+          "en": "According to the map, it's on the second floor, next to Fnac.",
+          "audio": "07_alice.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Paul",
+          "fr": "OK, je le vois. Allez, on entre ?",
+          "en": "OK, I see it. Come on, shall we go in?",
+          "audio": "08_paul.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Vendeuse",
+          "fr": "Bonjour ! Je peux vous aider ?",
+          "en": "Hello! Can I help you?",
+          "audio": "09_vendeuse.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Paul",
+          "fr": "Bonjour. Je cherche des chaussures de course. Je fais du jogging trois fois par semaine.",
+          "en": "Hi. I'm looking for running shoes. I jog three times a week.",
+          "audio": "10_paul.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Vendeuse",
+          "fr": "D’accord. Vous faites quelle pointure ?",
+          "en": "Alright. What shoe size are you?",
+          "audio": "11_vendeuse.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Paul",
+          "fr": "Euh… en pointure française, je ne suis pas sûr. Aux États-Unis, je fais du 10.",
+          "en": "Uh… in French sizes, I'm not sure. In the US, I'm a 10.",
+          "audio": "12_paul.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Vendeuse",
+          "fr": "Ça correspond à peu près à un 43 ou un 44. On va essayer les deux. Vous courez sur quel terrain ? Sur route ou sur des chemins ?",
+          "en": "That's roughly a 43 or 44. We'll try both. What surface do you run on? Roads or trails?",
+          "audio": "13_vendeuse.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Paul",
+          "fr": "Surtout sur route. Parfois sur des chemins de terre, mais c’est rare.",
+          "en": "Mostly roads. Sometimes on dirt paths, but that's rare.",
+          "audio": "14_paul.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Vendeuse",
+          "fr": "Alors je vous recommande un modèle avec un bon amorti. Regardez, on a celles-ci en promotion. Elles étaient à quatre-vingt-dix euros, maintenant elles sont à soixante-cinq.",
+          "en": "Then I'd recommend a model with good cushioning. Look, we have these ones on sale. They were ninety euros, now they're sixty-five.",
+          "audio": "15_vendeuse.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Paul",
+          "fr": "Ah, c’est une bonne affaire. Je peux les essayer en 43 ?",
+          "en": "Oh, that's a good deal. Can I try them in a 43?",
+          "audio": "16_paul.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Vendeuse",
+          "fr": "Bien sûr, je vais les chercher en réserve. Asseyez-vous, j’en ai pour une minute.",
+          "en": "Of course, I'll go get them from the back. Have a seat — I'll be just a minute.",
+          "audio": "17_vendeuse.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Alice",
+          "fr": "Elles sont pas mal, celles-là. La couleur te plaît ?",
+          "en": "They're not bad, those ones. Do you like the color?",
+          "audio": "18_alice.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Paul",
+          "fr": "La couleur, je m’en fiche, du moment qu’elles sont confortables.",
+          "en": "I don't care about the color, as long as they're comfortable.",
+          "audio": "19_paul.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Vendeuse",
+          "fr": "Voilà, le 43. Essayez avec les deux pieds, c’est important.",
+          "en": "Here you go, the 43. Try them on both feet — it's important.",
+          "audio": "20_vendeuse.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Paul",
+          "fr": "Elles sont confortables. Mais elles serrent un peu au niveau des orteils.",
+          "en": "They're comfortable. But they're a bit tight around the toes.",
+          "audio": "21_paul.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Vendeuse",
+          "fr": "Je vais chercher le 44 alors. Ça arrive souvent avec cette marque, ils taillent un peu petit.",
+          "en": "I'll get the 44 then. That happens a lot with this brand — they run a bit small.",
+          "audio": "22_vendeuse.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Paul",
+          "fr": "Merci.",
+          "en": "Thanks.",
+          "audio": "23_paul.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Vendeuse",
+          "fr": "Voilà le 44. Essayez celles-ci.",
+          "en": "Here's the 44. Try these.",
+          "audio": "24_vendeuse.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "Paul",
+          "fr": "Ah oui, c’est beaucoup mieux. Elles me vont très bien. Alice, qu’est-ce que tu en penses ?",
+          "en": "Oh yeah, much better. They fit really well. Alice, what do you think?",
+          "audio": "25_paul.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Alice",
+          "fr": "Elles sont très bien. Et à soixante-cinq euros, on ne va pas trouver mieux.",
+          "en": "They're great. And at sixty-five euros, we're not going to find better.",
+          "audio": "26_alice.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "Paul",
+          "fr": "D’accord, je les prends. Vous acceptez la carte bancaire ?",
+          "en": "Alright, I'll take them. Do you accept card?",
+          "audio": "27_paul.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Vendeuse",
+          "fr": "Oui, bien sûr. La caisse est par ici.",
+          "en": "Yes, of course. The register is this way.",
+          "audio": "28_vendeuse.mp3"
+        }
+      ]
+    },
+    {
+      "id": "03_yves_rocher",
+      "title": "Chez Yves Rocher — Soins et shampoings",
+      "audio_base": "audio/03_yves_rocher/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "fr": "Bonjour, madame. Je cherche un soin pour le visage et un shampoing réparateur.",
+          "en": "Hello, ma'am. I'm looking for a skincare product for my face and a restorative shampoo.",
+          "audio": "01_alice.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Conseillère",
+          "fr": "Bonjour ! Bienvenue chez Yves Rocher. Pour le soin du visage, vous avez quel type de peau ?",
+          "en": "Hello! Welcome to Yves Rocher. For the face cream, what's your skin type?",
+          "audio": "02_conseillere.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "fr": "Je pense que j’ai la peau mixte. J’ai le front un peu gras, mais les joues sont plutôt sèches.",
+          "en": "I think I have combination skin. My forehead is a bit oily, but my cheeks are quite dry.",
+          "audio": "03_alice.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Conseillère",
+          "fr": "D’accord, c’est très courant. Je vous recommande notre crème hydratante pour peaux mixtes. Elle est légère et elle ne rend pas la peau grasse.",
+          "en": "Okay, that's very common. I'd recommend our moisturizer for combination skin. It's lightweight and it doesn't make your skin greasy.",
+          "audio": "04_conseillere.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "fr": "Ça a l’air bien. Et elle protège du soleil aussi ?",
+          "en": "That sounds good. And does it protect from the sun too?",
+          "audio": "05_alice.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Conseillère",
+          "fr": "Celle-ci n’a pas de protection solaire. Mais on a une version avec un indice 30 si vous voulez. En Bretagne, même quand il fait gris, le soleil peut être fort.",
+          "en": "This one doesn't have sun protection. But we have a version with SPF 30 if you'd like. In Brittany, even when it's overcast, the sun can be strong.",
+          "audio": "06_conseillere.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "fr": "Ah oui, bonne idée. Je vais prendre celle avec la protection solaire. C’est combien ?",
+          "en": "Oh yes, good idea. I'll take the one with sun protection. How much is it?",
+          "audio": "07_alice.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Conseillère",
+          "fr": "Elle est à vingt-deux euros. Et en ce moment, on a une offre : pour deux produits achetés, le troisième est à moitié prix.",
+          "en": "It's twenty-two euros. And right now, we have an offer: buy two products and the third one is half price.",
+          "audio": "08_conseillere.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Alice",
+          "fr": "Ah, c’est intéressant. Alors parlons du shampoing. Mes cheveux sont très abîmés à cause du sel et du vent ici, au bord de la mer.",
+          "en": "Oh, that's nice. So let's talk about the shampoo. My hair is very damaged because of the salt and the wind here, by the sea.",
+          "audio": "09_alice.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Conseillère",
+          "fr": "Oui, le sel et le vent abîment beaucoup les cheveux, c’est un problème classique sur la côte. On a une gamme réparatrice qui marche très bien. Ce shampoing nourrit les cheveux en profondeur.",
+          "en": "Yes, the salt and the wind really damage your hair — it's a classic problem on the coast. We have a restorative range that works really well. This shampoo nourishes the hair deeply.",
+          "audio": "10_conseillere.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Alice",
+          "fr": "Il est à base de quoi ?",
+          "en": "What's it made from?",
+          "audio": "11_alice.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Conseillère",
+          "fr": "C’est à base de beurre de karité et d’huile de jojoba. Tout est d’origine végétale, c’est notre spécialité chez Yves Rocher.",
+          "en": "It's made with shea butter and jojoba oil. Everything is plant-based — that's our specialty at Yves Rocher.",
+          "audio": "12_conseillere.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Alice",
+          "fr": "Super. Et il y a un après-shampoing qui va avec ?",
+          "en": "Great. And is there a conditioner that goes with it?",
+          "audio": "13_alice.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Conseillère",
+          "fr": "Oui, on a le masque réparateur de la même gamme. Vous le laissez poser cinq minutes après le shampoing, et ça fait vraiment la différence. On le recommande une ou deux fois par semaine.",
+          "en": "Yes, we have the restorative mask from the same range. You leave it on for five minutes after the shampoo, and it really makes a difference. We recommend it once or twice a week.",
+          "audio": "14_conseillere.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Alice",
+          "fr": "D’accord. Et avec l’offre, ça fait combien pour les trois produits ?",
+          "en": "Okay. And with the offer, how much is it for all three products?",
+          "audio": "15_alice.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Conseillère",
+          "fr": "Alors, la crème à vingt-deux euros, le shampoing à douze euros, et le masque réparateur qui est normalement à quinze euros passe à sept euros cinquante avec la réduction. Ça fait quarante et un euros cinquante en tout.",
+          "en": "So, the cream at twenty-two euros, the shampoo at twelve euros, and the restorative mask which is normally fifteen euros comes to seven euros fifty with the discount. That's forty-one euros fifty in total.",
+          "audio": "16_conseillere.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Alice",
+          "fr": "Très bien, je prends les trois. Vous avez un programme de fidélité ?",
+          "en": "Great, I'll take all three. Do you have a loyalty program?",
+          "audio": "17_alice.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Conseillère",
+          "fr": "Oui, vous avez une carte de fidélité ? On peut vous en créer une, c’est gratuit.",
+          "en": "Yes, do you have a loyalty card? We can set one up for you — it's free.",
+          "audio": "18_conseillere.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Alice",
+          "fr": "Non, je n’en ai pas, mais je veux bien en créer une. On ne sait jamais, je reviendrai peut-être.",
+          "en": "No, I don't have one, but I'd like to set one up. You never know, I might come back.",
+          "audio": "19_alice.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Conseillère",
+          "fr": "Parfait, il me faut juste une adresse mail. Je vous emballe tout ça.",
+          "en": "Perfect, I just need an email address. I'll wrap everything up for you.",
+          "audio": "20_conseillere.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Alice",
+          "fr": "Merci beaucoup, vous m’avez très bien conseillée.",
+          "en": "Thank you so much, you've been really helpful.",
+          "audio": "21_alice.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Conseillère",
+          "fr": "Avec plaisir. Bonne journée !",
+          "en": "My pleasure. Have a lovely day!",
+          "audio": "22_conseillere.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04_restaurant_traiteur",
+      "title": "Où manger ? — Le traiteur et le restaurant",
+      "audio_base": "audio/04_restaurant_traiteur/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Alice",
+          "fr": "Paul, j’ai faim. Ça fait deux heures qu’on fait les magasins. On mange quelque chose ?",
+          "en": "Paul, I'm hungry. We've been shopping for two hours. Should we get something to eat?",
+          "audio": "01_alice.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Paul",
+          "fr": "Oui, moi aussi. Il y a quoi comme restaurants dans ce centre commercial ?",
+          "en": "Yeah, me too. What kind of restaurants are there in this mall?",
+          "audio": "02_paul.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Alice",
+          "fr": "Il y a un McDonald's, mais on n’a pas traversé l’Atlantique pour manger chez McDo. Regarde, il y a un traiteur là-bas. C’est quoi exactement, un traiteur ?",
+          "en": "There's a McDonald's, but we didn't cross the Atlantic to eat at McDonald's. Look, there's a traiteur over there. What exactly is a traiteur?",
+          "audio": "03_alice.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Paul",
+          "fr": "Si j’ai bien compris, c’est un magasin qui vend des plats préparés. De la cuisine toute faite, mais de qualité. On peut acheter un plat et le manger sur place ou l’emporter.",
+          "en": "If I understand correctly, it's a shop that sells prepared dishes. Ready-made food, but good quality. You can buy a dish and eat it there or take it away.",
+          "audio": "04_paul.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Alice",
+          "fr": "Ah, un peu comme un deli aux États-Unis ?",
+          "en": "Ah, kind of like a deli in the US?",
+          "audio": "05_alice.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Paul",
+          "fr": "Oui, en quelque sorte. Mais en plus raffiné. Regarde la vitrine, ça a l’air délicieux.",
+          "en": "Yes, sort of. But more refined. Look at the display — it looks delicious.",
+          "audio": "06_paul.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Alice",
+          "fr": "C’est vrai. Mais je ne comprends pas la moitié des plats. C’est quoi, un parmentier de canard ?",
+          "en": "True. But I don't understand half the dishes. What's a parmentier de canard?",
+          "audio": "07_alice.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Paul",
+          "fr": "Aucune idée. On demande ?",
+          "en": "No idea. Should we ask?",
+          "audio": "08_paul.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Alice",
+          "fr": "Non, attends. Il y a aussi un petit restaurant juste à côté. On pourrait s’asseoir et commander tranquillement. J’ai mal aux pieds.",
+          "en": "No, wait. There's also a little restaurant right next door. We could sit down and order properly. My feet are killing me.",
+          "audio": "09_alice.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Paul",
+          "fr": "Bonne idée. Allons voir s’ils ont de la place.",
+          "en": "Good idea. Let's see if they have room.",
+          "audio": "10_paul.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Serveur",
+          "fr": "Bonjour, vous êtes deux ? Vous voulez déjeuner ?",
+          "en": "Hello, two of you? Would you like lunch?",
+          "audio": "11_serveur.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Alice",
+          "fr": "Oui, s’il vous plaît. Est-ce qu’on peut voir la carte avant de s’installer ?",
+          "en": "Yes, please. Could we see the menu before we sit down?",
+          "audio": "12_alice.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Serveur",
+          "fr": "Bien sûr, voilà la carte. Aujourd’hui, le plat du jour, c’est un filet de cabillaud avec du riz et des légumes, à treize euros.",
+          "en": "Of course, here's the menu. Today, the daily special is a cod fillet with rice and vegetables, for thirteen euros.",
+          "audio": "13_serveur.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Paul",
+          "fr": "Merci. On regarde et on vous dit.",
+          "en": "Thanks. We'll have a look and let you know.",
+          "audio": "14_paul.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Alice",
+          "fr": "Alors, voyons… Qu’est-ce que c’est, des rillettes ?",
+          "en": "So, let's see… What are rillettes?",
+          "audio": "15_alice.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Paul",
+          "fr": "C’est de la viande effilochée, en général du porc. On l’étale sur du pain. C’est une spécialité française.",
+          "en": "It's shredded meat, usually pork. You spread it on bread. It's a French specialty.",
+          "audio": "16_paul.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Alice",
+          "fr": "Ah, un peu comme du pulled pork en pâté ? Ça me tente. Et un croque-monsieur, on connaît, c’est facile.",
+          "en": "Ah, kind of like pulled pork as a pâté? That sounds good. And a croque-monsieur — we know that one, that's easy.",
+          "audio": "17_alice.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Paul",
+          "fr": "Moi, je vais prendre le plat du jour. Le cabillaud, c’est de la morue, non ?",
+          "en": "I'm going to have the daily special. Cabillaud is cod, right?",
+          "audio": "18_paul.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Serveur",
+          "fr": "Presque ! C’est le même poisson, mais en France, on dit cabillaud quand il est frais, et morue quand il est séché et salé. Aujourd’hui, le nôtre est bien frais, vous allez voir.",
+          "en": "Almost! It's the same fish, but in France we say cabillaud when it's fresh, and morue when it's dried and salted. Today's is nice and fresh — you'll see.",
+          "audio": "19_serveur.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Alice",
+          "fr": "Ah, bonne idée, le cabillaud. C’est léger. Et comme boisson, on prend quoi ?",
+          "en": "Good idea, the cod. It's light. And what do we get to drink?",
+          "audio": "20_alice.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Paul",
+          "fr": "Une carafe d’eau, c’est gratuit ici en France, non ?",
+          "en": "A carafe of water — that's free here in France, right?",
+          "audio": "21_paul.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Alice",
+          "fr": "Oui, on peut demander une carafe d’eau du robinet. C’est normal au restaurant. Mais je prendrais bien un petit verre de cidre aussi, on est en Bretagne après tout.",
+          "en": "Yes, you can ask for a carafe of tap water. It's normal at restaurants. But I'd quite like a small glass of cider too — we're in Brittany after all.",
+          "audio": "22_alice.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Serveur",
+          "fr": "Vous avez choisi ?",
+          "en": "Have you decided?",
+          "audio": "23_serveur.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Alice",
+          "fr": "Oui. Pour moi, les rillettes en entrée et un croque-monsieur. Et un verre de cidre brut, s’il vous plaît.",
+          "en": "Yes. For me, the rillettes as a starter and a croque-monsieur. And a glass of dry cider, please.",
+          "audio": "24_alice.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "Paul",
+          "fr": "Et pour moi, le plat du jour, le cabillaud. Et une carafe d’eau, s’il vous plaît.",
+          "en": "And for me, the daily special — the cod. And a carafe of water, please.",
+          "audio": "25_paul.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Serveur",
+          "fr": "Très bien. Vous voulez du pain avec ?",
+          "en": "Very good. Would you like bread with that?",
+          "audio": "26_serveur.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "Paul",
+          "fr": "Oui, s’il vous plaît.",
+          "en": "Yes, please.",
+          "audio": "27_paul.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Serveur",
+          "fr": "Parfait, je vous apporte tout ça.",
+          "en": "Perfect, I'll bring everything out.",
+          "audio": "28_serveur.mp3"
+        },
+        {
+          "n": 29,
+          "speaker": "Alice",
+          "fr": "Merci. Ah, et est-ce qu’on peut avoir la carte des desserts après ?",
+          "en": "Thanks. Oh, and could we have the dessert menu afterwards?",
+          "audio": "29_alice.mp3"
+        },
+        {
+          "n": 30,
+          "speaker": "Serveur",
+          "fr": "Bien sûr, je vous la donne avec les plats.",
+          "en": "Of course, I'll bring it with your main courses.",
+          "audio": "30_serveur.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "02_decouverte_librairie",
+      "title": "Découverte de la librairie",
+      "audio_base": "audio/02_decouverte_librairie/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "fr": "Bonjour ! J’ai vu votre vitrine en me promenant dans la rue. C’est une librairie en… ce n’est pas du français, n’est-ce pas ?",
+          "en": "Hello! I saw your storefront while walking down the street. It's a bookstore in… that's not French, is it?",
+          "audio": "01_irene.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Arnaud",
+          "fr": "Bonjour ! Non, ce n’est pas du français. C’est de l’occitan, la langue historique de cette région. Bienvenue à La Tuta d’Òc — ça veut dire « la tanière d’oc ». Un petit refuge pour la langue, si vous voulez.",
+          "en": "Hello! No, it's not French. It's Occitan, the historic language of this region. Welcome to La Tuta d'Òc — it means \"the den of Oc.\" A little burrow for the language, if you like.",
+          "audio": "02_arnaud.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "fr": "L’occitan ? Je ne savais même pas que cette langue existait. Je pensais que tout le monde en France parlait français.",
+          "en": "Occitan? I didn't even know this language existed. I thought everyone in France spoke French.",
+          "audio": "03_irene.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Arnaud",
+          "fr": "C’est ce qu’on croit souvent à l’étranger. Mais avant que le français ne devienne la langue officielle, les gens ici parlaient occitan. C’était la langue de tous les jours — au marché, à l’église, dans les familles. Et c’était aussi une grande langue littéraire.",
+          "en": "That's what people often think abroad. But before French became the official language, people here spoke Occitan. It was the everyday language — at the market, at church, in families. And it was also a great literary language.",
+          "audio": "04_arnaud.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "fr": "Vraiment ? Depuis quand est-ce que ça existe ?",
+          "en": "Really? How long has it been around?",
+          "audio": "05_irene.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Arnaud",
+          "fr": "Depuis le Moyen Âge au moins. Les troubadours, vous en avez entendu parler ? Ces poètes des XIIe et XIIIe siècles qui ont inventé la poésie d’amour courtois — ils écrivaient en occitan, pas en français.",
+          "en": "Since the Middle Ages at least. The troubadours — have you heard of them? Those poets of the 12th and 13th centuries who invented courtly love poetry — they wrote in Occitan, not French.",
+          "audio": "06_arnaud.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "fr": "Les troubadours ! Oui, j’en ai entendu parler, mais je croyais qu’ils écrivaient en vieux français.",
+          "en": "The troubadours! Yes, I've heard of them, but I thought they wrote in Old French.",
+          "audio": "07_irene.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Arnaud",
+          "fr": "Non, c’est une confusion très courante. Leur langue, c’était la langue d’oc. Le français du nord, on l’appelait la langue d’oïl. C’étaient deux langues différentes, aussi différentes que l’espagnol et le portugais.",
+          "en": "No, that's a very common mix-up. Their language was the langue d'oc. Northern French was called the langue d'oïl. They were two different languages, as different as Spanish and Portuguese.",
+          "audio": "08_arnaud.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "fr": "Et aujourd’hui, il y a encore des gens qui parlent occitan ?",
+          "en": "And today, are there still people who speak Occitan?",
+          "audio": "09_irene.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Arnaud",
+          "fr": "Oui, mais beaucoup moins qu’avant. La langue a été progressivement remplacée par le français, surtout après la Révolution. Mais il y a un mouvement de renaissance — des écoles bilingues, des associations, des artistes. C’est pour ça que cette librairie existe.",
+          "en": "Yes, but far fewer than before. The language was gradually replaced by French, especially after the Revolution. But there's a revival movement — bilingual schools, cultural associations, artists. That's why this bookstore exists.",
+          "audio": "10_arnaud.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "fr": "C’est fascinant. Je n’avais aucune idée de tout ça. Et vous, vous parlez occitan ?",
+          "en": "That's fascinating. I had no idea about any of this. And you — do you speak Occitan?",
+          "audio": "11_irene.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Arnaud",
+          "fr": "Bien sûr ! Ma grand-mère ne parlait que ça. J’ai grandi avec les deux langues. Pour moi, garder cette librairie ouverte, c’est une façon de maintenir vivante la culture de mes ancêtres.",
+          "en": "Of course! My grandmother only spoke Occitan. I grew up with both languages. For me, keeping this bookstore open is a way of keeping my ancestors' culture alive.",
+          "audio": "12_arnaud.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "fr": "C’est admirable. Est-ce que vous avez des livres en français sur cette histoire ? J’aimerais en apprendre davantage.",
+          "en": "That's admirable. Do you have any books in French about this history? I'd love to learn more.",
+          "audio": "13_irene.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Arnaud",
+          "fr": "Absolument. Venez, je vais vous montrer notre rayon sur l’histoire de la langue d’oc. On a aussi des livres bilingues occitan-français qui sont parfaits pour découvrir la langue.",
+          "en": "Absolutely. Come, I'll show you our section on the history of the langue d'oc. We also have bilingual Occitan-French books that are perfect for discovering the language.",
+          "audio": "14_arnaud.mp3"
+        }
+      ]
+    },
+    {
+      "id": "03_troubadours_livres",
+      "title": "Les troubadours et leurs livres",
+      "audio_base": "audio/03_troubadours_livres/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "fr": "Alors, ces troubadours… est-ce qu’il existe des livres en français qui expliquent bien leur histoire ?",
+          "en": "So, these troubadours… are there books in French that explain their history well?",
+          "audio": "01_irene.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Arnaud",
+          "fr": "Oui, j’en ai plusieurs. Tenez, celui-ci est excellent — c’est une anthologie bilingue avec les poèmes originaux en ancien occitan et la traduction en français moderne en face. Ça permet de voir à quoi ressemblait la langue.",
+          "en": "Yes, I have several. Here, this one is excellent — it's a bilingual anthology with the original poems in Old Occitan and the modern French translation on the facing page. It lets you see what the language looked like.",
+          "audio": "02_arnaud.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "fr": "Ancien occitan… c’est très différent de l’occitan d’aujourd’hui ?",
+          "en": "Old Occitan… is it very different from today's Occitan?",
+          "audio": "03_irene.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Arnaud",
+          "fr": "Un peu, oui. Comme le français de Rabelais est différent du français moderne. Mais un locuteur occitan actuel peut encore comprendre les textes des troubadours, avec un peu d’effort. C’est d’ailleurs l’une des grandes fiertés des occitanistes : leur littérature médiévale est directement accessible.",
+          "en": "Somewhat, yes. Like Rabelais's French is different from modern French. But a current Occitan speaker can still understand the troubadour texts with a little effort. That's actually one of the great points of pride for Occitan enthusiasts: their medieval literature is directly accessible.",
+          "audio": "04_arnaud.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "fr": "Et les troubadours, ils venaient tous de Toulouse ?",
+          "en": "And the troubadours — did they all come from Toulouse?",
+          "audio": "05_irene.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Arnaud",
+          "fr": "Non, pas du tout. Ils venaient de partout dans le territoire occitan — du Limousin, de l’Aquitaine, de la Provence, du Languedoc. Le plus célèbre, Guillaume IX, était duc d’Aquitaine et comte de Poitiers. Mais Toulouse était un centre important. Le comte Raimond V tenait une cour brillante où les troubadours étaient les bienvenus.",
+          "en": "No, not at all. They came from all over the Occitan territory — from Limousin, Aquitaine, Provence, Languedoc. The most famous, William IX, was Duke of Aquitaine and Count of Poitiers. But Toulouse was an important center. Count Raymond V held a brilliant court where troubadours were welcome.",
+          "audio": "06_arnaud.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "fr": "Et de quoi parlaient leurs poèmes, exactement ?",
+          "en": "And what did their poems talk about, exactly?",
+          "audio": "07_irene.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Arnaud",
+          "fr": "Surtout d’amour — mais pas n’importe quel amour. Ils ont inventé ce qu’on appelle la « fin'amor », l’amour courtois. Le poète chantait son amour pour une dame noble, souvent inaccessible. C’était codifié, raffiné, plein de métaphores. Ça a complètement transformé la façon dont l’Europe pensait l’amour et les relations entre hommes et femmes.",
+          "en": "Mostly love — but not just any love. They invented what's called \"fin'amor,\" courtly love. The poet would sing of his love for a noble lady, often unattainable. It was codified, refined, full of metaphors. It completely transformed the way Europe thought about love and the relationships between men and women.",
+          "audio": "08_arnaud.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "fr": "C’est fascinant. Et il y avait des femmes troubadours aussi ?",
+          "en": "That's fascinating. And were there female troubadours too?",
+          "audio": "09_irene.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Arnaud",
+          "fr": "Oui, on les appelait les « trobairitz ». On en connaît une vingtaine. La plus connue est la Comtesse de Dia, qui a écrit des poèmes d’une grande intensité émotionnelle. Tenez, j’ai un recueil consacré aux trobairitz — il vient de sortir.",
+          "en": "Yes, they were called \"trobairitz.\" We know of about twenty. The most famous is the Countess of Dia, who wrote poems of great emotional intensity. Here, I have a collection dedicated to the trobairitz — it just came out.",
+          "audio": "10_arnaud.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "fr": "Je le prends ! Et est-ce que vous avez quelque chose sur la croisade des Albigeois et son impact sur cette culture ?",
+          "en": "I'll take it! And do you have anything about the Albigensian Crusade and its impact on this culture?",
+          "audio": "11_irene.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Arnaud",
+          "fr": "Bien sûr. Ce livre-là explique comment la croisade a détruit non seulement les Cathares, mais aussi toute la civilisation occitane qui les entourait. Les cours seigneuriales ont disparu, les troubadours ont perdu leurs protecteurs, et la langue a commencé son long déclin. C’est une histoire tragique, mais essentielle pour comprendre cette région.",
+          "en": "Of course. This book here explains how the crusade destroyed not only the Cathars, but also the entire Occitan civilization that surrounded them. The noble courts disappeared, the troubadours lost their patrons, and the language began its long decline. It's a tragic story, but essential for understanding this region.",
+          "audio": "12_arnaud.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04_culture_occitane_toulouse",
+      "title": "La culture occitane à Toulouse",
+      "audio_base": "audio/04_culture_occitane_toulouse/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "fr": "Arnaud, est-ce que votre librairie est le seul endroit à Toulouse où on peut découvrir la culture occitane ?",
+          "en": "Arnaud, is your bookstore the only place in Toulouse where you can discover Occitan culture?",
+          "audio": "01_irene.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Arnaud",
+          "fr": "Oh non, loin de là ! La culture occitane est présente un peu partout dans la ville, même si on ne la remarque pas toujours. Vous avez vu les panneaux de rue bilingues ?",
+          "en": "Oh no, far from it! Occitan culture is present throughout the city, even if you don't always notice it. Have you seen the bilingual street signs?",
+          "audio": "02_arnaud.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "fr": "Maintenant que vous le dites, oui ! J’avais remarqué un deuxième nom sur les plaques de certaines rues, mais je pensais que c’était de l’espagnol.",
+          "en": "Now that you mention it, yes! I'd noticed a second name on the street signs of some streets, but I thought it was Spanish.",
+          "audio": "03_irene.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Arnaud",
+          "fr": "C’est de l’occitan. La mairie a installé ces panneaux il y a quelques années. Si vous regardez bien, vous verrez aussi que le métro annonce les stations en français et en occitan. C’est discret, mais c’est là.",
+          "en": "That's Occitan. The city hall installed those signs a few years ago. If you look closely, you'll also notice that the metro announces stations in both French and Occitan. It's subtle, but it's there.",
+          "audio": "04_arnaud.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "fr": "Et en dehors des panneaux, il y a d’autres endroits à visiter ?",
+          "en": "And apart from the signs, are there other places to visit?",
+          "audio": "05_irene.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Arnaud",
+          "fr": "Bien sûr. L’Ostal d’Occitània, c’est un centre culturel dédié à la langue et à la culture occitanes. Ils organisent des cours de langue, des concerts, des expositions. C’est dans le centre-ville, pas loin d’ici.",
+          "en": "Of course. The Ostal d'Occitània is a cultural center dedicated to the Occitan language and culture. They organize language classes, concerts, exhibitions. It's in the city center, not far from here.",
+          "audio": "06_arnaud.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "fr": "Et la musique ? Vous avez mentionné des artistes tout à l’heure.",
+          "en": "And music? You mentioned artists earlier.",
+          "audio": "07_irene.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Arnaud",
+          "fr": "Oui, Toulouse est un vrai foyer de musique occitane contemporaine. Les Fabulous Trobadors, par exemple, mélangent l’occitan avec le hip-hop et le reggae. Il y a aussi des groupes plus traditionnels qui jouent de la musique folk occitane avec des instruments anciens.",
+          "en": "Yes, Toulouse is a real hub for contemporary Occitan music. The Fabulous Trobadors, for example, blend Occitan with hip-hop and reggae. There are also more traditional groups who play Occitan folk music with ancient instruments.",
+          "audio": "08_arnaud.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "fr": "C’est surprenant, du hip-hop en occitan !",
+          "en": "That's surprising — hip-hop in Occitan!",
+          "audio": "09_irene.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Arnaud",
+          "fr": "C’est justement ce qui maintient la langue vivante — quand les jeunes se l’approprient et en font quelque chose de moderne. On a aussi des artistes plasticiens qui travaillent sur l’identité occitane. D’ailleurs, ici dans la librairie, on expose régulièrement des œuvres d’artistes locaux.",
+          "en": "That's exactly what keeps a language alive — when young people take ownership of it and make something modern out of it. We also have visual artists who work on Occitan identity. In fact, here in the bookstore, we regularly exhibit works by local artists.",
+          "audio": "10_arnaud.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "fr": "J’ai remarqué les tableaux en entrant, oui. Ils sont magnifiques.",
+          "en": "I noticed the paintings when I came in, yes. They're beautiful.",
+          "audio": "11_irene.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Arnaud",
+          "fr": "Ce sont des sérigraphies de Marta Gimenez, une artiste toulousaine d’origine catalane. Elle travaille sur les liens entre l’occitan et le catalan — les deux langues sont cousines, vous savez. Ses œuvres mélangent la calligraphie occitane avec des motifs géométriques modernes.",
+          "en": "Those are screen prints by Marta Gimenez, a Toulouse artist of Catalan origin. She works on the connections between Occitan and Catalan — the two languages are cousins, you know. Her works blend Occitan calligraphy with modern geometric patterns.",
+          "audio": "12_arnaud.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "fr": "C’est vraiment beau. Et il y a des festivals ou des événements autour de cette culture ?",
+          "en": "That's really beautiful. And are there festivals or events celebrating this culture?",
+          "audio": "13_irene.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Arnaud",
+          "fr": "Oui, le festival Occitània a lieu chaque automne. Pendant près d’un mois, il y a des concerts, du théâtre en occitan, des conférences, des ateliers de cuisine traditionnelle. C’est le grand rendez-vous de l’année pour les amoureux de la culture d’oc. Si vous revenez fin septembre ou en octobre, je vous le recommande vivement.",
+          "en": "Yes, the festival Occitània takes place every autumn. For nearly a month, there are concerts, theater in Occitan, lectures, traditional cooking workshops. It's the big annual gathering for lovers of the culture d'oc. If you come back in late September or October, I highly recommend it.",
+          "audio": "14_arnaud.mp3"
+        }
+      ]
+    },
+    {
+      "id": "05_lecon_occitan",
+      "title": "Une leçon d'occitan",
+      "audio_base": "audio/05_lecon_occitan/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Madame Vidal",
+          "fr": "Allez, on se regroupe ici, tout le monde. Vous voyez cette librairie ? Tous les livres ici sont en occitan ou parlent de la culture occitane. Et je sais ce que vous pensez : « l’occitan, c’est quoi ? » Eh bien, c’est justement pour ça qu’on est là.",
+          "en": "Right, let's gather here, everyone. You see this bookstore? All the books here are in Occitan or about Occitan culture. And I know what you're thinking: \"What's Occitan?\" Well, that's exactly why we're here.",
+          "audio": "01_madame_vidal.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Madame Vidal",
+          "fr": "Alors, pour commencer : l’occitan, c’est la langue que vos arrière-grands-parents parlaient. Pas tous, mais beaucoup d’entre eux. Ici à Toulouse, il y a encore cinquante ans, les gens du marché parlaient occitan entre eux. C’était la langue normale, la langue de la vie de tous les jours.",
+          "en": "So, to start: Occitan is the language your great-grandparents spoke. Not all of them, but many of them. Here in Toulouse, just fifty years ago, people at the market spoke Occitan among themselves. It was the normal language, the language of everyday life.",
+          "audio": "02_madame_vidal.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Madame Vidal",
+          "fr": "Et cette langue, elle est aussi ancienne que le français — et sa littérature, elle, est même plus ancienne que la littérature française. Au Moyen Âge, l’occitan était une des langues les plus prestigieuses d’Europe. Les troubadours — vous en avez entendu parler en cours, non ? — ils n’écrivaient pas en français. Ils écrivaient en occitan, en « langue d’oc ». D’ailleurs, c’est de là que vient le nom de notre région : l’Occitanie. Le mot vient directement de « langue d’oc ».",
+          "en": "And this language is as old as French — and its literature is actually even older than French literature. In the Middle Ages, Occitan was one of the most prestigious languages in Europe. The troubadours — you've heard about them in class, right? — they didn't write in French. They wrote in Occitan, in the \"langue d'oc.\" In fact, that's where the name of our region comes from: Occitanie. The word comes directly from \"langue d'oc.\"",
+          "audio": "03_madame_vidal.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Madame Vidal",
+          "fr": "Mais alors, pourquoi est-ce qu’on ne la parle plus ? C’est une bonne question. D’abord, il y a eu la croisade contre les Cathares, au XIIIe siècle. Le nord de la France a envahi le sud, et les nobles du nord ont remplacé les nobles du sud. Le pouvoir a changé de langue. Ensuite, en 1539, le roi François Ier a signé l’ordonnance de Villers-Cotterêts, qui a imposé le français dans tous les documents officiels. L’occitan est devenu une langue « d’en bas », la langue des paysans et des ouvriers.",
+          "en": "But then, why don't we speak it anymore? That's a good question. First, there was the crusade against the Cathars in the 13th century. Northern France invaded the south, and the northern nobles replaced the southern ones. Those in power switched languages. Then, in 1539, King Francis I signed the Ordinance of Villers-Cotterêts, which made French mandatory in all official documents. Occitan became a \"lower\" language — the language of peasants and workers.",
+          "audio": "04_madame_vidal.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Madame Vidal",
+          "fr": "Et puis, il y a eu l’école de la République. Oui, l’école — celle où vous allez tous les jours. À partir du XIXe siècle, les instituteurs avaient pour mission de faire disparaître les langues régionales. Si un enfant parlait occitan en classe, on le punissait. On lui mettait parfois un sabot autour du cou — on appelait ça le « signal ». Imaginez qu’on vous punisse parce que vous parlez la langue de votre famille. C’est exactement ce qui s’est passé ici, dans des écoles comme la vôtre.",
+          "en": "And then there was the school system of the Republic. Yes, school — the kind you go to every day. From the 19th century on, teachers were tasked with making regional languages disappear. If a child spoke Occitan in class, they were punished. Sometimes they'd hang a wooden clog around their neck — it was called the \"signal.\" Imagine being punished because you speak your family's language. That's exactly what happened here, in schools just like yours.",
+          "audio": "05_madame_vidal.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Madame Vidal",
+          "fr": "Aujourd’hui, la situation est différente. L’occitan est reconnu comme patrimoine culturel. Il y a des écoles bilingues — les calandretas — où des enfants de votre âge apprennent en occitan et en français. Il y a des musiciens, des écrivains, des artistes qui créent en occitan. Et il y a des librairies comme celle-ci qui gardent cette culture vivante.",
+          "en": "Today, things are different. Occitan is recognized as cultural heritage. There are bilingual schools — the calandretas — where children your age learn in both Occitan and French. There are musicians, writers, and artists who create in Occitan. And there are bookstores like this one that keep the culture alive.",
+          "audio": "06_madame_vidal.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Madame Vidal",
+          "fr": "Alors, quand vous verrez les panneaux bilingues dans le métro ou dans les rues, vous saurez maintenant que ce n’est pas de la décoration. C’est le souvenir d’une langue qui a été la nôtre pendant des siècles. Et peut-être que certains d’entre vous auront envie de l’apprendre — ce serait une belle façon de renouer avec l’histoire de votre ville. Bon, allez, on va regarder les livres. Et pas de bruit, on est dans une librairie !",
+          "en": "So when you see the bilingual signs in the metro or on the streets, you'll now know that it's not just decoration. It's the memory of a language that was ours for centuries. And maybe some of you will want to learn it — that would be a wonderful way to reconnect with the history of your city. All right, let's go look at the books. And keep it down — we're in a bookstore!",
+          "audio": "07_madame_vidal.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "01_histoire_cathares",
+      "title": "Toulouse médiévale et les Cathares",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Isabelle",
+          "audio": "audio/01_histoire_cathares/lines/01_isabelle.mp3",
+          "text": "Bienvenue à Toulouse, la Ville rose. Nous sommes ici sur la place du Capitole, et je vais vous raconter l’histoire fascinante de cette ville au Moyen Âge."
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "audio": "audio/01_histoire_cathares/lines/02_isabelle.mp3",
+          "text": "Au douzième siècle, Toulouse était l’une des villes les plus importantes d’Europe. Les comtes de Toulouse régnaient sur un vaste territoire qui s’étendait de la Garonne jusqu’à la Provence. La ville jouissait d’une grande autonomie, gouvernée par ses capitouls — les magistrats élus par les bourgeois de la cité. C’était une époque de prospérité remarquable."
+        },
+        {
+          "n": 3,
+          "speaker": "Isabelle",
+          "audio": "audio/01_histoire_cathares/lines/03_isabelle.mp3",
+          "text": "Mais Toulouse était aussi au cœur d’un mouvement religieux qui allait bouleverser toute la région : le catharisme. Les Cathares — qu’on appelait aussi les « Bonshommes » ou les « Parfaits » — prêchaient une forme de christianisme radicalement différente de celle de Rome. Ils croyaient en un monde dualiste, où le bien et le mal s’affrontaient. Pour eux, le monde matériel avait été créé par une force mauvaise, et seul l’esprit était divin."
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "audio": "audio/01_histoire_cathares/lines/04_isabelle.mp3",
+          "text": "Les Cathares rejetaient la hiérarchie de l’Église catholique, ses sacrements et sa richesse. Ils vivaient dans la pauvreté et la simplicité. Leur message séduisait beaucoup de gens, y compris des nobles et des bourgeois du Languedoc. Les comtes de Toulouse, sans être eux-mêmes cathares, toléraient cette religion et refusaient de persécuter leurs sujets."
+        },
+        {
+          "n": 5,
+          "speaker": "Isabelle",
+          "audio": "audio/01_histoire_cathares/lines/05_isabelle.mp3",
+          "text": "Cette tolérance allait provoquer la colère de Rome. En 1209, le pape Innocent III a lancé la croisade des Albigeois — la première croisade dirigée contre des chrétiens en terre chrétienne. Les armées du nord de la France sont descendues vers le sud, et rien ne serait plus jamais pareil pour Toulouse."
+        }
+      ]
+    },
+    {
+      "id": "02_basilique_saint_sernin",
+      "title": "La basilique Saint-Sernin",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Isabelle",
+          "audio": "audio/02_basilique_saint_sernin/lines/01_isabelle.mp3",
+          "text": "Nous voici devant la basilique Saint-Sernin, la plus grande église romane conservée d’Europe. Regardez ce clocher octogonal qui domine Toulouse — c’est l’un des symboles de la ville. Prenez le temps d’admirer l’harmonie de cette construction en brique rose et en pierre blanche."
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "audio": "audio/02_basilique_saint_sernin/lines/02_isabelle.mp3",
+          "text": "La basilique porte le nom de saint Saturnin, le premier évêque de Toulouse, martyrisé en l’an 250. Selon la tradition, il a été attaché à un taureau furieux et traîné dans les rues de la ville. La rue du Taur, que nous avons empruntée tout à l’heure, tire son nom de cet épisode."
+        },
+        {
+          "n": 3,
+          "speaker": "Isabelle",
+          "audio": "audio/02_basilique_saint_sernin/lines/03_isabelle.mp3",
+          "text": "La construction de l’édifice actuel a commencé vers 1080 et s’est poursuivie pendant plus de deux siècles. L’église a été bâtie pour accueillir les reliques de saint Saturnin et pour recevoir les pèlerins qui se rendaient à Saint-Jacques-de-Compostelle. Toulouse se trouvait en effet sur la Via Tolosana, l’une des quatre grandes routes de pèlerinage qui traversaient la France."
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "audio": "audio/02_basilique_saint_sernin/lines/04_isabelle.mp3",
+          "text": "Observez l’architecture : la nef centrale est flanquée de doubles bas-côtés surmontés de tribunes. Cette disposition permettait de faire circuler un grand nombre de pèlerins dans le déambulatoire, autour du chœur, où ils pouvaient vénérer les reliques sans interrompre les offices. L’abside est ornée de chapelles rayonnantes, typiques de l’art roman de pèlerinage."
+        },
+        {
+          "n": 5,
+          "speaker": "Isabelle",
+          "audio": "audio/02_basilique_saint_sernin/lines/05_isabelle.mp3",
+          "text": "Il faut savoir que pendant la croisade des Albigeois, Saint-Sernin a joué un rôle important. C’était le cœur spirituel de la communauté toulousaine restée fidèle à Rome, face aux Cathares. Après la croisade, l’Inquisition y a tenu certaines de ses assemblées. Cette basilique a donc été le témoin silencieux des heures les plus sombres de Toulouse."
+        }
+      ]
+    },
+    {
+      "id": "03_questions_cathares",
+      "title": "Questions sur les Cathares",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Thomas",
+          "audio": "audio/03_questions_cathares/lines/01_thomas.mp3",
+          "text": "Excusez-moi, Isabelle. Vous avez dit que les Cathares rejetaient l’Église catholique. Mais est-ce qu’ils se considéraient quand même comme chrétiens ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "audio": "audio/03_questions_cathares/lines/02_isabelle.mp3",
+          "text": "Absolument. Les Cathares se voyaient comme les véritables chrétiens, les héritiers directs des apôtres. Ils lisaient l’Évangile de Jean avec une dévotion particulière et pratiquaient un seul sacrement qu’ils appelaient le consolamentum — une imposition des mains qui purifiait l’âme."
+        },
+        {
+          "n": 3,
+          "speaker": "Émilie",
+          "audio": "audio/03_questions_cathares/lines/03_emilie.mp3",
+          "text": "Et la croisade, elle a duré combien de temps exactement ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "audio": "audio/03_questions_cathares/lines/04_isabelle.mp3",
+          "text": "La croisade des Albigeois a duré vingt ans, de 1209 à 1229. Mais les persécutions ont continué bien après. Le premier grand massacre a eu lieu à Béziers, en 1209, où les croisés ont tué des milliers de personnes — cathares et catholiques confondus. C’est là qu’on attribue au légat papal Arnaud Amaury la phrase terrible : « Tuez-les tous, Dieu reconnaîtra les siens. »"
+        },
+        {
+          "n": 5,
+          "speaker": "Thomas",
+          "audio": "audio/03_questions_cathares/lines/05_thomas.mp3",
+          "text": "C’est effroyable. Et Toulouse, elle a été attaquée aussi ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Isabelle",
+          "audio": "audio/03_questions_cathares/lines/06_isabelle.mp3",
+          "text": "Toulouse a été assiégée plusieurs fois. Le comte Raymond VI a d’abord été contraint de se soumettre, puis il s’est révolté. En 1218, Simon de Montfort, le chef des croisés, a été tué pendant le siège de Toulouse par une pierre lancée depuis les remparts — probablement par des femmes qui défendaient la ville."
+        },
+        {
+          "n": 7,
+          "speaker": "Émilie",
+          "audio": "audio/03_questions_cathares/lines/07_emilie.mp3",
+          "text": "Qu’est-il arrivé aux Cathares après la croisade ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Isabelle",
+          "audio": "audio/03_questions_cathares/lines/08_isabelle.mp3",
+          "text": "L’Inquisition a été créée en 1233, précisément pour traquer les derniers Cathares. Le dernier grand bûcher a eu lieu à Montségur, en 1244, où plus de deux cents Parfaits ont choisi de mourir plutôt que de renier leur foi. Le catharisme a progressivement disparu au cours du quatorzième siècle."
+        },
+        {
+          "n": 9,
+          "speaker": "Thomas",
+          "audio": "audio/03_questions_cathares/lines/09_thomas.mp3",
+          "text": "C’est une histoire tragique. Merci de nous l’avoir racontée avec autant de détails."
+        },
+        {
+          "n": 10,
+          "speaker": "Isabelle",
+          "audio": "audio/03_questions_cathares/lines/10_isabelle.mp3",
+          "text": "C’est une histoire qu’il faut connaître. Elle nous rappelle les dangers de l’intolérance religieuse. Allons maintenant voir un lieu directement lié à cette histoire — l’église des Jacobins."
+        }
+      ]
+    },
+    {
+      "id": "04_dominicains_jacobins",
+      "title": "L'ordre des Dominicains et l'église des Jacobins",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Isabelle",
+          "audio": "audio/04_dominicains_jacobins/lines/01_isabelle.mp3",
+          "text": "Nous sommes maintenant devant l’église des Jacobins, l’un des plus beaux monuments gothiques du Midi de la France. Mais avant d’admirer l’architecture, laissez-moi vous expliquer pourquoi ce lieu existe."
+        },
+        {
+          "n": 2,
+          "speaker": "Isabelle",
+          "audio": "audio/04_dominicains_jacobins/lines/02_isabelle.mp3",
+          "text": "En 1215, un prêtre castillan nommé Dominique de Guzmán est arrivé à Toulouse avec une mission : combattre l’hérésie cathare, non pas par les armes, mais par la parole et par l’exemple. Dominique avait voyagé dans le Languedoc pendant des années et il avait compris que les Cathares séduisaient le peuple parce qu’ils vivaient dans la pauvreté, contrairement aux prélats catholiques qui étalaient leur richesse."
+        },
+        {
+          "n": 3,
+          "speaker": "Isabelle",
+          "audio": "audio/04_dominicains_jacobins/lines/03_isabelle.mp3",
+          "text": "Dominique a donc fondé un ordre de frères prêcheurs — les Dominicains — qui devaient vivre dans la même austérité que les Cathares tout en prêchant la doctrine catholique. L’ordre, fondé ici même à Toulouse en 1215, a été officiellement approuvé par le pape Honorius III en 1216. Toulouse est ainsi le berceau de l’ordre dominicain."
+        },
+        {
+          "n": 4,
+          "speaker": "Isabelle",
+          "audio": "audio/04_dominicains_jacobins/lines/04_isabelle.mp3",
+          "text": "Les frères se sont d’abord installés dans une petite église, puis ils ont construit ce couvent magnifique à partir de 1229 — l’année même où la croisade des Albigeois a pris fin. L’architecture que vous voyez reflète leur idéal de simplicité : pas de sculptures ornementales, des lignes pures, de la brique."
+        },
+        {
+          "n": 5,
+          "speaker": "Isabelle",
+          "audio": "audio/04_dominicains_jacobins/lines/05_isabelle.mp3",
+          "text": "Mais entrons. La merveille se trouve à l’intérieur : le fameux « palmier des Jacobins ». C’est une colonne unique de vingt-huit mètres de haut dont les nervures s’ouvrent en éventail au sommet, comme les branches d’un palmier. C’est un chef-d’œuvre de l’art gothique méridional, d’une élégance saisissante."
+        },
+        {
+          "n": 6,
+          "speaker": "Isabelle",
+          "audio": "audio/04_dominicains_jacobins/lines/06_isabelle.mp3",
+          "text": "Il y a aussi un détail remarquable : sous le maître-autel reposent les reliques de saint Thomas d’Aquin, le plus grand théologien de l’Église médiévale, qui était lui-même dominicain. Ses restes ont été transférés ici en 1369, faisant de cette église un lieu de pèlerinage intellectuel autant que spirituel."
+        }
+      ]
+    }
+  ]
+}

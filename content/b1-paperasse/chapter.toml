@@ -5,6 +5,8 @@ level = "B1"
 vocab_page = "vocabulaire"
 footer_text = "Français Rouillé"
 footer_suffix = "Niveau B1 — La paperasse"
+dictee = true
+translation = true
 
 # --- Contexte ---
 
@@ -58,6 +60,12 @@ heading = "Référence"
 slug = "vocabulaire"
 title = "Vocabulaire B1 — La paperasse"
 description = "Mots et expressions clés de l'administration française."
+type = "static"
+
+[[sections.pages]]
+slug = "quiz"
+title = "Quiz — Testez vos connaissances"
+description = "Choix multiple, dictée et traduction."
 type = "static"
 
 [[sections.pages]]

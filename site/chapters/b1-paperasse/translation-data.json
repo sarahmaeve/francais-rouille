@@ -1,0 +1,719 @@
+{
+  "schema": "translation/v1",
+  "exercises": [
+    {
+      "id": "01_repondeur_prefecture",
+      "title": "Répondeur de la préfecture",
+      "audio_base": "audio/01_repondeur_prefecture/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Le répondeur automatique",
+          "fr": "Bienvenue sur le serveur vocal de la préfecture de la Loire-Atlantique. Nos services d’accueil du public sont ouverts du lundi au vendredi, de neuf heures à douze heures trente, et de treize heures trente à seize heures. La préfecture est fermée le mercredi après-midi, ainsi que les jours fériés. Nous vous informons que la plupart des démarches concernant les titres de séjour se font désormais en ligne, sur le site de l’administration numérique française, à l’adresse administration-etrangers-en-france.interieur.gouv.fr. Aucun dossier n’est accepté au guichet sans rendez-vous préalable confirmé par courrier électronique. Afin d’être orienté vers le service concerné, veuillez faire votre choix parmi les options suivantes. Pour les cartes grises et les permis de conduire, tapez un. Pour les titres de séjour et les demandes de naturalisation, tapez deux. Pour parler à un agent d’accueil, entre neuf heures et onze heures, uniquement les mardis et jeudis, tapez trois. En cas d’urgence administrative, veuillez vous rendre sur notre site internet, rubrique urgences, ou contacter votre mairie de résidence. Pour réécouter ce message, tapez zéro. Pour revenir au menu principal à tout moment, appuyez sur la touche étoile. Nous vous souhaitons une bonne journée.",
+          "en": "Welcome to the voice server of the Loire-Atlantique prefecture. Our reception services are open Monday to Friday, from nine a.m. to half past twelve, and from half past one to four p.m. The prefecture is closed on Wednesday afternoons, as well as on public holidays. Please note that most residence-permit procedures are now handled online, on the French digital-administration website, at administration-etrangers-en-france.interieur.gouv.fr. No file is accepted at the counter without a prior appointment confirmed by email. In order to be directed to the relevant service, please make your choice from the following options. For vehicle registration certificates and driving licences, press one. For residence permits and naturalisation applications, press two. To speak to a reception agent, between nine a.m. and eleven a.m., only on Tuesdays and Thursdays, press three. In case of an administrative emergency, please visit our website, emergencies section, or contact your town hall of residence. To listen to this message again, press zero. To return to the main menu at any time, press star. We wish you a good day.",
+          "audio": "01_le_repondeur_automatique.mp3"
+        }
+      ]
+    },
+    {
+      "id": "02_guichet_prefecture",
+      "title": "Au guichet de la préfecture",
+      "audio_base": "audio/02_guichet_prefecture/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Mme Dubreuil",
+          "fr": "Bonjour madame, bonjour. Vous avez votre convocation ?",
+          "en": "Good morning, madam, good morning. Do you have your appointment slip?",
+          "audio": "01_mme_dubreuil.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Bonjour madame. Oui, la voici, et j’ai aussi imprimé le mail de confirmation.",
+          "en": "Good morning. Yes, here it is, and I also printed the confirmation email.",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Mme Dubreuil",
+          "fr": "Parfait. Madame Carrick, Maeve Carrick. Renouvellement de titre de séjour. D’accord. Alors on va reprendre votre dossier ensemble, dans l’ordre, s’il vous plaît. Passeport en cours de validité, d’abord.",
+          "en": "Perfect. Ms. Carrick, Maeve Carrick. Residence-permit renewal. All right. We'll go through your file together, in order, please. Valid passport, first.",
+          "audio": "03_mme_dubreuil.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "Voilà.",
+          "en": "Here.",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Mme Dubreuil",
+          "fr": "Merci. Ancien titre de séjour ?",
+          "en": "Thank you. Previous residence permit?",
+          "audio": "05_mme_dubreuil.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "Oui, tenez.",
+          "en": "Yes, here you go.",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Mme Dubreuil",
+          "fr": "Très bien. Justificatif de domicile de moins de trois mois, ensuite.",
+          "en": "Very good. Proof of address, less than three months old, next.",
+          "audio": "07_mme_dubreuil.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "Alors, j’ai apporté ma dernière facture EDF.",
+          "en": "So, I brought my latest electricity bill.",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Mme Dubreuil",
+          "fr": "Voyons voir. Ah, je suis désolée, elle date du onze janvier. Nous sommes le vingt-deux avril. Cette facture a plus de trois mois. Elle n’est malheureusement pas recevable.",
+          "en": "Let me see. Ah, I'm sorry, it's dated January eleventh. Today is April twenty-second. This bill is more than three months old. Unfortunately, it's not acceptable.",
+          "audio": "09_mme_dubreuil.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Ah, je ne savais pas, je pensais que le dernier paiement comptait. Qu’est-ce que je peux apporter à la place ?",
+          "en": "Oh, I didn't know — I thought the last payment date counted. What can I bring instead?",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Mme Dubreuil",
+          "fr": "Il faut un justificatif récent, c’est-à-dire de moins de trois mois. Cela peut être une facture d’électricité, de gaz, d’eau, d’internet, ou une quittance de loyer émise par votre bailleur.",
+          "en": "We need a recent proof — that is, less than three months old. That can be an electricity, gas, water or internet bill, or a rent receipt issued by your landlord.",
+          "audio": "11_mme_dubreuil.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "J’ai mon avis d’imposition, est-ce que ça pourrait marcher ?",
+          "en": "I have my tax notice, would that work?",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Mme Dubreuil",
+          "fr": "Non, malheureusement. L’avis d’imposition est accepté comme justificatif complémentaire, mais pas comme justificatif principal pour le titre de séjour. Il me faut vraiment une facture récente ou une quittance.",
+          "en": "No, unfortunately. The tax notice is accepted as a supplementary document, but not as the main proof of address for the residence permit. I really need a recent bill or a rent receipt.",
+          "audio": "13_mme_dubreuil.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "Et mon contrat de bail ?",
+          "en": "And my rental contract?",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Mme Dubreuil",
+          "fr": "Le contrat de bail non plus, parce qu’il a été signé il y a plus d’un an. Ce qu’il faudrait, c’est que votre propriétaire vous fasse une attestation récente, ou bien que vous m’apportiez une quittance de loyer datée du mois dernier, ou encore une facture Internet récente.",
+          "en": "The rental contract won't do either, because it was signed more than a year ago. What we'd need is either a recent attestation from your landlord, or a rent receipt dated from last month, or else a recent internet bill.",
+          "audio": "15_mme_dubreuil.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "D’accord. Je peux télécharger ma dernière facture Free depuis mon espace client, je pense.",
+          "en": "All right. I think I can download my latest Free bill from my account area.",
+          "audio": "16_maeve.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Mme Dubreuil",
+          "fr": "Très bien. Si vous pouvez la télécharger, l’imprimer et revenir, nous pouvons compléter le dossier. La facture doit être nominative, à votre nom, avec l’adresse exacte indiquée.",
+          "en": "Very good. If you can download it, print it, and come back, we can complete the file. The bill has to be in your name, with the exact address shown.",
+          "audio": "17_mme_dubreuil.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "fr": "D’accord. Pour le reste du dossier, c’est bon ?",
+          "en": "OK. For the rest of the file, is everything fine?",
+          "audio": "18_maeve.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Mme Dubreuil",
+          "fr": "Voyons. Trois photos d’identité aux normes ?",
+          "en": "Let's see. Three regulation ID photos?",
+          "audio": "19_mme_dubreuil.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "fr": "Oui.",
+          "en": "Yes.",
+          "audio": "20_maeve.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Mme Dubreuil",
+          "fr": "Très bien. Elles sont correctes. Justificatif de ressources ?",
+          "en": "Fine. They're compliant. Proof of income?",
+          "audio": "21_mme_dubreuil.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "fr": "Oui, mon contrat de travail, mes trois derniers bulletins de salaire, et l’attestation France Travail.",
+          "en": "Yes, my work contract, my last three payslips, and the France Travail certificate.",
+          "audio": "22_maeve.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Mme Dubreuil",
+          "fr": "Pourquoi France Travail, vous avez été au chômage ?",
+          "en": "Why France Travail — have you been unemployed?",
+          "audio": "23_mme_dubreuil.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "fr": "Non, c’est une attestation de non-inscription, qui figurait sur la liste des pièces.",
+          "en": "No, it's a non-registration certificate, which was on the list of required documents.",
+          "audio": "24_maeve.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "Mme Dubreuil",
+          "fr": "Ah, très bien. C’est exact. Parfait, tout est là de ce côté-là. Il me manque donc uniquement le justificatif de domicile récent. Voici ce que je vous propose : je vous remets un récépissé qui atteste du dépôt de votre dossier à ce jour. Ce récépissé, il prouve que votre démarche est en cours, et il vaut autorisation provisoire de séjour. Il est valable six mois.",
+          "en": "Ah, very good. That's correct. Perfect, everything is there on that side. So all I'm missing is the recent proof of address. Here's what I propose: I'll give you a receipt certifying the deposit of your file as of today. This receipt proves that your application is in progress, and it serves as a provisional residence authorisation. It's valid for six months.",
+          "audio": "25_mme_dubreuil.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Maeve",
+          "fr": "Ah, super, merci. Donc je peux continuer à travailler normalement avec ce document ?",
+          "en": "Oh, great, thanks. So I can continue working normally with this document?",
+          "audio": "26_maeve.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "Mme Dubreuil",
+          "fr": "Oui, tout à fait. Vous pouvez travailler, voyager dans l’espace Schengen, et tout ce que vous faisiez avant. Par contre, il est essentiel que vous complétiez votre dossier rapidement. Je vous fixe un nouveau rendez-vous dans quinze jours. Est-ce que le six mai, à dix heures, vous convient ?",
+          "en": "Yes, absolutely. You can work, travel in the Schengen area, and do everything you did before. However, it's essential that you complete your file quickly. I'll schedule a new appointment for you in a fortnight. Does May sixth, at ten a.m., work for you?",
+          "audio": "27_mme_dubreuil.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Maeve",
+          "fr": "Oui, parfaitement.",
+          "en": "Yes, perfectly.",
+          "audio": "28_maeve.mp3"
+        },
+        {
+          "n": 29,
+          "speaker": "Mme Dubreuil",
+          "fr": "Très bien, je le bloque. Vous recevrez la confirmation par mail dans la journée. Pour ce rendez-vous, il faut que vous apportiez uniquement le justificatif de domicile manquant. Tout le reste, je l’ai déjà scanné.",
+          "en": "Very good, I'm booking it. You'll receive the confirmation by email later today. For this appointment, you only need to bring the missing proof of address. Everything else, I've already scanned.",
+          "audio": "29_mme_dubreuil.mp3"
+        },
+        {
+          "n": 30,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et si jamais je ne peux pas imprimer la facture Free, il y a un autre moyen ?",
+          "en": "OK. And if I can't print the Free bill, is there another way?",
+          "audio": "30_maeve.mp3"
+        },
+        {
+          "n": 31,
+          "speaker": "Mme Dubreuil",
+          "fr": "Oui. Vous pouvez venir avec la facture sur votre téléphone, et nous l’imprimons ici, au guichet. Ça arrive souvent. Ou sinon, vous pouvez demander à votre bailleur une attestation de loyer récente.",
+          "en": "Yes. You can come with the bill on your phone, and we print it here, at the counter. It happens often. Or else, you can ask your landlord for a recent rent attestation.",
+          "audio": "31_mme_dubreuil.mp3"
+        },
+        {
+          "n": 32,
+          "speaker": "Maeve",
+          "fr": "Parfait. Merci pour votre patience.",
+          "en": "Perfect. Thank you for your patience.",
+          "audio": "32_maeve.mp3"
+        },
+        {
+          "n": 33,
+          "speaker": "Mme Dubreuil",
+          "fr": "Il n’y a pas de quoi. Tenez, votre récépissé, votre passeport, votre ancien titre. Votre convocation pour le six mai est dans le mail que vous allez recevoir.",
+          "en": "You're welcome. Here — your receipt, your passport, your old permit. Your appointment slip for May sixth is in the email you'll receive.",
+          "audio": "33_mme_dubreuil.mp3"
+        },
+        {
+          "n": 34,
+          "speaker": "Maeve",
+          "fr": "Merci beaucoup. Bonne journée, madame.",
+          "en": "Thank you very much. Have a good day, madam.",
+          "audio": "34_maeve.mp3"
+        },
+        {
+          "n": 35,
+          "speaker": "Mme Dubreuil",
+          "fr": "Bonne journée à vous. Suivante, s’il vous plaît !",
+          "en": "Good day to you. Next, please!",
+          "audio": "35_mme_dubreuil.mp3"
+        }
+      ]
+    },
+    {
+      "id": "03_appel_caf",
+      "title": "Appel à la CAF pour l'APL",
+      "audio_base": "audio/03_appel_caf/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "M. Lefèvre",
+          "fr": "Caisse d’allocations familiales de la Loire-Atlantique, Jérôme Lefèvre à votre écoute, bonjour.",
+          "en": "Family Allowance Fund for Loire-Atlantique, Jérôme Lefèvre speaking, good morning.",
+          "audio": "01_m_lefevre.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Bonjour monsieur, je vous appelle au sujet de mon dossier APL.",
+          "en": "Good morning, sir. I'm calling about my APL application.",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "M. Lefèvre",
+          "fr": "Très bien, je vais ouvrir votre dossier. Votre numéro d’allocataire, s’il vous plaît ?",
+          "en": "Very well, I'll pull up your file. Your beneficiary number, please?",
+          "audio": "03_m_lefevre.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "Je l’ai sous les yeux, c’est le sept, deux, quatre, zéro, neuf, huit, cinq.",
+          "en": "I have it here — seven, two, four, zero, nine, eight, five.",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "M. Lefèvre",
+          "fr": "Sept, deux, quatre, zéro, neuf, huit, cinq. Un instant, je recherche. Voilà. Madame Carrick, c’est bien ça ?",
+          "en": "Seven, two, four, zero, nine, eight, five. One moment, I'm looking. There. Ms. Carrick, correct?",
+          "audio": "05_m_lefevre.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "Oui, Maeve Carrick : C, A, deux R, I, C, K.",
+          "en": "Yes — Maeve Carrick: C, A, double R, I, C, K.",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "M. Lefèvre",
+          "fr": "Très bien. Pour confirmation, pouvez-vous me donner votre date de naissance et votre code postal actuel ?",
+          "en": "Very good. For confirmation, could you give me your date of birth and your current postcode?",
+          "audio": "07_m_lefevre.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "Je suis née le quatorze mars mille neuf cent quatre-vingt-douze. Et mon code postal à Nantes, c’est le quarante-quatre mille.",
+          "en": "I was born on March fourteenth, nineteen ninety-two. And my Nantes postcode is forty-four thousand.",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "M. Lefèvre",
+          "fr": "Parfait, c’est vous. Alors, je regarde. Votre dossier APL a été déposé en ligne le mois dernier, c’est ça. Je vois qu’il est en attente, parce qu’il manque deux pièces justificatives.",
+          "en": "Perfect, that's you. Right, I'm looking. Your APL application was submitted online last month, correct. I can see it's on hold because two supporting documents are missing.",
+          "audio": "09_m_lefevre.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Ah, je n’avais pas vu. Lesquelles ?",
+          "en": "Oh, I hadn't noticed. Which ones?",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "M. Lefèvre",
+          "fr": "D’abord, il nous manque votre quittance de loyer la plus récente. Ensuite, il nous manque l’attestation de loyer remplie par votre propriétaire, qui confirme que vous êtes bien locataire chez lui.",
+          "en": "First, we're missing your most recent rent receipt. Next, we're missing the rent attestation filled in by your landlord, confirming that you are indeed their tenant.",
+          "audio": "11_m_lefevre.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "D’accord. Mais je ne comprends pas bien la différence entre une quittance et une attestation. C’est quoi la différence, exactement ?",
+          "en": "All right. But I don't quite understand the difference between a rent receipt and an attestation. What is the difference, exactly?",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "M. Lefèvre",
+          "fr": "Très bonne question. La quittance de loyer, c’est le document que votre propriétaire vous remet chaque mois, ou que votre gestionnaire locatif génère, qui atteste que vous avez bien payé le loyer pour un mois précis. Ça doit mentionner le montant, la période, et votre nom. L’attestation du propriétaire, elle, c’est un document rédigé sur papier libre par votre propriétaire, qui atteste que vous êtes bien son locataire, depuis telle date, à telle adresse, pour un loyer mensuel de tel montant.",
+          "en": "Very good question. The rent receipt is the document your landlord gives you each month — or that your property manager generates — certifying that you have paid the rent for a specific month. It must show the amount, the period, and your name. The landlord's attestation is a document drafted on plain paper by your landlord, certifying that you are indeed their tenant, since such-and-such a date, at such-and-such an address, for a monthly rent of such-and-such an amount.",
+          "audio": "13_m_lefevre.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "D’accord, je vois. Pour la quittance, j’ai accès à mon espace locataire en ligne, je vais pouvoir la télécharger sans souci. Par contre, pour l’attestation, il faut que je la demande à mon propriétaire ?",
+          "en": "OK, I see. For the receipt, I have access to my online tenant portal, so I'll be able to download it without trouble. But for the attestation, I'll have to ask my landlord directly?",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "M. Lefèvre",
+          "fr": "Exactement.",
+          "en": "Exactly.",
+          "audio": "15_m_lefevre.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "Et comment faut-il que je les envoie ? Par courrier ?",
+          "en": "And how should I send them? By post?",
+          "audio": "16_maeve.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "M. Lefèvre",
+          "fr": "Non, non, surtout pas. Ça prendrait des semaines. Vous allez sur le site caf.fr, vous vous connectez à votre espace personnel, et dans la rubrique « mon dossier », vous avez la possibilité de téléverser vos pièces justificatives directement.",
+          "en": "No, no, definitely not. That would take weeks. You go to caf.fr, log in to your personal area, and in the \"my file\" section, you can upload your supporting documents directly.",
+          "audio": "17_m_lefevre.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "fr": "Téléverser, ça veut dire uploader, c’est ça ?",
+          "en": "\"Téléverser\" means to upload, right?",
+          "audio": "18_maeve.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "M. Lefèvre",
+          "fr": "Oui, tout à fait. Le PDF ou la photo, c’est très bien. Faites attention que le document soit lisible, bien cadré, et dans un format accepté — PDF, JPEG, ou PNG.",
+          "en": "Yes, exactly. A PDF or a photo is fine. Just make sure the document is legible, properly framed, and in an accepted format — PDF, JPEG, or PNG.",
+          "audio": "19_m_lefevre.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et une fois que j’aurai téléversé, il faut combien de temps pour que le dossier soit traité ?",
+          "en": "OK. And once I've uploaded, how long does it take for the file to be processed?",
+          "audio": "20_maeve.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "M. Lefèvre",
+          "fr": "Une fois les pièces reçues, le délai de traitement est habituellement de deux à trois semaines. Vous recevrez un SMS dès que votre dossier sera validé.",
+          "en": "Once we receive the documents, the processing time is usually two to three weeks. You'll get an SMS as soon as your file is validated.",
+          "audio": "21_m_lefevre.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "fr": "Parfait. Une dernière question : à partir de quand est-ce que je recevrai l’aide ? Je veux dire, est-ce que je toucherai un rappel depuis mon emménagement, ou seulement à partir du mois où le dossier est validé ?",
+          "en": "Perfect. One last question: from when will I start receiving the benefit? I mean, will I get a back payment going back to when I moved in, or only from the month the file is validated?",
+          "audio": "22_maeve.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "M. Lefèvre",
+          "fr": "Alors, très bonne question aussi. L’APL est versée à partir du mois qui suit la date de dépôt de votre demande. Vous avez déposé le mois dernier, donc votre droit commence ce mois-ci. Le versement, lui, arrivera une fois que nous aurons reçu et validé les pièces manquantes. Le droit ne remonte pas à la date de votre emménagement, malheureusement.",
+          "en": "Another very good question. The APL is paid from the month following the date your application was submitted. You submitted last month, so your entitlement starts this month. The payment itself will arrive once we've received and validated the missing documents. The entitlement does not go back to your move-in date, unfortunately.",
+          "audio": "23_m_lefevre.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "fr": "D’accord, c’est un peu dommage, mais c’est clair. Merci beaucoup pour vos explications, monsieur.",
+          "en": "OK — a bit of a shame, but it's clear. Thank you very much for the explanations, sir.",
+          "audio": "24_maeve.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "M. Lefèvre",
+          "fr": "Je vous en prie. Vous voulez que je vous envoie un récapitulatif par message, dans votre espace personnel ?",
+          "en": "You're welcome. Would you like me to send you a summary by message, in your personal area?",
+          "audio": "25_m_lefevre.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Maeve",
+          "fr": "Oui, avec plaisir, comme ça je n’oublie rien.",
+          "en": "Yes, please, that way I won't forget anything.",
+          "audio": "26_maeve.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "M. Lefèvre",
+          "fr": "C’est noté, je le fais tout de suite. Autre chose, madame Carrick ?",
+          "en": "Noted, I'll do it right away. Anything else, Ms. Carrick?",
+          "audio": "27_m_lefevre.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Maeve",
+          "fr": "Non, c’est bon, je vous remercie.",
+          "en": "No, that's all, thank you.",
+          "audio": "28_maeve.mp3"
+        },
+        {
+          "n": 29,
+          "speaker": "M. Lefèvre",
+          "fr": "Très bien. Je vous souhaite une bonne fin de journée.",
+          "en": "Very good. I wish you a good rest of the day.",
+          "audio": "29_m_lefevre.mp3"
+        },
+        {
+          "n": 30,
+          "speaker": "Maeve",
+          "fr": "Bonne journée à vous aussi, au revoir.",
+          "en": "Same to you. Goodbye.",
+          "audio": "30_maeve.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04_mairie_acte_naissance",
+      "title": "À la mairie pour un acte de naissance",
+      "audio_base": "audio/04_mairie_acte_naissance/lines/",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Sabrina",
+          "fr": "Bonjour madame, bonjour. Vous avez pris un ticket ?",
+          "en": "Good morning, madam. Did you take a ticket?",
+          "audio": "01_sabrina.mp3"
+        },
+        {
+          "n": 2,
+          "speaker": "Maeve",
+          "fr": "Bonjour. Oui, j’ai le numéro B quarante-sept.",
+          "en": "Good morning. Yes — I have number B forty-seven.",
+          "audio": "02_maeve.mp3"
+        },
+        {
+          "n": 3,
+          "speaker": "Sabrina",
+          "fr": "C’est bon, c’est votre tour. Qu’est-ce que je peux faire pour vous ?",
+          "en": "You're up, it's your turn. What can I do for you?",
+          "audio": "03_sabrina.mp3"
+        },
+        {
+          "n": 4,
+          "speaker": "Maeve",
+          "fr": "Alors, je viens pour me renseigner. Je souhaiterais me pacser avec ma compagne ici à Nantes, et j’aimerais savoir quelles pièces je dois apporter pour constituer mon dossier, parce que je suis américaine.",
+          "en": "So, I've come to ask some questions. I'd like to enter into a PACS with my partner here in Nantes, and I'd like to know which documents I need to bring to put the file together, because I'm American.",
+          "audio": "04_maeve.mp3"
+        },
+        {
+          "n": 5,
+          "speaker": "Sabrina",
+          "fr": "D’accord. Alors, pour un PACS avec un partenaire étranger, on demande trois pièces principales. La première, c’est votre acte de naissance, en copie intégrale, de moins de six mois puisque vous êtes née à l’étranger. La deuxième, c’est une traduction assermentée de cet acte, si vous l’avez en anglais. Et la troisième, c’est un certificat de coutume, que vous obtenez auprès de votre consulat ou de votre ambassade.",
+          "en": "All right. For a PACS with a foreign partner, we ask for three main documents. First, your birth certificate — a full copy, less than six months old since you were born abroad. Second, a sworn translation of that certificate, if you have it in English. And third, a certificate of custom, which you obtain from your consulate or embassy.",
+          "audio": "05_sabrina.mp3"
+        },
+        {
+          "n": 6,
+          "speaker": "Maeve",
+          "fr": "D’accord. Alors j’ai bien ma copie intégrale d’acte de naissance, que j’ai fait demander par ma mère la semaine dernière aux États-Unis. Mais elle est évidemment en anglais.",
+          "en": "OK. So I do have my full birth certificate copy — my mother requested it for me in the US last week. But of course, it's in English.",
+          "audio": "06_maeve.mp3"
+        },
+        {
+          "n": 7,
+          "speaker": "Sabrina",
+          "fr": "Oui, c’est normal. Il faut donc la faire traduire par un traducteur assermenté près la cour d’appel. C’est très important : une traduction classique ne suffit pas. Le traducteur doit être inscrit sur la liste officielle des experts judiciaires.",
+          "en": "Yes, that's normal. So it needs to be translated by a sworn translator registered with the court of appeal. This is very important: a regular translation is not enough. The translator has to be listed on the official roster of judicial experts.",
+          "audio": "07_sabrina.mp3"
+        },
+        {
+          "n": 8,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et où est-ce que je peux trouver un traducteur assermenté ?",
+          "en": "I see. And where can I find a sworn translator?",
+          "audio": "08_maeve.mp3"
+        },
+        {
+          "n": 9,
+          "speaker": "Sabrina",
+          "fr": "Je peux vous donner trois noms, ils sont sur la liste de la cour d’appel de Rennes, qui est notre cour de rattachement. Tenez, je vous les note. Madame Lefort, à Nantes, vingt-cinq rue de la Fosse. Monsieur Kennedy, à Rennes, également inscrit pour l’anglais. Et madame O'Connor, à Angers. Tous les trois traduisent l’anglais vers le français.",
+          "en": "I can give you three names — they are on the list of the Rennes court of appeal, which is our attached court. Let me write them down for you. Ms. Lefort, in Nantes, twenty-five rue de la Fosse. Mr. Kennedy, in Rennes, also registered for English. And Ms. O'Connor, in Angers. All three translate English to French.",
+          "audio": "09_sabrina.mp3"
+        },
+        {
+          "n": 10,
+          "speaker": "Maeve",
+          "fr": "Et combien ça coûte, en moyenne ?",
+          "en": "And how much does it usually cost?",
+          "audio": "10_maeve.mp3"
+        },
+        {
+          "n": 11,
+          "speaker": "Sabrina",
+          "fr": "Les tarifs varient selon les traducteurs, mais pour un acte de naissance, comptez entre soixante et quatre-vingts euros. Parfois, c’est un peu plus si l’acte est long. Et comptez environ une semaine pour la traduction.",
+          "en": "Rates vary by translator, but for a birth certificate, plan on between sixty and eighty euros. Sometimes a little more if the certificate is long. And allow about a week for the translation.",
+          "audio": "11_sabrina.mp3"
+        },
+        {
+          "n": 12,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et le certificat de coutume, c’est quoi exactement ?",
+          "en": "OK. And the certificate of custom — what is that exactly?",
+          "audio": "12_maeve.mp3"
+        },
+        {
+          "n": 13,
+          "speaker": "Sabrina",
+          "fr": "C’est un document délivré par votre ambassade ou votre consulat. En gros, il explique la loi de votre pays — et il est souvent accompagné d’un certificat de célibat, qui confirme que vous êtes libre de conclure un PACS.",
+          "en": "It's a document issued by your embassy or consulate. In short, it explains the law of your country — and it often comes with a single-status certificate, which confirms that you are free to enter into a PACS.",
+          "audio": "13_sabrina.mp3"
+        },
+        {
+          "n": 14,
+          "speaker": "Maeve",
+          "fr": "D’accord. Et je dois contacter le consulat des États-Unis à Paris pour ça ?",
+          "en": "All right. And I should contact the U.S. consulate in Paris for that?",
+          "audio": "14_maeve.mp3"
+        },
+        {
+          "n": 15,
+          "speaker": "Sabrina",
+          "fr": "Oui, tout à fait. L’ambassade des États-Unis, à Paris, délivre ce document. Il faut généralement compter deux à trois semaines. Pensez à vérifier sur leur site les pièces qu’ils demandent de votre côté.",
+          "en": "Yes, exactly. The U.S. embassy in Paris issues this document. You usually have to allow two to three weeks. Remember to check on their website what documents they ask for on your side.",
+          "audio": "15_sabrina.mp3"
+        },
+        {
+          "n": 16,
+          "speaker": "Maeve",
+          "fr": "D’accord. Une fois que j’ai tout ça, comment je fais pour la signature ?",
+          "en": "OK. Once I have all that, how do I arrange the signing?",
+          "audio": "16_maeve.mp3"
+        },
+        {
+          "n": 17,
+          "speaker": "Sabrina",
+          "fr": "Vous prenez un rendez-vous à la mairie, soit en ligne sur le site de la mairie de Nantes, soit directement au guichet ici. La signature a lieu dans une petite salle, en présence d’un officier d’état civil — ce n’est pas moi qui m’en occupe, c’est un collègue spécialisé. Vous venez avec votre compagne, vous signez la convention de PACS, et c’est tout.",
+          "en": "You make an appointment at the town hall, either online on the Nantes town hall website, or directly at the counter here. The signing takes place in a small room, in the presence of a civil-status officer — it's not me who handles that, it's a specialised colleague. You come with your partner, you sign the PACS agreement, and that's it.",
+          "audio": "17_sabrina.mp3"
+        },
+        {
+          "n": 18,
+          "speaker": "Maeve",
+          "fr": "Combien de temps ça prend, la signature ?",
+          "en": "How long does the signing take?",
+          "audio": "18_maeve.mp3"
+        },
+        {
+          "n": 19,
+          "speaker": "Sabrina",
+          "fr": "Environ quinze à vingt minutes. C’est une formalité simple, une fois que le dossier est complet.",
+          "en": "About fifteen to twenty minutes. It's a simple formality, once the file is complete.",
+          "audio": "19_sabrina.mp3"
+        },
+        {
+          "n": 20,
+          "speaker": "Maeve",
+          "fr": "Et est-ce qu’il y a un délai d’attente pour obtenir un rendez-vous ?",
+          "en": "And is there a waiting time to get an appointment?",
+          "audio": "20_maeve.mp3"
+        },
+        {
+          "n": 21,
+          "speaker": "Sabrina",
+          "fr": "En ce moment, nous avons environ trois semaines d’attente. Je vous conseille de prendre rendez-vous dès que vous commencez à rassembler les pièces, pour que le rendez-vous tombe à peu près au moment où votre dossier sera complet.",
+          "en": "At the moment, we have about a three-week wait. I'd recommend booking the appointment as soon as you start gathering the documents, so that the appointment falls around the time your file is complete.",
+          "audio": "21_sabrina.mp3"
+        },
+        {
+          "n": 22,
+          "speaker": "Maeve",
+          "fr": "Super astuce, je vais faire ça. Dernière question : est-ce qu’il faut que nous apportions quelque chose le jour de la signature ?",
+          "en": "Great tip, I'll do that. One last question: do we need to bring anything on the day of the signing?",
+          "audio": "22_maeve.mp3"
+        },
+        {
+          "n": 23,
+          "speaker": "Sabrina",
+          "fr": "Oui, vos pièces d’identité à toutes les deux, en original, bien sûr. Et la convention de PACS, que vous aurez rédigée vous-mêmes — ou alors vous utilisez la convention type du formulaire Cerfa. Je peux vous imprimer le modèle, si vous voulez.",
+          "en": "Yes — the ID documents of both of you, originals, of course. And the PACS agreement, which you will have drafted yourselves — or else you use the standard agreement from the Cerfa form. I can print the template for you, if you like.",
+          "audio": "23_sabrina.mp3"
+        },
+        {
+          "n": 24,
+          "speaker": "Maeve",
+          "fr": "Oui, ce serait gentil, merci.",
+          "en": "Yes, that would be kind, thank you.",
+          "audio": "24_maeve.mp3"
+        },
+        {
+          "n": 25,
+          "speaker": "Sabrina",
+          "fr": "Voilà, je vous imprime le Cerfa de convention de PACS. Vous avez deux options : soit vous utilisez la convention type proposée par l’administration, soit vous faites rédiger une convention personnalisée par un notaire. La convention type est gratuite et largement suffisante dans la plupart des cas.",
+          "en": "Right, I'll print the PACS agreement Cerfa for you. You have two options: either use the standard agreement provided by the administration, or have a tailored agreement drafted by a notary. The standard agreement is free and largely sufficient in most cases.",
+          "audio": "25_sabrina.mp3"
+        },
+        {
+          "n": 26,
+          "speaker": "Maeve",
+          "fr": "Parfait. Je pense qu’on va partir sur la convention type.",
+          "en": "Perfect. I think we'll go with the standard one.",
+          "audio": "26_maeve.mp3"
+        },
+        {
+          "n": 27,
+          "speaker": "Sabrina",
+          "fr": "Très bien. Alors, récapitulatif : un, acte de naissance en copie intégrale récente ; deux, sa traduction assermentée ; trois, certificat de coutume du consulat ; quatre, vos deux pièces d’identité ; cinq, la convention de PACS complétée. Et six, la déclaration conjointe de PACS — le formulaire Cerfa — avec les attestations sur l’honneur de non-parenté et de résidence commune. Une fois tout ça réuni, vous prenez rendez-vous, vous venez ensemble, vous signez.",
+          "en": "Very good. So, summary: one, full recent copy of your birth certificate; two, its sworn translation; three, certificate of custom from the consulate; four, both your ID documents; five, the completed PACS agreement. And six, the joint PACS declaration — the Cerfa form — with the sworn statements of non-kinship and shared residence. Once all of that is gathered, you book the appointment, you come together, you sign.",
+          "audio": "27_sabrina.mp3"
+        },
+        {
+          "n": 28,
+          "speaker": "Maeve",
+          "fr": "Super clair. Merci beaucoup, madame.",
+          "en": "Very clear. Thank you so much.",
+          "audio": "28_maeve.mp3"
+        },
+        {
+          "n": 29,
+          "speaker": "Sabrina",
+          "fr": "Je vous en prie. Tenez, la liste des traducteurs et le formulaire. Bon courage pour vos démarches, et félicitations pour votre projet.",
+          "en": "You're welcome. Here — the list of translators and the form. Good luck with your procedures, and congratulations on your plans.",
+          "audio": "29_sabrina.mp3"
+        },
+        {
+          "n": 30,
+          "speaker": "Maeve",
+          "fr": "Merci beaucoup, c’est très gentil.",
+          "en": "Thank you, that's very kind.",
+          "audio": "30_maeve.mp3"
+        },
+        {
+          "n": 31,
+          "speaker": "Sabrina",
+          "fr": "Bonne journée, madame Carrick. Au revoir.",
+          "en": "Good day, Ms. Carrick. Goodbye.",
+          "audio": "31_sabrina.mp3"
+        },
+        {
+          "n": 32,
+          "speaker": "Maeve",
+          "fr": "Au revoir.",
+          "en": "Goodbye.",
+          "audio": "32_maeve.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "02_decouverte_librairie",
+      "title": "Découverte de la librairie",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/01_irene.mp3",
+          "text": "Bonjour ! J’ai vu votre vitrine en me promenant dans la rue. C’est une librairie en… ce n’est pas du français, n’est-ce pas ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/02_arnaud.mp3",
+          "text": "Bonjour ! Non, ce n’est pas du français. C’est de l’occitan, la langue historique de cette région. Bienvenue à La Tuta d’Òc — ça veut dire « la tanière d’oc ». Un petit refuge pour la langue, si vous voulez."
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/03_irene.mp3",
+          "text": "L’occitan ? Je ne savais même pas que cette langue existait. Je pensais que tout le monde en France parlait français."
+        },
+        {
+          "n": 4,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/04_arnaud.mp3",
+          "text": "C’est ce qu’on croit souvent à l’étranger. Mais avant que le français ne devienne la langue officielle, les gens ici parlaient occitan. C’était la langue de tous les jours — au marché, à l’église, dans les familles. Et c’était aussi une grande langue littéraire."
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/05_irene.mp3",
+          "text": "Vraiment ? Depuis quand est-ce que ça existe ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/06_arnaud.mp3",
+          "text": "Depuis le Moyen Âge au moins. Les troubadours, vous en avez entendu parler ? Ces poètes des XIIe et XIIIe siècles qui ont inventé la poésie d’amour courtois — ils écrivaient en occitan, pas en français."
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/07_irene.mp3",
+          "text": "Les troubadours ! Oui, j’en ai entendu parler, mais je croyais qu’ils écrivaient en vieux français."
+        },
+        {
+          "n": 8,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/08_arnaud.mp3",
+          "text": "Non, c’est une confusion très courante. Leur langue, c’était la langue d’oc. Le français du nord, on l’appelait la langue d’oïl. C’étaient deux langues différentes, aussi différentes que l’espagnol et le portugais."
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/09_irene.mp3",
+          "text": "Et aujourd’hui, il y a encore des gens qui parlent occitan ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/10_arnaud.mp3",
+          "text": "Oui, mais beaucoup moins qu’avant. La langue a été progressivement remplacée par le français, surtout après la Révolution. Mais il y a un mouvement de renaissance — des écoles bilingues, des associations, des artistes. C’est pour ça que cette librairie existe."
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/11_irene.mp3",
+          "text": "C’est fascinant. Je n’avais aucune idée de tout ça. Et vous, vous parlez occitan ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/12_arnaud.mp3",
+          "text": "Bien sûr ! Ma grand-mère ne parlait que ça. J’ai grandi avec les deux langues. Pour moi, garder cette librairie ouverte, c’est une façon de maintenir vivante la culture de mes ancêtres."
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "audio": "audio/02_decouverte_librairie/lines/13_irene.mp3",
+          "text": "C’est admirable. Est-ce que vous avez des livres en français sur cette histoire ? J’aimerais en apprendre davantage."
+        },
+        {
+          "n": 14,
+          "speaker": "Arnaud",
+          "audio": "audio/02_decouverte_librairie/lines/14_arnaud.mp3",
+          "text": "Absolument. Venez, je vais vous montrer notre rayon sur l’histoire de la langue d’oc. On a aussi des livres bilingues occitan-français qui sont parfaits pour découvrir la langue."
+        }
+      ]
+    },
+    {
+      "id": "03_troubadours_livres",
+      "title": "Les troubadours et leurs livres",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "audio": "audio/03_troubadours_livres/lines/01_irene.mp3",
+          "text": "Alors, ces troubadours… est-ce qu’il existe des livres en français qui expliquent bien leur histoire ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Arnaud",
+          "audio": "audio/03_troubadours_livres/lines/02_arnaud.mp3",
+          "text": "Oui, j’en ai plusieurs. Tenez, celui-ci est excellent — c’est une anthologie bilingue avec les poèmes originaux en ancien occitan et la traduction en français moderne en face. Ça permet de voir à quoi ressemblait la langue."
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "audio": "audio/03_troubadours_livres/lines/03_irene.mp3",
+          "text": "Ancien occitan… c’est très différent de l’occitan d’aujourd’hui ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Arnaud",
+          "audio": "audio/03_troubadours_livres/lines/04_arnaud.mp3",
+          "text": "Un peu, oui. Comme le français de Rabelais est différent du français moderne. Mais un locuteur occitan actuel peut encore comprendre les textes des troubadours, avec un peu d’effort. C’est d’ailleurs l’une des grandes fiertés des occitanistes : leur littérature médiévale est directement accessible."
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "audio": "audio/03_troubadours_livres/lines/05_irene.mp3",
+          "text": "Et les troubadours, ils venaient tous de Toulouse ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Arnaud",
+          "audio": "audio/03_troubadours_livres/lines/06_arnaud.mp3",
+          "text": "Non, pas du tout. Ils venaient de partout dans le territoire occitan — du Limousin, de l’Aquitaine, de la Provence, du Languedoc. Le plus célèbre, Guillaume IX, était duc d’Aquitaine et comte de Poitiers. Mais Toulouse était un centre important. Le comte Raimond V tenait une cour brillante où les troubadours étaient les bienvenus."
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "audio": "audio/03_troubadours_livres/lines/07_irene.mp3",
+          "text": "Et de quoi parlaient leurs poèmes, exactement ?"
+        },
+        {
+          "n": 8,
+          "speaker": "Arnaud",
+          "audio": "audio/03_troubadours_livres/lines/08_arnaud.mp3",
+          "text": "Surtout d’amour — mais pas n’importe quel amour. Ils ont inventé ce qu’on appelle la « fin'amor », l’amour courtois. Le poète chantait son amour pour une dame noble, souvent inaccessible. C’était codifié, raffiné, plein de métaphores. Ça a complètement transformé la façon dont l’Europe pensait l’amour et les relations entre hommes et femmes."
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "audio": "audio/03_troubadours_livres/lines/09_irene.mp3",
+          "text": "C’est fascinant. Et il y avait des femmes troubadours aussi ?"
+        },
+        {
+          "n": 10,
+          "speaker": "Arnaud",
+          "audio": "audio/03_troubadours_livres/lines/10_arnaud.mp3",
+          "text": "Oui, on les appelait les « trobairitz ». On en connaît une vingtaine. La plus connue est la Comtesse de Dia, qui a écrit des poèmes d’une grande intensité émotionnelle. Tenez, j’ai un recueil consacré aux trobairitz — il vient de sortir."
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "audio": "audio/03_troubadours_livres/lines/11_irene.mp3",
+          "text": "Je le prends ! Et est-ce que vous avez quelque chose sur la croisade des Albigeois et son impact sur cette culture ?"
+        },
+        {
+          "n": 12,
+          "speaker": "Arnaud",
+          "audio": "audio/03_troubadours_livres/lines/12_arnaud.mp3",
+          "text": "Bien sûr. Ce livre-là explique comment la croisade a détruit non seulement les Cathares, mais aussi toute la civilisation occitane qui les entourait. Les cours seigneuriales ont disparu, les troubadours ont perdu leurs protecteurs, et la langue a commencé son long déclin. C’est une histoire tragique, mais essentielle pour comprendre cette région."
+        }
+      ]
+    },
+    {
+      "id": "04_culture_occitane_toulouse",
+      "title": "La culture occitane à Toulouse",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/01_irene.mp3",
+          "text": "Arnaud, est-ce que votre librairie est le seul endroit à Toulouse où on peut découvrir la culture occitane ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/02_arnaud.mp3",
+          "text": "Oh non, loin de là ! La culture occitane est présente un peu partout dans la ville, même si on ne la remarque pas toujours. Vous avez vu les panneaux de rue bilingues ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/03_irene.mp3",
+          "text": "Maintenant que vous le dites, oui ! J’avais remarqué un deuxième nom sur les plaques de certaines rues, mais je pensais que c’était de l’espagnol."
+        },
+        {
+          "n": 4,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/04_arnaud.mp3",
+          "text": "C’est de l’occitan. La mairie a installé ces panneaux il y a quelques années. Si vous regardez bien, vous verrez aussi que le métro annonce les stations en français et en occitan. C’est discret, mais c’est là."
+        },
+        {
+          "n": 5,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/05_irene.mp3",
+          "text": "Et en dehors des panneaux, il y a d’autres endroits à visiter ?"
+        },
+        {
+          "n": 6,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/06_arnaud.mp3",
+          "text": "Bien sûr. L’Ostal d’Occitània, c’est un centre culturel dédié à la langue et à la culture occitanes. Ils organisent des cours de langue, des concerts, des expositions. C’est dans le centre-ville, pas loin d’ici."
+        },
+        {
+          "n": 7,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/07_irene.mp3",
+          "text": "Et la musique ? Vous avez mentionné des artistes tout à l’heure."
+        },
+        {
+          "n": 8,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/08_arnaud.mp3",
+          "text": "Oui, Toulouse est un vrai foyer de musique occitane contemporaine. Les Fabulous Trobadors, par exemple, mélangent l’occitan avec le hip-hop et le reggae. Il y a aussi des groupes plus traditionnels qui jouent de la musique folk occitane avec des instruments anciens."
+        },
+        {
+          "n": 9,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/09_irene.mp3",
+          "text": "C’est surprenant, du hip-hop en occitan !"
+        },
+        {
+          "n": 10,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/10_arnaud.mp3",
+          "text": "C’est justement ce qui maintient la langue vivante — quand les jeunes se l’approprient et en font quelque chose de moderne. On a aussi des artistes plasticiens qui travaillent sur l’identité occitane. D’ailleurs, ici dans la librairie, on expose régulièrement des œuvres d’artistes locaux."
+        },
+        {
+          "n": 11,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/11_irene.mp3",
+          "text": "J’ai remarqué les tableaux en entrant, oui. Ils sont magnifiques."
+        },
+        {
+          "n": 12,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/12_arnaud.mp3",
+          "text": "Ce sont des sérigraphies de Marta Gimenez, une artiste toulousaine d’origine catalane. Elle travaille sur les liens entre l’occitan et le catalan — les deux langues sont cousines, vous savez. Ses œuvres mélangent la calligraphie occitane avec des motifs géométriques modernes."
+        },
+        {
+          "n": 13,
+          "speaker": "Irene",
+          "audio": "audio/04_culture_occitane_toulouse/lines/13_irene.mp3",
+          "text": "C’est vraiment beau. Et il y a des festivals ou des événements autour de cette culture ?"
+        },
+        {
+          "n": 14,
+          "speaker": "Arnaud",
+          "audio": "audio/04_culture_occitane_toulouse/lines/14_arnaud.mp3",
+          "text": "Oui, le festival Occitània a lieu chaque automne. Pendant près d’un mois, il y a des concerts, du théâtre en occitan, des conférences, des ateliers de cuisine traditionnelle. C’est le grand rendez-vous de l’année pour les amoureux de la culture d’oc. Si vous revenez fin septembre ou en octobre, je vous le recommande vivement."
+        }
+      ]
+    },
+    {
+      "id": "05_lecon_occitan",
+      "title": "Une leçon d'occitan",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/01_madame_vidal.mp3",
+          "text": "Allez, on se regroupe ici, tout le monde. Vous voyez cette librairie ? Tous les livres ici sont en occitan ou parlent de la culture occitane. Et je sais ce que vous pensez : « l’occitan, c’est quoi ? » Eh bien, c’est justement pour ça qu’on est là."
+        },
+        {
+          "n": 2,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/02_madame_vidal.mp3",
+          "text": "Alors, pour commencer : l’occitan, c’est la langue que vos arrière-grands-parents parlaient. Pas tous, mais beaucoup d’entre eux. Ici à Toulouse, il y a encore cinquante ans, les gens du marché parlaient occitan entre eux. C’était la langue normale, la langue de la vie de tous les jours."
+        },
+        {
+          "n": 3,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/03_madame_vidal.mp3",
+          "text": "Et cette langue, elle est aussi ancienne que le français — et sa littérature, elle, est même plus ancienne que la littérature française. Au Moyen Âge, l’occitan était une des langues les plus prestigieuses d’Europe. Les troubadours — vous en avez entendu parler en cours, non ? — ils n’écrivaient pas en français. Ils écrivaient en occitan, en « langue d’oc ». D’ailleurs, c’est de là que vient le nom de notre région : l’Occitanie. Le mot vient directement de « langue d’oc »."
+        },
+        {
+          "n": 4,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/04_madame_vidal.mp3",
+          "text": "Mais alors, pourquoi est-ce qu’on ne la parle plus ? C’est une bonne question. D’abord, il y a eu la croisade contre les Cathares, au XIIIe siècle. Le nord de la France a envahi le sud, et les nobles du nord ont remplacé les nobles du sud. Le pouvoir a changé de langue. Ensuite, en 1539, le roi François Ier a signé l’ordonnance de Villers-Cotterêts, qui a imposé le français dans tous les documents officiels. L’occitan est devenu une langue « d’en bas », la langue des paysans et des ouvriers."
+        },
+        {
+          "n": 5,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/05_madame_vidal.mp3",
+          "text": "Et puis, il y a eu l’école de la République. Oui, l’école — celle où vous allez tous les jours. À partir du XIXe siècle, les instituteurs avaient pour mission de faire disparaître les langues régionales. Si un enfant parlait occitan en classe, on le punissait. On lui mettait parfois un sabot autour du cou — on appelait ça le « signal ». Imaginez qu’on vous punisse parce que vous parlez la langue de votre famille. C’est exactement ce qui s’est passé ici, dans des écoles comme la vôtre."
+        },
+        {
+          "n": 6,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/06_madame_vidal.mp3",
+          "text": "Aujourd’hui, la situation est différente. L’occitan est reconnu comme patrimoine culturel. Il y a des écoles bilingues — les calandretas — où des enfants de votre âge apprennent en occitan et en français. Il y a des musiciens, des écrivains, des artistes qui créent en occitan. Et il y a des librairies comme celle-ci qui gardent cette culture vivante."
+        },
+        {
+          "n": 7,
+          "speaker": "Madame Vidal",
+          "audio": "audio/05_lecon_occitan/lines/07_madame_vidal.mp3",
+          "text": "Alors, quand vous verrez les panneaux bilingues dans le métro ou dans les rues, vous saurez maintenant que ce n’est pas de la décoration. C’est le souvenir d’une langue qui a été la nôtre pendant des siècles. Et peut-être que certains d’entre vous auront envie de l’apprendre — ce serait une belle façon de renouer avec l’histoire de votre ville. Bon, allez, on va regarder les livres. Et pas de bruit, on est dans une librairie !"
+        }
+      ]
+    }
+  ]
+}

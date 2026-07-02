@@ -1,0 +1,653 @@
+{
+  "schema": "dictee/v1",
+  "exercises": [
+    {
+      "id": "01_entretien_embauche",
+      "title": "L’entretien d’embauche",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/01_helene.mp3",
+          "text": "Bonjour madame Lefort, merci d’être venue. Je vous en prie, installez-vous. Je suis Hélène Barbier, DRH, et voici Clément Rivière, notre président et cofondateur."
+        },
+        {
+          "n": 2,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/02_clement.mp3",
+          "text": "Bonjour, madame, enchanté. Je vous remercie d’avoir accepté notre invitation. On va essayer de rendre cet entretien le plus constructif possible pour tout le monde."
+        },
+        {
+          "n": 3,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/03_nadia.mp3",
+          "text": "Bonjour à tous les deux. Merci à vous de me recevoir. J’étais très curieuse de découvrir vos locaux, et je dois dire que l’endroit est vraiment agréable."
+        },
+        {
+          "n": 4,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/04_helene.mp3",
+          "text": "Merci ! Pour commencer, pourriez-vous nous parler rapidement de votre parcours, et nous dire ce qui vous a donné envie de postuler chez nous ?"
+        },
+        {
+          "n": 5,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/05_nadia.mp3",
+          "text": "Bien sûr. J’ai fait une école d’ingénieurs à Compiègne, puis un mastère spécialisé en data science à Télécom Paris. J’ai commencé comme data analyst dans un cabinet de conseil, où je suis restée deux ans. Ensuite, je suis passée en interne chez un acteur de la presse en ligne, où j’occupe actuellement un poste de lead data-viz depuis bientôt quatre ans."
+        },
+        {
+          "n": 6,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/06_clement.mp3",
+          "text": "Quatre ans, c’est une belle durée. Qu’est-ce qui vous pousse à partir ?"
+        },
+        {
+          "n": 7,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/07_nadia.mp3",
+          "text": "Plusieurs choses, en fait. D’une part, j’ai le sentiment d’avoir un peu fait le tour du poste, techniquement parlant. Nos outils sont matures, nos pipelines sont en place, et les nouveaux projets se ressemblent. D’autre part, je cherche un environnement où la visualisation de données est vraiment au cœur du produit, et pas juste un support pour la rédaction. Ce que vous faites chez Pixelune correspond parfaitement à cette envie."
+        },
+        {
+          "n": 8,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/08_helene.mp3",
+          "text": "Pouvez-vous nous parler d’une réalisation dont vous êtes particulièrement fière ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/09_nadia.mp3",
+          "text": "Oui, je pense à une grande enquête interactive qu’on a publiée sur les inégalités territoriales en France, en 2024. J’ai conçu l’architecture de visualisation de bout en bout, depuis le choix des représentations jusqu’à l’optimisation pour le mobile. Le projet a été repris par plusieurs médias européens et a remporté un prix aux Data Journalism Awards."
+        },
+        {
+          "n": 10,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/10_clement.mp3",
+          "text": "Excellent. Et à l’inverse, est-ce que vous pourriez nous raconter un échec dont vous avez tiré des enseignements ?"
+        },
+        {
+          "n": 11,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/11_nadia.mp3",
+          "text": "Oui, volontiers. En 2023, j’avais porté un projet de refonte complète de notre bibliothèque interne de composants graphiques. Techniquement, c’était une belle idée. Mais je n’avais pas suffisamment consulté les journalistes en amont, et au moment du déploiement, ils se sont retrouvés face à des outils qu’ils trouvaient moins intuitifs que les anciens. On a dû faire marche arrière sur plusieurs choix. Ce que j’en ai tiré, c’est qu’une bonne architecture technique ne suffit pas — il faut co-construire avec les utilisateurs finaux, même quand ils ne sont pas techniques."
+        },
+        {
+          "n": 12,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/12_clement.mp3",
+          "text": "C’est une leçon importante, en effet. Dans votre poste actuel, comment gérez-vous les désaccords au sein d’une équipe technique ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/13_nadia.mp3",
+          "text": "J’essaie de ramener la discussion sur les faits et sur les critères. Quand deux approches s’opposent, je propose qu’on formalise ensemble ce qu’on attend vraiment — performance, maintenabilité, simplicité d’usage — et qu’on évalue chaque option sur ces axes. Cela étant, je sais aussi qu’il y a des moments où il faut trancher, et si la décision me revient, je la prends, quitte à revenir dessus plus tard si les faits m’ont donné tort."
+        },
+        {
+          "n": 14,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/14_helene.mp3",
+          "text": "J’aimerais revenir sur un point concret. Pouvez-vous nous parler d’une situation où vous avez dû défendre une décision qui n’était pas populaire ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/15_nadia.mp3",
+          "text": "Oui, il y en a une qui me vient à l’esprit. Au moment de la refonte dont je parlais, j’avais pris la décision de geler toute nouvelle fonctionnalité pendant trois mois, le temps de stabiliser la base. Les journalistes n’étaient pas contents, la rédaction en chef encore moins. Mais j’étais convaincue qu’on accumulait une dette technique qui allait nous coûter bien plus cher si on n’agissait pas. J’ai présenté un document chiffré, avec les coûts de maintenance projetés sur douze mois, et j’ai défendu ma position en comité. Au bout du compte, la direction a validé le gel. Par la suite, la qualité du code a nettement progressé."
+        },
+        {
+          "n": 16,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/16_clement.mp3",
+          "text": "Merci. De votre côté, avez-vous des questions à nous poser sur le poste ou sur Pixelune ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/17_nadia.mp3",
+          "text": "Oui, plusieurs. D’abord, quelle autonomie technique aurait la personne sur ce poste ? Je veux dire, sur les choix d’outils, de librairies, d’architecture ?"
+        },
+        {
+          "n": 18,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/18_clement.mp3",
+          "text": "Beaucoup d’autonomie, concrètement. On a une charte technique assez légère, qu’on fait évoluer collectivement. Toutefois, pour les gros choix structurants, on passe par un comité d’architecture, qui se réunit tous les deux mois."
+        },
+        {
+          "n": 19,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/19_nadia.mp3",
+          "text": "Je vois. Ensuite, concernant le télétravail ?"
+        },
+        {
+          "n": 20,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/20_helene.mp3",
+          "text": "Nous sommes sur un modèle hybride, trois jours au bureau, deux jours à distance. Les jours au bureau ne sont pas imposés, mais on demande que le mardi soit un jour commun, parce que c’est le jour des rituels d’équipe."
+        },
+        {
+          "n": 21,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/21_nadia.mp3",
+          "text": "Parfait. Et enfin, sur la formation continue ?"
+        },
+        {
+          "n": 22,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/22_helene.mp3",
+          "text": "Nous avons un budget formation individuel de mille cinq cents euros par an, auquel s’ajoutent des formations internes. Nous finançons également les conférences, dans la limite d’une par an par personne."
+        },
+        {
+          "n": 23,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/23_nadia.mp3",
+          "text": "Merci, ces éléments sont très clairs. Et pour la suite ?"
+        },
+        {
+          "n": 24,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/24_helene.mp3",
+          "text": "Nous avons un ou deux autres candidats à recevoir cette semaine. Je vous recontacte d’ici une dizaine de jours, quel que soit le résultat. Si nous poursuivons avec vous, il y aura une dernière rencontre plus technique avec l’équipe data."
+        },
+        {
+          "n": 25,
+          "speaker": "Nadia",
+          "audio": "audio/01_entretien_embauche/lines/25_nadia.mp3",
+          "text": "Très bien. Je vous remercie, ça a été un échange vraiment intéressant pour moi."
+        },
+        {
+          "n": 26,
+          "speaker": "Clément",
+          "audio": "audio/01_entretien_embauche/lines/26_clement.mp3",
+          "text": "Merci à vous, madame Lefort. Bonne fin de journée."
+        },
+        {
+          "n": 27,
+          "speaker": "Hélène",
+          "audio": "audio/01_entretien_embauche/lines/27_helene.mp3",
+          "text": "Je vous raccompagne. Par ici, s’il vous plaît."
+        }
+      ]
+    },
+    {
+      "id": "02_negociation_salariale",
+      "title": "La négociation salariale",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/01_helene.mp3",
+          "text": "Bonjour madame Lefort, c’est Hélène Barbier, de Pixelune. Est-ce que je vous dérange ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/02_nadia.mp3",
+          "text": "Bonjour Hélène ! Non, pas du tout, je suis entre deux réunions mais j’ai une demi-heure devant moi. Comment allez-vous ?"
+        },
+        {
+          "n": 3,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/03_helene.mp3",
+          "text": "Très bien, merci. J’ai une bonne nouvelle, Nadia — je vous appelle pour vous faire une proposition. Vous nous avez convaincus, Clément et moi. L’équipe data a été très enthousiaste aussi, après votre rencontre avec eux."
+        },
+        {
+          "n": 4,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/04_nadia.mp3",
+          "text": "Oh, merci, ça me fait vraiment plaisir à entendre."
+        },
+        {
+          "n": 5,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/05_helene.mp3",
+          "text": "Donc, voici ce qu’on vous propose. Un CDI à temps plein, statut cadre au forfait jours, poste de senior data-viz engineer. Sur le fixe, nous vous proposons soixante-deux mille euros bruts annuels sur douze mois. S’y ajoute un variable cible de cinq mille euros, lié aux objectifs d’équipe et individuels."
+        },
+        {
+          "n": 6,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/06_nadia.mp3",
+          "text": "D’accord."
+        },
+        {
+          "n": 7,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/07_helene.mp3",
+          "text": "Côté avantages : les tickets-restaurant à neuf euros par jour, pris en charge à soixante pour cent, une mutuelle d’entreprise complète prise en charge à soixante-dix pour cent pour le salarié, vingt-cinq jours de congés et onze jours de RTT. On prend aussi en charge cinquante pour cent du Navigo. Nous n’avons pas de treizième mois à ce stade, la politique de l’entreprise étant plutôt d’investir dans le variable et dans les augmentations annuelles."
+        },
+        {
+          "n": 8,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/08_nadia.mp3",
+          "text": "Je vous remercie pour cette proposition, Hélène, c’est clair et bien structuré. Est-ce que je peux vous dire, en toute transparence, ce qui m’interroge un peu ?"
+        },
+        {
+          "n": 9,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/09_helene.mp3",
+          "text": "Bien sûr, je vous en prie."
+        },
+        {
+          "n": 10,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/10_nadia.mp3",
+          "text": "Sur le fixe, j’étais partie sur une cible autour de soixante-huit mille euros. J’ai fait une petite étude de marché avant l’entretien — j’ai regardé les annonces comparables chez Doctolib, Datadog, BlaBlaCar, sur les grilles de Glassdoor et sur LinkedIn Salary. Pour un profil senior avec mes années d’expérience et avec la spécialité data-viz, la médiane se situe entre soixante-cinq et soixante-quinze mille. Donc votre proposition me paraît un peu en dessous du marché, même si je comprends que vous êtes une structure plus petite."
+        },
+        {
+          "n": 11,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/11_helene.mp3",
+          "text": "Je comprends votre position, et je vous remercie d’avoir fait ce travail en amont. De notre côté, nous fonctionnons avec une grille salariale interne, qui nous permet de maintenir une certaine cohérence entre les collaborateurs. Cette grille, pour votre niveau, nous mène à la proposition que je viens de vous faire. Si je montais le fixe à soixante-huit, je créerais un écart avec des personnes déjà en poste depuis plusieurs années, et cela poserait un problème d’équité interne, que je ne peux pas me permettre."
+        },
+        {
+          "n": 12,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/12_nadia.mp3",
+          "text": "Je comprends tout à fait cette logique de grille, et je respecte cette exigence d’équité. Cela étant, serait-il envisageable qu’on travaille sur d’autres leviers ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/13_helene.mp3",
+          "text": "C’est exactement ce que je voulais vous proposer. Voici ce à quoi j’ai réfléchi en anticipant cet échange. Premièrement, on peut passer le variable cible de cinq à huit mille euros, avec des objectifs calibrés de façon réaliste. Deuxièmement, je peux m’engager sur une clause de révision salariale à six mois, fondée sur votre contribution observée — ce qui, en pratique, anticipe d’un an la revalorisation annuelle. Troisièmement, nous pouvons prévoir une prime de bienvenue de trois mille euros bruts, versée à la fin de la période d’essai."
+        },
+        {
+          "n": 14,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/14_nadia.mp3",
+          "text": "C’est une proposition intéressante. Si je fais le total sur la première année, avec la prime de bienvenue et le variable cible atteint, on arrive à combien, approximativement ?"
+        },
+        {
+          "n": 15,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/15_helene.mp3",
+          "text": "Soixante-deux de fixe, plus huit de variable cible, plus trois de prime de bienvenue — soit un package théorique de soixante-treize mille bruts sur la première année, si tout se passe bien."
+        },
+        {
+          "n": 16,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/16_nadia.mp3",
+          "text": "D’accord. Et si je comprends bien, la révision à six mois, elle porte sur quoi exactement ? Sur le fixe, ou sur l’ensemble ?"
+        },
+        {
+          "n": 17,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/17_helene.mp3",
+          "text": "Sur le fixe. L’idée, c’est qu’à six mois, on fait un point d’étape, et si votre intégration est réussie — ce dont je ne doute pas — on réajuste votre fixe. L’objectif, pour moi, c’est qu’on arrive à soixante-six ou soixante-sept à l’issue de cette révision."
+        },
+        {
+          "n": 18,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/18_nadia.mp3",
+          "text": "Très bien. Je pense que cette combinaison me convient, à condition que la clause de révision soit bien inscrite dans le contrat, avec une date précise et des critères objectifs."
+        },
+        {
+          "n": 19,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/19_helene.mp3",
+          "text": "Absolument, c’est le principe. La clause de révision figurera noir sur blanc dans le contrat, avec la date et les critères. Vous aurez le tout sous les yeux avant de signer."
+        },
+        {
+          "n": 20,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/20_nadia.mp3",
+          "text": "Parfait. Alors, sous réserve de relire le contrat, on peut dire qu’on est d’accord."
+        },
+        {
+          "n": 21,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/21_helene.mp3",
+          "text": "Excellent. Je suis vraiment ravie. Je vous envoie le contrat définitif d’ici vendredi. Vous aurez une semaine pour le relire tranquillement. Je reste à votre disposition pour toute question, bien entendu."
+        },
+        {
+          "n": 22,
+          "speaker": "Nadia",
+          "audio": "audio/02_negociation_salariale/lines/22_nadia.mp3",
+          "text": "Merci Hélène, merci vraiment. Bonne fin de semaine."
+        },
+        {
+          "n": 23,
+          "speaker": "Hélène",
+          "audio": "audio/02_negociation_salariale/lines/23_helene.mp3",
+          "text": "Bonne fin de semaine à vous, et à très vite dans l’équipe."
+        }
+      ]
+    },
+    {
+      "id": "03_entretien_annuel",
+      "title": "L’entretien annuel d’évaluation",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/01_clement.mp3",
+          "text": "Bonjour Nadia, entre, installe-toi. Café, thé, rien ?"
+        },
+        {
+          "n": 2,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/02_nadia.mp3",
+          "text": "Un verre d’eau, volontiers. Merci."
+        },
+        {
+          "n": 3,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/03_clement.mp3",
+          "text": "Voilà. Alors, ton entretien annuel. Ça passe vite, quand même, un an. J’ai relu hier soir tes objectifs de l’an dernier, et tout ce que tu as livré. Je te propose qu’on commence par mon retour à moi, puis qu’on te laisse le temps de faire le tien, et enfin qu’on parle de la suite. Ça te convient ?"
+        },
+        {
+          "n": 4,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/04_nadia.mp3",
+          "text": "Parfait, oui."
+        },
+        {
+          "n": 5,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/05_clement.mp3",
+          "text": "Bon. Première chose : je veux te dire que ton intégration a vraiment été remarquable. Tu avais fixé, avec Hélène et moi, trois grands objectifs pour ta première année — la refonte du module de graphes temporels, l’encadrement technique de la nouvelle recrue, et la contribution à la roadmap produit. Sur les trois, on est largement au rendez-vous, voire au-delà."
+        },
+        {
+          "n": 6,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/06_nadia.mp3",
+          "text": "Merci, c’est agréable à entendre."
+        },
+        {
+          "n": 7,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/07_clement.mp3",
+          "text": "Sur la refonte, ce qui m’a frappé, c’est la rigueur de ta démarche. Tu avais proposé ce projet dès janvier, et nous l’avons livré fin juin, dans les délais et avec une qualité de code qui a vraiment élevé le niveau de l’équipe. Les retours des clients sont excellents — on a mesuré une baisse de vingt pour cent du temps de rendu sur les gros datasets, c’est du concret."
+        },
+        {
+          "n": 8,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/08_nadia.mp3",
+          "text": "Oui, sur ce projet, ce qui a fait la différence, c’est qu’on a pris le temps de faire des ateliers avec les utilisateurs en amont. J’avais beaucoup appris de mon expérience précédente, où j’avais justement zappé cette étape."
+        },
+        {
+          "n": 9,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/09_clement.mp3",
+          "text": "Exactement. Sur l’encadrement de Julien, là aussi, je trouve que tu as fait un travail très juste. Il me disait la semaine dernière qu’il avait énormément progressé, et surtout qu’il se sentait en confiance pour prendre des initiatives. Ce n’est pas évident, de transmettre sans étouffer."
+        },
+        {
+          "n": 10,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/10_nadia.mp3",
+          "text": "Julien est quelqu’un de solide, il est volontaire, il pose les bonnes questions. J’ai essayé de lui laisser de la marge tout en étant disponible quand il en avait besoin."
+        },
+        {
+          "n": 11,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/11_clement.mp3",
+          "text": "Cela étant dit, je voudrais qu’on parle aussi de ce qui peut progresser. Rien de dramatique, on est d’accord. Deux choses principales. La première, c’est la communication transverse. Tu es très bien ancrée dans la tech, mais on remarque parfois — et on me le remonte — que les échanges avec le produit et le commercial pourraient être plus fluides. Tu as tendance à rester dans ton couloir."
+        },
+        {
+          "n": 12,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/12_nadia.mp3",
+          "text": "D’accord, c’est un retour que je prends. Concrètement, tu penses à quoi ?"
+        },
+        {
+          "n": 13,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/13_clement.mp3",
+          "text": "Par exemple, quand il y a un changement de priorité côté produit, on gagnerait à ce que tu participes plus tôt aux discussions, pour challenger ou infléchir, plutôt que de découvrir la décision en sprint planning. Je pense qu’il y a une marge de progression sur ta présence dans ces moments-là."
+        },
+        {
+          "n": 14,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/14_nadia.mp3",
+          "text": "Je vois. C’est vrai que j’ai tendance à laisser Jean, notre PM, s’en occuper, et à me concentrer sur la partie technique. Je vais travailler dessus."
+        },
+        {
+          "n": 15,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/15_clement.mp3",
+          "text": "Deuxième point : la posture de lead. Tu encadres très bien Julien, comme je te le disais. Mais la question qui va se poser dans les six prochains mois, c’est comment tu te positionnes par rapport à une équipe plus large. Ton périmètre va probablement s’étendre."
+        },
+        {
+          "n": 16,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/16_nadia.mp3",
+          "text": "Justement, c’est un point que je voulais aborder. Je voulais te parler de mon évolution, et du fait que je me sens prête, aujourd’hui, à prendre la fonction de lead engineer sur toute la partie data-viz. Avec, évidemment, une revalorisation salariale et une montée en responsabilité formalisée."
+        },
+        {
+          "n": 17,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/17_clement.mp3",
+          "text": "Je m’attendais à ce que tu me poses la question, et je comprends parfaitement la démarche. Je vais être franc : sur le principe, je suis favorable. Sur le timing, il faut qu’on en discute sérieusement. Marc part à la retraite dans six mois, et sa succession, c’est un vrai enjeu. Donc ce que je te propose, c’est qu’on construise un plan clair sur les six prochains mois."
+        },
+        {
+          "n": 18,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/18_nadia.mp3",
+          "text": "Je t’écoute."
+        },
+        {
+          "n": 19,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/19_clement.mp3",
+          "text": "Je te propose qu’on fixe trois jalons. D’ici trois mois, tu auras repris en main les rituels d’équipe data-viz, tu te seras positionnée plus fortement dans les discussions produit — on en a déjà parlé —, et tu auras suivi une formation en leadership technique, que je vais te financer sur le budget formation étendu. D’ici six mois, tu auras mené ton premier entretien annuel, celui de Julien, et tu auras présenté ta vision pour l’équipe à l’occasion d’un séminaire interne. Au terme de ces six mois, si tout se passe comme je l’imagine, on passe officiellement au poste de lead, avec une revalorisation que je situerais autour de dix pour cent du fixe."
+        },
+        {
+          "n": 20,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/20_nadia.mp3",
+          "text": "C’est un plan ambitieux, mais juste. Je le prends. Une question, sur le séminaire — c’est un format imposé ou je peux proposer quelque chose de plus original ?"
+        },
+        {
+          "n": 21,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/21_clement.mp3",
+          "text": "Carte blanche. Surprends-nous."
+        },
+        {
+          "n": 22,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/22_nadia.mp3",
+          "text": "Bien. Et sur la formation, tu as une recommandation ou c’est moi qui propose ?"
+        },
+        {
+          "n": 23,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/23_clement.mp3",
+          "text": "Propose, et on en discute. Il y a un programme à l’École des Mines qui a bonne réputation, j’en ai entendu parler récemment, mais regarde ce que tu trouves."
+        },
+        {
+          "n": 24,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/24_nadia.mp3",
+          "text": "D’accord. Merci pour ce cadrage, c’est très clair. Je repars avec de la visibilité."
+        },
+        {
+          "n": 25,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/25_clement.mp3",
+          "text": "C’est l’idée. Je te propose qu’on refasse un point informel dans trois mois, pour mesurer l’avancée. On formalisera tout ça par écrit, évidemment."
+        },
+        {
+          "n": 26,
+          "speaker": "Nadia",
+          "audio": "audio/03_entretien_annuel/lines/26_nadia.mp3",
+          "text": "Parfait. Merci Clément."
+        },
+        {
+          "n": 27,
+          "speaker": "Clément",
+          "audio": "audio/03_entretien_annuel/lines/27_clement.mp3",
+          "text": "Merci à toi, Nadia. Tu fais du beau boulot."
+        }
+      ]
+    },
+    {
+      "id": "04_pot_depart",
+      "title": "Le pot de départ de Marc",
+      "lines": [
+        {
+          "n": 1,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/01_clement.mp3",
+          "text": "Mes amis, s’il vous plaît, on va pouvoir commencer. Venez, approchez-vous tous. Bon. Si l’open space pouvait faire un tout petit peu de silence, on ouvrirait le champagne dans les règles, je pense que ça ferait plaisir à Marc."
+        },
+        {
+          "n": 2,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/02_marc.mp3",
+          "text": "Ah, ne te gêne pas, tu sais bien que j’aime pas qu’on fasse des histoires."
+        },
+        {
+          "n": 3,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/03_clement.mp3",
+          "text": "Précisément, c’est pour ça qu’on en fait, Marc. Alors voilà. Je vais faire court, parce que je sais que tu détestes les discours. Vingt-huit ans. Vingt-huit ans que Marc est chez Pixelune. Pour mettre les choses en perspective, quand Marc est arrivé, on tenait dans un appartement du onzième arrondissement, au-dessus d’une boulangerie, et la boulangerie, d’ailleurs, elle existe toujours."
+        },
+        {
+          "n": 4,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/04_marc.mp3",
+          "text": "Ça au moins ça n’a pas changé."
+        },
+        {
+          "n": 5,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/05_clement.mp3",
+          "text": "Non, ça n’a pas changé. Ce qui a changé, en revanche, c’est à peu près tout le reste. On était cinq, on est quatre-vingts. On travaillait sur un unique produit, on en a douze aujourd’hui. Et au milieu de tout ce mouvement, il y a eu Marc. Le même bureau, à peu près — enfin, il a déménagé trois fois, mais toujours à côté de la fenêtre, on te connaît. Et surtout, la même rigueur, la même patience, la même façon de prendre une question complexe et de la retourner dans tous les sens jusqu’à ce qu’elle devienne simple."
+        },
+        {
+          "n": 6,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/06_marc.mp3",
+          "text": "Arrête, tu vas me faire rougir."
+        },
+        {
+          "n": 7,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/07_clement.mp3",
+          "text": "Je ne vais pas m’étendre sur la liste des projets, parce qu’on y serait encore demain. Mais je voulais juste rappeler deux ou trois choses. La première, c’est que Marc est, je crois, la seule personne de l’entreprise à avoir écrit du code dont on se sert encore, alors qu’il a été livré en deux mille trois. Trois."
+        },
+        {
+          "n": 8,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/08_marc.mp3",
+          "text": "Techniquement, c’est quand même un peu inquiétant, ça."
+        },
+        {
+          "n": 9,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/09_clement.mp3",
+          "text": "Non, c’est rassurant. Deuxièmement, Marc est à l’origine de la culture de relecture de code qu’on a chez Pixelune, et que nos nouveaux arrivants nous disent toujours être l’une des meilleures qu’ils aient connues. C’est son héritage, et il va nous survivre longtemps. Et troisièmement, Marc est l’homme qui, un soir de décembre deux mille onze, est resté jusqu’à quatre heures du matin pour sauver une démo client qui s’effondrait — et grâce auquel, le lendemain, on a signé le contrat qui nous a fait vivre pendant les deux années suivantes. Donc, Marc, je le dis simplement : merci. Pour tout."
+        },
+        {
+          "n": 10,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/10_marc.mp3",
+          "text": "Bon, merci Clément, merci vraiment. Alors attendez, laissez-moi poser mon verre. Non, parce que moi aussi je voulais dire deux mots, mais je vais faire encore plus court, parce que sinon je vais vraiment pleurer. Et personne n’a envie de voir ça, croyez-moi. Vingt-huit ans, c’est long. Ce qui est étonnant, c’est que ça ne m’a jamais paru long. J’ai eu la chance, très tôt, de tomber sur un projet qui m’intéressait, avec des gens qui m’intéressaient encore plus. Et puis, chaque fois que je me suis dit « tiens, je pourrais peut-être aller voir ailleurs », il y avait un nouveau truc qui démarrait ici, et je me retrouvais à signer pour trois ans de plus. Alors forcément, au bout d’un moment, ça fait vingt-huit."
+        },
+        {
+          "n": 11,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/11_clement.mp3",
+          "text": "Ça se comprend."
+        },
+        {
+          "n": 12,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/12_marc.mp3",
+          "text": "Ce qui me manquera le plus, paradoxalement, c’est pas le code. Le code, je peux en faire chez moi si j’ai envie. Ce qui me manquera, c’est vous. C’est le café de onze heures trente, c’est les engueulades amicales sur les choix d’architecture, c’est les discussions à rallonge en fin de journée dont on ne se rappelle plus le début. Alors je vais vous dire un truc : soyez sympas avec les jeunes qui arrivent. C’est un vrai conseil, ça. Ils sont plus fragiles qu’ils n’en ont l’air, et ils apprennent en nous regardant. Et puis soyez sympas avec ceux qui sont là depuis longtemps aussi, d’ailleurs, parce qu’ils sont plus fragiles qu’ils n’en ont l’air aussi."
+        },
+        {
+          "n": 13,
+          "speaker": "Nadia",
+          "audio": "audio/04_pot_depart/lines/13_nadia.mp3",
+          "text": "Bravo Marc !"
+        },
+        {
+          "n": 14,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/14_marc.mp3",
+          "text": "Et surtout, surtout — ne touchez pas à mon canapé, au fond de l’open space. Il est à moi. Julien sait de quoi je parle."
+        },
+        {
+          "n": 15,
+          "speaker": "Julien",
+          "audio": "audio/04_pot_depart/lines/15_julien.mp3",
+          "text": "Je l’ai toujours dit, ce canapé, il avait ton nom écrit dessus."
+        },
+        {
+          "n": 16,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/16_marc.mp3",
+          "text": "Voilà. Merci tout le monde. Buvez, mangez, et vivez longtemps."
+        },
+        {
+          "n": 17,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/17_clement.mp3",
+          "text": "Allez, Nadia, à toi si tu veux dire un mot."
+        },
+        {
+          "n": 18,
+          "speaker": "Nadia",
+          "audio": "audio/04_pot_depart/lines/18_nadia.mp3",
+          "text": "Très rapidement, oui. Marc, ce n’est pas facile de prendre la suite de quelqu’un comme toi. Quand Clément m’a dit, il y a quelques mois, qu’il envisageait ça, ma première réaction, ça a été de l’inquiétude. Parce que je savais très bien tout ce que tu avais construit, et tout ce que tu représentais pour l’équipe. Mais tu m’as tellement bien accompagnée, ces derniers mois, avec une générosité totale, sans jamais me mettre en difficulté, que je me sens prête. Alors je te dis juste : merci, pour ta confiance, et pour ton temps. On va essayer de faire honneur à ce que tu as mis en place."
+        },
+        {
+          "n": 19,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/19_marc.mp3",
+          "text": "Tu vas y arriver. Et si tu fais n’importe quoi, je reviens te hanter."
+        },
+        {
+          "n": 20,
+          "speaker": "Nadia",
+          "audio": "audio/04_pot_depart/lines/20_nadia.mp3",
+          "text": "Compris."
+        },
+        {
+          "n": 21,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/21_clement.mp3",
+          "text": "Allez, on lève nos verres. À Marc !"
+        },
+        {
+          "n": 22,
+          "speaker": "Nadia",
+          "audio": "audio/04_pot_depart/lines/22_nadia.mp3",
+          "text": "À Marc !"
+        },
+        {
+          "n": 23,
+          "speaker": "Julien",
+          "audio": "audio/04_pot_depart/lines/23_julien.mp3",
+          "text": "Dis, Marc, maintenant que tu es libre, tu vas en faire quoi de ton temps ?"
+        },
+        {
+          "n": 24,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/24_marc.mp3",
+          "text": "Oh, j’ai trois projets. Un : refaire entièrement la toiture de la maison dans le Lot, ça va me prendre l’automne. Deux : acheter un petit voilier et apprendre à naviguer sérieusement sur la Méditerranée. Et trois, le plus important, c’est de garder mes petits-enfants le mercredi, parce que ma fille me le demande depuis cinq ans."
+        },
+        {
+          "n": 25,
+          "speaker": "Julien",
+          "audio": "audio/04_pot_depart/lines/25_julien.mp3",
+          "text": "Et tu vas pas t’ennuyer, franchement ?"
+        },
+        {
+          "n": 26,
+          "speaker": "Marc",
+          "audio": "audio/04_pot_depart/lines/26_marc.mp3",
+          "text": "Julien, écoute-moi bien. Je ne me suis pas ennuyé depuis mille neuf cent quatre-vingt-seize. Je ne vais pas commencer maintenant."
+        },
+        {
+          "n": 27,
+          "speaker": "Clément",
+          "audio": "audio/04_pot_depart/lines/27_clement.mp3",
+          "text": "Bon, allez, on attaque la charcuterie avant qu’elle ne sèche !"
+        }
+      ]
+    }
+  ]
+}
